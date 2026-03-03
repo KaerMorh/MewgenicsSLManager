@@ -1,0 +1,330 @@
+import { useState, useEffect, useCallback, useRef } from "react";
+import { invoke } from "@tauri-apps/api/core";
+import TopNav from "./components/TopNav";
+import HeroSection from "./components/HeroSection";
+import BackupList from "./components/BackupList";
+import SettingsDialog from "./components/SettingsDialog";
+import GameBackupDialog from "./components/GameBackupDialog";
+import type { Config, SaveSummary, BackupEntry } from "./types";
+
+function App() {
+  const [config, setConfig] = useState<Config | null>(null);
+  const [summary, setSummary] = useState<SaveSummary | null>(null);
+  const [entries, setEntries] = useState<BackupEntry[]>([]);
+  const [showSettings, setShowSettings] = useState(false);
+  const [showGameBackups, setShowGameBackups] = useState(false);
+  const [confirmDialog, setConfirmDialog] = useState<{
+    title: string;
+    message: string;
+    onConfirm: () => void;
+  } | null>(null);
+  const [noteDialog, setNoteDialog] = useState<{
+    path: string;
+    filename: string;
+    currentNote: string;
+  } | null>(null);
+  const [noteText, setNoteText] = useState("");
+  const backupListRef = useRef<HTMLDivElement>(null);
+
+  // Load config on mount
+  useEffect(() => {
+    invoke<Config>("get_config").then(setConfig);
+  }, []);
+
+  // Refresh data when config changes
+  const refresh = useCallback(async () => {
+    if (!config) return;
+    const slot = config.current_slot;
+    const savePath = `${config.save_dir}\\${slotFilename(slot)}`;
+    const backupDir = config.backup_dir || `${config.save_dir}\\LoaderBackups`;
+
+    const [s, list] = await Promise.all([
+      invoke<SaveSummary>("get_save_summary", { path: savePath }),
+      invoke<BackupEntry[]>("list_backups", { backupDir, slot }),
+    ]);
+    setSummary(s);
+    setEntries(list);
+  }, [config]);
+
+  useEffect(() => {
+    refresh();
+  }, [refresh]);
+
+  if (!config) {
+    return (
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          height: "100vh",
+          fontSize: 24,
+          fontWeight: 900,
+        }}
+      >
+        加载中...
+      </div>
+    );
+  }
+
+  const backupDir = config.backup_dir || `${config.save_dir}\\LoaderBackups`;
+  const slot = config.current_slot;
+  const savePath = `${config.save_dir}\\${slotFilename(slot)}`;
+
+  const handleSlotChange = async (newSlot: number) => {
+    const newConfig = { ...config, current_slot: newSlot };
+    await invoke("save_config", { config: newConfig });
+    setConfig(newConfig);
+  };
+
+  const handleBackupNow = async () => {
+    try {
+      const result = await invoke<string>("create_backup", {
+        savePath,
+        backupDir,
+        slot,
+      });
+      const filename = result.split("\\").pop() || result.split("/").pop() || result;
+      alert(`备份成功！\n已备份到: ${filename}`);
+      refresh();
+    } catch (e) {
+      alert(`备份失败: ${e}`);
+    }
+  };
+
+  const handleLoad = (backupPath: string) => {
+    setConfirmDialog({
+      title: "确认加载",
+      message: "加载此备份将自动备份当前存档，然后替换为所选备份。\n继续？",
+      onConfirm: async () => {
+        setConfirmDialog(null);
+        try {
+          await invoke("load_backup", {
+            backupPath,
+            savePath,
+            backupDir,
+            slot,
+          });
+          refresh();
+        } catch (e) {
+          alert(`加载失败: ${e}`);
+        }
+      },
+    });
+  };
+
+  const handleCopy = async (backupPath: string) => {
+    try {
+      await invoke<string>("copy_backup", { srcPath: backupPath, backupDir });
+      refresh();
+    } catch (e) {
+      alert(`复制失败: ${e}`);
+    }
+  };
+
+  const handleDelete = (backupPath: string) => {
+    const filename = backupPath.split("\\").pop() || backupPath.split("/").pop() || backupPath;
+    setConfirmDialog({
+      title: "确认删除",
+      message: `确定删除备份?\n${filename}`,
+      onConfirm: async () => {
+        setConfirmDialog(null);
+        try {
+          await invoke("delete_backup", { path: backupPath });
+          refresh();
+        } catch (e) {
+          alert(`删除失败: ${e}`);
+        }
+      },
+    });
+  };
+
+  const handleEditNote = (backupPath: string) => {
+    const filename = backupPath.split("\\").pop() || backupPath.split("/").pop() || backupPath;
+    const entry = entries.find((e) => e.path === backupPath);
+    const currentNote = entry?.note ?? "";
+    setNoteText(currentNote);
+    setNoteDialog({ path: backupPath, filename, currentNote });
+  };
+
+  const handleSaveNote = async () => {
+    if (!noteDialog) return;
+    try {
+      await invoke("save_note", {
+        backupDir,
+        filename: noteDialog.filename,
+        note: noteText,
+      });
+      refresh();
+    } catch (e) {
+      alert(`保存备注失败: ${e}`);
+    }
+    setNoteDialog(null);
+  };
+
+  const handleSettingsSave = async (newConfig: Config) => {
+    await invoke("save_config", { config: newConfig });
+    setConfig(newConfig);
+    setShowSettings(false);
+  };
+
+  const handleSortChange = async (key: string, ascending: boolean) => {
+    const newConfig = { ...config, sort_key: key, sort_ascending: ascending };
+    await invoke("save_config", { config: newConfig });
+    setConfig(newConfig);
+  };
+
+  const handleImportGameBackup = async (savbackupPath: string) => {
+    try {
+      await invoke("load_backup", {
+        backupPath: savbackupPath,
+        savePath,
+        backupDir,
+        slot,
+      });
+      refresh();
+    } catch (e) {
+      alert(`导入失败: ${e}`);
+    }
+  };
+
+  const gameBackupDirPath = `${config.save_dir}\\backups`;
+
+  return (
+    <div
+      style={{
+        padding: "24px 24px 40px 24px",
+        maxWidth: 1400,
+        margin: "0 auto",
+        display: "flex",
+        flexDirection: "column",
+        gap: 40,
+        minHeight: "100vh",
+      }}
+    >
+      <TopNav
+        currentSlot={slot}
+        onSlotChange={handleSlotChange}
+        onSettingsClick={() => setShowSettings(true)}
+        onGameBackupClick={() => setShowGameBackups(true)}
+      />
+
+      <HeroSection
+        summary={summary}
+        slot={slot}
+        backupCount={entries.length}
+        onBackupNow={handleBackupNow}
+        onBrowseBackups={() =>
+          backupListRef.current?.scrollIntoView({ behavior: "smooth" })
+        }
+      />
+
+      <div ref={backupListRef}>
+        <BackupList
+          entries={entries}
+          sortKey={config.sort_key}
+          sortAscending={config.sort_ascending}
+          onSortChange={handleSortChange}
+          onLoad={handleLoad}
+          onCopy={handleCopy}
+          onDelete={handleDelete}
+          onEditNote={handleEditNote}
+        />
+      </div>
+
+      {/* Settings dialog */}
+      {showSettings && (
+        <SettingsDialog
+          config={config}
+          onSave={handleSettingsSave}
+          onClose={() => setShowSettings(false)}
+        />
+      )}
+
+      {/* Game backups dialog */}
+      {showGameBackups && (
+        <GameBackupDialog
+          gameBackupDir={gameBackupDirPath}
+          slot={slot}
+          onImport={handleImportGameBackup}
+          onClose={() => setShowGameBackups(false)}
+        />
+      )}
+
+      {/* Confirm dialog */}
+      {confirmDialog && (
+        <div className="dialog-overlay" onClick={() => setConfirmDialog(null)}>
+          <div
+            className="confirm-dialog"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <h3>{confirmDialog.title}</h3>
+            <p style={{ whiteSpace: "pre-line" }}>{confirmDialog.message}</p>
+            <div className="btn-row">
+              <button
+                className="btn-secondary"
+                style={{ padding: "8px 20px", fontSize: 14 }}
+                onClick={() => setConfirmDialog(null)}
+              >
+                取消
+              </button>
+              <button
+                className="btn-primary"
+                style={{ padding: "8px 20px", fontSize: 14 }}
+                onClick={confirmDialog.onConfirm}
+              >
+                确认
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Note edit dialog */}
+      {noteDialog && (
+        <div className="dialog-overlay" onClick={() => setNoteDialog(null)}>
+          <div className="dialog-content" style={{ minWidth: 400 }} onClick={(e) => e.stopPropagation()}>
+            <h3 style={{ fontSize: 20, fontWeight: 900, marginBottom: 16 }}>
+              编辑备注
+            </h3>
+            <p style={{ color: "#64748b", fontWeight: "bold", marginBottom: 12 }}>
+              为 {noteDialog.filename} 添加备注：
+            </p>
+            <input
+              type="text"
+              value={noteText}
+              onChange={(e) => setNoteText(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") handleSaveNote();
+              }}
+              autoFocus
+              style={{ marginBottom: 16 }}
+            />
+            <div style={{ display: "flex", gap: 12, justifyContent: "flex-end" }}>
+              <button
+                className="btn-secondary"
+                style={{ padding: "8px 16px", fontSize: 14 }}
+                onClick={() => setNoteDialog(null)}
+              >
+                取消
+              </button>
+              <button
+                className="btn-primary"
+                style={{ padding: "8px 16px", fontSize: 14 }}
+                onClick={handleSaveNote}
+              >
+                保存
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function slotFilename(slot: number): string {
+  return `steamcampaign0${slot}.sav`;
+}
+
+export default App;

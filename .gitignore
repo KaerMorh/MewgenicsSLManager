@@ -1,0 +1,13 @@
+# Rust
+src-tauri/target/
+
+# Node
+node_modules/
+dist/
+
+# Generated
+app-icon.png
+
+# OS
+.DS_Store
+Thumbs.db
