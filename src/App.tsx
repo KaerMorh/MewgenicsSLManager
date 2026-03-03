@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { invoke } from "@tauri-apps/api/core";
 import TopNav from "./components/TopNav";
 import HeroSection from "./components/HeroSection";
@@ -6,6 +6,7 @@ import BackupList from "./components/BackupList";
 import SettingsDialog from "./components/SettingsDialog";
 import GameBackupDialog from "./components/GameBackupDialog";
 import type { Config, SaveSummary, BackupEntry } from "./types";
+
 
 function App() {
   const [config, setConfig] = useState<Config | null>(null);
@@ -24,7 +25,6 @@ function App() {
     currentNote: string;
   } | null>(null);
   const [noteText, setNoteText] = useState("");
-  const backupListRef = useRef<HTMLDivElement>(null);
 
   // Load config on mount
   useEffect(() => {
@@ -193,13 +193,14 @@ function App() {
   return (
     <div
       style={{
-        padding: "24px 24px 40px 24px",
+        padding: "16px 30px 16px 20px",
         maxWidth: 1400,
         margin: "0 auto",
         display: "flex",
         flexDirection: "column",
-        gap: 40,
-        minHeight: "100vh",
+        gap: 16,
+        height: "100vh",
+        overflow: "hidden",
       }}
     >
       <TopNav
@@ -214,23 +215,18 @@ function App() {
         slot={slot}
         backupCount={entries.length}
         onBackupNow={handleBackupNow}
-        onBrowseBackups={() =>
-          backupListRef.current?.scrollIntoView({ behavior: "smooth" })
-        }
       />
 
-      <div ref={backupListRef}>
-        <BackupList
-          entries={entries}
-          sortKey={config.sort_key}
-          sortAscending={config.sort_ascending}
-          onSortChange={handleSortChange}
-          onLoad={handleLoad}
-          onCopy={handleCopy}
-          onDelete={handleDelete}
-          onEditNote={handleEditNote}
-        />
-      </div>
+      <BackupList
+        entries={entries}
+        sortKey={config.sort_key}
+        sortAscending={config.sort_ascending}
+        onSortChange={handleSortChange}
+        onLoad={handleLoad}
+        onCopy={handleCopy}
+        onDelete={handleDelete}
+        onEditNote={handleEditNote}
+      />
 
       {/* Settings dialog */}
       {showSettings && (

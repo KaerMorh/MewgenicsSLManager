@@ -1,5 +1,4 @@
 import React from "react";
-import SaveInfoCard from "./SaveInfoCard";
 import type { SaveSummary } from "../types";
 
 interface HeroSectionProps {
@@ -7,7 +6,6 @@ interface HeroSectionProps {
   slot: number;
   backupCount: number;
   onBackupNow: () => void;
-  onBrowseBackups: () => void;
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({
@@ -15,76 +13,119 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   slot,
   backupCount,
   onBackupNow,
-  onBrowseBackups,
 }) => {
-  const pct = summary?.exists ? `${summary.save_percent}%` : "0%";
+  const exists = summary?.exists ?? false;
+  const pct = exists ? (summary?.save_percent ?? 0) : 0;
+
+  const dayInfo = exists
+    ? `Day ${summary!.current_day} · 🐱${summary!.cat_alive} 💀${summary!.cat_dead} · 💰${summary!.house_gold} · 🍖${summary!.house_food}`
+    : "未检测到存档";
+
+  const adventureText = () => {
+    if (!summary || !exists) return null;
+    if (summary.in_adventure && summary.adventure_cats.length > 0) {
+      const parts = summary.adventure_cats.map(
+        (c) => `${c.name}(Lv${c.level}${c.cat_class ? " " + c.cat_class : ""})`
+      );
+      return "🗡️ " + parts.join(", ");
+    }
+    if (summary.in_adventure) return "🗡️ 冒险中";
+    return "🏠 在家休息";
+  };
 
   return (
-    <div style={{ display: "flex", gap: 40, alignItems: "flex-start" }}>
-      {/* Left text */}
-      <div style={{ flex: 1, display: "flex", flexDirection: "column" }}>
-        <span className="tag tag-new" style={{ alignSelf: "flex-start" }}>
-          ● New: 自动备份已就绪
-        </span>
+    <div
+      className="card"
+      style={{
+        padding: "18px 28px",
+        display: "flex",
+        alignItems: "center",
+        gap: 28,
+        flexShrink: 0,
+      }}
+    >
+      {/* Save icon */}
+      <span
+        style={{
+          background: "#bae6fd",
+          border: "3px solid #1e293b",
+          borderRadius: 12,
+          fontSize: 22,
+          width: 44,
+          height: 44,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          flexShrink: 0,
+        }}
+      >
+        ▶
+      </span>
 
-        <h1
-          style={{
-            fontSize: 48,
-            fontWeight: 900,
-            lineHeight: 1.2,
-            marginTop: 20,
-          }}
-        >
-          管理存档，
-          <br />
-          <span style={{ color: "#22c55e" }}>随时</span>，
-          <br />
-          随地！
-        </h1>
-
-        <p
-          style={{
-            fontSize: 16,
-            fontWeight: "bold",
-            color: "#64748b",
-            marginTop: 20,
-          }}
-        >
-          加入无数铲屎官的行列，轻松管理你的 Mewgenics
-          存档。告别永久死亡，守护每一只探险猫！
-        </p>
-
-        <div style={{ display: "flex", gap: 16, marginTop: 30 }}>
-          <button className="btn-primary" onClick={onBackupNow}>
-            立即备份当前存档 →
-          </button>
-          <button className="btn-secondary" onClick={onBrowseBackups}>
-            浏览备份
-          </button>
+      {/* Save info */}
+      <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 6, minWidth: 0 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+          <span style={{ fontSize: 17, fontWeight: 900 }}>
+            当前存档 (Slot {slot})
+          </span>
+          {exists && adventureText() && (
+            <span
+              className={`tag ${summary!.in_adventure ? "tag-adventure" : "tag-home"}`}
+            >
+              {adventureText()}
+            </span>
+          )}
         </div>
-
-        <div style={{ display: "flex", gap: 30, marginTop: 40 }}>
-          <StatBlock value={String(backupCount)} label="可用备份" />
-          <StatBlock value={pct} label="平均完成度" />
-          <StatBlock value="3" label="活跃槽位" />
+        <div style={{ fontSize: 13, fontWeight: "bold", color: "#64748b" }}>
+          {dayInfo}
         </div>
       </div>
 
-      {/* Right card */}
-      <div style={{ flex: 1 }}>
-        <SaveInfoCard summary={summary} slot={slot} />
+      {/* Progress */}
+      <div style={{ width: 160, flexShrink: 0, display: "flex", flexDirection: "column", gap: 4 }}>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <span style={{ fontSize: 11, fontWeight: 900, color: "#64748b" }}>完成度</span>
+          <span style={{ fontSize: 11, fontWeight: 900, color: "#22c55e" }}>{pct}%</span>
+        </div>
+        <div className="progress-bar" style={{ height: 14 }}>
+          <div className="progress-bar-fill" style={{ width: `${Math.min(pct, 100)}%` }} />
+        </div>
       </div>
+
+      {/* Divider */}
+      <div
+        style={{
+          width: 3,
+          alignSelf: "stretch",
+          background: "#e2e8f0",
+          borderRadius: 2,
+          flexShrink: 0,
+        }}
+      />
+
+      {/* Stats */}
+      <div style={{ display: "flex", gap: 20, flexShrink: 0 }}>
+        <MiniStat value={String(backupCount)} label="备份" />
+        <MiniStat value={`${pct}%`} label="完成度" />
+      </div>
+
+      {/* Backup button */}
+      <button
+        className="btn-primary"
+        style={{ fontSize: 14, padding: "10px 20px", flexShrink: 0 }}
+        onClick={onBackupNow}
+      >
+        立即备份 →
+      </button>
     </div>
   );
 };
 
-function StatBlock({ value, label }: { value: string; label: string }) {
+function MiniStat({ value, label }: { value: string; label: string }) {
   return (
-    <div>
-      <div style={{ fontSize: 24, fontWeight: 900 }}>{value}</div>
-      <div style={{ fontSize: 13, fontWeight: "bold", color: "#64748b" }}>
-        {label}
-      </div>
+    <div style={{ textAlign: "center" }}>
+      <div style={{ fontSize: 18, fontWeight: 900, lineHeight: 1.2 }}>{value}</div>
+      <div style={{ fontSize: 11, fontWeight: "bold", color: "#64748b" }}>{label}</div>
     </div>
   );
 }

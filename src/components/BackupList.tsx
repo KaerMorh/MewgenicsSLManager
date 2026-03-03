@@ -3,6 +3,8 @@ import { invoke } from "@tauri-apps/api/core";
 import BackupItem from "./BackupItem";
 import type { BackupEntry, SaveSummary } from "../types";
 
+const PAGE_SIZE = 4;
+
 interface BackupListProps {
   entries: BackupEntry[];
   sortKey: string;
@@ -26,11 +28,12 @@ const BackupList: React.FC<BackupListProps> = ({
 }) => {
   const [expandedIdx, setExpandedIdx] = useState<number | null>(null);
   const [summaries, setSummaries] = useState<Record<string, SaveSummary>>({});
+  const [page, setPage] = useState(0);
 
-  // Parse summaries for all entries in background
   useEffect(() => {
     setSummaries({});
     setExpandedIdx(null);
+    setPage(0);
     let cancelled = false;
 
     async function parseAll() {
@@ -53,7 +56,11 @@ const BackupList: React.FC<BackupListProps> = ({
     return () => { cancelled = true; };
   }, [entries]);
 
-  // Sort entries locally with summaries
+  useEffect(() => {
+    setPage(0);
+    setExpandedIdx(null);
+  }, [sortKey, sortAscending]);
+
   const sorted = [...entries].sort((a, b) => {
     let cmp = 0;
     if (sortKey === "day") {
@@ -70,25 +77,28 @@ const BackupList: React.FC<BackupListProps> = ({
     return sortAscending ? cmp : -cmp;
   });
 
+  const totalPages = Math.max(1, Math.ceil(sorted.length / PAGE_SIZE));
+  const safePage = Math.min(page, totalPages - 1);
+  const pageItems = sorted.slice(safePage * PAGE_SIZE, (safePage + 1) * PAGE_SIZE);
+
   return (
-    <div>
+    <div style={{ flex: 1, display: "flex", flexDirection: "column", minHeight: 0 }}>
       {/* Header */}
       <div
         style={{
           display: "flex",
           alignItems: "center",
-          gap: 16,
-          marginBottom: 24,
+          gap: 12,
+          marginBottom: 12,
+          flexShrink: 0,
         }}
       >
-        <h2 style={{ fontSize: 32, fontWeight: 900, flex: 1 }}>
-          备份目录 (Backups)
+        <h2 style={{ fontSize: 20, fontWeight: 900, flex: 1 }}>
+          备份目录
+          <span style={{ fontSize: 14, fontWeight: "bold", color: "#64748b", marginLeft: 12 }}>
+            共 {entries.length} 个
+          </span>
         </h2>
-        <span
-          style={{ color: "#64748b", fontWeight: "bold", marginRight: 16 }}
-        >
-          共 {entries.length} 个备份
-        </span>
         <select
           value={sortKey}
           onChange={(e) => onSortChange(e.target.value, sortAscending)}
@@ -106,23 +116,35 @@ const BackupList: React.FC<BackupListProps> = ({
         </select>
       </div>
 
-      {/* List */}
-      <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-        {sorted.map((entry, idx) => (
-          <BackupItem
-            key={entry.path}
-            entry={entry}
-            isExpanded={expandedIdx === idx}
-            onToggle={() =>
-              setExpandedIdx(expandedIdx === idx ? null : idx)
-            }
-            onLoad={onLoad}
-            onCopy={onCopy}
-            onDelete={onDelete}
-            onEditNote={onEditNote}
-            summary={summaries[entry.path] ?? null}
-          />
-        ))}
+      {/* Items */}
+      <div
+        style={{
+          flex: 1,
+          display: "flex",
+          flexDirection: "column",
+          gap: 12,
+          minHeight: 0,
+          paddingBottom: 10,
+        }}
+      >
+        {pageItems.map((entry, idx) => {
+          const globalIdx = safePage * PAGE_SIZE + idx;
+          return (
+            <BackupItem
+              key={entry.path}
+              entry={entry}
+              isExpanded={expandedIdx === globalIdx}
+              onToggle={() =>
+                setExpandedIdx(expandedIdx === globalIdx ? null : globalIdx)
+              }
+              onLoad={onLoad}
+              onCopy={onCopy}
+              onDelete={onDelete}
+              onEditNote={onEditNote}
+              summary={summaries[entry.path] ?? null}
+            />
+          );
+        })}
         {entries.length === 0 && (
           <div
             style={{
@@ -137,6 +159,60 @@ const BackupList: React.FC<BackupListProps> = ({
           </div>
         )}
       </div>
+
+      {/* Pagination */}
+      {totalPages > 1 && (
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: 8,
+            flexShrink: 0,
+            paddingTop: 4,
+          }}
+        >
+          <button
+            className="btn-small white"
+            style={{ padding: "6px 12px", fontSize: 13 }}
+            disabled={safePage === 0}
+            onClick={() => { setPage(safePage - 1); setExpandedIdx(null); }}
+          >
+            ◀ 上一页
+          </button>
+
+          {Array.from({ length: totalPages }, (_, i) => (
+            <button
+              key={i}
+              onClick={() => { setPage(i); setExpandedIdx(null); }}
+              style={{
+                width: 32,
+                height: 32,
+                borderRadius: 10,
+                border: `3px solid ${i === safePage ? "#22c55e" : "#1e293b"}`,
+                background: i === safePage ? "#22c55e" : "#ffffff",
+                color: i === safePage ? "#ffffff" : "#1e293b",
+                fontWeight: 900,
+                fontSize: 14,
+                cursor: "pointer",
+                boxShadow: i === safePage ? "none" : "2px 2px 0 #1e293b",
+                transition: "all 0.1s ease",
+              }}
+            >
+              {i + 1}
+            </button>
+          ))}
+
+          <button
+            className="btn-small white"
+            style={{ padding: "6px 12px", fontSize: 13 }}
+            disabled={safePage >= totalPages - 1}
+            onClick={() => { setPage(safePage + 1); setExpandedIdx(null); }}
+          >
+            下一页 ▶
+          </button>
+        </div>
+      )}
     </div>
   );
 };

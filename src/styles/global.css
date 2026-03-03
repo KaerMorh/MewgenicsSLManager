@@ -29,12 +29,21 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
 body {
   font-family: var(--font-main);
   background-color: var(--warm-cream);
   color: var(--dark-slate);
   font-size: 14px;
-  overflow-x: hidden;
+}
+
+#root {
+  height: 100%;
+  overflow: hidden;
 }
 
 /* ---- Scrollbar ---- */

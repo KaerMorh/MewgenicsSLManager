@@ -22,32 +22,29 @@ pub struct BackupEntry {
 
 // ---- Regex-like parsing (manual, no regex crate needed) ----
 
-/// Parse: steamcampaign0{slot}_{YYYY-MM-DD}_{HH-MM}_{day}d.sav
+/// Parse: steamcampaign0{slot}_{YYYY-MM-DD}_{HH-MM-SS}_{day}d.sav
+/// Also accepts legacy format: steamcampaign0{slot}_{YYYY-MM-DD}_{HH-MM}_{day}d.sav
 fn parse_backup_filename(filename: &str) -> Option<(i32, String, i64)> {
-    // steamcampaign0X_YYYY-MM-DD_HH-MM_Nd.sav
     if !filename.starts_with("steamcampaign0") || !filename.ends_with(".sav") {
         return None;
     }
-    let inner = &filename[14..filename.len() - 4]; // after "steamcampaign0", before ".sav"
-    // Should be: {slot}_{date}_{time}_{day}d
+    let inner = &filename[14..filename.len() - 4];
     let parts: Vec<&str> = inner.splitn(2, '_').collect();
     if parts.len() != 2 {
         return None;
     }
     let slot: i32 = parts[0].parse().ok()?;
-    let rest = parts[1]; // YYYY-MM-DD_HH-MM_Nd
+    let rest = parts[1];
 
-    // Find the last "_" before "d"
     if !rest.ends_with('d') {
         return None;
     }
-    let rest_no_d = &rest[..rest.len() - 1]; // YYYY-MM-DD_HH-MM_N
+    let rest_no_d = &rest[..rest.len() - 1];
     let last_under = rest_no_d.rfind('_')?;
     let day_str = &rest_no_d[last_under + 1..];
     let day: i64 = day_str.parse().ok()?;
 
-    let datetime_part = &rest_no_d[..last_under]; // YYYY-MM-DD_HH-MM
-    // Validate format
+    let datetime_part = &rest_no_d[..last_under];
     if datetime_part.len() < 16 {
         return None;
     }
@@ -58,15 +55,18 @@ fn parse_backup_filename(filename: &str) -> Option<(i32, String, i64)> {
 }
 
 fn format_backup_datetime(datetime_part: &str) -> Option<String> {
-    // datetime_part: "YYYY-MM-DD_HH-MM"
+    // datetime_part: "YYYY-MM-DD_HH-MM-SS" or legacy "YYYY-MM-DD_HH-MM"
     let parts: Vec<&str> = datetime_part.split('_').collect();
     if parts.len() != 2 {
         return None;
     }
-    let date = parts[0]; // YYYY-MM-DD
-    let time = parts[1]; // HH-MM
-    let time_formatted = time.replace('-', ":");
-    Some(format!("{}T{}:00", date, time_formatted))
+    let date = parts[0];
+    let time_segments: Vec<&str> = parts[1].split('-').collect();
+    match time_segments.len() {
+        2 => Some(format!("{}T{}:{}:00", date, time_segments[0], time_segments[1])),
+        3 => Some(format!("{}T{}:{}:{}", date, time_segments[0], time_segments[1], time_segments[2])),
+        _ => None,
+    }
 }
 
 /// Parse: steamcampaign0{slot}_{YYYY-MM-DD}_{HH-MM}.savbackup
@@ -123,7 +123,7 @@ fn gen_backup_name(slot: i32, current_day: i64) -> String {
     format!(
         "steamcampaign{:02}_{}_{}d.sav",
         slot,
-        now.format("%Y-%m-%d_%H-%M"),
+        now.format("%Y-%m-%d_%H-%M-%S"),
         current_day
     )
 }
