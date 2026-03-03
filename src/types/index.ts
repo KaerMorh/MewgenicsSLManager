@@ -31,6 +31,7 @@ export interface BackupEntry {
   backup_time: string;
   day_in_name: number;
   is_game_backup: boolean;
+  is_copy: boolean;
   note: string;
   summary?: SaveSummary;
 }
@@ -41,4 +42,15 @@ export interface Config {
   current_slot: number;
   sort_key: string;
   sort_ascending: boolean;
+}
+
+export interface ScanResult {
+  groups: number;
+  redundant_files: number;
+}
+
+export interface DedupResult {
+  groups_found: number;
+  files_removed: number;
+  notes_merged: number;
 }

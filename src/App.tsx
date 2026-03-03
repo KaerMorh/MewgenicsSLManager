@@ -241,6 +241,7 @@ function App() {
           config={config}
           onSave={handleSettingsSave}
           onClose={() => setShowSettings(false)}
+          onRefresh={refresh}
         />
       )}
 

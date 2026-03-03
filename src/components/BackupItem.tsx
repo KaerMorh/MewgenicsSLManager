@@ -144,6 +144,21 @@ const BackupItem: React.FC<BackupItemProps> = ({
           <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
             <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
               <span style={{ fontSize: 18, fontWeight: 900 }}>{timeStr}</span>
+              {entry.is_copy && (
+                <span
+                  style={{
+                    background: "#fef3c7",
+                    color: "#92400e",
+                    border: "2px solid #f59e0b",
+                    borderRadius: 8,
+                    padding: "2px 8px",
+                    fontSize: 11,
+                    fontWeight: 900,
+                  }}
+                >
+                  副本
+                </span>
+              )}
               {statusTag()}
             </div>
             <div

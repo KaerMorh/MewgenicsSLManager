@@ -29,6 +29,10 @@ pub fn run() {
             commands::list_game_backups,
             commands::save_note,
             commands::parse_backup_summary,
+            commands::open_in_explorer,
+            commands::check_files_identical,
+            commands::scan_duplicates,
+            commands::dedup_backups,
         ])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");

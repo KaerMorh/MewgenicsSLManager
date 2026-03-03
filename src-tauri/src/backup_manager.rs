@@ -1,8 +1,10 @@
 use crate::save_parser::{parse_save_summary, SaveSummary};
 use chrono::DateTime;
 use serde::{Deserialize, Serialize};
+use sha2::{Digest, Sha256};
 use std::collections::HashMap;
 use std::fs;
+use std::io::Read;
 use std::path::{Path, PathBuf};
 
 const NOTES_FILE: &str = "backup_notes.json";
@@ -15,20 +17,48 @@ pub struct BackupEntry {
     pub backup_time: String, // ISO 8601
     pub day_in_name: i64,
     pub is_game_backup: bool,
+    pub is_copy: bool,
     pub note: String,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub summary: Option<SaveSummary>,
 }
 
+#[derive(Debug, Clone, Serialize)]
+pub struct ScanResult {
+    pub groups: usize,
+    pub redundant_files: usize,
+}
+
+#[derive(Debug, Clone, Serialize)]
+pub struct DedupResult {
+    pub groups_found: usize,
+    pub files_removed: usize,
+    pub notes_merged: usize,
+}
+
+// ---- Copy suffix handling ----
+
+fn strip_copy_suffix(stem: &str) -> (&str, bool) {
+    if let Some(pos) = stem.rfind("_copy") {
+        let after = &stem[pos + 5..];
+        if after.is_empty() || after.chars().all(|c| c.is_ascii_digit()) {
+            return (&stem[..pos], true);
+        }
+    }
+    (stem, false)
+}
+
 // ---- Regex-like parsing (manual, no regex crate needed) ----
 
 /// Parse: steamcampaign0{slot}_{YYYY-MM-DD}_{HH-MM-SS}_{day}d.sav
-/// Also accepts legacy format: steamcampaign0{slot}_{YYYY-MM-DD}_{HH-MM}_{day}d.sav
-fn parse_backup_filename(filename: &str) -> Option<(i32, String, i64)> {
+/// Also accepts legacy format without seconds, and _copy / _copyN suffixes
+fn parse_backup_filename(filename: &str) -> Option<(i32, String, i64, bool)> {
     if !filename.starts_with("steamcampaign0") || !filename.ends_with(".sav") {
         return None;
     }
     let inner = &filename[14..filename.len() - 4];
+    let (inner, is_copy) = strip_copy_suffix(inner);
+
     let parts: Vec<&str> = inner.splitn(2, '_').collect();
     if parts.len() != 2 {
         return None;
@@ -51,11 +81,10 @@ fn parse_backup_filename(filename: &str) -> Option<(i32, String, i64)> {
 
     let iso = format_backup_datetime(datetime_part)?;
 
-    Some((slot, iso, day))
+    Some((slot, iso, day, is_copy))
 }
 
 fn format_backup_datetime(datetime_part: &str) -> Option<String> {
-    // datetime_part: "YYYY-MM-DD_HH-MM-SS" or legacy "YYYY-MM-DD_HH-MM"
     let parts: Vec<&str> = datetime_part.split('_').collect();
     if parts.len() != 2 {
         return None;
@@ -74,13 +103,13 @@ fn parse_game_backup_filename(filename: &str) -> Option<(i32, String)> {
     if !filename.starts_with("steamcampaign0") || !filename.ends_with(".savbackup") {
         return None;
     }
-    let inner = &filename[14..filename.len() - 10]; // after "steamcampaign0", before ".savbackup"
+    let inner = &filename[14..filename.len() - 10];
     let parts: Vec<&str> = inner.splitn(2, '_').collect();
     if parts.len() != 2 {
         return None;
     }
     let slot: i32 = parts[0].parse().ok()?;
-    let datetime_part = parts[1]; // YYYY-MM-DD_HH-MM
+    let datetime_part = parts[1];
     let iso = format_backup_datetime(datetime_part)?;
     Some((slot, iso))
 }
@@ -152,6 +181,22 @@ fn avoid_collision(dir: &str, name: &str) -> PathBuf {
         }
         n += 1;
     }
+}
+
+// ---- File hashing ----
+
+pub fn compute_file_hash(path: &str) -> Result<String, String> {
+    let mut file = fs::File::open(path).map_err(|e| e.to_string())?;
+    let mut hasher = Sha256::new();
+    let mut buffer = [0u8; 8192];
+    loop {
+        let n = file.read(&mut buffer).map_err(|e| e.to_string())?;
+        if n == 0 {
+            break;
+        }
+        hasher.update(&buffer[..n]);
+    }
+    Ok(format!("{:x}", hasher.finalize()))
 }
 
 // ---- Public API ----
@@ -250,7 +295,7 @@ pub fn list_backups(backup_dir: &str, slot: i32) -> Vec<BackupEntry> {
             continue;
         }
 
-        if let Some((s, iso, day)) = parse_backup_filename(&filename) {
+        if let Some((s, iso, day, is_copy)) = parse_backup_filename(&filename) {
             if s == slot {
                 entries.push(BackupEntry {
                     path: path.to_string_lossy().to_string(),
@@ -259,12 +304,12 @@ pub fn list_backups(backup_dir: &str, slot: i32) -> Vec<BackupEntry> {
                     backup_time: iso,
                     day_in_name: day,
                     is_game_backup: false,
+                    is_copy,
                     note: notes.get(&filename).cloned().unwrap_or_default(),
                     summary: None,
                 });
             }
         } else {
-            // Fallback: files that start with the slot prefix but don't match regex
             let prefix = format!("steamcampaign{:02}", slot);
             if filename.starts_with(&prefix) {
                 let mtime = fs::metadata(&path)
@@ -286,6 +331,7 @@ pub fn list_backups(backup_dir: &str, slot: i32) -> Vec<BackupEntry> {
                     backup_time: mtime,
                     day_in_name: 0,
                     is_game_backup: false,
+                    is_copy: false,
                     note: notes.get(&filename).cloned().unwrap_or_default(),
                     summary: None,
                 });
@@ -330,6 +376,7 @@ pub fn list_game_backups(game_backup_dir: &str, slot: i32) -> Vec<BackupEntry> {
                     backup_time: iso,
                     day_in_name: 0,
                     is_game_backup: true,
+                    is_copy: false,
                     note: String::new(),
                     summary: None,
                 });
@@ -338,4 +385,76 @@ pub fn list_game_backups(game_backup_dir: &str, slot: i32) -> Vec<BackupEntry> {
     }
 
     entries
+}
+
+// ---- Duplicate detection ----
+
+pub fn scan_duplicates(backup_dir: &str, slot: i32) -> Result<ScanResult, String> {
+    let entries = list_backups(backup_dir, slot);
+    let mut hash_groups: HashMap<String, usize> = HashMap::new();
+    for entry in &entries {
+        let hash = compute_file_hash(&entry.path)?;
+        *hash_groups.entry(hash).or_insert(0) += 1;
+    }
+    let groups = hash_groups.values().filter(|&&c| c > 1).count();
+    let redundant: usize = hash_groups.values().filter(|&&c| c > 1).map(|c| c - 1).sum();
+    Ok(ScanResult {
+        groups,
+        redundant_files: redundant,
+    })
+}
+
+pub fn dedup_backups(backup_dir: &str, slot: i32) -> Result<DedupResult, String> {
+    let entries = list_backups(backup_dir, slot);
+
+    let mut hash_groups: HashMap<String, Vec<BackupEntry>> = HashMap::new();
+    for entry in entries {
+        let hash = compute_file_hash(&entry.path)?;
+        hash_groups.entry(hash).or_default().push(entry);
+    }
+
+    let mut groups_found = 0;
+    let mut files_removed = 0;
+    let mut notes_merged = 0;
+
+    for (_hash, mut group) in hash_groups {
+        if group.len() < 2 {
+            continue;
+        }
+        groups_found += 1;
+
+        group.sort_by(|a, b| a.backup_time.cmp(&b.backup_time));
+
+        let mut unique_notes: Vec<String> = Vec::new();
+        for e in &group {
+            let trimmed = e.note.trim().to_string();
+            if !trimmed.is_empty() && !unique_notes.contains(&trimmed) {
+                unique_notes.push(trimmed);
+            }
+        }
+
+        let keeper = group.last().unwrap().clone();
+        let merged_note = unique_notes.join(" | ");
+
+        if unique_notes.len() > 1 {
+            notes_merged += 1;
+        }
+
+        save_note_to_file(backup_dir, &keeper.filename, &merged_note)?;
+
+        let mut notes = load_notes(backup_dir);
+        for entry in &group[..group.len() - 1] {
+            fs::remove_file(&entry.path).map_err(|e| e.to_string())?;
+            notes.remove(&entry.filename);
+            files_removed += 1;
+        }
+        let json = serde_json::to_string_pretty(&notes).map_err(|e| e.to_string())?;
+        fs::write(notes_path(backup_dir), json).map_err(|e| e.to_string())?;
+    }
+
+    Ok(DedupResult {
+        groups_found,
+        files_removed,
+        notes_merged,
+    })
 }
