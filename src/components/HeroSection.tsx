@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import type { SaveSummary } from "../types";
 
 interface HeroSectionProps {
@@ -6,6 +6,7 @@ interface HeroSectionProps {
   slot: number;
   backupCount: number;
   onBackupNow: () => void;
+  onRefresh: () => Promise<void>;
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({
@@ -13,7 +14,18 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   slot,
   backupCount,
   onBackupNow,
+  onRefresh,
 }) => {
+  const [refreshing, setRefreshing] = useState(false);
+
+  const handleRefresh = async () => {
+    setRefreshing(true);
+    try {
+      await onRefresh();
+    } finally {
+      setTimeout(() => setRefreshing(false), 400);
+    }
+  };
   const exists = summary?.exists ?? false;
   const pct = exists ? (summary?.save_percent ?? 0) : 0;
 
@@ -109,14 +121,30 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         <MiniStat value={`${pct}%`} label="完成度" />
       </div>
 
-      {/* Backup button */}
-      <button
-        className="btn-primary"
-        style={{ fontSize: 14, padding: "10px 20px", flexShrink: 0 }}
-        onClick={onBackupNow}
-      >
-        立即备份 →
-      </button>
+      {/* Action buttons */}
+      <div style={{ display: "flex", gap: 10, flexShrink: 0, alignItems: "center" }}>
+        <button
+          className="btn-small blue"
+          style={{ width: 40, height: 40, display: "flex", alignItems: "center", justifyContent: "center", padding: 0 }}
+          onClick={handleRefresh}
+          disabled={refreshing}
+          title="刷新当前存档信息"
+        >
+          <span
+            className={refreshing ? "spin-refresh" : ""}
+            style={{ display: "inline-block", fontSize: 18 }}
+          >
+            🔄
+          </span>
+        </button>
+        <button
+          className="btn-primary"
+          style={{ fontSize: 14, padding: "10px 20px", flexShrink: 0 }}
+          onClick={onBackupNow}
+        >
+          立即备份 →
+        </button>
+      </div>
     </div>
   );
 };

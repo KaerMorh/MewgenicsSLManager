@@ -1,12 +1,14 @@
 use crate::backup_manager;
 use crate::config::Config;
 use crate::save_parser::{self, SaveSummary};
+use crate::watcher::SaveWatcher;
 use std::path::Path;
 use std::sync::Mutex;
-use tauri::State;
+use tauri::{AppHandle, State};
 
 pub struct AppState {
     pub config: Mutex<Config>,
+    pub watcher: SaveWatcher,
 }
 
 // ---- Config commands ----
@@ -126,6 +128,13 @@ pub fn check_files_identical(path_a: String, path_b: String) -> Result<bool, Str
     let hash_a = backup_manager::compute_file_hash(&path_a)?;
     let hash_b = backup_manager::compute_file_hash(&path_b)?;
     Ok(hash_a == hash_b)
+}
+
+// ---- File watcher ----
+
+#[tauri::command]
+pub fn start_watcher(save_dir: String, state: State<AppState>, app: AppHandle) {
+    state.watcher.start(&save_dir, app);
 }
 
 // ---- Duplicate detection ----

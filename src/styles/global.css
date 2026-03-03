@@ -307,3 +307,66 @@ select {
   gap: 12px;
   justify-content: center;
 }
+
+/* ---- Custom title bar ---- */
+.titlebar {
+  height: 32px;
+  background: var(--warm-cream);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  padding: 0 2px;
+}
+
+.titlebar-controls {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  height: 100%;
+}
+
+.titlebar-btn {
+  width: 40px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #c0c8d4;
+  transition: all 0.15s ease;
+  padding: 0;
+  outline: none;
+}
+
+.titlebar-btn:hover {
+  color: var(--dark-slate);
+  background: var(--light-gray);
+}
+
+.titlebar-btn:active {
+  background: #cbd5e1;
+}
+
+.titlebar-btn-close:hover {
+  color: #ffffff;
+  background: #ef4444;
+}
+
+.titlebar-btn-close:active {
+  background: #dc2626;
+}
+
+/* ---- Refresh spin ---- */
+@keyframes spin-once {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.spin-refresh {
+  animation: spin-once 0.5s ease;
+}

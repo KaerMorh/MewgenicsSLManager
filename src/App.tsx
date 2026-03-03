@@ -1,6 +1,8 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { invoke } from "@tauri-apps/api/core";
+import { listen } from "@tauri-apps/api/event";
 import { toast } from "sonner";
+import TitleBar from "./components/TitleBar";
 import TopNav from "./components/TopNav";
 import HeroSection from "./components/HeroSection";
 import BackupList from "./components/BackupList";
@@ -50,6 +52,36 @@ function App() {
   useEffect(() => {
     refresh();
   }, [refresh]);
+
+  // Start file system watcher when save_dir changes
+  useEffect(() => {
+    if (!config?.save_dir) return;
+    invoke("start_watcher", { saveDir: config.save_dir });
+  }, [config?.save_dir]);
+
+  // Listen for file-system "save-file-changed" events from Rust watcher
+  const refreshRef = useRef(refresh);
+  refreshRef.current = refresh;
+
+  useEffect(() => {
+    const unlisten = listen("save-file-changed", () => {
+      refreshRef.current();
+    });
+    return () => {
+      unlisten.then((fn) => fn());
+    };
+  }, []);
+
+  // Periodic polling based on config.auto_refresh_interval
+  useEffect(() => {
+    if (!config) return;
+    const seconds = config.auto_refresh_interval;
+    if (!seconds || seconds <= 0) return;
+    const id = setInterval(() => {
+      refreshRef.current();
+    }, seconds * 1000);
+    return () => clearInterval(id);
+  }, [config?.auto_refresh_interval, config]);
 
   if (!config) {
     return (
@@ -200,16 +232,26 @@ function App() {
   return (
     <div
       style={{
-        padding: "16px 30px 16px 20px",
-        maxWidth: 1400,
-        margin: "0 auto",
         display: "flex",
         flexDirection: "column",
-        gap: 16,
         height: "100vh",
         overflow: "hidden",
       }}
     >
+      <TitleBar />
+      <div
+        style={{
+          padding: "0 30px 16px 20px",
+          maxWidth: 1400,
+          margin: "0 auto",
+          display: "flex",
+          flexDirection: "column",
+          gap: 16,
+          flex: 1,
+          overflow: "hidden",
+          width: "100%",
+        }}
+      >
       <TopNav
         currentSlot={slot}
         onSlotChange={handleSlotChange}
@@ -222,6 +264,7 @@ function App() {
         slot={slot}
         backupCount={entries.length}
         onBackupNow={handleBackupNow}
+        onRefresh={refresh}
       />
 
       <BackupList
@@ -323,6 +366,7 @@ function App() {
           </div>
         </div>
       )}
+      </div>
     </div>
   );
 }

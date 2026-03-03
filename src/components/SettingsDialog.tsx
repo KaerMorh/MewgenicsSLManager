@@ -19,6 +19,7 @@ const SettingsDialog: React.FC<SettingsDialogProps> = ({
 }) => {
   const [saveDir, setSaveDir] = useState(config.save_dir);
   const [backupDir, setBackupDir] = useState(config.backup_dir);
+  const [refreshInterval, setRefreshInterval] = useState(config.auto_refresh_interval);
   const [dedupLoading, setDedupLoading] = useState(false);
   const [dedupConfirm, setDedupConfirm] = useState<{ groups: number; files: number } | null>(null);
 
@@ -37,12 +38,14 @@ const SettingsDialog: React.FC<SettingsDialogProps> = ({
       ...config,
       save_dir: saveDir.trim(),
       backup_dir: backupDir.trim(),
+      auto_refresh_interval: refreshInterval,
     });
   };
 
   const restoreDefaults = () => {
     setSaveDir("");
     setBackupDir("");
+    setRefreshInterval(30);
   };
 
   const handleOpenDir = async (dir: string, fallback?: string) => {
@@ -168,6 +171,36 @@ const SettingsDialog: React.FC<SettingsDialogProps> = ({
             >
               📂
             </button>
+          </div>
+        </div>
+
+        {/* Auto refresh section */}
+        <div style={{ marginBottom: 24 }}>
+          <label style={{ display: "block", marginBottom: 8, fontWeight: "bold" }}>
+            自动刷新间隔 (秒):
+          </label>
+          <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
+            <select
+              value={refreshInterval}
+              onChange={(e) => setRefreshInterval(Number(e.target.value))}
+              style={{ minWidth: 160 }}
+            >
+              <option value={0}>关闭定时轮询</option>
+              <option value={10}>10 秒</option>
+              <option value={15}>15 秒</option>
+              <option value={30}>30 秒 (默认)</option>
+              <option value={60}>60 秒</option>
+              <option value={120}>120 秒</option>
+            </select>
+            <span
+              className="tag tag-home"
+              style={{ fontSize: 11 }}
+            >
+              文件监听始终开启
+            </span>
+          </div>
+          <div style={{ color: "#64748b", fontSize: 12, fontWeight: "bold", marginTop: 4 }}>
+            定时轮询会按间隔自动刷新存档信息；文件监听会在存档文件被修改时立即刷新
           </div>
         </div>
 

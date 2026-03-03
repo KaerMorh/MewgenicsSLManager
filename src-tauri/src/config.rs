@@ -17,6 +17,12 @@ pub struct Config {
     pub current_slot: i32,
     pub sort_key: String,
     pub sort_ascending: bool,
+    #[serde(default = "default_refresh_interval")]
+    pub auto_refresh_interval: u32,
+}
+
+fn default_refresh_interval() -> u32 {
+    30
 }
 
 impl Default for Config {
@@ -28,6 +34,7 @@ impl Default for Config {
             current_slot: 1,
             sort_key: "time".to_string(),
             sort_ascending: false,
+            auto_refresh_interval: default_refresh_interval(),
         }
     }
 }

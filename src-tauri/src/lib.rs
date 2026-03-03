@@ -3,10 +3,12 @@ mod commands;
 mod config;
 mod lz4;
 mod save_parser;
+mod watcher;
 
 use commands::AppState;
 use config::Config;
 use std::sync::Mutex;
+use watcher::SaveWatcher;
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
@@ -16,6 +18,7 @@ pub fn run() {
         .plugin(tauri_plugin_dialog::init())
         .manage(AppState {
             config: Mutex::new(cfg),
+            watcher: SaveWatcher::new(),
         })
         .invoke_handler(tauri::generate_handler![
             commands::get_config,
@@ -33,6 +36,7 @@ pub fn run() {
             commands::check_files_identical,
             commands::scan_duplicates,
             commands::dedup_backups,
+            commands::start_watcher,
         ])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");

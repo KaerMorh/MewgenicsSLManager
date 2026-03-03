@@ -42,6 +42,7 @@ export interface Config {
   current_slot: number;
   sort_key: string;
   sort_ascending: boolean;
+  auto_refresh_interval: number;
 }
 
 export interface ScanResult {
