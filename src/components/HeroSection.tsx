@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useI18n } from "../i18n";
 import type { SaveSummary } from "../types";
 
 interface HeroSectionProps {
@@ -16,6 +17,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   onBackupNow,
   onRefresh,
 }) => {
+  const { t } = useI18n();
   const [refreshing, setRefreshing] = useState(false);
 
   const handleRefresh = async () => {
@@ -31,7 +33,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
   const dayInfo = exists
     ? `Day ${summary!.current_day} · 🐱${summary!.cat_alive} 💀${summary!.cat_dead} · 💰${summary!.house_gold} · 🍖${summary!.house_food}`
-    : "未检测到存档";
+    : t("hero.noSave");
 
   const adventureText = () => {
     if (!summary || !exists) return null;
@@ -41,8 +43,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       );
       return "🗡️ " + parts.join(", ");
     }
-    if (summary.in_adventure) return "🗡️ 冒险中";
-    return "🏠 在家休息";
+    if (summary.in_adventure) return "🗡️ " + t("hero.inAdventure");
+    return "🏠 " + t("hero.atHome");
   };
 
   return (
@@ -56,7 +58,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         flexShrink: 0,
       }}
     >
-      {/* Save icon */}
       <span
         style={{
           background: "#bae6fd",
@@ -74,11 +75,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         ▶
       </span>
 
-      {/* Save info */}
       <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 6, minWidth: 0 }}>
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           <span style={{ fontSize: 17, fontWeight: 900 }}>
-            当前存档 (Slot {slot})
+            {t("hero.currentSave", { slot })}
           </span>
           {exists && adventureText() && (
             <span
@@ -93,10 +93,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         </div>
       </div>
 
-      {/* Progress */}
       <div style={{ width: 160, flexShrink: 0, display: "flex", flexDirection: "column", gap: 4 }}>
         <div style={{ display: "flex", justifyContent: "space-between" }}>
-          <span style={{ fontSize: 11, fontWeight: 900, color: "#64748b" }}>完成度</span>
+          <span style={{ fontSize: 11, fontWeight: 900, color: "#64748b" }}>{t("hero.progress")}</span>
           <span style={{ fontSize: 11, fontWeight: 900, color: "#22c55e" }}>{pct}%</span>
         </div>
         <div className="progress-bar" style={{ height: 14 }}>
@@ -104,7 +103,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         </div>
       </div>
 
-      {/* Divider */}
       <div
         style={{
           width: 3,
@@ -115,20 +113,18 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         }}
       />
 
-      {/* Stats */}
       <div style={{ display: "flex", gap: 20, flexShrink: 0 }}>
-        <MiniStat value={String(backupCount)} label="备份" />
-        <MiniStat value={`${pct}%`} label="完成度" />
+        <MiniStat value={String(backupCount)} label={t("hero.backups")} />
+        <MiniStat value={`${pct}%`} label={t("hero.progress")} />
       </div>
 
-      {/* Action buttons */}
       <div style={{ display: "flex", gap: 10, flexShrink: 0, alignItems: "center" }}>
         <button
           className="btn-small blue"
           style={{ width: 40, height: 40, display: "flex", alignItems: "center", justifyContent: "center", padding: 0 }}
           onClick={handleRefresh}
           disabled={refreshing}
-          title="刷新当前存档信息"
+          title={t("hero.refreshTitle")}
         >
           <span
             className={refreshing ? "spin-refresh" : ""}
@@ -142,7 +138,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           style={{ fontSize: 14, padding: "10px 20px", flexShrink: 0 }}
           onClick={onBackupNow}
         >
-          立即备份 →
+          {t("hero.backupNow")}
         </button>
       </div>
     </div>

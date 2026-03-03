@@ -1,9 +1,11 @@
 import React from "react";
 import { getCurrentWindow } from "@tauri-apps/api/window";
+import { useI18n } from "../i18n";
 
 const appWindow = getCurrentWindow();
 
 const TitleBar: React.FC = () => {
+  const { t } = useI18n();
   return (
     <div
       className="titlebar"
@@ -13,7 +15,7 @@ const TitleBar: React.FC = () => {
         <button
           className="titlebar-btn"
           onClick={() => appWindow.minimize()}
-          title="最小化"
+          title={t("titlebar.minimize")}
         >
           <svg width="10" height="1" viewBox="0 0 10 1">
             <rect width="10" height="1" fill="currentColor" />
@@ -22,7 +24,7 @@ const TitleBar: React.FC = () => {
         <button
           className="titlebar-btn"
           onClick={() => appWindow.toggleMaximize()}
-          title="最大化"
+          title={t("titlebar.maximize")}
         >
           <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
             <rect x="0.5" y="0.5" width="9" height="9" stroke="currentColor" strokeWidth="1" />
@@ -31,7 +33,7 @@ const TitleBar: React.FC = () => {
         <button
           className="titlebar-btn titlebar-btn-close"
           onClick={() => appWindow.close()}
-          title="关闭"
+          title={t("titlebar.close")}
         >
           <svg width="10" height="10" viewBox="0 0 10 10">
             <line x1="1" y1="1" x2="9" y2="9" stroke="currentColor" strokeWidth="1.2" />

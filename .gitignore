@@ -8,6 +8,10 @@ dist/
 # Generated
 app-icon.png
 
+# Project files
+progress.txt
+icon.jpg
+
 # OS
 .DS_Store
 Thumbs.db

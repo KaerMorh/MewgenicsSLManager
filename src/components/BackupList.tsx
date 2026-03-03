@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { invoke } from "@tauri-apps/api/core";
+import { useI18n } from "../i18n";
 import BackupItem from "./BackupItem";
 import type { BackupEntry, SaveSummary } from "../types";
 
@@ -26,6 +27,7 @@ const BackupList: React.FC<BackupListProps> = ({
   onDelete,
   onEditNote,
 }) => {
+  const { t } = useI18n();
   const [expandedIdx, setExpandedIdx] = useState<number | null>(null);
   const [summaries, setSummaries] = useState<Record<string, SaveSummary>>({});
   const [page, setPage] = useState(0);
@@ -90,7 +92,6 @@ const BackupList: React.FC<BackupListProps> = ({
 
   return (
     <div style={{ flex: 1, display: "flex", flexDirection: "column", minHeight: 0 }}>
-      {/* Header */}
       <div
         style={{
           display: "flex",
@@ -101,29 +102,28 @@ const BackupList: React.FC<BackupListProps> = ({
         }}
       >
         <h2 style={{ fontSize: 20, fontWeight: 900, flex: 1 }}>
-          备份目录
+          {t("list.title")}
           <span style={{ fontSize: 14, fontWeight: "bold", color: "#64748b", marginLeft: 12 }}>
-            共 {entries.length} 个
+            {t("list.total", { count: entries.length })}
           </span>
         </h2>
         <select
           value={sortKey}
           onChange={(e) => onSortChange(e.target.value, sortAscending)}
         >
-          <option value="time">按时间排序</option>
-          <option value="day">按天数排序</option>
-          <option value="adventure">按冒险状态排序</option>
+          <option value="time">{t("list.sortByTime")}</option>
+          <option value="day">{t("list.sortByDay")}</option>
+          <option value="adventure">{t("list.sortByAdventure")}</option>
         </select>
         <select
           value={sortAscending ? "asc" : "desc"}
           onChange={(e) => onSortChange(sortKey, e.target.value === "asc")}
         >
-          <option value="desc">▼ 降序</option>
-          <option value="asc">▲ 升序</option>
+          <option value="desc">{t("list.descending")}</option>
+          <option value="asc">{t("list.ascending")}</option>
         </select>
       </div>
 
-      {/* Items */}
       <div
         style={{
           flex: 1,
@@ -162,12 +162,11 @@ const BackupList: React.FC<BackupListProps> = ({
               padding: 40,
             }}
           >
-            暂无备份文件
+            {t("list.empty")}
           </div>
         )}
       </div>
 
-      {/* Pagination */}
       {totalPages > 1 && (
         <div
           style={{
@@ -185,7 +184,7 @@ const BackupList: React.FC<BackupListProps> = ({
             disabled={safePage === 0}
             onClick={() => { setPage(safePage - 1); setExpandedIdx(null); }}
           >
-            ◀ 上一页
+            {t("list.prevPage")}
           </button>
 
           {Array.from({ length: totalPages }, (_, i) => (
@@ -216,7 +215,7 @@ const BackupList: React.FC<BackupListProps> = ({
             disabled={safePage >= totalPages - 1}
             onClick={() => { setPage(safePage + 1); setExpandedIdx(null); }}
           >
-            下一页 ▶
+            {t("list.nextPage")}
           </button>
         </div>
       )}

@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback, useRef } from "react";
 import { invoke } from "@tauri-apps/api/core";
 import { listen } from "@tauri-apps/api/event";
 import { toast } from "sonner";
+import { useI18n } from "./i18n";
 import TitleBar from "./components/TitleBar";
 import TopNav from "./components/TopNav";
 import HeroSection from "./components/HeroSection";
@@ -12,6 +13,7 @@ import type { Config, SaveSummary, BackupEntry } from "./types";
 
 
 function App() {
+  const { t } = useI18n();
   const [config, setConfig] = useState<Config | null>(null);
   const [summary, setSummary] = useState<SaveSummary | null>(null);
   const [entries, setEntries] = useState<BackupEntry[]>([]);
@@ -29,12 +31,10 @@ function App() {
   } | null>(null);
   const [noteText, setNoteText] = useState("");
 
-  // Load config on mount
   useEffect(() => {
     invoke<Config>("get_config").then(setConfig);
   }, []);
 
-  // Refresh data when config changes
   const refresh = useCallback(async () => {
     if (!config) return;
     const slot = config.current_slot;
@@ -53,13 +53,11 @@ function App() {
     refresh();
   }, [refresh]);
 
-  // Start file system watcher when save_dir changes
   useEffect(() => {
     if (!config?.save_dir) return;
     invoke("start_watcher", { saveDir: config.save_dir });
   }, [config?.save_dir]);
 
-  // Listen for file-system "save-file-changed" events from Rust watcher
   const refreshRef = useRef(refresh);
   refreshRef.current = refresh;
 
@@ -72,7 +70,6 @@ function App() {
     };
   }, []);
 
-  // Periodic polling based on config.auto_refresh_interval
   useEffect(() => {
     if (!config) return;
     const seconds = config.auto_refresh_interval;
@@ -95,7 +92,7 @@ function App() {
           fontWeight: 900,
         }}
       >
-        加载中...
+        {t("loading")}
       </div>
     );
   }
@@ -118,17 +115,17 @@ function App() {
         slot,
       });
       const filename = result.split("\\").pop() || result.split("/").pop() || result;
-      toast.success("备份成功！", { description: `已备份到: ${filename}` });
+      toast.success(t("toast.backupSuccess"), { description: t("toast.backupSuccessDesc", { filename }) });
       refresh();
     } catch (e) {
-      toast.error("备份失败", { description: String(e) });
+      toast.error(t("toast.backupFail"), { description: String(e) });
     }
   };
 
   const handleLoad = (backupPath: string) => {
     setConfirmDialog({
-      title: "确认加载",
-      message: "加载此备份将自动备份当前存档，然后替换为所选备份。\n继续？",
+      title: t("dialog.confirmLoad"),
+      message: t("dialog.confirmLoadMsg"),
       onConfirm: async () => {
         setConfirmDialog(null);
         try {
@@ -138,10 +135,10 @@ function App() {
             backupDir,
             slot,
           });
-          toast.success("加载成功！", { description: "已替换当前存档。" });
+          toast.success(t("toast.loadSuccess"), { description: t("toast.loadSuccessDesc") });
           refresh();
         } catch (e) {
-          toast.error("加载失败", { description: String(e) });
+          toast.error(t("toast.loadFail"), { description: String(e) });
         }
       },
     });
@@ -150,26 +147,26 @@ function App() {
   const handleCopy = async (backupPath: string) => {
     try {
       await invoke<string>("copy_backup", { srcPath: backupPath, backupDir });
-      toast.success("复制成功！");
+      toast.success(t("toast.copySuccess"));
       refresh();
     } catch (e) {
-      toast.error("复制失败", { description: String(e) });
+      toast.error(t("toast.copyFail"), { description: String(e) });
     }
   };
 
   const handleDelete = (backupPath: string) => {
     const filename = backupPath.split("\\").pop() || backupPath.split("/").pop() || backupPath;
     setConfirmDialog({
-      title: "确认删除",
-      message: `确定删除备份?\n${filename}`,
+      title: t("dialog.confirmDelete"),
+      message: t("dialog.confirmDeleteMsg", { filename }),
       onConfirm: async () => {
         setConfirmDialog(null);
         try {
           await invoke("delete_backup", { path: backupPath });
-          toast.success("删除成功！");
+          toast.success(t("toast.deleteSuccess"));
           refresh();
         } catch (e) {
-          toast.error("删除失败", { description: String(e) });
+          toast.error(t("toast.deleteFail"), { description: String(e) });
         }
       },
     });
@@ -191,10 +188,10 @@ function App() {
         filename: noteDialog.filename,
         note: noteText,
       });
-      toast.success("备注已保存！");
+      toast.success(t("toast.noteSaved"));
       refresh();
     } catch (e) {
-      toast.error("保存备注失败", { description: String(e) });
+      toast.error(t("toast.notesFail"), { description: String(e) });
     }
     setNoteDialog(null);
   };
@@ -203,7 +200,7 @@ function App() {
     await invoke("save_config", { config: newConfig });
     setConfig(newConfig);
     setShowSettings(false);
-    toast.success("设置已保存");
+    toast.success(t("toast.settingsSaved"));
   };
 
   const handleSortChange = async (key: string, ascending: boolean) => {
@@ -220,10 +217,10 @@ function App() {
         backupDir,
         slot,
       });
-      toast.success("导入成功！");
+      toast.success(t("toast.importSuccess"));
       refresh();
     } catch (e) {
-      toast.error("导入失败", { description: String(e) });
+      toast.error(t("toast.importFail"), { description: String(e) });
     }
   };
 
@@ -278,7 +275,6 @@ function App() {
         onEditNote={handleEditNote}
       />
 
-      {/* Settings dialog */}
       {showSettings && (
         <SettingsDialog
           config={config}
@@ -288,7 +284,6 @@ function App() {
         />
       )}
 
-      {/* Game backups dialog */}
       {showGameBackups && (
         <GameBackupDialog
           gameBackupDir={gameBackupDirPath}
@@ -298,7 +293,6 @@ function App() {
         />
       )}
 
-      {/* Confirm dialog */}
       {confirmDialog && (
         <div className="dialog-overlay" onClick={() => setConfirmDialog(null)}>
           <div
@@ -313,29 +307,28 @@ function App() {
                 style={{ padding: "8px 20px", fontSize: 14 }}
                 onClick={() => setConfirmDialog(null)}
               >
-                取消
+                {t("dialog.cancel")}
               </button>
               <button
                 className="btn-primary"
                 style={{ padding: "8px 20px", fontSize: 14 }}
                 onClick={confirmDialog.onConfirm}
               >
-                确认
+                {t("dialog.confirm")}
               </button>
             </div>
           </div>
         </div>
       )}
 
-      {/* Note edit dialog */}
       {noteDialog && (
         <div className="dialog-overlay" onClick={() => setNoteDialog(null)}>
           <div className="dialog-content" style={{ minWidth: 400 }} onClick={(e) => e.stopPropagation()}>
             <h3 style={{ fontSize: 20, fontWeight: 900, marginBottom: 16 }}>
-              编辑备注
+              {t("dialog.editNote")}
             </h3>
             <p style={{ color: "#64748b", fontWeight: "bold", marginBottom: 12 }}>
-              为 {noteDialog.filename} 添加备注：
+              {t("dialog.editNoteMsg", { filename: noteDialog.filename })}
             </p>
             <input
               type="text"
@@ -353,14 +346,14 @@ function App() {
                 style={{ padding: "8px 16px", fontSize: 14 }}
                 onClick={() => setNoteDialog(null)}
               >
-                取消
+                {t("dialog.cancel")}
               </button>
               <button
                 className="btn-primary"
                 style={{ padding: "8px 16px", fontSize: 14 }}
                 onClick={handleSaveNote}
               >
-                保存
+                {t("dialog.save")}
               </button>
             </div>
           </div>

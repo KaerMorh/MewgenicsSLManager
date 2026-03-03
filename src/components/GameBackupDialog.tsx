@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { invoke } from "@tauri-apps/api/core";
+import { useI18n } from "../i18n";
 import type { BackupEntry, SaveSummary } from "../types";
 
 interface GameBackupDialogProps {
@@ -15,6 +16,7 @@ const GameBackupDialog: React.FC<GameBackupDialogProps> = ({
   onImport,
   onClose,
 }) => {
+  const { t } = useI18n();
   const [entries, setEntries] = useState<BackupEntry[]>([]);
   const [summaries, setSummaries] = useState<Record<string, SaveSummary>>({});
   const [confirmPath, setConfirmPath] = useState<string | null>(null);
@@ -29,7 +31,6 @@ const GameBackupDialog: React.FC<GameBackupDialogProps> = ({
       );
       setEntries(sorted);
 
-      // Parse summaries in background
       (async () => {
         for (const entry of sorted) {
           try {
@@ -64,7 +65,7 @@ const GameBackupDialog: React.FC<GameBackupDialogProps> = ({
         onClick={(e) => e.stopPropagation()}
       >
         <h2 style={{ fontSize: 24, fontWeight: 900, marginBottom: 8 }}>
-          游戏自动备份
+          {t("gameBackup.title")}
         </h2>
         <p
           style={{
@@ -73,7 +74,7 @@ const GameBackupDialog: React.FC<GameBackupDialogProps> = ({
             marginBottom: 16,
           }}
         >
-          选择一个游戏备份导入（导入时会自动备份当前存档）
+          {t("gameBackup.desc")}
         </p>
 
         <div
@@ -95,7 +96,7 @@ const GameBackupDialog: React.FC<GameBackupDialogProps> = ({
                 padding: 40,
               }}
             >
-              未找到游戏备份文件
+              {t("gameBackup.empty")}
             </div>
           )}
           {entries.map((entry) => {
@@ -103,8 +104,8 @@ const GameBackupDialog: React.FC<GameBackupDialogProps> = ({
             const timeStr = formatTime(entry.backup_time);
             let infoText = "";
             if (s?.exists) {
-              const status = s.in_adventure ? "🗡️ 冒险中" : "🏠 在家";
-              infoText = `Day ${s.current_day}  |  🐱 猫 x${s.cat_count}  |  ${status}`;
+              const status = s.in_adventure ? t("gameBackup.inAdventure") : t("gameBackup.atHome");
+              infoText = `Day ${s.current_day}  |  ${t("gameBackup.catCount", { count: s.cat_count })}  |  ${status}`;
             }
             return (
               <div
@@ -131,7 +132,7 @@ const GameBackupDialog: React.FC<GameBackupDialogProps> = ({
                   style={{ padding: "6px 16px", fontSize: 14 }}
                   onClick={() => handleImport(entry.path)}
                 >
-                  导入
+                  {t("gameBackup.import")}
                 </button>
               </div>
             );
@@ -150,19 +151,18 @@ const GameBackupDialog: React.FC<GameBackupDialogProps> = ({
             style={{ padding: "8px 16px", fontSize: 14 }}
             onClick={onClose}
           >
-            关闭
+            {t("gameBackup.close")}
           </button>
         </div>
 
-        {/* Confirm dialog */}
         {confirmPath && (
           <div className="dialog-overlay" onClick={() => setConfirmPath(null)}>
             <div className="confirm-dialog" onClick={(e) => e.stopPropagation()}>
-              <h3>确认导入</h3>
+              <h3>{t("gameBackup.confirmTitle")}</h3>
               <p>
-                导入此备份将自动备份当前存档，然后将此备份加载为活跃存档。
+                {t("gameBackup.confirmMsg")}
                 <br />
-                继续？
+                {t("gameBackup.confirmContinue")}
               </p>
               <div className="btn-row">
                 <button
@@ -170,14 +170,14 @@ const GameBackupDialog: React.FC<GameBackupDialogProps> = ({
                   style={{ padding: "8px 20px", fontSize: 14 }}
                   onClick={() => setConfirmPath(null)}
                 >
-                  取消
+                  {t("dialog.cancel")}
                 </button>
                 <button
                   className="btn-primary"
                   style={{ padding: "8px 20px", fontSize: 14 }}
                   onClick={confirmImport}
                 >
-                  确认
+                  {t("dialog.confirm")}
                 </button>
               </div>
             </div>

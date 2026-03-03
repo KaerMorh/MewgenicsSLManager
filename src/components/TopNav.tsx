@@ -1,4 +1,5 @@
 import React from "react";
+import { useI18n } from "../i18n";
 
 interface TopNavProps {
   currentSlot: number;
@@ -13,6 +14,8 @@ const TopNav: React.FC<TopNavProps> = ({
   onSettingsClick,
   onGameBackupClick,
 }) => {
+  const { lang, setLang, t } = useI18n();
+
   return (
     <div style={{ padding: "0 0 0 0" }}>
       <div
@@ -68,7 +71,7 @@ const TopNav: React.FC<TopNavProps> = ({
                 fontFamily: "inherit",
               }}
             >
-              槽位 {slot}
+              {t("nav.slot", { slot })}
             </button>
           ))}
         </div>
@@ -77,11 +80,18 @@ const TopNav: React.FC<TopNavProps> = ({
 
         {/* Actions */}
         <div style={{ display: "flex", gap: 16, alignItems: "center" }}>
+          <button
+            className="btn-nav"
+            onClick={() => setLang(lang === "zh" ? "en" : "zh")}
+            style={{ fontSize: 15, fontWeight: 900 }}
+          >
+            {t("nav.language")}
+          </button>
           <button className="btn-nav" onClick={onSettingsClick}>
-            设置 (Settings)
+            {t("nav.settings")}
           </button>
           <button className="btn-nav-primary" onClick={onGameBackupClick}>
-            游戏备份
+            {t("nav.gameBackups")}
           </button>
         </div>
       </div>

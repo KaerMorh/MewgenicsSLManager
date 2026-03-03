@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { invoke } from "@tauri-apps/api/core";
+import { useI18n } from "../i18n";
 import type { BackupEntry, SaveSummary, CatSummary } from "../types";
 
 interface BackupItemProps {
@@ -63,6 +64,7 @@ const BackupItem: React.FC<BackupItemProps> = ({
   onEditNote,
   summary,
 }) => {
+  const { t } = useI18n();
   const [detailSummary, setDetailSummary] = useState<SaveSummary | null>(null);
 
   useEffect(() => {
@@ -78,11 +80,11 @@ const BackupItem: React.FC<BackupItemProps> = ({
   const timeStr = formatTime(entry.backup_time);
 
   const statusTag = () => {
-    if (!s || !s.exists) return <span className="tag tag-home">解析中...</span>;
+    if (!s || !s.exists) return <span className="tag tag-home">{t("item.parsing")}</span>;
     return s.in_adventure ? (
-      <span className="tag tag-adventure">冒险中</span>
+      <span className="tag tag-adventure">{t("item.inAdventure")}</span>
     ) : (
-      <span className="tag tag-home">在家</span>
+      <span className="tag tag-home">{t("item.atHome")}</span>
     );
   };
 
@@ -95,10 +97,10 @@ const BackupItem: React.FC<BackupItemProps> = ({
       const parts = s.adventure_cats.map(
         (c) => `${c.name}(Lv${c.level}${c.cat_class ? " " + c.cat_class : ""})`
       );
-      return "🗡️ 探险小队: " + parts.join(", ");
+      return t("item.squad") + parts.join(", ");
     }
-    if (s.in_adventure) return "🗡️ 冒险中 (队伍信息不可用)";
-    return "🛋️ 猫咪们都在家休息~";
+    if (s.in_adventure) return t("item.adventureNoInfo");
+    return t("item.allHome");
   };
 
   return (
@@ -113,7 +115,6 @@ const BackupItem: React.FC<BackupItemProps> = ({
         overflow: "hidden",
       }}
     >
-      {/* Header */}
       <div
         onClick={onToggle}
         style={{
@@ -123,7 +124,6 @@ const BackupItem: React.FC<BackupItemProps> = ({
           gap: 24,
         }}
       >
-        {/* Icon + Info */}
         <div style={{ display: "flex", alignItems: "center", gap: 16, flex: 1 }}>
           <span
             style={{
@@ -156,7 +156,7 @@ const BackupItem: React.FC<BackupItemProps> = ({
                     fontWeight: 900,
                   }}
                 >
-                  副本
+                  {t("item.copy")}
                 </span>
               )}
               {statusTag()}
@@ -182,7 +182,6 @@ const BackupItem: React.FC<BackupItemProps> = ({
           </div>
         </div>
 
-        {/* Middle: squad */}
         <div
           style={{
             flex: 1,
@@ -195,11 +194,10 @@ const BackupItem: React.FC<BackupItemProps> = ({
         >
           <div style={{ fontSize: 13, fontWeight: 900 }}>{squadText()}</div>
           <div style={{ fontSize: 12, fontWeight: "bold", color: "#64748b" }}>
-            文件名: {entry.filename}
+            {t("item.filename", { filename: entry.filename })}
           </div>
         </div>
 
-        {/* Right: arrow + actions */}
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 8 }}>
           <span style={{ fontSize: 10, fontWeight: 900, color: "#94a3b8" }}>
             {isExpanded ? "▲" : "▼"}
@@ -210,28 +208,28 @@ const BackupItem: React.FC<BackupItemProps> = ({
           >
             <button
               className="btn-small white"
-              title="备注"
+              title={t("item.noteBtn")}
               onClick={() => onEditNote(entry.path)}
             >
               📝
             </button>
             <button
               className="btn-small blue"
-              title="加载"
+              title={t("item.loadBtn")}
               onClick={() => onLoad(entry.path)}
             >
               ⬇️
             </button>
             <button
               className="btn-small white"
-              title="复制"
+              title={t("item.copyBtn")}
               onClick={() => onCopy(entry.path)}
             >
               📋
             </button>
             <button
               className="btn-small red"
-              title="删除"
+              title={t("item.deleteBtn")}
               onClick={() => onDelete(entry.path)}
             >
               🗑️
@@ -240,12 +238,10 @@ const BackupItem: React.FC<BackupItemProps> = ({
         </div>
       </div>
 
-      {/* Expandable detail */}
       {isExpanded && (
         <div>
           <div style={{ height: 3, background: "#e2e8f0", margin: "0 8px" }} />
           <div style={{ padding: "20px 24px 8px 24px" }}>
-            {/* Stats grid */}
             <div
               style={{
                 display: "grid",
@@ -254,21 +250,20 @@ const BackupItem: React.FC<BackupItemProps> = ({
                 marginBottom: 16,
               }}
             >
-              <StatCell icon="🏠" label="生存天数" value={ds?.exists ? String(ds.current_day) : "—"} />
-              <StatCell icon="💰" label="金币" value={ds?.exists ? ds.house_gold.toLocaleString() : "—"} />
-              <StatCell icon="🍖" label="食物" value={ds?.exists ? ds.house_food.toLocaleString() : "—"} />
-              <StatCell icon="🐱" label="存活猫咪" value={ds?.exists ? String(ds.cat_alive) : "—"} />
-              <StatCell icon="💀" label="死亡猫咪" value={ds?.exists ? String(ds.cat_dead) : "—"} />
-              <StatCell icon="📈" label="完成度" value={ds?.exists ? `${ds.save_percent}%` : "—"} />
+              <StatCell icon="🏠" label={t("item.daysSurvived")} value={ds?.exists ? String(ds.current_day) : "—"} />
+              <StatCell icon="💰" label={t("item.gold")} value={ds?.exists ? ds.house_gold.toLocaleString() : "—"} />
+              <StatCell icon="🍖" label={t("item.food")} value={ds?.exists ? ds.house_food.toLocaleString() : "—"} />
+              <StatCell icon="🐱" label={t("item.aliveCats")} value={ds?.exists ? String(ds.cat_alive) : "—"} />
+              <StatCell icon="💀" label={t("item.deadCats")} value={ds?.exists ? String(ds.cat_dead) : "—"} />
+              <StatCell icon="📈" label={t("item.progress")} value={ds?.exists ? `${ds.save_percent}%` : "—"} />
               <StatCell
                 icon="📍"
-                label="当前状态"
-                value={ds?.exists ? (ds.in_adventure ? "冒险中" : "在家休息") : "—"}
+                label={t("item.currentStatus")}
+                value={ds?.exists ? (ds.in_adventure ? t("item.statusAdventure") : t("item.statusHome")) : "—"}
                 color={ds?.exists ? (ds.in_adventure ? "#ef4444" : "#22c55e") : undefined}
               />
             </div>
 
-            {/* Adventure cats */}
             {ds?.exists && ds.adventure_cats.length > 0 && (
               <div style={{ marginBottom: 16 }}>
                 <div
@@ -279,7 +274,7 @@ const BackupItem: React.FC<BackupItemProps> = ({
                     marginBottom: 8,
                   }}
                 >
-                  🗡️ 探险小队
+                  {t("item.squadTitle")}
                 </div>
                 <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
                   {ds.adventure_cats.map((cat, i) => (
@@ -289,7 +284,6 @@ const BackupItem: React.FC<BackupItemProps> = ({
               </div>
             )}
 
-            {/* Filename */}
             <div
               style={{
                 fontSize: 11,
