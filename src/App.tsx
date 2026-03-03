@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { invoke } from "@tauri-apps/api/core";
+import { toast } from "sonner";
 import TopNav from "./components/TopNav";
 import HeroSection from "./components/HeroSection";
 import BackupList from "./components/BackupList";
@@ -85,10 +86,10 @@ function App() {
         slot,
       });
       const filename = result.split("\\").pop() || result.split("/").pop() || result;
-      alert(`备份成功！\n已备份到: ${filename}`);
+      toast.success("备份成功！", { description: `已备份到: ${filename}` });
       refresh();
     } catch (e) {
-      alert(`备份失败: ${e}`);
+      toast.error("备份失败", { description: String(e) });
     }
   };
 
@@ -105,9 +106,10 @@ function App() {
             backupDir,
             slot,
           });
+          toast.success("加载成功！", { description: "已替换当前存档。" });
           refresh();
         } catch (e) {
-          alert(`加载失败: ${e}`);
+          toast.error("加载失败", { description: String(e) });
         }
       },
     });
@@ -116,9 +118,10 @@ function App() {
   const handleCopy = async (backupPath: string) => {
     try {
       await invoke<string>("copy_backup", { srcPath: backupPath, backupDir });
+      toast.success("复制成功！");
       refresh();
     } catch (e) {
-      alert(`复制失败: ${e}`);
+      toast.error("复制失败", { description: String(e) });
     }
   };
 
@@ -131,9 +134,10 @@ function App() {
         setConfirmDialog(null);
         try {
           await invoke("delete_backup", { path: backupPath });
+          toast.success("删除成功！");
           refresh();
         } catch (e) {
-          alert(`删除失败: ${e}`);
+          toast.error("删除失败", { description: String(e) });
         }
       },
     });
@@ -155,9 +159,10 @@ function App() {
         filename: noteDialog.filename,
         note: noteText,
       });
+      toast.success("备注已保存！");
       refresh();
     } catch (e) {
-      alert(`保存备注失败: ${e}`);
+      toast.error("保存备注失败", { description: String(e) });
     }
     setNoteDialog(null);
   };
@@ -166,6 +171,7 @@ function App() {
     await invoke("save_config", { config: newConfig });
     setConfig(newConfig);
     setShowSettings(false);
+    toast.success("设置已保存");
   };
 
   const handleSortChange = async (key: string, ascending: boolean) => {
@@ -182,9 +188,10 @@ function App() {
         backupDir,
         slot,
       });
+      toast.success("导入成功！");
       refresh();
     } catch (e) {
-      alert(`导入失败: ${e}`);
+      toast.error("导入失败", { description: String(e) });
     }
   };
 
