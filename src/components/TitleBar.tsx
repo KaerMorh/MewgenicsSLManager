@@ -5,7 +5,10 @@ const appWindow = getCurrentWindow();
 
 const TitleBar: React.FC = () => {
   return (
-    <div className="titlebar" data-tauri-drag-region>
+    <div
+      className="titlebar"
+      data-tauri-drag-region
+    >
       <div className="titlebar-controls">
         <button
           className="titlebar-btn"

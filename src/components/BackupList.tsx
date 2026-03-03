@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { invoke } from "@tauri-apps/api/core";
 import BackupItem from "./BackupItem";
 import type { BackupEntry, SaveSummary } from "../types";
@@ -30,25 +30,32 @@ const BackupList: React.FC<BackupListProps> = ({
   const [summaries, setSummaries] = useState<Record<string, SaveSummary>>({});
   const [page, setPage] = useState(0);
 
+  const fetchedPaths = useRef<Set<string>>(new Set());
+
   useEffect(() => {
-    setSummaries({});
-    setExpandedIdx(null);
-    setPage(0);
     let cancelled = false;
 
     async function parseAll() {
-      for (const entry of entries) {
+      const missingEntries = entries.filter((e) => !fetchedPaths.current.has(e.path));
+      if (missingEntries.length === 0) return;
+
+      const newSummaries: Record<string, SaveSummary> = {};
+
+      for (const entry of missingEntries) {
         if (cancelled) break;
+        fetchedPaths.current.add(entry.path);
         try {
           const s = await invoke<SaveSummary>("parse_backup_summary", {
             path: entry.path,
           });
-          if (!cancelled) {
-            setSummaries((prev) => ({ ...prev, [entry.path]: s }));
-          }
+          newSummaries[entry.path] = s;
         } catch {
-          // ignore parse errors
+          fetchedPaths.current.delete(entry.path);
         }
+      }
+
+      if (!cancelled && Object.keys(newSummaries).length > 0) {
+        setSummaries((prev) => ({ ...prev, ...newSummaries }));
       }
     }
 
