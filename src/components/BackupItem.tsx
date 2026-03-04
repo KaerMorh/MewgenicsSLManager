@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { invoke } from "@tauri-apps/api/core";
 import { useI18n } from "../i18n";
-import type { BackupEntry, SaveSummary, CatSummary } from "../types";
+import type { BackupEntry, SaveSummary } from "../types";
 
 interface BackupItemProps {
   entry: BackupEntry;
@@ -12,46 +12,6 @@ interface BackupItemProps {
   onDelete: (path: string) => void;
   onEditNote: (path: string) => void;
   summary: SaveSummary | null;
-}
-
-const CAT_CLASS_COLORS: Record<string, [string, string]> = {
-  Fighter: ["#fef2f2", "#fca5a5"],
-  Mage: ["#eff6ff", "#93c5fd"],
-  Hunter: ["#f0fdf4", "#86efac"],
-  Thief: ["#fefce8", "#fde047"],
-  Tank: ["#faf5ff", "#d8b4fe"],
-  Medic: ["#fdf2f8", "#f9a8d4"],
-  Monk: ["#fff7ed", "#fdba74"],
-  Butcher: ["#fef2f2", "#fca5a5"],
-  Druid: ["#f0fdf4", "#86efac"],
-  Tinkerer: ["#f0f9ff", "#7dd3fc"],
-  Necromancer: ["#faf5ff", "#c084fc"],
-  Psychic: ["#fdf4ff", "#e879f9"],
-  Jester: ["#fffbeb", "#fcd34d"],
-};
-
-function CatCard({ cat }: { cat: CatSummary }) {
-  const [bg, border] = CAT_CLASS_COLORS[cat.cat_class] ?? ["#f8fafc", "#cbd5e1"];
-  return (
-    <span
-      style={{
-        background: bg,
-        border: `2px solid ${border}`,
-        borderRadius: 10,
-        padding: "6px 12px",
-        display: "inline-flex",
-        alignItems: "center",
-        gap: 8,
-        fontSize: 13,
-      }}
-    >
-      <b>{cat.name}</b>
-      <span style={{ color: "#64748b", fontWeight: "bold", fontSize: 11 }}>
-        Lv.{cat.level} {cat.cat_class || "Colorless"}
-      </span>
-      {cat.dead && <span>💀</span>}
-    </span>
-  );
 }
 
 const BackupItem: React.FC<BackupItemProps> = ({
