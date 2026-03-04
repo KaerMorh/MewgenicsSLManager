@@ -389,22 +389,47 @@ pub fn list_game_backups(game_backup_dir: &str, slot: i32) -> Vec<BackupEntry> {
 
 // ---- Duplicate detection ----
 
-pub fn scan_duplicates(backup_dir: &str, slot: i32) -> Result<ScanResult, String> {
+pub fn scan_duplicates(backup_dir: &str, game_backup_dir: &str, slot: i32) -> Result<ScanResult, String> {
     let entries = list_backups(backup_dir, slot);
-    let mut hash_groups: HashMap<String, usize> = HashMap::new();
-    for entry in &entries {
+    let mut hash_groups: HashMap<String, Vec<BackupEntry>> = HashMap::new();
+    for entry in entries {
         let hash = compute_file_hash(&entry.path)?;
-        *hash_groups.entry(hash).or_insert(0) += 1;
+        hash_groups.entry(hash).or_default().push(entry);
     }
-    let groups = hash_groups.values().filter(|&&c| c > 1).count();
-    let redundant: usize = hash_groups.values().filter(|&&c| c > 1).map(|c| c - 1).sum();
+
+    let game_entries = list_game_backups(game_backup_dir, slot);
+    let mut game_hashes = std::collections::HashSet::new();
+    for entry in game_entries {
+        if let Ok(hash) = compute_file_hash(&entry.path) {
+            game_hashes.insert(hash);
+        }
+    }
+
+    let mut groups = 0;
+    let mut redundant = 0;
+
+    for (hash, group) in hash_groups {
+        let in_game_backup = game_hashes.contains(&hash);
+        let count = group.len();
+
+        if count > 1 {
+            groups += 1;
+            redundant += count - 1;
+        } else if count == 1 && in_game_backup {
+            let note = &group[0].note;
+            if !note.contains("(来自steam自动备份)") {
+                groups += 1;
+            }
+        }
+    }
+
     Ok(ScanResult {
         groups,
         redundant_files: redundant,
     })
 }
 
-pub fn dedup_backups(backup_dir: &str, slot: i32) -> Result<DedupResult, String> {
+pub fn dedup_backups(backup_dir: &str, game_backup_dir: &str, slot: i32) -> Result<DedupResult, String> {
     let entries = list_backups(backup_dir, slot);
 
     let mut hash_groups: HashMap<String, Vec<BackupEntry>> = HashMap::new();
@@ -413,12 +438,25 @@ pub fn dedup_backups(backup_dir: &str, slot: i32) -> Result<DedupResult, String>
         hash_groups.entry(hash).or_default().push(entry);
     }
 
+    let game_entries = list_game_backups(game_backup_dir, slot);
+    let mut game_hashes = std::collections::HashSet::new();
+    for entry in game_entries {
+        if let Ok(hash) = compute_file_hash(&entry.path) {
+            game_hashes.insert(hash);
+        }
+    }
+
     let mut groups_found = 0;
     let mut files_removed = 0;
     let mut notes_merged = 0;
 
-    for (_hash, mut group) in hash_groups {
-        if group.len() < 2 {
+    for (hash, mut group) in hash_groups {
+        let in_game_backup = game_hashes.contains(&hash);
+        let count = group.len();
+
+        let needs_tag = in_game_backup && !group.iter().any(|e| e.note.contains("(来自steam自动备份)"));
+
+        if count < 2 && !needs_tag {
             continue;
         }
         groups_found += 1;
@@ -433,23 +471,35 @@ pub fn dedup_backups(backup_dir: &str, slot: i32) -> Result<DedupResult, String>
             }
         }
 
+        if in_game_backup {
+            let tag = "(来自steam自动备份)".to_string();
+            let has_tag = unique_notes.iter().any(|n| n.contains("(来自steam自动备份)"));
+            if !has_tag {
+                unique_notes.push(tag);
+            }
+        }
+
         let keeper = group.last().unwrap().clone();
         let merged_note = unique_notes.join(" | ");
 
-        if unique_notes.len() > 1 {
+        let original_keeper_note = keeper.note.trim();
+        let notes_changed = original_keeper_note != merged_note;
+
+        if notes_changed {
             notes_merged += 1;
+            save_note_to_file(backup_dir, &keeper.filename, &merged_note)?;
         }
 
-        save_note_to_file(backup_dir, &keeper.filename, &merged_note)?;
-
-        let mut notes = load_notes(backup_dir);
-        for entry in &group[..group.len() - 1] {
-            fs::remove_file(&entry.path).map_err(|e| e.to_string())?;
-            notes.remove(&entry.filename);
-            files_removed += 1;
+        if count > 1 {
+            let mut notes = load_notes(backup_dir);
+            for entry in &group[..group.len() - 1] {
+                fs::remove_file(&entry.path).map_err(|e| e.to_string())?;
+                notes.remove(&entry.filename);
+                files_removed += 1;
+            }
+            let json = serde_json::to_string_pretty(&notes).map_err(|e| e.to_string())?;
+            fs::write(notes_path(backup_dir), json).map_err(|e| e.to_string())?;
         }
-        let json = serde_json::to_string_pretty(&notes).map_err(|e| e.to_string())?;
-        fs::write(notes_path(backup_dir), json).map_err(|e| e.to_string())?;
     }
 
     Ok(DedupResult {

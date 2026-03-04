@@ -1,0 +1,154 @@
+[
+  {
+    "name": "BasicMelee",
+    "desc": "A basic melee attack."
+  },
+  {
+    "name": "Melee Attack",
+    "desc": "Attack an adjacent unit."
+  },
+  {
+    "name": "BasicMelee_Fighter",
+    "desc": ""
+  },
+  {
+    "name": "Melee Attack",
+    "desc": "Attack an adjacent unit."
+  },
+  {
+    "name": "Lobbed Shot",
+    "desc": "Lob a shot over units and obstacles."
+  },
+  {
+    "name": "BasicRanged_Hunter",
+    "desc": ""
+  },
+  {
+    "name": "Lobbed Shot",
+    "desc": "Lob a shot over units and obstacles."
+  },
+  {
+    "name": "Short Shot",
+    "desc": "Shoot a unit in your line of sight."
+  },
+  {
+    "name": "Magic Dart",
+    "desc": "Shoot a charged projectile within your line of sight. This attack counts as both magical and physical."
+  },
+  {
+    "name": "Short Lobbed Shot",
+    "desc": "Lob a shot over units and obstacles."
+  },
+  {
+    "name": "Nail Throw",
+    "desc": "Attack a unit in a straight line."
+  },
+  {
+    "name": "BasicStraightShot_Thief",
+    "desc": ""
+  },
+  {
+    "name": "Melee Attack / Heal",
+    "desc": "Heals allies but damages enemies."
+  },
+  {
+    "name": "Ranged Attack / Heal",
+    "desc": "Heals allies but damages enemies."
+  },
+  {
+    "name": "Push Attack",
+    "desc": "Dash forward one space, then melee attack with Knockback."
+  },
+  {
+    "name": "Melee Attack",
+    "desc": "Attack an adjacent unit."
+  },
+  {
+    "name": "Lobbed Shot",
+    "desc": "Lob a shot over units and obstacles."
+  },
+  {
+    "name": "Cleave",
+    "desc": "Attack a unit adjacent or diagonally with Cleave."
+  },
+  {
+    "name": "Wide Cleave",
+    "desc": "Attack a wide area with Cleave."
+  },
+  {
+    "name": "Spin Cleave",
+    "desc": "Attack everything around you with Cleave."
+  },
+  {
+    "name": "BasicButcherMeleeWideDoubleSpin",
+    "desc": ""
+  },
+  {
+    "name": "Sing",
+    "desc": "Heal and give +1 Temporary Damage to units in a wide area."
+  },
+  {
+    "name": "Sing",
+    "desc": "Heal and give +1 Temporary Damage to units in a wide area."
+  },
+  {
+    "name": "Craft Weapon",
+    "desc": "Craft and equip a random temporary weapon."
+  },
+  {
+    "name": "Throw Weapon",
+    "desc": "Throw your weapon at a unit.\n[s:.7]This breaks the weapon.[/s]"
+  },
+  {
+    "name": "Psychic Pull",
+    "desc": "Pull a unit toward you from anywhere dealing low damage."
+  },
+  {
+    "name": "Leech Shot",
+    "desc": "A lobbed attack that inflicts Leech 1."
+  },
+  {
+    "name": "Drain Attack",
+    "desc": "A melee attack with Lifesteal."
+  },
+  {
+    "name": "Hook",
+    "desc": "Pull an enemy to you."
+  },
+  {
+    "name": "Magic Missile",
+    "desc": "Shoot an infinite-range projectile that can't miss.\n[s:.7](This attack's damage scales with your [img:int])[/s]"
+  },
+  {
+    "name": "Suplex",
+    "desc": "Grab a unit in front of you and slam it into the tile behind you."
+  },
+  {
+    "name": "Two-Hit Melee Attack",
+    "desc": "Hits twice"
+  },
+  {
+    "name": "BasicPuke",
+    "desc": ""
+  },
+  {
+    "name": "BasicExplosiveShot",
+    "desc": ""
+  },
+  {
+    "name": "Poke",
+    "desc": "A melee attack that deals 1 damage."
+  },
+  {
+    "name": "Gerd Shot",
+    "desc": "Lob a puke projectile that does splash damage to neighboring units. Damages you for 2 on use."
+  },
+  {
+    "name": "Spin Attack",
+    "desc": "Attack all adjacent units."
+  },
+  {
+    "name": "Metronome",
+    "desc": "Cast a random spell."
+  }
+]

@@ -1,0 +1,5815 @@
+{
+  "poop": {
+    "id": "poop",
+    "effects": {
+      "Comfort": -2,
+      "Health": -2
+    },
+    "name": "Poop",
+    "desc": "POOP",
+    "special": true,
+    "can_be_rare": false
+  },
+  "autofeeder": {
+    "id": "autofeeder",
+    "name": "Autofeeder",
+    "desc": "This item got removed from the game and has no effect. Its a waste of space to keep in your house.",
+    "special": true,
+    "removed": true,
+    "can_be_rare": false
+  },
+  "special_foodbox": {
+    "id": "special_foodbox",
+    "effects": {
+      "FoodStorage": 40
+    },
+    "name": "Food Storage Box",
+    "desc": "+40 Max Food",
+    "special": true,
+    "can_be_rare": false
+  },
+  "special_comfortidol": {
+    "id": "special_comfortidol",
+    "effects": {
+      "Comfort": 5
+    },
+    "name": "Idol of Comfort",
+    "desc": "SPECIAL_COMFORTIDOL",
+    "special": true,
+    "can_be_rare": false
+  },
+  "special_appealidol": {
+    "id": "special_appealidol",
+    "effects": {
+      "Appeal": 5
+    },
+    "name": "Idol of Appeal",
+    "desc": "SPECIAL_APPEALIDOL",
+    "special": true,
+    "can_be_rare": false
+  },
+  "special_healthidol": {
+    "id": "special_healthidol",
+    "effects": {
+      "Health": 5
+    },
+    "name": "Idol of Health",
+    "desc": "SPECIAL_HEALTHIDOL",
+    "special": true,
+    "can_be_rare": false
+  },
+  "special_evolutionidol": {
+    "id": "special_evolutionidol",
+    "effects": {
+      "Evolution": 5
+    },
+    "name": "Idol of Evolution",
+    "desc": "SPECIAL_EVOLUTIONIDOL",
+    "special": true,
+    "can_be_rare": false
+  },
+  "special_stimulationidol": {
+    "id": "special_stimulationidol",
+    "effects": {
+      "Stimulation": 5
+    },
+    "name": "Idol of Stimulation",
+    "desc": "SPECIAL_STIMULATIONIDOL",
+    "special": true,
+    "can_be_rare": false
+  },
+  "special_fightidol": {
+    "id": "special_fightidol",
+    "effects": {
+      "Comfort": -5,
+      "FightBonusRewards": 1,
+      "FightRisk": 2
+    },
+    "name": "Idol of Chaos",
+    "desc": "Fights are deadlier but the winning cat gets double the stat rewards.",
+    "special": true,
+    "can_be_rare": false
+  },
+  "special_suppressoridol": {
+    "id": "special_suppressoridol",
+    "effects": {
+      "Comfort": 5,
+      "BreedSuppression": 1
+    },
+    "name": "Idol of Chastity",
+    "desc": "Cats will not breed.",
+    "special": true,
+    "can_be_rare": false
+  },
+  "set_spider_candelabra": {
+    "id": "set_spider_candelabra",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Spider Candelabra",
+    "desc": "SET_SPIDER_CANDELABRA",
+    "set": "spider"
+  },
+  "set_spider_vanity": {
+    "id": "set_spider_vanity",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Spider Vanity",
+    "desc": "SET_SPIDER_VANITY",
+    "set": "spider"
+  },
+  "set_spider_chair": {
+    "id": "set_spider_chair",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Spider Chair",
+    "desc": "SET_SPIDER_CHAIR",
+    "set": "spider"
+  },
+  "set_spider_table": {
+    "id": "set_spider_table",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Spider Table",
+    "desc": "SET_SPIDER_TABLE",
+    "set": "spider"
+  },
+  "set_spider_dresser": {
+    "id": "set_spider_dresser",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Spider Dresser",
+    "desc": "SET_SPIDER_DRESSER",
+    "set": "spider"
+  },
+  "set_spider_tv": {
+    "id": "set_spider_tv",
+    "effects": {
+      "Appeal": 1,
+      "Stimulation": 1
+    },
+    "name": "Spider TV",
+    "desc": "SET_SPIDER_TV",
+    "set": "spider"
+  },
+  "set_spider_toilet": {
+    "id": "set_spider_toilet",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Spider Toilet",
+    "desc": "SET_SPIDER_TOILET",
+    "set": "spider"
+  },
+  "set_spider_shelf": {
+    "id": "set_spider_shelf",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Spider Shelf",
+    "desc": "SET_SPIDER_SHELF",
+    "set": "spider"
+  },
+  "set_spider_bed": {
+    "id": "set_spider_bed",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Spider Bed",
+    "desc": "SET_SPIDER_BED",
+    "set": "spider"
+  },
+  "set_spider_sidetable": {
+    "id": "set_spider_sidetable",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Spider Side Table",
+    "desc": "SET_SPIDER_SIDETABLE",
+    "set": "spider"
+  },
+  "set_junk_sidetable": {
+    "id": "set_junk_sidetable",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": 1
+    },
+    "name": "Junk Side Table",
+    "desc": "SET_JUNK_SIDETABLE",
+    "set": "junk"
+  },
+  "set_junk_chair": {
+    "id": "set_junk_chair",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": 1
+    },
+    "name": "Junk Chair",
+    "desc": "SET_JUNK_CHAIR",
+    "set": "junk"
+  },
+  "set_junk_shelf": {
+    "id": "set_junk_shelf",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": 1
+    },
+    "name": "Junk Shelf",
+    "desc": "SET_JUNK_SHELF",
+    "set": "junk"
+  },
+  "set_junk_bed": {
+    "id": "set_junk_bed",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": 1
+    },
+    "name": "Junk Bed",
+    "desc": "SET_JUNK_BED",
+    "set": "junk"
+  },
+  "set_junk_cabinet": {
+    "id": "set_junk_cabinet",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": 1
+    },
+    "name": "Junk Cabinet",
+    "desc": "SET_JUNK_CABINET",
+    "set": "junk"
+  },
+  "set_junk_tv": {
+    "id": "set_junk_tv",
+    "effects": {
+      "Stimulation": 2
+    },
+    "name": "Junk TV",
+    "desc": "SET_JUNK_TV",
+    "set": "junk"
+  },
+  "set_junk_suspendedshelf": {
+    "id": "set_junk_suspendedshelf",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": 1
+    },
+    "name": "Suspended Junk Shelf",
+    "desc": "SET_JUNK_SUSPENDEDSHELF",
+    "set": "junk"
+  },
+  "set_junk_lamp": {
+    "id": "set_junk_lamp",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": 1
+    },
+    "name": "Junk Lamp",
+    "desc": "SET_JUNK_LAMP",
+    "set": "junk"
+  },
+  "set_junk_dresser": {
+    "id": "set_junk_dresser",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": 1
+    },
+    "name": "Junk Dresser",
+    "desc": "SET_JUNK_DRESSER",
+    "set": "junk"
+  },
+  "set_junk_toilet": {
+    "id": "set_junk_toilet",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": 1
+    },
+    "name": "Junk Toilet",
+    "desc": "SET_JUNK_TOILET",
+    "set": "junk"
+  },
+  "set_sewn_dresser": {
+    "id": "set_sewn_dresser",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Sewn Dresser",
+    "desc": "SET_SEWN_DRESSER",
+    "set": "sewn"
+  },
+  "set_sewn_sidetable": {
+    "id": "set_sewn_sidetable",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Sewn Side Table",
+    "desc": "SET_SEWN_SIDETABLE",
+    "set": "sewn"
+  },
+  "set_sewn_table": {
+    "id": "set_sewn_table",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Sewn Table",
+    "desc": "SET_SEWN_TABLE",
+    "set": "sewn"
+  },
+  "set_sewn_couch": {
+    "id": "set_sewn_couch",
+    "effects": {
+      "Comfort": 2
+    },
+    "name": "Sewn Couch",
+    "desc": "SET_SEWN_COUCH",
+    "set": "sewn"
+  },
+  "set_sewn_chair": {
+    "id": "set_sewn_chair",
+    "effects": {
+      "Comfort": 2
+    },
+    "name": "Sewn Chair",
+    "desc": "SET_SEWN_CHAIR",
+    "set": "sewn"
+  },
+  "set_sewn_stool1": {
+    "id": "set_sewn_stool1",
+    "effects": {
+      "Comfort": 2
+    },
+    "name": "Sewn Stool A",
+    "desc": "SET_SEWN_STOOL1",
+    "set": "sewn"
+  },
+  "set_sewn_toilet": {
+    "id": "set_sewn_toilet",
+    "effects": {
+      "Comfort": 2
+    },
+    "name": "Sewn Toilet",
+    "desc": "SET_SEWN_TOILET",
+    "set": "sewn"
+  },
+  "set_sewn_tv": {
+    "id": "set_sewn_tv",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": 1
+    },
+    "name": "Sewn TV",
+    "desc": "SET_SEWN_TV",
+    "set": "sewn"
+  },
+  "set_sewn_doll": {
+    "id": "set_sewn_doll",
+    "effects": {
+      "Comfort": 1,
+      "Appeal": 1
+    },
+    "name": "Sewn Doll",
+    "desc": "SET_SEWN_DOLL",
+    "set": "sewn"
+  },
+  "set_sewn_stool2": {
+    "id": "set_sewn_stool2",
+    "effects": {
+      "Comfort": 2
+    },
+    "name": "Sewn Stool B",
+    "desc": "SET_SEWN_STOOL2",
+    "set": "sewn"
+  },
+  "set_cat_shelf": {
+    "id": "set_cat_shelf",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Cat Shelf",
+    "desc": "SET_CAT_SHELF",
+    "set": "cat"
+  },
+  "set_cat_couch": {
+    "id": "set_cat_couch",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Cat Couch",
+    "desc": "SET_CAT_COUCH",
+    "set": "cat"
+  },
+  "set_cat_chair": {
+    "id": "set_cat_chair",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Cat Chair",
+    "desc": "SET_CAT_CHAIR",
+    "set": "cat"
+  },
+  "set_cat_bed": {
+    "id": "set_cat_bed",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Cat Bed",
+    "desc": "SET_CAT_BED",
+    "set": "cat"
+  },
+  "set_cat_table": {
+    "id": "set_cat_table",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Cat Table A",
+    "desc": "SET_CAT_TABLE",
+    "set": "cat"
+  },
+  "set_cat_tv": {
+    "id": "set_cat_tv",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Cat TV",
+    "desc": "SET_CAT_TV",
+    "set": "cat"
+  },
+  "set_cat_bench": {
+    "id": "set_cat_bench",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Cat Bench",
+    "desc": "SET_CAT_BENCH",
+    "set": "cat"
+  },
+  "set_cat_dresser": {
+    "id": "set_cat_dresser",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Cat Dresser",
+    "desc": "SET_CAT_DRESSER",
+    "set": "cat"
+  },
+  "set_cat_suspended_shelf": {
+    "id": "set_cat_suspended_shelf",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Suspended Cat Shelf",
+    "desc": "SET_CAT_SUSPENDED_SHELF",
+    "set": "cat"
+  },
+  "set_cat_table2": {
+    "id": "set_cat_table2",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Cat Table B",
+    "desc": "SET_CAT_TABLE2",
+    "set": "cat"
+  },
+  "set_wooden_shelf": {
+    "id": "set_wooden_shelf",
+    "effects": {
+      "Stimulation": 1,
+      "Appeal": 1
+    },
+    "name": "Wooden Shelf A",
+    "desc": "SET_WOODEN_SHELF",
+    "set": "wooden"
+  },
+  "set_wooden_dresser": {
+    "id": "set_wooden_dresser",
+    "effects": {
+      "Stimulation": 1,
+      "Appeal": 1
+    },
+    "name": "Wooden Dresser",
+    "desc": "SET_WOODEN_DRESSER",
+    "set": "wooden"
+  },
+  "set_wooden_chair": {
+    "id": "set_wooden_chair",
+    "effects": {
+      "Stimulation": 1,
+      "Appeal": 1
+    },
+    "name": "Wooden Chair",
+    "desc": "SET_WOODEN_CHAIR",
+    "set": "wooden"
+  },
+  "set_wooden_toilet": {
+    "id": "set_wooden_toilet",
+    "effects": {
+      "Stimulation": 1,
+      "Appeal": 1
+    },
+    "name": "Wooden Toilet",
+    "desc": "SET_WOODEN_TOILET",
+    "set": "wooden"
+  },
+  "set_wooden_table": {
+    "id": "set_wooden_table",
+    "effects": {
+      "Stimulation": 1,
+      "Appeal": 1
+    },
+    "name": "Wooden Table",
+    "desc": "SET_WOODEN_TABLE",
+    "set": "wooden"
+  },
+  "set_wooden_sink": {
+    "id": "set_wooden_sink",
+    "effects": {
+      "Stimulation": 1,
+      "Appeal": 1
+    },
+    "name": "Wooden Sink",
+    "desc": "SET_WOODEN_SINK",
+    "set": "wooden"
+  },
+  "set_wooden_lamp": {
+    "id": "set_wooden_lamp",
+    "effects": {
+      "Stimulation": 1,
+      "Appeal": 1
+    },
+    "name": "Wooden Lamp",
+    "desc": "SET_WOODEN_LAMP",
+    "set": "wooden"
+  },
+  "set_wooden_tv": {
+    "id": "set_wooden_tv",
+    "effects": {
+      "Stimulation": 1,
+      "Appeal": 1
+    },
+    "name": "Wooden TV",
+    "desc": "SET_WOODEN_TV",
+    "set": "wooden"
+  },
+  "set_wooden_suspendedshelf": {
+    "id": "set_wooden_suspendedshelf",
+    "effects": {
+      "Stimulation": 1,
+      "Appeal": 1
+    },
+    "name": "Suspended Wooden Shelf",
+    "desc": "SET_WOODEN_SUSPENDEDSHELF",
+    "set": "wooden"
+  },
+  "set_wooden_shelf2": {
+    "id": "set_wooden_shelf2",
+    "effects": {
+      "Stimulation": 1,
+      "Appeal": 1
+    },
+    "name": "Wooden Shelf B",
+    "desc": "SET_WOODEN_SHELF2",
+    "set": "wooden"
+  },
+  "set_sewer_sink": {
+    "id": "set_sewer_sink",
+    "effects": {
+      "Stimulation": 1,
+      "Appeal": 1,
+      "Health": -1,
+      "Evolution": 1
+    },
+    "name": "Sewer Sink",
+    "desc": "SET_SEWER_SINK",
+    "set": "sewer"
+  },
+  "set_sewer_shelf": {
+    "id": "set_sewer_shelf",
+    "effects": {
+      "Stimulation": 4,
+      "Appeal": -1,
+      "Comfort": -1,
+      "Health": -1,
+      "Evolution": 1
+    },
+    "name": "Sewer Shelf",
+    "desc": "SET_SEWER_SHELF",
+    "set": "sewer"
+  },
+  "set_sewer_table": {
+    "id": "set_sewer_table",
+    "effects": {
+      "Stimulation": 4,
+      "Appeal": -1,
+      "Comfort": -1,
+      "Health": -1,
+      "Evolution": 1
+    },
+    "name": "Sewer Table",
+    "desc": "SET_SEWER_TABLE",
+    "set": "sewer"
+  },
+  "set_sewer_dresser": {
+    "id": "set_sewer_dresser",
+    "effects": {
+      "Stimulation": 4,
+      "Appeal": -1,
+      "Comfort": -1,
+      "Health": -1,
+      "Evolution": 1
+    },
+    "name": "Sewer Dresser",
+    "desc": "SET_SEWER_DRESSER",
+    "set": "sewer"
+  },
+  "set_sewer_chair": {
+    "id": "set_sewer_chair",
+    "effects": {
+      "Stimulation": 4,
+      "Appeal": -1,
+      "Comfort": -1,
+      "Health": -1,
+      "Evolution": 1
+    },
+    "name": "Sewer Chair",
+    "desc": "SET_SEWER_CHAIR",
+    "set": "sewer"
+  },
+  "set_sewer_suspendedshelf": {
+    "id": "set_sewer_suspendedshelf",
+    "effects": {
+      "Stimulation": 4,
+      "Appeal": -1,
+      "Comfort": -1,
+      "Health": -1,
+      "Evolution": 1
+    },
+    "name": "Suspended Sewer Shelf",
+    "desc": "SET_SEWER_SUSPENDEDSHELF",
+    "set": "sewer"
+  },
+  "set_sewer_tv": {
+    "id": "set_sewer_tv",
+    "effects": {
+      "Stimulation": 4,
+      "Appeal": -1,
+      "Comfort": -1,
+      "Health": -1,
+      "Evolution": 1
+    },
+    "name": "Sewer TV",
+    "desc": "SET_SEWER_TV",
+    "set": "sewer"
+  },
+  "set_sewer_small_table": {
+    "id": "set_sewer_small_table",
+    "effects": {
+      "Stimulation": 4,
+      "Appeal": -1,
+      "Comfort": -1,
+      "Health": -1,
+      "Evolution": 1
+    },
+    "name": "Sewer Small Table",
+    "desc": "SET_SEWER_SMALL_TABLE",
+    "set": "sewer"
+  },
+  "set_sewer_stool": {
+    "id": "set_sewer_stool",
+    "effects": {
+      "Stimulation": 4,
+      "Appeal": -1,
+      "Comfort": -1,
+      "Health": -1,
+      "Evolution": 1
+    },
+    "name": "Sewer Stool",
+    "desc": "SET_SEWER_STOOL",
+    "set": "sewer"
+  },
+  "set_sewer_lamp": {
+    "id": "set_sewer_lamp",
+    "effects": {
+      "Stimulation": 4,
+      "Appeal": -1,
+      "Comfort": -1,
+      "Health": -1,
+      "Evolution": 1
+    },
+    "name": "Sewer Lamp",
+    "desc": "SET_SEWER_LAMP",
+    "set": "sewer"
+  },
+  "set_bone_shelf": {
+    "id": "set_bone_shelf",
+    "effects": {
+      "Stimulation": 1,
+      "Appeal": 2,
+      "Comfort": -1
+    },
+    "name": "Bone Shelf",
+    "desc": "SET_BONE_SHELF",
+    "set": "bone"
+  },
+  "set_bone_sink": {
+    "id": "set_bone_sink",
+    "effects": {
+      "Stimulation": 1,
+      "Appeal": 2,
+      "Comfort": -1
+    },
+    "name": "Bone Sink",
+    "desc": "SET_BONE_SINK",
+    "set": "bone"
+  },
+  "set_bone_sidetable": {
+    "id": "set_bone_sidetable",
+    "effects": {
+      "Stimulation": 1,
+      "Appeal": 2,
+      "Comfort": -1
+    },
+    "name": "Bone Side Table",
+    "desc": "SET_BONE_SIDETABLE",
+    "set": "bone"
+  },
+  "set_bone_table": {
+    "id": "set_bone_table",
+    "effects": {
+      "Stimulation": 1,
+      "Appeal": 2,
+      "Comfort": -1
+    },
+    "name": "Bone Table",
+    "desc": "SET_BONE_TABLE",
+    "set": "bone"
+  },
+  "set_bone_couch": {
+    "id": "set_bone_couch",
+    "effects": {
+      "Stimulation": 1,
+      "Appeal": 2,
+      "Comfort": -1
+    },
+    "name": "Bone Couch",
+    "desc": "SET_BONE_COUCH",
+    "set": "bone"
+  },
+  "set_bone_tv": {
+    "id": "set_bone_tv",
+    "effects": {
+      "Stimulation": 1,
+      "Appeal": 2,
+      "Comfort": -1
+    },
+    "name": "Bone TV",
+    "desc": "SET_BONE_TV",
+    "set": "bone"
+  },
+  "set_bone_chandelier": {
+    "id": "set_bone_chandelier",
+    "effects": {
+      "Stimulation": 1,
+      "Appeal": 2,
+      "Comfort": -1
+    },
+    "name": "Bone Chandelier",
+    "desc": "SET_BONE_CHANDELIER",
+    "set": "bone"
+  },
+  "set_bone_lamp": {
+    "id": "set_bone_lamp",
+    "effects": {
+      "Stimulation": 1,
+      "Appeal": 2,
+      "Comfort": -1
+    },
+    "name": "Bone Lamp",
+    "desc": "SET_BONE_LAMP",
+    "set": "bone"
+  },
+  "set_bone_chair": {
+    "id": "set_bone_chair",
+    "effects": {
+      "Stimulation": 1,
+      "Appeal": 2,
+      "Comfort": -1
+    },
+    "name": "Bone Chair",
+    "desc": "SET_BONE_CHAIR",
+    "set": "bone"
+  },
+  "set_bone_pile": {
+    "id": "set_bone_pile",
+    "effects": {
+      "Stimulation": 1,
+      "Appeal": 2,
+      "Comfort": -1
+    },
+    "name": "Bone Pile",
+    "desc": "SET_BONE_PILE",
+    "set": "bone"
+  },
+  "set_robo_shelf": {
+    "id": "set_robo_shelf",
+    "effects": {
+      "Stimulation": 3,
+      "Comfort": -1
+    },
+    "name": "Robo Shelf",
+    "desc": "SET_ROBO_SHELF",
+    "set": "robo"
+  },
+  "set_robo_sink": {
+    "id": "set_robo_sink",
+    "effects": {
+      "Stimulation": 3,
+      "Comfort": -1
+    },
+    "name": "Robo Sink",
+    "desc": "SET_ROBO_SINK",
+    "set": "robo"
+  },
+  "set_robo_desk": {
+    "id": "set_robo_desk",
+    "effects": {
+      "Stimulation": 3,
+      "Comfort": -1
+    },
+    "name": "Robo Desk",
+    "desc": "SET_ROBO_DESK",
+    "set": "robo"
+  },
+  "set_robo_table": {
+    "id": "set_robo_table",
+    "effects": {
+      "Stimulation": 3,
+      "Comfort": -1
+    },
+    "name": "Robo Table",
+    "desc": "SET_ROBO_TABLE",
+    "set": "robo"
+  },
+  "set_robo_dresser": {
+    "id": "set_robo_dresser",
+    "effects": {
+      "Stimulation": 3,
+      "Comfort": -1
+    },
+    "name": "Robo Dresser",
+    "desc": "SET_ROBO_DRESSER",
+    "set": "robo"
+  },
+  "set_robo_tv": {
+    "id": "set_robo_tv",
+    "effects": {
+      "Stimulation": 3,
+      "Comfort": -1
+    },
+    "name": "Robo TV",
+    "desc": "SET_ROBO_TV",
+    "set": "robo"
+  },
+  "set_robo_robobody": {
+    "id": "set_robo_robobody",
+    "effects": {
+      "Stimulation": 3,
+      "Comfort": -1
+    },
+    "name": "Robo Body",
+    "desc": "SET_ROBO_ROBOBODY",
+    "set": "robo"
+  },
+  "set_robo_robochest": {
+    "id": "set_robo_robochest",
+    "effects": {
+      "Stimulation": 3,
+      "Comfort": -1
+    },
+    "name": "Robo Chest",
+    "desc": "SET_ROBO_ROBOCHEST",
+    "set": "robo"
+  },
+  "set_robo_roboarms": {
+    "id": "set_robo_roboarms",
+    "effects": {
+      "Stimulation": 3,
+      "Comfort": -1
+    },
+    "name": "Robo Arms",
+    "desc": "SET_ROBO_ROBOARMS",
+    "set": "robo"
+  },
+  "set_robo_head": {
+    "id": "set_robo_head",
+    "effects": {
+      "Stimulation": 3,
+      "Comfort": -1
+    },
+    "name": "Robo Head",
+    "desc": "SET_ROBO_HEAD",
+    "set": "robo"
+  },
+  "set_guts_shelf": {
+    "id": "set_guts_shelf",
+    "effects": {
+      "Appeal": -1,
+      "Stimulation": 1,
+      "Comfort": 2
+    },
+    "name": "Guts Shelf",
+    "desc": "SET_GUTS_SHELF",
+    "set": "guts"
+  },
+  "set_guts_table": {
+    "id": "set_guts_table",
+    "effects": {
+      "Appeal": -1,
+      "Stimulation": 1,
+      "Comfort": 2
+    },
+    "name": "Guts Table",
+    "desc": "SET_GUTS_TABLE",
+    "set": "guts"
+  },
+  "set_guts_sidetable": {
+    "id": "set_guts_sidetable",
+    "effects": {
+      "Appeal": -1,
+      "Stimulation": 1,
+      "Comfort": 2
+    },
+    "name": "Guts Side Table A",
+    "desc": "SET_GUTS_SIDETABLE",
+    "set": "guts"
+  },
+  "set_guts_sink": {
+    "id": "set_guts_sink",
+    "effects": {
+      "Appeal": -1,
+      "Stimulation": 1,
+      "Comfort": 2
+    },
+    "name": "Guts Sink",
+    "desc": "SET_GUTS_SINK",
+    "set": "guts"
+  },
+  "set_guts_sidetable2": {
+    "id": "set_guts_sidetable2",
+    "effects": {
+      "Appeal": -1,
+      "Stimulation": 1,
+      "Comfort": 2
+    },
+    "name": "Guts Side Table B",
+    "desc": "SET_GUTS_SIDETABLE2",
+    "set": "guts"
+  },
+  "set_guts_toilet": {
+    "id": "set_guts_toilet",
+    "effects": {
+      "Appeal": -1,
+      "Stimulation": 1,
+      "Comfort": 2
+    },
+    "name": "Guts Toilet",
+    "desc": "SET_GUTS_TOILET",
+    "set": "guts"
+  },
+  "set_guts_lamp": {
+    "id": "set_guts_lamp",
+    "effects": {
+      "Appeal": -1,
+      "Stimulation": 1,
+      "Comfort": 2
+    },
+    "name": "Guts Lamp A",
+    "desc": "SET_GUTS_LAMP",
+    "set": "guts"
+  },
+  "set_guts_lamp2": {
+    "id": "set_guts_lamp2",
+    "effects": {
+      "Appeal": -1,
+      "Stimulation": 1,
+      "Comfort": 2
+    },
+    "name": "Guts Lamp B",
+    "desc": "SET_GUTS_LAMP2",
+    "set": "guts"
+  },
+  "set_guts_suspendedshelf": {
+    "id": "set_guts_suspendedshelf",
+    "effects": {
+      "Appeal": -1,
+      "Stimulation": 1,
+      "Comfort": 2
+    },
+    "name": "Suspended Guts Shelf",
+    "desc": "SET_GUTS_SUSPENDEDSHELF",
+    "set": "guts"
+  },
+  "set_guts_tv": {
+    "id": "set_guts_tv",
+    "effects": {
+      "Appeal": -1,
+      "Stimulation": 2,
+      "Comfort": 1
+    },
+    "name": "Guts TV",
+    "desc": "SET_GUTS_TV",
+    "set": "guts"
+  },
+  "set_crystal_toilet": {
+    "id": "set_crystal_toilet",
+    "effects": {
+      "Appeal": 4,
+      "Comfort": -2
+    },
+    "name": "Crystal Toilet",
+    "desc": "SET_CRYSTAL_TOILET",
+    "set": "crystal"
+  },
+  "set_crystal_dresser": {
+    "id": "set_crystal_dresser",
+    "effects": {
+      "Appeal": 4,
+      "Comfort": -2
+    },
+    "name": "Crystal Dresser A",
+    "desc": "SET_CRYSTAL_DRESSER",
+    "set": "crystal"
+  },
+  "set_crystal_lamp": {
+    "id": "set_crystal_lamp",
+    "effects": {
+      "Appeal": 4,
+      "Comfort": -2
+    },
+    "name": "Crystal Lamp",
+    "desc": "SET_CRYSTAL_LAMP",
+    "set": "crystal"
+  },
+  "set_crystal_table": {
+    "id": "set_crystal_table",
+    "effects": {
+      "Appeal": 4,
+      "Comfort": -2
+    },
+    "name": "Crystal Table",
+    "desc": "SET_CRYSTAL_TABLE",
+    "set": "crystal"
+  },
+  "set_crystal_chandelier": {
+    "id": "set_crystal_chandelier",
+    "effects": {
+      "Appeal": 4,
+      "Comfort": -2
+    },
+    "name": "Crystal Chandelier",
+    "desc": "SET_CRYSTAL_CHANDELIER",
+    "set": "crystal"
+  },
+  "set_crystal_dresser2": {
+    "id": "set_crystal_dresser2",
+    "effects": {
+      "Appeal": 4,
+      "Comfort": -2
+    },
+    "name": "Crystal Dresser B",
+    "desc": "SET_CRYSTAL_DRESSER2",
+    "set": "crystal"
+  },
+  "set_crystal_sidetable": {
+    "id": "set_crystal_sidetable",
+    "effects": {
+      "Appeal": 4,
+      "Comfort": -2
+    },
+    "name": "Crystal Side Table",
+    "desc": "SET_CRYSTAL_SIDETABLE",
+    "set": "crystal"
+  },
+  "set_crystal_couch": {
+    "id": "set_crystal_couch",
+    "effects": {
+      "Appeal": 4,
+      "Comfort": -2
+    },
+    "name": "Crystal Couch",
+    "desc": "SET_CRYSTAL_COUCH",
+    "set": "crystal"
+  },
+  "set_crystal_chair": {
+    "id": "set_crystal_chair",
+    "effects": {
+      "Appeal": 4,
+      "Comfort": -2
+    },
+    "name": "Crystal Chair",
+    "desc": "SET_CRYSTAL_CHAIR",
+    "set": "crystal"
+  },
+  "set_crystal_shelf": {
+    "id": "set_crystal_shelf",
+    "effects": {
+      "Appeal": 4,
+      "Comfort": -2
+    },
+    "name": "Crystal Shelf",
+    "desc": "SET_CRYSTAL_SHELF",
+    "set": "crystal"
+  },
+  "set_block_L": {
+    "id": "set_block_L",
+    "effects": {
+      "Appeal": 1,
+      "Stimulation": 1
+    },
+    "name": "BLOCK_L",
+    "desc": "SET_BLOCK_L",
+    "set": "block"
+  },
+  "set_block_t": {
+    "id": "set_block_t",
+    "effects": {
+      "Appeal": 1,
+      "Stimulation": 1
+    },
+    "name": "\"T\" Block",
+    "desc": "SET_BLOCK_T",
+    "set": "block"
+  },
+  "set_block_square": {
+    "id": "set_block_square",
+    "effects": {
+      "Appeal": 1,
+      "Stimulation": 1
+    },
+    "name": "\"O\" Block",
+    "desc": "SET_BLOCK_SQUARE",
+    "set": "block"
+  },
+  "set_block_7": {
+    "id": "set_block_7",
+    "effects": {
+      "Appeal": 1,
+      "Stimulation": 1
+    },
+    "name": "Flipped \"L\" Block",
+    "desc": "SET_BLOCK_7",
+    "set": "block"
+  },
+  "set_block_square2": {
+    "id": "set_block_square2",
+    "effects": {
+      "Appeal": 1,
+      "Stimulation": 1
+    },
+    "name": "\"O\"Block",
+    "desc": "SET_BLOCK_SQUARE2",
+    "set": "block"
+  },
+  "set_block_layingl": {
+    "id": "set_block_layingl",
+    "effects": {
+      "Appeal": 1,
+      "Stimulation": 1
+    },
+    "name": "Laying \"L\" Block",
+    "desc": "SET_BLOCK_LAYINGL",
+    "set": "block"
+  },
+  "set_block_i": {
+    "id": "set_block_i",
+    "effects": {
+      "Appeal": 1,
+      "Stimulation": 1
+    },
+    "name": "\"I\" Block",
+    "desc": "SET_BLOCK_I",
+    "set": "block"
+  },
+  "set_block_sidet": {
+    "id": "set_block_sidet",
+    "effects": {
+      "Appeal": 1,
+      "Stimulation": 1
+    },
+    "name": "Sideways \"T\" Block",
+    "desc": "SET_BLOCK_SIDET",
+    "set": "block"
+  },
+  "set_block_downl": {
+    "id": "set_block_downl",
+    "effects": {
+      "Appeal": 1,
+      "Stimulation": 1
+    },
+    "name": "Laying \"L\" Block",
+    "desc": "SET_BLOCK_DOWNL",
+    "set": "block"
+  },
+  "set_block_sidei": {
+    "id": "set_block_sidei",
+    "effects": {
+      "Appeal": 1,
+      "Stimulation": 1
+    },
+    "name": "Laying \"I\" Block",
+    "desc": "SET_BLOCK_SIDEI",
+    "set": "block"
+  },
+  "set_monster_shelf": {
+    "id": "set_monster_shelf",
+    "effects": {
+      "Appeal": -1,
+      "Stimulation": 2,
+      "Comfort": 1
+    },
+    "name": "Monster Shelf",
+    "desc": "SET_MONSTER_SHELF",
+    "set": "monster"
+  },
+  "set_monster_dresser": {
+    "id": "set_monster_dresser",
+    "effects": {
+      "Appeal": -2,
+      "Stimulation": 1,
+      "Comfort": 1,
+      "Evolution": 1
+    },
+    "name": "Monster Dresser",
+    "desc": "SET_MONSTER_DRESSER",
+    "set": "monster"
+  },
+  "set_monster_table": {
+    "id": "set_monster_table",
+    "effects": {
+      "Appeal": -2,
+      "Stimulation": 1,
+      "Comfort": 1,
+      "Evolution": 1
+    },
+    "name": "Monster Table A",
+    "desc": "SET_MONSTER_TABLE",
+    "set": "monster"
+  },
+  "set_monster_suspendedshelf": {
+    "id": "set_monster_suspendedshelf",
+    "effects": {
+      "Appeal": -2,
+      "Stimulation": 1,
+      "Comfort": 1,
+      "Evolution": 1
+    },
+    "name": "Suspended Monster Shelf A",
+    "desc": "SET_MONSTER_SUSPENDEDSHELF",
+    "set": "monster"
+  },
+  "set_monster_sidetable": {
+    "id": "set_monster_sidetable",
+    "effects": {
+      "Appeal": -2,
+      "Stimulation": 1,
+      "Comfort": 1,
+      "Evolution": 1
+    },
+    "name": "Monster Side Table",
+    "desc": "SET_MONSTER_SIDETABLE",
+    "set": "monster"
+  },
+  "set_monster_suspendedshelf2": {
+    "id": "set_monster_suspendedshelf2",
+    "effects": {
+      "Appeal": -2,
+      "Stimulation": 1,
+      "Comfort": 1,
+      "Evolution": 1
+    },
+    "name": "Suspended Monster Shelf B",
+    "desc": "SET_MONSTER_SUSPENDEDSHELF2",
+    "set": "monster"
+  },
+  "set_monster_chair": {
+    "id": "set_monster_chair",
+    "effects": {
+      "Appeal": -2,
+      "Stimulation": 1,
+      "Comfort": 1,
+      "Evolution": 1
+    },
+    "name": "Monster Chair",
+    "desc": "SET_MONSTER_CHAIR",
+    "set": "monster"
+  },
+  "set_monster_table2": {
+    "id": "set_monster_table2",
+    "effects": {
+      "Appeal": -2,
+      "Stimulation": 1,
+      "Comfort": 1,
+      "Evolution": 1
+    },
+    "name": "Monster Table B",
+    "desc": "SET_MONSTER_TABLE2",
+    "set": "monster"
+  },
+  "set_monster_tv": {
+    "id": "set_monster_tv",
+    "effects": {
+      "Appeal": -2,
+      "Stimulation": 1,
+      "Comfort": 1,
+      "Evolution": 1
+    },
+    "name": "Monster TV",
+    "desc": "SET_MONSTER_TV",
+    "set": "monster"
+  },
+  "set_monster_lamp": {
+    "id": "set_monster_lamp",
+    "effects": {
+      "Appeal": -2,
+      "Stimulation": 1,
+      "Comfort": 1,
+      "Evolution": 1
+    },
+    "name": "Monster Lamp",
+    "desc": "SET_MONSTER_LAMP",
+    "set": "monster"
+  },
+  "set_angelic_bed": {
+    "id": "set_angelic_bed",
+    "effects": {
+      "Appeal": 2,
+      "Comfort": 1,
+      "Stimulation": -2,
+      "Health": 1
+    },
+    "name": "Angelic Bed",
+    "desc": "SET_ANGELIC_BED",
+    "set": "angelic"
+  },
+  "set_angelic_shelf": {
+    "id": "set_angelic_shelf",
+    "effects": {
+      "Appeal": 2,
+      "Comfort": 1,
+      "Stimulation": -2,
+      "Health": 1
+    },
+    "name": "Angelic Shelf",
+    "desc": "SET_ANGELIC_SHELF",
+    "set": "angelic"
+  },
+  "set_angelic_chair": {
+    "id": "set_angelic_chair",
+    "effects": {
+      "Appeal": 2,
+      "Comfort": 1,
+      "Stimulation": -2,
+      "Health": 1
+    },
+    "name": "Angelic Chair",
+    "desc": "SET_ANGELIC_CHAIR",
+    "set": "angelic"
+  },
+  "set_angelic_dresser": {
+    "id": "set_angelic_dresser",
+    "effects": {
+      "Appeal": 2,
+      "Comfort": 1,
+      "Stimulation": -2,
+      "Health": 1
+    },
+    "name": "Angelic Dresser",
+    "desc": "SET_ANGELIC_DRESSER",
+    "set": "angelic"
+  },
+  "set_angelic_sidetable": {
+    "id": "set_angelic_sidetable",
+    "effects": {
+      "Appeal": 2,
+      "Comfort": 1,
+      "Stimulation": -2,
+      "Health": 1
+    },
+    "name": "Angelic Side Table",
+    "desc": "SET_ANGELIC_SIDETABLE",
+    "set": "angelic"
+  },
+  "set_angelic_toilet": {
+    "id": "set_angelic_toilet",
+    "effects": {
+      "Appeal": 2,
+      "Comfort": 1,
+      "Stimulation": -2,
+      "Health": 1
+    },
+    "name": "Angelic Toilet",
+    "desc": "SET_ANGELIC_TOILET",
+    "set": "angelic"
+  },
+  "set_angelic_table": {
+    "id": "set_angelic_table",
+    "effects": {
+      "Appeal": 2,
+      "Comfort": 1,
+      "Stimulation": -2,
+      "Health": 1
+    },
+    "name": "Angelic Table A",
+    "desc": "SET_ANGELIC_TABLE",
+    "set": "angelic"
+  },
+  "set_angelic_table2": {
+    "id": "set_angelic_table2",
+    "effects": {
+      "Appeal": 2,
+      "Comfort": 1,
+      "Stimulation": -2,
+      "Health": 1
+    },
+    "name": "Angelic Table B",
+    "desc": "SET_ANGELIC_TABLE2",
+    "set": "angelic"
+  },
+  "set_angelic_suspendedshelf": {
+    "id": "set_angelic_suspendedshelf",
+    "effects": {
+      "Appeal": 2,
+      "Comfort": 1,
+      "Stimulation": -2,
+      "Health": 1
+    },
+    "name": "Suspended Angelic Shelf",
+    "desc": "SET_ANGELIC_SUSPENDEDSHELF",
+    "set": "angelic"
+  },
+  "set_angelic_lamp": {
+    "id": "set_angelic_lamp",
+    "effects": {
+      "Appeal": 2,
+      "Comfort": 1,
+      "Stimulation": -2,
+      "Health": 1
+    },
+    "name": "Angelic Lamp",
+    "desc": "SET_ANGELIC_LAMP",
+    "set": "angelic"
+  },
+  "set_atomic_stove": {
+    "id": "set_atomic_stove",
+    "effects": {
+      "Appeal": 1,
+      "Stimulation": 1
+    },
+    "name": "Atomic Stove",
+    "desc": "SET_ATOMIC_STOVE",
+    "set": "atomic"
+  },
+  "set_atomic_frige": {
+    "id": "set_atomic_frige",
+    "effects": {
+      "Appeal": 1,
+      "Stimulation": 1
+    },
+    "name": "Atomic Fridge",
+    "desc": "SET_ATOMIC_FRIGE",
+    "set": "atomic"
+  },
+  "set_atomic_couch": {
+    "id": "set_atomic_couch",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Atomic Couch",
+    "desc": "SET_ATOMIC_COUCH",
+    "set": "atomic"
+  },
+  "set_atomic_tv": {
+    "id": "set_atomic_tv",
+    "effects": {
+      "Appeal": 1,
+      "Stimulation": 1
+    },
+    "name": "Atomic TV",
+    "desc": "SET_ATOMIC_TV",
+    "set": "atomic"
+  },
+  "set_atomic_table": {
+    "id": "set_atomic_table",
+    "effects": {
+      "Appeal": 1,
+      "Stimulation": 1
+    },
+    "name": "Atomic Table",
+    "desc": "SET_ATOMIC_TABLE",
+    "set": "atomic"
+  },
+  "set_atomic_sidetable": {
+    "id": "set_atomic_sidetable",
+    "effects": {
+      "Appeal": 1,
+      "Stimulation": 1
+    },
+    "name": "Atomic Side Table",
+    "desc": "SET_ATOMIC_SIDETABLE",
+    "set": "atomic"
+  },
+  "set_atomic_radio": {
+    "id": "set_atomic_radio",
+    "effects": {
+      "Appeal": 1,
+      "Stimulation": 1
+    },
+    "name": "Atomic Radio",
+    "desc": "SET_ATOMIC_RADIO",
+    "set": "atomic"
+  },
+  "set_atomic_lamp": {
+    "id": "set_atomic_lamp",
+    "effects": {
+      "Appeal": 1,
+      "Stimulation": 1
+    },
+    "name": "Atomic Lamp",
+    "desc": "SET_ATOMIC_LAMP",
+    "set": "atomic"
+  },
+  "set_atomic_shelf": {
+    "id": "set_atomic_shelf",
+    "effects": {
+      "Appeal": 1,
+      "Stimulation": 1
+    },
+    "name": "Atomic Shelf",
+    "desc": "SET_ATOMIC_SHELF",
+    "set": "atomic"
+  },
+  "set_atomic_chair": {
+    "id": "set_atomic_chair",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Atomic Chair",
+    "desc": "SET_ATOMIC_CHAIR",
+    "set": "atomic"
+  },
+  "set_elegant_table": {
+    "id": "set_elegant_table",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Elegant Table",
+    "desc": "SET_ELEGANT_TABLE",
+    "set": "elegant"
+  },
+  "set_elegant_bed": {
+    "id": "set_elegant_bed",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Elegant Bed",
+    "desc": "SET_ELEGANT_BED",
+    "set": "elegant"
+  },
+  "set_elegant_desk": {
+    "id": "set_elegant_desk",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Elegant Desk",
+    "desc": "SET_ELEGANT_DESK",
+    "set": "elegant"
+  },
+  "set_elegant_dresser": {
+    "id": "set_elegant_dresser",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Elegant Dresser A",
+    "desc": "SET_ELEGANT_DRESSER",
+    "set": "elegant"
+  },
+  "set_elegant_dresser2": {
+    "id": "set_elegant_dresser2",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Elegant Dresser B",
+    "desc": "SET_ELEGANT_DRESSER2",
+    "set": "elegant"
+  },
+  "set_elegant_sidetable": {
+    "id": "set_elegant_sidetable",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Elegant Side Table A",
+    "desc": "SET_ELEGANT_SIDETABLE",
+    "set": "elegant"
+  },
+  "set_elegant_sidetable2": {
+    "id": "set_elegant_sidetable2",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Elegant Side Table B",
+    "desc": "SET_ELEGANT_SIDETABLE2",
+    "set": "elegant"
+  },
+  "set_elegant_chair": {
+    "id": "set_elegant_chair",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Elegant Chair",
+    "desc": "SET_ELEGANT_CHAIR",
+    "set": "elegant"
+  },
+  "set_elegant_shelf": {
+    "id": "set_elegant_shelf",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Elegant Shelf",
+    "desc": "SET_ELEGANT_SHELF",
+    "set": "elegant"
+  },
+  "set_elegant_lamp": {
+    "id": "set_elegant_lamp",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Elegant Lamp",
+    "desc": "SET_ELEGANT_LAMP",
+    "set": "elegant"
+  },
+  "set_modern_bed": {
+    "id": "set_modern_bed",
+    "effects": {
+      "Comfort": 2
+    },
+    "name": "Modern Bed",
+    "desc": "SET_MODERN_BED",
+    "set": "modern"
+  },
+  "set_modern_frige": {
+    "id": "set_modern_frige",
+    "effects": {
+      "Comfort": 1,
+      "Appeal": 1
+    },
+    "name": "Modern Fridge",
+    "desc": "SET_MODERN_FRIGE",
+    "set": "modern"
+  },
+  "set_modern_stove": {
+    "id": "set_modern_stove",
+    "effects": {
+      "Comfort": 1,
+      "Appeal": 1
+    },
+    "name": "Modern Stove",
+    "desc": "SET_MODERN_STOVE",
+    "set": "modern"
+  },
+  "set_modern_couch": {
+    "id": "set_modern_couch",
+    "effects": {
+      "Comfort": 1,
+      "Appeal": 1
+    },
+    "name": "Modern Couch",
+    "desc": "SET_MODERN_COUCH",
+    "set": "modern"
+  },
+  "set_modern_chair": {
+    "id": "set_modern_chair",
+    "effects": {
+      "Comfort": 1,
+      "Appeal": 1
+    },
+    "name": "Modern Chair",
+    "desc": "SET_MODERN_CHAIR",
+    "set": "modern"
+  },
+  "set_modern_dresser": {
+    "id": "set_modern_dresser",
+    "effects": {
+      "Comfort": 1,
+      "Appeal": 1
+    },
+    "name": "Modern Dresser",
+    "desc": "SET_MODERN_DRESSER",
+    "set": "modern"
+  },
+  "set_modern_sidetable": {
+    "id": "set_modern_sidetable",
+    "effects": {
+      "Comfort": 1,
+      "Appeal": 1
+    },
+    "name": "Modern Side Table",
+    "desc": "SET_MODERN_SIDETABLE",
+    "set": "modern"
+  },
+  "set_modern_table": {
+    "id": "set_modern_table",
+    "effects": {
+      "Comfort": 1,
+      "Appeal": 1
+    },
+    "name": "Modern Table",
+    "desc": "SET_MODERN_TABLE",
+    "set": "modern"
+  },
+  "set_modern_desk": {
+    "id": "set_modern_desk",
+    "effects": {
+      "Comfort": 1,
+      "Appeal": 1
+    },
+    "name": "Modern Desk",
+    "desc": "SET_MODERN_DESK",
+    "set": "modern"
+  },
+  "set_modern_tv": {
+    "id": "set_modern_tv",
+    "effects": {
+      "Stimulation": 1,
+      "Appeal": 1
+    },
+    "name": "Modern TV",
+    "desc": "SET_MODERN_TV",
+    "set": "modern"
+  },
+  "set_80s_couch": {
+    "id": "set_80s_couch",
+    "effects": {
+      "Comfort": 2
+    },
+    "name": "80s Couch",
+    "desc": "SET_80S_COUCH",
+    "set": "80s"
+  },
+  "set_80s_bed": {
+    "id": "set_80s_bed",
+    "effects": {
+      "Comfort": 2
+    },
+    "name": "80s Bed",
+    "desc": "SET_80S_BED",
+    "set": "80s"
+  },
+  "set_80s_dresser": {
+    "id": "set_80s_dresser",
+    "effects": {
+      "Comfort": 2
+    },
+    "name": "80s Dresser",
+    "desc": "SET_80S_DRESSER",
+    "set": "80s"
+  },
+  "set_80s_chair": {
+    "id": "set_80s_chair",
+    "effects": {
+      "Comfort": 2
+    },
+    "name": "80s Chair",
+    "desc": "SET_80S_CHAIR",
+    "set": "80s"
+  },
+  "set_80s_stove": {
+    "id": "set_80s_stove",
+    "effects": {
+      "Comfort": 2
+    },
+    "name": "80s Stove",
+    "desc": "SET_80S_STOVE",
+    "set": "80s"
+  },
+  "set_80s_frige": {
+    "id": "set_80s_frige",
+    "effects": {
+      "Comfort": 2
+    },
+    "name": "80s Fridge",
+    "desc": "SET_80S_FRIGE",
+    "set": "80s"
+  },
+  "set_80s_shelf": {
+    "id": "set_80s_shelf",
+    "effects": {
+      "Comfort": 2
+    },
+    "name": "80s Shelf",
+    "desc": "SET_80S_SHELF",
+    "set": "80s"
+  },
+  "set_80s_tv": {
+    "id": "set_80s_tv",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": 1
+    },
+    "name": "80s TV",
+    "desc": "SET_80S_TV",
+    "set": "80s"
+  },
+  "set_80s_table": {
+    "id": "set_80s_table",
+    "effects": {
+      "Comfort": 2
+    },
+    "name": "80s Table",
+    "desc": "SET_80S_TABLE",
+    "set": "80s"
+  },
+  "set_80s_sidetable": {
+    "id": "set_80s_sidetable",
+    "effects": {
+      "Comfort": 2
+    },
+    "name": "80s Side Table",
+    "desc": "SET_80S_SIDETABLE",
+    "set": "80s"
+  },
+  "set_retro_bed": {
+    "id": "set_retro_bed",
+    "effects": {
+      "Comfort": 1,
+      "Appeal": 1
+    },
+    "name": "Art Deco Bed",
+    "desc": "SET_RETRO_BED",
+    "set": "retro"
+  },
+  "set_retro_stove": {
+    "id": "set_retro_stove",
+    "effects": {
+      "Comfort": 1,
+      "Appeal": 1
+    },
+    "name": "Art Deco Stove",
+    "desc": "SET_RETRO_STOVE",
+    "set": "retro"
+  },
+  "set_retro_frige": {
+    "id": "set_retro_frige",
+    "effects": {
+      "Comfort": 1,
+      "Appeal": 1
+    },
+    "name": "Art Deco Fridge",
+    "desc": "SET_RETRO_FRIGE",
+    "set": "retro"
+  },
+  "set_retro_couch": {
+    "id": "set_retro_couch",
+    "effects": {
+      "Comfort": 1,
+      "Appeal": 1
+    },
+    "name": "Art Deco Couch",
+    "desc": "SET_RETRO_COUCH",
+    "set": "retro"
+  },
+  "set_retro_chair": {
+    "id": "set_retro_chair",
+    "effects": {
+      "Comfort": 1,
+      "Appeal": 1
+    },
+    "name": "Art Deco Chair",
+    "desc": "SET_RETRO_CHAIR",
+    "set": "retro"
+  },
+  "set_retro_dresser": {
+    "id": "set_retro_dresser",
+    "effects": {
+      "Comfort": 1,
+      "Appeal": 1
+    },
+    "name": "Art Deco Dresser",
+    "desc": "SET_RETRO_DRESSER",
+    "set": "retro"
+  },
+  "set_retro_dresser2": {
+    "id": "set_retro_dresser2",
+    "effects": {
+      "Comfort": 1,
+      "Appeal": 1
+    },
+    "name": "Art Deco Vanity",
+    "desc": "SET_RETRO_DRESSER2",
+    "set": "retro"
+  },
+  "set_retro_dresser3": {
+    "id": "set_retro_dresser3",
+    "effects": {
+      "Comfort": 1,
+      "Appeal": 1
+    },
+    "name": "Art Deco Armoire",
+    "desc": "SET_RETRO_DRESSER3",
+    "set": "retro"
+  },
+  "set_retro_sidetable": {
+    "id": "set_retro_sidetable",
+    "effects": {
+      "Comfort": 1,
+      "Appeal": 1
+    },
+    "name": "Art Deco Side Table",
+    "desc": "SET_RETRO_SIDETABLE",
+    "set": "retro"
+  },
+  "set_retro_lamp": {
+    "id": "set_retro_lamp",
+    "effects": {
+      "Comfort": 1,
+      "Appeal": 1
+    },
+    "name": "Art Deco Lamp",
+    "desc": "SET_RETRO_LAMP",
+    "set": "retro"
+  },
+  "set_90s_bed": {
+    "id": "set_90s_bed",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": 1
+    },
+    "name": "90s Bed",
+    "desc": "SET_90S_BED",
+    "set": "90s"
+  },
+  "set_90s_cabinet": {
+    "id": "set_90s_cabinet",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": 1
+    },
+    "name": "Suspended 90s Cabinet",
+    "desc": "SET_90S_CABINET",
+    "set": "90s"
+  },
+  "set_90s_cabinet2": {
+    "id": "set_90s_cabinet2",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": 1
+    },
+    "name": "90s Cabinet",
+    "desc": "SET_90S_CABINET2",
+    "set": "90s"
+  },
+  "set_90s_sink": {
+    "id": "set_90s_sink",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": 1
+    },
+    "name": "90s Sink",
+    "desc": "SET_90S_SINK",
+    "set": "90s"
+  },
+  "set_90s_stove": {
+    "id": "set_90s_stove",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": 1
+    },
+    "name": "90s Stove",
+    "desc": "SET_90S_STOVE",
+    "set": "90s"
+  },
+  "set_90s_frige": {
+    "id": "set_90s_frige",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": 1
+    },
+    "name": "90s Fridge",
+    "desc": "SET_90S_FRIGE",
+    "set": "90s"
+  },
+  "set_90s_shelf": {
+    "id": "set_90s_shelf",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": 1
+    },
+    "name": "90s Shelf",
+    "desc": "SET_90S_SHELF",
+    "set": "90s"
+  },
+  "set_90s_suspendedshelf": {
+    "id": "set_90s_suspendedshelf",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": 1
+    },
+    "name": "Suspended 90s Shelf",
+    "desc": "SET_90S_SUSPENDEDSHELF",
+    "set": "90s"
+  },
+  "set_90s_chair": {
+    "id": "set_90s_chair",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": 1
+    },
+    "name": "90s Chair",
+    "desc": "SET_90S_CHAIR",
+    "set": "90s"
+  },
+  "set_90s_stool": {
+    "id": "set_90s_stool",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": 1
+    },
+    "name": "90s Stool",
+    "desc": "SET_90S_STOOL",
+    "set": "90s"
+  },
+  "set_mushroom_table1": {
+    "id": "set_mushroom_table1",
+    "effects": {
+      "Comfort": 3,
+      "Stimulation": -1
+    },
+    "name": "Mushroom Table A",
+    "desc": "SET_MUSHROOM_TABLE1",
+    "set": "mushroom"
+  },
+  "set_mushroom_stool": {
+    "id": "set_mushroom_stool",
+    "effects": {
+      "Comfort": 3,
+      "Stimulation": -1
+    },
+    "name": "Mushroom Stool A",
+    "desc": "SET_MUSHROOM_STOOL",
+    "set": "mushroom"
+  },
+  "set_mushroom_stool2": {
+    "id": "set_mushroom_stool2",
+    "effects": {
+      "Comfort": 3,
+      "Stimulation": -1
+    },
+    "name": "Mushroom Stool B",
+    "desc": "SET_MUSHROOM_STOOL2",
+    "set": "mushroom"
+  },
+  "set_mushroom_chair": {
+    "id": "set_mushroom_chair",
+    "effects": {
+      "Comfort": 3,
+      "Stimulation": -1
+    },
+    "name": "Mushroom Chair",
+    "desc": "SET_MUSHROOM_CHAIR",
+    "set": "mushroom"
+  },
+  "set_mushroom_table": {
+    "id": "set_mushroom_table",
+    "effects": {
+      "Comfort": 3,
+      "Stimulation": -1
+    },
+    "name": "Mushroom Table B",
+    "desc": "SET_MUSHROOM_TABLE",
+    "set": "mushroom"
+  },
+  "set_mushroom_toilet": {
+    "id": "set_mushroom_toilet",
+    "effects": {
+      "Comfort": 3,
+      "Stimulation": -1
+    },
+    "name": "Mushroom Toilet",
+    "desc": "SET_MUSHROOM_TOILET",
+    "set": "mushroom"
+  },
+  "set_mushroom_shelf": {
+    "id": "set_mushroom_shelf",
+    "effects": {
+      "Comfort": 3,
+      "Stimulation": -1
+    },
+    "name": "Mushroom Shelf",
+    "desc": "SET_MUSHROOM_SHELF",
+    "set": "mushroom"
+  },
+  "set_mushroom_suspendedshelf": {
+    "id": "set_mushroom_suspendedshelf",
+    "effects": {
+      "Comfort": 3,
+      "Stimulation": -1
+    },
+    "name": "Suspended Mushroom Shelf A",
+    "desc": "SET_MUSHROOM_SUSPENDEDSHELF",
+    "set": "mushroom"
+  },
+  "set_mushroom_suspendedshelf2": {
+    "id": "set_mushroom_suspendedshelf2",
+    "effects": {
+      "Comfort": 3,
+      "Stimulation": -1
+    },
+    "name": "Suspended Mushroom Shelf B",
+    "desc": "SET_MUSHROOM_SUSPENDEDSHELF2",
+    "set": "mushroom"
+  },
+  "set_mushroom_stool3": {
+    "id": "set_mushroom_stool3",
+    "effects": {
+      "Comfort": 3,
+      "Stimulation": -1
+    },
+    "name": "Mushroom Stool C",
+    "desc": "SET_MUSHROOM_STOOL3",
+    "set": "mushroom"
+  },
+  "set_rustic_dresser": {
+    "id": "set_rustic_dresser",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Rustic Dresser",
+    "desc": "SET_RUSTIC_DRESSER",
+    "set": "rustic"
+  },
+  "set_rustic_shelf": {
+    "id": "set_rustic_shelf",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Suspended Rustic Shelf A",
+    "desc": "SET_RUSTIC_SHELF",
+    "set": "rustic"
+  },
+  "set_rustic_suspendedshelf": {
+    "id": "set_rustic_suspendedshelf",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Suspended Rustic Shelf B",
+    "desc": "SET_RUSTIC_SUSPENDEDSHELF",
+    "set": "rustic"
+  },
+  "set_rustic_sidetable": {
+    "id": "set_rustic_sidetable",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Rustic Side Table",
+    "desc": "SET_RUSTIC_SIDETABLE",
+    "set": "rustic"
+  },
+  "set_rustic_suspendedshelf2": {
+    "id": "set_rustic_suspendedshelf2",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Suspended Rustic Spice Rack",
+    "desc": "SET_RUSTIC_SUSPENDEDSHELF2",
+    "set": "rustic"
+  },
+  "set_rustic_chair": {
+    "id": "set_rustic_chair",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Rustic Chair",
+    "desc": "SET_RUSTIC_CHAIR",
+    "set": "rustic"
+  },
+  "set_rustic_desk": {
+    "id": "set_rustic_desk",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Rustic Desk",
+    "desc": "SET_RUSTIC_DESK",
+    "set": "rustic"
+  },
+  "set_rustic_bench": {
+    "id": "set_rustic_bench",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Rustic Bench",
+    "desc": "SET_RUSTIC_BENCH",
+    "set": "rustic"
+  },
+  "set_rustic_table": {
+    "id": "set_rustic_table",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Rustic Table",
+    "desc": "SET_RUSTIC_TABLE",
+    "set": "rustic"
+  },
+  "set_rustic_stool": {
+    "id": "set_rustic_stool",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Rustic Stool",
+    "desc": "SET_RUSTIC_STOOL",
+    "set": "rustic"
+  },
+  "set_cute_dresser": {
+    "id": "set_cute_dresser",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Cute Dresser",
+    "desc": "SET_CUTE_DRESSER",
+    "set": "cute"
+  },
+  "set_cute_sidetable": {
+    "id": "set_cute_sidetable",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Cute Side Table A",
+    "desc": "SET_CUTE_SIDETABLE",
+    "set": "cute"
+  },
+  "set_cute_shelf": {
+    "id": "set_cute_shelf",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Cute Shelf",
+    "desc": "SET_CUTE_SHELF",
+    "set": "cute"
+  },
+  "set_cute_dresser2": {
+    "id": "set_cute_dresser2",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Cute Armoire",
+    "desc": "SET_CUTE_DRESSER2",
+    "set": "cute"
+  },
+  "set_cute_couch": {
+    "id": "set_cute_couch",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Cute Couch",
+    "desc": "SET_CUTE_COUCH",
+    "set": "cute"
+  },
+  "set_cute_bed": {
+    "id": "set_cute_bed",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Cute Bed",
+    "desc": "SET_CUTE_BED",
+    "set": "cute"
+  },
+  "set_cute_chair": {
+    "id": "set_cute_chair",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Cute Chair",
+    "desc": "SET_CUTE_CHAIR",
+    "set": "cute"
+  },
+  "set_cute_stool": {
+    "id": "set_cute_stool",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Cute Stool",
+    "desc": "SET_CUTE_STOOL",
+    "set": "cute"
+  },
+  "set_cute_table2": {
+    "id": "set_cute_table2",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Cute Coffee Table",
+    "desc": "SET_CUTE_TABLE2",
+    "set": "cute"
+  },
+  "set_cute_sidetable2": {
+    "id": "set_cute_sidetable2",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Cute Side Table B",
+    "desc": "SET_CUTE_SIDETABLE2",
+    "set": "cute"
+  },
+  "object_wood_table": {
+    "id": "object_wood_table",
+    "effects": {
+      "Comfort": 2
+    },
+    "name": "Wood Table",
+    "desc": "OBJECT_WOOD_TABLE"
+  },
+  "object_statue_lion": {
+    "id": "object_statue_lion",
+    "effects": {
+      "Appeal": 2,
+      "Stimulation": 2,
+      "Comfort": -2
+    },
+    "name": "Guardian Lion Statue",
+    "desc": "OBJECT_STATUE_LION"
+  },
+  "object_statue_Jesus": {
+    "id": "object_statue_Jesus",
+    "effects": {
+      "Appeal": 2,
+      "Health": 2,
+      "Comfort": -2
+    },
+    "name": "STATUE_JESUS",
+    "desc": "OBJECT_STATUE_JESUS"
+  },
+  "object_statue_devil": {
+    "id": "object_statue_devil",
+    "effects": {
+      "Appeal": 6,
+      "Comfort": -6
+    },
+    "name": "Baphomet Statue",
+    "desc": "OBJECT_STATUE_DEVIL"
+  },
+  "object_statue_mermaid": {
+    "id": "object_statue_mermaid",
+    "effects": {
+      "Appeal": 2,
+      "Stimulation": 2,
+      "Comfort": -2
+    },
+    "name": "The Little Mermaid Statue",
+    "desc": "OBJECT_STATUE_MERMAID"
+  },
+  "object_statue_lotus": {
+    "id": "object_statue_lotus",
+    "effects": {
+      "Appeal": 2,
+      "Stimulation": 2,
+      "Comfort": -2
+    },
+    "name": "Lord Shiva Statue",
+    "desc": "OBJECT_STATUE_LOTUS"
+  },
+  "object_statue_buddah": {
+    "id": "object_statue_buddah",
+    "effects": {
+      "Appeal": 2,
+      "Stimulation": 2,
+      "Comfort": -2
+    },
+    "name": "Laughing Buddha Statue",
+    "desc": "OBJECT_STATUE_BUDDAH"
+  },
+  "object_statue_luckycat": {
+    "id": "object_statue_luckycat",
+    "effects": {
+      "Appeal": 1,
+      "Stimulation": 1,
+      "Comfort": -1
+    },
+    "name": "Maneki Neko Statue",
+    "desc": "OBJECT_STATUE_LUCKYCAT"
+  },
+  "object_statue_bast": {
+    "id": "object_statue_bast",
+    "effects": {
+      "Appeal": 1,
+      "Stimulation": 1,
+      "Comfort": -1
+    },
+    "name": "Bastet Statue",
+    "desc": "OBJECT_STATUE_BAST"
+  },
+  "object_statue_daruma": {
+    "id": "object_statue_daruma",
+    "effects": {
+      "Appeal": 1,
+      "Stimulation": 1,
+      "Comfort": -1
+    },
+    "name": "Daruma Statue",
+    "desc": "OBJECT_STATUE_DARUMA"
+  },
+  "object_statue_easterislandsmall": {
+    "id": "object_statue_easterislandsmall",
+    "effects": {
+      "Appeal": 1,
+      "Stimulation": 1,
+      "Comfort": -1
+    },
+    "name": "Small Easter Island Head",
+    "desc": "OBJECT_STATUE_EASTERISLANDSMALL"
+  },
+  "object_statue_easterislandmedium": {
+    "id": "object_statue_easterislandmedium",
+    "effects": {
+      "Appeal": 2,
+      "Stimulation": 2,
+      "Comfort": -2
+    },
+    "name": "Medium Easter Island Head",
+    "desc": "OBJECT_STATUE_EASTERISLANDMEDIUM"
+  },
+  "object_statue_easterislandlarge": {
+    "id": "object_statue_easterislandlarge",
+    "effects": {
+      "Appeal": 3,
+      "Stimulation": 3,
+      "Comfort": -4
+    },
+    "name": "Large Easter Island Head",
+    "desc": "OBJECT_STATUE_EASTERISLANDLARGE"
+  },
+  "object_vase_large": {
+    "id": "object_vase_large",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1,
+      "Stimulation": -1
+    },
+    "name": "Large Empty Vase",
+    "desc": "OBJECT_VASE_LARGE"
+  },
+  "object_plant_tentacle": {
+    "id": "object_plant_tentacle",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1,
+      "Stimulation": -1
+    },
+    "name": "Potted Tentacle",
+    "desc": "OBJECT_PLANT_TENTACLE"
+  },
+  "object_plant_monstera": {
+    "id": "object_plant_monstera",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1,
+      "Stimulation": -1
+    },
+    "name": "Potted Monstera",
+    "desc": "OBJECT_PLANT_MONSTERA"
+  },
+  "object_plant_spikey": {
+    "id": "object_plant_spikey",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1,
+      "Stimulation": -1
+    },
+    "name": "Potted Dracaena",
+    "desc": "OBJECT_PLANT_SPIKEY"
+  },
+  "object_plant_bush": {
+    "id": "object_plant_bush",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1,
+      "Stimulation": -1
+    },
+    "name": "Potted Boxwood",
+    "desc": "OBJECT_PLANT_BUSH"
+  },
+  "object_plant_potato": {
+    "id": "object_plant_potato",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1,
+      "Stimulation": -1
+    },
+    "name": "Potted Potato",
+    "desc": "OBJECT_PLANT_POTATO"
+  },
+  "object_plant_flowers": {
+    "id": "object_plant_flowers",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1,
+      "Stimulation": -1
+    },
+    "name": "Vase of Daisies",
+    "desc": "OBJECT_PLANT_FLOWERS"
+  },
+  "object_plant_orchid": {
+    "id": "object_plant_orchid",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1,
+      "Stimulation": -1
+    },
+    "name": "Potted Orchid",
+    "desc": "OBJECT_PLANT_ORCHID"
+  },
+  "object_plant_daisy": {
+    "id": "object_plant_daisy",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1,
+      "Stimulation": -1
+    },
+    "name": "Potted Daisy",
+    "desc": "OBJECT_PLANT_DAISY"
+  },
+  "object_plant_rafflesia": {
+    "id": "object_plant_rafflesia",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1,
+      "Stimulation": -1
+    },
+    "name": "Potted Rafflesia",
+    "desc": "OBJECT_PLANT_RAFFLESIA"
+  },
+  "object_plant_piranhasplant": {
+    "id": "object_plant_piranhasplant",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": -1,
+      "Stimulation": 1
+    },
+    "name": "Potted Piranha Plant",
+    "desc": "OBJECT_PLANT_PIRANHASPLANT"
+  },
+  "object_plant_cactus": {
+    "id": "object_plant_cactus",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": -1,
+      "Stimulation": 1
+    },
+    "name": "Potted Cactuar",
+    "desc": "OBJECT_PLANT_CACTUS"
+  },
+  "object_fishtank_blowfish": {
+    "id": "object_fishtank_blowfish",
+    "effects": {
+      "Stimulation": 1,
+      "Appeal": 1,
+      "Comfort": -1
+    },
+    "name": "Blowfish Aquarium",
+    "desc": "OBJECT_FISHTANK_BLOWFISH"
+  },
+  "object_fishtank_catfish": {
+    "id": "object_fishtank_catfish",
+    "effects": {
+      "Stimulation": 1,
+      "Appeal": 1,
+      "Comfort": -1
+    },
+    "name": "Catfish Aquarium",
+    "desc": "OBJECT_FISHTANK_CATFISH"
+  },
+  "object_fishtank_booze": {
+    "id": "object_fishtank_booze",
+    "effects": {
+      "Stimulation": 1,
+      "Appeal": 1,
+      "Comfort": -1
+    },
+    "name": "Booze Aquarium",
+    "desc": "OBJECT_FISHTANK_BOOZE"
+  },
+  "object_fishtank_tadpoles": {
+    "id": "object_fishtank_tadpoles",
+    "effects": {
+      "Stimulation": 1,
+      "Appeal": 1,
+      "Comfort": -1
+    },
+    "name": "Tadpole Aquarium",
+    "desc": "OBJECT_FISHTANK_TADPOLES"
+  },
+  "object_fishtank_mermaid": {
+    "id": "object_fishtank_mermaid",
+    "effects": {
+      "Stimulation": 1,
+      "Comfort": -3,
+      "Evolution": 1
+    },
+    "name": "Fiji Mermaid Aquarium",
+    "desc": "OBJECT_FISHTANK_MERMAID"
+  },
+  "object_fishtank_whale": {
+    "id": "object_fishtank_whale",
+    "effects": {
+      "Stimulation": 1,
+      "Appeal": 1,
+      "Comfort": -1
+    },
+    "name": "Baby Whale Aquarium",
+    "desc": "OBJECT_FISHTANK_WHALE"
+  },
+  "object_fishtank_small_tadpoles": {
+    "id": "object_fishtank_small_tadpoles",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Small Tadpole Aquarium",
+    "desc": "OBJECT_FISHTANK_SMALL_TADPOLES"
+  },
+  "object_fishtank_small_poop": {
+    "id": "object_fishtank_small_poop",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Small Poop Aquarium",
+    "desc": "OBJECT_FISHTANK_SMALL_POOP"
+  },
+  "object_fishtank_small_skull": {
+    "id": "object_fishtank_small_skull",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Small Skull Aquarium",
+    "desc": "OBJECT_FISHTANK_SMALL_SKULL"
+  },
+  "object_fishtank_small_fish": {
+    "id": "object_fishtank_small_fish",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Small Goldfish Aquarium",
+    "desc": "OBJECT_FISHTANK_SMALL_FISH"
+  },
+  "object_fishtank_small_lilfish": {
+    "id": "object_fishtank_small_lilfish",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Small Minnow Aquarium",
+    "desc": "OBJECT_FISHTANK_SMALL_LILFISH"
+  },
+  "object_fishtank_small_lilfishes": {
+    "id": "object_fishtank_small_lilfishes",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Small Minnow Family Aquarium",
+    "desc": "OBJECT_FISHTANK_SMALL_LILFISHES"
+  },
+  "object_radio_30s": {
+    "id": "object_radio_30s",
+    "effects": {
+      "Stimulation": 2,
+      "Comfort": -1
+    },
+    "name": "30s Radio",
+    "desc": "OBJECT_RADIO_30S"
+  },
+  "object_radio_40s": {
+    "id": "object_radio_40s",
+    "effects": {
+      "Stimulation": 2,
+      "Comfort": -1
+    },
+    "name": "40s Radio",
+    "desc": "OBJECT_RADIO_40S"
+  },
+  "object_radio_50s": {
+    "id": "object_radio_50s",
+    "effects": {
+      "Stimulation": 2,
+      "Comfort": -1
+    },
+    "name": "50s Radio",
+    "desc": "OBJECT_RADIO_50S"
+  },
+  "object_radio_80s": {
+    "id": "object_radio_80s",
+    "effects": {
+      "Stimulation": 2,
+      "Comfort": -1
+    },
+    "name": "80s Radio",
+    "desc": "OBJECT_RADIO_80S"
+  },
+  "object_radio_atomic": {
+    "id": "object_radio_atomic",
+    "effects": {
+      "Stimulation": 2,
+      "Comfort": -1
+    },
+    "name": "Atomic Radio",
+    "desc": "OBJECT_RADIO_ATOMIC"
+  },
+  "object_radio_70s": {
+    "id": "object_radio_70s",
+    "effects": {
+      "Stimulation": 2,
+      "Comfort": -1
+    },
+    "name": "70s Radio",
+    "desc": "OBJECT_RADIO_70S"
+  },
+  "object_radio_90s": {
+    "id": "object_radio_90s",
+    "effects": {
+      "Stimulation": 2,
+      "Comfort": -1
+    },
+    "name": "90s Radio",
+    "desc": "OBJECT_RADIO_90S"
+  },
+  "object_radio_60s": {
+    "id": "object_radio_60s",
+    "effects": {
+      "Stimulation": 2,
+      "Comfort": -1
+    },
+    "name": "60s Radio",
+    "desc": "OBJECT_RADIO_60S"
+  },
+  "object_taxidermy_pig": {
+    "id": "object_taxidermy_pig",
+    "effects": {
+      "Appeal": -1,
+      "Health": -2,
+      "Evolution": 1
+    },
+    "name": "Taxidermy Pig",
+    "desc": "OBJECT_TAXIDERMY_PIG"
+  },
+  "object_taxidermy_bat": {
+    "id": "object_taxidermy_bat",
+    "effects": {
+      "Appeal": -1,
+      "Health": -2,
+      "Evolution": 1
+    },
+    "name": "Taxidermy Bat",
+    "desc": "OBJECT_TAXIDERMY_BAT"
+  },
+  "object_taxidermy_fish": {
+    "id": "object_taxidermy_fish",
+    "effects": {
+      "Appeal": -1,
+      "Health": -2,
+      "Evolution": 1
+    },
+    "name": "Taxidermy Cod",
+    "desc": "OBJECT_TAXIDERMY_FISH"
+  },
+  "object_taxidermy_bird": {
+    "id": "object_taxidermy_bird",
+    "effects": {
+      "Appeal": -1,
+      "Health": -2,
+      "Evolution": 1
+    },
+    "name": "Taxidermy Pigeon",
+    "desc": "OBJECT_TAXIDERMY_BIRD"
+  },
+  "object_taxidermy_turtle": {
+    "id": "object_taxidermy_turtle",
+    "effects": {
+      "Appeal": -1,
+      "Health": -2,
+      "Evolution": 1
+    },
+    "name": "Taxidermy Turtle",
+    "desc": "OBJECT_TAXIDERMY_TURTLE"
+  },
+  "object_taxidermy_lizard": {
+    "id": "object_taxidermy_lizard",
+    "effects": {
+      "Appeal": -1,
+      "Health": -2,
+      "Evolution": 1
+    },
+    "name": "Taxidermy Iguana",
+    "desc": "OBJECT_TAXIDERMY_LIZARD"
+  },
+  "object_taxidermy_snake": {
+    "id": "object_taxidermy_snake",
+    "effects": {
+      "Appeal": -1,
+      "Health": -2,
+      "Evolution": 1
+    },
+    "name": "Taxidermy Snake",
+    "desc": "OBJECT_TAXIDERMY_SNAKE"
+  },
+  "object_taxidermy_squirrel": {
+    "id": "object_taxidermy_squirrel",
+    "effects": {
+      "Appeal": -1,
+      "Health": -2,
+      "Evolution": 1
+    },
+    "name": "Taxidermy Squirrel",
+    "desc": "OBJECT_TAXIDERMY_SQUIRREL"
+  },
+  "object_taxidermy_mouse": {
+    "id": "object_taxidermy_mouse",
+    "effects": {
+      "Appeal": -1,
+      "Health": -2,
+      "Evolution": 1,
+      "Stimulation": 1
+    },
+    "name": "Taxidermy Mouse",
+    "desc": "OBJECT_TAXIDERMY_MOUSE"
+  },
+  "object_taxidermy_gopher": {
+    "id": "object_taxidermy_gopher",
+    "effects": {
+      "Appeal": -1,
+      "Health": -2,
+      "Evolution": 1
+    },
+    "name": "Taxidermy Gopher",
+    "desc": "OBJECT_TAXIDERMY_GOPHER"
+  },
+  "object_taxidermy_crow": {
+    "id": "object_taxidermy_crow",
+    "effects": {
+      "Appeal": -1,
+      "Health": -2,
+      "Evolution": 1
+    },
+    "name": "Taxidermy Crow",
+    "desc": "OBJECT_TAXIDERMY_CROW"
+  },
+  "object_taxidermy_rat": {
+    "id": "object_taxidermy_rat",
+    "effects": {
+      "Appeal": -1,
+      "Health": -2,
+      "Evolution": 1
+    },
+    "name": "Taxidermy Rat",
+    "desc": "OBJECT_TAXIDERMY_RAT"
+  },
+  "object_electronics_monitor": {
+    "id": "object_electronics_monitor",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "PC Monitor",
+    "desc": "OBJECT_ELECTRONICS_MONITOR"
+  },
+  "object_electronics_pc": {
+    "id": "object_electronics_pc",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "PC",
+    "desc": "OBJECT_ELECTRONICS_PC"
+  },
+  "object_electronics_printer": {
+    "id": "object_electronics_printer",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Printer",
+    "desc": "OBJECT_ELECTRONICS_PRINTER"
+  },
+  "object_electronics_laptop": {
+    "id": "object_electronics_laptop",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Laptop",
+    "desc": "OBJECT_ELECTRONICS_LAPTOP"
+  },
+  "object_electronics_vhs": {
+    "id": "object_electronics_vhs",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "VHS Player",
+    "desc": "OBJECT_ELECTRONICS_VHS"
+  },
+  "object_electronics_dvdplayer": {
+    "id": "object_electronics_dvdplayer",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "DVD Player",
+    "desc": "OBJECT_ELECTRONICS_DVDPLAYER"
+  },
+  "object_electronics_speaker": {
+    "id": "object_electronics_speaker",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Speaker",
+    "desc": "OBJECT_ELECTRONICS_SPEAKER"
+  },
+  "object_books1": {
+    "id": "object_books1",
+    "effects": {
+      "Stimulation": 2,
+      "Appeal": -1
+    },
+    "name": "Books A",
+    "desc": "OBJECT_BOOKS1"
+  },
+  "object_books2": {
+    "id": "object_books2",
+    "effects": {
+      "Stimulation": 2,
+      "Appeal": -1
+    },
+    "name": "Books B",
+    "desc": "OBJECT_BOOKS2"
+  },
+  "object_books3": {
+    "id": "object_books3",
+    "effects": {
+      "Stimulation": 2,
+      "Appeal": -1
+    },
+    "name": "Books C",
+    "desc": "OBJECT_BOOKS3"
+  },
+  "object_books4": {
+    "id": "object_books4",
+    "effects": {
+      "Stimulation": 2,
+      "Appeal": -1
+    },
+    "name": "Books D",
+    "desc": "OBJECT_BOOKS4"
+  },
+  "object_books5": {
+    "id": "object_books5",
+    "effects": {
+      "Stimulation": 2,
+      "Appeal": -1
+    },
+    "name": "Books E",
+    "desc": "OBJECT_BOOKS5"
+  },
+  "object_books6": {
+    "id": "object_books6",
+    "effects": {
+      "Stimulation": 2,
+      "Appeal": -1
+    },
+    "name": "Books F",
+    "desc": "OBJECT_BOOKS6"
+  },
+  "object_books7": {
+    "id": "object_books7",
+    "effects": {
+      "Stimulation": 2,
+      "Appeal": -1
+    },
+    "name": "Books G",
+    "desc": "OBJECT_BOOKS7"
+  },
+  "object_books8": {
+    "id": "object_books8",
+    "effects": {
+      "Stimulation": 2,
+      "Appeal": -1
+    },
+    "name": "Books H",
+    "desc": "OBJECT_BOOKS8"
+  },
+  "object_books9": {
+    "id": "object_books9",
+    "effects": {
+      "Stimulation": 2,
+      "Appeal": -1
+    },
+    "name": "Books I",
+    "desc": "OBJECT_BOOKS9"
+  },
+  "object_books10": {
+    "id": "object_books10",
+    "effects": {
+      "Stimulation": 2,
+      "Appeal": -1
+    },
+    "name": "Book",
+    "desc": "OBJECT_BOOKS10"
+  },
+  "object_books11": {
+    "id": "object_books11",
+    "effects": {
+      "Stimulation": 2,
+      "Appeal": -1
+    },
+    "name": "Books J",
+    "desc": "OBJECT_BOOKS11"
+  },
+  "object_books12": {
+    "id": "object_books12",
+    "effects": {
+      "Stimulation": 2,
+      "Appeal": -1
+    },
+    "name": "Books K",
+    "desc": "OBJECT_BOOKS12"
+  },
+  "object_plant_cutecactus": {
+    "id": "object_plant_cutecactus",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Potted Cactus",
+    "desc": "OBJECT_PLANT_CUTECACTUS"
+  },
+  "object_plant_sunflower": {
+    "id": "object_plant_sunflower",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Potted Sunflower",
+    "desc": "OBJECT_PLANT_SUNFLOWER"
+  },
+  "object_plant_mushroom": {
+    "id": "object_plant_mushroom",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Potted Mushroom",
+    "desc": "OBJECT_PLANT_MUSHROOM"
+  },
+  "object_plant_mushrooms": {
+    "id": "object_plant_mushrooms",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Potted Mushrooms",
+    "desc": "OBJECT_PLANT_MUSHROOMS"
+  },
+  "object_plant_bulb1": {
+    "id": "object_plant_bulb1",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Potted Green Bulb",
+    "desc": "OBJECT_PLANT_BULB1"
+  },
+  "object_plant_bulb2": {
+    "id": "object_plant_bulb2",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Potted Blue Bulb",
+    "desc": "OBJECT_PLANT_BULB2"
+  },
+  "object_plant_bulb3": {
+    "id": "object_plant_bulb3",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Potted Yellow Bulb",
+    "desc": "OBJECT_PLANT_BULB3"
+  },
+  "object_plant_flytrap": {
+    "id": "object_plant_flytrap",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Venus Flytrap",
+    "desc": "OBJECT_PLANT_FLYTRAP"
+  },
+  "object_vase_dasiy": {
+    "id": "object_vase_dasiy",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Flower Vase",
+    "desc": "OBJECT_VASE_DASIY"
+  },
+  "object_vase_sticks": {
+    "id": "object_vase_sticks",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Branch Vase",
+    "desc": "OBJECT_VASE_STICKS"
+  },
+  "object_telephone_10s": {
+    "id": "object_telephone_10s",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Antique Telephone",
+    "desc": "OBJECT_TELEPHONE_10S"
+  },
+  "object_coffen": {
+    "id": "object_coffen",
+    "effects": {
+      "Health": -2
+    },
+    "name": "Coffin",
+    "desc": "OBJECT_COFFEN"
+  },
+  "object_barrel": {
+    "id": "object_barrel",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Barrel",
+    "desc": "OBJECT_BARREL"
+  },
+  "object_toxicwaste": {
+    "id": "object_toxicwaste",
+    "effects": {
+      "Comfort": -4,
+      "Evolution": 2
+    },
+    "name": "Toxic Waste",
+    "desc": "OBJECT_TOXICWASTE"
+  },
+  "object_crate": {
+    "id": "object_crate",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Crate",
+    "desc": "OBJECT_CRATE"
+  },
+  "object_chest": {
+    "id": "object_chest",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Chest",
+    "desc": "OBJECT_CHEST"
+  },
+  "object_box": {
+    "id": "object_box",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Cardboard Box",
+    "desc": "OBJECT_BOX"
+  },
+  "object_electronics_microwave": {
+    "id": "object_electronics_microwave",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Microwave A",
+    "desc": "OBJECT_ELECTRONICS_MICROWAVE"
+  },
+  "object_electronics_microwave2": {
+    "id": "object_electronics_microwave2",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Microwave B",
+    "desc": "OBJECT_ELECTRONICS_MICROWAVE2"
+  },
+  "object_electronics_microwave3": {
+    "id": "object_electronics_microwave3",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Microwave C",
+    "desc": "OBJECT_ELECTRONICS_MICROWAVE3"
+  },
+  "object_cinderblock1": {
+    "id": "object_cinderblock1",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Cinderblock",
+    "desc": "OBJECT_CINDERBLOCK1"
+  },
+  "object_cinderblock2": {
+    "id": "object_cinderblock2",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Small Cinderblock",
+    "desc": "OBJECT_CINDERBLOCK2"
+  },
+  "object_rock": {
+    "id": "object_rock",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Rock",
+    "desc": "OBJECT_ROCK"
+  },
+  "object_smallrock": {
+    "id": "object_smallrock",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Small Rock",
+    "desc": "OBJECT_SMALLROCK"
+  },
+  "object_diamond": {
+    "id": "object_diamond",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Diamond",
+    "desc": "OBJECT_DIAMOND"
+  },
+  "object_electronics_orb": {
+    "id": "object_electronics_orb",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Plasma Orb",
+    "desc": "OBJECT_ELECTRONICS_ORB"
+  },
+  "object_crystalball": {
+    "id": "object_crystalball",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Crystal Ball",
+    "desc": "OBJECT_CRYSTALBALL"
+  },
+  "object_electronics_lavalamp": {
+    "id": "object_electronics_lavalamp",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Lava Lamp",
+    "desc": "OBJECT_ELECTRONICS_LAVALAMP"
+  },
+  "object_electronics_fan": {
+    "id": "object_electronics_fan",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Small Fan",
+    "desc": "OBJECT_ELECTRONICS_FAN"
+  },
+  "object_jar_empty": {
+    "id": "object_jar_empty",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Broken Jar",
+    "desc": "OBJECT_JAR_EMPTY"
+  },
+  "object_jar_head1": {
+    "id": "object_jar_head1",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Head In Jar A",
+    "desc": "OBJECT_JAR_HEAD1"
+  },
+  "object_jar_head2": {
+    "id": "object_jar_head2",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Head In Jar B",
+    "desc": "OBJECT_JAR_HEAD2"
+  },
+  "object_jar_eggs": {
+    "id": "object_jar_eggs",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Jar of Eggs",
+    "desc": "OBJECT_JAR_EGGS"
+  },
+  "object_jar_cat": {
+    "id": "object_jar_cat",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Conjoined Cat in Jar",
+    "desc": "OBJECT_JAR_CAT"
+  },
+  "object_jar_fetus": {
+    "id": "object_jar_fetus",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Fetus in a Jar",
+    "desc": "OBJECT_JAR_FETUS"
+  },
+  "object_log": {
+    "id": "object_log",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Log",
+    "desc": "OBJECT_LOG"
+  },
+  "object_food_ham": {
+    "id": "object_food_ham",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Ham",
+    "desc": "OBJECT_FOOD_HAM"
+  },
+  "object_food_turkey": {
+    "id": "object_food_turkey",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Turkey",
+    "desc": "OBJECT_FOOD_TURKEY"
+  },
+  "object_bug_cenipede": {
+    "id": "object_bug_cenipede",
+    "effects": {
+      "Stimulation": 1,
+      "Appeal": 1,
+      "Comfort": -1
+    },
+    "name": "Centipede",
+    "desc": "OBJECT_BUG_CENIPEDE"
+  },
+  "object_bug_pillbug": {
+    "id": "object_bug_pillbug",
+    "effects": {
+      "Stimulation": 1,
+      "Appeal": 1,
+      "Comfort": -1
+    },
+    "name": "Pillbug",
+    "desc": "OBJECT_BUG_PILLBUG"
+  },
+  "object_bug_spider": {
+    "id": "object_bug_spider",
+    "effects": {
+      "Stimulation": 1,
+      "Appeal": 1,
+      "Comfort": -1
+    },
+    "name": "Black Widow",
+    "desc": "OBJECT_BUG_SPIDER"
+  },
+  "object_fishtank_chameleon": {
+    "id": "object_fishtank_chameleon",
+    "effects": {
+      "Stimulation": 1,
+      "Appeal": 1,
+      "Comfort": -1
+    },
+    "name": "Chameleon",
+    "desc": "OBJECT_FISHTANK_CHAMELEON"
+  },
+  "object_gastank": {
+    "id": "object_gastank",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Gas Tank",
+    "desc": "OBJECT_GASTANK"
+  },
+  "object_electronics_arcade1": {
+    "id": "object_electronics_arcade1",
+    "effects": {
+      "Appeal": 1,
+      "Stimulation": 1
+    },
+    "name": "Arcade Machine",
+    "desc": "OBJECT_ELECTRONICS_ARCADE1"
+  },
+  "object_electronics_arcade2": {
+    "id": "object_electronics_arcade2",
+    "effects": {
+      "Appeal": 1,
+      "Stimulation": 1
+    },
+    "name": "Indie Arcade",
+    "desc": "OBJECT_ELECTRONICS_ARCADE2"
+  },
+  "object_fortuneteller": {
+    "id": "object_fortuneteller",
+    "effects": {
+      "Appeal": 1,
+      "Stimulation": 1
+    },
+    "name": "Fortuneteller",
+    "desc": "OBJECT_FORTUNETELLER"
+  },
+  "object_electronics_cranegame": {
+    "id": "object_electronics_cranegame",
+    "effects": {
+      "Appeal": 1,
+      "Stimulation": 1
+    },
+    "name": "Crane Game",
+    "desc": "OBJECT_ELECTRONICS_CRANEGAME"
+  },
+  "object_outhouse": {
+    "id": "object_outhouse",
+    "effects": {
+      "Comfort": 3,
+      "Appeal": -1
+    },
+    "name": "Outhouse",
+    "desc": "OBJECT_OUTHOUSE"
+  },
+  "object_potopotty": {
+    "id": "object_potopotty",
+    "effects": {
+      "Comfort": 3,
+      "Appeal": -1
+    },
+    "name": "Pot O' Potty",
+    "desc": "OBJECT_POTOPOTTY"
+  },
+  "object_icechest": {
+    "id": "object_icechest",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Ice Chest",
+    "desc": "OBJECT_ICECHEST"
+  },
+  "object_fishtank_octocat": {
+    "id": "object_fishtank_octocat",
+    "effects": {
+      "Appeal": 3,
+      "Stimulation": 2,
+      "Comfort": -1
+    },
+    "name": "Octocat Aquarium",
+    "desc": "OBJECT_FISHTANK_OCTOCAT"
+  },
+  "object_taxidermy_bear": {
+    "id": "object_taxidermy_bear",
+    "effects": {
+      "Appeal": 1,
+      "Health": -2,
+      "Evolution": 2
+    },
+    "name": "Taxidermy Bear",
+    "desc": "OBJECT_TAXIDERMY_BEAR"
+  },
+  "object_bath1": {
+    "id": "object_bath1",
+    "effects": {
+      "Comfort": 2
+    },
+    "name": "Antique Bath",
+    "desc": "OBJECT_BATH1"
+  },
+  "object_bath2": {
+    "id": "object_bath2",
+    "effects": {
+      "Comfort": 2
+    },
+    "name": "Retro Bath",
+    "desc": "OBJECT_BATH2"
+  },
+  "object_shower": {
+    "id": "object_shower",
+    "effects": {
+      "Comfort": 2
+    },
+    "name": "Shower",
+    "desc": "OBJECT_SHOWER"
+  },
+  "object_bbq": {
+    "id": "object_bbq",
+    "effects": {
+      "Comfort": 2
+    },
+    "name": "BBQ",
+    "desc": "OBJECT_BBQ"
+  },
+  "object_oldstove": {
+    "id": "object_oldstove",
+    "effects": {
+      "Comfort": 2
+    },
+    "name": "Antique Stove",
+    "desc": "OBJECT_OLDSTOVE"
+  },
+  "object_easel": {
+    "id": "object_easel",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Easel",
+    "desc": "OBJECT_EASEL"
+  },
+  "object_birdcage": {
+    "id": "object_birdcage",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Birdcage",
+    "desc": "OBJECT_BIRDCAGE"
+  },
+  "object_dollhouse": {
+    "id": "object_dollhouse",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Dollhouse",
+    "desc": "OBJECT_DOLLHOUSE"
+  },
+  "object_safe": {
+    "id": "object_safe",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Safe",
+    "desc": "OBJECT_SAFE"
+  },
+  "object_bed": {
+    "id": "object_bed",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Mattress",
+    "desc": "OBJECT_BED"
+  },
+  "object_watertower": {
+    "id": "object_watertower",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Water Cooler",
+    "desc": "OBJECT_WATERTOWER"
+  },
+  "object_visibleman": {
+    "id": "object_visibleman",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Visible Man",
+    "desc": "OBJECT_VISIBLEMAN"
+  },
+  "object_statue_stonehead": {
+    "id": "object_statue_stonehead",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Olmec Head",
+    "desc": "OBJECT_STATUE_STONEHEAD"
+  },
+  "object_clock": {
+    "id": "object_clock",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Grandfather Clock",
+    "desc": "OBJECT_CLOCK"
+  },
+  "object_iv": {
+    "id": "object_iv",
+    "effects": {
+      "Health": 1
+    },
+    "name": "IV",
+    "desc": "OBJECT_IV"
+  },
+  "object_fireplace": {
+    "id": "object_fireplace",
+    "effects": {
+      "Comfort": 2
+    },
+    "name": "Fireplace",
+    "desc": "OBJECT_FIREPLACE"
+  },
+  "object_dryer": {
+    "id": "object_dryer",
+    "effects": {
+      "Comfort": 2
+    },
+    "name": "Dryer",
+    "desc": "OBJECT_DRYER"
+  },
+  "object_washer": {
+    "id": "object_washer",
+    "effects": {
+      "Comfort": 2
+    },
+    "name": "Washer",
+    "desc": "OBJECT_WASHER"
+  },
+  "object_filingcabinet": {
+    "id": "object_filingcabinet",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": 1
+    },
+    "name": "Filing Cabinet",
+    "desc": "OBJECT_FILINGCABINET"
+  },
+  "object_cattree1": {
+    "id": "object_cattree1",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Cat Tree A",
+    "desc": "OBJECT_CATTREE1"
+  },
+  "object_cattree2": {
+    "id": "object_cattree2",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Cat Tree B",
+    "desc": "OBJECT_CATTREE2"
+  },
+  "object_cattree3": {
+    "id": "object_cattree3",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Cat Tree C",
+    "desc": "OBJECT_CATTREE3"
+  },
+  "object_punchy": {
+    "id": "object_punchy",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Boxing Bill",
+    "desc": "OBJECT_PUNCHY"
+  },
+  "object_sink": {
+    "id": "object_sink",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Sink",
+    "desc": "OBJECT_SINK"
+  },
+  "object_toolchest": {
+    "id": "object_toolchest",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Tool Chest",
+    "desc": "OBJECT_TOOLCHEST"
+  },
+  "object_ironingboard": {
+    "id": "object_ironingboard",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Ironing Board",
+    "desc": "OBJECT_IRONINGBOARD"
+  },
+  "object_broom": {
+    "id": "object_broom",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Broom",
+    "desc": "OBJECT_BROOM"
+  },
+  "object_vacuum": {
+    "id": "object_vacuum",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Vacuum",
+    "desc": "OBJECT_VACUUM"
+  },
+  "object_gnome": {
+    "id": "object_gnome",
+    "effects": {
+      "Comfort": 1,
+      "Appeal": 1
+    },
+    "name": "Gnome",
+    "desc": "OBJECT_GNOME"
+  },
+  "wallmounted_picture_blueboy": {
+    "id": "wallmounted_picture_blueboy",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Framed Blue Boy",
+    "desc": "WALLMOUNTED_PICTURE_BLUEBOY"
+  },
+  "wallmounted_picture_frida": {
+    "id": "wallmounted_picture_frida",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Framed Frida",
+    "desc": "WALLMOUNTED_PICTURE_FRIDA"
+  },
+  "wallmounted_picture_god": {
+    "id": "wallmounted_picture_god",
+    "effects": {
+      "Appeal": 2,
+      "Comfort": 1,
+      "Health": 1
+    },
+    "name": "Framed Creation of Adam",
+    "desc": "WALLMOUNTED_PICTURE_GOD"
+  },
+  "wallmounted_picture_lisa": {
+    "id": "wallmounted_picture_lisa",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Framed Mona Lisa",
+    "desc": "WALLMOUNTED_PICTURE_LISA"
+  },
+  "wallmounted_picture_scream": {
+    "id": "wallmounted_picture_scream",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Framed The Scream",
+    "desc": "WALLMOUNTED_PICTURE_SCREAM"
+  },
+  "wallmounted_picture_night": {
+    "id": "wallmounted_picture_night",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Framed Starry Night",
+    "desc": "WALLMOUNTED_PICTURE_NIGHT"
+  },
+  "wallmounted_picture_gothic": {
+    "id": "wallmounted_picture_gothic",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Framed American Gothic",
+    "desc": "WALLMOUNTED_PICTURE_GOTHIC"
+  },
+  "wallmounted_picture_picasso": {
+    "id": "wallmounted_picture_picasso",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Framed Picasso",
+    "desc": "WALLMOUNTED_PICTURE_PICASSO"
+  },
+  "wallmounted_picture_keith": {
+    "id": "wallmounted_picture_keith",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Framed Keith Haring",
+    "desc": "WALLMOUNTED_PICTURE_KEITH"
+  },
+  "wallmounted_picture_pearl": {
+    "id": "wallmounted_picture_pearl",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Framed The Pearl",
+    "desc": "WALLMOUNTED_PICTURE_PEARL"
+  },
+  "wallmounted_picture_rosie": {
+    "id": "wallmounted_picture_rosie",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Rosie Poster",
+    "desc": "WALLMOUNTED_PICTURE_ROSIE"
+  },
+  "wallmounted_picture_ufo": {
+    "id": "wallmounted_picture_ufo",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "UFO Poster",
+    "desc": "WALLMOUNTED_PICTURE_UFO"
+  },
+  "wallmounted_picture_che": {
+    "id": "wallmounted_picture_che",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Che Purvara Poster",
+    "desc": "WALLMOUNTED_PICTURE_CHE"
+  },
+  "wallmounted_picture_obey": {
+    "id": "wallmounted_picture_obey",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Meowbey Poster",
+    "desc": "WALLMOUNTED_PICTURE_OBEY"
+  },
+  "wallmounted_picture_hang": {
+    "id": "wallmounted_picture_hang",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Hang in There Poster",
+    "desc": "WALLMOUNTED_PICTURE_HANG"
+  },
+  "wallmounted_picture_jaws": {
+    "id": "wallmounted_picture_jaws",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Paws Poster",
+    "desc": "WALLMOUNTED_PICTURE_JAWS"
+  },
+  "wallmounted_picture_scarface": {
+    "id": "wallmounted_picture_scarface",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Catface Poster",
+    "desc": "WALLMOUNTED_PICTURE_SCARFACE"
+  },
+  "wallmounted_picture_lambs": {
+    "id": "wallmounted_picture_lambs",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Silence of the Mice Poster",
+    "desc": "WALLMOUNTED_PICTURE_LAMBS"
+  },
+  "wallmounted_picture_orange": {
+    "id": "wallmounted_picture_orange",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Catwork Orange Poster",
+    "desc": "WALLMOUNTED_PICTURE_ORANGE"
+  },
+  "wallmounted_picture_eraser": {
+    "id": "wallmounted_picture_eraser",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Litterhead Poster",
+    "desc": "WALLMOUNTED_PICTURE_ERASER"
+  },
+  "wallmounted_sewn_clock": {
+    "id": "wallmounted_sewn_clock",
+    "effects": {
+      "Appeal": 1,
+      "Comfort": 1
+    },
+    "name": "Sewn Clock",
+    "desc": "WALLMOUNTED_SEWN_CLOCK"
+  },
+  "wallmounted_clock": {
+    "id": "wallmounted_clock",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Cat Clock",
+    "desc": "WALLMOUNTED_CLOCK"
+  },
+  "wallmounted_wooden_clock": {
+    "id": "wallmounted_wooden_clock",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Wooden Clock",
+    "desc": "WALLMOUNTED_WOODEN_CLOCK"
+  },
+  "wallmounted_atomic_clock": {
+    "id": "wallmounted_atomic_clock",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Atomic Clock",
+    "desc": "WALLMOUNTED_ATOMIC_CLOCK"
+  },
+  "wallmounted_ghost1": {
+    "id": "wallmounted_ghost1",
+    "effects": {
+      "Appeal": 1,
+      "Stimulation": 1,
+      "Comfort": -1
+    },
+    "name": "Blinky",
+    "desc": "WALLMOUNTED_GHOST1"
+  },
+  "wallmounted_ghost2": {
+    "id": "wallmounted_ghost2",
+    "effects": {
+      "Appeal": 1,
+      "Stimulation": 1,
+      "Comfort": -1
+    },
+    "name": "Pinky",
+    "desc": "WALLMOUNTED_GHOST2"
+  },
+  "wallmounted_ghost3": {
+    "id": "wallmounted_ghost3",
+    "effects": {
+      "Appeal": 1,
+      "Stimulation": 1,
+      "Comfort": -1
+    },
+    "name": "Clyde",
+    "desc": "WALLMOUNTED_GHOST3"
+  },
+  "wallmounted_mask_bunny": {
+    "id": "wallmounted_mask_bunny",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Bunny Mask",
+    "desc": "WALLMOUNTED_MASK_BUNNY"
+  },
+  "wallmounted_mask_tonetta": {
+    "id": "wallmounted_mask_tonetta",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Tonetta Mask",
+    "desc": "WALLMOUNTED_MASK_TONETTA"
+  },
+  "wallmounted_mask_hocky": {
+    "id": "wallmounted_mask_hocky",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Hockey Mask",
+    "desc": "WALLMOUNTED_MASK_HOCKY"
+  },
+  "wallmounted_picture_sailboat": {
+    "id": "wallmounted_picture_sailboat",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Framed Sailboat",
+    "desc": "WALLMOUNTED_PICTURE_SAILBOAT"
+  },
+  "wallmounted_picture_magazine": {
+    "id": "wallmounted_picture_magazine",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Centerfold",
+    "desc": "WALLMOUNTED_PICTURE_MAGAZINE"
+  },
+  "wallmounted_picture_poem": {
+    "id": "wallmounted_picture_poem",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Poem",
+    "desc": "WALLMOUNTED_PICTURE_POEM"
+  },
+  "wallmounted_picture_photo": {
+    "id": "wallmounted_picture_photo",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Photo A",
+    "desc": "WALLMOUNTED_PICTURE_PHOTO"
+  },
+  "wallmounted_picture_photo2": {
+    "id": "wallmounted_picture_photo2",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Photo B",
+    "desc": "WALLMOUNTED_PICTURE_PHOTO2"
+  },
+  "wallmounted_picture_photo3": {
+    "id": "wallmounted_picture_photo3",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Photos",
+    "desc": "WALLMOUNTED_PICTURE_PHOTO3"
+  },
+  "wallmounted_wooden_boards1": {
+    "id": "wallmounted_wooden_boards1",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Wooden Boards A",
+    "desc": "WALLMOUNTED_WOODEN_BOARDS1"
+  },
+  "wallmounted_wooden_boards2": {
+    "id": "wallmounted_wooden_boards2",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Wooden Boards B",
+    "desc": "WALLMOUNTED_WOODEN_BOARDS2"
+  },
+  "wallmounted_wooden_boards3": {
+    "id": "wallmounted_wooden_boards3",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Wooden Boards C",
+    "desc": "WALLMOUNTED_WOODEN_BOARDS3"
+  },
+  "wallmounted_wooden_boards4": {
+    "id": "wallmounted_wooden_boards4",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Wooden Boards D",
+    "desc": "WALLMOUNTED_WOODEN_BOARDS4"
+  },
+  "wallmounted_switch": {
+    "id": "wallmounted_switch",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Light Switch",
+    "desc": "WALLMOUNTED_SWITCH"
+  },
+  "wallmounted_outlet": {
+    "id": "wallmounted_outlet",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Outlet",
+    "desc": "WALLMOUNTED_OUTLET"
+  },
+  "wallmounted_robo_plate1": {
+    "id": "wallmounted_robo_plate1",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Metal Plate A",
+    "desc": "WALLMOUNTED_ROBO_PLATE1"
+  },
+  "wallmounted_robo_plate2": {
+    "id": "wallmounted_robo_plate2",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Metal Plate B",
+    "desc": "WALLMOUNTED_ROBO_PLATE2"
+  },
+  "wallmounted_robo_plate3": {
+    "id": "wallmounted_robo_plate3",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Metal Plate C",
+    "desc": "WALLMOUNTED_ROBO_PLATE3"
+  },
+  "wallmounted_furnace": {
+    "id": "wallmounted_furnace",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Furnace",
+    "desc": "WALLMOUNTED_FURNACE"
+  },
+  "wallmounted_robo_plate4": {
+    "id": "wallmounted_robo_plate4",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Robo Plate",
+    "desc": "WALLMOUNTED_ROBO_PLATE4"
+  },
+  "wallmounted_tv": {
+    "id": "wallmounted_tv",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Wall-Mounted TV",
+    "desc": "WALLMOUNTED_TV"
+  },
+  "wallmounted_balloon": {
+    "id": "wallmounted_balloon",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Balloon A",
+    "desc": "WALLMOUNTED_BALLOON"
+  },
+  "wallmounted_balloon2": {
+    "id": "wallmounted_balloon2",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Balloon B",
+    "desc": "WALLMOUNTED_BALLOON2"
+  },
+  "wallmounted_balloon3": {
+    "id": "wallmounted_balloon3",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Balloon C",
+    "desc": "WALLMOUNTED_BALLOON3"
+  },
+  "wallmounted_sewer_pipes1": {
+    "id": "wallmounted_sewer_pipes1",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Sewer Pipes A",
+    "desc": "WALLMOUNTED_SEWER_PIPES1"
+  },
+  "wallmounted_sewer_pipes2": {
+    "id": "wallmounted_sewer_pipes2",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Sewer Pipes B",
+    "desc": "WALLMOUNTED_SEWER_PIPES2"
+  },
+  "wallmounted_sewer_pipes3": {
+    "id": "wallmounted_sewer_pipes3",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Sewer Pipes C",
+    "desc": "WALLMOUNTED_SEWER_PIPES3"
+  },
+  "wallmounted_balloon4": {
+    "id": "wallmounted_balloon4",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Heart Balloon",
+    "desc": "WALLMOUNTED_BALLOON4"
+  },
+  "wallmounted_mirror": {
+    "id": "wallmounted_mirror",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Mirror",
+    "desc": "WALLMOUNTED_MIRROR"
+  },
+  "wallmounted_junk_paper1": {
+    "id": "wallmounted_junk_paper1",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Newspapers A",
+    "desc": "WALLMOUNTED_JUNK_PAPER1"
+  },
+  "wallmounted_picture_drawing": {
+    "id": "wallmounted_picture_drawing",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Drawing",
+    "desc": "WALLMOUNTED_PICTURE_DRAWING"
+  },
+  "wallmounted_cowskull": {
+    "id": "wallmounted_cowskull",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Wallmounted Cow Skull",
+    "desc": "WALLMOUNTED_COWSKULL"
+  },
+  "wallmounted_taxidermy_deerhead": {
+    "id": "wallmounted_taxidermy_deerhead",
+    "effects": {
+      "Appeal": -1,
+      "Health": -1,
+      "Evolution": 1
+    },
+    "name": "Taxidermy Deer",
+    "desc": "WALLMOUNTED_TAXIDERMY_DEERHEAD"
+  },
+  "wallmounted_taxidermy_guppy": {
+    "id": "wallmounted_taxidermy_guppy",
+    "effects": {
+      "Appeal": 1,
+      "Evolution": 1
+    },
+    "name": "Taxidermy Guppy",
+    "desc": "WALLMOUNTED_TAXIDERMY_GUPPY"
+  },
+  "wallmounted_jollyroger": {
+    "id": "wallmounted_jollyroger",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Jolly Roger",
+    "desc": "WALLMOUNTED_JOLLYROGER"
+  },
+  "wallmounted_taxidermy_bugs": {
+    "id": "wallmounted_taxidermy_bugs",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Taxidermy Bugs",
+    "desc": "WALLMOUNTED_TAXIDERMY_BUGS"
+  },
+  "wallmounted_taxidermy_fish": {
+    "id": "wallmounted_taxidermy_fish",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Taxidermy Bass",
+    "desc": "WALLMOUNTED_TAXIDERMY_FISH"
+  },
+  "wallmounted_mask_infamy": {
+    "id": "wallmounted_mask_infamy",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Infamous Mask",
+    "desc": "WALLMOUNTED_MASK_INFAMY"
+  },
+  "wallmounted_safe": {
+    "id": "wallmounted_safe",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Wall Safe",
+    "desc": "WALLMOUNTED_SAFE"
+  },
+  "wallmounted_bricks1": {
+    "id": "wallmounted_bricks1",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Bricks A",
+    "desc": "WALLMOUNTED_BRICKS1"
+  },
+  "wallmounted_bricks2": {
+    "id": "wallmounted_bricks2",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Bricks B",
+    "desc": "WALLMOUNTED_BRICKS2"
+  },
+  "wallmounted_bricks3": {
+    "id": "wallmounted_bricks3",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Bricks C",
+    "desc": "WALLMOUNTED_BRICKS3"
+  },
+  "wallmounted_bricks4": {
+    "id": "wallmounted_bricks4",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Bricks D",
+    "desc": "WALLMOUNTED_BRICKS4"
+  },
+  "wallmounted_junk_paper2": {
+    "id": "wallmounted_junk_paper2",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Newspapers B",
+    "desc": "WALLMOUNTED_JUNK_PAPER2"
+  },
+  "wallmounted_crack": {
+    "id": "wallmounted_crack",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "A Crack",
+    "desc": "WALLMOUNTED_CRACK"
+  },
+  "wallmounted_torch": {
+    "id": "wallmounted_torch",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Torch",
+    "desc": "WALLMOUNTED_TORCH"
+  },
+  "wallmounted_shrunkinhead": {
+    "id": "wallmounted_shrunkinhead",
+    "effects": {
+      "Health": -5,
+      "Evolution": 1
+    },
+    "name": "Shrunken Cat Head",
+    "desc": "WALLMOUNTED_SHRUNKINHEAD"
+  },
+  "wallmounted_cloud": {
+    "id": "wallmounted_cloud",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Cloud",
+    "desc": "WALLMOUNTED_CLOUD"
+  },
+  "wallmounted_block1": {
+    "id": "wallmounted_block1",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Block",
+    "desc": "WALLMOUNTED_BLOCK1"
+  },
+  "wallmounted_block2": {
+    "id": "wallmounted_block2",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Question Block",
+    "desc": "WALLMOUNTED_BLOCK2"
+  },
+  "wallmounted_block3": {
+    "id": "wallmounted_block3",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Brick Block",
+    "desc": "WALLMOUNTED_BLOCK3"
+  },
+  "wallmounted_balloon5": {
+    "id": "wallmounted_balloon5",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Balloon D",
+    "desc": "WALLMOUNTED_BALLOON5"
+  },
+  "wallmounted_balloon6": {
+    "id": "wallmounted_balloon6",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Balloon E",
+    "desc": "WALLMOUNTED_BALLOON6"
+  },
+  "wallmounted_balloon7": {
+    "id": "wallmounted_balloon7",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Balloon F",
+    "desc": "WALLMOUNTED_BALLOON7"
+  },
+  "hanging_fish": {
+    "id": "hanging_fish",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Hanging Air Fouler",
+    "desc": "HANGING_FISH"
+  },
+  "hanging_cathead": {
+    "id": "hanging_cathead",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Hanging Airfreshener A",
+    "desc": "HANGING_CATHEAD"
+  },
+  "hanging_airfreshiner": {
+    "id": "hanging_airfreshiner",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Hanging Airfreshener B",
+    "desc": "HANGING_AIRFRESHINER"
+  },
+  "ceiling_fan": {
+    "id": "ceiling_fan",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Ceiling Fan",
+    "desc": "CEILING_FAN"
+  },
+  "ceiling_discoball": {
+    "id": "ceiling_discoball",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Disco Ball",
+    "desc": "CEILING_DISCOBALL"
+  },
+  "ceiling_cage": {
+    "id": "ceiling_cage",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Hanging Cage",
+    "desc": "CEILING_CAGE"
+  },
+  "small_candle_black1": {
+    "id": "small_candle_black1",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Red Candle A",
+    "desc": "SMALL_CANDLE_BLACK1"
+  },
+  "small_candle_black2": {
+    "id": "small_candle_black2",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Red Candle B",
+    "desc": "SMALL_CANDLE_BLACK2"
+  },
+  "small_candle_black3": {
+    "id": "small_candle_black3",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Small Red Candle A",
+    "desc": "SMALL_CANDLE_BLACK3"
+  },
+  "Small_candle_black4": {
+    "id": "Small_candle_black4",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "CANDLE_BLACK4",
+    "desc": "SMALL_CANDLE_BLACK4"
+  },
+  "Small_candle_white1": {
+    "id": "Small_candle_white1",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "CANDLE_WHITE1",
+    "desc": "SMALL_CANDLE_WHITE1"
+  },
+  "Small_candle_white2": {
+    "id": "Small_candle_white2",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "CANDLE_WHITE2",
+    "desc": "SMALL_CANDLE_WHITE2"
+  },
+  "Small_candle_white3": {
+    "id": "Small_candle_white3",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "CANDLE_WHITE3",
+    "desc": "SMALL_CANDLE_WHITE3"
+  },
+  "Small_candle_white4": {
+    "id": "Small_candle_white4",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "CANDLE_WHITE4",
+    "desc": "SMALL_CANDLE_WHITE4"
+  },
+  "small_vase1": {
+    "id": "small_vase1",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Small Vase A",
+    "desc": "SMALL_VASE1"
+  },
+  "small_vase2": {
+    "id": "small_vase2",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Small Vase B",
+    "desc": "SMALL_VASE2"
+  },
+  "small_vase3": {
+    "id": "small_vase3",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Small Vase C",
+    "desc": "SMALL_VASE3"
+  },
+  "small_trash_eggs": {
+    "id": "small_trash_eggs",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Egg Shells",
+    "desc": "SMALL_TRASH_EGGS"
+  },
+  "small_trash_apple": {
+    "id": "small_trash_apple",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Apple Core",
+    "desc": "SMALL_TRASH_APPLE"
+  },
+  "small_trash_bone": {
+    "id": "small_trash_bone",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Bone",
+    "desc": "SMALL_TRASH_BONE"
+  },
+  "small_trash_banana": {
+    "id": "small_trash_banana",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Banana Peel",
+    "desc": "SMALL_TRASH_BANANA"
+  },
+  "small_trash_cans": {
+    "id": "small_trash_cans",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Soda Cans",
+    "desc": "SMALL_TRASH_CANS"
+  },
+  "small_trash_bread": {
+    "id": "small_trash_bread",
+    "effects": {
+      "Comfort": -1,
+      "Health": 1
+    },
+    "name": "Old Toast",
+    "desc": "SMALL_TRASH_BREAD"
+  },
+  "small_trash_cup": {
+    "id": "small_trash_cup",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Soup Cup",
+    "desc": "SMALL_TRASH_CUP"
+  },
+  "small_trash_cheese": {
+    "id": "small_trash_cheese",
+    "effects": {
+      "Comfort": -1,
+      "Health": 1
+    },
+    "name": "Cheese",
+    "desc": "SMALL_TRASH_CHEESE"
+  },
+  "small_trash_brokenbottle": {
+    "id": "small_trash_brokenbottle",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Small Broken Bottle",
+    "desc": "SMALL_TRASH_BROKENBOTTLE"
+  },
+  "small_trash_milk": {
+    "id": "small_trash_milk",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Empty Milk Carton",
+    "desc": "SMALL_TRASH_MILK"
+  },
+  "small_trash_can2": {
+    "id": "small_trash_can2",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Soda Can",
+    "desc": "SMALL_TRASH_CAN2"
+  },
+  "small_meds_mysterybottle": {
+    "id": "small_meds_mysterybottle",
+    "effects": {
+      "Comfort": -1,
+      "Stimulation": 1,
+      "Appeal": -1,
+      "Evolution": 1
+    },
+    "name": "Glass Bottle",
+    "desc": "SMALL_MEDS_MYSTERYBOTTLE"
+  },
+  "small_meds_coughsyrup": {
+    "id": "small_meds_coughsyrup",
+    "effects": {
+      "Comfort": 1,
+      "Appeal": -1,
+      "Health": 1
+    },
+    "name": "Cough Syrup",
+    "desc": "SMALL_MEDS_COUGHSYRUP"
+  },
+  "small_meds_pills1": {
+    "id": "small_meds_pills1",
+    "effects": {
+      "Comfort": 1,
+      "Health": 1,
+      "Appeal": -1
+    },
+    "name": "Pill Bottle",
+    "desc": "SMALL_MEDS_PILLS1"
+  },
+  "small_meds_pills2": {
+    "id": "small_meds_pills2",
+    "effects": {
+      "Comfort": 1,
+      "Health": 1,
+      "Appeal": -1
+    },
+    "name": "Small Pill Bottle",
+    "desc": "SMALL_MEDS_PILLS2"
+  },
+  "small_meds_mystery2": {
+    "id": "small_meds_mystery2",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": 1,
+      "Appeal": -1
+    },
+    "name": "Mystery Medicine",
+    "desc": "SMALL_MEDS_MYSTERY2"
+  },
+  "small_meds_fishoil": {
+    "id": "small_meds_fishoil",
+    "effects": {
+      "Comfort": 1,
+      "Health": 1,
+      "Appeal": -1
+    },
+    "name": "Fish Oil",
+    "desc": "SMALL_MEDS_FISHOIL"
+  },
+  "small_meds_cathearts": {
+    "id": "small_meds_cathearts",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": 1,
+      "Appeal": -1
+    },
+    "name": "Can of Cat Hearts",
+    "desc": "SMALL_MEDS_CATHEARTS"
+  },
+  "small_bottle_empty": {
+    "id": "small_bottle_empty",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": 1,
+      "Appeal": -1
+    },
+    "name": "Empty Bottle",
+    "desc": "SMALL_BOTTLE_EMPTY"
+  },
+  "small_bottle_full": {
+    "id": "small_bottle_full",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": 1,
+      "Appeal": -1
+    },
+    "name": "Bottle",
+    "desc": "SMALL_BOTTLE_FULL"
+  },
+  "small_bottle_2bottles": {
+    "id": "small_bottle_2bottles",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": 1,
+      "Appeal": -1
+    },
+    "name": "Glowing Bottle",
+    "desc": "SMALL_BOTTLE_2BOTTLES"
+  },
+  "small_bobble_darkcat": {
+    "id": "small_bobble_darkcat",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": -1,
+      "Appeal": 1
+    },
+    "name": "Basic Cat Bobble",
+    "desc": "SMALL_BOBBLE_DARKCAT"
+  },
+  "small_bobble_guppy": {
+    "id": "small_bobble_guppy",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": -1,
+      "Appeal": 1
+    },
+    "name": "Guppy Cat Bobble",
+    "desc": "SMALL_BOBBLE_GUPPY"
+  },
+  "small_bobble_mad": {
+    "id": "small_bobble_mad",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": -1,
+      "Appeal": 1
+    },
+    "name": "Angry Cat Bobble",
+    "desc": "SMALL_BOBBLE_MAD"
+  },
+  "small_bobble_money": {
+    "id": "small_bobble_money",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": -1,
+      "Appeal": 1
+    },
+    "name": "Lucky Cat Bobble",
+    "desc": "SMALL_BOBBLE_MONEY"
+  },
+  "small_bobble_happy": {
+    "id": "small_bobble_happy",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": -1,
+      "Appeal": 1
+    },
+    "name": "Happy Cat Bobble",
+    "desc": "SMALL_BOBBLE_HAPPY"
+  },
+  "small_bobble_dan": {
+    "id": "small_bobble_dan",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": -1,
+      "Appeal": 1
+    },
+    "name": "Synj Cat Bobble",
+    "desc": "SMALL_BOBBLE_DAN"
+  },
+  "small_bobble_zombie": {
+    "id": "small_bobble_zombie",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": -1,
+      "Appeal": 1
+    },
+    "name": "Zombie Cat Bobble",
+    "desc": "SMALL_BOBBLE_ZOMBIE"
+  },
+  "small_bobble_grump": {
+    "id": "small_bobble_grump",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": -1,
+      "Appeal": 1
+    },
+    "name": "Irritable Cat Bobble",
+    "desc": "SMALL_BOBBLE_GRUMP"
+  },
+  "small_bobble_alone": {
+    "id": "small_bobble_alone",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": -1,
+      "Appeal": 1
+    },
+    "name": "Lonely Cat Bobble",
+    "desc": "SMALL_BOBBLE_ALONE"
+  },
+  "small_bobble_spots": {
+    "id": "small_bobble_spots",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": -1,
+      "Appeal": 1
+    },
+    "name": "Spotty Cat Bobble",
+    "desc": "SMALL_BOBBLE_SPOTS"
+  },
+  "small_bobble_devil": {
+    "id": "small_bobble_devil",
+    "effects": {
+      "Comfort": 1,
+      "Stimulation": -1,
+      "Appeal": 1
+    },
+    "name": "Devil Cat Bobble",
+    "desc": "SMALL_BOBBLE_DEVIL"
+  },
+  "small_lab_tank1": {
+    "id": "small_lab_tank1",
+    "effects": {
+      "Comfort": -1,
+      "Evolution": 1,
+      "Appeal": -1
+    },
+    "name": "Lab Tank A",
+    "desc": "SMALL_LAB_TANK1"
+  },
+  "small_lab_tank2": {
+    "id": "small_lab_tank2",
+    "effects": {
+      "Comfort": -1,
+      "Evolution": 1,
+      "Appeal": -1
+    },
+    "name": "Lab Tank B",
+    "desc": "SMALL_LAB_TANK2"
+  },
+  "small_lab_jug1": {
+    "id": "small_lab_jug1",
+    "effects": {
+      "Comfort": -1,
+      "Evolution": 1,
+      "Appeal": -1
+    },
+    "name": "Lab Jug A",
+    "desc": "SMALL_LAB_JUG1"
+  },
+  "small_lab_jug2": {
+    "id": "small_lab_jug2",
+    "effects": {
+      "Comfort": -1,
+      "Evolution": 1,
+      "Appeal": -1
+    },
+    "name": "Lab Jug B",
+    "desc": "SMALL_LAB_JUG2"
+  },
+  "small_lab_jug3": {
+    "id": "small_lab_jug3",
+    "effects": {
+      "Comfort": -1,
+      "Stimulation": 3,
+      "Appeal": -1
+    },
+    "name": "Bleach Jug",
+    "desc": "SMALL_LAB_JUG3"
+  },
+  "small_lab_testtube": {
+    "id": "small_lab_testtube",
+    "effects": {
+      "Comfort": -1,
+      "Evolution": 1,
+      "Appeal": -1
+    },
+    "name": "Test Tube",
+    "desc": "SMALL_LAB_TESTTUBE"
+  },
+  "small_lab_testtube2": {
+    "id": "small_lab_testtube2",
+    "effects": {
+      "Comfort": -1,
+      "Evolution": 1,
+      "Appeal": -1
+    },
+    "name": "Test Tubes",
+    "desc": "SMALL_LAB_TESTTUBE2"
+  },
+  "small_lab_flask": {
+    "id": "small_lab_flask",
+    "effects": {
+      "Comfort": -1,
+      "Evolution": 1,
+      "Appeal": -1
+    },
+    "name": "Boiling Flask",
+    "desc": "SMALL_LAB_FLASK"
+  },
+  "small_lab_flask2": {
+    "id": "small_lab_flask2",
+    "effects": {
+      "Comfort": -1,
+      "Evolution": 1,
+      "Appeal": -1
+    },
+    "name": "Erlenmeyer Flask",
+    "desc": "SMALL_LAB_FLASK2"
+  },
+  "small_lab_flask3": {
+    "id": "small_lab_flask3",
+    "effects": {
+      "Comfort": -1,
+      "Evolution": 1,
+      "Appeal": -1
+    },
+    "name": "Small Beaker",
+    "desc": "SMALL_LAB_FLASK3"
+  },
+  "small_lab_flask4": {
+    "id": "small_lab_flask4",
+    "effects": {
+      "Comfort": -1,
+      "Evolution": 1,
+      "Appeal": -1
+    },
+    "name": "Round Bottom Flask",
+    "desc": "SMALL_LAB_FLASK4"
+  },
+  "small_food_root": {
+    "id": "small_food_root",
+    "effects": {
+      "Health": 1
+    },
+    "name": "Mandrake Root",
+    "desc": "SMALL_FOOD_ROOT"
+  },
+  "small_food_lemon": {
+    "id": "small_food_lemon",
+    "effects": {
+      "Health": 1
+    },
+    "name": "Lemon",
+    "desc": "SMALL_FOOD_LEMON"
+  },
+  "small_food_orange": {
+    "id": "small_food_orange",
+    "effects": {
+      "Health": 1
+    },
+    "name": "Orange",
+    "desc": "SMALL_FOOD_ORANGE"
+  },
+  "small_food_radish": {
+    "id": "small_food_radish",
+    "effects": {
+      "Health": 1
+    },
+    "name": "Radish",
+    "desc": "SMALL_FOOD_RADISH"
+  },
+  "small_food_onion": {
+    "id": "small_food_onion",
+    "effects": {
+      "Health": 1
+    },
+    "name": "Onion",
+    "desc": "SMALL_FOOD_ONION"
+  },
+  "small_food_apple": {
+    "id": "small_food_apple",
+    "effects": {
+      "Health": 1
+    },
+    "name": "Apple",
+    "desc": "SMALL_FOOD_APPLE"
+  },
+  "small_food_squash": {
+    "id": "small_food_squash",
+    "effects": {
+      "Health": 1
+    },
+    "name": "Squash",
+    "desc": "SMALL_FOOD_SQUASH"
+  },
+  "small_food_eggplant": {
+    "id": "small_food_eggplant",
+    "effects": {
+      "Health": 1
+    },
+    "name": "Eggplant",
+    "desc": "SMALL_FOOD_EGGPLANT"
+  },
+  "small_food_broccoli": {
+    "id": "small_food_broccoli",
+    "effects": {
+      "Health": 1
+    },
+    "name": "Broccoli",
+    "desc": "SMALL_FOOD_BROCCOLI"
+  },
+  "small_food_pumpkin": {
+    "id": "small_food_pumpkin",
+    "effects": {
+      "Health": 1
+    },
+    "name": "Pumpkin",
+    "desc": "SMALL_FOOD_PUMPKIN"
+  },
+  "small_food_pineapple": {
+    "id": "small_food_pineapple",
+    "effects": {
+      "Health": 1
+    },
+    "name": "Pineapple",
+    "desc": "SMALL_FOOD_PINEAPPLE"
+  },
+  "small_food_potato": {
+    "id": "small_food_potato",
+    "effects": {
+      "Health": 1
+    },
+    "name": "Potato",
+    "desc": "SMALL_FOOD_POTATO"
+  },
+  "small_doll_stacy": {
+    "id": "small_doll_stacy",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Stacy Plush",
+    "desc": "SMALL_DOLL_STACY"
+  },
+  "small_doll_aether": {
+    "id": "small_doll_aether",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Aether Plush",
+    "desc": "SMALL_DOLL_AETHER"
+  },
+  "small_doll_duke": {
+    "id": "small_doll_duke",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Duke of Flies Plush",
+    "desc": "SMALL_DOLL_DUKE"
+  },
+  "small_doll_guppy": {
+    "id": "small_doll_guppy",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Guppy Plush",
+    "desc": "SMALL_DOLL_GUPPY"
+  },
+  "small_doll_gish": {
+    "id": "small_doll_gish",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Gish Plush",
+    "desc": "SMALL_DOLL_GISH"
+  },
+  "small_doll_isaac": {
+    "id": "small_doll_isaac",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Isaac Plush",
+    "desc": "SMALL_DOLL_ISAAC"
+  },
+  "small_doll_steven": {
+    "id": "small_doll_steven",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Steven Plush",
+    "desc": "SMALL_DOLL_STEVEN"
+  },
+  "small_electronics_gamesystem": {
+    "id": "small_electronics_gamesystem",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Game System",
+    "desc": "SMALL_ELECTRONICS_GAMESYSTEM"
+  },
+  "small_electronics_gamepad": {
+    "id": "small_electronics_gamepad",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Gamepad",
+    "desc": "SMALL_ELECTRONICS_GAMEPAD"
+  },
+  "small_electronics_speaker": {
+    "id": "small_electronics_speaker",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Small Speaker",
+    "desc": "SMALL_ELECTRONICS_SPEAKER"
+  },
+  "small_electronics_mouse": {
+    "id": "small_electronics_mouse",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Mouse",
+    "desc": "SMALL_ELECTRONICS_MOUSE"
+  },
+  "small_electronics_phone1": {
+    "id": "small_electronics_phone1",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Retro Phone A",
+    "desc": "SMALL_ELECTRONICS_PHONE1"
+  },
+  "small_electronics_phone2": {
+    "id": "small_electronics_phone2",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Rotary Phone B",
+    "desc": "SMALL_ELECTRONICS_PHONE2"
+  },
+  "small_electronics_phone3": {
+    "id": "small_electronics_phone3",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Rotary Phone C",
+    "desc": "SMALL_ELECTRONICS_PHONE3"
+  },
+  "small_electronics_oldphone": {
+    "id": "small_electronics_oldphone",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Antique Phone A",
+    "desc": "SMALL_ELECTRONICS_OLDPHONE"
+  },
+  "small_electronics_oldphone2": {
+    "id": "small_electronics_oldphone2",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Antique Phone B",
+    "desc": "SMALL_ELECTRONICS_OLDPHONE2"
+  },
+  "small_electronics_oldphone3": {
+    "id": "small_electronics_oldphone3",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Antique Phone C",
+    "desc": "SMALL_ELECTRONICS_OLDPHONE3"
+  },
+  "small_electronics_lipphone": {
+    "id": "small_electronics_lipphone",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Lips Phone",
+    "desc": "SMALL_ELECTRONICS_LIPPHONE"
+  },
+  "small_electronics_duckphone": {
+    "id": "small_electronics_duckphone",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Duck Phone",
+    "desc": "SMALL_ELECTRONICS_DUCKPHONE"
+  },
+  "small_electronics_cellphone": {
+    "id": "small_electronics_cellphone",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "90s Cell Phone",
+    "desc": "SMALL_ELECTRONICS_CELLPHONE"
+  },
+  "small_electronics_handradio": {
+    "id": "small_electronics_handradio",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Retro Hand Radio",
+    "desc": "SMALL_ELECTRONICS_HANDRADIO"
+  },
+  "small_electronics_handradio2": {
+    "id": "small_electronics_handradio2",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Antique Hand Radio",
+    "desc": "SMALL_ELECTRONICS_HANDRADIO2"
+  },
+  "small_electronics_walkytalky": {
+    "id": "small_electronics_walkytalky",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Walky-Talkie",
+    "desc": "SMALL_ELECTRONICS_WALKYTALKY"
+  },
+  "small_electronics_brain": {
+    "id": "small_electronics_brain",
+    "effects": {
+      "Evolution": 4,
+      "Appeal": -4
+    },
+    "name": "Brain of Glorg",
+    "desc": "SMALL_ELECTRONICS_BRAIN"
+  },
+  "small_electronics_mysteriousskull": {
+    "id": "small_electronics_mysteriousskull",
+    "effects": {
+      "Evolution": 4,
+      "Appeal": -4
+    },
+    "name": "Ethereal Skull",
+    "desc": "SMALL_ELECTRONICS_MYSTERIOUSSKULL"
+  },
+  "small_electronics_moon": {
+    "id": "small_electronics_moon",
+    "effects": {
+      "Stimulation": 2,
+      "Appeal": -1
+    },
+    "name": "Small Asteroid",
+    "desc": "SMALL_ELECTRONICS_MOON"
+  },
+  "small_electronics_ooze": {
+    "id": "small_electronics_ooze",
+    "effects": {
+      "Health": -1,
+      "Evolution": 2,
+      "Appeal": -1
+    },
+    "name": "Ooze Canister",
+    "desc": "SMALL_ELECTRONICS_OOZE"
+  },
+  "small_jar_diseases": {
+    "id": "small_jar_diseases",
+    "effects": {
+      "Stimulation": 2,
+      "Health": -6
+    },
+    "name": "Jar of Diseases",
+    "desc": "SMALL_JAR_DISEASES"
+  },
+  "small_jar_eyeballs": {
+    "id": "small_jar_eyeballs",
+    "effects": {
+      "Stimulation": 2,
+      "Appeal": -1
+    },
+    "name": "Jar of Eyeballs",
+    "desc": "SMALL_JAR_EYEBALLS"
+  },
+  "small_jar_heart": {
+    "id": "small_jar_heart",
+    "effects": {
+      "Stimulation": 2,
+      "Appeal": -1
+    },
+    "name": "Heart in a Jar",
+    "desc": "SMALL_JAR_HEART"
+  },
+  "small_jar_spider": {
+    "id": "small_jar_spider",
+    "effects": {
+      "Stimulation": 2,
+      "Appeal": -1
+    },
+    "name": "Daddy Long Legs",
+    "desc": "SMALL_JAR_SPIDER"
+  },
+  "small_jar_fish": {
+    "id": "small_jar_fish",
+    "effects": {
+      "Stimulation": 2,
+      "Appeal": -1
+    },
+    "name": "Jar of Guppies",
+    "desc": "SMALL_JAR_FISH"
+  },
+  "small_jar_flys": {
+    "id": "small_jar_flys",
+    "effects": {
+      "Stimulation": 2,
+      "Appeal": -1
+    },
+    "name": "Jar of Flies",
+    "desc": "SMALL_JAR_FLYS"
+  },
+  "small_jar_fairy": {
+    "id": "small_jar_fairy",
+    "effects": {
+      "Health": 2,
+      "Comfort": 1
+    },
+    "name": "Fairy in a Jar",
+    "desc": "SMALL_JAR_FAIRY"
+  },
+  "small_jar_coins": {
+    "id": "small_jar_coins",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Jar of Pennies",
+    "desc": "SMALL_JAR_COINS"
+  },
+  "small_jar_nails": {
+    "id": "small_jar_nails",
+    "effects": {
+      "Stimulation": 2,
+      "Appeal": -1
+    },
+    "name": "Jar of Nails",
+    "desc": "SMALL_JAR_NAILS"
+  },
+  "small_jar_ghost": {
+    "id": "small_jar_ghost",
+    "effects": {
+      "Stimulation": 2,
+      "Appeal": -1
+    },
+    "name": "Inky",
+    "desc": "SMALL_JAR_GHOST"
+  },
+  "small_jar_empty": {
+    "id": "small_jar_empty",
+    "effects": {
+      "Stimulation": 2,
+      "Appeal": -1
+    },
+    "name": "Mason Jar",
+    "desc": "SMALL_JAR_EMPTY"
+  },
+  "small_jar_empty2": {
+    "id": "small_jar_empty2",
+    "effects": {
+      "Stimulation": 2,
+      "Appeal": -1
+    },
+    "name": "Medical Jar",
+    "desc": "SMALL_JAR_EMPTY2"
+  },
+  "small_jar_empty3": {
+    "id": "small_jar_empty3",
+    "effects": {
+      "Stimulation": 2,
+      "Appeal": -1
+    },
+    "name": "Pint Jar",
+    "desc": "SMALL_JAR_EMPTY3"
+  },
+  "small_gem": {
+    "id": "small_gem",
+    "effects": {
+      "Appeal": 2
+    },
+    "name": "Small Gem",
+    "desc": "SMALL_GEM"
+  },
+  "small_lotion": {
+    "id": "small_lotion",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Lotion",
+    "desc": "SMALL_LOTION"
+  },
+  "small_tissues": {
+    "id": "small_tissues",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Tissues",
+    "desc": "SMALL_TISSUES"
+  },
+  "small_picture_spoon": {
+    "id": "small_picture_spoon",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Small Picture Frame A",
+    "desc": "SMALL_PICTURE_SPOON"
+  },
+  "small_picture_cat": {
+    "id": "small_picture_cat",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Small Picture Frame B",
+    "desc": "SMALL_PICTURE_CAT"
+  },
+  "small_picture_can": {
+    "id": "small_picture_can",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Small Picture Frame C",
+    "desc": "SMALL_PICTURE_CAN"
+  },
+  "small_alarmclock1": {
+    "id": "small_alarmclock1",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Digital Alarm Clock",
+    "desc": "SMALL_ALARMCLOCK1"
+  },
+  "small_alarmclock2": {
+    "id": "small_alarmclock2",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Alarm Clock",
+    "desc": "SMALL_ALARMCLOCK2"
+  },
+  "small_pillbottle": {
+    "id": "small_pillbottle",
+    "effects": {
+      "Health": 1
+    },
+    "name": "Small Pill Bottle",
+    "desc": "SMALL_PILLBOTTLE"
+  },
+  "small_waterbottle": {
+    "id": "small_waterbottle",
+    "effects": {
+      "Health": 1
+    },
+    "name": "Water Bottle",
+    "desc": "SMALL_WATERBOTTLE"
+  },
+  "small_milk": {
+    "id": "small_milk",
+    "effects": {
+      "Health": 1
+    },
+    "name": "Milk Jug",
+    "desc": "SMALL_MILK"
+  },
+  "small_kettle": {
+    "id": "small_kettle",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Kettle",
+    "desc": "SMALL_KETTLE"
+  },
+  "small_bowlingball": {
+    "id": "small_bowlingball",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Bowling Ball",
+    "desc": "SMALL_BOWLINGBALL"
+  },
+  "small_pin": {
+    "id": "small_pin",
+    "effects": {
+      "Appeal": 1
+    },
+    "name": "Bowling Pin",
+    "desc": "SMALL_PIN"
+  },
+  "small_mug": {
+    "id": "small_mug",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Mug",
+    "desc": "SMALL_MUG"
+  },
+  "small_pencup": {
+    "id": "small_pencup",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Pen Cup",
+    "desc": "SMALL_PENCUP"
+  },
+  "small_food_sausage": {
+    "id": "small_food_sausage",
+    "effects": {
+      "Comfort": 1,
+      "Health": 1
+    },
+    "name": "Sausage",
+    "desc": "SMALL_FOOD_SAUSAGE"
+  },
+  "small_deadrat": {
+    "id": "small_deadrat",
+    "effects": {
+      "Stimulation": 3,
+      "Health": -1
+    },
+    "name": "Dead Rat",
+    "desc": "SMALL_DEADRAT"
+  },
+  "small_blackbox": {
+    "id": "small_blackbox",
+    "effects": {
+      "Evolution": 1
+    },
+    "name": "Black Box",
+    "desc": "SMALL_BLACKBOX"
+  },
+  "small_eyeball": {
+    "id": "small_eyeball",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Eyeball",
+    "desc": "SMALL_EYEBALL"
+  },
+  "small_perfume": {
+    "id": "small_perfume",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Perfume",
+    "desc": "SMALL_PERFUME"
+  },
+  "small_jar_tadpole": {
+    "id": "small_jar_tadpole",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Tadpole in a Jar",
+    "desc": "SMALL_JAR_TADPOLE"
+  },
+  "small_jug": {
+    "id": "small_jug",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Jug",
+    "desc": "SMALL_JUG"
+  },
+  "small_couch": {
+    "id": "small_couch",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Toy Couch",
+    "desc": "SMALL_COUCH"
+  },
+  "small_frige": {
+    "id": "small_frige",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Toy Fridge",
+    "desc": "SMALL_FRIGE"
+  },
+  "small_sink": {
+    "id": "small_sink",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Toy Sink",
+    "desc": "SMALL_SINK"
+  },
+  "small_stove": {
+    "id": "small_stove",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Toy Stove",
+    "desc": "SMALL_STOVE"
+  },
+  "small_crate": {
+    "id": "small_crate",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Toy Crate",
+    "desc": "SMALL_CRATE"
+  },
+  "small_bed": {
+    "id": "small_bed",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Toy Bed",
+    "desc": "SMALL_BED"
+  },
+  "small_sidetable": {
+    "id": "small_sidetable",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Toy Table",
+    "desc": "SMALL_SIDETABLE"
+  },
+  "small_shelf": {
+    "id": "small_shelf",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Toy Shelf",
+    "desc": "SMALL_SHELF"
+  },
+  "small_piggybank": {
+    "id": "small_piggybank",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Piggy Bank",
+    "desc": "SMALL_PIGGYBANK"
+  },
+  "small_food_cupcake": {
+    "id": "small_food_cupcake",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Cupcake",
+    "desc": "SMALL_FOOD_CUPCAKE"
+  },
+  "small_food_cupcake2": {
+    "id": "small_food_cupcake2",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Chocolate Cupcake",
+    "desc": "SMALL_FOOD_CUPCAKE2"
+  },
+  "small_mug2": {
+    "id": "small_mug2",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Tall Mug",
+    "desc": "SMALL_MUG2"
+  },
+  "small_electronics_joystick": {
+    "id": "small_electronics_joystick",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Joystick",
+    "desc": "SMALL_ELECTRONICS_JOYSTICK"
+  },
+  "small_bell": {
+    "id": "small_bell",
+    "effects": {
+      "Stimulation": 1
+    },
+    "name": "Ring Bell",
+    "desc": "SMALL_BELL"
+  },
+  "small_iron": {
+    "id": "small_iron",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Iron",
+    "desc": "SMALL_IRON"
+  },
+  "small_snowglobe": {
+    "id": "small_snowglobe",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Small Snowglobe",
+    "desc": "SMALL_SNOWGLOBE"
+  },
+  "small_shell": {
+    "id": "small_shell",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Conch Shell",
+    "desc": "SMALL_SHELL"
+  },
+  "small_bigegg": {
+    "id": "small_bigegg",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Big Egg",
+    "desc": "SMALL_BIGEGG"
+  },
+  "small_letterblock1": {
+    "id": "small_letterblock1",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Letter Block",
+    "desc": "SMALL_LETTERBLOCK1"
+  },
+  "small_letterblock2": {
+    "id": "small_letterblock2",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Letter Block",
+    "desc": "SMALL_LETTERBLOCK2"
+  },
+  "small_letterblock3": {
+    "id": "small_letterblock3",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Letter Block",
+    "desc": "SMALL_LETTERBLOCK3"
+  },
+  "small_letterblock4": {
+    "id": "small_letterblock4",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Letter Block",
+    "desc": "SMALL_LETTERBLOCK4"
+  },
+  "small_letterblock5": {
+    "id": "small_letterblock5",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Letter Block",
+    "desc": "SMALL_LETTERBLOCK5"
+  },
+  "small_letterblock6": {
+    "id": "small_letterblock6",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Letter Block",
+    "desc": "SMALL_LETTERBLOCK6"
+  },
+  "small_letterblock7": {
+    "id": "small_letterblock7",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Letter Block",
+    "desc": "SMALL_LETTERBLOCK7"
+  },
+  "small_letterblock8": {
+    "id": "small_letterblock8",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Letter Block",
+    "desc": "SMALL_LETTERBLOCK8"
+  },
+  "small_rubberduck": {
+    "id": "small_rubberduck",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Rubber Duck",
+    "desc": "SMALL_RUBBERDUCK"
+  },
+  "small_wobblebird": {
+    "id": "small_wobblebird",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Wobble Bird",
+    "desc": "SMALL_WOBBLEBIRD"
+  },
+  "small_90sphone": {
+    "id": "small_90sphone",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "90s Phone A",
+    "desc": "SMALL_90SPHONE"
+  },
+  "small_90sphone2": {
+    "id": "small_90sphone2",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "90s Phone B",
+    "desc": "SMALL_90SPHONE2"
+  },
+  "small_knocker": {
+    "id": "small_knocker",
+    "effects": {
+      "Comfort": 1
+    },
+    "name": "Knocker",
+    "desc": "SMALL_KNOCKER"
+  }
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "name": "DefaultMove",
+    "desc": "Move to an adjacent tile."
+  },
+  {
+    "name": "Move",
+    "desc": "{he} go"
+  },
+  {
+    "name": "Jump",
+    "desc": "{he} jump"
+  },
+  {
+    "name": "Teleport",
+    "desc": "{he} teleport"
+  },
+  {
+    "name": "Dig",
+    "desc": "{he} dig"
+  },
+  {
+    "name": "Shadowstep",
+    "desc": "{he} teleport"
+  },
+  {
+    "name": "Swap",
+    "desc": "{he} swap"
+  },
+  {
+    "name": "Move",
+    "desc": "{he} go"
+  },
+  {
+    "name": "Move",
+    "desc": "{he} go"
+  },
+  {
+    "name": "Move",
+    "desc": "{he} go"
+  },
+  {
+    "name": "Teleport",
+    "desc": "{he} teleport"
+  },
+  {
+    "name": "Move",
+    "desc": "{he} go"
+  }
+]

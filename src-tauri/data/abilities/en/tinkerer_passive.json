@@ -1,0 +1,202 @@
+[
+  {
+    "name": "v2.0",
+    "desc": "Start with 1 Tech.\nYour Tech can't drop below 1."
+  },
+  {
+    "name": "v2.02",
+    "desc": "Start with 1 Tech.\nYour Tech can't drop below 1.\nYour Tech isn't removed when you craft."
+  },
+  {
+    "name": "Weapon Proficiency",
+    "desc": "Your weapon damage scales with your stats and counts as a basic attack."
+  },
+  {
+    "name": "WeaponProficiency2",
+    "desc": "Your weapon damage scales with your stats and counts as a basic attack.\nYou can use your weapon an extra time each turn."
+  },
+  {
+    "name": "Living Battery",
+    "desc": "When an adjacent ally spends mana, gain that much mana."
+  },
+  {
+    "name": "LivingBattery2",
+    "desc": "When an adjacent ally spends mana, gain that much mana. You have no mana cap."
+  },
+  {
+    "name": "Fuzzy Feet",
+    "desc": "When you end your movement, deal 1 Electric Damage to all adjacent units for each tile you moved."
+  },
+  {
+    "name": "FuzzyFeet2",
+    "desc": "When you end your movement, deal 1 Electric Damage to all adjacent units for each tile you moved. This damage has a chance to inflict Stun."
+  },
+  {
+    "name": "Armor Specialist",
+    "desc": "Your equipment passive effects are doubled."
+  },
+  {
+    "name": "ArmorSpecialist2",
+    "desc": "Your equipment passive and active effects are doubled."
+  },
+  {
+    "name": "EMP",
+    "desc": "Your explosions are Electric element and deal +1 damage.\nInstead of knockback, explosions have a chance to inflict Stun."
+  },
+  {
+    "name": "EMP2",
+    "desc": "Your explosions are Electric element and deal +1 damage.\nInstead of knockback, explosions have a chance to inflict Stun. Your explosions don't affect allies."
+  },
+  {
+    "name": "Mr. Mega",
+    "desc": "Your explosions are larger and deal +1 damage."
+  },
+  {
+    "name": "Mr.Mega2",
+    "desc": "Your explosions are larger and deal +2 damage.\nYou have explosion immunity."
+  },
+  {
+    "name": "Escape Sequence",
+    "desc": "When you take damage, explode and get launched to a random tile. This explosion doesn't damage you."
+  },
+  {
+    "name": "EscapeSequence2",
+    "desc": "When you take damage, explode with a large blast radious and get launched to a random tile. This explosion doesn't damage you."
+  },
+  {
+    "name": "Item Proxy",
+    "desc": "You need one fewer piece of equipment to get set bonuses."
+  },
+  {
+    "name": "ItemProxy2",
+    "desc": "You need two fewer pieces of equipment to get set bonuses."
+  },
+  {
+    "name": "Lightning Rod",
+    "desc": "You have Electric immunity.\nElectric damage you deal is increased by 1. Gain 1 charge when you are hit with electric damage."
+  },
+  {
+    "name": "LightningRod2",
+    "desc": "You have Electric immunity.\nElectric damage you deal is increased by 2. Gain 1 charge for each damage prevented when you are hit with electric damage."
+  },
+  {
+    "name": "IT'S ALIVE!",
+    "desc": "Hitting a body with electric damage revives it with 1 HP. The revived corpse is charmed and takes an extra turn, then dies."
+  },
+  {
+    "name": "ITSALIVE!2",
+    "desc": "Hitting a body with electric damage revives it with 1 HP, +8 [img:spd], and +2 Damage. The revived corpse is charmed and takes an extra turn, then dies."
+  },
+  {
+    "name": "Energizer",
+    "desc": "When you cast a spell, your weapon gets +1 Damage."
+  },
+  {
+    "name": "Energizer2",
+    "desc": "When you cast a spell, your weapon gets +1 Damage.\nEvery third spell you cast, repair 1 use to your weapon."
+  },
+  {
+    "name": "Reactive Armor",
+    "desc": "When you take damage, craft a Tinkerer weapon or armor piece and equip it in an empty slot."
+  },
+  {
+    "name": "ReactiveArmor2",
+    "desc": "When you take damage, craft a Tinkerer weapon or armor piece and equip it in an empty slot and gain +1 [img:shield]."
+  },
+  {
+    "name": "Nanobots",
+    "desc": "Gain +2 Diminishing Health Regeneration every time you take damage from an attack or spell."
+  },
+  {
+    "name": "Nanobots2",
+    "desc": "Gain +2 Diminishing Health Regeneration every time you take damage from an attack or spell and +1 Diminishing Health Regeneration each time you take damage from any other source."
+  },
+  {
+    "name": "Scrapper",
+    "desc": "Find an extra consumable item at the end of each battle.\nWhen you use up a consumable or trinket, equip a new consumable from your inventory if you have any."
+  },
+  {
+    "name": "Scrapper2",
+    "desc": "Find an extra item at the end of each battle.\nWhen you use up a consumable or trinket, equip a new consumable from your inventory if you have any."
+  },
+  {
+    "name": "Demo Man",
+    "desc": "Always craft a bomb at Tech 1 or less."
+  },
+  {
+    "name": "DemoMan2",
+    "desc": "Always craft a bomb at Tech 1 or less. You can use your basic action an additional time on each of your turns."
+  },
+  {
+    "name": "Duct Tape",
+    "desc": "Items you craft stay with you between battles, but become cursed."
+  },
+  {
+    "name": "DuctTape2",
+    "desc": "Items you craft stay with you between battles."
+  },
+  {
+    "name": "Armored Plating",
+    "desc": "Robots you spawn gain the stats and [img:shield] of your equipped armor."
+  },
+  {
+    "name": "ArmoredPlating2",
+    "desc": "Robots you spawn gain the stats, [img:shield] and passive effects of your equipped armor."
+  },
+  {
+    "name": "Booby Trap",
+    "desc": "When an item you have equipped breaks, it explodes!"
+  },
+  {
+    "name": "BoobyTrap2",
+    "desc": "When an item you have equipped breaks, it explodes with bonus damage!"
+  },
+  {
+    "name": "Robot Arms",
+    "desc": "You can use your weapon an additional time each turn."
+  },
+  {
+    "name": "RobotArms2",
+    "desc": "You can use your weapon and trinket an additional time each turn.\nWhenever you equip a new item during battle it gains +1 use."
+  },
+  {
+    "name": "Conductor",
+    "desc": "Electric damage you deal is increased by 2 for each piece of metal armor you have equipped."
+  },
+  {
+    "name": "Conductor2",
+    "desc": "Electric damage you deal is increased by 2 for each piece of metal armor you have equipped. You have +2 Mana Regeneration for each piece of metal armor."
+  },
+  {
+    "name": "Napalm",
+    "desc": "Your explosions inflict Burn 1 and light tiles on fire."
+  },
+  {
+    "name": "Napalm2",
+    "desc": "Your explosions inflict Burn 3 and light tiles on fire."
+  },
+  {
+    "name": "Ingenuity",
+    "desc": "Pickups give you +1 Tech in addition to their other effects."
+  },
+  {
+    "name": "Ingenuity2",
+    "desc": "Pickups give you +1 Tech in addition to their other effects.\n10 extra pickups spawn at the start of each battle."
+  },
+  {
+    "name": "Shrapnel",
+    "desc": "When you break an item, gain +1 Thorns."
+  },
+  {
+    "name": "Shrapnel2",
+    "desc": "When you break an item, gain +2 Thorns and +3 [img:shield]."
+  },
+  {
+    "name": "Blacksmith",
+    "desc": "If you have a weapon, your basic attack becomes Hone."
+  },
+  {
+    "name": "Blacksmith2",
+    "desc": "If you have a weapon, your basic attack becomes Hone+."
+  }
+]

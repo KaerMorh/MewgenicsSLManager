@@ -9,6 +9,7 @@ import HeroSection from "./components/HeroSection";
 import BackupList from "./components/BackupList";
 import SettingsDialog from "./components/SettingsDialog";
 import GameBackupDialog from "./components/GameBackupDialog";
+import SaveEditorDialog from "./components/editor/SaveEditorDialog";
 import type { Config, SaveSummary, BackupEntry } from "./types";
 
 
@@ -19,6 +20,7 @@ function App() {
   const [entries, setEntries] = useState<BackupEntry[]>([]);
   const [showSettings, setShowSettings] = useState(false);
   const [showGameBackups, setShowGameBackups] = useState(false);
+  const [showEditor, setShowEditor] = useState(false);
   const [confirmDialog, setConfirmDialog] = useState<{
     title: string;
     message: string;
@@ -262,6 +264,7 @@ function App() {
         backupCount={entries.length}
         onBackupNow={handleBackupNow}
         onRefresh={refresh}
+        onEditSave={() => setShowEditor(true)}
       />
 
       <BackupList
@@ -290,6 +293,14 @@ function App() {
           slot={slot}
           onImport={handleImportGameBackup}
           onClose={() => setShowGameBackups(false)}
+        />
+      )}
+
+      {showEditor && (
+        <SaveEditorDialog
+          savePath={savePath}
+          onClose={() => setShowEditor(false)}
+          onSaved={refresh}
         />
       )}
 

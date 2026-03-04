@@ -76,6 +76,7 @@ const SettingsDialog: React.FC<SettingsDialogProps> = ({
     try {
       const result = await invoke<ScanResult>("scan_duplicates", {
         backupDir: dir,
+        gameBackupDir: config.save_dir,
         slot: config.current_slot,
       });
       if (result.groups === 0) {
@@ -96,6 +97,7 @@ const SettingsDialog: React.FC<SettingsDialogProps> = ({
     try {
       const result = await invoke<DedupResult>("dedup_backups", {
         backupDir: dir,
+        gameBackupDir: config.save_dir,
         slot: config.current_slot,
       });
       const desc = t("toast.dedupDoneDesc", { groups: result.groups_found, files: result.files_removed }) +

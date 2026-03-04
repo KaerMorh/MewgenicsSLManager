@@ -75,6 +75,50 @@ pub fn lz4_block_decompress(src: &[u8], dst_size: usize) -> Result<Vec<u8>, Stri
     Ok(dst)
 }
 
+/// Decompress a cat blob, also returning which header variant was used ("A" or "B").
+pub fn decompress_cat_with_variant(blob: &[u8]) -> Result<(Vec<u8>, &'static str), String> {
+    if blob.len() < 4 {
+        return Err("blob too small".to_string());
+    }
+
+    let uncomp = u32::from_le_bytes([blob[0], blob[1], blob[2], blob[3]]) as usize;
+
+    if blob.len() >= 8 {
+        let cl = u32::from_le_bytes([blob[4], blob[5], blob[6], blob[7]]) as usize;
+        if cl > 0 && cl <= blob.len() - 8 {
+            if let Ok(result) = lz4_block_decompress(&blob[8..8 + cl], uncomp) {
+                return Ok((result, "B"));
+            }
+        }
+    }
+
+    let result = lz4_block_decompress(&blob[4..], uncomp)?;
+    Ok((result, "A"))
+}
+
+/// Re-compress decompressed cat data back into the original blob format.
+pub fn recompress_cat(dec: &[u8], variant: &str) -> Vec<u8> {
+    let compressed = lz4_flex::block::compress(dec);
+    let uncomp_len = (dec.len() as u32).to_le_bytes();
+
+    match variant {
+        "B" => {
+            let comp_len = (compressed.len() as u32).to_le_bytes();
+            let mut out = Vec::with_capacity(8 + compressed.len());
+            out.extend_from_slice(&uncomp_len);
+            out.extend_from_slice(&comp_len);
+            out.extend_from_slice(&compressed);
+            out
+        }
+        _ => {
+            let mut out = Vec::with_capacity(4 + compressed.len());
+            out.extend_from_slice(&uncomp_len);
+            out.extend_from_slice(&compressed);
+            out
+        }
+    }
+}
+
 /// Decompress a cat blob: first 4 bytes = uncompressed size,
 /// optionally bytes 4-8 = compressed length.
 pub fn decompress_cat(blob: &[u8]) -> Result<Vec<u8>, String> {

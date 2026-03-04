@@ -1,7 +1,10 @@
 use crate::backup_manager;
 use crate::config::Config;
-use crate::save_parser::{self, SaveSummary};
+use crate::data_loader;
+use crate::save_editor::{self, SaveChanges};
+use crate::save_parser::{self, SaveDetail, SaveSummary};
 use crate::watcher::SaveWatcher;
+use serde_json::Value;
 use std::path::Path;
 use std::sync::Mutex;
 use tauri::{AppHandle, State};
@@ -137,20 +140,49 @@ pub fn start_watcher(save_dir: String, state: State<AppState>, app: AppHandle) {
     state.watcher.start(&save_dir, app);
 }
 
+// ---- Save editor ----
+
+#[tauri::command]
+pub fn get_save_detail(path: String) -> SaveDetail {
+    save_parser::parse_save_detail(Path::new(&path))
+}
+
+#[tauri::command]
+pub fn modify_save(path: String, changes: SaveChanges) -> Result<(), String> {
+    save_editor::modify_save_file(Path::new(&path), &changes)
+}
+
+#[tauri::command]
+pub fn get_ability_db() -> Value {
+    data_loader::get_ability_db()
+}
+
+#[tauri::command]
+pub fn get_mutation_db() -> Value {
+    data_loader::get_mutation_db()
+}
+
+#[tauri::command]
+pub fn get_furniture_db() -> Value {
+    data_loader::get_furniture_db()
+}
+
 // ---- Duplicate detection ----
 
 #[tauri::command]
 pub fn scan_duplicates(
     backup_dir: String,
+    game_backup_dir: String,
     slot: i32,
 ) -> Result<backup_manager::ScanResult, String> {
-    backup_manager::scan_duplicates(&backup_dir, slot)
+    backup_manager::scan_duplicates(&backup_dir, &game_backup_dir, slot)
 }
 
 #[tauri::command]
 pub fn dedup_backups(
     backup_dir: String,
+    game_backup_dir: String,
     slot: i32,
 ) -> Result<backup_manager::DedupResult, String> {
-    backup_manager::dedup_backups(&backup_dir, slot)
+    backup_manager::dedup_backups(&backup_dir, &game_backup_dir, slot)
 }

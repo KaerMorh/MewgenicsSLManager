@@ -15,3 +15,9 @@ icon.jpg
 # OS
 .DS_Store
 Thumbs.db
+
+tests/
+
+*.exe
+*.msi
+*gitignore

@@ -1,0 +1,6125 @@
+{
+  "body": {
+    "300": {
+      "name": "Rock Bod",
+      "stats": {
+        "con": 1
+      },
+      "passives": []
+    },
+    "301": {
+      "name": "Cactus Bod",
+      "stats": {},
+      "passives": [
+        "Thorns 1"
+      ],
+      "desc": "+1 Thorns."
+    },
+    "302": {
+      "name": "Turtle Bod",
+      "stats": {
+        "spd": -1,
+        "shield": 5
+      },
+      "passives": []
+    },
+    "303": {
+      "name": "Snail Bod",
+      "stats": {
+        "spd": -2,
+        "shield": 10
+      },
+      "passives": []
+    },
+    "304": {
+      "name": "Robot Body",
+      "stats": {
+        "int": 1,
+        "spd": 1
+      },
+      "passives": []
+    },
+    "305": {
+      "name": "Conjoined Bod",
+      "stats": {
+        "lck": 1
+      },
+      "passives": []
+    },
+    "306": {
+      "name": "Skin & Bones",
+      "stats": {
+        "con": -3,
+        "shield": 12
+      },
+      "passives": []
+    },
+    "307": {
+      "name": "Udders",
+      "stats": {
+        "cha": 1
+      },
+      "passives": []
+    },
+    "308": {
+      "name": "Beach Bod",
+      "stats": {
+        "str": 1,
+        "con": 1,
+        "int": -1
+      },
+      "passives": []
+    },
+    "309": {
+      "name": "Maggot Bod",
+      "stats": {},
+      "passives": [
+        "MeleeRevengeDamage(type status damage 0 knockback 2)"
+      ],
+      "desc": "Units that contact you get knocked back 2 tiles."
+    },
+    "310": {
+      "name": "Puffball Bod",
+      "stats": {
+        "cha": 1
+      },
+      "passives": []
+    },
+    "311": {
+      "name": "Square Bod",
+      "stats": {
+        "con": 1
+      },
+      "passives": []
+    },
+    "312": {
+      "name": "Money Bag Bod",
+      "stats": {},
+      "passives": [
+        "SpawnThingOnDamage(object Coin chance 100%)"
+      ],
+      "desc": "Spawn a coin when you take damage."
+    },
+    "313": {
+      "name": "Spike Bod",
+      "stats": {},
+      "passives": [
+        "KineticSpikes 1"
+      ],
+      "desc": "+1 Kinetic Spikes."
+    },
+    "314": {
+      "name": "Porcupine",
+      "stats": {
+        "cha": -1
+      },
+      "passives": [
+        "Thorns 2"
+      ],
+      "desc": "+2 Thorns."
+    },
+    "315": {
+      "name": "Carapace",
+      "stats": {},
+      "passives": [
+        "Brace 1"
+      ],
+      "desc": "+1 Brace."
+    },
+    "316": {
+      "name": "Pangolin",
+      "stats": {
+        "shield": 2
+      },
+      "passives": []
+    },
+    "317": {
+      "name": "Camel Hump",
+      "stats": {
+        "con": 1
+      },
+      "passives": [
+        "DrinkWater 1"
+      ],
+      "desc": "Immune to Heat Wave weather."
+    },
+    "318": {
+      "name": "Egg Sack Back",
+      "stats": {},
+      "passives": [
+        "SpawnEachTurn(object CharmedFly chance 25%)"
+      ],
+      "desc": "25% chance to spawn a Charmed Fly each turn."
+    },
+    "319": {
+      "name": "Fractured Bod",
+      "stats": {
+        "shield": 1
+      },
+      "passives": [
+        "StatusOnTookDamageFromAbility(RandomStatusFromPool { Charge 1 Thorns 1 KineticSpikes 1 DiminishingHealthRegen 1 RandomStatUp 1 Shield 1)"
+      ],
+      "desc": "When you take damage from an attack, gain a random buff."
+    },
+    "320": {
+      "name": "Brick Bod",
+      "stats": {
+        "shield": 1
+      },
+      "passives": []
+    },
+    "321": {
+      "name": "Kitten Bod",
+      "stats": {},
+      "passives": [
+        "SpawnOnDowned CharmedKitten"
+      ],
+      "desc": "Spawn a Charmed Kitten familiar when you get downed."
+    },
+    "322": {
+      "name": "Backpack",
+      "stats": {},
+      "passives": [
+        "StatusOnBattleEnd(FindItemFromPool consumables)"
+      ],
+      "desc": "Gain an extra consumable item at the end of each battle."
+    },
+    "323": {
+      "name": "Fatty",
+      "stats": {
+        "spd": -3
+      },
+      "passives": [
+        "MoveWhenDamaged(move_ability MoveOne weights chaotic)"
+      ],
+      "desc": "Trample. When damaged, move 1 tile in a random direction."
+    },
+    "324": {
+      "name": "Eyeball",
+      "stats": {},
+      "passives": [
+        "StatusOnKill(RangeUp 1)"
+      ],
+      "desc": "Gain +1 range when you get a kill."
+    },
+    "750": {
+      "name": "spike body",
+      "stats": {},
+      "passives": [
+        "Thorns 1"
+      ],
+      "desc": "+1 Thorns."
+    },
+    "753": {
+      "name": "mermaid body",
+      "stats": {
+        "shield": 5
+      },
+      "passives": []
+    },
+    "758": {
+      "name": "human head body",
+      "stats": {
+        "con": 1
+      },
+      "passives": [
+        "Quivered 1"
+      ],
+      "desc": "Start with +1 Bonus Attack."
+    },
+    "900": {
+      "name": "slender",
+      "stats": {
+        "con": -2,
+        "spd": 1
+      },
+      "passives": []
+    },
+    "400": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "con": -1
+      },
+      "passives": []
+    },
+    "401": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "dex": -1
+      },
+      "passives": []
+    },
+    "402": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "403": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "int": -1
+      },
+      "passives": []
+    },
+    "404": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "405": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "406": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "con": 2
+      },
+      "passives": []
+    },
+    "407": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "con": 2
+      },
+      "passives": []
+    },
+    "408": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "409": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "int": -1
+      },
+      "passives": []
+    },
+    "410": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "411": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "412": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "con": -1
+      },
+      "passives": []
+    },
+    "413": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "dex": 2
+      },
+      "passives": []
+    },
+    "414": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "415": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "int": -1
+      },
+      "passives": []
+    },
+    "416": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "417": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "418": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "int": 2
+      },
+      "passives": []
+    },
+    "419": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "int": 2
+      },
+      "passives": []
+    },
+    "420": {
+      "name": "",
+      "stats": {
+        "int": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "421": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "int": 2
+      },
+      "passives": []
+    },
+    "422": {
+      "name": "",
+      "stats": {
+        "int": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "423": {
+      "name": "",
+      "stats": {
+        "int": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "424": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "425": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "426": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "427": {
+      "name": "",
+      "stats": {
+        "int": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "428": {
+      "name": "",
+      "stats": {
+        "spd": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "429": {
+      "name": "",
+      "stats": {
+        "cha": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "430": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "431": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "432": {
+      "name": "",
+      "stats": {
+        "cha": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "433": {
+      "name": "",
+      "stats": {
+        "int": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "434": {
+      "name": "",
+      "stats": {
+        "spd": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "435": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "436": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "437": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "438": {
+      "name": "",
+      "stats": {
+        "spd": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "439": {
+      "name": "",
+      "stats": {
+        "int": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "440": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "441": {
+      "name": "",
+      "stats": {
+        "spd": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "442": {
+      "name": "",
+      "stats": {
+        "cha": -1
+      },
+      "passives": []
+    },
+    "700": {
+      "name": "Gastroschisis",
+      "stats": {
+        "con": -2
+      },
+      "passives": []
+    },
+    "701": {
+      "name": "Deformed Ribcage",
+      "stats": {
+        "spd": -2
+      },
+      "passives": []
+    },
+    "702": {
+      "name": "Malnurished",
+      "stats": {
+        "con": -1
+      },
+      "passives": []
+    },
+    "703": {
+      "name": "Body Welts",
+      "stats": {},
+      "passives": [
+        "Bruise 1"
+      ],
+      "desc": "Start each battle with Bruise 1."
+    },
+    "704": {
+      "name": "Conjoined Body",
+      "stats": {
+        "con": 2,
+        "spd": -3
+      },
+      "passives": []
+    }
+  },
+  "head": {
+    "300": {
+      "name": "Square head",
+      "stats": {
+        "con": 1
+      },
+      "passives": []
+    },
+    "301": {
+      "name": "Sloth head",
+      "stats": {
+        "str": 1,
+        "con": 1,
+        "int": -1
+      },
+      "passives": []
+    },
+    "302": {
+      "name": "Big brain",
+      "stats": {
+        "con": -1,
+        "int": 2
+      },
+      "passives": []
+    },
+    "303": {
+      "name": "Spioke head",
+      "stats": {},
+      "passives": [
+        "Thorns 1"
+      ],
+      "desc": "+1 Thorns."
+    },
+    "304": {
+      "name": "Sludge head",
+      "stats": {
+        "cha": -2
+      },
+      "passives": [
+        "HealthRegenUp 2",
+        "DodgeChance 5%"
+      ],
+      "desc": "+2 Health Regeneration +5% dodge chance."
+    },
+    "305": {
+      "name": "Strong Chin",
+      "stats": {
+        "cha": 1
+      },
+      "passives": []
+    },
+    "306": {
+      "name": "Alien head",
+      "stats": {
+        "int": 1
+      },
+      "passives": []
+    },
+    "307": {
+      "name": "Bump-on-the-head Head",
+      "stats": {
+        "shield": 1
+      },
+      "passives": [
+        "MeleeRevengeDamage(type status damage 0 knockback 1)"
+      ],
+      "desc": "Units that contact you get knocked back 1 tile."
+    },
+    "308": {
+      "name": "Frog Head",
+      "stats": {},
+      "passives": [
+        "PassiveWhenAffectedByElement(element water passives { AddMovement 1)"
+      ],
+      "desc": "+1 movement range while wet. Water does not slow movement."
+    },
+    "309": {
+      "name": "half moon",
+      "stats": {
+        "lck": 2
+      },
+      "passives": []
+    },
+    "310": {
+      "name": "rock head",
+      "stats": {
+        "shield": 2
+      },
+      "passives": []
+    },
+    "311": {
+      "name": "Money Bag head",
+      "stats": {},
+      "passives": [
+        "SpawnThingOnDamage(object Coin chance 100%)"
+      ],
+      "desc": "Spawn a coin when you take damage."
+    },
+    "312": {
+      "name": "Magnet Head",
+      "stats": {},
+      "passives": [
+        "MakeBasicAttackPull 1"
+      ],
+      "desc": "Your basic attack pulls units towards you."
+    },
+    "313": {
+      "name": "Poop Head",
+      "stats": {},
+      "passives": [
+        "PoopWhenHit Poop"
+      ],
+      "desc": "Poop when you take damage."
+    },
+    "314": {
+      "name": "Pyramid Head",
+      "stats": {},
+      "passives": [
+        "StatusEachTurnEnd(IntelligenceUp 1)"
+      ],
+      "desc": "Gain +1 [img:int] at the end of each turn."
+    },
+    "315": {
+      "name": "Upside Down Head",
+      "stats": {},
+      "passives": [
+        "SwapHighestAndLowestStat 1"
+      ],
+      "desc": "At the start of each battle, swap your highest and lowest stats."
+    },
+    "316": {
+      "name": "Fractured Head",
+      "stats": {
+        "shield": 1
+      },
+      "passives": [
+        "StatusOnTookDamageFromAbility(RandomStatusFromPool { Charge 1 Thorns 1 KineticSpikes 1 DiminishingHealthRegen 1 RandomStatUp 1 Shield 1)"
+      ],
+      "desc": "When you take damage from an attack, gain a random buff."
+    },
+    "317": {
+      "name": "Sideways Head",
+      "stats": {},
+      "passives": [
+        "DodgeChance 5%"
+      ],
+      "desc": "+5% dodge chance."
+    },
+    "318": {
+      "name": "Long Neck",
+      "stats": {},
+      "passives": [
+        "AddBonusRange 1"
+      ],
+      "desc": "+1 range."
+    },
+    "319": {
+      "name": "Exposed Brain",
+      "stats": {},
+      "passives": [
+        "Bruise 2",
+        "StatusOnBattleEnd(PermanentIntelligence 1)"
+      ],
+      "desc": "Gain +1 [img:int] permanently at the end of each battle. Start each battle with Bruise 2."
+    },
+    "320": {
+      "name": "Bubble Head",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Knockback 2)"
+      ],
+      "desc": "Your basic attack has +2 Knockback."
+    },
+    "321": {
+      "name": "Button Head",
+      "stats": {},
+      "passives": [
+        "RevengeDamage(effects { Fear [1, .05])"
+      ],
+      "desc": "You have a 5% chance to inflict Fear on units who contact or attack you."
+    },
+    "750": {
+      "name": "spiked head",
+      "stats": {},
+      "passives": [
+        "Thorns 1"
+      ],
+      "desc": "+1 Thorns."
+    },
+    "753": {
+      "name": "tyler head",
+      "stats": {},
+      "passives": [
+        "ElementImmune Ice",
+        "StatusImmunity [Freeze, Slow]"
+      ],
+      "desc": "You are immune to ice."
+    },
+    "757": {
+      "name": "grey head",
+      "stats": {
+        "int": 2
+      },
+      "passives": []
+    },
+    "759": {
+      "name": "Human Head",
+      "stats": {},
+      "passives": [
+        "AlphaTurns 1"
+      ],
+      "desc": "Take an extra turn at the start of the battle."
+    },
+    "400": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "con": -1
+      },
+      "passives": []
+    },
+    "401": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "dex": -1
+      },
+      "passives": []
+    },
+    "402": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "403": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "int": -1
+      },
+      "passives": []
+    },
+    "404": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "405": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "406": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "con": 2
+      },
+      "passives": []
+    },
+    "407": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "con": 2
+      },
+      "passives": []
+    },
+    "408": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "409": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "int": -1
+      },
+      "passives": []
+    },
+    "410": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "411": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "412": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "con": -1
+      },
+      "passives": []
+    },
+    "413": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "dex": 2
+      },
+      "passives": []
+    },
+    "414": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "415": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "int": -1
+      },
+      "passives": []
+    },
+    "416": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "417": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "418": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "int": 2
+      },
+      "passives": []
+    },
+    "419": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "int": 2
+      },
+      "passives": []
+    },
+    "420": {
+      "name": "",
+      "stats": {
+        "int": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "421": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "int": 2
+      },
+      "passives": []
+    },
+    "422": {
+      "name": "",
+      "stats": {
+        "int": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "423": {
+      "name": "",
+      "stats": {
+        "int": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "424": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "425": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "426": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "427": {
+      "name": "",
+      "stats": {
+        "int": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "428": {
+      "name": "",
+      "stats": {
+        "spd": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "429": {
+      "name": "",
+      "stats": {
+        "cha": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "430": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "431": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "432": {
+      "name": "",
+      "stats": {
+        "cha": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "433": {
+      "name": "",
+      "stats": {
+        "int": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "434": {
+      "name": "",
+      "stats": {
+        "spd": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "435": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "436": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "437": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "438": {
+      "name": "",
+      "stats": {
+        "spd": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "439": {
+      "name": "",
+      "stats": {
+        "int": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "440": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "441": {
+      "name": "",
+      "stats": {
+        "spd": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "700": {
+      "name": "microcephaly",
+      "stats": {
+        "int": -2
+      },
+      "passives": []
+    },
+    "701": {
+      "name": "macrocephaly",
+      "stats": {
+        "int": -2
+      },
+      "passives": []
+    },
+    "702": {
+      "name": "concave head",
+      "stats": {
+        "int": -1
+      },
+      "passives": []
+    },
+    "703": {
+      "name": "soft spot",
+      "stats": {},
+      "passives": [
+        "BackstabFront 1"
+      ],
+      "desc": "Attacks against your face count as backstabs."
+    },
+    "704": {
+      "name": "cyclops",
+      "stats": {},
+      "passives": [
+        "MissChance 20",
+        "ManaCostReduction 1"
+      ],
+      "desc": "20% miss chance.\nYour spells cost 1 less mana."
+    },
+    "705": {
+      "name": "conjoined head",
+      "stats": {
+        "int": 2,
+        "cha": -3
+      },
+      "passives": []
+    },
+    "706": {
+      "name": "sloth",
+      "stats": {
+        "cha": -3
+      },
+      "passives": [
+        "Brace 1"
+      ],
+      "desc": "Brace 1."
+    },
+    "900": {
+      "name": "slender",
+      "stats": {
+        "cha": -1
+      },
+      "passives": [
+        "AddBonusRange 1",
+        "AddBonusMeleeRange 1"
+      ],
+      "desc": "+1 range. +1 reach."
+    }
+  },
+  "tail": {
+    "300": {
+      "name": "Extra Paw",
+      "stats": {
+        "str": 1
+      },
+      "passives": []
+    },
+    "301": {
+      "name": "Turtle Head",
+      "stats": {},
+      "passives": [
+        "PoopWhenHit Poop"
+      ],
+      "desc": "Poop when you take damage."
+    },
+    "302": {
+      "name": "Scorpion Tail",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Poison 1)"
+      ],
+      "desc": "Your basic attack inflicts Poison."
+    },
+    "303": {
+      "name": "Rock Tail",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Stun [1, .05])"
+      ],
+      "desc": "Your basic attack has a 5% chance to Stun."
+    },
+    "304": {
+      "name": "Monkey Tail",
+      "stats": {
+        "dex": 1
+      },
+      "passives": []
+    },
+    "305": {
+      "name": "Cacuts Tail",
+      "stats": {},
+      "passives": [
+        "Thorns 1"
+      ],
+      "desc": "+1 Thorns."
+    },
+    "306": {
+      "name": "Big Lump Tail",
+      "stats": {
+        "con": 1
+      },
+      "passives": []
+    },
+    "307": {
+      "name": "Antenna Tail",
+      "stats": {
+        "spd": 1
+      },
+      "passives": []
+    },
+    "308": {
+      "name": "Baby Tail",
+      "stats": {
+        "lck": 1
+      },
+      "passives": [
+        "DodgeChance 5%"
+      ],
+      "desc": "+5% dodge chance."
+    },
+    "309": {
+      "name": "Baboon's' Ass",
+      "stats": {
+        "cha": 1
+      },
+      "passives": []
+    },
+    "310": {
+      "name": "Hand Tail",
+      "stats": {},
+      "passives": [
+        "AddTemporaryEffectsToBasicAttack(Fury 10)"
+      ],
+      "desc": "Your basic attack has a 10% chance to repeat once."
+    },
+    "311": {
+      "name": "Thorn Tail",
+      "stats": {},
+      "passives": [
+        "Thorns 1"
+      ],
+      "desc": "Thorns 1."
+    },
+    "312": {
+      "name": "Holy Tail",
+      "stats": {
+        "shield": 1,
+        "divine_shield": 1
+      },
+      "passives": []
+    },
+    "313": {
+      "name": "Hose Tail",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(ChangeTile WaterTile)"
+      ],
+      "desc": "Your basic attack creates water tiles."
+    },
+    "314": {
+      "name": "Bone Tail",
+      "stats": {},
+      "passives": [
+        "StatusKilledCharacters(Conditional_RandomChance { odds 10% AutoReanimate 50%)"
+      ],
+      "desc": "Whenever you down a unit, you have a 10% chance to reanimate that unit with 50% HP."
+    },
+    "315": {
+      "name": "Maggot Tail",
+      "stats": {},
+      "passives": [
+        "SpawnThingOnDamage(object Maggot good false //good relative to the thing attacking, for luck calculations chance 20%)"
+      ],
+      "desc": "20% chance to spawn a Maggot when hit."
+    },
+    "316": {
+      "name": "Grass Tail",
+      "stats": {},
+      "passives": [
+        "StatusOnEndMove(Conditional_GoodRoll { odds 25% ChangeTilesUnder TallGrassTile)"
+      ],
+      "desc": "25% chance to spawn tall grass wherever you end your movement."
+    },
+    "317": {
+      "name": "Skunk Tail",
+      "stats": {},
+      "passives": [
+        "AbilityReaction SkunkTail"
+      ],
+      "desc": "When hit, fart a Poison 4 attack with Knockback behind you."
+    },
+    "318": {
+      "name": "Rattle",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Poison 1)"
+      ],
+      "desc": "Your basic attack inflicts Poison."
+    },
+    "319": {
+      "name": "Snake Tail",
+      "stats": {},
+      "passives": [
+        "PoisonThorns 1"
+      ],
+      "desc": "Units who contact you get Poisoned."
+    },
+    "320": {
+      "name": "Glass Tail",
+      "stats": {},
+      "passives": [
+        "Bleed 1",
+        "BleedThorns 2"
+      ],
+      "desc": "Bleed 1. Bleed Thorns 2."
+    },
+    "321": {
+      "name": "Extra Head",
+      "stats": {
+        "int": 1
+      },
+      "passives": []
+    },
+    "322": {
+      "name": "Exhaust Pipe",
+      "stats": {},
+      "passives": [
+        "StatusEachTurnBegin(SpeedUp 1)"
+      ],
+      "desc": "Gain +1 [img:spd] each turn."
+    },
+    "323": {
+      "name": "Jetpack Tail",
+      "stats": {},
+      "passives": [
+        "ReplaceBasicMove_Mutation BasicJump"
+      ],
+      "desc": "Your movement action is a jump."
+    },
+    "324": {
+      "name": "Wing Tail",
+      "stats": {
+        "spd": 2
+      },
+      "passives": []
+    },
+    "325": {
+      "name": "Spring Tail",
+      "stats": {},
+      "passives": [
+        "MeleeRevengeDamage(knockback 2)"
+      ],
+      "desc": "Units that contact you get knocked back 2 tiles."
+    },
+    "326": {
+      "name": "Eyeball Tail",
+      "stats": {},
+      "passives": [
+        "Bruise 1",
+        "DodgeChance 10%"
+      ],
+      "desc": "10% dodge chance. Bruise 1."
+    },
+    "327": {
+      "name": "Tree Branch Tail",
+      "stats": {},
+      "passives": [
+        "StatusIfDidntMove(Charge 3)"
+      ],
+      "desc": "If you don't move, gain 3 Charge at the end of the turn."
+    },
+    "329": {
+      "name": "Mr. Worm",
+      "stats": {},
+      "passives": [
+        "CanRemoveCursedItems 1"
+      ],
+      "desc": "You can unequip cursed items and parasites."
+    },
+    "331": {
+      "name": "Dice Tail",
+      "stats": {},
+      "passives": [
+        "AddLevelUpRerolls 1"
+      ],
+      "desc": "You can reroll your options when you level up."
+    },
+    "332": {
+      "name": "Tennis Racket",
+      "stats": {},
+      "passives": [
+        "ReflectProjectiles 25%"
+      ],
+      "desc": "+25% chance to reflect projectiles."
+    },
+    "334": {
+      "name": "Fire Flower Tail",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Burn 1)"
+      ],
+      "desc": "Your basic attack inflicts Burn 1."
+    },
+    "336": {
+      "name": "Horn Tail",
+      "stats": {},
+      "passives": [
+        "Thorns 1"
+      ],
+      "desc": "+1 Thorns."
+    },
+    "337": {
+      "name": "Tail Feather",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Knockback 1 VisualFXTile fx_windSpell)"
+      ],
+      "desc": "Your basic attack is wind element."
+    },
+    "338": {
+      "name": "Flame Tail",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Burn 1)"
+      ],
+      "desc": "Your basic attack inflicts Burn 1."
+    },
+    "339": {
+      "name": "Light Bulb",
+      "stats": {},
+      "passives": [
+        "PassiveWhenAtFullMana(DamageUp 2)"
+      ],
+      "desc": "While at full mana, you have +2 Damage."
+    },
+    "341": {
+      "name": "Tongue Tail",
+      "stats": {},
+      "passives": [
+        "StatusOnTookDamage(Charge 1)"
+      ],
+      "desc": "Gain +1 Charge when you take damage."
+    },
+    "342": {
+      "name": "Kitten Tail",
+      "stats": {},
+      "passives": [
+        "SpawnOnDowned CharmedKitten"
+      ],
+      "desc": "Spawn a Charmed Kitten familiar when you get downed."
+    },
+    "750": {
+      "name": "Bunny Tail*",
+      "stats": {
+        "cha": 1
+      },
+      "passives": []
+    },
+    "751": {
+      "name": "Beaver Tail*",
+      "stats": {},
+      "passives": [
+        "Brace 1"
+      ],
+      "desc": "+1 Brace."
+    },
+    "752": {
+      "name": "Pig Tail*",
+      "stats": {
+        "con": 1
+      },
+      "passives": []
+    },
+    "754": {
+      "name": "Spiked Tail*",
+      "stats": {},
+      "passives": [
+        "Thorns 1"
+      ],
+      "desc": "+1 Thorns."
+    },
+    "755": {
+      "name": "mermaid Tail*",
+      "stats": {},
+      "passives": [
+        "WaterWalk 1"
+      ],
+      "desc": "Water does not slow movement."
+    },
+    "756": {
+      "name": "Devil Tail*",
+      "stats": {},
+      "passives": [
+        "BleedThorns 1"
+      ],
+      "desc": "+1 Bleed Thorns."
+    },
+    "757": {
+      "name": "sonichu Tail*",
+      "stats": {},
+      "passives": [
+        "ReplaceBasicMove Shadowstep"
+      ],
+      "desc": "Your movement action is shadowstep."
+    },
+    "759": {
+      "name": "slender Tail*",
+      "stats": {},
+      "passives": [
+        "Quivered 1"
+      ],
+      "desc": "Start with +1 Bonus Attack."
+    },
+    "760": {
+      "name": "human head tail",
+      "stats": {},
+      "passives": [
+        "BackflipWhenTargeted(stacks 2 ability BackflipDodge)"
+      ],
+      "desc": "Start with 2 backflips."
+    },
+    "900": {
+      "name": "slender",
+      "stats": {
+        "spd": 1
+      },
+      "passives": []
+    },
+    "1500": {
+      "name": "rat tail",
+      "stats": {
+        "dex": 1
+      },
+      "passives": []
+    },
+    "400": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "con": -1
+      },
+      "passives": []
+    },
+    "401": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "dex": -1
+      },
+      "passives": []
+    },
+    "402": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "403": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "int": -1
+      },
+      "passives": []
+    },
+    "404": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "405": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "406": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "con": 2
+      },
+      "passives": []
+    },
+    "407": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "con": 2
+      },
+      "passives": []
+    },
+    "408": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "409": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "int": -1
+      },
+      "passives": []
+    },
+    "410": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "411": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "412": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "con": -1
+      },
+      "passives": []
+    },
+    "413": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "dex": 2
+      },
+      "passives": []
+    },
+    "414": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "415": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "int": -1
+      },
+      "passives": []
+    },
+    "416": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "417": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "418": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "int": 2
+      },
+      "passives": []
+    },
+    "419": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "int": 2
+      },
+      "passives": []
+    },
+    "420": {
+      "name": "",
+      "stats": {
+        "int": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "421": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "int": 2
+      },
+      "passives": []
+    },
+    "422": {
+      "name": "",
+      "stats": {
+        "int": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "423": {
+      "name": "",
+      "stats": {
+        "int": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "424": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "425": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "426": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "427": {
+      "name": "",
+      "stats": {
+        "int": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "428": {
+      "name": "",
+      "stats": {
+        "spd": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "429": {
+      "name": "",
+      "stats": {
+        "cha": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "430": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "431": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "432": {
+      "name": "",
+      "stats": {
+        "cha": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "433": {
+      "name": "",
+      "stats": {
+        "int": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "434": {
+      "name": "",
+      "stats": {
+        "spd": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "435": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "436": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "437": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "438": {
+      "name": "",
+      "stats": {
+        "spd": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "439": {
+      "name": "",
+      "stats": {
+        "int": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "440": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "441": {
+      "name": "",
+      "stats": {
+        "spd": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "700": {
+      "name": "kinked tail",
+      "stats": {
+        "lck": -2
+      },
+      "passives": []
+    },
+    "701": {
+      "name": "lipoma",
+      "stats": {
+        "spd": -1,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "-2": {
+      "name": "no tail (702)",
+      "stats": {
+        "dex": -1
+      },
+      "passives": []
+    },
+    "703": {
+      "name": "heavy tail",
+      "stats": {
+        "con": 1
+      },
+      "passives": [
+        "Immobile 1"
+      ],
+      "desc": "Start each battle with Immobile 1."
+    },
+    "704": {
+      "name": "forked tail",
+      "stats": {
+        "lck": -2
+      },
+      "passives": [
+        "MulticlassLevelUp Hunter"
+      ],
+      "desc": "Hunter abilities are also offered when you level up."
+    }
+  },
+  "legs": {
+    "300": {
+      "name": "Frog legs",
+      "stats": {},
+      "passives": [
+        "PassiveWhenAffectedByElement(element water passives { AddMovement 1)"
+      ],
+      "desc": "+1 movement range while wet. Water does not slow movement."
+    },
+    "301": {
+      "name": "Hooves",
+      "stats": {
+        "spd": 1
+      },
+      "passives": [
+        "AddStatusToBasicAttack(Stun [1, .05])"
+      ],
+      "desc": "Your basic attack has a 5% chance to Stun."
+    },
+    "302": {
+      "name": "Tentacles",
+      "stats": {},
+      "passives": [
+        "KnockbackImmunity 1"
+      ],
+      "desc": "Knockback immunity."
+    },
+    "303": {
+      "name": "Lobster Claws",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Immobile [1, .05])"
+      ],
+      "desc": "Your basic attack has a 5% chance to Immobilize."
+    },
+    "304": {
+      "name": "Muscular Legs",
+      "stats": {
+        "str": 1
+      },
+      "passives": []
+    },
+    "305": {
+      "name": "Tar Legs",
+      "stats": {},
+      "passives": [
+        "DodgeChance 5%"
+      ],
+      "desc": "+5% dodge chance."
+    },
+    "306": {
+      "name": "Bug Legs",
+      "stats": {
+        "dex": 1
+      },
+      "passives": []
+    },
+    "307": {
+      "name": "Tires",
+      "stats": {
+        "spd": 1
+      },
+      "passives": []
+    },
+    "308": {
+      "name": "Human Legs",
+      "stats": {
+        "lck": 1
+      },
+      "passives": []
+    },
+    "309": {
+      "name": "Knife Legs",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Bleed [3, .1])"
+      ],
+      "desc": "Your basic attack has a 10% chance to inflict Bleed 3."
+    },
+    "310": {
+      "name": "Spring Legs",
+      "stats": {},
+      "passives": [],
+      "desc": "Your movement action is a jump."
+    },
+    "311": {
+      "name": "Square Legs",
+      "stats": {
+        "con": 1
+      },
+      "passives": []
+    },
+    "312": {
+      "name": "Balloon Legs",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Knockback 1)"
+      ],
+      "desc": "Your basic attack has +1 Knockback."
+    },
+    "313": {
+      "name": "Snake Legs",
+      "stats": {},
+      "passives": [
+        "AddBonusMeleeRange 1"
+      ],
+      "desc": "+1 reach."
+    },
+    "314": {
+      "name": "Weapon Legs",
+      "stats": {},
+      "passives": [
+        "BoostWeaponDamage 1"
+      ],
+      "desc": "Your weapons have +1 Damage."
+    },
+    "315": {
+      "name": "Socks",
+      "stats": {},
+      "passives": [
+        "ElementImmune Ice"
+      ],
+      "desc": "Ice immunity."
+    },
+    "317": {
+      "name": "Raptor Claws",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicMeleeAttack(Bleed 1)"
+      ],
+      "desc": "Your basic attack inflicts Bleed 1 if it's melee."
+    },
+    "318": {
+      "name": "Stigmata",
+      "stats": {
+        "shield": 1,
+        "divine_shield": 1
+      },
+      "passives": []
+    },
+    "319": {
+      "name": "High Tops",
+      "stats": {},
+      "passives": [
+        "StatusEachTurnBegin(MoveQuivered [1, 0.1])"
+      ],
+      "desc": "10% chance to gain a bonus move each turn."
+    },
+    "320": {
+      "name": "Talons",
+      "stats": {},
+      "passives": [
+        "StatusEachTurnBegin(Quivered [1, 0.1])"
+      ],
+      "desc": "10% chance to gain a bonus attack each turn."
+    },
+    "321": {
+      "name": "Flippers",
+      "stats": {},
+      "passives": [
+        "FreePathfindElement Water"
+      ],
+      "desc": "Moving through water tiles costs 0 movement."
+    },
+    "322": {
+      "name": "Bear Claws",
+      "stats": {
+        "str": 1,
+        "con": 1
+      },
+      "passives": []
+    },
+    "323": {
+      "name": "Beetle Feet",
+      "stats": {
+        "spd": 2
+      },
+      "passives": []
+    },
+    "324": {
+      "name": "Branches",
+      "stats": {
+        "con": 1
+      },
+      "passives": []
+    },
+    "325": {
+      "name": "Extra Head",
+      "stats": {
+        "spd": -2
+      },
+      "passives": [
+        "ClassManaCostReduction(class Colorless reduction 1)"
+      ],
+      "desc": "Collarless spells cost -1 mana."
+    },
+    "326": {
+      "name": "Needle Feet",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(RandomStatusFromPool { Poison 1 Burn 1 Bleed 1 Blind 1 Weakness 1)"
+      ],
+      "desc": "Your basic attack inflicts a random debuff."
+    },
+    "327": {
+      "name": "Mushroom Legs",
+      "stats": {},
+      "passives": [
+        "StatusEachTurnEnd(RandomStatUp 2 RandomStatDown 1)"
+      ],
+      "desc": "Gain 2 random stat ups and 1 random stat down at the end of each turn."
+    },
+    "328": {
+      "name": "Glass Bottle",
+      "stats": {},
+      "passives": [
+        "EquipTemporaryItem Bottles"
+      ],
+      "desc": "Equip a temporary Bottles weapon at the start of the battle."
+    },
+    "329": {
+      "name": "Water Bottle",
+      "stats": {},
+      "passives": [
+        "EquipTemporaryItem WaterBottle_Full"
+      ],
+      "desc": "Equip a temporary Water Bottle trinket at the start of the battle."
+    },
+    "330": {
+      "name": "Sausage Legs",
+      "stats": {},
+      "passives": [
+        "HealthRegenUp 1"
+      ],
+      "desc": "+1 Health Regeneration"
+    },
+    "331": {
+      "name": "Jet Legs",
+      "stats": {},
+      "passives": [
+        "AddMovement 1"
+      ],
+      "desc": "+1 movement range. Your movement action is a jump."
+    },
+    "332": {
+      "name": "Peg Legs",
+      "stats": {
+        "spd": -1
+      },
+      "passives": [
+        "SpawnEachTurn(object RandomPickup chance 50%)"
+      ],
+      "desc": "50% chance to spawn a pickup on an adjacent tile when you end your turn."
+    },
+    "333": {
+      "name": "Wing Legs",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Knockback 1 VisualFXTile fx_windSpell)"
+      ],
+      "desc": "Your basic attack has wind element and +1 Knockback."
+    },
+    "334": {
+      "name": "Ape Legs",
+      "stats": {
+        "str": 1
+      },
+      "passives": [
+        "AddStatusToBasicMeleeAttack(KnockUpAndAway { stacks 3 distance 3)"
+      ],
+      "desc": "Your basic attack tosses units into the air if it's melee."
+    },
+    "335": {
+      "name": "Glass Legs",
+      "stats": {},
+      "passives": [
+        "BleedThorns 1",
+        "StatusOnTookDamage(ChangeTilesUnder GlassTile)"
+      ],
+      "desc": "+1 Bleed Thorns. Spawn glass when you take damage."
+    },
+    "336": {
+      "name": "Crow Legs",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(SoulLink 1)"
+      ],
+      "desc": "Your basic attack inflicts Soul Link."
+    },
+    "337": {
+      "name": "Floating Legs",
+      "stats": {},
+      "passives": [
+        "IgnoreTiles 1"
+      ],
+      "desc": "You are immune to tile effects."
+    },
+    "339": {
+      "name": "Wing Legs 2",
+      "stats": {
+        "spd": 2
+      },
+      "passives": [
+        "MoveAwayFromDamageSource BasicJump"
+      ],
+      "desc": "Fly away when hit."
+    },
+    "340": {
+      "name": "Lucky Toe",
+      "stats": {},
+      "passives": [
+        "StatusOnTookDamage(LuckUp 1)"
+      ],
+      "desc": "When you take damage, gain +1 [img:lck]."
+    },
+    "341": {
+      "name": "Whip Legs",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(FaceAway 1)"
+      ],
+      "desc": "Your basic attack makes units face away from you."
+    },
+    "343": {
+      "name": "Kitten Legs",
+      "stats": {},
+      "passives": [
+        "SpawnOnDowned CharmedKitten"
+      ],
+      "desc": "Spawn a Charmed Kitten familiar when you get downed."
+    },
+    "754": {
+      "name": "Wing Hoof Legs",
+      "stats": {},
+      "passives": [
+        "ReplaceBasicMove ToadJump_BasicMove",
+        "AddStatusToBasicAttack(Bruise 1)"
+      ],
+      "desc": "Your movement action is a jump. Your basic attack inflicts Bruise."
+    },
+    "756": {
+      "name": "Sonichu Legs",
+      "stats": {
+        "spd": 2
+      },
+      "passives": []
+    },
+    "757": {
+      "name": "bigfoot Legs",
+      "stats": {},
+      "passives": [
+        "Trample 3"
+      ],
+      "desc": "Trample."
+    },
+    "758": {
+      "name": "nessie Legs",
+      "stats": {},
+      "passives": [
+        "PassiveWhenAffectedByElement(element water passives { AllStatsUp 1)"
+      ],
+      "desc": "You have All Stats Up while wet."
+    },
+    "759": {
+      "name": "nessie Legs",
+      "stats": {},
+      "passives": [
+        "PassiveWhenAffectedByElement(element water passives { AllStatsUp 1)"
+      ],
+      "desc": "You have All Stats Up while wet."
+    },
+    "761": {
+      "name": "mothman Legs",
+      "stats": {},
+      "passives": [
+        "ReplaceBasicMove ToadJump_BasicMove",
+        "AddStatusToBasicAttack(Bleed 1)"
+      ],
+      "desc": "Your movement action is a jump. Your basic attack inflicts Bleed."
+    },
+    "762": {
+      "name": "slender",
+      "stats": {},
+      "passives": [
+        "IgnoreTiles 1",
+        "YOffset .25"
+      ],
+      "desc": "Ignore the effects of tiles and traps."
+    },
+    "763": {
+      "name": "slender",
+      "stats": {},
+      "passives": [
+        "IgnoreTiles 1",
+        "YOffset .25"
+      ],
+      "desc": "Ignore the effects of tiles and traps."
+    },
+    "900": {
+      "name": "slender",
+      "stats": {},
+      "passives": [
+        "IgnoreTiles 1",
+        "YOffset .25"
+      ],
+      "desc": "Ignore the effects of tiles and traps."
+    },
+    "400": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "con": -1
+      },
+      "passives": []
+    },
+    "401": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "dex": -1
+      },
+      "passives": []
+    },
+    "402": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "403": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "int": -1
+      },
+      "passives": []
+    },
+    "404": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "405": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "406": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "con": 2
+      },
+      "passives": []
+    },
+    "407": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "con": 2
+      },
+      "passives": []
+    },
+    "408": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "409": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "int": -1
+      },
+      "passives": []
+    },
+    "410": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "411": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "412": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "con": -1
+      },
+      "passives": []
+    },
+    "413": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "dex": 2
+      },
+      "passives": []
+    },
+    "414": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "415": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "int": -1
+      },
+      "passives": []
+    },
+    "416": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "417": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "418": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "int": 2
+      },
+      "passives": []
+    },
+    "419": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "int": 2
+      },
+      "passives": []
+    },
+    "420": {
+      "name": "",
+      "stats": {
+        "int": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "421": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "int": 2
+      },
+      "passives": []
+    },
+    "422": {
+      "name": "",
+      "stats": {
+        "int": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "423": {
+      "name": "",
+      "stats": {
+        "int": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "424": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "425": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "426": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "427": {
+      "name": "",
+      "stats": {
+        "int": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "428": {
+      "name": "",
+      "stats": {
+        "spd": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "429": {
+      "name": "",
+      "stats": {
+        "cha": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "430": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "431": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "432": {
+      "name": "",
+      "stats": {
+        "cha": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "433": {
+      "name": "",
+      "stats": {
+        "int": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "434": {
+      "name": "",
+      "stats": {
+        "spd": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "435": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "436": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "437": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "438": {
+      "name": "",
+      "stats": {
+        "spd": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "439": {
+      "name": "",
+      "stats": {
+        "int": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "440": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "441": {
+      "name": "",
+      "stats": {
+        "spd": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "700": {
+      "name": "lobster claw",
+      "stats": {
+        "str": -2
+      },
+      "passives": []
+    },
+    "701": {
+      "name": "extra finger",
+      "stats": {
+        "dex": -2
+      },
+      "passives": []
+    },
+    "702": {
+      "name": "club foot",
+      "stats": {
+        "spd": -2
+      },
+      "passives": []
+    },
+    "703": {
+      "name": "syndactyly",
+      "stats": {
+        "spd": -2
+      },
+      "passives": [
+        "WaterWalk 1"
+      ],
+      "desc": "Water does not slow movement."
+    },
+    "704": {
+      "name": "curled paw",
+      "stats": {
+        "str": -1
+      },
+      "passives": []
+    },
+    "705": {
+      "name": "club foot2",
+      "stats": {},
+      "passives": [
+        "Trample 3"
+      ],
+      "desc": "Trample."
+    },
+    "706": {
+      "name": "backwards knees",
+      "stats": {
+        "spd": -1
+      },
+      "passives": []
+    },
+    "707": {
+      "name": "blob legs",
+      "stats": {
+        "str": 1
+      },
+      "passives": [
+        "Slow -1"
+      ],
+      "desc": "Permanently Slow."
+    }
+  },
+  "ears": {
+    "300": {
+      "name": "horn",
+      "stats": {
+        "str": 1
+      },
+      "passives": []
+    },
+    "301": {
+      "name": "antenna",
+      "stats": {
+        "int": 1
+      },
+      "passives": []
+    },
+    "302": {
+      "name": "fishy",
+      "stats": {},
+      "passives": [
+        "PassiveWhenAffectedByElement(element water passives { HealthRegenUp 1 AddManaRegen 1)"
+      ],
+      "desc": "+1 Health and Mana Regeneration while wet."
+    },
+    "303": {
+      "name": "bullhorn",
+      "stats": {
+        "str": 1
+      },
+      "passives": [
+        "AddStatusToBasicMeleeAttack(Knockback 1)"
+      ],
+      "desc": "Adds +1 Knockback to your basic attack if it's melee."
+    },
+    "304": {
+      "name": "pigtails",
+      "stats": {
+        "cha": 1
+      },
+      "passives": []
+    },
+    "305": {
+      "name": "boil",
+      "stats": {
+        "shield": 1
+      },
+      "passives": []
+    },
+    "306": {
+      "name": "bunny ear",
+      "stats": {
+        "spd": 1
+      },
+      "passives": []
+    },
+    "307": {
+      "name": "brains",
+      "stats": {
+        "int": 1
+      },
+      "passives": []
+    },
+    "308": {
+      "name": "shrek",
+      "stats": {
+        "str": 1,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "309": {
+      "name": "antlers",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Bleed 1)"
+      ],
+      "desc": "Adds +1 Bleed to your basic attack."
+    },
+    "310": {
+      "name": "human",
+      "stats": {
+        "int": 1
+      },
+      "passives": []
+    },
+    "313": {
+      "name": "Ram horns",
+      "stats": {
+        "shield": 1
+      },
+      "passives": [
+        "AddStatusToBasicMeleeAttack(Knockback 1)"
+      ],
+      "desc": "Adds +1 Knockback to your basic attack if it's melee."
+    },
+    "314": {
+      "name": "Deer horns",
+      "stats": {},
+      "passives": [
+        "Thorns 1",
+        "AddStatusToBasicMeleeAttack(Bleed 1)"
+      ],
+      "desc": "Thorns 1. Your basic attack inflicts Bleed if it's melee."
+    },
+    "315": {
+      "name": "Fly Ears",
+      "stats": {},
+      "passives": [
+        "SpawnEachTurn(object CharmedFly good false //good relative to the thing attacking, for luck calculations chance 50%)"
+      ],
+      "desc": "50% chance to spawn a Charmed Fly each turn. Start with Poison 1."
+    },
+    "316": {
+      "name": "Bat Ears",
+      "stats": {},
+      "passives": [
+        "ShowHiddenThings 1",
+        "DodgeChance 5%"
+      ],
+      "desc": "You can see hidden things. 5% dodge chance."
+    },
+    "317": {
+      "name": "Bone Ears",
+      "stats": {},
+      "passives": [
+        "StatusKilledCharacters(Conditional_RandomChance { odds 10% AutoReanimate 50%)"
+      ],
+      "desc": "Whenever you down a unit, you have a 10% chance to reanimate that unit with 50% HP."
+    },
+    "318": {
+      "name": "Frog Eyes",
+      "stats": {},
+      "passives": [
+        "PassiveWhenAffectedByElement(element water passives { Brace 1)"
+      ],
+      "desc": "You have Brace 1 while wet."
+    },
+    "319": {
+      "name": "Pierced Ears",
+      "stats": {},
+      "passives": [
+        "StatusOnTookDamage(Charge 1)"
+      ],
+      "desc": "Gain +1 Charge when you take damage."
+    },
+    "320": {
+      "name": "Alien Ears",
+      "stats": {},
+      "passives": [
+        "KineticSpikes 1"
+      ],
+      "desc": "+1 Kinetic Spikes."
+    },
+    "321": {
+      "name": "Spring Ears",
+      "stats": {},
+      "passives": [
+        "MeleeRevengeDamage(knockback 1)"
+      ],
+      "desc": "Units that contact you get knocked back 1 tile."
+    },
+    "322": {
+      "name": "Lamb Ears",
+      "stats": {
+        "cha": 1
+      },
+      "passives": []
+    },
+    "323": {
+      "name": "Vamp Ears",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(FlatLeech 1)"
+      ],
+      "desc": "Gain 1 HP when your basic attack deals damage."
+    },
+    "325": {
+      "name": "Tree Branch",
+      "stats": {
+        "shield": 1
+      },
+      "passives": [
+        "PassiveWhenAffectedByElement(element water passives { StatusEachTurnEnd { Shield 1 Charge 1)"
+      ],
+      "desc": "If you're wet, gain +1 Charge and +1 [img:shield] at the end of your turn."
+    },
+    "326": {
+      "name": "Worm Ear",
+      "stats": {},
+      "passives": [
+        "SpawnEachTurn(chance 5% object  CharmedMaggot)"
+      ],
+      "desc": "5% chance to spawn a Maggot familiar each turn."
+    },
+    "327": {
+      "name": "Ant Antenna",
+      "stats": {},
+      "passives": [
+        "SpawnOnBattleStartRandomEmptyTile(object RandomFoodPickup)"
+      ],
+      "desc": "An extra food pickup will spawn in each battle."
+    },
+    "328": {
+      "name": "Snake Ears",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Petrify [1, .05])"
+      ],
+      "desc": "5% chance to Petrify on damage and when hit."
+    },
+    "329": {
+      "name": "External Gills",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(ChangeTile WaterTile)"
+      ],
+      "desc": "Your basic attack leaves water tiles."
+    },
+    "330": {
+      "name": "Hook Ears",
+      "stats": {},
+      "passives": [
+        "Thorns 1",
+        "MeleeRevengeDamage(Immobile 10%)"
+      ],
+      "desc": "Thorns 1. 10% chance to inflict Immobile on units that contact you."
+    },
+    "331": {
+      "name": "Mace Ears",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Knockback 1)"
+      ],
+      "desc": "Your basic attack has +1 Knockback."
+    },
+    "332": {
+      "name": "Blubber Lobes",
+      "stats": {},
+      "passives": [
+        "Brace 1"
+      ],
+      "desc": "Brace 1."
+    },
+    "333": {
+      "name": "Metal Plate",
+      "stats": {
+        "shield": 3
+      },
+      "passives": []
+    },
+    "334": {
+      "name": "Metal Detector",
+      "stats": {},
+      "passives": [
+        "SpawnOnBattleStartRandomEmptyTile(object Coin number [1 3])"
+      ],
+      "desc": "Spawn 1-3 more coins/scrap around the map on random tiles at the start of each battle."
+    },
+    "335": {
+      "name": "Docked Ears",
+      "stats": {},
+      "passives": [
+        "Bleed 1",
+        "Quivered 1"
+      ],
+      "desc": "Start with Bleed 1 and a bonus attack."
+    },
+    "336": {
+      "name": "Large Leaves",
+      "stats": {},
+      "passives": [
+        "StatusIfUnusedMovePoints(ManaGain 3)"
+      ],
+      "desc": "You gain 3 mana at the end of your turn if you didn't use your movement action."
+    },
+    "337": {
+      "name": "Burning ears",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Burn 1)"
+      ],
+      "desc": "Your basic attack inflicts Burn 1."
+    },
+    "338": {
+      "name": "Frozen ears",
+      "stats": {},
+      "passives": [
+        "MeleeRevengeDamage(Freeze [1 0.15])"
+      ],
+      "desc": "Your basic attack has a 15% chance to inflict Freeze."
+    },
+    "339": {
+      "name": "Lightning Rods",
+      "stats": {},
+      "passives": [
+        "ElementImmune Electric"
+      ],
+      "desc": "You have electric immunity."
+    },
+    "340": {
+      "name": "Aura Ears",
+      "stats": {
+        "shield": 1,
+        "divine_shield": 1
+      },
+      "passives": []
+    },
+    "341": {
+      "name": "Large Ears",
+      "stats": {},
+      "passives": [
+        "ChanceToBackflip(ability BackflipDodge chance 10%)"
+      ],
+      "desc": "10% chance to backflip when targeted."
+    },
+    "342": {
+      "name": "Infested Ears",
+      "stats": {
+        "con": -1
+      },
+      "passives": [
+        "SpawnThingOnDamage(object CharmedFlea good false //good relative to the thing attacking, for luck calculations chance 20%)"
+      ],
+      "desc": "20% chance to spawn a Charmed Flea when damaged."
+    },
+    "343": {
+      "name": "Long Antlers",
+      "stats": {},
+      "passives": [
+        "Thorns 1"
+      ],
+      "desc": "Thorns 1."
+    },
+    "344": {
+      "name": "Kitten",
+      "stats": {},
+      "passives": [
+        "SpawnOnDowned CharmedKitten"
+      ],
+      "desc": "Spawn a Charmed Kitten familiar when you get downed."
+    },
+    "345": {
+      "name": "Mouse Ears",
+      "stats": {},
+      "passives": [
+        "RevengeDamage(effects { Charmed [1, .15])"
+      ],
+      "desc": "Units that contact or attack you have a 15% chance to get Charmed."
+    },
+    "750": {
+      "name": "Jackrabbit Ears",
+      "stats": {},
+      "passives": [
+        "ReplaceBasicMove_Mutation BasicJump"
+      ],
+      "desc": "Your movement action is a jump."
+    },
+    "751": {
+      "name": "Folded Ears",
+      "stats": {},
+      "passives": [
+        "DodgeChance 10%"
+      ],
+      "desc": "+10% dodge chance."
+    },
+    "752": {
+      "name": "Fin Ears",
+      "stats": {},
+      "passives": [
+        "PassiveWhenAffectedByElement(element water passives { DamageUp 2)"
+      ],
+      "desc": "You have +2 Damage while wet."
+    },
+    "753": {
+      "name": "Goat Horns",
+      "stats": {},
+      "passives": [
+        "AddKnockbackDamage 1",
+        "AddStatusToBasicAttack(Knockback 1)"
+      ],
+      "desc": "+1 Knockback damage. Your basic attack has +1 Knockback."
+    },
+    "754": {
+      "name": "Electric Ears",
+      "stats": {
+        "spd": 1
+      },
+      "passives": [
+        "AddDamageToElementDamage(element Electric damage 1)"
+      ],
+      "desc": "Electric damage you deal is increased by 1."
+    },
+    "755": {
+      "name": "Head Ferns",
+      "stats": {},
+      "passives": [
+        "StatusOnCastSpell(Charge 1)"
+      ],
+      "desc": "Gain +1 Charge every time you cast a spell."
+    },
+    "900": {
+      "name": "slender",
+      "stats": {},
+      "passives": [
+        "DodgeChance 10%"
+      ],
+      "desc": "+10% dodge chance."
+    },
+    "1500": {
+      "name": "rat ears",
+      "stats": {},
+      "passives": [
+        "DodgeChance 2%"
+      ],
+      "desc": "+2% dodge chance"
+    },
+    "400": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "con": -1
+      },
+      "passives": []
+    },
+    "401": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "dex": -1
+      },
+      "passives": []
+    },
+    "402": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "403": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "int": -1
+      },
+      "passives": []
+    },
+    "404": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "405": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "406": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "con": 2
+      },
+      "passives": []
+    },
+    "407": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "con": 2
+      },
+      "passives": []
+    },
+    "408": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "409": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "int": -1
+      },
+      "passives": []
+    },
+    "410": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "411": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "412": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "con": -1
+      },
+      "passives": []
+    },
+    "413": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "dex": 2
+      },
+      "passives": []
+    },
+    "414": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "415": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "int": -1
+      },
+      "passives": []
+    },
+    "416": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "417": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "418": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "int": 2
+      },
+      "passives": []
+    },
+    "419": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "int": 2
+      },
+      "passives": []
+    },
+    "420": {
+      "name": "",
+      "stats": {
+        "int": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "421": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "int": 2
+      },
+      "passives": []
+    },
+    "422": {
+      "name": "",
+      "stats": {
+        "int": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "423": {
+      "name": "",
+      "stats": {
+        "int": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "424": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "425": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "426": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "427": {
+      "name": "",
+      "stats": {
+        "int": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "428": {
+      "name": "",
+      "stats": {
+        "spd": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "429": {
+      "name": "",
+      "stats": {
+        "cha": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "430": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "431": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "432": {
+      "name": "",
+      "stats": {
+        "cha": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "433": {
+      "name": "",
+      "stats": {
+        "int": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "434": {
+      "name": "",
+      "stats": {
+        "spd": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "435": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "436": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "437": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "438": {
+      "name": "",
+      "stats": {
+        "spd": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "439": {
+      "name": "",
+      "stats": {
+        "int": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "440": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "441": {
+      "name": "",
+      "stats": {
+        "spd": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "700": {
+      "name": "anotia",
+      "stats": {
+        "lck": -2
+      },
+      "passives": []
+    },
+    "701": {
+      "name": "turner syndrome",
+      "stats": {
+        "int": -2
+      },
+      "passives": []
+    },
+    "702": {
+      "name": "underdeveloped ears",
+      "stats": {
+        "cha": -1
+      },
+      "passives": []
+    },
+    "703": {
+      "name": "low ears",
+      "stats": {},
+      "passives": [
+        "Confusion 2"
+      ],
+      "desc": "Start each battle with Confusion 2."
+    },
+    "704": {
+      "name": "wilted ears",
+      "stats": {},
+      "passives": [
+        "Immobile 1"
+      ],
+      "desc": "Start each battle with Immobile 1."
+    },
+    "-2": {
+      "name": "no ears (completely missing part) //TODO: deaf (unaffected by musical abilities)",
+      "stats": {
+        "dex": -2
+      },
+      "passives": []
+    }
+  },
+  "eyes": {
+    "300": {
+      "name": "Button Eyes",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Fear [1 .1])"
+      ],
+      "desc": "Your basic attack has a 10% chance to inflict Fear."
+    },
+    "301": {
+      "name": "Demon Eyes",
+      "stats": {
+        "dex": 1
+      },
+      "passives": []
+    },
+    "302": {
+      "name": "Pop Eyes",
+      "stats": {},
+      "passives": [
+        "Thorns 1"
+      ],
+      "desc": "+1 Thorns."
+    },
+    "303": {
+      "name": "Gem Eyes",
+      "stats": {
+        "int": 1,
+        "cha": 1
+      },
+      "passives": []
+    },
+    "304": {
+      "name": "Holes",
+      "stats": {},
+      "passives": [
+        "AddInitiative -20"
+      ],
+      "desc": "Take your turn later."
+    },
+    "305": {
+      "name": "Zen Eyes",
+      "stats": {
+        "str": -1,
+        "dex": -1,
+        "int": 3
+      },
+      "passives": []
+    },
+    "306": {
+      "name": "Confusing Eyes",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Confusion [3, .1])"
+      ],
+      "desc": "Your basic attack has a 10% chance to inflict Confusion 3."
+    },
+    "307": {
+      "name": "Half Moon Eyes",
+      "stats": {},
+      "passives": [
+        "GainManaWhenAnythingDies 1"
+      ],
+      "desc": "Gain 1 mana when anything dies."
+    },
+    "308": {
+      "name": "Spider Eyes",
+      "stats": {},
+      "passives": [
+        "DodgeChance 5%"
+      ],
+      "desc": "+5% dodge chance."
+    },
+    "309": {
+      "name": "Doll Eyes",
+      "stats": {},
+      "passives": [
+        "AddCorpseHealth 2"
+      ],
+      "desc": "+2 corpse health."
+    },
+    "310": {
+      "name": "Octo Eyes",
+      "stats": {},
+      "passives": [
+        "HealthRegenUp 1"
+      ],
+      "desc": "+1 Health Regeneration"
+    },
+    "311": {
+      "name": "gecko eye",
+      "stats": {},
+      "passives": [
+        "BackstabImmunity 1"
+      ],
+      "desc": "You do not take extra damage from backstabs."
+    },
+    "312": {
+      "name": "Metal Eyes",
+      "stats": {
+        "shield": 1
+      },
+      "passives": [
+        "Brace 1"
+      ],
+      "desc": "+1 Brace."
+    },
+    "313": {
+      "name": "Issac's Eyes",
+      "stats": {
+        "shield": 1,
+        "divine_shield": 1
+      },
+      "passives": [
+        "AddStatusToBasicAttack(ChangeTile WaterTile)"
+      ],
+      "desc": "Your basic attack creates water tiles."
+    },
+    "314": {
+      "name": "Dead Eyes",
+      "stats": {},
+      "passives": [
+        "SpawnOnDowned CharmedFly",
+        "SpawnOnDowned CharmedFly",
+        "SpawnOnDowned CharmedFly",
+        "AddCorpseHealth 2"
+      ],
+      "desc": "When you are downed, spawn 3 Flies. +2 corpse health."
+    },
+    "315": {
+      "name": "Kinetic eyes",
+      "stats": {},
+      "passives": [
+        "KineticSpikes 1"
+      ],
+      "desc": "+1 Kinetic Spikes."
+    },
+    "316": {
+      "name": "Lightning eyes",
+      "stats": {},
+      "passives": [
+        "CounterAttack(chance 15% ability ChainLightning)"
+      ],
+      "desc": "15% chance to counter attack with Chain Lightning when you get hit."
+    },
+    "317": {
+      "name": "Dice Eyes",
+      "stats": {},
+      "passives": [
+        "StatusEachTurnEnd(RandomStatUp 1)"
+      ],
+      "desc": "Gain a random stat up at the end of each turn."
+    },
+    "318": {
+      "name": "Goat Eyes",
+      "stats": {},
+      "passives": [
+        "ShowHiddenThings 1",
+        "AddKnockbackDamage 1"
+      ],
+      "desc": "You can see hidden things. +1 Knockback damage."
+    },
+    "319": {
+      "name": "Horn Eyes",
+      "stats": {},
+      "passives": [
+        "Blind -1",
+        "Thorns 1",
+        "DamageUp 1"
+      ],
+      "desc": "Blind. +1 Damage. +1 Thorns."
+    },
+    "324": {
+      "name": "Treasure Eyes",
+      "stats": {},
+      "passives": [
+        "SpawnOnBattleStartRandomEmptyTile(object Coin number 2)"
+      ],
+      "desc": "Spawn 2 extra coins each battle."
+    },
+    "325": {
+      "name": "Nail Eyes",
+      "stats": {},
+      "passives": [
+        "Thorns 1"
+      ],
+      "desc": "Thorns 1."
+    },
+    "326": {
+      "name": "4 Eyes",
+      "stats": {},
+      "passives": [
+        "StatusEveryXSpellCasts(stacks 4 Charge 2)"
+      ],
+      "desc": "Gain 2 Charge each time you cast 4 spells."
+    },
+    "327": {
+      "name": "Baby Blue Eyes",
+      "stats": {
+        "cha": 2
+      },
+      "passives": []
+    },
+    "328": {
+      "name": "Bull's Eye'",
+      "stats": {},
+      "passives": [
+        "CritChanceUp 10"
+      ],
+      "desc": "+10% crit chance."
+    },
+    "329": {
+      "name": "Spinning Eyes",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Confusion [1, .15])"
+      ],
+      "desc": "Your basic attack has a 15% chance to inflict Confusion."
+    },
+    "331": {
+      "name": "Glassy Eyes",
+      "stats": {},
+      "passives": [
+        "EquipRandomTemporaryItemFromPool pills"
+      ],
+      "desc": "At the start of each battle, gain a random temporary pill if your trinket slot is empty."
+    },
+    "332": {
+      "name": "Bleeding Eyes",
+      "stats": {},
+      "passives": [
+        "Bleed 1",
+        "StatusOnTookDamage(Charge 1)"
+      ],
+      "desc": "Start each battle Bleeding. Gain 1 Charge each time you take damage."
+    },
+    "333": {
+      "name": "Huge Eyes",
+      "stats": {},
+      "passives": [
+        "BasicAttackCantMiss 1"
+      ],
+      "desc": "Your basic attack can't miss."
+    },
+    "334": {
+      "name": "Infested Eyes",
+      "stats": {},
+      "passives": [
+        "Blind -1",
+        "SpawnThingOnDamage(object CharmedFlea good false //good relative to the thing attacking, for luck calculations chance 100%)"
+      ],
+      "desc": "Blind. Spawn a Flea when you take damage."
+    },
+    "335": {
+      "name": "Fake Eyelashes",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Charmed [1, .10])"
+      ],
+      "desc": "Your basic attack has a 10% chance to Charm."
+    },
+    "336": {
+      "name": "Bolt Eyes",
+      "stats": {},
+      "passives": [
+        "AddElementsToBasicAttack Electric",
+        "AddStatusToBasicAttack(Stun [1 .05])"
+      ],
+      "desc": "Your basic attack is electric element and has a 5% chance to stun."
+    },
+    "337": {
+      "name": "Ice Eyes",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Slow 1)"
+      ],
+      "desc": "Your basic attack is ice element and inflicts Slow."
+    },
+    "338": {
+      "name": "Fire Eyes",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Burn 1)"
+      ],
+      "desc": "Your basic attack inflicts Burn."
+    },
+    "339": {
+      "name": "Water Eyes",
+      "stats": {},
+      "passives": [
+        "AddElementsToBasicAttack Water",
+        "PassiveWhenAffectedByElement(element water passives { HealthRegenUp 1)"
+      ],
+      "desc": "+1 Health Regeneration while wet. Your basic attack is water element."
+    },
+    "340": {
+      "name": "Leech Eyes",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Leeches 1)"
+      ],
+      "desc": "Your basic attack inflicts Leech."
+    },
+    "341": {
+      "name": "Flower Eyes",
+      "stats": {},
+      "passives": [
+        "StatusOnEndMove(Conditional_FirstApplicationThisTurn { Charge 1)"
+      ],
+      "desc": "Gain Charge 1 the first time you move each turn."
+    },
+    "342": {
+      "name": "Poison Eyes",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Poison 1)"
+      ],
+      "desc": "Your basic attack inflicts Poison 1. Start each battle Poisoned."
+    },
+    "343": {
+      "name": "Clown Eyes",
+      "stats": {},
+      "passives": [
+        "RevengeDamage(effects { Fear [1, .05])"
+      ],
+      "desc": "You have a 5% chance to inflict Fear on units who contact or attack you."
+    },
+    "344": {
+      "name": "Sun Eyes",
+      "stats": {},
+      "passives": [
+        "RevengeDamage(effects { Blind [1, .10])"
+      ],
+      "desc": "You have a 10% chance to Blind units who contact or attack you."
+    },
+    "345": {
+      "name": "Evil Eyes",
+      "stats": {},
+      "passives": [
+        "MeleeRevengeDamage(effects { RandomStatusFromPool { Poison 1 Burn 1 Bleed 1 Blind 1 Weakness 1)"
+      ],
+      "desc": "Inflict a random debuff on units who contact you."
+    },
+    "346": {
+      "name": "Rock Eyes",
+      "stats": {
+        "shield": 1
+      },
+      "passives": [
+        "SpawnThingOnDamage(object SmallRock good false //good relative to the thing attacking, for luck calculations chance 100%)"
+      ],
+      "desc": "Spawn a rock when damaged."
+    },
+    "347": {
+      "name": "Hypno Eyes",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Confusion [2, .15])"
+      ],
+      "desc": "Your basic attack has a 15% chance to inflict Confusion 2."
+    },
+    "348": {
+      "name": "Pop Eyes",
+      "stats": {},
+      "passives": [
+        "AddBonusRange 1",
+        "AddBonusMeleeRange 1"
+      ],
+      "desc": "+1 range, +1 reach."
+    },
+    "349": {
+      "name": "8 Eyes",
+      "stats": {},
+      "passives": [
+        "StatusEveryXSpellCasts(stacks 8 RandomMagicMissile 4)"
+      ],
+      "desc": "Emit 4 Sparkles each time you cast 8 spells."
+    },
+    "351": {
+      "name": "Chaos Eyes",
+      "stats": {},
+      "passives": [
+        "ConjureBonusAbility random"
+      ],
+      "desc": "Your bonus ability is a different random spell each battle."
+    },
+    "352": {
+      "name": "Runny Mascara",
+      "stats": {},
+      "passives": [
+        "PassiveWhileHasStatus(status Bleed passives { AllStatsUp 1)"
+      ],
+      "desc": "You have All Stats Up while Bleeding."
+    },
+    "353": {
+      "name": "Chameleon Eyes",
+      "stats": {},
+      "passives": [
+        "BackstabImmunity 1"
+      ],
+      "desc": "You take no extra damage from backstabs."
+    },
+    "442": {
+      "name": "",
+      "stats": {},
+      "passives": [
+        "ReflectProjectiles 10%"
+      ],
+      "desc": "10% chance to reflect projectiles."
+    },
+    "750": {
+      "name": "glasses",
+      "stats": {
+        "int": 1
+      },
+      "passives": []
+    },
+    "754": {
+      "name": "alien eyes",
+      "stats": {},
+      "passives": [
+        "AddBonusRange 1",
+        "AddElementsToBasicAttack Gravity"
+      ],
+      "desc": "+1 range. Your basic attack is gravity element."
+    },
+    "755": {
+      "name": "mothman eyes",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Fear [1 .15])"
+      ],
+      "desc": "Your basic attack has a 15% chance to inflict Fear."
+    },
+    "900": {
+      "name": "slender",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Slow [1 .1])"
+      ],
+      "desc": "Your basic attack has a 10% chance to inflict Slow."
+    },
+    "400": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "con": -1
+      },
+      "passives": []
+    },
+    "401": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "dex": -1
+      },
+      "passives": []
+    },
+    "402": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "403": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "int": -1
+      },
+      "passives": []
+    },
+    "404": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "405": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "406": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "con": 2
+      },
+      "passives": []
+    },
+    "407": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "con": 2
+      },
+      "passives": []
+    },
+    "408": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "409": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "int": -1
+      },
+      "passives": []
+    },
+    "410": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "411": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "412": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "con": -1
+      },
+      "passives": []
+    },
+    "413": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "dex": 2
+      },
+      "passives": []
+    },
+    "414": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "415": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "int": -1
+      },
+      "passives": []
+    },
+    "416": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "417": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "418": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "int": 2
+      },
+      "passives": []
+    },
+    "419": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "int": 2
+      },
+      "passives": []
+    },
+    "420": {
+      "name": "",
+      "stats": {
+        "int": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "421": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "int": 2
+      },
+      "passives": []
+    },
+    "422": {
+      "name": "",
+      "stats": {
+        "int": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "423": {
+      "name": "",
+      "stats": {
+        "int": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "424": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "425": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "426": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "427": {
+      "name": "",
+      "stats": {
+        "int": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "428": {
+      "name": "",
+      "stats": {
+        "spd": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "429": {
+      "name": "",
+      "stats": {
+        "cha": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "430": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "431": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "432": {
+      "name": "",
+      "stats": {
+        "cha": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "433": {
+      "name": "",
+      "stats": {
+        "int": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "434": {
+      "name": "",
+      "stats": {
+        "spd": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "435": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "436": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "437": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "438": {
+      "name": "",
+      "stats": {
+        "spd": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "439": {
+      "name": "",
+      "stats": {
+        "int": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "440": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "441": {
+      "name": "",
+      "stats": {
+        "spd": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "700": {
+      "name": "graves disease",
+      "stats": {
+        "cha": -2
+      },
+      "passives": []
+    },
+    "701": {
+      "name": "anophthalmia",
+      "stats": {
+        "lck": -2
+      },
+      "passives": []
+    },
+    "702": {
+      "name": "",
+      "stats": {
+        "con": -2,
+        "int": 1,
+        "cha": 1
+      },
+      "passives": []
+    },
+    "-2": {
+      "name": "no eyes (frame 703, but completely missing parts are special and keyed in on -2)",
+      "stats": {},
+      "passives": [
+        "Blind -1"
+      ]
+    },
+    "704": {
+      "name": "lazy eye",
+      "stats": {},
+      "passives": [
+        "MissChance 10"
+      ],
+      "desc": "10% miss chance."
+    },
+    "705": {
+      "name": "cataracts",
+      "stats": {},
+      "passives": [
+        "StatusEachTurnBegin(MissChance 5)"
+      ],
+      "desc": "Gain 5% miss chance every turn."
+    },
+    "706": {
+      "name": "crossed eyes",
+      "stats": {},
+      "passives": [
+        "Confusion 2"
+      ],
+      "desc": "Start each battle with Confusion 2."
+    },
+    "1029": {
+      "name": "spider eye",
+      "stats": {},
+      "passives": [
+        "CritChanceUp 5"
+      ],
+      "desc": "+5% crit chance."
+    }
+  },
+  "eyebrows": {
+    "300": {
+      "name": "Bolt Brows",
+      "stats": {
+        "spd": 1
+      },
+      "passives": []
+    },
+    "301": {
+      "name": "Confusing Brows",
+      "stats": {},
+      "passives": [
+        "RevengeDamage(type status damage 0 effects { Confusion [1, .1])"
+      ],
+      "desc": "You have a 10% chance to inflict Confusion on units who contact or attack you."
+    },
+    "302": {
+      "name": "Metal Brows",
+      "stats": {
+        "shield": 2
+      },
+      "passives": []
+    },
+    "303": {
+      "name": "Fancy Makeup",
+      "stats": {
+        "cha": 1
+      },
+      "passives": []
+    },
+    "304": {
+      "name": "Wolfy Brows",
+      "stats": {
+        "dex": 1
+      },
+      "passives": []
+    },
+    "305": {
+      "name": "Dotty Brows",
+      "stats": {
+        "lck": 1
+      },
+      "passives": []
+    },
+    "306": {
+      "name": "Clown Makeup",
+      "stats": {},
+      "passives": [
+        "RevengeDamage(type status damage 0 effects { Fear [1, .05])"
+      ],
+      "desc": "You have a 5% chance to inflict Fear on units who contact or attack you."
+    },
+    "307": {
+      "name": "Antennae",
+      "stats": {},
+      "passives": [
+        "HealthRegenUp 1",
+        "AddManaRegen 1"
+      ],
+      "desc": "+1 Mana Regeneration. +1 Health Regeneration."
+    },
+    "308": {
+      "name": "Long Lashes",
+      "stats": {
+        "cha": 1
+      },
+      "passives": []
+    },
+    "309": {
+      "name": "Spiny Brows",
+      "stats": {},
+      "passives": [
+        "Thorns 1"
+      ],
+      "desc": "+1 Thorns."
+    },
+    "310": {
+      "name": "Extra Eye",
+      "stats": {},
+      "passives": [
+        "AddBonusRange 1"
+      ],
+      "desc": "+1 Range."
+    },
+    "311": {
+      "name": "Stacked Brows",
+      "stats": {},
+      "passives": [
+        "StatusEveryXSpellCastsEachTurn(stacks 3 HealthGain 2)"
+      ],
+      "desc": "When you cast your third spell each turn, heal 2."
+    },
+    "313": {
+      "name": "Square Glasses",
+      "stats": {},
+      "passives": [
+        "SpawnExtraThingsOnBattleStart(object RandomPickup number [1 2])"
+      ],
+      "desc": "Spawn 1-2 extra pickups in each battle."
+    },
+    "314": {
+      "name": "Holy Brows",
+      "stats": {},
+      "passives": [
+        "StatusOnAllyCatDeath(DamageUp 2)"
+      ],
+      "desc": "When an allied cat dies, gain +2 Damage."
+    },
+    "315": {
+      "name": "Triangle Eyes",
+      "stats": {},
+      "passives": [
+        "AddLevelUpRerolls 1"
+      ],
+      "desc": "You can reroll your options when you level up."
+    },
+    "900": {
+      "name": "slender",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Freeze [1 .01])"
+      ],
+      "desc": "+5% dodge chance. Your basic attack has a 1% chance to inflict Freeze."
+    },
+    "400": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "con": -1
+      },
+      "passives": []
+    },
+    "401": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "dex": -1
+      },
+      "passives": []
+    },
+    "402": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "403": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "int": -1
+      },
+      "passives": []
+    },
+    "404": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "405": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "406": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "con": 2
+      },
+      "passives": []
+    },
+    "407": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "con": 2
+      },
+      "passives": []
+    },
+    "408": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "409": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "int": -1
+      },
+      "passives": []
+    },
+    "410": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "411": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "412": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "con": -1
+      },
+      "passives": []
+    },
+    "413": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "dex": 2
+      },
+      "passives": []
+    },
+    "414": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "415": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "int": -1
+      },
+      "passives": []
+    },
+    "416": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "417": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "418": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "int": 2
+      },
+      "passives": []
+    },
+    "419": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "int": 2
+      },
+      "passives": []
+    },
+    "420": {
+      "name": "",
+      "stats": {
+        "int": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "421": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "int": 2
+      },
+      "passives": []
+    },
+    "422": {
+      "name": "",
+      "stats": {
+        "int": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "423": {
+      "name": "",
+      "stats": {
+        "int": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "424": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "425": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "426": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "427": {
+      "name": "",
+      "stats": {
+        "int": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "428": {
+      "name": "",
+      "stats": {
+        "spd": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "429": {
+      "name": "",
+      "stats": {
+        "cha": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "430": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "431": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "432": {
+      "name": "",
+      "stats": {
+        "cha": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "433": {
+      "name": "",
+      "stats": {
+        "int": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "434": {
+      "name": "",
+      "stats": {
+        "spd": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "435": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "436": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "437": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "438": {
+      "name": "",
+      "stats": {
+        "spd": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "439": {
+      "name": "",
+      "stats": {
+        "int": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "440": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "441": {
+      "name": "",
+      "stats": {
+        "spd": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "700": {
+      "name": "bushy",
+      "stats": {
+        "lck": -1
+      },
+      "passives": []
+    },
+    "701": {
+      "name": "no eyebrows",
+      "stats": {
+        "cha": -1
+      },
+      "passives": []
+    },
+    "702": {
+      "name": "unibrow",
+      "stats": {
+        "int": -1
+      },
+      "passives": []
+    },
+    "-2": {
+      "name": "no eyebrows (completely missing part)",
+      "stats": {
+        "cha": -2
+      },
+      "passives": []
+    }
+  },
+  "mouth": {
+    "300": {
+      "name": "Sabertoothed",
+      "stats": {
+        "str": 1
+      },
+      "passives": []
+    },
+    "301": {
+      "name": "Hippo Teeth",
+      "stats": {},
+      "passives": [
+        "FlatHealWhenDealDamage 1"
+      ],
+      "desc": "Gain 1 health when you deal damage."
+    },
+    "302": {
+      "name": "Flesh Kid",
+      "stats": {},
+      "passives": [
+        "HealthRegenUp 1"
+      ],
+      "desc": "+1 Health Regeneration"
+    },
+    "303": {
+      "name": "Delerious",
+      "stats": {
+        "int": 1
+      },
+      "passives": []
+    },
+    "304": {
+      "name": "Spider",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Poison 1)"
+      ],
+      "desc": "Your basic attack inflicts Poison."
+    },
+    "305": {
+      "name": "Ash",
+      "stats": {},
+      "passives": [
+        "AddCorpseHealth 100"
+      ],
+      "desc": "+100 corpse health."
+    },
+    "306": {
+      "name": "Famine",
+      "stats": {},
+      "passives": [
+        "SpawnThingOnDamage(object Fly good false //good relative to the thing attacking, for luck calculations chance 10%)"
+      ],
+      "desc": "10% chance to spawn a Fly when you take damage."
+    },
+    "307": {
+      "name": "Alien Chomp",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Instakill [25, .01])"
+      ],
+      "desc": "Your basic attack has a 1% chance to instakill."
+    },
+    "308": {
+      "name": "Licky",
+      "stats": {},
+      "passives": [
+        "HealthRegenUp 1"
+      ],
+      "desc": "+1 Health Regeneration"
+    },
+    "309": {
+      "name": "Jacko",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Fear [1 .1])"
+      ],
+      "desc": "Your basic attack has a 10% chance to inflict Fear."
+    },
+    "310": {
+      "name": "Lip Fillers",
+      "stats": {
+        "cha": 1
+      },
+      "passives": []
+    },
+    "311": {
+      "name": "Leech Mouth",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Leeches 1)"
+      ],
+      "desc": "Your basic attack inflicts Leech 1."
+    },
+    "312": {
+      "name": "Bear Trap Mouth",
+      "stats": {
+        "str": 1
+      },
+      "passives": [
+        "AddStatusToBasicMeleeAttack(Immobile [1, .1])"
+      ],
+      "desc": "Your basic attack has a 10% chance to inflict Immobile if it's melee."
+    },
+    "313": {
+      "name": "Full Mouth",
+      "stats": {},
+      "passives": [
+        "StatusEachRoundEnd(UseAbility Spit)"
+      ],
+      "desc": "At the end of each round, spit at an enemy ."
+    },
+    "314": {
+      "name": "Gold Tooth",
+      "stats": {},
+      "passives": [
+        "StatusOnDie(ScatterCoins 5 ScatterCoins [1 .5] ScatterCoins [1 .5] ScatterCoins [1 .5] ScatterCoins [1 .5] ScatterCoins [1 .5])"
+      ],
+      "desc": "Spawn 5-10 coins when downed."
+    },
+    "315": {
+      "name": "Double Mouth",
+      "stats": {},
+      "passives": [
+        "StatusEachTurnBegin(Quivered [1, 0.1])"
+      ],
+      "desc": "10% chance to gain a bonus attack each turn."
+    },
+    "316": {
+      "name": "Horse Face",
+      "stats": {
+        "cha": -1
+      },
+      "passives": [
+        "AddStatusToBasicAttack(Bruise 1)"
+      ],
+      "desc": "Your basic attack inflicts Bruise."
+    },
+    "317": {
+      "name": "Glass Teeth",
+      "stats": {},
+      "passives": [
+        "BleedThorns 1",
+        "StatusOnTookDamage(ChangeTilesUnder GlassTile)"
+      ],
+      "desc": "Spawn glass when you take damage. +1 Bleed Thorns."
+    },
+    "318": {
+      "name": "mole mouth",
+      "stats": {},
+      "passives": [
+        "ReplaceBasicMove_Mutation BasicDig"
+      ],
+      "desc": "Your movement action is Dig."
+    },
+    "319": {
+      "name": "Catfish Mouth",
+      "stats": {},
+      "passives": [
+        "PassiveWhenAffectedByElement(element water passives { HealthRegenUp 1)"
+      ],
+      "desc": "Water does not slow movement. +1 Health Regeneration while wet."
+    },
+    "321": {
+      "name": "Zipper Mouth",
+      "stats": {
+        "shield": 3
+      },
+      "passives": []
+    },
+    "322": {
+      "name": "Shark Mouth",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Bleed 1)"
+      ],
+      "desc": "Your basic attack inflicts Bleed."
+    },
+    "323": {
+      "name": "Gills",
+      "stats": {},
+      "passives": [
+        "PassiveWhenAffectedByElement(element water passives { HealthRegenUp 2)"
+      ],
+      "desc": "+2 Health Regeneration while wet."
+    },
+    "324": {
+      "name": "Eyeball",
+      "stats": {},
+      "passives": [
+        "AddBonusRange 1"
+      ],
+      "desc": "+1 range."
+    },
+    "326": {
+      "name": "Double Mouth 2",
+      "stats": {},
+      "passives": [
+        "StatusOnEatFood(HealthRegenUp 1)"
+      ],
+      "desc": "Gain +1 Health Regeneration whenever you eat food."
+    },
+    "327": {
+      "name": "Clown Lips",
+      "stats": {},
+      "passives": [
+        "AddLevelUpRerolls 1"
+      ],
+      "desc": "You can reroll your options when you level up."
+    },
+    "328": {
+      "name": "Bandage Mouth",
+      "stats": {},
+      "passives": [
+        "HealthRegenUp 2",
+        "Vegan 1",
+        "HouseFoodRequirementMultiplier 0",
+        "DisableAbilitiesWithTag consumable",
+        "DisableAbilitiesWithTag musical"
+      ],
+      "desc": "Can't eat food, use consumables, or use musical abilities. +2 Health Regeneration"
+    },
+    "750": {
+      "name": "beaver teeth",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(ChangeTile DirtTile VaporizeInanimate 1)"
+      ],
+      "desc": "Your basic attack destroys inanimate objects and turns tiles into dirt."
+    },
+    "751": {
+      "name": "pig snout",
+      "stats": {
+        "con": 2
+      },
+      "passives": []
+    },
+    "752": {
+      "name": "Dog tongue",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(ChangeTile WaterTile)"
+      ],
+      "desc": "Your basic attack creates water tiles."
+    },
+    "754": {
+      "name": "Isaacs mouth",
+      "stats": {},
+      "passives": [
+        "DepressionAura 1"
+      ],
+      "desc": "Adjacent units get All Stats Down."
+    },
+    "755": {
+      "name": "Edmund beard",
+      "stats": {},
+      "passives": [
+        "ElementImmune Ice"
+      ],
+      "desc": "Ice Immunity."
+    },
+    "756": {
+      "name": "Tylers beard",
+      "stats": {
+        "int": 1
+      },
+      "passives": []
+    },
+    "757": {
+      "name": "Mermaid mouth",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Bleed 1)"
+      ],
+      "desc": "Your basic attack inflicts Bleed."
+    },
+    "760": {
+      "name": "bigfoot mouth",
+      "stats": {},
+      "passives": [
+        "AbilityWhenTaggedCharacterMovesNear(ability move tag food range 2)"
+      ],
+      "desc": "When a food pickup spawns within 2 tiles of you, move to it."
+    },
+    "900": {
+      "name": "Slender",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Fear [1 .1])"
+      ],
+      "desc": "Your basic attack has a 10% chance to inflict Fear."
+    },
+    "1500": {
+      "name": "rat mouth",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Poison 1)"
+      ],
+      "desc": "Your basic attack inflicts Poison."
+    },
+    "1026": {
+      "name": "spider mouth",
+      "stats": {},
+      "passives": [
+        "AddStatusToBasicAttack(Webbed [1 .1])"
+      ],
+      "desc": "Your basic attack has a 10% chance to inflict Webbed."
+    },
+    "400": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "con": -1
+      },
+      "passives": []
+    },
+    "401": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "dex": -1
+      },
+      "passives": []
+    },
+    "402": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "403": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "int": -1
+      },
+      "passives": []
+    },
+    "404": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "405": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "406": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "con": 2
+      },
+      "passives": []
+    },
+    "407": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "con": 2
+      },
+      "passives": []
+    },
+    "408": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "409": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "int": -1
+      },
+      "passives": []
+    },
+    "410": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "411": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "412": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "con": -1
+      },
+      "passives": []
+    },
+    "413": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "dex": 2
+      },
+      "passives": []
+    },
+    "414": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "415": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "int": -1
+      },
+      "passives": []
+    },
+    "416": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "417": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "418": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "int": 2
+      },
+      "passives": []
+    },
+    "419": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "int": 2
+      },
+      "passives": []
+    },
+    "420": {
+      "name": "",
+      "stats": {
+        "int": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "421": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "int": 2
+      },
+      "passives": []
+    },
+    "422": {
+      "name": "",
+      "stats": {
+        "int": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "423": {
+      "name": "",
+      "stats": {
+        "int": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "424": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "425": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "426": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "427": {
+      "name": "",
+      "stats": {
+        "int": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "428": {
+      "name": "",
+      "stats": {
+        "spd": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "429": {
+      "name": "",
+      "stats": {
+        "cha": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "430": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "431": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "432": {
+      "name": "",
+      "stats": {
+        "cha": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "433": {
+      "name": "",
+      "stats": {
+        "int": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "434": {
+      "name": "",
+      "stats": {
+        "spd": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "435": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "436": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "437": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "438": {
+      "name": "",
+      "stats": {
+        "spd": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "439": {
+      "name": "",
+      "stats": {
+        "int": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "440": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "441": {
+      "name": "",
+      "stats": {
+        "spd": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "700": {
+      "name": "cleft pallet",
+      "stats": {
+        "cha": -2
+      },
+      "passives": []
+    },
+    "701": {
+      "name": "anodontia",
+      "stats": {
+        "str": -1,
+        "dex": -1
+      },
+      "passives": []
+    },
+    "-2": {
+      "name": "no mouth (frame 702)",
+      "stats": {},
+      "passives": [
+        "Vegan 1",
+        "HouseFoodRequirementMultiplier 0",
+        "DisableAbilitiesWithTag consumable",
+        "DisableAbilitiesWithTag musical",
+        "BlacklistPickupType food"
+      ]
+    },
+    "703": {
+      "name": "underbite",
+      "stats": {
+        "con": 1,
+        "int": -2
+      },
+      "passives": []
+    },
+    "704": {
+      "name": "overbite",
+      "stats": {
+        "str": 1,
+        "cha": -2
+      },
+      "passives": []
+    },
+    "705": {
+      "name": "Fetus Mouth",
+      "stats": {},
+      "passives": [
+        "ExtraBasicAttacks 2",
+        "ReplaceBasicAttack_Mutation FetusSpit"
+      ],
+      "desc": "Your basic attack can be used two extra times each turn but is replaced with a 1-damage spit attack."
+    }
+  },
+  "texture": {
+    "300": {
+      "name": "Stitches",
+      "stats": {
+        "cha": -1
+      },
+      "passives": [
+        "HealthRegenUp 1"
+      ],
+      "desc": "+1 Health Regeneration"
+    },
+    "301": {
+      "name": "Fish Scales",
+      "stats": {},
+      "passives": [
+        "PassiveWhenAffectedByElement(element water passives { HealthRegenUp 1 AddManaRegen 1)"
+      ],
+      "desc": "+1 Health and Mana Regeneration while wet."
+    },
+    "302": {
+      "name": "Conjoined",
+      "stats": {
+        "lck": 1
+      },
+      "passives": []
+    },
+    "303": {
+      "name": "Patches",
+      "stats": {},
+      "passives": [
+        "RandomStatUp 1"
+      ],
+      "desc": "Start each battle with a random stat up."
+    },
+    "304": {
+      "name": "Confusing Hide",
+      "stats": {},
+      "passives": [
+        "RevengeDamage(type status damage 0 effects { Confusion [1, .1])"
+      ],
+      "desc": "Units that contact or attack you have a 10% chance to become Confused."
+    },
+    "305": {
+      "name": "Robot Hide",
+      "stats": {
+        "int": 1
+      },
+      "passives": []
+    },
+    "306": {
+      "name": "Veiny",
+      "stats": {
+        "str": 1
+      },
+      "passives": []
+    },
+    "307": {
+      "name": "Eyeballs",
+      "stats": {},
+      "passives": [
+        "DodgeChance 5%"
+      ],
+      "desc": "+5% dodge chance."
+    },
+    "308": {
+      "name": "Heart Tattoo",
+      "stats": {
+        "cha": 1
+      },
+      "passives": []
+    },
+    "309": {
+      "name": "Tatted Up",
+      "stats": {},
+      "passives": [
+        "RevengeDamage(type status damage 0 effects { Fear [1, .05])"
+      ],
+      "desc": "Your basic attack has a 5% chance to inflict Fear. You have a 5% chance to inflict Fear on units who contact or attack you."
+    },
+    "310": {
+      "name": "Cash Hide",
+      "stats": {},
+      "passives": [
+        "AddLootMultiplier 1"
+      ],
+      "desc": "Gain double the effects of pickups you collect."
+    },
+    "750": {
+      "name": "skunk Hide",
+      "stats": {},
+      "passives": [
+        "PoisonThorns 2"
+      ],
+      "desc": "Units who contact you get Poison 2."
+    },
+    "400": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "con": -1
+      },
+      "passives": []
+    },
+    "401": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "dex": -1
+      },
+      "passives": []
+    },
+    "402": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "403": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "int": -1
+      },
+      "passives": []
+    },
+    "404": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "405": {
+      "name": "",
+      "stats": {
+        "str": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "406": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "con": 2
+      },
+      "passives": []
+    },
+    "407": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "con": 2
+      },
+      "passives": []
+    },
+    "408": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "409": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "int": -1
+      },
+      "passives": []
+    },
+    "410": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "411": {
+      "name": "",
+      "stats": {
+        "con": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "412": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "con": -1
+      },
+      "passives": []
+    },
+    "413": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "dex": 2
+      },
+      "passives": []
+    },
+    "414": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "415": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "int": -1
+      },
+      "passives": []
+    },
+    "416": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "417": {
+      "name": "",
+      "stats": {
+        "dex": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "418": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "int": 2
+      },
+      "passives": []
+    },
+    "419": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "int": 2
+      },
+      "passives": []
+    },
+    "420": {
+      "name": "",
+      "stats": {
+        "int": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "421": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "int": 2
+      },
+      "passives": []
+    },
+    "422": {
+      "name": "",
+      "stats": {
+        "int": 2,
+        "spd": -1
+      },
+      "passives": []
+    },
+    "423": {
+      "name": "",
+      "stats": {
+        "int": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "424": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "425": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "426": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "427": {
+      "name": "",
+      "stats": {
+        "int": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "428": {
+      "name": "",
+      "stats": {
+        "spd": -1,
+        "cha": 2
+      },
+      "passives": []
+    },
+    "429": {
+      "name": "",
+      "stats": {
+        "cha": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "430": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "431": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "432": {
+      "name": "",
+      "stats": {
+        "cha": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "433": {
+      "name": "",
+      "stats": {
+        "int": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "434": {
+      "name": "",
+      "stats": {
+        "spd": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "435": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "lck": 2
+      },
+      "passives": []
+    },
+    "436": {
+      "name": "",
+      "stats": {
+        "con": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "437": {
+      "name": "",
+      "stats": {
+        "str": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "438": {
+      "name": "",
+      "stats": {
+        "spd": 2,
+        "cha": -1
+      },
+      "passives": []
+    },
+    "439": {
+      "name": "",
+      "stats": {
+        "int": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "440": {
+      "name": "",
+      "stats": {
+        "dex": -1,
+        "spd": 2
+      },
+      "passives": []
+    },
+    "441": {
+      "name": "",
+      "stats": {
+        "spd": 2,
+        "lck": -1
+      },
+      "passives": []
+    },
+    "700": {
+      "name": "neurofibromatosis",
+      "stats": {
+        "cha": -2
+      },
+      "passives": []
+    },
+    "701": {
+      "name": "melanocytic nevus",
+      "stats": {
+        "cha": -2,
+        "shield": 1
+      },
+      "passives": []
+    },
+    "702": {
+      "name": "bleeding",
+      "stats": {},
+      "passives": [
+        "Bleed 1"
+      ],
+      "desc": "Start each battle with Bleed 1."
+    },
+    "703": {
+      "name": "blue spots",
+      "stats": {
+        "cha": -2
+      },
+      "passives": [
+        "MulticlassLevelUp Mage"
+      ],
+      "desc": "Mage abilities are also offered when you level up."
+    },
+    "704": {
+      "name": "red dots",
+      "stats": {
+        "cha": -2
+      },
+      "passives": [
+        "MulticlassLevelUp Fighter"
+      ],
+      "desc": "Fighter abilities are also offered when you level up."
+    },
+    "705": {
+      "name": "jaundice",
+      "stats": {
+        "cha": -2
+      },
+      "passives": [
+        "MulticlassLevelUp Thief"
+      ],
+      "desc": "Thief abilities are also offered when you level up."
+    },
+    "706": {
+      "name": "vitiligo",
+      "stats": {
+        "cha": -1
+      },
+      "passives": [
+        "DodgeChance_Status 10"
+      ],
+      "desc": "10% dodge chance."
+    }
+  }
+}

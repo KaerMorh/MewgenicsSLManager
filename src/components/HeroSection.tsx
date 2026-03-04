@@ -8,6 +8,7 @@ interface HeroSectionProps {
   backupCount: number;
   onBackupNow: () => void;
   onRefresh: () => Promise<void>;
+  onEditSave?: () => void;
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({
@@ -16,6 +17,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   backupCount,
   onBackupNow,
   onRefresh,
+  onEditSave,
 }) => {
   const { t } = useI18n();
   const [refreshing, setRefreshing] = useState(false);
@@ -133,6 +135,15 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             🔄
           </span>
         </button>
+        {exists && onEditSave && (
+          <button
+            className="btn-secondary"
+            style={{ fontSize: 14, padding: "10px 20px", flexShrink: 0 }}
+            onClick={onEditSave}
+          >
+            {t("editor.editSave")}
+          </button>
+        )}
         <button
           className="btn-primary"
           style={{ fontSize: 14, padding: "10px 20px", flexShrink: 0 }}

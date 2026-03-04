@@ -1,0 +1,534 @@
+[
+  {
+    "name": "Self-Assured",
+    "desc": "Gain a random stat up whenever you down a unit."
+  },
+  {
+    "name": "SelfAssured2",
+    "desc": "Gain All Stats Up whenever you down a unit."
+  },
+  {
+    "name": "Luck Drain",
+    "desc": "Gain +1 [img:lck] whenever a unit is downed."
+  },
+  {
+    "name": "LuckDrain2",
+    "desc": "Gain +1 [img:lck] whenever a unit is downed.\nGain an extra +2 [img:lck] whenever YOU down a unit."
+  },
+  {
+    "name": "Infested",
+    "desc": "50% chance to spawn a flea familiar when you end your turn."
+  },
+  {
+    "name": "Infested2",
+    "desc": "Spawn 2-3 fleas at the start of each battle.\n50% chance to spawn a flea familiar when you end your turn."
+  },
+  {
+    "name": "Worms",
+    "desc": "50% chance to spawn a maggot familiar when you end your turn."
+  },
+  {
+    "name": "Worms2",
+    "desc": "50% chance to spawn a mutated maggot familiar when you end your turn."
+  },
+  {
+    "name": "Amped",
+    "desc": "Gain +1 [img:spd] at the end of your turn."
+  },
+  {
+    "name": "Amped2",
+    "desc": "Gain +1 [img:spd] at the end of your turn.\nYou can move an extra time each turn."
+  },
+  {
+    "name": "Furious",
+    "desc": "Gain +1 Damage each time you land a critical hit.\n+5% critical hit chance."
+  },
+  {
+    "name": "Furious2",
+    "desc": "Gain +1 Damage and +5% critical hit chance each time you land a critical hit.\n+5% critical hit chance."
+  },
+  {
+    "name": "Deathless",
+    "desc": "+3 Corpse HP"
+  },
+  {
+    "name": "Metal Detector",
+    "desc": "5% chance to spawn a coin when you move over a tile."
+  },
+  {
+    "name": "MetalDetector2",
+    "desc": "10% chance to spawn a coin when you move over a tile."
+  },
+  {
+    "name": "Deathproof",
+    "desc": "While downed, you have a 25% chance to revive with 1 HP at the end of each round."
+  },
+  {
+    "name": "Deathproof2",
+    "desc": "While downed, you have a 33% chance to revive with 10 HP and All Stats Up at the end of each round."
+  },
+  {
+    "name": "Leader",
+    "desc": "Adjacent allies have +1 Damage and +1 Range."
+  },
+  {
+    "name": "Leader2",
+    "desc": "All allies have +1 Damage and +1 Range."
+  },
+  {
+    "name": "Mange",
+    "desc": "Inflict Poison 1 on units that contact you."
+  },
+  {
+    "name": "Mange2",
+    "desc": "Inflict 1 Poison, Bleed, Bruise, Weakness, and Leech on units that contact you."
+  },
+  {
+    "name": "E-Tank",
+    "desc": "Start each battle with +20 unfilled max health."
+  },
+  {
+    "name": "ETank2",
+    "desc": "Start each battle with +50 unfilled max health."
+  },
+  {
+    "name": "Careful",
+    "desc": "Damage you deal to other allies is reduced to 0."
+  },
+  {
+    "name": "Careful2",
+    "desc": "Damage you deal to other allies is reduced to 0. You cannot inflict debuffs on other allies.\nYou are careful in many other ways too."
+  },
+  {
+    "name": "Dirty Claws",
+    "desc": "Your physical attacks on Poisoned or Bleeding enemies inflict +1 Poison and/or Bleed."
+  },
+  {
+    "name": "DirtyClaws2",
+    "desc": "Your basic attack inflicts Poison 1 and Bleed 1. \nYour physical attacks on Poisoned or Bleeding enemies inflict +1 Poison and/or Bleed."
+  },
+  {
+    "name": "Late Bloomer",
+    "desc": "On your 5th turn, you gain All Stats Up 3."
+  },
+  {
+    "name": "LateBloomer2",
+    "desc": "On your 3rd turn, you gain All Stats Up 3."
+  },
+  {
+    "name": "Study",
+    "desc": "Gain +1 [img:int] whenever you hit a new type of unit with an attack or ability."
+  },
+  {
+    "name": "Study2",
+    "desc": "Gain +1 [img:int] whenever you hit a new type of unit with an attack or ability. All enemies of that type become Marked."
+  },
+  {
+    "name": "Skill Share",
+    "desc": "Your other passive ability is shared with the other cats in your party at the start of each battle."
+  },
+  {
+    "name": "SkillShare2",
+    "desc": "Your other passive ability is shared with the other cats in your party at the start of each battle. When breeding, your children will always inherit your other passive."
+  },
+  {
+    "name": "Natural Healing",
+    "desc": "You have +1 Health Regeneration"
+  },
+  {
+    "name": "NaturalHealing2",
+    "desc": "You have +2 Health Regeneration\nAdjacent allies gain +1 Health Regeneration"
+  },
+  {
+    "name": "Longshot",
+    "desc": "+1 Range."
+  },
+  {
+    "name": "Longshot2",
+    "desc": "+2 Range.\nYour ranged attacks have +25% critical hit chance."
+  },
+  {
+    "name": "Fast Footsies",
+    "desc": "You are immune to negative tile effects."
+  },
+  {
+    "name": "FastFootsies2",
+    "desc": "You are immune to negative tile effects.\nYou can move through units and objects."
+  },
+  {
+    "name": "Slugger",
+    "desc": "+1 Damage."
+  },
+  {
+    "name": "Slugger2",
+    "desc": "+3 Damage."
+  },
+  {
+    "name": "Pulp",
+    "desc": "When you kill a unit or destroy a corpse, it becomes meat."
+  },
+  {
+    "name": "Pulp2",
+    "desc": "+4 Damage.\nWhen you kill a unit or destroy a corpse, it becomes meat."
+  },
+  {
+    "name": "Amplify",
+    "desc": "+1 Magic Damage."
+  },
+  {
+    "name": "Amplify2",
+    "desc": "+1 Magic Damage for every 3 [img:cha] you have."
+  },
+  {
+    "name": "Death Boon",
+    "desc": "When you're downed, all allies gain All Stats Up."
+  },
+  {
+    "name": "DeathBoon2",
+    "desc": "When you're downed, all allies gain All Stats Up 2."
+  },
+  {
+    "name": "Santa Sangre",
+    "desc": "When you're downed, allies heal 12 HP. Excess healing is converted to Shield."
+  },
+  {
+    "name": "SantaSangre2",
+    "desc": "When you're downed, allies heal 20 HP. Excess healing is converted to Shield."
+  },
+  {
+    "name": "Unscarred",
+    "desc": "While at full hp you have 100% critical hit chance."
+  },
+  {
+    "name": "Unscarred2",
+    "desc": "While at full hp you have 100% critical hit chance, +5 Mana Regeneration  and +1 All Stats Up."
+  },
+  {
+    "name": "Daunt",
+    "desc": "Small enemies won't attack you."
+  },
+  {
+    "name": "Daunt2",
+    "desc": "Small enemies won't attack you.\nInflict Fear 1 on units that contact or attack you."
+  },
+  {
+    "name": "Animal Handler",
+    "desc": "You start each battle with a random vermin familiar with boosted damage and health."
+  },
+  {
+    "name": "AnimalHandler2",
+    "desc": "You start each battle with 3 random vermin familiars with boosted damage and health."
+  },
+  {
+    "name": "Whipcracker",
+    "desc": "When you damage an ally they gain +1 Damage."
+  },
+  {
+    "name": "Whipcracker2",
+    "desc": "When you damage an ally they gain +1 Damage and +1 [img:spd]."
+  },
+  {
+    "name": "Might of the Meek",
+    "desc": "Damage you deal that's 2 or less is always critical."
+  },
+  {
+    "name": "MightoftheMeek2",
+    "desc": "Damage you deal that's 3 or less is always critical. +50% Crit Damage."
+  },
+  {
+    "name": "Gassy",
+    "desc": "Whenever you take damage, knock back all adjacent units."
+  },
+  {
+    "name": "Gassy2",
+    "desc": "Whenever you take damage, poison all adjacent units and knock them back 10 tiles."
+  },
+  {
+    "name": "Dealer",
+    "desc": "You can use consumables on other units."
+  },
+  {
+    "name": "Dealer2",
+    "desc": "You can use consumables on other units.\nConsumables you use have double the effect."
+  },
+  {
+    "name": "Patience",
+    "desc": "If you end your turn without taking any actions, gain an extra turn at the end of the round. You don't regenerate mana on your main turn if you pass it."
+  },
+  {
+    "name": "Patience2",
+    "desc": "If you end your turn without taking any actions, gain an extra turn at the end of the round."
+  },
+  {
+    "name": "Wiggly",
+    "desc": "+25% dodge chance."
+  },
+  {
+    "name": "Wiggly2",
+    "desc": "+25% dodge chance and +25% critical hit chance."
+  },
+  {
+    "name": "Mini-Me",
+    "desc": "Gain a half-sized copy of yourself that has 50% of your stats. The copy is AI controlled."
+  },
+  {
+    "name": "MiniMe2",
+    "desc": "Gain a half-sized copy of yourself that has 50% of your stats and quarter-sized copy that has 25% of your stats. The copies are AI controlled."
+  },
+  {
+    "name": "Bare Minimum",
+    "desc": "Your stats can't go below 5."
+  },
+  {
+    "name": "BareMinimum2",
+    "desc": "Your stats can't go below 7."
+  },
+  {
+    "name": "Unrestricted",
+    "desc": "Actions with a once per battle restriction can be cast once per turn instead."
+  },
+  {
+    "name": "Unrestricted2",
+    "desc": "Actions with a once per battle restriction can be cast once per turn instead.\nActions with a once per turn restriction have a 50% chance to be castable again."
+  },
+  {
+    "name": "Death's Door",
+    "desc": "While you're at 1 HP, your spells cost 1 mana, but can only be cast once per turn."
+  },
+  {
+    "name": "DeathsDoor2",
+    "desc": "While you're at 5 or fewer HP, your spells cost 1 mana, but can only be cast once per turn."
+  },
+  {
+    "name": "Overconfident",
+    "desc": "While at full HP, reduce the cost of your spells by 2, but take double damage. This can't reduce mana costs to less than 1."
+  },
+  {
+    "name": "Overconfident2",
+    "desc": "While at full HP, reduce the cost of your spells by 2, but take double damage.  This can't reduce mana costs to less than 1. When you cast a spell, heal 1 HP."
+  },
+  {
+    "name": "Serial Killer",
+    "desc": "After you kill 3 units, gain +6 [img:spd] and backstabs have 100% crit chance."
+  },
+  {
+    "name": "SerialKiller2",
+    "desc": "After you kill 3 units, gain +6 [img:spd], backstabs have 100% crit chance, and gain an extra basic attack each turn."
+  },
+  {
+    "name": "Strength in Numbers",
+    "desc": "Your familiars have +1 Damage for each other familiar you have."
+  },
+  {
+    "name": "StrengthinNumbers2",
+    "desc": "You and your familiars have +1 Damage for each other familiar you have."
+  },
+  {
+    "name": "Fighter's Soul",
+    "desc": "Fighter abilities are offered when you level up."
+  },
+  {
+    "name": "FightersSoul2",
+    "desc": "Fighter abilities are offered when you level up."
+  },
+  {
+    "name": "Hunter's Soul",
+    "desc": "Hunter abilities are offered when you level up."
+  },
+  {
+    "name": "HuntersSoul2",
+    "desc": "Hunter abilities are offered when you level up."
+  },
+  {
+    "name": "Mage's Soul",
+    "desc": "Mage abilities are offered when you level up."
+  },
+  {
+    "name": "MagesSoul2",
+    "desc": "Mage abilities are offered when you level up."
+  },
+  {
+    "name": "Cleric's Soul",
+    "desc": "Cleric abilities are offered when you level up."
+  },
+  {
+    "name": "ClericsSoul2",
+    "desc": "Cleric abilities are offered when you level up."
+  },
+  {
+    "name": "Tank's Soul",
+    "desc": "Tank abilities are offered when you level up."
+  },
+  {
+    "name": "TanksSoul2",
+    "desc": "Tank abilities are offered when you level up."
+  },
+  {
+    "name": "Thief's Soul",
+    "desc": "Thief abilities are offered when you level up."
+  },
+  {
+    "name": "ThiefsSoul2",
+    "desc": "Thief abilities are offered when you level up."
+  },
+  {
+    "name": "Monk's Soul",
+    "desc": "Monk abilities are offered when you level up."
+  },
+  {
+    "name": "MonksSoul2",
+    "desc": "Monk abilities are offered when you level up."
+  },
+  {
+    "name": "Butcher's Soul",
+    "desc": "Butcher abilities are offered when you level up."
+  },
+  {
+    "name": "ButchersSoul2",
+    "desc": "Butcher abilities are offered when you level up."
+  },
+  {
+    "name": "Druid's Soul",
+    "desc": "Druid abilities are offered when you level up."
+  },
+  {
+    "name": "DruidsSoul2",
+    "desc": "Druid abilities are offered when you level up."
+  },
+  {
+    "name": "Tinkerer's Soul",
+    "desc": "Tinkerer abilities are offered when you level up."
+  },
+  {
+    "name": "TinkerersSoul2",
+    "desc": "Tinkerer abilities are offered when you level up."
+  },
+  {
+    "name": "Necromancer's Soul",
+    "desc": "Necromancer abilities are offered when you level up."
+  },
+  {
+    "name": "NecromancersSoul2",
+    "desc": "Necromancer abilities are offered when you level up."
+  },
+  {
+    "name": "Psychic's Soul",
+    "desc": "Psychic abilities are offered when you level up."
+  },
+  {
+    "name": "PsychicsSoul2",
+    "desc": "Psychic abilities are offered when you level up."
+  },
+  {
+    "name": "Charming",
+    "desc": "You have a 25% chance to inflict Charm on units that damage you."
+  },
+  {
+    "name": "Charming2",
+    "desc": "You have a 40% chance to inflict Charm on units that damage you."
+  },
+  {
+    "name": "First Impression",
+    "desc": "Start each battle with +1 Bonus Attack."
+  },
+  {
+    "name": "FirstImpression2",
+    "desc": "Start each battle with +2 Bonus Attacks and +2 Bonus Moves."
+  },
+  {
+    "name": "Scavenger",
+    "desc": "If your trinket slot is empty, equip a small consumable food item at the start of each battle."
+  },
+  {
+    "name": "Scavenger2",
+    "desc": "If your trinket slot is empty, equip a big consumable food item at the start of each battle."
+  },
+  {
+    "name": "Zenkai Boost",
+    "desc": "If you end battle with 1 HP, gain +1 to a random stat permanently and start the next battle at full HP with All Stats Up 3."
+  },
+  {
+    "name": "ZenkaiBoost2",
+    "desc": "If you end battle with 1 HP, gain +1 to 3 random stats permanently and start the next battle at full HP with All Stats Up 3."
+  },
+  {
+    "name": "Protection",
+    "desc": ""
+  },
+  {
+    "name": "Protection2",
+    "desc": ""
+  },
+  {
+    "name": "Rockin'",
+    "desc": "Spawn 4 small rocks at the start of each battle."
+  },
+  {
+    "name": "Rockin2",
+    "desc": "Spawn 4 small rocks and 4 boulders at the start of each battle."
+  },
+  {
+    "name": "Mania",
+    "desc": "10% chance to restore all your mana at the start of your turn."
+  },
+  {
+    "name": "Mania2",
+    "desc": "25% chance to restore all your mana at the start of your turn."
+  },
+  {
+    "name": "Lucky",
+    "desc": ""
+  },
+  {
+    "name": "Lucky2",
+    "desc": ""
+  },
+  {
+    "name": "180",
+    "desc": "When you use your basic attack, turn around and use it again."
+  },
+  {
+    "name": "1802",
+    "desc": "When you use your basic attack, turn around and use it again.\nYour basic attack inflicts Confusion 1."
+  },
+  {
+    "name": "Jester's Soul",
+    "desc": "Abilities from any class are offered when you level up.\nYou can reroll your level up options twice."
+  },
+  {
+    "name": "JestersSoul2",
+    "desc": "Abilities from any class are offered when you level up.\nYou can reroll your level up options twice."
+  },
+  {
+    "name": "Hot-Blooded",
+    "desc": "Burn you inflict is increased by 1."
+  },
+  {
+    "name": "HotBlooded2",
+    "desc": "Burn you inflict is increased by 2."
+  },
+  {
+    "name": "Toxic-Blooded",
+    "desc": "Poison you inflict is increased by 1."
+  },
+  {
+    "name": "ToxicBlooded2",
+    "desc": "Poison you inflict is increased by 2."
+  },
+  {
+    "name": "Blood-Blooded",
+    "desc": "Bleed you inflict is increased by 1."
+  },
+  {
+    "name": "BloodBlooded2",
+    "desc": "Bleed you inflict is increased by 2."
+  },
+  {
+    "name": "Void Soul",
+    "desc": "Only upgraded Collarless abilities are offered when you level up"
+  },
+  {
+    "name": "VoidSoul2",
+    "desc": "Only upgraded Collarless abilities are offered when you level up. Collarless spells cost 1 less mana."
+  }
+]

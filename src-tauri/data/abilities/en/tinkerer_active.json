@@ -1,0 +1,446 @@
+[
+  {
+    "name": "Research",
+    "desc": "Gain +1 Tech."
+  },
+  {
+    "name": "Research2",
+    "desc": "Gain +1 Tech.\nBonus Passive: Crafting subtracts 1 Tech instead of all of it."
+  },
+  {
+    "name": "Discharge",
+    "desc": "Spend all of your mana, then deal that much electric damage to an adjacent unit."
+  },
+  {
+    "name": "Discharge2",
+    "desc": "Spend all of your mana, then deal that much electric damage to an adjacent unit with a 10% Stun chance for each point of mana spent."
+  },
+  {
+    "name": "Repair",
+    "desc": "Repair 1 use to all of your or an adjacent unit's equipment."
+  },
+  {
+    "name": "Repair2",
+    "desc": "Repair all uses to all of your or an adjacent unit's equipment."
+  },
+  {
+    "name": "Shoddy Jetpack",
+    "desc": "Fly to a random tile in a large area. If you land on a unit, explode dealing 5 damage in an area (including to yourself)."
+  },
+  {
+    "name": "ShoddyJetpack2",
+    "desc": "Fly to any tile. If you land on a unit, explode dealing 5 damage in an area (including to yourself)."
+  },
+  {
+    "name": "Spawn Decoy",
+    "desc": "Spawn a decoy that explodes when it dies."
+  },
+  {
+    "name": "SpawnDecoy2",
+    "desc": "Spawn a decoy that explodes when it dies. When an enemy targets you, swap places with the decoy."
+  },
+  {
+    "name": "Switcheroo",
+    "desc": "Your next attack breaks your weapon, then craft a new one."
+  },
+  {
+    "name": "Switcheroo2",
+    "desc": "Your next attack breaks your weapon, then gain +1 Tech and craft a weapon."
+  },
+  {
+    "name": "Spring Shoes",
+    "desc": "Jump up to 2 tiles away."
+  },
+  {
+    "name": "SpringShoes2",
+    "desc": "Jump up to 5 tiles away."
+  },
+  {
+    "name": "Flamethrower",
+    "desc": "Shoot a flame that inflicts Burn."
+  },
+  {
+    "name": "Autopilot",
+    "desc": "Take an extra turn after this one. You are AI controlled on that turn."
+  },
+  {
+    "name": "AutoPilot2",
+    "desc": "You or another unit takes an extra turn after this one. That unit is AI controlled on that turn.\n[s:.7](This spell costs less.)[/s]"
+  },
+  {
+    "name": "Recycle",
+    "desc": "Destroy your weapon to gain +1 Tech and refresh your basic action."
+  },
+  {
+    "name": "Recycle2",
+    "desc": "Destroy your weapon to gain +1 Tech and refresh your basic action. This spell costs 1 mana if you haven't used your weapon this turn."
+  },
+  {
+    "name": "Build Turret",
+    "desc": "Summon a turret."
+  },
+  {
+    "name": "BuildTurret2",
+    "desc": "Summon a rocket turret."
+  },
+  {
+    "name": "Rocket Skates",
+    "desc": "Dash forward in a straight line then explode dealing damage in an area (including to yourself)."
+  },
+  {
+    "name": "RocketSkates2",
+    "desc": "Dash forward in a straight line then explode dealing damage in an larger area (including to yourself)."
+  },
+  {
+    "name": "Bombchu Dash",
+    "desc": "Dash forward in a straight line then explode."
+  },
+  {
+    "name": "Drill Down",
+    "desc": "Dig to an open tile in a straight line."
+  },
+  {
+    "name": "DrillDown2",
+    "desc": "Dig to a tile in a straight line. If you dig into a unit, explode dealing 5 damage in an area (including to yourself)."
+  },
+  {
+    "name": "Armor Up",
+    "desc": "Craft a Tinkerer armor piece into one of your empty armor slots."
+  },
+  {
+    "name": "ArmorUp2",
+    "desc": "Craft a Tinkerer armor piece into one of your or an adjacent unit's empty armor slots."
+  },
+  {
+    "name": "Fresh off the Forge",
+    "desc": "Gain +7 [img:shield] and Burn 3."
+  },
+  {
+    "name": "FreshOffTheForge2",
+    "desc": "Give +7 [img:shield] and Burn 3 to yourself or an adjacent unit."
+  },
+  {
+    "name": "Electric Nail",
+    "desc": "Summon a nail that arcs electricity to neighboring tiles whenever any unit spends mana."
+  },
+  {
+    "name": "ElectricNail2",
+    "desc": "Summon a nail that arcs electricity to neighboring tiles whenever any unit spends mana.\n[s:.7](This spell costs less.)[/s]"
+  },
+  {
+    "name": "Craft",
+    "desc": "Craft and equip a random temporary weapon."
+  },
+  {
+    "name": "Craft2",
+    "desc": "Craft and equip a random temporary weapon for yourself or an ally in range 3 (if they have an empty weapon slot)."
+  },
+  {
+    "name": "Shockwave",
+    "desc": "Deal damage to all units. The closer a unit is to you the more damage it takes."
+  },
+  {
+    "name": "Shockwave2",
+    "desc": "Deal damage to all units. The closer a unit is to you the more damage it takes.\n[s:.7](Deals more damage to closer units and less damage to further units.)[/s]"
+  },
+  {
+    "name": "Math!",
+    "desc": "Deal 1 damage to a unit for each unique divisor in its current HP value."
+  },
+  {
+    "name": "Math2",
+    "desc": "Deal 1 damage to a unit for each unique divisor in its current HP value. If its HP was a prime number, gain 5 mana."
+  },
+  {
+    "name": "Reprogram",
+    "desc": "Conjure a random spell of your class as a bonus ability."
+  },
+  {
+    "name": "Reprogram2",
+    "desc": "Conjure a random upgraded spell of your class as a bonus ability."
+  },
+  {
+    "name": "Improve",
+    "desc": "Gain +1 to a random stat."
+  },
+  {
+    "name": "Improve2",
+    "desc": "You or an adjacent unit gain +1 to 2 random stats."
+  },
+  {
+    "name": "Catbot",
+    "desc": "Spawn a Catbot and give it your current weapon.\n[s:.7](You will not get the weapon back)[/s]"
+  },
+  {
+    "name": "Catbot2",
+    "desc": "Spawn a Catbot and give it your current weapon. Gain +1 Tech and refresh your basic action.\n[s:.7](You will not get the weapon back)[/s]"
+  },
+  {
+    "name": "Bombchu",
+    "desc": "Spawn a Bombchu bot."
+  },
+  {
+    "name": "Bombchu2",
+    "desc": "Spawn a Bombchu bot in range 4.\n[s:.7](This spell costs less.)[/s]"
+  },
+  {
+    "name": "Remote Detonator",
+    "desc": "Explode a familiar, dealing 5 damage with knockback in an area."
+  },
+  {
+    "name": "RemoteDetonator2",
+    "desc": "Explode a familiar, dealing 5 damage with knockback in an area.\n[s:.7](This spell costs less.)[/s]"
+  },
+  {
+    "name": "Short Circuit",
+    "desc": "Deal 1 electric damage with a random amount of knockback (up to 3) to all adjacent units."
+  },
+  {
+    "name": "ShortCircuit2",
+    "desc": "Deal 2 electric damage with a random amount of knockback (up to 10) to all adjacent units."
+  },
+  {
+    "name": "Electrolyze",
+    "desc": "Give your weapon +3 electric damage."
+  },
+  {
+    "name": "Electrolyze2",
+    "desc": "Give your weapon +3 electric damage.\n[s:.7](This spell costs less.)[/s]"
+  },
+  {
+    "name": "Eject Button",
+    "desc": "Explode and fly to a random tile at least four tiles away. This explosion damages you."
+  },
+  {
+    "name": "EjectButton2",
+    "desc": "Explode and fly to a random tile at least four tiles away. This explosion damages you.\n[s:.7](This spell costs less.)[/s]"
+  },
+  {
+    "name": "Firecracker",
+    "desc": "Throw 3 small 1-damage explosives at random tiles in an area."
+  },
+  {
+    "name": "Firecrackers2",
+    "desc": "Throw small 1-damage explosives at all tiles in an area."
+  },
+  {
+    "name": "Upgrade",
+    "desc": "Fully heal a familiar and give it All Stats Up."
+  },
+  {
+    "name": "Upgrade2",
+    "desc": "Fully heal a familiar and give it All Stats Up and +1 [img:divineshield]."
+  },
+  {
+    "name": "Eureka!",
+    "desc": "Gain +3 Tech and Madness 1.\n[s:.7](This spell can only be cast once per battle.)[/s]"
+  },
+  {
+    "name": "Eureka!",
+    "desc": "Gain +3 Tech.\n[s:.7](This spell can only be cast once per battle.)[/s]"
+  },
+  {
+    "name": "Punchbot",
+    "desc": "Spawn a Rubber Fist Bot."
+  },
+  {
+    "name": "PunchBot2",
+    "desc": "Spawn a Rubber Fist Bot within a large range."
+  },
+  {
+    "name": "Fast Hands",
+    "desc": "Refresh your weapon and trinket actions (unless they gain you mana)."
+  },
+  {
+    "name": "FastHands2",
+    "desc": "Refresh your weapon and trinket actions (unless they gain you mana). Repair 1 use to all of your equipment."
+  },
+  {
+    "name": "Mech Punch",
+    "desc": "Dash-punch with Knockback 3."
+  },
+  {
+    "name": "Eject!",
+    "desc": "Launch yourself out of the mech. Deal damage to units you land on and yourself."
+  },
+  {
+    "name": "Barrage",
+    "desc": "Fire the machine guns!"
+  },
+  {
+    "name": "Thrusters",
+    "desc": "Dash forward and light fires in your path."
+  },
+  {
+    "name": "Mech Suit",
+    "desc": "Summon a mech suit that can be piloted.\n[s:.7](Castable once per battle.)[/s]"
+  },
+  {
+    "name": "MechSuit2",
+    "desc": "Summon a mech suit that can be piloted.\n[s:.7](Costs 0 mana. Castable once per battle.)[/s]"
+  },
+  {
+    "name": "Unreliable Shield Generator",
+    "desc": "Gain +6 [img:shield] and +1 temporary Brace. This spell has a 75% chance to be disabled on each turn."
+  },
+  {
+    "name": "UnreliableShield2",
+    "desc": "Get +6 [img:shield] and +1 temporary Brace. This spell has a 66% chance to be disabled on each turn.\n[s:.7](This spell costs less.)[/s]"
+  },
+  {
+    "name": "Unreliable Missile Launcher",
+    "desc": "Shoot an explosive homing missile at a random enemy. This spell has a 75% chance to be disabled on each turn."
+  },
+  {
+    "name": "UnreliableMissile2",
+    "desc": "Shoot an explosive homing missile at a random enemy. This spell has a 66% chance to be disabled on each turn.\n[s:.7](This spell costs less.)[/s]"
+  },
+  {
+    "name": "Spare Parts",
+    "desc": "Destroy your weapon and gain one of the following: +2 [img:shield], +4 Charge, +1 Thorns, or 1 coin."
+  },
+  {
+    "name": "SpareParts2",
+    "desc": "Destroy your weapon and gain one of the following: +4 [img:shield], +8 Charge, +2 Thorns, or 2 coins."
+  },
+  {
+    "name": "Split the Atom",
+    "desc": "Deal 50 damage to and inflict Burn 10 on all enemies. You can pay for this spell over multiple turns.\n[s:.7](This spell's mana cost can't be modified.)[/s]"
+  },
+  {
+    "name": "BatteryNuke2",
+    "desc": "Deal 50 damage to and inflict Burn 10 on all enemies. You can pay for this spell over multiple turns.\nThis spell absorbs the mana you spend casting other spells.\n[s:.7](This spell's mana cost can't be modified.)[/s]"
+  },
+  {
+    "name": "Experimental Teleporter",
+    "desc": "Teleport to any tile. You have a 15% chance to equip a piece of Fly armor that breaks any armor pieces it replaces."
+  },
+  {
+    "name": "ExperimentalTeleporter2",
+    "desc": "Teleport to any tile. You have a 15% chance to equip a piece of Fly armor that breaks any armor pieces it replaces.\n[s:.7](This spell costs less.)[/s]"
+  },
+  {
+    "name": "Shock Therapy",
+    "desc": "Deal 1 electric damage to yourself or an adjacent unit. Cleanse debuffs from that unit, give it a random stat up, and a 25% chance to be Stunned."
+  },
+  {
+    "name": "ShockTherapy2",
+    "desc": "Deal 1 electric damage to yourself or a unit in range 5. Cleanse debuffs from that unit, give it a random stat up, and a 25% chance to be Stunned."
+  },
+  {
+    "name": "Build Nuke",
+    "desc": "Spawn a mini-nuke that makes a HUGE explosion when it dies."
+  },
+  {
+    "name": "BuildNuke2",
+    "desc": "Spawn a mini-nuke in range 4 that makes a HUGE explosion when it dies."
+  },
+  {
+    "name": "Instant Barrier",
+    "desc": "Gain +6 [img:shield].\nCastable only if you have no [img:shield]."
+  },
+  {
+    "name": "InstantBarrier2",
+    "desc": "Gain +6 [img:shield].\nThis spell's mana cost is equal to your current [img:shield]."
+  },
+  {
+    "name": "Volt Tackle",
+    "desc": "Teleport to anything that's electrically conductive. Displace units you teleport onto and deal electric damage to them."
+  },
+  {
+    "name": "VoltTackle2",
+    "desc": "Teleport to anything that's electrically conductive. Displace units you teleport onto and deal electric damage to them with a 50% chance to inflict Stun."
+  },
+  {
+    "name": "Smash",
+    "desc": "Smash your weapon onto an adjacent unit, destroying it and dealing double its damage."
+  },
+  {
+    "name": "Smash2",
+    "desc": "Smash your weapon onto an adjacent unit, destroying it and dealing double its damage.\n[s:.7](This spell costs less.)[/s]"
+  },
+  {
+    "name": "Shed Scrap",
+    "desc": "Lose 1 [img:shield]. Spawn a junk pile."
+  },
+  {
+    "name": "ShedScrap2",
+    "desc": "Lose 1 [img:shield]. Spawn a junk pile in range 2."
+  },
+  {
+    "name": "Repair Armor",
+    "desc": "Lose all [img:shield], then gain [img:shield] equal to your equipment's starting [img:shield]."
+  },
+  {
+    "name": "Repair Armor",
+    "desc": "Lose all [img:shield], then give [img:shield] equal to your equipment's starting [img:shield] to yourself or another ally."
+  },
+  {
+    "name": "Rocket Ride",
+    "desc": "Jump to any open tile. Explode when you land. (This explosion also damages you.)"
+  },
+  {
+    "name": "RocketRide2",
+    "desc": "Jump to any open tile. Explode when you land. (This explosion also damages you.)\n[s:.7](This spell costs less.)[/s]"
+  },
+  {
+    "name": "Robo-Vac",
+    "desc": "Spawn a vacuum bot that collects pickups and shares their effects with you."
+  },
+  {
+    "name": "RoboVac2",
+    "desc": "Spawn a vacuum bot that collects pickups and shares their effects with your whole team."
+  },
+  {
+    "name": "Give drugs!",
+    "desc": ""
+  },
+  {
+    "name": "Nurse Bot",
+    "desc": "Spawn a nurse bot that heals allies."
+  },
+  {
+    "name": "NurseBot2",
+    "desc": "Spawn a nurse bot that heals allies.\n[s:.7](This spell costs less.)[/s]"
+  },
+  {
+    "name": "Tesla Coil",
+    "desc": "Spawn a tesla coil that shoots lightning bolts at random units with a small chance to inflict Stun."
+  },
+  {
+    "name": "TeslaCoil2",
+    "desc": "Spawn a tesla coil in range 7 that shoots lightning bolts at random units with a small chance to inflict Stun."
+  },
+  {
+    "name": "Refine Materials",
+    "desc": "Collect a pickup in range 3. Instead of its normal effect, gain +1 Tech."
+  },
+  {
+    "name": "RefineMaterials2",
+    "desc": "Collect a pickup in range 3. Instead of its normal effect, gain +1 Tech, +1 [img:shield], and +1 to a random stat."
+  },
+  {
+    "name": "Fabricate",
+    "desc": "Give an ally in range 3 a temporary copy of your weapon, if they don't have a weapon."
+  },
+  {
+    "name": "Fabricate2",
+    "desc": "Give an ally in range 3 a temporary copy of your weapon, if they don't have a weapon.\n[s:.7](This spell costs less.)[/s]"
+  },
+  {
+    "name": "Sparks",
+    "desc": "Shoot electric bolts at up to 3 random enemies or robots."
+  },
+  {
+    "name": "Sparks2",
+    "desc": "Shoot electric bolts at up to 5 random enemies or robots."
+  },
+  {
+    "name": "Hone",
+    "desc": "Repair 1 use to your weapon and give it +1 damage for the rest of the battle."
+  },
+  {
+    "name": "Hone2",
+    "desc": "Repair 1 use to your weapon and give it +1 damage for the rest of the battle. Refresh your weapon action."
+  }
+]

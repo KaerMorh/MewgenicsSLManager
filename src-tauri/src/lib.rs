@@ -1,7 +1,9 @@
 mod backup_manager;
 mod commands;
 mod config;
+mod data_loader;
 mod lz4;
+mod save_editor;
 mod save_parser;
 mod watcher;
 
@@ -37,6 +39,11 @@ pub fn run() {
             commands::scan_duplicates,
             commands::dedup_backups,
             commands::start_watcher,
+            commands::get_save_detail,
+            commands::modify_save,
+            commands::get_ability_db,
+            commands::get_mutation_db,
+            commands::get_furniture_db,
         ])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
