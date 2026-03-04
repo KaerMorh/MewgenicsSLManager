@@ -6,6 +6,11 @@ A save file backup & management tool for **Mewgenics** (by Glaiel Games), built 
 
 ## Features
 
+- **Save Editor** — Full-featured save file modification:
+  - **Basic Data:** Edit day, gold, food, and completion %.
+  - **Cat Editor:** Modify cat names, gender, age, level, stats, abilities, and mutations.
+  - **Furniture Inventory:** Add or remove furniture items from a searchable database.
+  - **Cat List Features:** Search cats by name, sort by adventure status, filter by adventure, and searchable dropdowns for abilities/mutations.
 - **3 Save Slots** — Manage `steamcampaign01/02/03.sav` independently
 - **Save Parsing** — Reads the SQLite-based `.sav` files to display game day, gold, food, completion %, and detailed cat info (name, gender, class, level, age, status)
 - **One-click Backup & Restore** — Create timestamped backups and restore any previous save with a single click (auto-backs-up current save before loading)
