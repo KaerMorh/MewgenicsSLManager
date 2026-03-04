@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { invoke } from "@tauri-apps/api/core";
 import { open } from "@tauri-apps/plugin-dialog";
 import { toast } from "sonner";
@@ -22,8 +22,17 @@ const SettingsDialog: React.FC<SettingsDialogProps> = ({
   const [saveDir, setSaveDir] = useState(config.save_dir);
   const [backupDir, setBackupDir] = useState(config.backup_dir);
   const [refreshInterval, setRefreshInterval] = useState(config.auto_refresh_interval);
+  const [gameExePath, setGameExePath] = useState(config.game_exe_path);
+  const [relaunchAfterKill, setRelaunchAfterKill] = useState(config.relaunch_after_kill);
+  const [detecting, setDetecting] = useState(false);
   const [dedupLoading, setDedupLoading] = useState(false);
   const [dedupConfirm, setDedupConfirm] = useState<{ groups: number; files: number } | null>(null);
+
+  useEffect(() => {
+    if (!gameExePath) {
+      handleAutoDetect(true);
+    }
+  }, []);
 
   const browseSave = async () => {
     const selected = await open({ directory: true, title: t("settings.selectSaveDir") });
@@ -35,12 +44,38 @@ const SettingsDialog: React.FC<SettingsDialogProps> = ({
     if (selected) setBackupDir(selected);
   };
 
+  const browseGame = async () => {
+    const selected = await open({
+      filters: [{ name: "Executable", extensions: ["exe"] }],
+      title: t("settings.gamePath"),
+    });
+    if (selected) setGameExePath(selected);
+  };
+
+  const handleAutoDetect = async (silent?: boolean) => {
+    setDetecting(true);
+    try {
+      const path = await invoke<string | null>("detect_game_path");
+      if (path) {
+        setGameExePath(path);
+        if (!silent) toast.success(t("toast.autoDetectSuccess"), { description: path });
+      } else if (!silent) {
+        toast.error(t("toast.autoDetectFail"));
+      }
+    } catch (e) {
+      if (!silent) toast.error(t("toast.autoDetectFail"), { description: String(e) });
+    }
+    setDetecting(false);
+  };
+
   const handleSave = () => {
     onSave({
       ...config,
       save_dir: saveDir.trim(),
       backup_dir: backupDir.trim(),
       auto_refresh_interval: refreshInterval,
+      game_exe_path: gameExePath.trim(),
+      relaunch_after_kill: relaunchAfterKill,
     });
   };
 
@@ -48,6 +83,8 @@ const SettingsDialog: React.FC<SettingsDialogProps> = ({
     setSaveDir("");
     setBackupDir("");
     setRefreshInterval(30);
+    setGameExePath("");
+    setRelaunchAfterKill(true);
   };
 
   const handleOpenDir = async (dir: string, fallback?: string) => {
@@ -204,6 +241,49 @@ const SettingsDialog: React.FC<SettingsDialogProps> = ({
           </div>
           <div style={{ color: "#64748b", fontSize: 12, fontWeight: "bold", marginTop: 4 }}>
             {t("settings.refreshHint")}
+          </div>
+        </div>
+
+        <div
+          style={{
+            borderTop: "3px solid #e2e8f0",
+            paddingTop: 16,
+            marginBottom: 24,
+          }}
+        >
+          <label style={{ display: "block", marginBottom: 8, fontWeight: "bold" }}>
+            {t("settings.gameSection")}
+          </label>
+          <div style={{ display: "flex", gap: 8, marginBottom: 8 }}>
+            <input
+              type="text"
+              value={gameExePath}
+              onChange={(e) => setGameExePath(e.target.value)}
+              placeholder={t("settings.gamePathPlaceholder")}
+              style={{ flex: 1 }}
+            />
+            <button className="btn-secondary" style={{ padding: "8px 16px", fontSize: 14 }} onClick={browseGame}>
+              {t("settings.browse")}
+            </button>
+            <button
+              className="btn-secondary"
+              style={{ padding: "8px 16px", fontSize: 14 }}
+              onClick={() => handleAutoDetect()}
+              disabled={detecting}
+            >
+              {detecting ? t("settings.detecting") : t("settings.autoDetect")}
+            </button>
+          </div>
+          <label style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8, cursor: "pointer" }}>
+            <input
+              type="checkbox"
+              checked={relaunchAfterKill}
+              onChange={(e) => setRelaunchAfterKill(e.target.checked)}
+            />
+            <span style={{ fontWeight: "bold" }}>{t("settings.relaunchAfterKill")}</span>
+          </label>
+          <div style={{ color: "#64748b", fontSize: 12, fontWeight: "bold", marginTop: 4 }}>
+            {t("settings.gamePathHint")}
           </div>
         </div>
 

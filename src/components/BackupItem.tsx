@@ -241,13 +241,13 @@ const BackupItem: React.FC<BackupItemProps> = ({
       {isExpanded && (
         <div>
           <div style={{ height: 3, background: "#e2e8f0", margin: "0 8px" }} />
-          <div style={{ padding: "20px 24px 8px 24px" }}>
+          <div style={{ padding: "12px 24px 8px 24px" }}>
             <div
               style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(3, 1fr)",
-                gap: "10px 32px",
-                marginBottom: 16,
+                display: "flex",
+                flexWrap: "wrap",
+                gap: "4px 24px",
+                marginBottom: 12,
               }}
             >
               <StatCell icon="🏠" label={t("item.daysSurvived")} value={ds?.exists ? String(ds.current_day) : "—"} />
@@ -256,33 +256,7 @@ const BackupItem: React.FC<BackupItemProps> = ({
               <StatCell icon="🐱" label={t("item.aliveCats")} value={ds?.exists ? String(ds.cat_alive) : "—"} />
               <StatCell icon="💀" label={t("item.deadCats")} value={ds?.exists ? String(ds.cat_dead) : "—"} />
               <StatCell icon="📈" label={t("item.progress")} value={ds?.exists ? `${ds.save_percent}%` : "—"} />
-              <StatCell
-                icon="📍"
-                label={t("item.currentStatus")}
-                value={ds?.exists ? (ds.in_adventure ? t("item.statusAdventure") : t("item.statusHome")) : "—"}
-                color={ds?.exists ? (ds.in_adventure ? "#ef4444" : "#22c55e") : undefined}
-              />
             </div>
-
-            {ds?.exists && ds.adventure_cats.length > 0 && (
-              <div style={{ marginBottom: 16 }}>
-                <div
-                  style={{
-                    fontSize: 13,
-                    fontWeight: 900,
-                    color: "#64748b",
-                    marginBottom: 8,
-                  }}
-                >
-                  {t("item.squadTitle")}
-                </div>
-                <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
-                  {ds.adventure_cats.map((cat, i) => (
-                    <CatCard key={i} cat={cat} />
-                  ))}
-                </div>
-              </div>
-            )}
 
             <div
               style={{
@@ -312,13 +286,13 @@ function StatCell({
   color?: string;
 }) {
   return (
-    <div>
-      <div style={{ fontSize: 11, fontWeight: "bold", color: "#94a3b8" }}>
+    <div style={{ display: "flex", alignItems: "baseline", gap: 4 }}>
+      <span style={{ fontSize: 12, fontWeight: "bold", color: "#94a3b8" }}>
         {icon} {label}
-      </div>
-      <div style={{ fontSize: 16, fontWeight: 900, color: color ?? "#1e293b" }}>
+      </span>
+      <span style={{ fontSize: 14, fontWeight: 900, color: color ?? "#1e293b" }}>
         {value}
-      </div>
+      </span>
     </div>
   );
 }

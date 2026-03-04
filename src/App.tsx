@@ -226,6 +226,31 @@ function App() {
     }
   };
 
+  const handleQuickRestart = async () => {
+    if (config.relaunch_after_kill && !config.game_exe_path) {
+      toast.error(t("toast.gamePathNotSet"));
+      return;
+    }
+    const running = await invoke<boolean>("is_game_running");
+    if (!running) {
+      toast.error(t("toast.gameNotRunning"));
+      return;
+    }
+    try {
+      const result = await invoke<string>("kill_and_relaunch_game", {
+        gamePath: config.game_exe_path,
+        relaunch: config.relaunch_after_kill,
+      });
+      if (result === "killed_and_relaunched") {
+        toast.success(t("toast.killAndRelaunch"));
+      } else {
+        toast.success(t("toast.killSuccess"));
+      }
+    } catch (e) {
+      toast.error(t("toast.killFail"), { description: String(e) });
+    }
+  };
+
   const gameBackupDirPath = `${config.save_dir}\\backups`;
 
   return (
@@ -265,6 +290,7 @@ function App() {
         onBackupNow={handleBackupNow}
         onRefresh={refresh}
         onEditSave={() => setShowEditor(true)}
+        onQuickRestart={handleQuickRestart}
       />
 
       <BackupList

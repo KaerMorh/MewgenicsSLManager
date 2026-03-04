@@ -1,6 +1,7 @@
 use crate::backup_manager;
 use crate::config::Config;
 use crate::data_loader;
+use crate::process_manager;
 use crate::save_editor::{self, SaveChanges};
 use crate::save_parser::{self, SaveDetail, SaveSummary};
 use crate::watcher::SaveWatcher;
@@ -165,6 +166,34 @@ pub fn get_mutation_db() -> Value {
 #[tauri::command]
 pub fn get_furniture_db() -> Value {
     data_loader::get_furniture_db()
+}
+
+// ---- Process management ----
+
+#[tauri::command]
+pub fn is_game_running() -> bool {
+    process_manager::is_game_running()
+}
+
+#[tauri::command]
+pub fn kill_and_relaunch_game(game_path: String, relaunch: bool) -> Result<String, String> {
+    // Kill the game process tree
+    process_manager::kill_game()?;
+
+    // Wait briefly for process cleanup
+    std::thread::sleep(std::time::Duration::from_millis(500));
+
+    if relaunch && !game_path.is_empty() {
+        process_manager::launch_game(&game_path)?;
+        Ok("killed_and_relaunched".to_string())
+    } else {
+        Ok("killed".to_string())
+    }
+}
+
+#[tauri::command]
+pub fn detect_game_path() -> Option<String> {
+    process_manager::auto_detect_game_path()
 }
 
 // ---- Duplicate detection ----

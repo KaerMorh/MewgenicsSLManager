@@ -18,6 +18,8 @@ const zh: Record<string, string> = {
   "hero.backups": "备份",
   "hero.refreshTitle": "刷新当前存档信息",
   "hero.backupNow": "立即备份 →",
+  "hero.quickRestart": "快速重启",
+  "hero.quickRestartTitle": "强制结束游戏进程树并重新启动",
 
   "list.title": "备份目录",
   "list.total": "共 {count} 个",
@@ -77,6 +79,14 @@ const zh: Record<string, string> = {
   "settings.sec120": "120 秒",
   "settings.watcherAlwaysOn": "文件监听始终开启",
   "settings.refreshHint": "定时轮询会按间隔自动刷新存档信息；文件监听会在存档文件被修改时立即刷新",
+  "settings.gameSection": "游戏进程管理:",
+  "settings.gamePath": "游戏路径:",
+  "settings.gamePathPlaceholder": "Mewgenics.exe 的完整路径",
+  "settings.autoDetect": "自动检测",
+  "settings.detecting": "检测中...",
+  "settings.relaunchAfterKill": "结束进程后重新启动游戏",
+  "settings.gamePathHint": "用于快速重启功能，会强制结束游戏进程树并重新启动",
+
   "settings.backupMgmt": "备份管理:",
   "settings.scanning": "扫描中...",
   "settings.scanDedup": "🔍 检测并去重",
@@ -192,6 +202,14 @@ const zh: Record<string, string> = {
   "editor.furnitureRemove": "移除",
   "editor.furnitureDB": "家具数据库",
   "editor.furnitureSearch": "搜索家具...",
+
+  "toast.killSuccess": "游戏进程已终止",
+  "toast.killAndRelaunch": "游戏已重启",
+  "toast.gameNotRunning": "游戏未在运行",
+  "toast.killFail": "终止游戏失败",
+  "toast.gamePathNotSet": "请先在设置中配置游戏路径",
+  "toast.autoDetectSuccess": "已找到游戏路径",
+  "toast.autoDetectFail": "未找到游戏，请手动指定路径",
 
   "toast.editorSaveSuccess": "存档修改已保存！",
   "toast.editorSaveFail": "保存修改失败",

@@ -19,10 +19,18 @@ pub struct Config {
     pub sort_ascending: bool,
     #[serde(default = "default_refresh_interval")]
     pub auto_refresh_interval: u32,
+    #[serde(default)]
+    pub game_exe_path: String,
+    #[serde(default = "default_true")]
+    pub relaunch_after_kill: bool,
 }
 
 fn default_refresh_interval() -> u32 {
     30
+}
+
+fn default_true() -> bool {
+    true
 }
 
 impl Default for Config {
@@ -35,6 +43,8 @@ impl Default for Config {
             sort_key: "time".to_string(),
             sort_ascending: false,
             auto_refresh_interval: default_refresh_interval(),
+            game_exe_path: String::new(),
+            relaunch_after_kill: true,
         }
     }
 }

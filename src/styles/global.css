@@ -116,6 +116,28 @@ body {
   box-shadow: none;
 }
 
+.btn-danger {
+  background: var(--light-red);
+  color: var(--dark-slate);
+  border: var(--border-width) solid var(--dark-slate);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  font-weight: 900;
+  font-size: 16px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  user-select: none;
+}
+.btn-danger:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0 var(--dark-slate);
+}
+.btn-danger:active {
+  transform: translate(4px, 4px);
+  box-shadow: none;
+}
+
 .btn-small {
   border: var(--border-width) solid var(--dark-slate);
   border-radius: 10px;

@@ -10,7 +10,12 @@ app-icon.png
 
 # Project files
 progress.txt
-icon.jpg
+
+# Claude Code
+.claude/
+
+# Screenshots
+*.jpg
 
 # OS
 .DS_Store

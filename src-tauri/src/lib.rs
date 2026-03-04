@@ -3,6 +3,7 @@ mod commands;
 mod config;
 mod data_loader;
 mod lz4;
+mod process_manager;
 mod save_editor;
 mod save_parser;
 mod watcher;
@@ -44,6 +45,9 @@ pub fn run() {
             commands::get_ability_db,
             commands::get_mutation_db,
             commands::get_furniture_db,
+            commands::is_game_running,
+            commands::kill_and_relaunch_game,
+            commands::detect_game_path,
         ])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");

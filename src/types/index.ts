@@ -43,6 +43,8 @@ export interface Config {
   sort_key: string;
   sort_ascending: boolean;
   auto_refresh_interval: number;
+  game_exe_path: string;
+  relaunch_after_kill: boolean;
 }
 
 export interface ScanResult {
