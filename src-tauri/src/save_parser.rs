@@ -536,7 +536,7 @@ fn parse_abilities_and_mutations(dec: &[u8], name_end: usize) -> (CatAbilities, 
             continue;
         }
 
-        // Parse u64-run items — skip embedded \x01/\x02 markers like the reference parser
+        // Parse u64-run items — break on \x01/\x02 markers (they delimit the StringRec section)
         let mut items: Vec<String> = Vec::new();
         let mut i = start;
         for _ in 0..64 {
@@ -544,15 +544,8 @@ fn parse_abilities_and_mutations(dec: &[u8], name_end: usize) -> (CatAbilities, 
                 break;
             }
             let slen = u64_le(dec, i) as usize;
-            let valid_len = slen <= 96 && i + 8 + slen <= n;
-            if !valid_len {
-                // Check for 4-byte marker — skip it and continue (not break)
-                if i + 4 <= n
-                    && (dec[i..i + 4] == [1, 0, 0, 0] || dec[i..i + 4] == [2, 0, 0, 0])
-                {
-                    i += 4;
-                    continue;
-                }
+            if slen > 96 || i + 8 + slen > n {
+                // Hit a marker or invalid data — stop the u64-run
                 break;
             }
             if slen == 0 {
@@ -562,13 +555,6 @@ fn parse_abilities_and_mutations(dec: &[u8], name_end: usize) -> (CatAbilities, 
             }
             let sb = &dec[i + 8..i + 8 + slen];
             if sb.iter().any(|&c| c == 0 || c < 32 || c >= 127) {
-                // Also check for marker before breaking
-                if i + 4 <= n
-                    && (dec[i..i + 4] == [1, 0, 0, 0] || dec[i..i + 4] == [2, 0, 0, 0])
-                {
-                    i += 4;
-                    continue;
-                }
                 break;
             }
             match std::str::from_utf8(sb) {

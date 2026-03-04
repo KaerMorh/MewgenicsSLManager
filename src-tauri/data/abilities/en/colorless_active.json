@@ -40,7 +40,7 @@
     "desc": "Roll up to ten tiles in a straight line."
   },
   {
-    "name": "Sharpen Claws",
+    "name": "SharpenClaws",
     "desc": "Gain +1 [img:str]."
   },
   {
@@ -56,7 +56,7 @@
     "desc": "Your next basic attack has +3 range."
   },
   {
-    "name": "Borrow Mana",
+    "name": "BorrowMana",
     "desc": "Steal up to 5 mana from an ally.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
@@ -64,7 +64,7 @@
     "desc": "Steal all of an ally's mana.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
-    "name": "Soothing Glow",
+    "name": "SoothingGlow",
     "desc": "Heal yourself 1."
   },
   {
@@ -112,7 +112,7 @@
     "desc": ""
   },
   {
-    "name": "Claws Out",
+    "name": "ClawsOut",
     "desc": "Gain +1 Thorns."
   },
   {
@@ -144,7 +144,7 @@
     "desc": "Gain +1 Magic Damage until end of turn.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Steam Roller",
+    "name": "SteamRoller",
     "desc": "Trample over 1 tile."
   },
   {
@@ -164,7 +164,7 @@
     "desc": ""
   },
   {
-    "name": "Soul Reap",
+    "name": "SoulReap",
     "desc": "Deal 1 damage to a unit within five tiles. If this kills it, gain 5 mana."
   },
   {
@@ -232,7 +232,7 @@
     "desc": "Pull a unit towards you. Deal 1 damage and inflict 1 Bleed on them."
   },
   {
-    "name": "Over There!",
+    "name": "OverThere!",
     "desc": "Adjacent units turn away from you."
   },
   {
@@ -240,7 +240,7 @@
     "desc": "Units within three tiles of you turn away from you."
   },
   {
-    "name": "Butt Scoot",
+    "name": "ButtScoot",
     "desc": "Move 1 tile, leaving a maggot familiar behind you."
   },
   {
@@ -256,7 +256,7 @@
     "desc": "Inflict Confusion 4 on units in an area."
   },
   {
-    "name": "Play Dead",
+    "name": "PlayDead",
     "desc": "Down yourself. You don't get injured."
   },
   {
@@ -272,15 +272,15 @@
     "desc": "You or another unit reflects the next projectile that hits them back at the attacker."
   },
   {
-    "name": "Healing Bolt",
+    "name": "HealingBolt",
     "desc": "A lightning bolt that heals and has a chance to Stun."
   },
   {
-    "name": "Healing Bolt",
+    "name": "HealingBolt",
     "desc": "A lightning bolt that heals allies and has a chance to Stun enemies."
   },
   {
-    "name": "Slip Through",
+    "name": "SlipThrough",
     "desc": "Roll up to two tiles in a diagonal line."
   },
   {
@@ -304,7 +304,7 @@
     "desc": "Heal yourself or another unit 1 HP. 50% chance to also give +1 [img:con]."
   },
   {
-    "name": "Feather Feet",
+    "name": "FeatherFeet",
     "desc": "Gain +1 [img:spd]."
   },
   {
@@ -352,7 +352,7 @@
     "desc": "Cast a random upgraded spell."
   },
   {
-    "name": "Doll Up",
+    "name": "DollUp",
     "desc": "Gain +1 [img:cha]."
   },
   {
@@ -360,7 +360,7 @@
     "desc": "Gain +1 [img:cha].\nBonus Passive: You have a chance to inflict Charm on units that contact or attack you. This chance increases with your [img:cha]."
   },
   {
-    "name": "Stack the Deck",
+    "name": "StacktheDeck",
     "desc": "Gain +1 [img:lck]."
   },
   {
@@ -392,7 +392,7 @@
     "desc": "Chuck a rock at a unit, inflicting Stun on that unit.\n[s:.7](This spell costs 0 mana. Castable once per battle.)[/s]"
   },
   {
-    "name": "Second Wind",
+    "name": "SecondWind",
     "desc": "Refresh your basic attack, movement, weapon, and trinket action.\n[s:.7](Castable once per battle.)[/s]"
   },
   {
@@ -400,7 +400,7 @@
     "desc": "Refresh your basic attack, movement, weapon, and trinket action.\n[s:.7](This spell costs 0 mana. Castable once per battle.)[/s]"
   },
   {
-    "name": "Rat Roulette",
+    "name": "RatRoulette",
     "desc": "Deal 1 damage to a random unit. If you kill that unit, take an extra turn."
   },
   {
@@ -408,7 +408,7 @@
     "desc": "Deal 2 damage to a random unit. If you kill that unit, take an extra turn.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Cat Nap",
+    "name": "CatNap",
     "desc": "Remove all of your debuffs, then fall asleep."
   },
   {
@@ -416,7 +416,7 @@
     "desc": "Remove all of your debuffs, gain All Stats Up, then fall asleep."
   },
   {
-    "name": "Number One",
+    "name": "NumberOne",
     "desc": "Spawn \"water\" tiles in an area around yourself."
   },
   {
@@ -424,7 +424,7 @@
     "desc": "Spawn \"water\" tiles in a larger area around yourself."
   },
   {
-    "name": "Find a Rock",
+    "name": "FindaRock",
     "desc": "Dig up a small rock."
   },
   {
@@ -432,7 +432,7 @@
     "desc": "Dig up a small rock.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Ass Blast",
+    "name": "AssBlast",
     "desc": "Knock back all adjacent units."
   },
   {
@@ -440,7 +440,7 @@
     "desc": "Knock back all adjacent units 3 tiles and inflict Poison 1."
   },
   {
-    "name": "Burgeoning Blast",
+    "name": "BurgeoningBlast",
     "desc": "A spell that deals {v0} damage. Increase this spell's damage by 2 at the end of each turn.\n[s:.7](Castable once per battle.)[/s]"
   },
   {
@@ -448,7 +448,7 @@
     "desc": "A spell that deals {v0} damage. Increase this spell's damage by 3 at the end of each turn.\n[s:.7](Castable once per battle.)[/s]"
   },
   {
-    "name": "Burgeoning Barrier",
+    "name": "BurgeoningBarrier",
     "desc": "Gain {v0} [img:shield]. Increase this spell's [img:shield] by 2 at the end of each turn.\n[s:.7](Castable once per battle.)[/s]"
   },
   {
@@ -456,7 +456,7 @@
     "desc": "Gain {v0} [img:shield]. Increase this spell's [img:shield] by 3 at the end of each turn.\n[s:.7](Castable once per battle.)[/s]"
   },
   {
-    "name": "Burgeoning Battery",
+    "name": "BurgeoningBattery",
     "desc": "Gain {v0} mana. Increase this spell's mana gain by 2 at the end of each turn.\n[s:.7](Castable once per battle.)[/s]"
   },
   {
@@ -464,7 +464,7 @@
     "desc": "Gain {v0} mana. Increase this spell's mana gain by 3 at the end of each turn.\n[s:.7](Castable once per battle.)[/s]"
   },
   {
-    "name": "Hose Off",
+    "name": "HoseOff",
     "desc": "Spray a unit with water, cleansing its debuffs and making a puddle.\n[s:.7](Castable once per battle.)[/s]"
   },
   {
@@ -480,7 +480,7 @@
     "desc": "Double a unit's Poison, Bleed, and Burn.\n[s:.7](This spell costs 0 mana. Castable once per battle.)[/s]"
   },
   {
-    "name": "Sudden Affliction",
+    "name": "SuddenAffliction",
     "desc": "Trigger the Poison, Bleed, and Burn effects on a unit."
   },
   {
@@ -488,7 +488,7 @@
     "desc": "Trigger the Poison, Bleed, and Burn effects on a unit. If that unit isn't Poisoned, Bleeding, or Burning, they gain 1 of each."
   },
   {
-    "name": "Waste Time",
+    "name": "WasteTime",
     "desc": "Do nothing."
   },
   {
@@ -512,7 +512,7 @@
     "desc": "Swap a unit's highest and lowest stats.\n[s:.7](Ties are chosen at random)[/s]"
   },
   {
-    "name": "Russian Shorthair Roulette",
+    "name": "RussianShorthairRoulette",
     "desc": "There is a 1 in 6 chance this will kill you. If it doesn't, gain +1 to a random stat and 1-2 coins."
   },
   {
@@ -536,7 +536,7 @@
     "desc": "Exchange your movement action for an additional basic attack, and vice versa.\n[s:.7](This spell costs 0 mana the first time you cast it each turn.)[/s]"
   },
   {
-    "name": "Look at me!",
+    "name": "Lookatme!",
     "desc": "Each unit turns to face you."
   },
   {
@@ -560,7 +560,7 @@
     "desc": "Swap positions with any unit.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
-    "name": "Make a Wish",
+    "name": "MakeaWish",
     "desc": "Spend a coin to spawn a random pickup on a random tile.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
@@ -576,7 +576,7 @@
     "desc": "Pull a pickup all the way toward you.\n[s:.7](Castable once per turn)[/s]"
   },
   {
-    "name": "Shrug It Off",
+    "name": "ShrugItOff",
     "desc": "Heal yourself HP equal to half your [img:str], rounded up."
   },
   {
@@ -584,7 +584,7 @@
     "desc": "Heal yourself HP equal to half your [img:str], rounded up.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Barf Ball",
+    "name": "BarfBall",
     "desc": "A ranged attack that deals damage equal to half your [img:con], rounded up."
   },
   {
@@ -592,7 +592,7 @@
     "desc": "A ranged attack that deals damage equal to half your [img:con], rounded up.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Dexterous Hit",
+    "name": "DexterousHit",
     "desc": "A melee attack that deals damage equal to half your [img:dex], rounded up."
   },
   {
@@ -608,7 +608,7 @@
     "desc": "Tiles in an area become random tiles."
   },
   {
-    "name": "Path of the Mage",
+    "name": "PathoftheMage",
     "desc": "Transform this spell into a random Mage spell permanently."
   },
   {
@@ -616,31 +616,31 @@
     "desc": "Transform this spell into a random upgraded Mage spell permanently."
   },
   {
-    "name": "Path of the Hunter",
+    "name": "PathoftheHunter",
     "desc": "A lobbed attack that deals 1 damage. If this kills an enemy, this spell becomes a random Hunter spell permanently."
   },
   {
-    "name": "Path of the Hunter",
+    "name": "PathoftheHunter",
     "desc": "Transform this spell into a random upgraded Hunter spell permanently."
   },
   {
-    "name": "Path of the Thief",
+    "name": "PathoftheThief",
     "desc": "A straight shot attack that deals 1 damage. If this makes a critical hit, this spell becomes a random Thief spell permanently."
   },
   {
-    "name": "Path of the Thief",
+    "name": "PathoftheThief",
     "desc": "Transform this spell into a random upgraded Thief spell permanently."
   },
   {
-    "name": "Path of the Fighter",
+    "name": "PathoftheFighter",
     "desc": "Your [img:int] becomes 0 until the end of the battle, then this spell becomes a random Fighter spell permanently."
   },
   {
-    "name": "Path of the Fighter",
+    "name": "PathoftheFighter",
     "desc": "Transform this spell into a random upgraded Fighter spell permanently."
   },
   {
-    "name": "Path of the Tank",
+    "name": "PathoftheTank",
     "desc": "Transform this spell into a random Tank spell permanently. Castable only if you have 5 or less health."
   },
   {
@@ -648,23 +648,23 @@
     "desc": "Transform this spell into a random upgraded Tank spell permanently."
   },
   {
-    "name": "Path of the Cleric",
+    "name": "PathoftheCleric",
     "desc": "Give an enemy All Stats Up and fully heal it, then this spell becomes a random Cleric spell permanently."
   },
   {
-    "name": "Path of the Cleric",
+    "name": "PathoftheCleric",
     "desc": "Transform this spell into a random upgraded Cleric spell permanently."
   },
   {
-    "name": "Path of the Butcher",
+    "name": "PathoftheButcher",
     "desc": "Collect an adjacent food pickup, then this spell becomes a random Butcher spell permanently."
   },
   {
-    "name": "Path of the Butcher",
+    "name": "PathoftheButcher",
     "desc": "Transform this spell into a random upgraded Butcher spell permanently."
   },
   {
-    "name": "Path of the Psychic",
+    "name": "PathofthePsychic",
     "desc": "This spell becomes a random Psychic spell permanently. Castable only if you have full mana."
   },
   {
@@ -672,35 +672,35 @@
     "desc": "Transform this spell into a random upgraded Psychic spell permanently."
   },
   {
-    "name": "Path of the Tinkerer",
+    "name": "PathoftheTinkerer",
     "desc": "Destroy your weapon, then this spell becomes a random Tinkerer spell permanently."
   },
   {
-    "name": "Path of the Tinkerer",
+    "name": "PathoftheTinkerer",
     "desc": "Transform this spell into a random upgraded Tinkerer spell permanently."
   },
   {
-    "name": "Path of the Monk",
+    "name": "PathoftheMonk",
     "desc": "Gain All Stats Down, then this spell becomes a random Monk spell permanently."
   },
   {
-    "name": "Path of the Monk",
+    "name": "PathoftheMonk",
     "desc": "This spell becomes a random upgraded Monk spell permanently."
   },
   {
-    "name": "Path of the Druid",
+    "name": "PathoftheDruid",
     "desc": "Plant flowers on the tile you're standing on, then this spell becomes a random Druid spell permanently. Castable only if you're standing on a grass tile."
   },
   {
-    "name": "Path of the Druid",
+    "name": "PathoftheDruid",
     "desc": "Transform this spell into a random upgraded Druid spell permanently."
   },
   {
-    "name": "Path of the Necromancer",
+    "name": "PathoftheNecromancer",
     "desc": "Destroy a corpse, then this spell becomes a random Necromancer spell permanently."
   },
   {
-    "name": "Path of the Necromancer",
+    "name": "PathoftheNecromancer",
     "desc": "Transform this spell into a random Necromancer spell permanently."
   },
   {
@@ -760,7 +760,7 @@
     "desc": "Knead another unit. Allies gain +2 Damage, enemies gain Weakness 2."
   },
   {
-    "name": "Buy Catnip",
+    "name": "BuyCatnip",
     "desc": "Spend 5 coins, gain 10 mana.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
@@ -768,7 +768,7 @@
     "desc": "Spend 5 coins, gain 15 mana.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
-    "name": "Vet Visit",
+    "name": "VetVisit",
     "desc": "Spend 5 coins, heal 10 HP.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
@@ -776,7 +776,7 @@
     "desc": "Spend 5 coins, heal 15 HP.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
-    "name": "Hire Hitman",
+    "name": "HireHitman",
     "desc": "Spend 7 coins, summon a bounty hunter.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
@@ -784,7 +784,7 @@
     "desc": "Spend 7 coins, summon a bounty hunter with All Stats Up 2.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
-    "name": "Subway Ride",
+    "name": "SubwayRide",
     "desc": "Spend 5 coins, teleport to any tile.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
@@ -792,7 +792,7 @@
     "desc": "Spend 2 coins, teleport to any tile.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
-    "name": "Gym Membership",
+    "name": "GymMembership",
     "desc": "Spend 5 coins, gain All Stats Up.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
@@ -800,7 +800,7 @@
     "desc": "Spend 5 coins, gain All Stats Up and refresh your basic attack and movement actions.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
-    "name": "Super Crate Box",
+    "name": "SuperCrateBox",
     "desc": "Spawn a crate on an adjacent tile."
   },
   {
@@ -864,7 +864,7 @@
     "desc": "Inflict Burn 1 and Blind 1 in an area at infinite range."
   },
   {
-    "name": "Cold Shoulder",
+    "name": "ColdShoulder",
     "desc": "Deal 1 ice damage and inflict Slow 1 at infinite range."
   },
   {
@@ -872,7 +872,7 @@
     "desc": "Deal 1 ice damage and inflict Slow 1 at infinite range.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Blow Kiss",
+    "name": "BlowKiss",
     "desc": "Heal another unit by 1 HP at infinite range."
   },
   {
@@ -880,7 +880,7 @@
     "desc": "Heal another unit by 2 HP at infinite range."
   },
   {
-    "name": "Forbidden Fart",
+    "name": "ForbiddenFart",
     "desc": "Damage, Inflict Poison 4 and Knock Up nearby units.\nThere will be permanent consequences for casting this spell…\n[s:.7](Castable once per turn.)[/s]"
   },
   {
@@ -888,7 +888,7 @@
     "desc": "Damage, Inflict Poison 6 and Knock Up nearby units in a larger area.\nThere will be permanent consequences for casting this spell…\n[s:.7](Castable once per turn.)[/s]"
   },
   {
-    "name": "Wet Hairball",
+    "name": "WetHairball",
     "desc": "Shoot a wet hairball that deals damage in an area."
   },
   {
@@ -896,7 +896,7 @@
     "desc": "Shoot a wet hairball that deals more damage in an area."
   },
   {
-    "name": "Path Of The Void",
+    "name": "PathOfTheVoid",
     "desc": "Conjure a random Collarless spell into your bonus spell slot."
   },
   {
@@ -904,11 +904,11 @@
     "desc": "Conjure a random upgraded Collarless spell into your bonus spell slot."
   },
   {
-    "name": "Path of the Jester",
+    "name": "PathoftheJester",
     "desc": "Gain 10 random stat ups and 5 random stat downs, then transform this spell into a random class spell permanently."
   },
   {
-    "name": "Path of the Jester",
+    "name": "PathoftheJester",
     "desc": "Gain 10 random stat ups, then transform this spell into a random upgraded class spell permanently."
   }
 ]

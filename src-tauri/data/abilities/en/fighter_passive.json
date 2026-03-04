@@ -24,7 +24,7 @@
     "desc": "+3 Brace."
   },
   {
-    "name": "Hulk Up",
+    "name": "HulkUp",
     "desc": "When you take damage, gain +2 [img:spd]."
   },
   {
@@ -48,7 +48,7 @@
     "desc": "Your basic attack is always critical on enemies units that have damaged you.\nInflict Marked on units that contact or attack you."
   },
   {
-    "name": "Hamster Style",
+    "name": "HamsterStyle",
     "desc": "+1 Health Regeneration.\nStart with 2 Bonus Moves."
   },
   {
@@ -56,7 +56,7 @@
     "desc": "+2 Health Regeneration.\nStart with 2 Bonus Moves.\nYour basic attack has a chance to attack multiple times."
   },
   {
-    "name": "Weapon Master",
+    "name": "WeaponMaster",
     "desc": "Your weapon and item abilities deal +2 Damage and get +25% critical chance. A pipe is added to your inventory."
   },
   {
@@ -64,7 +64,7 @@
     "desc": "Your weapon and item abilities deal +3 Damage and get +50% critical chance.\nIf you don't have a weapon, gain a random temporary weapon at the beginning of the battle."
   },
   {
-    "name": "Shoulder Check",
+    "name": "ShoulderCheck",
     "desc": "If you're facing a unit after you move, automatically attack it at 33% damage."
   },
   {
@@ -80,7 +80,7 @@
     "desc": "Your basic attack inflicts Bruise 2."
   },
   {
-    "name": "Turtle Style",
+    "name": "TurtleStyle",
     "desc": ""
   },
   {
@@ -112,7 +112,7 @@
     "desc": "Your spells cost 0 mana to cast, but each can be cast only once per turn."
   },
   {
-    "name": "Dumb Muscle",
+    "name": "DumbMuscle",
     "desc": "Lose 1 [img:int] each time you take damage.\nIf you have 4 or less [img:int], gain +2 [img:str] and your basic attack inflicts Bruise. at 0 [img:int], gain +100% critical hit chance."
   },
   {
@@ -120,7 +120,7 @@
     "desc": "Lose 2 [img:int] each time you take damage.\nIf you have 4 or less [img:int], gain +2 [img:str] and your basic attack inflicts Bruise. At 0 [img:int], gain +100% critical hit chance. At -10 [img:int], you can use your basic move and attack an additional time each turn."
   },
   {
-    "name": "Thick Skull",
+    "name": "ThickSkull",
     "desc": "All injuries you get are Concussions.\nYou get +3 [img:shield] for each concussion you have. This caps at 30 [img:shield]."
   },
   {
@@ -128,7 +128,7 @@
     "desc": "All injuries you get are Concussions.\nYou get +3 [img:shield] and +1 [img:str] for each concussion you have. This caps at 30 [img:shield] and 10 [img:str]."
   },
   {
-    "name": "Most Valuable Cat",
+    "name": "MostValuableCat",
     "desc": "When you or an ally downs another unit, they become the Alpha.\nIf you're the Alpha, take an extra turn at the end of each round."
   },
   {
@@ -136,7 +136,7 @@
     "desc": "You start the battle as the Alpha.\nWhenever you or an ally downs another unit, they become the Alpha.\nIf you're the Alpha, take an extra turn at the end of each round."
   },
   {
-    "name": "Rat Style",
+    "name": "RatStyle",
     "desc": "+10% dodge chance."
   },
   {
@@ -152,7 +152,7 @@
     "desc": "When you kill a unit, if you don't have a weapon, gain a Bone Club.\nBonus Ability: Throw Weapon."
   },
   {
-    "name": "Dual Wield",
+    "name": "DualWield",
     "desc": "When you use your weapon, automatically use it again for free."
   },
   {
@@ -160,7 +160,7 @@
     "desc": "When you use your weapon, automatically use it again for free, and then again! for free!"
   },
   {
-    "name": "Patellar Reflex",
+    "name": "PatellarReflex",
     "desc": "When a unit damages you, counter-attack dealing 1 damage and inflicting Bruise."
   },
   {
@@ -168,7 +168,7 @@
     "desc": "When a unit damages you, counter-attack with your basic attack and inflict Bruise."
   },
   {
-    "name": "Hit Me",
+    "name": "HitMe",
     "desc": "When you take damage from an ally, basic attack in the direction you're facing.\nDamage you take from allies is reduced to 1."
   },
   {
@@ -184,7 +184,7 @@
     "desc": "Your weapons deals triple damage, but they have a 50% chance to break when you use them.\nThree more Sticks are added to your inventory."
   },
   {
-    "name": "Punch Face",
+    "name": "PunchFace",
     "desc": "Your basic attacks are critical if they hit the front of a unit."
   },
   {

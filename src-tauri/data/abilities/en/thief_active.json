@@ -8,7 +8,7 @@
     "desc": "A melee attack that can only hit from behind. This attack ignores shield and has 100% crit chance.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Boost Backstab",
+    "name": "BoostBackstab",
     "desc": "Until end of turn, your backstabs do +75% more damage and ignore shield."
   },
   {
@@ -16,7 +16,7 @@
     "desc": "Until end of turn, your backstabs do +75% more damage, ignore shield, and inflict Bleed and Poison."
   },
   {
-    "name": "Poison Gas",
+    "name": "PoisonGas",
     "desc": "Inflict Poison 1 on all units adjacent to you."
   },
   {
@@ -24,7 +24,7 @@
     "desc": "Inflict Poison 2 on all units adjacent to you (even diagonally)."
   },
   {
-    "name": "Poison Nail",
+    "name": "PoisonNail",
     "desc": "Throw a nail that inflicts Poison and ignores shield."
   },
   {
@@ -32,7 +32,7 @@
     "desc": "Throw 2 nails that inflict Poison and ignore shield."
   },
   {
-    "name": "Weakening Nail",
+    "name": "WeakeningNail",
     "desc": "Throw a nail that inflicts Weakness and ignores shield."
   },
   {
@@ -40,7 +40,7 @@
     "desc": "Throw 2 nails that inflict Weakness and ignore shield."
   },
   {
-    "name": "Sharp Nail",
+    "name": "SharpNail",
     "desc": "Throw a nail that inflicts Bleed and ignores shield."
   },
   {
@@ -56,7 +56,7 @@
     "desc": "-"
   },
   {
-    "name": "Coin Toss",
+    "name": "CoinToss",
     "desc": "Throw a coin that deals damage.\nRELOAD: Collect a coin.\n[s:.7]This spell costs more mana each additional time you use it on the same turn.[/s]"
   },
   {
@@ -64,7 +64,7 @@
     "desc": "Throw a coin at infinite range with +50% crit chance that ignores shield.\nRELOAD: Collect a coin.\n[s:.7]This spell costs more mana each additional time you use it on the same turn.[/s]"
   },
   {
-    "name": "Move Again",
+    "name": "MoveAgain",
     "desc": "Refresh your movement action."
   },
   {
@@ -96,7 +96,7 @@
     "desc": "Teleport behind a unit. Your next action has +100% crit chance.\n[s:.7]Nothin' personnel, kid.[/s]"
   },
   {
-    "name": "Time Walk",
+    "name": "TimeWalk",
     "desc": "Take an extra turn at the end of the round.\n[s:.7](This spell can't be cast on extra turns.)[/s]"
   },
   {
@@ -104,7 +104,7 @@
     "desc": "Take an extra turn at the end of the round.\n[s:.7](This spell can't be cast on extra turns. This spell costs less.)[/s]"
   },
   {
-    "name": "Double Loot",
+    "name": "DoubleLoot",
     "desc": "-"
   },
   {
@@ -128,7 +128,7 @@
     "desc": "A melee attack that rebounds you backwards 10 tiles. Deal damage to any unit you collide with."
   },
   {
-    "name": "Cut Purse",
+    "name": "CutPurse",
     "desc": "Throw a nail that knocks coins out of units it hits and ignores shield."
   },
   {
@@ -136,7 +136,7 @@
     "desc": "Throw 2 nails that knock coins out of units they hit and ignore shield."
   },
   {
-    "name": "Eagle Eye",
+    "name": "EagleEye",
     "desc": "Spawn 2-3 coins on random tiles."
   },
   {
@@ -184,7 +184,7 @@
     "desc": "Target any unit. Teleport behind it at the start of your next turn.\n[s:.7](Castable once per turn. Costs 0 mana.)[/s]"
   },
   {
-    "name": "Nail Flurry",
+    "name": "NailFlurry",
     "desc": "Throw 10 1-damage nails that ignore shield."
   },
   {
@@ -200,7 +200,7 @@
     "desc": "A 2-hit melee attack that inflicts -1 Damage and Bleed."
   },
   {
-    "name": "Quick Roll",
+    "name": "QuickRoll",
     "desc": "Roll in a straight line up to three tiles.\nRELOAD: Backstab a unit."
   },
   {
@@ -216,7 +216,7 @@
     "desc": "A melee attack that has all effects of your basic attack and ignores shield.\n[s:.7](This spell is free the 1st time you use it each turn.)[/s]"
   },
   {
-    "name": "Pocket Sand",
+    "name": "PocketSand",
     "desc": "Inflict Blind on all units in a small cone."
   },
   {
@@ -232,7 +232,7 @@
     "desc": "Inflict Poison 4 on an adjacent unit.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Shadow Shift",
+    "name": "ShadowShift",
     "desc": "Teleport exactly 2 tiles away, leaving behind a shadow that mimics your basic attack.\n[s:.7](The shadow fades at the end of your turn.)[/s]"
   },
   {
@@ -256,7 +256,7 @@
     "desc": "Move up to 5 tiles, spreading glass shards on the tiles you walk through."
   },
   {
-    "name": "Pierce Shot",
+    "name": "PierceShot",
     "desc": "Throw a nail that passes through units and ignores shield."
   },
   {
@@ -272,7 +272,7 @@
     "desc": "Gain temporary +10 [img:lck] until your next turn."
   },
   {
-    "name": "Venom Barrage",
+    "name": "VenomBarrage",
     "desc": "Throw a nail that inflicts Poison 1 and ignores shield at each enemy in your line of sight."
   },
   {
@@ -280,7 +280,7 @@
     "desc": "Throw 2 nails that inflict Poison 1 and ignore shield at each enemy in your line of sight."
   },
   {
-    "name": "Loot Corpse",
+    "name": "LootCorpse",
     "desc": "Loot 1-3 coins from a body... and possibly something else?\n[s:.7](This might destroy the body)[/s]"
   },
   {
@@ -288,7 +288,7 @@
     "desc": "Loot 1-3 coins from a body... and possibly something else?\n[s:.7](This might not destroy the body)[/s]\n[s:.7](Your chance of finding \"something else\" is significantly increased.)[/s]"
   },
   {
-    "name": "Sever Artery",
+    "name": "SeverArtery",
     "desc": "A weak melee attack. If this crits, inflict Bleed 5."
   },
   {
@@ -304,7 +304,7 @@
     "desc": "Gain Stealth 2."
   },
   {
-    "name": "Sharpen Nail",
+    "name": "SharpenNail",
     "desc": "Gain +1 [img:dex] and +1 Range until the end of the battle."
   },
   {
@@ -312,7 +312,7 @@
     "desc": "Gain +1 [img:dex] and +1 Range until the end of the battle.\n[s:.7]Automatically cast this spell at the end of each round for free.[/s]"
   },
   {
-    "name": "Sneak Up",
+    "name": "SneakUp",
     "desc": "Teleport directly behind a random enemy."
   },
   {
@@ -328,7 +328,7 @@
     "desc": "An attack that hits 3 times from behind."
   },
   {
-    "name": "Steal Kidney",
+    "name": "StealKidney",
     "desc": "A melee attack with increased critical hit chance. If this crits and your trinket slot is empty, gain a kidney, then inflict Bleed 1."
   },
   {
@@ -336,15 +336,15 @@
     "desc": "A melee attack with increased critical hit chance that inflicts Bleed and Bruise 1. If this crits and your trinket slot is empty, gain a kidney, then inflict Bleed 1."
   },
   {
-    "name": "Steal Luck",
+    "name": "StealLuck",
     "desc": "A weak melee attack. If this crits, inflict -1 [img:lck] and you gain +1 [img:lck]."
   },
   {
-    "name": "Steal Luck",
+    "name": "StealLuck",
     "desc": "A weak melee attack that inflicts -1 [img:lck] and you gain +1 [img:lck]."
   },
   {
-    "name": "Over Here, Over There",
+    "name": "OverHere,OverThere",
     "desc": "Swap positions with an ally. Swap back at the end of your turn.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
@@ -360,7 +360,7 @@
     "desc": "Gain +4 Range. Your attacks pass through units and ignore shield for the rest of the turn.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Wind Up",
+    "name": "WindUp",
     "desc": "Gain +1 Range for the rest of the turn."
   },
   {
@@ -368,7 +368,7 @@
     "desc": "Gain +1 Range."
   },
   {
-    "name": "Triple Nails",
+    "name": "TripleNails",
     "desc": "Throw 3 nails straight and diagonally in front of you. These nails have the effects of your basic attack and ignore shield."
   },
   {
@@ -376,7 +376,7 @@
     "desc": "Throw 3 nails straight and diagonally in front of you 2 times. These nails have the effects of your basic attack and ignore shield."
   },
   {
-    "name": "Skin Disguise",
+    "name": "SkinDisguise",
     "desc": "Destroy an adjacent body. Enemies won't attack you until your next turn.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
@@ -400,7 +400,7 @@
     "desc": "Inflict Confusion 1 on each unit within 3 tiles of you."
   },
   {
-    "name": "Steal Time",
+    "name": "StealTime",
     "desc": "A melee attack. If this crits, refresh your basic attack and movement actions."
   },
   {
@@ -416,7 +416,7 @@
     "desc": "Teleport to a tile on the edge of the map. Gain +2 Damage for the rest of the turn."
   },
   {
-    "name": "Poison Dip",
+    "name": "PoisonDip",
     "desc": "Spend all your mana. For every 5 mana spent, your basic attack inflicts +1 Poison.\n[s:.7](Castable once per battle.)[/s]"
   },
   {
@@ -424,7 +424,7 @@
     "desc": "Spend all your mana. For every 3 mana spent, your basic attack inflicts +1 Poison.\n[s:.7](Castable once per battle.)[/s]"
   },
   {
-    "name": "Lucky Penny",
+    "name": "LuckyPenny",
     "desc": "Collect an adjacent pickup and gain +2 [img:lck] instead of its normal effects."
   },
   {

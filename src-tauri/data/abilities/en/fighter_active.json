@@ -1,6 +1,6 @@
 [
   {
-    "name": "Bull Rush",
+    "name": "BullRush",
     "desc": "Dash forward and attack with knockback."
   },
   {
@@ -16,7 +16,7 @@
     "desc": "Attack everything around you in a wide area 3 times."
   },
   {
-    "name": "Fire Punch",
+    "name": "FirePunch",
     "desc": "A melee attack that inflicts Burn 3."
   },
   {
@@ -24,7 +24,7 @@
     "desc": "A melee attack that inflicts more Burn the more [img:str] you have."
   },
   {
-    "name": "Ice Punch",
+    "name": "IcePunch",
     "desc": "A melee attack that inflicts Freeze."
   },
   {
@@ -32,7 +32,7 @@
     "desc": "A much stronger melee attack that inflicts Freeze."
   },
   {
-    "name": "Thunder Punch",
+    "name": "ThunderPunch",
     "desc": "A melee attack that has a 25% chance to inflict Stun."
   },
   {
@@ -40,7 +40,7 @@
     "desc": "A melee attack that inflicts Stun."
   },
   {
-    "name": "Fury Swipes",
+    "name": "FurySwipes",
     "desc": "A weak melee attack that has a chance to hit multiple times."
   },
   {
@@ -48,7 +48,7 @@
     "desc": "A melee attack that has a chance to hit multiple times."
   },
   {
-    "name": "Side Slash",
+    "name": "SideSlash",
     "desc": "An attack that hits a half circle around you."
   },
   {
@@ -80,7 +80,7 @@
     "desc": "Preemptively counterattack all attacks until your next turn."
   },
   {
-    "name": "Tail Whip",
+    "name": "TailWhip",
     "desc": "An attack that hits 2 tiles in front of and behind you."
   },
   {
@@ -112,11 +112,11 @@
     "desc": "Turn an adjacent unit around and knock it back 2 tiles."
   },
   {
-    "name": "Falcon Punch",
+    "name": "FalconPunch",
     "desc": "Charge up a mega punch.\n[s:.7](This punch will be unleashed on your next turn.)[/s]\n[s:.7](Castable once per turn.)[/s]"
   },
   {
-    "name": "Falcon Punch",
+    "name": "FalconPunch",
     "desc": "Charge up a mega dash attack.\n[s:.7](This punch will be unleashed on your next turn.)[/s]\n[s:.7](Castable once per turn.)[/s]"
   },
   {
@@ -160,7 +160,7 @@
     "desc": "Your movement range is doubled and you get +4 [img:str] until the end of the turn."
   },
   {
-    "name": "Cosmic Punch",
+    "name": "CosmicPunch",
     "desc": "Punch a unit into SPACE!\n[s:.7]They will fall back down at the end of the round.[/s]"
   },
   {
@@ -176,7 +176,7 @@
     "desc": "All enemies within 5 tiles move toward you."
   },
   {
-    "name": "Gravity Slam",
+    "name": "GravitySlam",
     "desc": "Jump to a tile and pull enemies toward you when you land."
   },
   {
@@ -192,7 +192,7 @@
     "desc": "Gain +7 [img:str] and Bruise 3. This ability becomes Berserker Dash+."
   },
   {
-    "name": "Berserker Dash",
+    "name": "BerserkerDash",
     "desc": "A short range dash attack."
   },
   {
@@ -220,7 +220,7 @@
     "desc": "Your [img:int] becomes 0. You can attack an extra time each turn for the rest of the battle.\nThis ability becomes MORE ANGRIER!!!+"
   },
   {
-    "name": "MORE ANGRIER!!!",
+    "name": "MOREANGRIER!!!",
     "desc": "Lose all of your mana and gain that much [img:str] until the end of the turn."
   },
   {
@@ -228,7 +228,7 @@
     "desc": "Lose all of your mana and gain that much [img:str], [img:dex], and [img:spd] until the end of the turn."
   },
   {
-    "name": "Sleeper Hold",
+    "name": "SleeperHold",
     "desc": "Inflict Sleep on an adjacent unit."
   },
   {
@@ -244,7 +244,7 @@
     "desc": "Immobilize an adjacent unit for as long as you remain adjacent.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Think Too Hard",
+    "name": "ThinkTooHard",
     "desc": "Take damage equal to your [img:int].\nThe next spell you cast this turn is free."
   },
   {
@@ -268,7 +268,7 @@
     "desc": "Move up to two tiles."
   },
   {
-    "name": "Throw Weapon",
+    "name": "ThrowWeapon",
     "desc": "Throw your weapon at a unit. The weapon breaks.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
@@ -288,7 +288,7 @@
     "desc": "A stronger melee attack that inflicts Bleed 2."
   },
   {
-    "name": "Exhausting Blow",
+    "name": "ExhaustingBlow",
     "desc": "Dash forward one tile and attack with knockback.\n[s:.7](This spell's mana cost increases by 2 at the end of each of your turns.)[/s]"
   },
   {
@@ -296,15 +296,15 @@
     "desc": "Dash forward any number of tiles and attack with knockback.\n[s:.7](This spell's mana cost increases by 2 at the end of each of your turns.)[/s]"
   },
   {
-    "name": "Chaos Rampage",
+    "name": "ChaosRampage",
     "desc": "Take an extra turn. You have Madness 1 and Confusion 1 on that turn.\n[s:.7](This spell can't be cast on extra turns.)[/s]"
   },
   {
-    "name": "Chaos Rampage",
+    "name": "ChaosRampage",
     "desc": "Take an extra turn. You have Madness 1 on that turn.\n[s:.7](This spell can't be cast on extra turns.)[/s]"
   },
   {
-    "name": "Meteor Slam",
+    "name": "MeteorSlam",
     "desc": "Jump up to 2 tiles.\nDamage, knockback, and inflict Burn 3 on the unit you land on and all adjacent units.\n[s:.7](Adjacent units take half damage.)[/s]"
   },
   {
@@ -312,7 +312,7 @@
     "desc": "Jump up to 5 tiles.\nDamage, knockback, and inflict Burn 3 on the unit you land on and all adjacent units."
   },
   {
-    "name": "Muscle Memory",
+    "name": "MuscleMemory",
     "desc": "A melee attack that deals 8 damage.\n[s:.7](This spell's damage is reduced by 1 and mana cost is reduced by 2 each time it's cast.)[/s]"
   },
   {
@@ -328,7 +328,7 @@
     "desc": "Suck all units in a straight line 3 tiles toward you."
   },
   {
-    "name": "One-Two Punch",
+    "name": "One-TwoPunch",
     "desc": "A melee attack that hits twice. Each punch inflicts Bruise 1."
   },
   {
@@ -336,7 +336,7 @@
     "desc": "A melee attack that hits thrice! Each punch inflicts Bruise 1."
   },
   {
-    "name": "Synchro Spin",
+    "name": "SynchroSpin",
     "desc": "You and each allied cat do a spin attack at the same time."
   },
   {
@@ -344,7 +344,7 @@
     "desc": "You and each allied cat do a spin attack at the same time.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Flex Off",
+    "name": "FlexOff",
     "desc": "You and each allied cat gain +2 [img:shield] and knockback adjacent units 2 tiles."
   },
   {
@@ -360,7 +360,7 @@
     "desc": "You and each allied cat give adjacent units +1 Damage and +2 [img:spd].\n[s:.7](This spell is free the first time it's cast each battle.)[/s]"
   },
   {
-    "name": "Rage Punch",
+    "name": "RagePunch",
     "desc": "A melee attack that increases its damage by 1 each time you take damage."
   },
   {
@@ -368,7 +368,7 @@
     "desc": "A melee attack that increases its damage by 1 each time you take damage.\n[s:.7](This spell starts at 5 damage.)[/s]"
   },
   {
-    "name": "Breaking Point",
+    "name": "BreakingPoint",
     "desc": "Deal damage, knockback, and knockback damage equal to your [img:str].\nReduce this spell's mana cost by 1 each time you take damage.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
@@ -376,7 +376,7 @@
     "desc": "Deal damage, knockback, and knockback damage equal to your [img:str].\nReduce this spell's mana cost by 2 each time you take damage.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
-    "name": "Assert Dominance",
+    "name": "AssertDominance",
     "desc": "A weak melee attack. If this kills anything, you become the Alpha. If you are the Alpha, this spell deals 5 additional damage and inflicts Bruise."
   },
   {
@@ -384,7 +384,7 @@
     "desc": "A weak melee attack. If this kills anything, you become the Alpha and gain +2 [img:str]. If you are the Alpha, this spell deals 5 additional damage and inflicts Bruise."
   },
   {
-    "name": "1D Chess",
+    "name": "1DChess",
     "desc": "Move toward the closest enemy. The dumber you are, the farther you move."
   },
   {
@@ -392,7 +392,7 @@
     "desc": "Move toward the closest enemy. The dumber you are, the farther you move.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Sucker Punch",
+    "name": "SuckerPunch",
     "desc": "The next time an enemy moves through an adjacent tile, cancel its movement and attack it."
   },
   {
@@ -416,7 +416,7 @@
     "desc": "Toss an adjacent unit at a random unit.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Big Punch",
+    "name": "BigPunch",
     "desc": "A melee attack.\nThis spell's mana cost increases by 2 each time it's cast."
   },
   {
@@ -424,7 +424,7 @@
     "desc": "A melee attack.\nThis spell's mana cost increases by 1 each time it's cast."
   },
   {
-    "name": "Paw Breaker",
+    "name": "PawBreaker",
     "desc": "A huge punch that breaks your paw... (You get -1 [img:str] permanently.)"
   },
   {

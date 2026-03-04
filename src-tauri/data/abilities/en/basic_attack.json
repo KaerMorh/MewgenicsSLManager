@@ -4,7 +4,7 @@
     "desc": "A basic melee attack."
   },
   {
-    "name": "Melee Attack",
+    "name": "MeleeAttack",
     "desc": "Attack an adjacent unit."
   },
   {
@@ -12,11 +12,11 @@
     "desc": ""
   },
   {
-    "name": "Melee Attack",
+    "name": "MeleeAttack",
     "desc": "Attack an adjacent unit."
   },
   {
-    "name": "Lobbed Shot",
+    "name": "LobbedShot",
     "desc": "Lob a shot over units and obstacles."
   },
   {
@@ -24,23 +24,23 @@
     "desc": ""
   },
   {
-    "name": "Lobbed Shot",
+    "name": "LobbedShot",
     "desc": "Lob a shot over units and obstacles."
   },
   {
-    "name": "Short Shot",
+    "name": "ShortShot",
     "desc": "Shoot a unit in your line of sight."
   },
   {
-    "name": "Magic Dart",
+    "name": "MagicDart",
     "desc": "Shoot a charged projectile within your line of sight. This attack counts as both magical and physical."
   },
   {
-    "name": "Short Lobbed Shot",
+    "name": "ShortLobbedShot",
     "desc": "Lob a shot over units and obstacles."
   },
   {
-    "name": "Nail Throw",
+    "name": "NailThrow",
     "desc": "Attack a unit in a straight line."
   },
   {
@@ -48,23 +48,23 @@
     "desc": ""
   },
   {
-    "name": "Melee Attack / Heal",
+    "name": "MeleeAttack/Heal",
     "desc": "Heals allies but damages enemies."
   },
   {
-    "name": "Ranged Attack / Heal",
+    "name": "RangedAttack/Heal",
     "desc": "Heals allies but damages enemies."
   },
   {
-    "name": "Push Attack",
+    "name": "PushAttack",
     "desc": "Dash forward one space, then melee attack with Knockback."
   },
   {
-    "name": "Melee Attack",
+    "name": "MeleeAttack",
     "desc": "Attack an adjacent unit."
   },
   {
-    "name": "Lobbed Shot",
+    "name": "LobbedShot",
     "desc": "Lob a shot over units and obstacles."
   },
   {
@@ -72,11 +72,11 @@
     "desc": "Attack a unit adjacent or diagonally with Cleave."
   },
   {
-    "name": "Wide Cleave",
+    "name": "WideCleave",
     "desc": "Attack a wide area with Cleave."
   },
   {
-    "name": "Spin Cleave",
+    "name": "SpinCleave",
     "desc": "Attack everything around you with Cleave."
   },
   {
@@ -92,23 +92,23 @@
     "desc": "Heal and give +1 Temporary Damage to units in a wide area."
   },
   {
-    "name": "Craft Weapon",
+    "name": "CraftWeapon",
     "desc": "Craft and equip a random temporary weapon."
   },
   {
-    "name": "Throw Weapon",
+    "name": "ThrowWeapon",
     "desc": "Throw your weapon at a unit.\n[s:.7]This breaks the weapon.[/s]"
   },
   {
-    "name": "Psychic Pull",
+    "name": "PsychicPull",
     "desc": "Pull a unit toward you from anywhere dealing low damage."
   },
   {
-    "name": "Leech Shot",
+    "name": "LeechShot",
     "desc": "A lobbed attack that inflicts Leech 1."
   },
   {
-    "name": "Drain Attack",
+    "name": "DrainAttack",
     "desc": "A melee attack with Lifesteal."
   },
   {
@@ -116,7 +116,7 @@
     "desc": "Pull an enemy to you."
   },
   {
-    "name": "Magic Missile",
+    "name": "MagicMissile",
     "desc": "Shoot an infinite-range projectile that can't miss.\n[s:.7](This attack's damage scales with your [img:int])[/s]"
   },
   {
@@ -124,7 +124,7 @@
     "desc": "Grab a unit in front of you and slam it into the tile behind you."
   },
   {
-    "name": "Two-Hit Melee Attack",
+    "name": "Two-HitMeleeAttack",
     "desc": "Hits twice"
   },
   {
@@ -140,11 +140,11 @@
     "desc": "A melee attack that deals 1 damage."
   },
   {
-    "name": "Gerd Shot",
+    "name": "GerdShot",
     "desc": "Lob a puke projectile that does splash damage to neighboring units. Damages you for 2 on use."
   },
   {
-    "name": "Spin Attack",
+    "name": "SpinAttack",
     "desc": "Attack all adjacent units."
   },
   {

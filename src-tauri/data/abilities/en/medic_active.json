@@ -1,6 +1,6 @@
 [
   {
-    "name": "Healing Word",
+    "name": "HealingWord",
     "desc": "Heal a unit at range."
   },
   {
@@ -8,7 +8,7 @@
     "desc": "Heal other units in an area at range."
   },
   {
-    "name": "Cure Wounds",
+    "name": "CureWounds",
     "desc": "Heal an adjacent unit."
   },
   {
@@ -24,7 +24,7 @@
     "desc": "Inflict Weakness and Poison on units in an area."
   },
   {
-    "name": "Open Wounds",
+    "name": "OpenWounds",
     "desc": "An attack that deals more damage the less health the target unit has.\n[s:.7](based on their health percent)[/s]"
   },
   {
@@ -64,7 +64,7 @@
     "desc": "Remove all buffs from a unit. Deal 3 damage to that unit for each unique status effect removed."
   },
   {
-    "name": "Heretic Mark",
+    "name": "HereticMark",
     "desc": "Inflict Ostracized 2 on a unit."
   },
   {
@@ -96,7 +96,7 @@
     "desc": "Force units in an area to each attack one of their enemies."
   },
   {
-    "name": "Buddy Up",
+    "name": "BuddyUp",
     "desc": "Jump to an open tile next to an ally."
   },
   {
@@ -104,7 +104,7 @@
     "desc": "Jump to an open tile next to an ally.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Healing Fall",
+    "name": "HealingFall",
     "desc": "Jump to an open tile, then heal each adjacent unit."
   },
   {
@@ -112,7 +112,7 @@
     "desc": "Jump to an open tile, then heal each adjacent unit.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Holy Dash",
+    "name": "HolyDash",
     "desc": "Dash forward, heal a unit and give it a random stat up."
   },
   {
@@ -120,7 +120,7 @@
     "desc": "Dash forward, heal a unit and give it 3 random stat ups."
   },
   {
-    "name": "Reverse Damage",
+    "name": "ReverseDamage",
     "desc": "Reverse the last damage an adjacent unit took."
   },
   {
@@ -144,7 +144,7 @@
     "desc": "Target an area. At the beginning of your next turn, heal all units in that area. This spell tracks its target if you directly targeted a unit.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
-    "name": "Witch Hunt",
+    "name": "WitchHunt",
     "desc": "Put a bounty on a unit. When that unit dies, its killer gains All Stats Up."
   },
   {
@@ -152,7 +152,7 @@
     "desc": "Put a bounty on a unit. When that unit dies, it becomes meat and its killer gains All Stats Up.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Friend or Foe",
+    "name": "FriendorFoe",
     "desc": "A ranged spell that heals allies and damages enemies."
   },
   {
@@ -168,7 +168,7 @@
     "desc": "Revive a body to 100% HP and cure one of its injuries. If it was an enemy, it gets charmed."
   },
   {
-    "name": "Holy Light",
+    "name": "HolyLight",
     "desc": "Heal allies and damage enemies in an area. This spell has half effect outside its center."
   },
   {
@@ -184,11 +184,11 @@
     "desc": "Gain Thorns 6, Reflect 5, 4 [img:divineshield],\n3 [img:shield], heal 2 HP and Brace 1."
   },
   {
-    "name": "Born Again",
+    "name": "BornAgain",
     "desc": "Revive a body to 100% HP and give it All Stats Up, then you fall asleep."
   },
   {
-    "name": "Born Again",
+    "name": "BornAgain",
     "desc": "Revive a body to 100% HP and give it All Stats Up."
   },
   {
@@ -208,7 +208,7 @@
     "desc": "You and your allies move toward the nearest enemy and gain +1 [img:str]."
   },
   {
-    "name": "Hallowed Ground",
+    "name": "HallowedGround",
     "desc": "Spawn a blessing pickup on an empty tile in range."
   },
   {
@@ -232,7 +232,7 @@
     "desc": "Give +2 Diminishing Health Regeneration and +1 to 2 random stats to any unit."
   },
   {
-    "name": "An Eye for an Eye",
+    "name": "AnEyeforanEye",
     "desc": "A melee attack that inflicts Blind 5 and Bleed 1."
   },
   {
@@ -240,7 +240,7 @@
     "desc": "A melee attack that inflicts Blind 5, Bleed 1, and Madness 1."
   },
   {
-    "name": "Wrath of God",
+    "name": "WrathofGod",
     "desc": "Deal holy damage and inflict Blind to everything except for a safe circle around you. This vaporizes units it kills."
   },
   {
@@ -256,7 +256,7 @@
     "desc": "Heal or revive a unit and remove its debuffs. That unit gets +1 to 3 random stats and becomes the Alpha.\nIf there is an Alpha, this spell has infinite range and must target it."
   },
   {
-    "name": "Divine Protection",
+    "name": "DivineProtection",
     "desc": "Give a unit +1 [img:divineshield] and +1 Kinetic Spikes. That unit becomes the Alpha.\nIf there is an Alpha, this spell costs less and must target it."
   },
   {
@@ -264,7 +264,7 @@
     "desc": "Give a unit anywhere +1 [img:divineshield] and +2 Kinetic Spikes. That unit becomes the Alpha.\nIf there is an Alpha, this spell costs less and must target it."
   },
   {
-    "name": "Chosen Warrior",
+    "name": "ChosenWarrior",
     "desc": "Give a unit +1 Damage. That unit becomes the Alpha.\nIf there is an Alpha, this spell must target it and it gives +1 bonus attack."
   },
   {
@@ -272,7 +272,7 @@
     "desc": "Give a unit +1 Damage and +1 Magic Damage. That unit becomes the Alpha.\nIf there is an Alpha, this spell must target it and it gives +1 bonus attack.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Swift Servant",
+    "name": "SwiftServant",
     "desc": "Give a unit +1 Bonus Move. That unit becomes the Alpha.\nIf there is an Alpha, this spell must target it and it gives you +1 Bonus Move too."
   },
   {
@@ -280,7 +280,7 @@
     "desc": "Give a unit +1 Bonus Move. That unit becomes the Alpha.\nIf there is an Alpha, this spell has infinite range, costs less and must target it, and it gives you +1 Bonus Move too."
   },
   {
-    "name": "Divine Gift",
+    "name": "DivineGift",
     "desc": "Gain All Stats Up. This spell costs 1 mana less for each HP you healed other units this turn.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
@@ -288,7 +288,7 @@
     "desc": "Gain All Stats Up and +1 [img:divineshield]. This spell costs 1 mana less for each HP you healed other units this turn.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
-    "name": "Holy Weapon",
+    "name": "HolyWeapon",
     "desc": "A dash attack with range, damage, and knockback equal to the amount of HP you healed other units this turn.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
@@ -296,7 +296,7 @@
     "desc": "A dash attack with range, damage, and knockback equal to twice the amount of HP you healed other units this turn.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
-    "name": "Stand In",
+    "name": "StandIn",
     "desc": "Swap positions with any unit. That unit becomes the Alpha.\nIf there is an Alpha, this spell must target it."
   },
   {
@@ -316,7 +316,7 @@
     "desc": "Revive a body to 1 HP. Give that unit +1 [img:divineshield] and All Stats Up."
   },
   {
-    "name": "Fury Heal",
+    "name": "FuryHeal",
     "desc": "Heal an adjacent unit 2 to 6 times."
   },
   {
@@ -340,7 +340,7 @@
     "desc": "Run next to the ally with the most missing health. Trample all in the way.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Guardian Angel",
+    "name": "GuardianAngel",
     "desc": "Make a unit The Alpha.\nBonus Passive: The Alpha has +50% dodge chance."
   },
   {
@@ -364,7 +364,7 @@
     "desc": "You and adjacent units gain +2 [img:spd] and +1 [img:int]."
   },
   {
-    "name": "Blinding Lights",
+    "name": "BlindingLights",
     "desc": "Inflict Blind 1 on each unit in an area."
   },
   {
@@ -372,7 +372,7 @@
     "desc": "Inflict Blind 2 on each unit in a larger area."
   },
   {
-    "name": "Circle of Protection",
+    "name": "CircleofProtection",
     "desc": "Give +1 [img:divineshield] to each unit within 2 tiles of you."
   },
   {
@@ -380,7 +380,7 @@
     "desc": "Give +1 [img:divineshield] and +1 Health Regeneration to each unit within 2 tiles of you.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Call Over",
+    "name": "CallOver",
     "desc": "Make an ally move toward you."
   },
   {
@@ -396,7 +396,7 @@
     "desc": "You or an adjacent unit heals a random amount of HP, gains +1 to a random stat, and gains a random positive effect."
   },
   {
-    "name": "Turn Foe",
+    "name": "TurnFoe",
     "desc": "Force a nearby unit to move away from you."
   },
   {
@@ -404,7 +404,7 @@
     "desc": "Force a nearby unit to move away from you. If it was an enemy, inflict Madness 1 and Confusion 1."
   },
   {
-    "name": "Healing Salve",
+    "name": "HealingSalve",
     "desc": "You or an adjacent unit gains +1 Health Regeneration."
   },
   {

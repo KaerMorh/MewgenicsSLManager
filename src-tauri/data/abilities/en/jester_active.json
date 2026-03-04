@@ -1,6 +1,6 @@
 [
   {
-    "name": "Smart Metronome",
+    "name": "SmartMetronome",
     "desc": "Cast any random spell. The spell is usually good."
   },
   {
@@ -8,7 +8,7 @@
     "desc": "Cast any random upgraded spell. The spell is usually good."
   },
   {
-    "name": "RNG Cannon",
+    "name": "RNGCannon",
     "desc": "Deals a random amount of damage. Requires line of sight"
   },
   {
@@ -24,7 +24,7 @@
     "desc": "Displace a target unit to a random location. If its an enemy, deal 1 damage to it."
   },
   {
-    "name": "Power Up",
+    "name": "PowerUp",
     "desc": "Spend all of your mana and gain that many random buffs."
   },
   {

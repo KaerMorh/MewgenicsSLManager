@@ -1,6 +1,6 @@
 [
   {
-    "name": "Hog Rush",
+    "name": "HogRush",
     "desc": "Trample over to a tile with meat on it."
   },
   {
@@ -16,7 +16,7 @@
     "desc": "Inflict Rot 2 and Poison 2 on a unit and it moves away from you."
   },
   {
-    "name": "Self Harm",
+    "name": "SelfHarm",
     "desc": "Attack yourself with Cleave to gain +2 [img:str]."
   },
   {
@@ -24,11 +24,11 @@
     "desc": "Attack yourself at half damage with Cleave to gain +2 [img:str]."
   },
   {
-    "name": "Force Feed",
+    "name": "ForceFeed",
     "desc": "Heal an adjacent unit and give that unit +1 [img:con] and -1 [img:spd]."
   },
   {
-    "name": "Force Feed",
+    "name": "ForceFeed",
     "desc": "Heal a unit within range and give that unit +1 [img:con] and -1 [img:spd]."
   },
   {
@@ -48,7 +48,7 @@
     "desc": "Attack 3-10 times for 1 damage each. These attacks inflict Bleed."
   },
   {
-    "name": "Skull Bash",
+    "name": "SkullBash",
     "desc": "A range 1 dash attack that inflicts Stun and knockback. Also stuns yourself."
   },
   {
@@ -96,7 +96,7 @@
     "desc": "Trample over four tiles. Costs less mana the lower your HP is."
   },
   {
-    "name": "Body Slam",
+    "name": "BodySlam",
     "desc": "Jump to a tile within range 2. Damage both yourself and units you land on equal to 25% of your current HP."
   },
   {
@@ -104,7 +104,7 @@
     "desc": "Jump to a tile within range 2. Damage both yourself and units you land on equal to 25% of your current HP. This attack inflicts Bruise and has a chance to Stun."
   },
   {
-    "name": "Blood Magic",
+    "name": "BloodMagic",
     "desc": "Take 5 damage and gain 5 mana.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
@@ -112,7 +112,7 @@
     "desc": "Take 5 damage and gain 10 mana.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
-    "name": "Smell Blood",
+    "name": "SmellBlood",
     "desc": "Until your next turn, if a unit in your attack range takes physical damage from a source that isn't you, you attack that unit."
   },
   {
@@ -128,7 +128,7 @@
     "desc": "Vomit up the last consumable you ate this battle and equip it.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
-    "name": "Slice and Dice",
+    "name": "SliceandDice",
     "desc": "Dash forward one tile and do a spin attack with Cleave, then repeat twice more."
   },
   {
@@ -136,7 +136,7 @@
     "desc": "Dash forward one tile and do a spin attack with Cleave, then repeat four more times."
   },
   {
-    "name": "Lunch Time",
+    "name": "LunchTime",
     "desc": "Jump to a food pickup in range 4."
   },
   {
@@ -152,7 +152,7 @@
     "desc": "Trample over one tile. If you trample over a unit, you inflict Bruise on that unit."
   },
   {
-    "name": "Lighten the Load",
+    "name": "LightentheLoad",
     "desc": "Take 25 damage. You take an extra turn after this one.\n[s:.7](This spell can't be cast on extra turns.)[/s]"
   },
   {
@@ -168,7 +168,7 @@
     "desc": "This spell only damages Shield. Cleave and inflict Stun on units with Shield. Deals 10 Knockback to units without Shield."
   },
   {
-    "name": "Cannon Ball!",
+    "name": "CannonBall!",
     "desc": "Target any tile. At the beginning of your next turn, jump to that tile. If you land on a unit, stun it.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
@@ -184,7 +184,7 @@
     "desc": "A melee attack with lifesteal. This spell does more damage the less health you have.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Death Wind",
+    "name": "DeathWind",
     "desc": "Blow wind that inflicts Poison 4 in a cone. The cone is larger the less health you have."
   },
   {
@@ -216,7 +216,7 @@
     "desc": "Breathe a larger cone of fire."
   },
   {
-    "name": "Bad Gas",
+    "name": "BadGas",
     "desc": "Fart on a unit, inflicting Poison 3 and propelling yourself 3 tiles."
   },
   {
@@ -240,7 +240,7 @@
     "desc": "Gain -1 [img:spd], +1 [img:con], +1 [img:str], and heal 4 HP."
   },
   {
-    "name": "My Turn!",
+    "name": "MyTurn!",
     "desc": "Steal an allied cat's next turn for yourself."
   },
   {
@@ -280,7 +280,7 @@
     "desc": "Your weapon gains +1 damage for the rest of the battle and you gain +1 Damage."
   },
   {
-    "name": "Fire Fart",
+    "name": "FireFart",
     "desc": "Inflict Poison 2 and Burn 2 on a unit in melee range."
   },
   {
@@ -288,7 +288,7 @@
     "desc": "Inflict Poison 2 and Burn 2 in a small cone."
   },
   {
-    "name": "Rough Toss",
+    "name": "RoughToss",
     "desc": "Throw an adjacent unit to an empty tile, dealing a lot of damage to that unit."
   },
   {
@@ -304,7 +304,7 @@
     "desc": "Roll the bowling ball cat. If it hits something, deal 15 damage and inflict Bruise in a large cone with knockback."
   },
   {
-    "name": "Tainted Offering",
+    "name": "TaintedOffering",
     "desc": "Jump to any open tile and fall asleep. While asleep, inflict Rot 1 and Poison 1 on units that contact you."
   },
   {
@@ -312,11 +312,11 @@
     "desc": "Jump to any open tile and fall asleep. While asleep, inflict Rot 2 and Poison 2 on units that contact you."
   },
   {
-    "name": "Delicious Scent",
+    "name": "DeliciousScent",
     "desc": "Inflict Attraction on all enemies within range 4."
   },
   {
-    "name": "Delicious Scent",
+    "name": "DeliciousScent",
     "desc": "Jump to a tile, then inflict Attraction on all enemies within range 4."
   },
   {
@@ -344,7 +344,7 @@
     "desc": "You and adjacent units fall asleep. You gain all stats up and heal 4."
   },
   {
-    "name": "Hook Bind",
+    "name": "HookBind",
     "desc": "Melee attack that immobilizes."
   },
   {
@@ -384,7 +384,7 @@
     "desc": "Collect a pickup in range 5. Instead of that pickup's normal effects, add Poison 1 to your weapon for the rest of the battle."
   },
   {
-    "name": "Lodge Hook",
+    "name": "LodgeHook",
     "desc": "Inflict Bleed 10 on an adjacent unit. You can't use your weapon for the rest of the battle.\n[s:.7](Castable once per battle.)[/s]"
   },
   {

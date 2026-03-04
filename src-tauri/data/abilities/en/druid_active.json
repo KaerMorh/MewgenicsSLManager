@@ -32,7 +32,7 @@
     "desc": "Give 5 mana to allies in a large area."
   },
   {
-    "name": "Song of Spring",
+    "name": "SongofSpring",
     "desc": "Spawn flower tiles in an area."
   },
   {
@@ -40,7 +40,7 @@
     "desc": "Spawn flower tiles in a large area."
   },
   {
-    "name": "Grant Life",
+    "name": "GrantLife",
     "desc": "Give a unit All Stats Up. You get All Stats Down."
   },
   {
@@ -48,7 +48,7 @@
     "desc": "Give a unit All Stats Up, Charge 2, and heal them 2. You get All Stats Down."
   },
   {
-    "name": "Squirrel Squad",
+    "name": "SquirrelSquad",
     "desc": "Summon 5 baby squirrels."
   },
   {
@@ -56,15 +56,15 @@
     "desc": "Summon 5 adult squirrels."
   },
   {
-    "name": "Squirrel Swipes",
+    "name": "SquirrelSwipes",
     "desc": "A melee attack that hits 1-3 times."
   },
   {
-    "name": "Bear Swipes",
+    "name": "BearSwipes",
     "desc": ""
   },
   {
-    "name": "Summon Squirrel",
+    "name": "SummonSquirrel",
     "desc": "Summon a squirrel."
   },
   {
@@ -72,7 +72,7 @@
     "desc": "Summon a squirrel to any tile."
   },
   {
-    "name": "Summon Snake",
+    "name": "SummonSnake",
     "desc": "Summon a snake."
   },
   {
@@ -80,7 +80,7 @@
     "desc": "Summon a slippery snake!\n(It has a 66% dodge chance.)"
   },
   {
-    "name": "Summon Turtle",
+    "name": "SummonTurtle",
     "desc": "Summon a turtle."
   },
   {
@@ -88,7 +88,7 @@
     "desc": "Summon a turtle to any tile in range 6."
   },
   {
-    "name": "Summon Toad",
+    "name": "SummonToad",
     "desc": "Summon a toad."
   },
   {
@@ -96,7 +96,7 @@
     "desc": "Summon a super toad!\n(It has more damage, health, and can move an extra time each turn)"
   },
   {
-    "name": "Summon Bear",
+    "name": "SummonBear",
     "desc": "Summon a bear."
   },
   {
@@ -104,7 +104,7 @@
     "desc": "Summon a furious bear!\n(It has Fury Swipes.)"
   },
   {
-    "name": "Step In",
+    "name": "StepIn",
     "desc": "Swap positions with a familiar."
   },
   {
@@ -112,7 +112,7 @@
     "desc": "Swap positions with any unit."
   },
   {
-    "name": "Battle Cry",
+    "name": "BattleCry",
     "desc": "Give all familiars in an area +2 Damage."
   },
   {
@@ -120,7 +120,7 @@
     "desc": "Give all familiars +3 Damage."
   },
   {
-    "name": "Stand By Me",
+    "name": "StandByMe",
     "desc": "Teleport an ally to you."
   },
   {
@@ -128,7 +128,7 @@
     "desc": "Teleport any unit to you."
   },
   {
-    "name": "Bramble Burst",
+    "name": "BrambleBurst",
     "desc": "Explode a familiar causing damage to all adjacent units and spawning brambles."
   },
   {
@@ -136,7 +136,7 @@
     "desc": "Explode a familiar causing damage to all units in range 2 and spawning brambles."
   },
   {
-    "name": "Flower Feet",
+    "name": "FlowerFeet",
     "desc": "Move 3 tiles. Plant flowers as you move."
   },
   {
@@ -144,7 +144,7 @@
     "desc": "Move 5 tiles. Plant flowers as you move and where you end up."
   },
   {
-    "name": "Thorny Feet",
+    "name": "ThornyFeet",
     "desc": "Move 3 tiles. Plant brambles as you move."
   },
   {
@@ -176,7 +176,7 @@
     "desc": "The next familiar you spawn becomes an [img:elite] elite."
   },
   {
-    "name": "Safety Dance",
+    "name": "SafetyDance",
     "desc": "Give all allies +1 [img:shield]."
   },
   {
@@ -184,7 +184,7 @@
     "desc": "Give all allies +2 [img:shield]."
   },
   {
-    "name": "War Cry",
+    "name": "WarCry",
     "desc": "Each familiar attacks their closest enemy immediately if they can."
   },
   {
@@ -192,7 +192,7 @@
     "desc": "Your allies and familiars all attack their closest enemy immediately if they can."
   },
   {
-    "name": "Form of the Wolf",
+    "name": "FormoftheWolf",
     "desc": "Enter Wolf Form, gaining +2 [img:str], +2 [img:spd], -2 [img:lck], and -2 [img:int]. Your basic attack becomes Wolf Claws and this becomes Pounce."
   },
   {
@@ -200,7 +200,7 @@
     "desc": "Enter Wolf Form, gaining +2 [img:str], +2 [img:spd], -2 [img:lck], and -2 [img:int]. Your basic attack becomes Wolf Claws+ and this becomes Pounce+."
   },
   {
-    "name": "Wolf Claws",
+    "name": "WolfClaws",
     "desc": "A 2-hit melee attack."
   },
   {
@@ -216,19 +216,19 @@
     "desc": "Jump on a unit, damaging, displacing and inflicting Bleed 1 to it."
   },
   {
-    "name": "Form of the Monkey",
+    "name": "FormoftheMonkey",
     "desc": "Enter Monkey Form, gaining +2 [img:dex], +2 [img:lck], -2 [img:con], and -2 [img:cha]. Your basic attack becomes Throw Poop and this becomes Monkey Toss."
   },
   {
-    "name": "Form of the Monkey",
+    "name": "FormoftheMonkey",
     "desc": "Enter Monkey Form, gaining +2 [img:dex] and +2 [img:lck]. Your basic attack becomes Throw Poop and this becomes Monkey Toss+."
   },
   {
-    "name": "Throw Poop",
+    "name": "ThrowPoop",
     "desc": "Throw poop."
   },
   {
-    "name": "Monkey Toss",
+    "name": "MonkeyToss",
     "desc": "Throw an adjacent unit to another tile. It takes damage if it's thrown onto something."
   },
   {
@@ -236,15 +236,15 @@
     "desc": "Throw an adjacent unit to another tile. It takes damage if it's thrown onto something.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Form of the Turtle",
+    "name": "FormoftheTurtle",
     "desc": "Enter Turtle Form, getting +2 [img:con], +10 [img:shield], -2 [img:int], and -2 [img:spd]. Your basic attack becomes Head Bash and this becomes Harden Shell."
   },
   {
-    "name": "Form of the Turtle",
+    "name": "FormoftheTurtle",
     "desc": "Enter Turtle Form, getting +2 [img:con], +10 [img:shield], and -2 [img:int]. Your basic attack becomes Head Bash and this becomes Harden Shell+."
   },
   {
-    "name": "Harden Shell",
+    "name": "HardenShell",
     "desc": "Gain +1 [img:shield], +1 Thorns, and +1 temporary Brace."
   },
   {
@@ -252,11 +252,11 @@
     "desc": "Gain +1 [img:shield], +1 Thorns, and +1 temporary Brace.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Head Bash",
+    "name": "HeadBash",
     "desc": "Dash forward one tile, then attack. This attack deals Knockback and has a chance to inflict Stun."
   },
   {
-    "name": "Summon Caterpillar",
+    "name": "SummonCaterpillar",
     "desc": "Summon a caterpillar. It gains All Stats Up at the end of each turn. It becomes a moth at All Stats Up 5."
   },
   {
@@ -264,11 +264,11 @@
     "desc": "Summon a caterpillar with All Stats Up 2. It gains All Stats Up at the end of each turn. It becomes a moth at All Stats Up 5."
   },
   {
-    "name": "Sleep Powder",
+    "name": "SleepPowder",
     "desc": "Inflict Sleep on a unit."
   },
   {
-    "name": "Call the Wind",
+    "name": "CalltheWind",
     "desc": "Blow all units back one tile."
   },
   {
@@ -276,7 +276,7 @@
     "desc": "Blow all units back three tiles.\nAllies are immune to knockback damage during this."
   },
   {
-    "name": "Inspirational Song",
+    "name": "InspirationalSong",
     "desc": "Heal all allies and give them +1 Temporary Damage."
   },
   {
@@ -284,7 +284,7 @@
     "desc": "Heal all allies and give them +2 Temporary Damage."
   },
   {
-    "name": "Death Metal",
+    "name": "DeathMetal",
     "desc": "A song that explodes a random enemy. If this hits a boss, it instead inflicts Fear."
   },
   {
@@ -292,7 +292,7 @@
     "desc": "A song that explodes a random enemy. If this hits a boss, it instead inflicts Fear. Inflict Madness on each other enemy."
   },
   {
-    "name": "Cha Cha Slide",
+    "name": "ChaChaSlide",
     "desc": "Deal 10 Knockback to all units in a random direction. Allies are immune to Thorns, tile and Knockback damage during this effect."
   },
   {
@@ -300,7 +300,7 @@
     "desc": "Deal 10 Knockback to all units in a random direction. Allies gain +3 temporary Thorns and are immune to Thorns, tile and Knockback damage during this effect."
   },
   {
-    "name": "Bestow Wisdom",
+    "name": "BestowWisdom",
     "desc": "Give +1 [img:int] to a unit."
   },
   {
@@ -308,11 +308,11 @@
     "desc": "Give +1 [img:int] and +2 mana to a unit."
   },
   {
-    "name": "Form of the Raccoon",
+    "name": "FormoftheRaccoon",
     "desc": "Enter Raccoon Form, gaining +2 [img:int], and -2 [img:str]. Your basic attack becomes Pilfer and this becomes Scavenge."
   },
   {
-    "name": "Form of the Raccoon",
+    "name": "FormoftheRaccoon",
     "desc": "Enter Raccoon Form, gaining +2 [img:int], and +2 [img:lck]. Your basic attack becomes Pilfer and this becomes Scavenge+."
   },
   {
@@ -328,15 +328,15 @@
     "desc": "Run to any pickup and collect it. The effects of that pickup are doubled."
   },
   {
-    "name": "Resummon Crow",
+    "name": "ResummonCrow",
     "desc": "Summon a new crow. Castable only if your crow is dead."
   },
   {
-    "name": "Resummon Crow",
+    "name": "ResummonCrow",
     "desc": "Summon a crow."
   },
   {
-    "name": "We Will Rock You",
+    "name": "WeWillRockYou",
     "desc": "Inflict Petrify on a familiar and give it +6 [img:shield]."
   },
   {
@@ -344,7 +344,7 @@
     "desc": "Inflict Petrify on a familiar and give it +6 [img:shield] and +2 Thorns."
   },
   {
-    "name": "Form of the Tree",
+    "name": "FormoftheTree",
     "desc": "Enter Tree Form, gaining -2 [img:int], +5 [img:shield], and Brace 2. You become immobile and immune to Knockback. Your basic attack becomes Timber and this becomes Synthesize."
   },
   {
@@ -364,7 +364,7 @@
     "desc": "You and allies within 3 tiles gain 2 HP and 2 Charge."
   },
   {
-    "name": "Hydro Pump",
+    "name": "HydroPump",
     "desc": "Shoot a blast of water that deals 3 Knockback. This spell has recoil."
   },
   {
@@ -372,7 +372,7 @@
     "desc": "Shoot a long blast of water that deals 10 Knockback. This spell has recoil."
   },
   {
-    "name": "Control Plants",
+    "name": "ControlPlants",
     "desc": "Create a tall grass tile, then all enemies on grass element tiles take 1 damage."
   },
   {
@@ -380,7 +380,7 @@
     "desc": "Create a tall grass tile, then all enemies on grass element tiles take 1 damage and gain Poison 1."
   },
   {
-    "name": "Control Water",
+    "name": "ControlWater",
     "desc": "Create a water tile, then all allies on water element tiles heal 2 HP."
   },
   {
@@ -388,7 +388,7 @@
     "desc": "Create a water tile, then all allies on water element tiles heal 2 HP and have their debuffs cleansed."
   },
   {
-    "name": "Control Air",
+    "name": "ControlAir",
     "desc": "Blow a unit ten tiles away from you. This doesn't deal Knockback damage."
   },
   {
@@ -400,7 +400,7 @@
     "desc": "Explode."
   },
   {
-    "name": "Feral Attack",
+    "name": "FeralAttack",
     "desc": "A melee attack.\n[s:.7](This spell costs 0 mana. Castable once per turn.)[/s]"
   },
   {
@@ -420,7 +420,7 @@
     "desc": "Inflicts Sleep on units in an area.\n[s:.7](This spell costs less and has increased range.)[/s]"
   },
   {
-    "name": "We Are the Champions",
+    "name": "WeAretheChampions",
     "desc": "Each familiar gains All Stats Up 2 and heals to full.\n[s:.7](Castable once per battle.)[/s]"
   },
   {
@@ -436,7 +436,7 @@
     "desc": "Make a target unit The Alpha.\nPASSIVE: The first spell the Alpha casts each turn is cast twice.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Nature's Blessing",
+    "name": "Nature'sBlessing",
     "desc": "Grow tall grass tiles in an area and give units in that area +3 Diminishing Health Regeneration"
   },
   {
@@ -444,7 +444,7 @@
     "desc": "Grow tall grass tiles in an area and give units in that area +3 Diminishing Health Regeneration\n[s:.7](This spell costs less and has infinite range.)[/s]"
   },
   {
-    "name": "Throw Egg",
+    "name": "ThrowEgg",
     "desc": "Throw an egg. If the egg lands in an empty tile, it hatches into a random animal friend at the start of its second turn."
   },
   {
@@ -452,7 +452,7 @@
     "desc": "Throw an egg. If the egg lands in an empty tile, it hatches into a random animal friend at the start of its first turn."
   },
   {
-    "name": "Form of the Squirrel",
+    "name": "FormoftheSquirrel",
     "desc": "Spawn squirrels on each adjacent tile, then enter Squirrel Form.\nYour basic attack becomes Chitter and this becomes Birth Squirrel."
   },
   {
@@ -460,7 +460,7 @@
     "desc": "Spawn squirrels on each adjacent tile, then enter Squirrel Form.\nYour basic attack becomes Chitter and this becomes Birth Squirrel+.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Birth Squirrel",
+    "name": "BirthSquirrel",
     "desc": "Summon a squirrel.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
@@ -468,7 +468,7 @@
     "desc": "Each squirrel gains +2 Damage and +2 [img:spd]."
   },
   {
-    "name": "Plant Mushroom",
+    "name": "PlantMushroom",
     "desc": "Spawn a glowing mushroom that restores mana to nearby units on its turn."
   },
   {
@@ -484,7 +484,7 @@
     "desc": "Give Health Regeneration 1 to units in a larger area.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Windy Step",
+    "name": "WindyStep",
     "desc": "Give a unit +1 Bonus Move."
   },
   {
@@ -492,15 +492,15 @@
     "desc": "Give a unit +1 Bonus Move and +1 [img:spd]. They take their next turn earlier."
   },
   {
-    "name": "Form of the Elk",
+    "name": "FormoftheElk",
     "desc": "Enter Elk Form, gaining +8 [img:spd], -2 [img:int], -2 [img:con], and Trample 3. You ignore tile effects while moving.\nYour basic attack becomes Antler Swipe and this becomes Prance."
   },
   {
-    "name": "Form of the Elk",
+    "name": "FormoftheElk",
     "desc": "Enter Elk Form, gaining +8 [img:spd] and Trample 3. You ignore tile effects while moving.\nYour basic attack becomes Antler Swipe+ and this becomes Prance+."
   },
   {
-    "name": "Antler Swipe",
+    "name": "AntlerSwipe",
     "desc": "Toss a unit up to four tiles away. Inflict Bruise on it and any unit it lands on."
   },
   {
@@ -516,19 +516,19 @@
     "desc": "Refresh your movement action.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Form of the Mockingbird",
+    "name": "FormoftheMockingbird",
     "desc": "Enter Mockingbird Form, gaining flying movement, +2 [img:lck], and -2 [img:str].\nYour basic attack becomes Mock Song and this becomes Tease."
   },
   {
-    "name": "Form of the Mockingbird",
+    "name": "FormoftheMockingbird",
     "desc": "Enter Mockingbird Form, gaining flying movement and +2 [img:lck].\nYour basic attack becomes Mock Song+ and this becomes Tease+."
   },
   {
-    "name": "Mock Song",
+    "name": "MockSong",
     "desc": "Give each unit within an area All Stats Down 2 until the end of their next turn."
   },
   {
-    "name": "Mock Song",
+    "name": "MockSong",
     "desc": "Give enemies within an area All Stats Down 2 (and allies All Stats Up 2) until the the end of their next turn."
   },
   {
@@ -540,7 +540,7 @@
     "desc": "Inflict Madness 1 on a unit. It immediately attacks a unit if it can."
   },
   {
-    "name": "From the Trees!",
+    "name": "FromtheTrees!",
     "desc": "Summon a random animal that falls from the sky onto a random enemy, dealing damage."
   },
   {

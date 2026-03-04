@@ -8,7 +8,7 @@
     "desc": "Gain +1 [img:int] at the start of each turn.\nYour spells cost 25% less mana."
   },
   {
-    "name": "Force Field",
+    "name": "ForceField",
     "desc": "At the start of every third turn, gain +1 [img:divineshield]."
   },
   {
@@ -16,7 +16,7 @@
     "desc": "At the start of every other turn, gain +1 [img:divineshield]."
   },
   {
-    "name": "Splash Damage",
+    "name": "SplashDamage",
     "desc": "Your basic attack deals 2 Magic splash damage."
   },
   {
@@ -24,7 +24,7 @@
     "desc": "+2 Range. Your basic attack deals 2 Magic splash damage in a wide area."
   },
   {
-    "name": "Burning Paws",
+    "name": "BurningPaws",
     "desc": "Your basic action inflicts Burn 1."
   },
   {
@@ -32,7 +32,7 @@
     "desc": "Your basic action inflicts Burn 3."
   },
   {
-    "name": "Lightning Paws",
+    "name": "LightningPaws",
     "desc": "Your basic attack deals +1 Electric Damage and has a 10% chance to Stun."
   },
   {
@@ -40,7 +40,7 @@
     "desc": "Your basic attack deals +2 Electric Damage and has a 33% chance to Stun."
   },
   {
-    "name": "Ice Paws",
+    "name": "IcePaws",
     "desc": "Your basic attack deals Ice Damage, inflicts Slow 1, and has a 15% chance to Freeze."
   },
   {
@@ -48,7 +48,7 @@
     "desc": "Your basic attack deals Ice Damage, inflicts Slow 2, and has a 50% chance to Freeze."
   },
   {
-    "name": "Paw Missile",
+    "name": "PawMissile",
     "desc": "Your basic attack is Magic Missile.\n(its damage scales with [img:int])."
   },
   {
@@ -64,7 +64,7 @@
     "desc": "When you cast a spell, deal 2 tri-elemental damage to adjacent tiles."
   },
   {
-    "name": "Charge Up",
+    "name": "ChargeUp",
     "desc": "If you end your turn with 0 mana, the next spell you cast is free"
   },
   {
@@ -72,7 +72,7 @@
     "desc": "If you end your turn with 0 mana, gain +1 Magic Damage and the next spell you cast is free."
   },
   {
-    "name": "Death Chill",
+    "name": "DeathChill",
     "desc": "When downed, Freeze all enemies and the rest of the map."
   },
   {
@@ -96,7 +96,7 @@
     "desc": "The first spell and every 3rd spell you cast is cast twice."
   },
   {
-    "name": "Fire Aspect",
+    "name": "FireAspect",
     "desc": "Fire immunity.\nInflict Burn 1 on units that contact you.\nYour Fire element damage is increased by 1 and inflicts +1 Burn."
   },
   {
@@ -104,7 +104,7 @@
     "desc": "Fire immunity.\nInflict Burn 3 on units that contact you.\nYour Fire element damage is increased by 2 and inflicts +3 Burn."
   },
   {
-    "name": "Ice Aspect",
+    "name": "IceAspect",
     "desc": "Ice immunity. You can damage frozen units.\nUnits that contact you take 1 Ice Damage, Slow 2, and have a 5% chance to Freeze."
   },
   {
@@ -120,7 +120,7 @@
     "desc": "When you cast a spell gain +1 Magic Damage and +1 Damage for the rest of the turn."
   },
   {
-    "name": "Learn From Me",
+    "name": "LearnFromMe",
     "desc": "When you cast a spell, all allied cats gain that spell in their bonus slot."
   },
   {
@@ -128,7 +128,7 @@
     "desc": "When you cast a spell, all allied cats gain the upgraded version of that spell in their bonus slot."
   },
   {
-    "name": "Lightning Aspect",
+    "name": "LightningAspect",
     "desc": "Electric immunity.\nWhen you deal Electric Damage, gain +1 Charge."
   },
   {
@@ -136,7 +136,7 @@
     "desc": "Electric immunity.\nWhen you deal Electric Damage, gain +1 Charge for each point of damage dealt."
   },
   {
-    "name": "Long Cast",
+    "name": "LongCast",
     "desc": "Tile-targeted spells gain +3 Range."
   },
   {
@@ -144,7 +144,7 @@
     "desc": "+1 Magic Damage. Tile-targeted spells gain +5 Range."
   },
   {
-    "name": "Light Up the Stage",
+    "name": "LightUptheStage",
     "desc": "At the end of your turn, Emit a Sparkle for each turn you've taken."
   },
   {
@@ -152,7 +152,7 @@
     "desc": "At the end of your turn, emit a Sparkle for each turn you've taken and gain +1 Kinetic Spikes ."
   },
   {
-    "name": "Elemental Attunement",
+    "name": "ElementalAttunement",
     "desc": "Casting elemental spells imbues your basic attack with those elements and relevant effects for the rest of the battle."
   },
   {
@@ -160,7 +160,7 @@
     "desc": "Casting elemental spells imbues your basic attack with those elements and relevant effects for the rest of the battle.\nElemental spells cost -2 mana."
   },
   {
-    "name": "Latent Energy",
+    "name": "LatentEnergy",
     "desc": "When an ally spends mana, Gain +2 Magic Damage until the next time you use magic."
   },
   {
@@ -176,7 +176,7 @@
     "desc": "When you end your turn with exactly 5 mana, gain +5 [img:shield], heal 5 HP and temporarily gain +5 Kinetic Spikes and +5 Damage until the end of your next turn."
   },
   {
-    "name": "Magic Guru",
+    "name": "MagicGuru",
     "desc": "Your allies have +1 Mana Regeneration. When an ally spends 7+ mana to cast a spell, they gain All Stats Up."
   },
   {

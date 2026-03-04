@@ -40,7 +40,7 @@
     "desc": "Give a unit Weakness 5 and All Stats Down."
   },
   {
-    "name": "Dark Ritual",
+    "name": "DarkRitual",
     "desc": "Destroy an adjacent body. The next spell you cast costs 0 mana."
   },
   {
@@ -48,7 +48,7 @@
     "desc": "Destroy an adjacent body. The next 2 spells you cast cost 0 mana."
   },
   {
-    "name": "Evil Incarnate",
+    "name": "EvilIncarnate",
     "desc": "Inflict Fear on all enemies."
   },
   {
@@ -56,7 +56,7 @@
     "desc": "Inflict Fear 1 and Weakness 2 on all enemies."
   },
   {
-    "name": "Soul Link",
+    "name": "SoulLink",
     "desc": "Inflict Soul Link on units in an area."
   },
   {
@@ -64,7 +64,7 @@
     "desc": "Inflict Soul Link on units in a large area."
   },
   {
-    "name": "We Are One",
+    "name": "WeAreOne",
     "desc": "Inflict Soul Link on yourself and every enemy."
   },
   {
@@ -72,7 +72,7 @@
     "desc": "Inflict Soul Link on yourself and every enemy. Gain +2 [img:con] and heal 8 HP."
   },
   {
-    "name": "Blood Rain",
+    "name": "BloodRain",
     "desc": "Take 1 damage and heal all allies 1 HP."
   },
   {
@@ -80,7 +80,7 @@
     "desc": "Take 1 damage, heal all allies 1 HP and give them +1 mana."
   },
   {
-    "name": "Eternal Servitude",
+    "name": "EternalServitude",
     "desc": "Resurrect an enemy body to full HP. It joins your team."
   },
   {
@@ -88,11 +88,11 @@
     "desc": "Resurrect an enemy body to full HP. It joins your team and takes an extra turn after this one."
   },
   {
-    "name": "Death Bloom",
+    "name": "DeathBloom",
     "desc": "Explode a body, dealing damage and Knockback to adjacent units."
   },
   {
-    "name": "Death Bloom",
+    "name": "DeathBloom",
     "desc": "Explode a body, dealing damage and Knockback to units in a large area."
   },
   {
@@ -104,7 +104,7 @@
     "desc": "Teleport in front of an enemy then inflict Knockback 4 and Fear on each adjacent unit."
   },
   {
-    "name": "Soul Transfer",
+    "name": "SoulTransfer",
     "desc": "Give a unit +1 [img:con] and heal it 4 HP. You gain -1 [img:con] and lose 4 health."
   },
   {
@@ -112,7 +112,7 @@
     "desc": "Give a unit +1 [img:con] and heal it 4 HP. You gain -1 [img:con] and lose 4 health.\nThis spell can revive units. If the unit revived was an enemy it gets charmed for the battle."
   },
   {
-    "name": "Slit Wrists",
+    "name": "SlitWrists",
     "desc": "Deal 2 damage to yourself."
   },
   {
@@ -124,7 +124,7 @@
     "desc": "Inflict Fear 1 and Madness 2 on a unit in range 4."
   },
   {
-    "name": "Summon Shade",
+    "name": "SummonShade",
     "desc": "Spawn a shadow copy of yourself that fades after its first turn.\n[s:.7](The copy can't cast this ability or give extra turns to units.)[/s]"
   },
   {
@@ -132,7 +132,7 @@
     "desc": "Spawn a shadow copy of yourself that fades after its second turn.\n[s:.7](The copy can't cast this ability or give extra turns to units.)[/s]"
   },
   {
-    "name": "Dark Step",
+    "name": "DarkStep",
     "desc": "Teleport to an open tile."
   },
   {
@@ -160,7 +160,7 @@
     "desc": "Down yourself."
   },
   {
-    "name": "Full Moon",
+    "name": "FullMoon",
     "desc": "Give Lifesteal 1 to units in an area."
   },
   {
@@ -176,7 +176,7 @@
     "desc": "Dig up a body. It reanimates at the end of the round.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Blood Geyser",
+    "name": "BloodGeyser",
     "desc": "Take damage equal to half of your max HP, then deal that much damage and inflict Fear 2 on another unit."
   },
   {
@@ -200,7 +200,7 @@
     "desc": "Teleport into a familiar and destroy it. Refresh your basic attack and heal 5 HP."
   },
   {
-    "name": "Summon Bones",
+    "name": "SummonBones",
     "desc": "Summon a skeleton from a body."
   },
   {
@@ -208,7 +208,7 @@
     "desc": "Summon a skeleton from a body, anywhere.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Giga Drain",
+    "name": "GigaDrain",
     "desc": "Spend all of your mana, then drain that much HP from an adjacent unit. Ignores shield."
   },
   {
@@ -224,7 +224,7 @@
     "desc": "Remove all status effects from another unit, then inflict Bleed 5 on it.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Mass Psychosis",
+    "name": "MassPsychosis",
     "desc": "Inflict Madness on all enemies."
   },
   {
@@ -256,11 +256,11 @@
     "desc": "Deal damage to any unit. This has a 25% chance to inflict Fear.\n[s:.7]Castable while downed.[/s]"
   },
   {
-    "name": "Carrion Shot",
+    "name": "CarrionShot",
     "desc": "Deal 1 damage and inflict Leech 1.\n[s:.7]This spell is stronger and castable while you're downed.[/s]"
   },
   {
-    "name": "Carrion Shot",
+    "name": "CarrionShot",
     "desc": "Deal 1 damage and inflict Leech 1.\n[s:.7]This spell is stronger and castable while you're downed.[/s]"
   },
   {
@@ -288,11 +288,11 @@
     "desc": "Drain 2 HP at melee range.\n[s:.7]This spell is much stronger and castable while you're downed. If this kills a unit, revive with max hp.[/s]"
   },
   {
-    "name": "Coffin Flop",
+    "name": "CoffinFlop",
     "desc": "Jump to an open tile in range 2.\n[s:.7]This spell is stronger and castable while you're downed. When downed you can land on units dealing damage and inflicting Madness. [/s]"
   },
   {
-    "name": "Coffin Flop",
+    "name": "CoffinFlop",
     "desc": "Jump to an open tile in range 2.\n[s:.7]This spell is stronger and castable while you're downed. When downed you can land on units dealing damage and inflicting Madness. [/s]"
   },
   {
@@ -304,11 +304,11 @@
     "desc": "Jump to an open tile in range 3.\n[s:.7]This spell is stronger and castable while you're downed. When downed you can land on units anywhere dealing damage and inflicting Madness 2. [/s]"
   },
   {
-    "name": "Donate Blood",
+    "name": "DonateBlood",
     "desc": "Heal a unit 5 HP, then take 10 damage.\n[s:.7]Castable while you're downed. If you do, take no damage and give what you heal All Stats Up.[/s]"
   },
   {
-    "name": "Donate Blood",
+    "name": "DonateBlood",
     "desc": "Heal a unit 5 HP, then take 10 damage.\n[s:.7]Castable while you're downed. If you do, take no damage and give what you heal All Stats Up.[/s]"
   },
   {
@@ -336,7 +336,7 @@
     "desc": "Spawn a ghost Familiar that fades after its second turn.\n[s:.7]Castable while you're downed. If you do, spawn a shadow copy of yourself instead.[/s]"
   },
   {
-    "name": "Go Limp",
+    "name": "GoLimp",
     "desc": "Until your next turn, you won't get injured if you're downed."
   },
   {
@@ -344,7 +344,7 @@
     "desc": "Until your next turn, you won't get injured if you're downed.\nWhen downed, inflict Confusion 10 on the unit that downed you."
   },
   {
-    "name": "Demonic Pact",
+    "name": "DemonicPact",
     "desc": "Injure yourself and take an extra turn.\n[s:.7](This spell can't be cast on extra turns.)[/s]"
   },
   {
@@ -360,7 +360,7 @@
     "desc": "Give a unit -4 [img:lck].\n[s:.7](This spell has increased range)[/s]"
   },
   {
-    "name": "Leech Swarm",
+    "name": "LeechSwarm",
     "desc": "Inflict Leech 3 on all units, except yourself."
   },
   {
@@ -384,7 +384,7 @@
     "desc": "Inflict Sleep 1 on a unit in range 4."
   },
   {
-    "name": "Reaper Step",
+    "name": "ReaperStep",
     "desc": "Teleport to an open tile in range 1. Whenever a unit dies, this spell's range increases by 1."
   },
   {
@@ -392,7 +392,7 @@
     "desc": "Teleport to a tile in range 1, dealing damage to units you land on. Whenever a unit dies, this spell's range and damage increase by 1."
   },
   {
-    "name": "Forbidden Famine",
+    "name": "ForbiddenFamine",
     "desc": "Inflict Weakness 5, Poison 2, and Madness 2 on all enemies.\nThere are permanent consequences for casting this spell… but maybe not for you. \n[s:.7](Castable once per battle.)[/s]"
   },
   {
@@ -400,7 +400,7 @@
     "desc": "Inflict Leech 2, Weakness 5, Poison 2, and Madness 2 on all enemies.\nThere are permanent consequences for casting this spell… but maybe not for you. \n[s:.7](Castable once per battle.)[/s]"
   },
   {
-    "name": "Flesh Golem",
+    "name": "FleshGolem",
     "desc": "You and all allies lose 10 HP. Summon a flesh golem with one random spell from each of those units.\n[s:.7](Castable once per battle.)[/s]"
   },
   {
@@ -408,7 +408,7 @@
     "desc": "You and all allies lose 10 HP. Summon a flesh golem with one random spell and random passives from each of those units.\n[s:.7](Castable once per battle.)[/s]"
   },
   {
-    "name": "Trade Life",
+    "name": "TradeLife",
     "desc": "Swap HP with an ally in range 3.\n[s:.7]Castable while you're downed. If this spell downs you or the ally, neither are injured.[/s]"
   },
   {
@@ -416,7 +416,7 @@
     "desc": "Swap HP with any ally.\n[s:.7]Castable while you're downed. If this spell downs you or the ally, neither are injured.[/s]"
   },
   {
-    "name": "Trade Life",
+    "name": "TradeLife",
     "desc": "Swap HP with an ally in range 3.\n[s:.7]Castable while you're downed. If this spell downs you or the ally, neither are injured.[/s]"
   },
   {
@@ -424,7 +424,7 @@
     "desc": "Swap HP with any ally.\n[s:.7]Castable while you're downed. If this spell downs you or the ally, neither are injured.[/s]"
   },
   {
-    "name": "Absorb Soul",
+    "name": "AbsorbSoul",
     "desc": "Down an ally in range 5 and steal their mana. It doesn't get injured.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
@@ -440,7 +440,7 @@
     "desc": "Dig to any tile and unearth 1-3 bodies.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Dig Up the Dead",
+    "name": "DigUptheDead",
     "desc": "Dig to any tile and unearth 4 zombies."
   },
   {
@@ -448,7 +448,7 @@
     "desc": "Dig to any tile and unearth 4 zombies.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Spider Egg",
+    "name": "SpiderEgg",
     "desc": "Inflict Infested 1 on a unit in range 3."
   },
   {
@@ -456,7 +456,7 @@
     "desc": "Deal 1 damage and inflict Infested 1 on any unit."
   },
   {
-    "name": "Clew of Leeches",
+    "name": "ClewofLeeches",
     "desc": "Surround a unit with leeches."
   },
   {

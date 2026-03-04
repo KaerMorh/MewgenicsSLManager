@@ -16,7 +16,7 @@
     "desc": "A stronger lightning bolt that has a 50% chance to Stun."
   },
   {
-    "name": "Fire Blast",
+    "name": "FireBlast",
     "desc": "A fireblast that inflicts Burn 2 in an area."
   },
   {
@@ -24,7 +24,7 @@
     "desc": "A more damaging fireblast that inflicts Burn 3 in an area."
   },
   {
-    "name": "Frost Blast",
+    "name": "FrostBlast",
     "desc": "Shoot a blast of ice in a line that freezes the first unit it hits."
   },
   {
@@ -32,7 +32,7 @@
     "desc": "Shoot a blast of ice in a line that freezes every unit it hits."
   },
   {
-    "name": "Energy Blast",
+    "name": "EnergyBlast",
     "desc": "A high damage spell that hits a single target."
   },
   {
@@ -40,7 +40,7 @@
     "desc": "A high damage spell that hits a single target and deals extra damage equal to your [img:int]."
   },
   {
-    "name": "Magic Missile",
+    "name": "MagicMissile",
     "desc": "Shoot an infinite-range projectile that can't miss."
   },
   {
@@ -48,7 +48,7 @@
     "desc": "Shoot an infinite-range projectile that can't miss. Emit 3 Sparkles."
   },
   {
-    "name": "Wall of Fire",
+    "name": "WallofFire",
     "desc": "A fire spell that inflicts Burn 1 and spawns fires in a perpendicular line."
   },
   {
@@ -56,7 +56,7 @@
     "desc": "A fire spell that damages, inflicts Burn 3 and spawns fires in a perpendicular line."
   },
   {
-    "name": "Hyper Beam",
+    "name": "HyperBeam",
     "desc": "Target a tile. At the start of your next turn, unleash an extremely high damage mega beam on that tile.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
@@ -64,7 +64,7 @@
     "desc": "Target a tile. At the start of your next turn, unleash an extremely high damage mega beam on that tile."
   },
   {
-    "name": "Meteor Storm",
+    "name": "MeteorStorm",
     "desc": "Summon meteors that hit random tiles in a large area. These meteors have a chance to stun, spawn fires, or leave rocks behind."
   },
   {
@@ -72,7 +72,7 @@
     "desc": "Summon meteors that hit random tiles in a larger area. These meteors have a chance to stun, spawn fires, or leave rocks behind."
   },
   {
-    "name": "Mega Blast",
+    "name": "MegaBlast",
     "desc": "Deal high damage in a cone."
   },
   {
@@ -96,7 +96,7 @@
     "desc": "Get big."
   },
   {
-    "name": "Wind Slash",
+    "name": "WindSlash",
     "desc": "A wind spell that hits an entire line with Knockback 1."
   },
   {
@@ -136,7 +136,7 @@
     "desc": "Spend all of your mana and heal that much HP. Excess healing is converted into [img:shield]."
   },
   {
-    "name": "Ice Armor",
+    "name": "IceArmor",
     "desc": "-"
   },
   {
@@ -144,15 +144,15 @@
     "desc": "-"
   },
   {
-    "name": "Fire Armor",
+    "name": "FireArmor",
     "desc": "-"
   },
   {
-    "name": "Fire Armor",
+    "name": "FireArmor",
     "desc": "-"
   },
   {
-    "name": "Mana Meld",
+    "name": "ManaMeld",
     "desc": "Give all of your mana to a unit in range 3."
   },
   {
@@ -176,7 +176,7 @@
     "desc": "Teleport onto a unit, dealing damage to that unit."
   },
   {
-    "name": "Chaos Teleport",
+    "name": "ChaosTeleport",
     "desc": "Teleport to a random tile."
   },
   {
@@ -224,15 +224,15 @@
     "desc": "Shoot stronger lightning bolts in eight directions with a 25% chance to Stun."
   },
   {
-    "name": "Deal with the Devil",
+    "name": "DealwiththeDevil",
     "desc": "Injure yourself, then restore 15 mana.\n[s:.7](Castable once per battle.)[/s]"
   },
   {
-    "name": "Deal with the Devil",
+    "name": "DealwiththeDevil",
     "desc": "Injure yourself, then restore all your mana.\n[s:.7](Castable once per battle.)[/s]"
   },
   {
-    "name": "Forbidden Flame",
+    "name": "ForbiddenFlame",
     "desc": "Damage all enemies and burn the entire map. There will be permanent consequences for casting this spell…\n[s:.7](Castable once per battle.)[/s]"
   },
   {
@@ -240,7 +240,7 @@
     "desc": "Heavily damage all enemies and burn the entire map. There will be permanent consequences for casting this spell…\n[s:.7](Castable once per battle.)[/s]"
   },
   {
-    "name": "Forbidden Flood",
+    "name": "ForbiddenFlood",
     "desc": "Knock back and damage all enemies, then flood the entire map. There will be permanent consequences for casting this spell…\n[s:.7](Castable once per battle.)[/s]"
   },
   {
@@ -260,7 +260,7 @@
     "desc": "Create a larger whirlpool that spins units and inflicts Confusion on them."
   },
   {
-    "name": "Chain Lightning",
+    "name": "ChainLightning",
     "desc": "Shoot lightning that chains randomly to other nearby units up to 2 tiles away."
   },
   {
@@ -276,7 +276,7 @@
     "desc": "A spell that instantly kills frozen units in an area. If used on a boss, it instead removes Frozen to deal 15 damage and inflict Slow 2."
   },
   {
-    "name": "Forbidden Fulmination",
+    "name": "ForbiddenFulmination",
     "desc": "Strike all enemies with lightning, inflicting Stun. There will be permanent consequences for casting this spell…\n[s:.7](Castable once per battle.)[/s]"
   },
   {
@@ -292,7 +292,7 @@
     "desc": "Cast a fire/electric spell that inflicts Burn 2 and has a 30% chance to inflict Stun in an X shaped area."
   },
   {
-    "name": "Icicle Zapper",
+    "name": "IcicleZapper",
     "desc": "Shoot an ice/electric bolt in a straight line. It inflicts Slow 2, has a 25% chance to Stun and a 25% chance to Freeze."
   },
   {
@@ -300,7 +300,7 @@
     "desc": "Shoot 2 ice/electric bolts in a straight line. They inflict Slow 2, have a 25% chance to Stun and a 25% chance to Freeze."
   },
   {
-    "name": "Freezer Burn",
+    "name": "FreezerBurn",
     "desc": "Cast a fire/ice spell that inflicts Burn 2, Slow 2 and Knockback 2 on all units around you."
   },
   {
@@ -332,7 +332,7 @@
     "desc": "Inflict Burn 1 and +1 [img:spd] to any unit.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Fire Surge",
+    "name": "FireSurge",
     "desc": "A fire spell that increases its range, area, damage, and Burn by 1 every turn."
   },
   {
@@ -340,7 +340,7 @@
     "desc": "A fire spell that increases its range, area, damage, and Burn by 1 every turn. Starts stronger."
   },
   {
-    "name": "Ice Surge",
+    "name": "IceSurge",
     "desc": "An ice spell that increases its range and Slow every turn. At 2 turns, it gains Immobilize 1. At 3 turns, it gains Freeze 1.\n[s:.7](Current turns: {v0})[/s]"
   },
   {
@@ -348,7 +348,7 @@
     "desc": "An ice spell that increases its range, damage, and Slow every turn. At 2 turns, it gains Immobilize 1. At 3 turns, it gains Freeze 1.\n[s:.7](Current turns: {v0})[/s]"
   },
   {
-    "name": "Lightning Surge",
+    "name": "LightningSurge",
     "desc": "An electric spell that increases its range and damage by 2 every turn, and its stun chance by 10%."
   },
   {
@@ -372,7 +372,7 @@
     "desc": "Lose Damage equal to 1/3rd of your basic attack's damage, rounded up. For the rest of the battle, you can attack an extra time each turn.\n[s:.7](This can't be cast if your basic attack's damage is 1 or less.)[/s]"
   },
   {
-    "name": "Forbidden Frost",
+    "name": "ForbiddenFrost",
     "desc": "Apply Freeze 2 to each unit except for yourself and 1 other chosen unit.\nDeal 5 Damage to enemies and heal each ally 5 HP.\nThere will be permanent consequences for casting this spell…\n[s:.7](Castable once per battle.)[/s]"
   },
   {
@@ -380,11 +380,11 @@
     "desc": "Apply Freeze 2 to each unit except for yourself and 1 other chosen unit.\nDeal 10 Damage to enemies and fully heal each ally.\nThere will be permanent consequences for casting this spell…\n[s:.7](Castable once per battle.)[/s]"
   },
   {
-    "name": "Black Magic",
+    "name": "BlackMagic",
     "desc": "Drop to 1 HP. Gain mana equal to the HP lost.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
-    "name": "Black Magic",
+    "name": "BlackMagic",
     "desc": "Drop to 1 HP. Gain mana equal to the HP lost and gain All Stats Up 2.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
@@ -396,7 +396,7 @@
     "desc": "Reduce the cost of a unit's spells by 1 until the end of their turn. This can target yourself."
   },
   {
-    "name": "Homing Blasts",
+    "name": "HomingBlasts",
     "desc": "Shoot 3 Magic Missiles at random enemies."
   },
   {

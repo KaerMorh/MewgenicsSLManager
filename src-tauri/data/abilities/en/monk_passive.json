@@ -1,6 +1,6 @@
 [
   {
-    "name": "Safe Switching",
+    "name": "SafeSwitching",
     "desc": "When you switch stances, gain +2 [img:shield]."
   },
   {
@@ -24,7 +24,7 @@
     "desc": "Your basic melee attacks inflict Confusion 1, make units face away from you, and have a 20% chance to inflict Stun 1."
   },
   {
-    "name": "Monkey Style",
+    "name": "MonkeyStyle",
     "desc": "15% chance to block damage and counter-attack."
   },
   {
@@ -32,7 +32,7 @@
     "desc": "33% chance to block damage and counter-attack."
   },
   {
-    "name": "Brick Skin",
+    "name": "BrickSkin",
     "desc": "Any [img:shield] you gain is increased by 2."
   },
   {
@@ -40,7 +40,7 @@
     "desc": "Any [img:shield] you gain is increased by 2."
   },
   {
-    "name": "Jagged Edges",
+    "name": "JaggedEdges",
     "desc": "When you lose [img:shield], gain +1 Thorns."
   },
   {
@@ -48,7 +48,7 @@
     "desc": "When you lose [img:shield], gain that many Thorns."
   },
   {
-    "name": "Mind Breaker",
+    "name": "MindBreaker",
     "desc": "Your basic attack inflicts Magic Weakness 1."
   },
   {
@@ -56,7 +56,7 @@
     "desc": "Your basic attack inflicts Magic Weakness 2."
   },
   {
-    "name": "Cobra Style",
+    "name": "CobraStyle",
     "desc": "When an enemy moves into an adjacent tile, perform a weak melee attack on it."
   },
   {
@@ -72,7 +72,7 @@
     "desc": "Your basic melee attacks inflict Bruise 1 and have a 15% chance to inflict Stun 1."
   },
   {
-    "name": "Long Arms",
+    "name": "LongArms",
     "desc": "+1 Range and +1 Reach."
   },
   {
@@ -80,7 +80,7 @@
     "desc": "+1 Range and +1 Reach."
   },
   {
-    "name": "Spread the Pain",
+    "name": "SpreadthePain",
     "desc": "Deal 2 extra damage the first time you damage each unit each turn."
   },
   {
@@ -96,7 +96,7 @@
     "desc": "When you gain [img:shield], also gain temporary Brace 1.\nGain +1 [img:shield] when you hit a unit with your basic attack."
   },
   {
-    "name": "Iron Skin Technique",
+    "name": "IronSkinTechnique",
     "desc": "Gain +2 [img:shield] when you land a critical hit. +10% critical chance."
   },
   {
@@ -104,7 +104,7 @@
     "desc": "Gain +3 [img:shield] when you land a critical hit. +25% critical chance."
   },
   {
-    "name": "Jet Fists",
+    "name": "JetFists",
     "desc": "Your melee attacks and abilities blow wind through the tiles they hit."
   },
   {
@@ -112,7 +112,7 @@
     "desc": "Your melee attacks and abilities blow wind through the tiles they hit in a large cone."
   },
   {
-    "name": "Energy Fists",
+    "name": "EnergyFists",
     "desc": "Emit a Sparkle when you use your basic attack."
   },
   {
@@ -128,7 +128,7 @@
     "desc": "You're immune to knockback and debuffs."
   },
   {
-    "name": "Unburdened Motion",
+    "name": "UnburdenedMotion",
     "desc": "+1 [img:spd] and +10% dodge chance for each empty armor slot. If all of your armor slots are empty, you can use your movement action an extra time."
   },
   {
@@ -136,7 +136,7 @@
     "desc": "+2 [img:spd] and +15% dodge chance for each empty armor slot. If all of your armor slots are empty, you gain flying and can use your movement action an extra time."
   },
   {
-    "name": "Unburdened Strikes",
+    "name": "UnburdenedStrikes",
     "desc": "+10% critical hit chance and +25% critical hit damage for each empty armor slot. If all of your armor slots are empty, counter-attack whenever you get hit."
   },
   {
@@ -144,7 +144,7 @@
     "desc": "+10% critical hit chance and +25% critical hit damage for each empty armor slot. If all of your armor slots are empty your critical hits inflict bruise, and counter-attack whenever you get hit."
   },
   {
-    "name": "Unburdened Thoughts",
+    "name": "UnburdenedThoughts",
     "desc": "+1 [img:int] and +1 [img:cha] for each empty armor slot. If all of your armor slots are empty, your spells cost 1 less mana."
   },
   {
@@ -152,7 +152,7 @@
     "desc": "+1 [img:int], +1 [img:cha], and +1 Kinetic Spikes for each empty armor slot. If all of your armor slots are empty, you have +2 Magic Damage and your spells cost 1 less mana."
   },
   {
-    "name": "Running Jab",
+    "name": "RunningJab",
     "desc": "When you end your movement, automatically use your basic attack if an enemy is in range."
   },
   {
@@ -160,7 +160,7 @@
     "desc": "When you end your movement, automatically use your basic attack if an enemy is in range. You can move an extra time each turn."
   },
   {
-    "name": "Perfect Technique",
+    "name": "PerfectTechnique",
     "desc": "While in ranged stance, You have +1 Range and +2 Magic Damage. While in melee stance, you have +1 Brace."
   },
   {
@@ -168,7 +168,7 @@
     "desc": "While in ranged stance, You have +1 Range, +2 Kinetic Spikes, and +2 Magic Damage. While in melee stance, you have +2 Brace and +2 Health Regeneration."
   },
   {
-    "name": "Rapid Flow",
+    "name": "RapidFlow",
     "desc": "When you switch stances, do a spin attack that hits all adjacent units."
   },
   {
@@ -176,7 +176,7 @@
     "desc": "When you switch stances, do a double spin attack that hits all adjacent units."
   },
   {
-    "name": "Counter Barrage",
+    "name": "CounterBarrage",
     "desc": "When you take damage from an enemy attack, gain +1 Bonus Attack."
   },
   {
@@ -184,7 +184,7 @@
     "desc": "When you take damage from an enemy attack, gain +1 Bonus Attack and +1 Bonus Move."
   },
   {
-    "name": "Flow State",
+    "name": "FlowState",
     "desc": "When you deal damage to another unit, gain +1 [img:str] and +2 [img:dex] until the end of the turn."
   },
   {
@@ -192,7 +192,7 @@
     "desc": "When you deal damage to another unit, gain +2 [img:str], +2 [img:dex], and +2 [img:lck] until the end of the turn."
   },
   {
-    "name": "Dancing Lights",
+    "name": "DancingLights",
     "desc": "When you switch stances, for each empty armor slot, emit a Sparkle. If all slots are empty gain +1 to a random stat."
   },
   {

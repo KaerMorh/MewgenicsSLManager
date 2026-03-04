@@ -1,6 +1,6 @@
 [
   {
-    "name": "Take Aim",
+    "name": "TakeAim",
     "desc": "Gain +1 range and damage at the start of each turn. You lose this when you move."
   },
   {
@@ -8,7 +8,7 @@
     "desc": "Gain +2 range and damage at the start of each turn. You lose this when you move."
   },
   {
-    "name": "Tower Defense",
+    "name": "TowerDefense",
     "desc": "When an enemy comes within range, shoot them for 1 damage."
   },
   {
@@ -16,7 +16,7 @@
     "desc": "When an enemy comes within range, use your basic attack on them."
   },
   {
-    "name": "Hunter's Boon",
+    "name": "Hunter'sBoon",
     "desc": "When you kill an enemy, gain 5 mana."
   },
   {
@@ -24,7 +24,7 @@
     "desc": "When you kill an enemy, restore all your mana."
   },
   {
-    "name": "Brood Mother",
+    "name": "BroodMother",
     "desc": "Your familiars and units you charm gain +2 Damage and +5 HP."
   },
   {
@@ -32,7 +32,7 @@
     "desc": "Your familiars and units you charm gain +3 Damage, +10 HP, and inflict Poison."
   },
   {
-    "name": "Tainted Mother",
+    "name": "TaintedMother",
     "desc": "Your familiars and units you charm gain +4 [img:spd] and inflict Poison and Bleed."
   },
   {
@@ -48,7 +48,7 @@
     "desc": "Save unused basic attacks for future turns.\nIf you haven't attacked this battle, the number you save is doubled."
   },
   {
-    "name": "Split Shot",
+    "name": "SplitShot",
     "desc": "Your basic attack has +1 area but deals 50% less damage."
   },
   {
@@ -64,7 +64,7 @@
     "desc": "Tile damage and effects are doubled.\nAllies are immune to tile damage and effects."
   },
   {
-    "name": "Thorn Arrows",
+    "name": "ThornArrows",
     "desc": "Your basic attack spawns brambles."
   },
   {
@@ -80,7 +80,7 @@
     "desc": "Your basic attack spawns a bear trap if you shoot an empty tile.\nWhenever one of your traps triggers, gain +2 [img:dex] and +1 Bonus Attack."
   },
   {
-    "name": "Catch Projectiles",
+    "name": "CatchProjectiles",
     "desc": "33% chance to block enemy projectiles and a 100% chance to block allied projectiles. If you block a projectile, gain +1 Bonus Attack."
   },
   {
@@ -88,7 +88,7 @@
     "desc": "50% chance to block enemy projectiles and a 100% chance to block allied projectiles. If you block a projectile, gain +1 Bonus Attack and +1 All Stats Up."
   },
   {
-    "name": "Tricky Traps",
+    "name": "TrickyTraps",
     "desc": "Damage and effects from your traps are doubled."
   },
   {
@@ -96,7 +96,7 @@
     "desc": "Damage and effects from your traps are doubled.\nAllies don't trigger your traps."
   },
   {
-    "name": "Gravity Falls",
+    "name": "GravityFalls",
     "desc": "Your basic attack deals +1 damage for each tile you shoot beyond range 3."
   },
   {
@@ -120,7 +120,7 @@
     "desc": "Your basic attack and spells can target tiles adjacent to allies."
   },
   {
-    "name": "Luck Swing",
+    "name": "LuckSwing",
     "desc": "+50% critical hit chance but +25% chance to miss."
   },
   {
@@ -144,7 +144,7 @@
     "desc": "Critical hits deal +200% more damage and have a 33% chance to inflict Stun."
   },
   {
-    "name": "Rubber Arrows",
+    "name": "RubberArrows",
     "desc": "Your projectiles bounce to another enemy within 3 tiles."
   },
   {
@@ -152,7 +152,7 @@
     "desc": "Your projectiles bounce to another enemy within 4 tiles, twice!"
   },
   {
-    "name": "Talk to Animals",
+    "name": "TalktoAnimals",
     "desc": "Your basic attack inflicts Charm 5 the first time you use it each battle."
   },
   {
@@ -160,7 +160,7 @@
     "desc": "Your basic attack inflicts Charm 5 the first time you use it each battle.\nYour basic attack has a 25% chance to inflict Charm 1."
   },
   {
-    "name": "Animal Control",
+    "name": "AnimalControl",
     "desc": "Your basic attack causes units to immediately attack an enemy in range."
   },
   {
@@ -168,7 +168,7 @@
     "desc": "Your basic attack causes units to immediately attack an enemy in range. Your basic attack can heal allies."
   },
   {
-    "name": "Sleep Darts",
+    "name": "SleepDarts",
     "desc": "At the start of each battle, you and all allies that don't have weapons gains a temporary Sleep Dart."
   },
   {
@@ -192,7 +192,7 @@
     "desc": "At the end of your turn, spawn Flea familiars equal to the number of enemies you've killed this battle plus two."
   },
   {
-    "name": "Thrill of the Hunt",
+    "name": "ThrilloftheHunt",
     "desc": "At the end of each battle, if you killed at least 3 enemies, gain +1 [img:dex] permanently and find a random consumable item."
   },
   {

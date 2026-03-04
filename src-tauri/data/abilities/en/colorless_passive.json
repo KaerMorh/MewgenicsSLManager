@@ -8,7 +8,7 @@
     "desc": "Gain All Stats Up whenever you down a unit."
   },
   {
-    "name": "Luck Drain",
+    "name": "LuckDrain",
     "desc": "Gain +1 [img:lck] whenever a unit is downed."
   },
   {
@@ -52,7 +52,7 @@
     "desc": "+3 Corpse HP"
   },
   {
-    "name": "Metal Detector",
+    "name": "MetalDetector",
     "desc": "5% chance to spawn a coin when you move over a tile."
   },
   {
@@ -100,7 +100,7 @@
     "desc": "Damage you deal to other allies is reduced to 0. You cannot inflict debuffs on other allies.\nYou are careful in many other ways too."
   },
   {
-    "name": "Dirty Claws",
+    "name": "DirtyClaws",
     "desc": "Your physical attacks on Poisoned or Bleeding enemies inflict +1 Poison and/or Bleed."
   },
   {
@@ -108,7 +108,7 @@
     "desc": "Your basic attack inflicts Poison 1 and Bleed 1. \nYour physical attacks on Poisoned or Bleeding enemies inflict +1 Poison and/or Bleed."
   },
   {
-    "name": "Late Bloomer",
+    "name": "LateBloomer",
     "desc": "On your 5th turn, you gain All Stats Up 3."
   },
   {
@@ -124,7 +124,7 @@
     "desc": "Gain +1 [img:int] whenever you hit a new type of unit with an attack or ability. All enemies of that type become Marked."
   },
   {
-    "name": "Skill Share",
+    "name": "SkillShare",
     "desc": "Your other passive ability is shared with the other cats in your party at the start of each battle."
   },
   {
@@ -132,7 +132,7 @@
     "desc": "Your other passive ability is shared with the other cats in your party at the start of each battle. When breeding, your children will always inherit your other passive."
   },
   {
-    "name": "Natural Healing",
+    "name": "NaturalHealing",
     "desc": "You have +1 Health Regeneration"
   },
   {
@@ -148,7 +148,7 @@
     "desc": "+2 Range.\nYour ranged attacks have +25% critical hit chance."
   },
   {
-    "name": "Fast Footsies",
+    "name": "FastFootsies",
     "desc": "You are immune to negative tile effects."
   },
   {
@@ -180,7 +180,7 @@
     "desc": "+1 Magic Damage for every 3 [img:cha] you have."
   },
   {
-    "name": "Death Boon",
+    "name": "DeathBoon",
     "desc": "When you're downed, all allies gain All Stats Up."
   },
   {
@@ -188,7 +188,7 @@
     "desc": "When you're downed, all allies gain All Stats Up 2."
   },
   {
-    "name": "Santa Sangre",
+    "name": "SantaSangre",
     "desc": "When you're downed, allies heal 12 HP. Excess healing is converted to Shield."
   },
   {
@@ -212,7 +212,7 @@
     "desc": "Small enemies won't attack you.\nInflict Fear 1 on units that contact or attack you."
   },
   {
-    "name": "Animal Handler",
+    "name": "AnimalHandler",
     "desc": "You start each battle with a random vermin familiar with boosted damage and health."
   },
   {
@@ -228,7 +228,7 @@
     "desc": "When you damage an ally they gain +1 Damage and +1 [img:spd]."
   },
   {
-    "name": "Might of the Meek",
+    "name": "MightoftheMeek",
     "desc": "Damage you deal that's 2 or less is always critical."
   },
   {
@@ -276,7 +276,7 @@
     "desc": "Gain a half-sized copy of yourself that has 50% of your stats and quarter-sized copy that has 25% of your stats. The copies are AI controlled."
   },
   {
-    "name": "Bare Minimum",
+    "name": "BareMinimum",
     "desc": "Your stats can't go below 5."
   },
   {
@@ -292,7 +292,7 @@
     "desc": "Actions with a once per battle restriction can be cast once per turn instead.\nActions with a once per turn restriction have a 50% chance to be castable again."
   },
   {
-    "name": "Death's Door",
+    "name": "Death'sDoor",
     "desc": "While you're at 1 HP, your spells cost 1 mana, but can only be cast once per turn."
   },
   {
@@ -308,7 +308,7 @@
     "desc": "While at full HP, reduce the cost of your spells by 2, but take double damage.  This can't reduce mana costs to less than 1. When you cast a spell, heal 1 HP."
   },
   {
-    "name": "Serial Killer",
+    "name": "SerialKiller",
     "desc": "After you kill 3 units, gain +6 [img:spd] and backstabs have 100% crit chance."
   },
   {
@@ -316,7 +316,7 @@
     "desc": "After you kill 3 units, gain +6 [img:spd], backstabs have 100% crit chance, and gain an extra basic attack each turn."
   },
   {
-    "name": "Strength in Numbers",
+    "name": "StrengthinNumbers",
     "desc": "Your familiars have +1 Damage for each other familiar you have."
   },
   {
@@ -324,7 +324,7 @@
     "desc": "You and your familiars have +1 Damage for each other familiar you have."
   },
   {
-    "name": "Fighter's Soul",
+    "name": "Fighter'sSoul",
     "desc": "Fighter abilities are offered when you level up."
   },
   {
@@ -332,7 +332,7 @@
     "desc": "Fighter abilities are offered when you level up."
   },
   {
-    "name": "Hunter's Soul",
+    "name": "Hunter'sSoul",
     "desc": "Hunter abilities are offered when you level up."
   },
   {
@@ -340,7 +340,7 @@
     "desc": "Hunter abilities are offered when you level up."
   },
   {
-    "name": "Mage's Soul",
+    "name": "Mage'sSoul",
     "desc": "Mage abilities are offered when you level up."
   },
   {
@@ -348,7 +348,7 @@
     "desc": "Mage abilities are offered when you level up."
   },
   {
-    "name": "Cleric's Soul",
+    "name": "Cleric'sSoul",
     "desc": "Cleric abilities are offered when you level up."
   },
   {
@@ -356,7 +356,7 @@
     "desc": "Cleric abilities are offered when you level up."
   },
   {
-    "name": "Tank's Soul",
+    "name": "Tank'sSoul",
     "desc": "Tank abilities are offered when you level up."
   },
   {
@@ -364,7 +364,7 @@
     "desc": "Tank abilities are offered when you level up."
   },
   {
-    "name": "Thief's Soul",
+    "name": "Thief'sSoul",
     "desc": "Thief abilities are offered when you level up."
   },
   {
@@ -372,7 +372,7 @@
     "desc": "Thief abilities are offered when you level up."
   },
   {
-    "name": "Monk's Soul",
+    "name": "Monk'sSoul",
     "desc": "Monk abilities are offered when you level up."
   },
   {
@@ -380,7 +380,7 @@
     "desc": "Monk abilities are offered when you level up."
   },
   {
-    "name": "Butcher's Soul",
+    "name": "Butcher'sSoul",
     "desc": "Butcher abilities are offered when you level up."
   },
   {
@@ -388,7 +388,7 @@
     "desc": "Butcher abilities are offered when you level up."
   },
   {
-    "name": "Druid's Soul",
+    "name": "Druid'sSoul",
     "desc": "Druid abilities are offered when you level up."
   },
   {
@@ -396,7 +396,7 @@
     "desc": "Druid abilities are offered when you level up."
   },
   {
-    "name": "Tinkerer's Soul",
+    "name": "Tinkerer'sSoul",
     "desc": "Tinkerer abilities are offered when you level up."
   },
   {
@@ -404,7 +404,7 @@
     "desc": "Tinkerer abilities are offered when you level up."
   },
   {
-    "name": "Necromancer's Soul",
+    "name": "Necromancer'sSoul",
     "desc": "Necromancer abilities are offered when you level up."
   },
   {
@@ -412,7 +412,7 @@
     "desc": "Necromancer abilities are offered when you level up."
   },
   {
-    "name": "Psychic's Soul",
+    "name": "Psychic'sSoul",
     "desc": "Psychic abilities are offered when you level up."
   },
   {
@@ -428,7 +428,7 @@
     "desc": "You have a 40% chance to inflict Charm on units that damage you."
   },
   {
-    "name": "First Impression",
+    "name": "FirstImpression",
     "desc": "Start each battle with +1 Bonus Attack."
   },
   {
@@ -444,7 +444,7 @@
     "desc": "If your trinket slot is empty, equip a big consumable food item at the start of each battle."
   },
   {
-    "name": "Zenkai Boost",
+    "name": "ZenkaiBoost",
     "desc": "If you end battle with 1 HP, gain +1 to a random stat permanently and start the next battle at full HP with All Stats Up 3."
   },
   {
@@ -492,7 +492,7 @@
     "desc": "When you use your basic attack, turn around and use it again.\nYour basic attack inflicts Confusion 1."
   },
   {
-    "name": "Jester's Soul",
+    "name": "Jester'sSoul",
     "desc": "Abilities from any class are offered when you level up.\nYou can reroll your level up options twice."
   },
   {
@@ -524,7 +524,7 @@
     "desc": "Bleed you inflict is increased by 2."
   },
   {
-    "name": "Void Soul",
+    "name": "VoidSoul",
     "desc": "Only upgraded Collarless abilities are offered when you level up"
   },
   {

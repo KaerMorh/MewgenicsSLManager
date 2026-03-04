@@ -8,7 +8,7 @@
     "desc": "Your basic attack inflicts permanent Rot."
   },
   {
-    "name": "Never Full",
+    "name": "NeverFull",
     "desc": "You can heal over your max HP.\nExcess HP is lost between battles."
   },
   {
@@ -16,7 +16,7 @@
     "desc": "You can heal over your max HP.\nExcess HP is lost between battles.\nGain +1 [img:str] for every 5 HP you have over max HP."
   },
   {
-    "name": "Supersize Me!",
+    "name": "SupersizeMe!",
     "desc": "Food and scrap pickups you spawn are bigger."
   },
   {
@@ -24,7 +24,7 @@
     "desc": "Food and scrap pickups you spawn are max size."
   },
   {
-    "name": "Fresh Meat",
+    "name": "FreshMeat",
     "desc": "When you eat food, gain +1 [img:str]."
   },
   {
@@ -72,7 +72,7 @@
     "desc": "Your hook deals +5 damage and inflicts Bleed."
   },
   {
-    "name": "Grappling Hook",
+    "name": "GrapplingHook",
     "desc": "Your hook pulls you toward knockback-immune objects."
   },
   {
@@ -88,7 +88,7 @@
     "desc": "When you take damage, gain +1 Damage and +1 Temp Damage."
   },
   {
-    "name": "Spin to Win",
+    "name": "SpintoWin",
     "desc": "Your basic attack is a 3x3 tile spin attack with Cleave."
   },
   {
@@ -104,7 +104,7 @@
     "desc": "When you take damage, trample all the way to the source of damage."
   },
   {
-    "name": "Heave Hook",
+    "name": "HeaveHook",
     "desc": "Your hook can target tiles.\nUnits pulled by your hook gain trample while being hooked."
   },
   {
@@ -120,7 +120,7 @@
     "desc": "When an enemy moves in range, hook it. Your hook deals +2 Damage."
   },
   {
-    "name": "Lord of the Flies",
+    "name": "LordoftheFlies",
     "desc": "All flies are Charmed and get +1 Damage.\nWhenever you inflict Rot, you inflict +1 Rot."
   },
   {
@@ -144,7 +144,7 @@
     "desc": "Whenever you heal over your max HP, gain +1 [img:str] and +1 Weapon Damage."
   },
   {
-    "name": "Loose Meat",
+    "name": "LooseMeat",
     "desc": "When you take damage, spawn a food pickup."
   },
   {
@@ -160,7 +160,7 @@
     "desc": "Your basic attack is always critical against enemies with [img:shield].\nYour basic attack's critical hits remove buffs from units.\nYour critical hits deal +100% damage."
   },
   {
-    "name": "Bowling Ball",
+    "name": "BowlingBall",
     "desc": "Adjacent and diagonal allied cats get the bonus ability Bowl."
   },
   {
@@ -192,7 +192,7 @@
     "desc": "Whenever you heal over your max HP, spawn a rot fly with HP and damage equal to the excess healing."
   },
   {
-    "name": "Duke of Flies",
+    "name": "DukeofFlies",
     "desc": "At the end of the battle, all food pickups become allied flies.\nAllied flies stay with you between battles."
   },
   {

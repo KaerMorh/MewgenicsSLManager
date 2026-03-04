@@ -14,6 +14,7 @@ interface Props {
   borderColor?: string;
   showClear?: boolean;
   onClear?: () => void;
+  allowCustom?: boolean;
 }
 
 const SearchableSelect: React.FC<Props> = ({
@@ -24,6 +25,7 @@ const SearchableSelect: React.FC<Props> = ({
   borderColor = "#e2e8f0",
   showClear,
   onClear,
+  allowCustom,
 }) => {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
@@ -68,6 +70,20 @@ const SearchableSelect: React.FC<Props> = ({
     }
     return map;
   }, [filtered]);
+
+  const showCustomOption = useMemo(() => {
+    if (!allowCustom || !query.trim()) return false;
+    return !options.some((o) => o.value.toLowerCase() === query.trim().toLowerCase());
+  }, [allowCustom, query, options]);
+
+  const submitCustom = () => {
+    const v = query.trim();
+    if (v) {
+      onChange(v);
+      setOpen(false);
+      setQuery("");
+    }
+  };
 
   const displayLabel = useMemo(() => {
     if (!value) return "";
@@ -146,6 +162,12 @@ const SearchableSelect: React.FC<Props> = ({
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" && showCustomOption) {
+                e.preventDefault();
+                submitCustom();
+              }
+            }}
             placeholder={placeholder}
             style={{
               padding: "6px 8px",
@@ -160,7 +182,25 @@ const SearchableSelect: React.FC<Props> = ({
             onClick={(e) => e.stopPropagation()}
           />
           <div style={{ overflowY: "auto", flex: 1 }}>
-            {filtered.length === 0 && (
+            {showCustomOption && (
+              <div
+                onClick={() => submitCustom()}
+                style={{
+                  padding: "5px 8px",
+                  fontSize: 12,
+                  fontWeight: 800,
+                  cursor: "pointer",
+                  background: "#fffbeb",
+                  borderBottom: "2px solid #e2e8f0",
+                  color: "#b45309",
+                }}
+                onMouseEnter={(e) => { e.currentTarget.style.background = "#fef3c7"; }}
+                onMouseLeave={(e) => { e.currentTarget.style.background = "#fffbeb"; }}
+              >
+                ⏎ Use: <b>{query.trim()}</b>
+              </div>
+            )}
+            {filtered.length === 0 && !showCustomOption && (
               <div style={{ padding: "8px 10px", color: "#94a3b8", fontSize: 12, fontWeight: 800 }}>
                 No results
               </div>

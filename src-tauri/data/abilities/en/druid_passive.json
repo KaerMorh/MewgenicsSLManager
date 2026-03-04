@@ -1,6 +1,6 @@
 [
   {
-    "name": "Super Crow!",
+    "name": "SuperCrow!",
     "desc": "Your crow has its abilities upgraded."
   },
   {
@@ -8,7 +8,7 @@
     "desc": "Your crow has its abilities upgraded… Twice!"
   },
   {
-    "name": "Nature's Guidance",
+    "name": "Nature'sGuidance",
     "desc": "Allied familiars are immune to damage from tiles, knockback, thorns, and trample."
   },
   {
@@ -16,7 +16,7 @@
     "desc": "Allied familiars are immune to damage from tiles, knockback, thorns, and trample.\nFamiliars you spawn gain +1 Holy Shield."
   },
   {
-    "name": "Poison Ivy",
+    "name": "PoisonIvy",
     "desc": "You and familiar you spawn are Poisonous."
   },
   {
@@ -32,7 +32,7 @@
     "desc": "Grass tiles are free to move through for you and familiars you spawn. Gain +1 HP when moving through grass tiles. Plant grass as you walk."
   },
   {
-    "name": "Empty Vessels",
+    "name": "EmptyVessels",
     "desc": "Familiars you spawn have +3 Health Regeneration and +10 max health."
   },
   {
@@ -40,7 +40,7 @@
     "desc": "Familiars you spawn have +3 Health Regeneration and uncapped HP."
   },
   {
-    "name": "Wild Animals",
+    "name": "WildAnimals",
     "desc": "Familiars you spawn attack a random enemy within their range when they are spawned."
   },
   {
@@ -48,7 +48,7 @@
     "desc": "Familiars you spawn attack a random enemy within their range when they're spawned, then they take an extra turn."
   },
   {
-    "name": "Bark Skin",
+    "name": "BarkSkin",
     "desc": "+1 Brace.\nWhen you take damage, you get +1 temporary Brace until the start of your next turn."
   },
   {
@@ -56,7 +56,7 @@
     "desc": "+1 Brace.\nWhen you take damage, gain +2 temporary Brace and +2 temporary Thorns until the start of your next turn."
   },
   {
-    "name": "Love Song",
+    "name": "LoveSong",
     "desc": "Your basic action has +2 area, and heals 1 additional HP."
   },
   {
@@ -80,7 +80,7 @@
     "desc": "Spawn tall flower tiles under and around you at the end of your turn."
   },
   {
-    "name": "Good Vibrations",
+    "name": "GoodVibrations",
     "desc": "Allies have +1 Health Regeneration and +1 Mana Regeneration."
   },
   {
@@ -88,7 +88,7 @@
     "desc": "Allies have +2 Health Regeneration and +2 Mana Regeneration."
   },
   {
-    "name": "Versatile Vocalist",
+    "name": "VersatileVocalist",
     "desc": "Your basic action deals 1 damage to enemies, and inflicts temporary -1 Damage. Your basic attack wont apply debuffs to allies or buffs to enemies."
   },
   {
@@ -96,7 +96,7 @@
     "desc": "Your basic action has +1 area, deals 1 damage to enemies, and inflicts temporary -1 Damage. Your basic attack wont apply debuffs to allies or buffs to enemies."
   },
   {
-    "name": "Like a Fish",
+    "name": "LikeaFish",
     "desc": "Water tiles don't slow you down.\nGain +1 Holy Shield at the end of the turn if you're wet and have no Holy Shield.\nFamiliars you spawn also have this passive."
   },
   {
@@ -112,7 +112,7 @@
     "desc": "Your musical spells cost 1 less mana. When you use a musical ability, refresh your basic action."
   },
   {
-    "name": "Super Friends",
+    "name": "SuperFriends",
     "desc": "Familiars spawned by spells gain All Stats Up 2, but that spell gets disabled until the spawned familiars die."
   },
   {
@@ -120,7 +120,7 @@
     "desc": "Familiars spawned by spells gain All Stats Up 2, but that spell gets disabled until the spawned familiars die.\nYour spawning spells cost 50% less mana."
   },
   {
-    "name": "Sneak Attack",
+    "name": "SneakAttack",
     "desc": "Your spells that spawn familiars cost -3 mana.\nFamiliars spawned by your spells gain +2 Damage and +2 Movement, but die after their first turn."
   },
   {
@@ -128,7 +128,7 @@
     "desc": "Your spells that spawn familiars cost -3 mana.\nFamiliars spawned by your spells gain +4 Damage and +4 Movement, but die after their first turn."
   },
   {
-    "name": "Wild Style",
+    "name": "WildStyle",
     "desc": "The first time you shapeshift each turn, gain an extra turn."
   },
   {
@@ -136,7 +136,7 @@
     "desc": "The first time you shapeshift each turn, gain All Stats Up and an extra turn."
   },
   {
-    "name": "Buddy System",
+    "name": "BuddySystem",
     "desc": "When you lose [img:divineshield], your crow gains +1 [img:divineshield]. When your crow loses [img:divineshield], gain +1 [img:divineshield]."
   },
   {
@@ -144,7 +144,7 @@
     "desc": "When you lose [img:divineshield], all your familiars gain +1 [img:divineshield]. When your crow loses [img:divineshield], gain +1 [img:divineshield]."
   },
   {
-    "name": "Flower Power",
+    "name": "FlowerPower",
     "desc": "Units on flower tiles have +2 [img:str] and +2 Brace. When you move, plant flowers on the tile you moved from."
   },
   {
@@ -152,7 +152,7 @@
     "desc": "Units on flower tiles have +2 [img:str] and +2 Brace. When you move, plant flowers on all tiles you move through."
   },
   {
-    "name": "Suicide Squad",
+    "name": "SuicideSquad",
     "desc": "Your controllable familiars gain Self Destruct as their bonus ability."
   },
   {
@@ -168,7 +168,7 @@
     "desc": "Your bonus ability is Feral Attack."
   },
   {
-    "name": "Rap God",
+    "name": "RapGod",
     "desc": "Your basic action also gives temporary +4 [img:spd]."
   },
   {
@@ -192,7 +192,7 @@
     "desc": "Your musical spells cost 50% less mana.\nWhen you use a musical spell, heal 1 HP and gain +1 to a random stat."
   },
   {
-    "name": "Mega Minions",
+    "name": "MegaMinions",
     "desc": "Every 3rd familiar you spawn is upgraded into a Champion."
   },
   {

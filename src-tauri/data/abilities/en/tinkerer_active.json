@@ -24,7 +24,7 @@
     "desc": "Repair all uses to all of your or an adjacent unit's equipment."
   },
   {
-    "name": "Shoddy Jetpack",
+    "name": "ShoddyJetpack",
     "desc": "Fly to a random tile in a large area. If you land on a unit, explode dealing 5 damage in an area (including to yourself)."
   },
   {
@@ -32,7 +32,7 @@
     "desc": "Fly to any tile. If you land on a unit, explode dealing 5 damage in an area (including to yourself)."
   },
   {
-    "name": "Spawn Decoy",
+    "name": "SpawnDecoy",
     "desc": "Spawn a decoy that explodes when it dies."
   },
   {
@@ -48,7 +48,7 @@
     "desc": "Your next attack breaks your weapon, then gain +1 Tech and craft a weapon."
   },
   {
-    "name": "Spring Shoes",
+    "name": "SpringShoes",
     "desc": "Jump up to 2 tiles away."
   },
   {
@@ -76,7 +76,7 @@
     "desc": "Destroy your weapon to gain +1 Tech and refresh your basic action. This spell costs 1 mana if you haven't used your weapon this turn."
   },
   {
-    "name": "Build Turret",
+    "name": "BuildTurret",
     "desc": "Summon a turret."
   },
   {
@@ -84,7 +84,7 @@
     "desc": "Summon a rocket turret."
   },
   {
-    "name": "Rocket Skates",
+    "name": "RocketSkates",
     "desc": "Dash forward in a straight line then explode dealing damage in an area (including to yourself)."
   },
   {
@@ -92,11 +92,11 @@
     "desc": "Dash forward in a straight line then explode dealing damage in an larger area (including to yourself)."
   },
   {
-    "name": "Bombchu Dash",
+    "name": "BombchuDash",
     "desc": "Dash forward in a straight line then explode."
   },
   {
-    "name": "Drill Down",
+    "name": "DrillDown",
     "desc": "Dig to an open tile in a straight line."
   },
   {
@@ -104,7 +104,7 @@
     "desc": "Dig to a tile in a straight line. If you dig into a unit, explode dealing 5 damage in an area (including to yourself)."
   },
   {
-    "name": "Armor Up",
+    "name": "ArmorUp",
     "desc": "Craft a Tinkerer armor piece into one of your empty armor slots."
   },
   {
@@ -112,7 +112,7 @@
     "desc": "Craft a Tinkerer armor piece into one of your or an adjacent unit's empty armor slots."
   },
   {
-    "name": "Fresh off the Forge",
+    "name": "FreshofftheForge",
     "desc": "Gain +7 [img:shield] and Burn 3."
   },
   {
@@ -120,7 +120,7 @@
     "desc": "Give +7 [img:shield] and Burn 3 to yourself or an adjacent unit."
   },
   {
-    "name": "Electric Nail",
+    "name": "ElectricNail",
     "desc": "Summon a nail that arcs electricity to neighboring tiles whenever any unit spends mana."
   },
   {
@@ -184,7 +184,7 @@
     "desc": "Spawn a Bombchu bot in range 4.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Remote Detonator",
+    "name": "RemoteDetonator",
     "desc": "Explode a familiar, dealing 5 damage with knockback in an area."
   },
   {
@@ -192,7 +192,7 @@
     "desc": "Explode a familiar, dealing 5 damage with knockback in an area.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Short Circuit",
+    "name": "ShortCircuit",
     "desc": "Deal 1 electric damage with a random amount of knockback (up to 3) to all adjacent units."
   },
   {
@@ -208,7 +208,7 @@
     "desc": "Give your weapon +3 electric damage.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Eject Button",
+    "name": "EjectButton",
     "desc": "Explode and fly to a random tile at least four tiles away. This explosion damages you."
   },
   {
@@ -248,7 +248,7 @@
     "desc": "Spawn a Rubber Fist Bot within a large range."
   },
   {
-    "name": "Fast Hands",
+    "name": "FastHands",
     "desc": "Refresh your weapon and trinket actions (unless they gain you mana)."
   },
   {
@@ -256,7 +256,7 @@
     "desc": "Refresh your weapon and trinket actions (unless they gain you mana). Repair 1 use to all of your equipment."
   },
   {
-    "name": "Mech Punch",
+    "name": "MechPunch",
     "desc": "Dash-punch with Knockback 3."
   },
   {
@@ -272,7 +272,7 @@
     "desc": "Dash forward and light fires in your path."
   },
   {
-    "name": "Mech Suit",
+    "name": "MechSuit",
     "desc": "Summon a mech suit that can be piloted.\n[s:.7](Castable once per battle.)[/s]"
   },
   {
@@ -280,7 +280,7 @@
     "desc": "Summon a mech suit that can be piloted.\n[s:.7](Costs 0 mana. Castable once per battle.)[/s]"
   },
   {
-    "name": "Unreliable Shield Generator",
+    "name": "UnreliableShieldGenerator",
     "desc": "Gain +6 [img:shield] and +1 temporary Brace. This spell has a 75% chance to be disabled on each turn."
   },
   {
@@ -288,7 +288,7 @@
     "desc": "Get +6 [img:shield] and +1 temporary Brace. This spell has a 66% chance to be disabled on each turn.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Unreliable Missile Launcher",
+    "name": "UnreliableMissileLauncher",
     "desc": "Shoot an explosive homing missile at a random enemy. This spell has a 75% chance to be disabled on each turn."
   },
   {
@@ -296,7 +296,7 @@
     "desc": "Shoot an explosive homing missile at a random enemy. This spell has a 66% chance to be disabled on each turn.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Spare Parts",
+    "name": "SpareParts",
     "desc": "Destroy your weapon and gain one of the following: +2 [img:shield], +4 Charge, +1 Thorns, or 1 coin."
   },
   {
@@ -304,7 +304,7 @@
     "desc": "Destroy your weapon and gain one of the following: +4 [img:shield], +8 Charge, +2 Thorns, or 2 coins."
   },
   {
-    "name": "Split the Atom",
+    "name": "SplittheAtom",
     "desc": "Deal 50 damage to and inflict Burn 10 on all enemies. You can pay for this spell over multiple turns.\n[s:.7](This spell's mana cost can't be modified.)[/s]"
   },
   {
@@ -312,7 +312,7 @@
     "desc": "Deal 50 damage to and inflict Burn 10 on all enemies. You can pay for this spell over multiple turns.\nThis spell absorbs the mana you spend casting other spells.\n[s:.7](This spell's mana cost can't be modified.)[/s]"
   },
   {
-    "name": "Experimental Teleporter",
+    "name": "ExperimentalTeleporter",
     "desc": "Teleport to any tile. You have a 15% chance to equip a piece of Fly armor that breaks any armor pieces it replaces."
   },
   {
@@ -320,7 +320,7 @@
     "desc": "Teleport to any tile. You have a 15% chance to equip a piece of Fly armor that breaks any armor pieces it replaces.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Shock Therapy",
+    "name": "ShockTherapy",
     "desc": "Deal 1 electric damage to yourself or an adjacent unit. Cleanse debuffs from that unit, give it a random stat up, and a 25% chance to be Stunned."
   },
   {
@@ -328,7 +328,7 @@
     "desc": "Deal 1 electric damage to yourself or a unit in range 5. Cleanse debuffs from that unit, give it a random stat up, and a 25% chance to be Stunned."
   },
   {
-    "name": "Build Nuke",
+    "name": "BuildNuke",
     "desc": "Spawn a mini-nuke that makes a HUGE explosion when it dies."
   },
   {
@@ -336,7 +336,7 @@
     "desc": "Spawn a mini-nuke in range 4 that makes a HUGE explosion when it dies."
   },
   {
-    "name": "Instant Barrier",
+    "name": "InstantBarrier",
     "desc": "Gain +6 [img:shield].\nCastable only if you have no [img:shield]."
   },
   {
@@ -344,7 +344,7 @@
     "desc": "Gain +6 [img:shield].\nThis spell's mana cost is equal to your current [img:shield]."
   },
   {
-    "name": "Volt Tackle",
+    "name": "VoltTackle",
     "desc": "Teleport to anything that's electrically conductive. Displace units you teleport onto and deal electric damage to them."
   },
   {
@@ -360,7 +360,7 @@
     "desc": "Smash your weapon onto an adjacent unit, destroying it and dealing double its damage.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Shed Scrap",
+    "name": "ShedScrap",
     "desc": "Lose 1 [img:shield]. Spawn a junk pile."
   },
   {
@@ -368,15 +368,15 @@
     "desc": "Lose 1 [img:shield]. Spawn a junk pile in range 2."
   },
   {
-    "name": "Repair Armor",
+    "name": "RepairArmor",
     "desc": "Lose all [img:shield], then gain [img:shield] equal to your equipment's starting [img:shield]."
   },
   {
-    "name": "Repair Armor",
+    "name": "RepairArmor",
     "desc": "Lose all [img:shield], then give [img:shield] equal to your equipment's starting [img:shield] to yourself or another ally."
   },
   {
-    "name": "Rocket Ride",
+    "name": "RocketRide",
     "desc": "Jump to any open tile. Explode when you land. (This explosion also damages you.)"
   },
   {
@@ -392,11 +392,11 @@
     "desc": "Spawn a vacuum bot that collects pickups and shares their effects with your whole team."
   },
   {
-    "name": "Give drugs!",
+    "name": "Givedrugs!",
     "desc": ""
   },
   {
-    "name": "Nurse Bot",
+    "name": "NurseBot",
     "desc": "Spawn a nurse bot that heals allies."
   },
   {
@@ -404,7 +404,7 @@
     "desc": "Spawn a nurse bot that heals allies.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Tesla Coil",
+    "name": "TeslaCoil",
     "desc": "Spawn a tesla coil that shoots lightning bolts at random units with a small chance to inflict Stun."
   },
   {
@@ -412,7 +412,7 @@
     "desc": "Spawn a tesla coil in range 7 that shoots lightning bolts at random units with a small chance to inflict Stun."
   },
   {
-    "name": "Refine Materials",
+    "name": "RefineMaterials",
     "desc": "Collect a pickup in range 3. Instead of its normal effect, gain +1 Tech."
   },
   {

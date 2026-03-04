@@ -8,7 +8,7 @@
     "desc": "Start with 1 Tech.\nYour Tech can't drop below 1.\nYour Tech isn't removed when you craft."
   },
   {
-    "name": "Weapon Proficiency",
+    "name": "WeaponProficiency",
     "desc": "Your weapon damage scales with your stats and counts as a basic attack."
   },
   {
@@ -16,7 +16,7 @@
     "desc": "Your weapon damage scales with your stats and counts as a basic attack.\nYou can use your weapon an extra time each turn."
   },
   {
-    "name": "Living Battery",
+    "name": "LivingBattery",
     "desc": "When an adjacent ally spends mana, gain that much mana."
   },
   {
@@ -24,7 +24,7 @@
     "desc": "When an adjacent ally spends mana, gain that much mana. You have no mana cap."
   },
   {
-    "name": "Fuzzy Feet",
+    "name": "FuzzyFeet",
     "desc": "When you end your movement, deal 1 Electric Damage to all adjacent units for each tile you moved."
   },
   {
@@ -32,7 +32,7 @@
     "desc": "When you end your movement, deal 1 Electric Damage to all adjacent units for each tile you moved. This damage has a chance to inflict Stun."
   },
   {
-    "name": "Armor Specialist",
+    "name": "ArmorSpecialist",
     "desc": "Your equipment passive effects are doubled."
   },
   {
@@ -48,7 +48,7 @@
     "desc": "Your explosions are Electric element and deal +1 damage.\nInstead of knockback, explosions have a chance to inflict Stun. Your explosions don't affect allies."
   },
   {
-    "name": "Mr. Mega",
+    "name": "Mr.Mega",
     "desc": "Your explosions are larger and deal +1 damage."
   },
   {
@@ -56,7 +56,7 @@
     "desc": "Your explosions are larger and deal +2 damage.\nYou have explosion immunity."
   },
   {
-    "name": "Escape Sequence",
+    "name": "EscapeSequence",
     "desc": "When you take damage, explode and get launched to a random tile. This explosion doesn't damage you."
   },
   {
@@ -64,7 +64,7 @@
     "desc": "When you take damage, explode with a large blast radious and get launched to a random tile. This explosion doesn't damage you."
   },
   {
-    "name": "Item Proxy",
+    "name": "ItemProxy",
     "desc": "You need one fewer piece of equipment to get set bonuses."
   },
   {
@@ -72,7 +72,7 @@
     "desc": "You need two fewer pieces of equipment to get set bonuses."
   },
   {
-    "name": "Lightning Rod",
+    "name": "LightningRod",
     "desc": "You have Electric immunity.\nElectric damage you deal is increased by 1. Gain 1 charge when you are hit with electric damage."
   },
   {
@@ -80,7 +80,7 @@
     "desc": "You have Electric immunity.\nElectric damage you deal is increased by 2. Gain 1 charge for each damage prevented when you are hit with electric damage."
   },
   {
-    "name": "IT'S ALIVE!",
+    "name": "IT'SALIVE!",
     "desc": "Hitting a body with electric damage revives it with 1 HP. The revived corpse is charmed and takes an extra turn, then dies."
   },
   {
@@ -96,7 +96,7 @@
     "desc": "When you cast a spell, your weapon gets +1 Damage.\nEvery third spell you cast, repair 1 use to your weapon."
   },
   {
-    "name": "Reactive Armor",
+    "name": "ReactiveArmor",
     "desc": "When you take damage, craft a Tinkerer weapon or armor piece and equip it in an empty slot."
   },
   {
@@ -120,7 +120,7 @@
     "desc": "Find an extra item at the end of each battle.\nWhen you use up a consumable or trinket, equip a new consumable from your inventory if you have any."
   },
   {
-    "name": "Demo Man",
+    "name": "DemoMan",
     "desc": "Always craft a bomb at Tech 1 or less."
   },
   {
@@ -128,7 +128,7 @@
     "desc": "Always craft a bomb at Tech 1 or less. You can use your basic action an additional time on each of your turns."
   },
   {
-    "name": "Duct Tape",
+    "name": "DuctTape",
     "desc": "Items you craft stay with you between battles, but become cursed."
   },
   {
@@ -136,7 +136,7 @@
     "desc": "Items you craft stay with you between battles."
   },
   {
-    "name": "Armored Plating",
+    "name": "ArmoredPlating",
     "desc": "Robots you spawn gain the stats and [img:shield] of your equipped armor."
   },
   {
@@ -144,7 +144,7 @@
     "desc": "Robots you spawn gain the stats, [img:shield] and passive effects of your equipped armor."
   },
   {
-    "name": "Booby Trap",
+    "name": "BoobyTrap",
     "desc": "When an item you have equipped breaks, it explodes!"
   },
   {
@@ -152,7 +152,7 @@
     "desc": "When an item you have equipped breaks, it explodes with bonus damage!"
   },
   {
-    "name": "Robot Arms",
+    "name": "RobotArms",
     "desc": "You can use your weapon an additional time each turn."
   },
   {

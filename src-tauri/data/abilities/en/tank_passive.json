@@ -8,7 +8,7 @@
     "desc": "Thorns 4.\nGain +1 Thorns when you take damage."
   },
   {
-    "name": "Heavy Handed",
+    "name": "HeavyHanded",
     "desc": "+2 Knockback Damage."
   },
   {
@@ -16,7 +16,7 @@
     "desc": "+3 Knockback Damage.\nYour basic attack gains +3 Knockback."
   },
   {
-    "name": "Slack Off",
+    "name": "SlackOff",
     "desc": "If you end your turn with unused movement actions, gain 8 HP."
   },
   {
@@ -40,7 +40,7 @@
     "desc": ""
   },
   {
-    "name": "Thunder Thighs",
+    "name": "ThunderThighs",
     "desc": "Trample."
   },
   {
@@ -56,7 +56,7 @@
     "desc": "When you knock back a unit, leave a rock where that unit was.\nAll damage you deal has +1 Knockback."
   },
   {
-    "name": "Pet Rocks",
+    "name": "PetRocks",
     "desc": "Rocks you spawn are alive!!\n...and have +3 HP. Spawn a rock at the start of the battle."
   },
   {
@@ -64,7 +64,7 @@
     "desc": "Rocks you spawn are alive, and hot!!\n...and have +7 HP. Spawn a boulder at the start of the battle."
   },
   {
-    "name": "Toad Style",
+    "name": "ToadStyle",
     "desc": "Your movement action is a jump. Landing on a unit deals damage and displaces it."
   },
   {
@@ -72,7 +72,7 @@
     "desc": "Your movement action is a jump. Landing on a unit deals damage and displaces it."
   },
   {
-    "name": "Chain Knockback",
+    "name": "ChainKnockback",
     "desc": "Your basic attack gains +1 Knockback.\nUnits you knockback will Knockback other units."
   },
   {
@@ -96,7 +96,7 @@
     "desc": "Your basic attack is Suplex while you're next to a unit that can be suplexed and Your basic attack becomes Suplex when adjacent to enemies. +1 Bonus Move.\nYou gain the ability Toss+."
   },
   {
-    "name": "Mountain Form",
+    "name": "MountainForm",
     "desc": "Knockback immunity.\nTiles you walk over become dirt and may spawn rocks."
   },
   {
@@ -104,7 +104,7 @@
     "desc": "Trample. Knockback and Fire immunity.\nTiles you walk over become dirt and may spawn rocks."
   },
   {
-    "name": "Home Run",
+    "name": "HomeRun",
     "desc": "Knockback you deal is increased by 10."
   },
   {
@@ -112,7 +112,7 @@
     "desc": "Knockback you deal is increased by 10 and inflicts Bruise 1."
   },
   {
-    "name": "Rock Aspect",
+    "name": "RockAspect",
     "desc": "Units that attack or contact you have a 10% chance to get Petrified."
   },
   {
@@ -120,7 +120,7 @@
     "desc": "Units that attack or contact you have a 20% chance to get Petrified."
   },
   {
-    "name": "Wide Load",
+    "name": "WideLoad",
     "desc": "When an adjacent ally is targeted by an enemy, swap places with the ally."
   },
   {
@@ -128,7 +128,7 @@
     "desc": "When an adjacent ally is targeted by an enemy, gain +1 temp Thorns and temp Brace, then swap places with the ally."
   },
   {
-    "name": "Hard Head",
+    "name": "HardHead",
     "desc": "You block attacks from the front."
   },
   {
@@ -136,7 +136,7 @@
     "desc": "You block attacks from the front. Your basic attack inflicts Bruise."
   },
   {
-    "name": "My Leg!",
+    "name": "MyLeg!",
     "desc": "All injuries you get are Broken Legs.\nIf you have four broken legs, gain +4 Thorns, Trample, and adjacent allies have Toss as a bonus ability."
   },
   {
@@ -152,7 +152,7 @@
     "desc": "Heal to full HP at the start of each battle. +3 Health Regeneration."
   },
   {
-    "name": "Slow and Steady",
+    "name": "SlowandSteady",
     "desc": "Gain -2 [img:spd] and +1 Range at the end of each turn. If your [img:spd] is 0, you can attack an extra time each turn."
   },
   {
@@ -160,7 +160,7 @@
     "desc": "Gain -2 [img:spd], +1 Range, +1 [img:str], and +1 [img:int] at the end of each turn. If your [img:spd] is 0, you can attack an extra time each turn."
   },
   {
-    "name": "Follow Up",
+    "name": "FollowUp",
     "desc": "After you use your basic attack, dash forward as far as you can."
   },
   {
@@ -176,7 +176,7 @@
     "desc": "You can throw adjacent allies to any tile on their turns without using their movement action."
   },
   {
-    "name": "Shoving Match",
+    "name": "ShovingMatch",
     "desc": "When you knock a unit into an ally, or knock an ally into an enemy, that ally uses their basic attack on the other unit.\nYour basic attack has +1 Knockback."
   },
   {
@@ -192,7 +192,7 @@
     "desc": "If you end your turn with unused movement actions, gain +2 Bonus Moves, +2 [img:shield] and +1 Brace."
   },
   {
-    "name": "Priority Target",
+    "name": "PriorityTarget",
     "desc": "Enemies will attack you instead of your allies if they can."
   },
   {

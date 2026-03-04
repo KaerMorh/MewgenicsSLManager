@@ -133,6 +133,7 @@ const AbilitySelector: React.FC<Props> = ({
         showClear={!!value}
         onClear={() => onChange(null)}
         onChange={(v) => onChange(v || null)}
+        allowCustom
       />
     </div>
   );

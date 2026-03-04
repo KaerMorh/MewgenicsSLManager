@@ -16,7 +16,7 @@
     "desc": "A melee attack that inflicts Stun.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Throw Scrap",
+    "name": "ThrowScrap",
     "desc": "Give +3 [img:shield] to a unit or spawn a scrap pickup on an empty tile."
   },
   {
@@ -24,7 +24,7 @@
     "desc": "Give +3 [img:shield] to units in an area and spawn scrap pickups on the empty tiles in that area."
   },
   {
-    "name": "Chew Cud",
+    "name": "ChewCud",
     "desc": "Heal yourself."
   },
   {
@@ -32,7 +32,7 @@
     "desc": "Heal yourself more."
   },
   {
-    "name": "Ass Blast",
+    "name": "AssBlast",
     "desc": "Knock back units in an area near you 2 tiles."
   },
   {
@@ -48,7 +48,7 @@
     "desc": "A melee attack with Lifesteal that inflicts Bleed 2 and ignores shield."
   },
   {
-    "name": "Batter Up",
+    "name": "BatterUp",
     "desc": "Knock a unit back 10 tiles."
   },
   {
@@ -100,7 +100,7 @@
     "desc": "Throw your crippled friend to any tile.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
-    "name": "Belly Flop",
+    "name": "BellyFlop",
     "desc": "Jump to a tile and Immobilize anything you land on."
   },
   {
@@ -116,7 +116,7 @@
     "desc": "Jump to a tile and damage what you land on."
   },
   {
-    "name": "Trample Dash",
+    "name": "TrampleDash",
     "desc": "Dash forward with Trample, then spawn a rock."
   },
   {
@@ -132,7 +132,7 @@
     "desc": "Swap positions with any unit."
   },
   {
-    "name": "To the Rescue!",
+    "name": "TotheRescue!",
     "desc": "Jump to a tile adjacent to an ally. Damage and displace any units you land on."
   },
   {
@@ -156,7 +156,7 @@
     "desc": "Deal more damage in a cone with a 20% chance to Petrify. Has a chance to spawn rocks.\n[s:.7](This spell spawns rocks.)[/s]"
   },
   {
-    "name": "Rock Toss",
+    "name": "RockToss",
     "desc": "Throw a rock with a 10% chance to Stun."
   },
   {
@@ -164,11 +164,11 @@
     "desc": "Throw a rock with a 33% chance to Stun."
   },
   {
-    "name": "Barbed Wire",
+    "name": "BarbedWire",
     "desc": "Give a unit +5 Thorns until your next turn.\n[s:.7](You can target yourself.)[/s]"
   },
   {
-    "name": "Barbed Wire",
+    "name": "BarbedWire",
     "desc": "Give a unit or object +5 Thorns until your next turn.\n[s:.7](You can target yourself.)[/s]"
   },
   {
@@ -180,7 +180,7 @@
     "desc": "Force an enemy anywhere to move towards you.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Bowl Over",
+    "name": "BowlOver",
     "desc": "Trample over one tile diagonally."
   },
   {
@@ -196,7 +196,7 @@
     "desc": "Knock 2 enemies in front of you together with +2 knockback damage."
   },
   {
-    "name": "Rock Song",
+    "name": "RockSong",
     "desc": "Levitate all rocks. They will automatically fling towards enemies that end movement in line with them."
   },
   {
@@ -204,7 +204,7 @@
     "desc": "Levitate all rocks. They will automatically fling towards enemies that end movement in line with them.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Rock Crusher",
+    "name": "RockCrusher",
     "desc": "Jump on top of a rock, exploding it. Deal damage and knock back all adjacent units."
   },
   {
@@ -212,7 +212,7 @@
     "desc": "Jump on top of a rock, exploding it. Deal high damage and knock back all adjacent units."
   },
   {
-    "name": "Body Guard",
+    "name": "BodyGuard",
     "desc": "The next time an ally is targeted by an enemy, switch places with that ally."
   },
   {
@@ -236,7 +236,7 @@
     "desc": "Dash 10 tiles, damage, inflict Bruise and throw what you hit towards your original tile."
   },
   {
-    "name": "Rock Blast",
+    "name": "RockBlast",
     "desc": "Shoot a rock forward."
   },
   {
@@ -244,7 +244,7 @@
     "desc": "Shoot a rock forward with Chain Knockback.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Rock Tomb",
+    "name": "RockTomb",
     "desc": "Damage and Petrify a unit within 3 tiles of you."
   },
   {
@@ -268,7 +268,7 @@
     "desc": "Pull all units in a wide line towards the center of that line. This has a 15% chance to Petrify and spawns rocks."
   },
   {
-    "name": "Big Rock",
+    "name": "BigRock",
     "desc": "Drop a boulder on an adjacent tile, damaging and displacing units it lands on."
   },
   {
@@ -276,7 +276,7 @@
     "desc": "Drop a boulder on an adjacent tile, damaging, Stunning and displacing units it lands on."
   },
   {
-    "name": "Flip Flop",
+    "name": "FlipFlop",
     "desc": "Jump up to 3 tiles away, damage units you land on, then gain -1 [img:spd].\n[s:.7](This spell's mana cost is equal to your [img:spd].\nAt 0 [img:spd], this spell is Castable once per turn.)[/s]"
   },
   {
@@ -300,7 +300,7 @@
     "desc": "Push a unit back 10 tiles.\n[s:.7](This spell costs 0 mana the first time it's used each turn.)[/s]"
   },
   {
-    "name": "Stone Breath",
+    "name": "StoneBreath",
     "desc": "Inflict Petrify on the first unit in a line."
   },
   {
@@ -308,7 +308,7 @@
     "desc": "Inflict Petrify and Knockback on the first unit in a line.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Gorgon Glare",
+    "name": "GorgonGlare",
     "desc": "Inflict Petrify on all units in your line of sight."
   },
   {
@@ -324,15 +324,15 @@
     "desc": "Gain +4 Brace until the next time you move.\nBonus Passive: Knockback immunity."
   },
   {
-    "name": "Eat Rock",
+    "name": "EatRock",
     "desc": "Eat a rock to gain +5 [img:shield] and +1 [img:str]."
   },
   {
-    "name": "Eat Rock",
+    "name": "EatRock",
     "desc": "Eat a rock to gain +5 [img:shield] and All Stats Up."
   },
   {
-    "name": "Plant Your Feet",
+    "name": "PlantYourFeet",
     "desc": "Gain +5 [img:shield] and -1 [img:spd]. \nIf you are at 0 [img:spd], instead cleanse all of your debuffs.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
@@ -340,7 +340,7 @@
     "desc": "Gain +6 [img:shield] and -1 [img:spd].\nIf you are at 0 [img:spd], instead cleanse all of your debuffs and gain All Stats Up.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
-    "name": "Iron Head",
+    "name": "IronHead",
     "desc": "Dash forward up to 3 tiles, gain +4 [img:shield] then damage and knock back adjacent units."
   },
   {
@@ -348,7 +348,7 @@
     "desc": "Dash forward up to 10 tiles, gain +4 [img:shield] then damage and knock back adjacent units with +5 knockback damage."
   },
   {
-    "name": "Gang Up",
+    "name": "GangUp",
     "desc": "Toss a unit to an empty tile within 3 tiles of you, then your allies attack it if they can."
   },
   {
@@ -372,7 +372,7 @@
     "desc": "Gain +99 Brace until your next turn, then disable this spell until you take a total of 15 damage."
   },
   {
-    "name": "Fault Line",
+    "name": "FaultLine",
     "desc": "Fling all units in a straight line onto nearby tiles."
   },
   {
@@ -396,7 +396,7 @@
     "desc": "Get flung to a tile and deal damage to anything you land on.\nThis doesn't use up your movement action."
   },
   {
-    "name": "Push Through",
+    "name": "PushThrough",
     "desc": "Trample over 2 tiles in a straight line destroying any inanimate objects."
   },
   {
@@ -420,7 +420,7 @@
     "desc": "Heal 15 HP, gain -2 [img:spd] and +5 Health Regeneration.\n[s:.7](Castable once per battle.)[/s]"
   },
   {
-    "name": "Full Force",
+    "name": "FullForce",
     "desc": "Deal damage equal to your [img:con] and inflict Stun. Also stuns yourself."
   },
   {

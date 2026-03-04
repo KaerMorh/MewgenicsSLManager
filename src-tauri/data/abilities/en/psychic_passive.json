@@ -8,7 +8,7 @@
     "desc": "You have Flying Movement. When you use a Gravity element ability gain +2 [img:spd].\nGravity element spells cost -2 mana."
   },
   {
-    "name": "Soul Shatter",
+    "name": "SoulShatter",
     "desc": "When you kill a unit, deal 1 damage to all enemies."
   },
   {
@@ -32,7 +32,7 @@
     "desc": "50% chance to teleport to a random tile when targeted by an enemy."
   },
   {
-    "name": "Full Power",
+    "name": "FullPower",
     "desc": "While at full mana, your basic attack deals triple damage and has +3 Knockback."
   },
   {
@@ -40,7 +40,7 @@
     "desc": "While at full mana, your basic attack deals triple damage and has +3 Knockback.\nBonus Ability: Grow Head."
   },
   {
-    "name": "Reality Shatter",
+    "name": "RealityShatter",
     "desc": "Gravity element abilities spawn Floating Glass."
   },
   {
@@ -48,7 +48,7 @@
     "desc": "Gravity element abilities spawn Floating Glass and inflict Bleed 1."
   },
   {
-    "name": "Mental Storm",
+    "name": "MentalStorm",
     "desc": "Gain +1 Charge when you cast a spell."
   },
   {
@@ -72,7 +72,7 @@
     "desc": "Gravity element abilities do not harm allies. Gravity element abilities give a random positive status effect when used on allies. When you inflict a positive status effect, inflict +2 of that status effect."
   },
   {
-    "name": "Psy Smack",
+    "name": "PsySmack",
     "desc": "Knockback damage you and your allies deal is doubled."
   },
   {
@@ -88,7 +88,7 @@
     "desc": "Your basic attack has +4 Knockback and Chain Knockback."
   },
   {
-    "name": "Mind Tempest",
+    "name": "MindTempest",
     "desc": "After every sixth spell you cast, gain All Stats Up and +1 Magic Damage."
   },
   {
@@ -112,7 +112,7 @@
     "desc": "You can see EVERYTHING. Line of sight restrictions are ignored."
   },
   {
-    "name": "Psionic Repel",
+    "name": "PsionicRepel",
     "desc": "Units that attack or contact you get knocked back 10 tiles."
   },
   {
@@ -128,7 +128,7 @@
     "desc": "While at full mana, all of your spells are free to cast once a turn."
   },
   {
-    "name": "Mad Visage",
+    "name": "MadVisage",
     "desc": "All injuries you get are Disfigured.\nWhile at full mana, your basic action inflicts Madness.\nWhile you have 0 or less [img:cha] you can attack an additional time each turn."
   },
   {
@@ -136,7 +136,7 @@
     "desc": "All injuries you get are Disfigured.\nUnits that contact or attack you get Madness.\nWhile at full mana, your basic attack inflicts Madness.\nWhile at 0 [img:cha] you can attack 2 additional times each turn."
   },
   {
-    "name": "Power Up",
+    "name": "PowerUp",
     "desc": "When you gain excess mana, gain +1 Magic Damage and +1 [img:int]."
   },
   {
@@ -144,7 +144,7 @@
     "desc": "When you gain excess mana, gain +1 Magic Damage, +1 [img:int]. and +1 [img:divineshield]."
   },
   {
-    "name": "True Sight",
+    "name": "TrueSight",
     "desc": "You and your allies can't miss enemies within your line of sight."
   },
   {
@@ -160,7 +160,7 @@
     "desc": "When you gain excess mana, emit that many Sparkles and remove all your debuffs."
   },
   {
-    "name": "Gravity Well",
+    "name": "GravityWell",
     "desc": "When a unit is knocked through a tile adjacent to you, stop it and inflict Stun."
   },
   {
@@ -184,7 +184,7 @@
     "desc": "Start each battle with +5 Bonus Attacks. Your basic attack deals 0 damage, but you can use it 2 additional times each turn."
   },
   {
-    "name": "Repressed Memories",
+    "name": "RepressedMemories",
     "desc": "When you spend mana, cast a random Psychic spell that costs less than the mana spent."
   },
   {
@@ -192,7 +192,7 @@
     "desc": "When you spend mana, cast a random spell from any class that costs less than the mana spent."
   },
   {
-    "name": "Eldritch Visage",
+    "name": "EldritchVisage",
     "desc": "At the start of your turn, inflict Magic Weakness 1 on all enemies in your line of sight."
   },
   {

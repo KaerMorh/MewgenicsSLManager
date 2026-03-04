@@ -8,7 +8,7 @@
     "desc": "Your backstabs are always critical.\nWhen you land a critical hit, gain a random stat up."
   },
   {
-    "name": "Golden Claws",
+    "name": "GoldenClaws",
     "desc": "Gain +1 Damage for each coin you collect."
   },
   {
@@ -24,7 +24,7 @@
     "desc": "Start each battle with Stealth. Gain Stealth when you get a kill."
   },
   {
-    "name": "Poison Tips",
+    "name": "PoisonTips",
     "desc": "Your basic attack inflicts Poison 1."
   },
   {
@@ -48,7 +48,7 @@
     "desc": "When you kill a unit, refresh your movement and basic attack."
   },
   {
-    "name": "Long Stride",
+    "name": "LongStride",
     "desc": "+1 movement range."
   },
   {
@@ -56,7 +56,7 @@
     "desc": "+2 movement range.\n+10% dodge chance."
   },
   {
-    "name": "Double Throw",
+    "name": "DoubleThrow",
     "desc": "Your basic attack hits twice for half damage."
   },
   {
@@ -64,7 +64,7 @@
     "desc": "Your basic attack hits thrice for 1/3rd damage."
   },
   {
-    "name": "Bounty Hunter",
+    "name": "BountyHunter",
     "desc": "During your turn, one random enemy has a Bounty."
   },
   {
@@ -72,7 +72,7 @@
     "desc": "During your turn, 2 random enemies have a large Bounty."
   },
   {
-    "name": "Razor Claws",
+    "name": "RazorClaws",
     "desc": "Your basic attack inflicts Bleed 1."
   },
   {
@@ -80,7 +80,7 @@
     "desc": "All of your damaging abilities inflict Bleed 1."
   },
   {
-    "name": "Swift Looter",
+    "name": "SwiftLooter",
     "desc": "When you collect a coin pickup, refresh your movement action.\n1-2 extra coins spawn in each battle."
   },
   {
@@ -88,7 +88,7 @@
     "desc": "When you collect a coin pickup, refresh your movement action and gain +1 [img:dex] and +1 [img:spd].\n2-3 extra coins spawn in each battle."
   },
   {
-    "name": "First Strike",
+    "name": "FirstStrike",
     "desc": "Gain an extra turn at the start of the battle."
   },
   {
@@ -104,7 +104,7 @@
     "desc": "Your movement action is Shadowstep.\nYou can use your movement action an extra time each turn."
   },
   {
-    "name": "Weak Spot",
+    "name": "WeakSpot",
     "desc": "Your basic attack ignores shield and inflicts Weakness 1."
   },
   {
@@ -120,7 +120,7 @@
     "desc": "Your basic attack passes through units and ignores shield. +10 Range."
   },
   {
-    "name": "After Image",
+    "name": "AfterImage",
     "desc": "When you move, spawn a shadow where you moved from. The shadow mimics your basic action but fades away at the end of your turn."
   },
   {
@@ -144,7 +144,7 @@
     "desc": "Your critical hits deal +100% more damage and inflict Bleed and Weakness 1.  Gain +1 [img:lck] whenever you make a critical hit."
   },
   {
-    "name": "Loot Hoarder",
+    "name": "LootHoarder",
     "desc": "Automatically collect all pickups at the end of the battle if you're not downed."
   },
   {
@@ -176,7 +176,7 @@
     "desc": "When behind and adjacent to an enemy, your basic attack is a melee attack that hits thrice!"
   },
   {
-    "name": "Flip a Coin",
+    "name": "FlipaCoin",
     "desc": "When you gain a coin, you have a 50% chance to spawn a coin on a random tile and a 50% chance to gain +2 [img:spd] and +2 [img:lck]."
   },
   {
@@ -184,7 +184,7 @@
     "desc": "When you gain a coin, you have a 50% chance to spawn 2 coins on random tiles and a 50% chance to gain +2 [img:spd], +2 [img:lck] and +2 [img:dex]."
   },
   {
-    "name": "Shake Down",
+    "name": "ShakeDown",
     "desc": "Your critical hits spawn a coin and a random pickup."
   },
   {

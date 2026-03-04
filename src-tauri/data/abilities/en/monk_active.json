@@ -24,11 +24,11 @@
     "desc": "Roll up to 4 tiles diagonally or in a straight line."
   },
   {
-    "name": "Stone Fists",
+    "name": "StoneFists",
     "desc": "Gain [img:str] and [img:dex] equal to your [img:shield] until the end of your turn."
   },
   {
-    "name": "Stone Fists",
+    "name": "StoneFists",
     "desc": "Convert your [img:shield] to [img:str] and [img:dex] for the rest of the battle."
   },
   {
@@ -40,7 +40,7 @@
     "desc": "Cleanse your debuffs and gain +1 [img:shield]. At the end of each round, automatically cast this spell for free."
   },
   {
-    "name": "Hip Toss",
+    "name": "HipToss",
     "desc": "Throw a random adjacent unit two tiles away, dealing damage to it."
   },
   {
@@ -80,7 +80,7 @@
     "desc": "Gain +8 [img:shield] and knock back adjacent units two tiles. This spell costs 3 mana less and grants 1 extra [img:shield] for each action you've taken this turn.\n[s:.7](Castable once per turn.)[/s]"
   },
   {
-    "name": "Combo Throw",
+    "name": "ComboThrow",
     "desc": "A melee attack with Knockback 3. When this hits, switch into ranged stance and refresh your basic attack."
   },
   {
@@ -88,7 +88,7 @@
     "desc": "A melee attack with Knockback 3. When this hits, switch into ranged stance and refresh your basic attack.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Combo Pull",
+    "name": "ComboPull",
     "desc": "A ranged attack that pulls the unit it hits toward you. When this hits, switch into melee stance and refresh your basic attack."
   },
   {
@@ -96,7 +96,7 @@
     "desc": "A ranged attack that pulls the unit it hits toward you. When this hits, switch into melee stance and refresh your basic attack.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "One With the Wind",
+    "name": "OneWiththeWind",
     "desc": "Gain +20 Movement Range until the end of the turn."
   },
   {
@@ -112,7 +112,7 @@
     "desc": "Jump to a tile. Bounce off any unit you land on, damaging and Bruising that unit."
   },
   {
-    "name": "Way of the Mantis",
+    "name": "WayoftheMantis",
     "desc": "For the rest of the battle, you can attack an extra time each turn."
   },
   {
@@ -136,7 +136,7 @@
     "desc": "Gain +1 [img:shield]. This spell costs 0 mana the first time you cast it each turn, and after each time you spend mana on another spell."
   },
   {
-    "name": "Deep Dive",
+    "name": "DeepDive",
     "desc": "Become downed. You don't get injured. At the end of the next round, you're revived with 1 HP, 15 [img:shield], and All Stats Up."
   },
   {
@@ -144,7 +144,7 @@
     "desc": "Become downed. You don't get injured. At the end of the next round, you're revived with 50% HP, 20 [img:shield], 2 [img:divineshield], and All Stats Up 2."
   },
   {
-    "name": "Hop n' Block",
+    "name": "Hopn'Block",
     "desc": "Jump to a tile, then gain +2 [img:shield] for each enemy adjacent to the tile you land on."
   },
   {
@@ -152,7 +152,7 @@
     "desc": "Jump to any tile, then gain +2 [img:shield] for each enemy adjacent to the tile you land on."
   },
   {
-    "name": "Way of the Owl",
+    "name": "WayoftheOwl",
     "desc": "For the rest of the battle, the first spell you cast each turn is cast twice."
   },
   {
@@ -168,7 +168,7 @@
     "desc": "Heal yourself for 8 HP and gain +8 Shield, All Stats Up 2, and Drowsy 8.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Five Point Palm Exploding Heart Technique",
+    "name": "FivePointPalmExplodingHeartTechnique",
     "desc": "A melee attack that causes a unit to die at the end of its next turn. Bosses fall asleep at the end of their next turn instead."
   },
   {
@@ -176,7 +176,7 @@
     "desc": "A melee attack that causes a unit to die at the end of its next turn. Bosses fall asleep at the end of their next turn instead.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Ki Burst",
+    "name": "KiBurst",
     "desc": "Deal 1 damage and knockback adjacent units. Gain +1 [img:shield]."
   },
   {
@@ -184,7 +184,7 @@
     "desc": "Deal 2 damage and knockback adjacent units 2 tiles. Gain +2 [img:shield]."
   },
   {
-    "name": "Dragon Punch",
+    "name": "DragonPunch",
     "desc": "A magic damage melee attack with knockback 3 that inflicts Confusion."
   },
   {
@@ -192,7 +192,7 @@
     "desc": "A strong magic damage melee attack with knockback 10 that inflicts Confusion."
   },
   {
-    "name": "Way of the Hare",
+    "name": "WayoftheHare",
     "desc": "For the rest of the battle, you can move an extra time each turn."
   },
   {
@@ -200,7 +200,7 @@
     "desc": "For the rest of the battle, you can move an extra time each turn.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Really Fast Run",
+    "name": "ReallyFastRun",
     "desc": "Run in a straight line up to 4 tiles, through objects. Wind blows over tiles you run through."
   },
   {
@@ -208,7 +208,7 @@
     "desc": "Run diagonally or in a straight line any distance, through objects. Wind blows over tiles you run through."
   },
   {
-    "name": "Ocular Pat Down",
+    "name": "OcularPatDown",
     "desc": "Inflict Marked and Magic Weakness 1 on a unit."
   },
   {
@@ -216,7 +216,7 @@
     "desc": "Inflict Marked 3 and Magic Weakness 3 on a unit."
   },
   {
-    "name": "Hundred Hand Slap",
+    "name": "HundredHandSlap",
     "desc": "A ten-hit multi-strike melee attack with Knockback 10 at the end of the combo."
   },
   {
@@ -224,7 +224,7 @@
     "desc": "A ten-hit multi-strike melee attack with Knockback 10 at the end of the combo. Each hit has a 10% chance to inflict Bruise. The final hit deals extra damage."
   },
   {
-    "name": "Kinetic Charge",
+    "name": "KineticCharge",
     "desc": "Gain +1 temporary Kinetic Spikes."
   },
   {
@@ -232,7 +232,7 @@
     "desc": "Gain +2 temporary Kinetic Spikes."
   },
   {
-    "name": "Air Burst",
+    "name": "AirBurst",
     "desc": "A burst of air that knocks back units diagonally from the target."
   },
   {
@@ -240,7 +240,7 @@
     "desc": "A large burst of air that knocks back units diagonally from the target."
   },
   {
-    "name": "Way of the Turtle",
+    "name": "WayoftheTurtle",
     "desc": "Gain +1 Brace."
   },
   {
@@ -248,7 +248,7 @@
     "desc": "Gain +1 Brace.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Release Energy",
+    "name": "ReleaseEnergy",
     "desc": "Emit 10 Sparkles."
   },
   {
@@ -264,7 +264,7 @@
     "desc": "A melee attack that does 4 more damage each time you use it on the same turn. This attack inflicts all status effects your basic attack does.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Quick Attack",
+    "name": "QuickAttack",
     "desc": "Teleport, then use your basic attack on an enemy within range. This spell's range is increased by 2 for each empty armor slot you have."
   },
   {
@@ -272,7 +272,7 @@
     "desc": "Teleport, then use your basic attack on an enemy within range. This spell's range is increased by 2 for each empty armor slot you have.\n[s:.7](This spell costs less.)[/s]"
   },
   {
-    "name": "Perfect Form",
+    "name": "PerfectForm",
     "desc": "Gain +1 [img:shield] for each empty armor slot you have, then switch stances."
   },
   {
@@ -280,7 +280,7 @@
     "desc": "Gain +1 [img:shield] and heal 1 HP for each empty armor slot you have, then switch stances."
   },
   {
-    "name": "Warm Up Stretch",
+    "name": "WarmUpStretch",
     "desc": "Gain +1 [img:dex], and +1 [img:spd]. This spell costs 2 mana less for each empty armor slot you have."
   },
   {
@@ -288,7 +288,7 @@
     "desc": "Gain +1 [img:dex], +1 [img:spd] and +1 [img:str]. This spell costs 2 mana less for each empty armor slot you have."
   },
   {
-    "name": "Flying Fist",
+    "name": "FlyingFist",
     "desc": "A melee attack with knockback that hits two tiles away from you. This spell's range is increased by 1 each time you use it on the same turn."
   },
   {
@@ -296,7 +296,7 @@
     "desc": "A melee attack with knockback that hits two tiles away from you. This spell's range is increased by 1 and mana cost decreased by 1 each time you use it on the same turn."
   },
   {
-    "name": "Charge Spirit Bomb",
+    "name": "ChargeSpiritBomb",
     "desc": "Begin charging a spirit bomb. This ability becomes Throw Spirit Bomb.\nAllies gain the bonus ability Donate Energy until you throw it."
   },
   {
@@ -304,11 +304,11 @@
     "desc": "Begin charging a spirit bomb. This ability becomes Throw Spirit Bomb.\nAllies gain the bonus ability Donate Energy+ until you throw it."
   },
   {
-    "name": "Throw Spirit Bomb",
+    "name": "ThrowSpiritBomb",
     "desc": "Throw the Spirit Bomb, then this ability becomes Charge Spirit Bomb.\n[s:.7](Cannot be thrown with 0 charges.)[/s]"
   },
   {
-    "name": "Donate Energy",
+    "name": "DonateEnergy",
     "desc": "Give +1 damage to the Spirit Bomb!"
   },
   {
@@ -316,15 +316,15 @@
     "desc": "Give +2 damage to the Spirit Bomb!"
   },
   {
-    "name": "One Punch",
+    "name": "OnePunch",
     "desc": "A one-hit kill punch. Gain All Stats Down on use.\nThis deals 25 damage to bosses instead of killing them.\n[s:.7](Castable once per battle.)[/s]"
   },
   {
-    "name": "One Punch",
+    "name": "OnePunch",
     "desc": "A one-hit kill punch. It causes a cone of wind that deals 5 damage. Gain All Stats Down on use.\nThis deals 25 damage to bosses instead of killing them.\n[s:.7](Castable once per battle.)[/s]"
   },
   {
-    "name": "Unbridled Hits",
+    "name": "UnbridledHits",
     "desc": "A weak melee attack that hits an extra time for each empty armor slot you have."
   },
   {
@@ -348,7 +348,7 @@
     "desc": "Move one tile and gain +1 [img:shield].\nThis spell costs 0 mana the first time you cast it each turn."
   },
   {
-    "name": "Unimpeded Lunge",
+    "name": "UnimpededLunge",
     "desc": "Dash forward X spaces, gain +X [img:shield], deal X damage, and deal X knockback.\nX is equal to the number of empty armor slots you have plus one."
   },
   {
@@ -356,7 +356,7 @@
     "desc": "Dash forward X spaces, gain +X [img:shield], deal X damage, and deal X knockback.\nX is equal to twice the number of empty armor slots you have."
   },
   {
-    "name": "Double Dragon",
+    "name": "DoubleDragon",
     "desc": "Summon a 1 HP illusion of yourself within three tiles that mimics your basic attack, but in the opposite direction of you. It dies at the end of your turn."
   },
   {
@@ -364,7 +364,7 @@
     "desc": "Summon a 1 HP illusion of yourself on any tile that mimics your basic attack, but in the opposite direction of you. It dies at the end of your turn."
   },
   {
-    "name": "Fist of Fate",
+    "name": "FistofFate",
     "desc": "Teleport next to a random enemy, then switch to melee stance and automatically attack it."
   },
   {
@@ -380,7 +380,7 @@
     "desc": "Gain +1 [img:int] and +2 [img:shield].\nIf you have 7 or more [img:shield], this spell costs 1 mana less."
   },
   {
-    "name": "Empty Mind",
+    "name": "EmptyMind",
     "desc": "You can't cast spells for the rest of the battle.\nFor the rest of the battle, whenever you kill an enemy, take an extra turn."
   },
   {
@@ -396,7 +396,7 @@
     "desc": "Teleport two to four tiles away, then switch stances."
   },
   {
-    "name": "Charge Fists",
+    "name": "ChargeFists",
     "desc": "Until end of turn, your basic attack emits +1 Sparkle."
   },
   {
@@ -404,7 +404,7 @@
     "desc": "Until end of turn, your basic attack emits +1 Sparkle.\nRefresh your basic attack."
   },
   {
-    "name": "Summon Apprentice",
+    "name": "SummonApprentice",
     "desc": "Summon a half-sized copy of yourself with half your stats. It's AI-controlled and can't use spells."
   },
   {

@@ -8,7 +8,7 @@
     "desc": "Your basic attack has lifesteal.\nYour spells have 50% lifesteal."
   },
   {
-    "name": "One With Nothing",
+    "name": "OneWithNothing",
     "desc": "If you end your turn with 0 mana, your Mana Regeneration is doubled."
   },
   {
@@ -16,7 +16,7 @@
     "desc": "If you end your turn with 0 mana, your Mana Regeneration is doubled.\nBonus ability: Slit Wrists"
   },
   {
-    "name": "Bed Bugs",
+    "name": "BedBugs",
     "desc": "You start battles with 2 beefy leech familiars."
   },
   {
@@ -24,7 +24,7 @@
     "desc": "You start battles with 4 beefy leech familiars."
   },
   {
-    "name": "Worm Lord",
+    "name": "WormLord",
     "desc": "When you take damage, spawn a leech familiar."
   },
   {
@@ -32,7 +32,7 @@
     "desc": "When you take damage, spawn a leech familiar.\nYour basic attack spawns leech familiars."
   },
   {
-    "name": "Infinite Rebirth",
+    "name": "InfiniteRebirth",
     "desc": "At the end of each round, if there is a body on the map and you're downed, you respawn on that tile with 1 HP and +10 temporary Speed. If that body was a party member, you spawn with full HP instead."
   },
   {
@@ -40,7 +40,7 @@
     "desc": "At the end of each round, if there is a body on the map and you're downed, you respawn on that tile with 25% HP and +10 temporary Speed. If that body was a party member, you spawn with full HP instead."
   },
   {
-    "name": "Sacrificial Lamb",
+    "name": "SacrificialLamb",
     "desc": "When you're downed, allies gain All Stats Up and take an extra turn."
   },
   {
@@ -48,7 +48,7 @@
     "desc": "When you're downed, allies gain All Stats Up and take an extra turn.\nYou can't get injuries."
   },
   {
-    "name": "Servus Mortem",
+    "name": "ServusMortem",
     "desc": "Destroy a random non-boss enemy at the start of each battle."
   },
   {
@@ -56,7 +56,7 @@
     "desc": "Destroy a random enemy at the start of each battle. If this hits a boss, deal 50 damage instead."
   },
   {
-    "name": "Offload Pain",
+    "name": "OffloadPain",
     "desc": "When you heal, deal 1 damage to each enemy."
   },
   {
@@ -64,7 +64,7 @@
     "desc": "When you heal, deal 2 damage to each enemy and you gain +1 Thorns."
   },
   {
-    "name": "Cambion Conception",
+    "name": "CambionConception",
     "desc": "When you're downed, spawn a demon kitten familiar."
   },
   {
@@ -72,7 +72,7 @@
     "desc": "When you're downed, spawn 2 demon kitten familiars."
   },
   {
-    "name": "Leech Mother",
+    "name": "LeechMother",
     "desc": "Your basic attack spawns a leech familiar."
   },
   {
@@ -88,7 +88,7 @@
     "desc": "When you down a unit, reanimate it with full HP."
   },
   {
-    "name": "Last Grasp",
+    "name": "LastGrasp",
     "desc": "When you're downed, deal 6 damage to each enemy and heal 6 HP to all allies.\nBonus ability: Seppuku"
   },
   {
@@ -96,7 +96,7 @@
     "desc": "When you're downed, deal 10 damage to each enemy and heal 10 HP to all allies.\nBonus ability: Seppuku"
   },
   {
-    "name": "Relentless Dead",
+    "name": "RelentlessDead",
     "desc": "At the end of each round, spawn a zombie kitten familiar onto a random tile."
   },
   {
@@ -104,7 +104,7 @@
     "desc": "At the end of each round, spawn 2 zombie kitten familiars onto random tiles."
   },
   {
-    "name": "Chains of Guilt",
+    "name": "ChainsofGuilt",
     "desc": "When an enemy downs you and it wasn't a boss, it joins your party permanently."
   },
   {
@@ -112,7 +112,7 @@
     "desc": "When an enemy downs you and it wasn't a boss, it joins your party permanently. If it was a boss, inflict Stun 3 on it."
   },
   {
-    "name": "Dark Priest",
+    "name": "DarkPriest",
     "desc": "At the start of each battle, if you don't have a weapon, gain a temporary Soul Dagger weapon."
   },
   {
@@ -128,7 +128,7 @@
     "desc": "When you're downed, reanimate each ally to max HP. (Once per battle.)"
   },
   {
-    "name": "Numbing Leeches",
+    "name": "NumbingLeeches",
     "desc": "Your basic attack deals 0 damage but its status and hit effects are tripled."
   },
   {
@@ -136,7 +136,7 @@
     "desc": "Your basic attack deals 0 damage, but its status and hit effects are tripled.\nYour basic attack inflicts Mana Leech."
   },
   {
-    "name": "Eternal Health",
+    "name": "EternalHealth",
     "desc": "Suffer only Jinxed when downed. When your party wins a battle, if you were downed, heal to full."
   },
   {
@@ -152,7 +152,7 @@
     "desc": "While you're downed, your basic attack is Haunt and your spells are Spook. Your body gains +6 corpse HP."
   },
   {
-    "name": "Soul Bond",
+    "name": "SoulBond",
     "desc": "Your basic attack inflicts Soul Link."
   },
   {
@@ -168,7 +168,7 @@
     "desc": "Your basic attack inflicts -1[img:lck] and has a 15% chance to inflict Fear.\nWhen a unit damages you, inflict -1[img:lck] and a 15% to Fear on it."
   },
   {
-    "name": "Immortal Leeches",
+    "name": "ImmortalLeeches",
     "desc": "When a unit you inflicted Leeches on dies or loses its leeches, your next basic attack inflicts that many additional leeches."
   },
   {
@@ -176,7 +176,7 @@
     "desc": "When a unit you inflicted Leeches on dies or loses its leeches, your next basic attack inflicts that many additional leeches.\nYour basic attack inflicts +1 leech."
   },
   {
-    "name": "Corpse Connoisseur",
+    "name": "CorpseConnoisseur",
     "desc": "Start each battle with 2-3 corpses near you.\nWhen you destroy a corpse, heal 2 HP and spawn a food pickup."
   },
   {
@@ -192,7 +192,7 @@
     "desc": "When you gain health, spawn a leech familiar. 50% of the time, spawn a beefy leech instead."
   },
   {
-    "name": "Spread Sorrow",
+    "name": "SpreadSorrow",
     "desc": "When you inflict a debuff to an enemy, inflict that same debuff on another random enemy."
   },
   {
