@@ -2,7 +2,7 @@ use serde::{Deserialize, Serialize};
 use std::fs;
 use std::path::{Path, PathBuf};
 
-const APP_NAME: &str = "MeowLoader";
+const APP_NAME: &str = "MewgenicsSLManager";
 
 pub const SLOT_FILES: &[(&str, i32)] = &[
     ("steamcampaign01.sav", 1),

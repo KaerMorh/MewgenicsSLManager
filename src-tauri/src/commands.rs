@@ -59,8 +59,23 @@ pub fn copy_backup(src_path: String, backup_dir: String) -> Result<String, Strin
 }
 
 #[tauri::command]
-pub fn delete_backup(path: String) -> Result<bool, String> {
-    backup_manager::delete_backup(&path)
+pub fn delete_backup(path: String, backup_dir: String) -> Result<bool, String> {
+    backup_manager::delete_backup(&path, &backup_dir)
+}
+
+#[tauri::command]
+pub fn list_trash(backup_dir: String) -> Vec<backup_manager::TrashEntry> {
+    backup_manager::list_trash(&backup_dir)
+}
+
+#[tauri::command]
+pub fn restore_from_trash(trash_path: String, backup_dir: String) -> Result<String, String> {
+    backup_manager::restore_from_trash(&trash_path, &backup_dir)
+}
+
+#[tauri::command]
+pub fn clear_trash(backup_dir: String) -> Result<usize, String> {
+    backup_manager::clear_trash(&backup_dir)
 }
 
 #[tauri::command]
@@ -119,6 +134,32 @@ pub fn open_in_explorer(path: String) -> Result<(), String> {
     {
         std::process::Command::new("xdg-open")
             .arg(&path)
+            .spawn()
+            .map_err(|e| e.to_string())?;
+    }
+    Ok(())
+}
+
+#[tauri::command]
+pub fn open_url(url: String) -> Result<(), String> {
+    #[cfg(target_os = "windows")]
+    {
+        std::process::Command::new("cmd")
+            .args(["/C", "start", "", &url])
+            .spawn()
+            .map_err(|e| e.to_string())?;
+    }
+    #[cfg(target_os = "macos")]
+    {
+        std::process::Command::new("open")
+            .arg(&url)
+            .spawn()
+            .map_err(|e| e.to_string())?;
+    }
+    #[cfg(target_os = "linux")]
+    {
+        std::process::Command::new("xdg-open")
+            .arg(&url)
             .spawn()
             .map_err(|e| e.to_string())?;
     }

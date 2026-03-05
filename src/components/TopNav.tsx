@@ -1,4 +1,5 @@
 import React from "react";
+import { invoke } from "@tauri-apps/api/core";
 import { useI18n } from "../i18n";
 
 interface TopNavProps {
@@ -42,8 +43,18 @@ const TopNav: React.FC<TopNavProps> = ({
           >
             🐱
           </span>
-          <span style={{ fontWeight: 900, fontSize: 24, marginLeft: 4 }}>
-            MeowLoader
+          <span
+            style={{
+              fontWeight: 900,
+              fontSize: 24,
+              marginLeft: 4,
+              cursor: "pointer",
+            }}
+            onClick={() => invoke("open_url", { url: "https://github.com/KaerMorh/MewgenicsSLManager" })}
+            onMouseEnter={(e) => (e.currentTarget.style.textDecoration = "underline")}
+            onMouseLeave={(e) => (e.currentTarget.style.textDecoration = "none")}
+          >
+            MewgenicsSLManager
           </span>
         </div>
 

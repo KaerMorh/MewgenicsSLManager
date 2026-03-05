@@ -262,11 +262,132 @@ pub fn copy_backup(src_path: &str, backup_dir: &str) -> Result<String, String> {
     Ok(dst.to_string_lossy().to_string())
 }
 
-pub fn delete_backup(path: &str) -> Result<bool, String> {
-    match fs::remove_file(path) {
-        Ok(_) => Ok(true),
-        Err(e) => Err(e.to_string()),
+const TRASH_DIR_NAME: &str = ".trash";
+const TRASH_MAX: usize = 10;
+
+pub fn delete_backup(path: &str, backup_dir: &str) -> Result<bool, String> {
+    let src = Path::new(path);
+    if !src.is_file() {
+        return Err("File not found".to_string());
     }
+    let trash_dir = Path::new(backup_dir).join(TRASH_DIR_NAME);
+    fs::create_dir_all(&trash_dir).map_err(|e| e.to_string())?;
+
+    let filename = src
+        .file_name()
+        .unwrap_or_default()
+        .to_string_lossy()
+        .to_string();
+    let dst = trash_dir.join(&filename);
+    // If a file with same name exists in trash, remove it first
+    if dst.exists() {
+        let _ = fs::remove_file(&dst);
+    }
+    fs::rename(src, &dst).or_else(|_| {
+        // rename may fail across drives; fall back to copy+delete
+        fs::copy(src, &dst).and_then(|_| fs::remove_file(src))
+    }).map_err(|e| e.to_string())?;
+
+    // Enforce max trash size: keep only the newest TRASH_MAX files
+    enforce_trash_limit(&trash_dir);
+
+    Ok(true)
+}
+
+fn enforce_trash_limit(trash_dir: &Path) {
+    let mut files: Vec<(PathBuf, std::time::SystemTime)> = Vec::new();
+    if let Ok(rd) = fs::read_dir(trash_dir) {
+        for entry in rd.flatten() {
+            let p = entry.path();
+            if p.is_file() {
+                let mtime = fs::metadata(&p)
+                    .and_then(|m| m.modified())
+                    .unwrap_or(std::time::UNIX_EPOCH);
+                files.push((p, mtime));
+            }
+        }
+    }
+    if files.len() <= TRASH_MAX {
+        return;
+    }
+    // Sort newest first
+    files.sort_by(|a, b| b.1.cmp(&a.1));
+    // Remove oldest beyond limit
+    for (path, _) in &files[TRASH_MAX..] {
+        let _ = fs::remove_file(path);
+    }
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct TrashEntry {
+    pub path: String,
+    pub filename: String,
+    pub deleted_time: String,
+}
+
+pub fn list_trash(backup_dir: &str) -> Vec<TrashEntry> {
+    let trash_dir = Path::new(backup_dir).join(TRASH_DIR_NAME);
+    if !trash_dir.is_dir() {
+        return vec![];
+    }
+    let mut entries = Vec::new();
+    if let Ok(rd) = fs::read_dir(&trash_dir) {
+        for entry in rd.flatten() {
+            let p = entry.path();
+            if !p.is_file() {
+                continue;
+            }
+            let filename = p.file_name().unwrap_or_default().to_string_lossy().to_string();
+            let mtime = fs::metadata(&p)
+                .and_then(|m| m.modified())
+                .ok()
+                .and_then(|t| {
+                    let dur = t.duration_since(std::time::UNIX_EPOCH).ok()?;
+                    DateTime::from_timestamp(dur.as_secs() as i64, 0)
+                })
+                .map(|dt| dt.format("%Y-%m-%dT%H:%M:%S").to_string())
+                .unwrap_or_default();
+            entries.push(TrashEntry {
+                path: p.to_string_lossy().to_string(),
+                filename,
+                deleted_time: mtime,
+            });
+        }
+    }
+    // Sort newest first
+    entries.sort_by(|a, b| b.deleted_time.cmp(&a.deleted_time));
+    entries
+}
+
+pub fn restore_from_trash(trash_path: &str, backup_dir: &str) -> Result<String, String> {
+    let src = Path::new(trash_path);
+    if !src.is_file() {
+        return Err("File not found in trash".to_string());
+    }
+    let filename = src.file_name().unwrap_or_default().to_string_lossy().to_string();
+    let dst = avoid_collision(backup_dir, &filename);
+    fs::rename(src, &dst).or_else(|_| {
+        fs::copy(src, &dst).and_then(|_| fs::remove_file(src))
+    }).map_err(|e| e.to_string())?;
+    Ok(dst.to_string_lossy().to_string())
+}
+
+pub fn clear_trash(backup_dir: &str) -> Result<usize, String> {
+    let trash_dir = Path::new(backup_dir).join(TRASH_DIR_NAME);
+    if !trash_dir.is_dir() {
+        return Ok(0);
+    }
+    let mut count = 0;
+    if let Ok(rd) = fs::read_dir(&trash_dir) {
+        for entry in rd.flatten() {
+            let p = entry.path();
+            if p.is_file() {
+                fs::remove_file(&p).map_err(|e| e.to_string())?;
+                count += 1;
+            }
+        }
+    }
+    Ok(count)
 }
 
 pub fn list_backups(backup_dir: &str, slot: i32) -> Vec<BackupEntry> {

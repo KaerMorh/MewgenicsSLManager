@@ -173,11 +173,22 @@ const BackupList: React.FC<BackupListProps> = ({
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            gap: 8,
+            gap: 6,
             flexShrink: 0,
             paddingTop: 4,
+            flexWrap: "wrap",
           }}
         >
+          {totalPages > 10 && (
+            <button
+              className="btn-small white"
+              style={{ padding: "6px 10px", fontSize: 12 }}
+              disabled={safePage < 10}
+              onClick={() => { setPage(Math.max(0, safePage - 10)); setExpandedIdx(null); }}
+            >
+              {t("list.jumpBack10")}
+            </button>
+          )}
           <button
             className="btn-small white"
             style={{ padding: "6px 12px", fontSize: 13 }}
@@ -187,27 +198,43 @@ const BackupList: React.FC<BackupListProps> = ({
             {t("list.prevPage")}
           </button>
 
-          {Array.from({ length: totalPages }, (_, i) => (
-            <button
-              key={i}
-              onClick={() => { setPage(i); setExpandedIdx(null); }}
-              style={{
-                width: 32,
-                height: 32,
-                borderRadius: 10,
-                border: `3px solid ${i === safePage ? "#22c55e" : "#1e293b"}`,
-                background: i === safePage ? "#22c55e" : "#ffffff",
-                color: i === safePage ? "#ffffff" : "#1e293b",
-                fontWeight: 900,
-                fontSize: 14,
-                cursor: "pointer",
-                boxShadow: i === safePage ? "none" : "2px 2px 0 #1e293b",
-                transition: "all 0.1s ease",
-              }}
-            >
-              {i + 1}
-            </button>
-          ))}
+          {(() => {
+            const maxVisible = 10;
+            let start = 0;
+            let end = totalPages;
+            if (totalPages > maxVisible) {
+              start = Math.max(0, safePage - Math.floor(maxVisible / 2));
+              end = start + maxVisible;
+              if (end > totalPages) {
+                end = totalPages;
+                start = end - maxVisible;
+              }
+            }
+            return Array.from({ length: end - start }, (_, idx) => {
+              const i = start + idx;
+              return (
+                <button
+                  key={i}
+                  onClick={() => { setPage(i); setExpandedIdx(null); }}
+                  style={{
+                    width: 32,
+                    height: 32,
+                    borderRadius: 10,
+                    border: `3px solid ${i === safePage ? "#22c55e" : "#1e293b"}`,
+                    background: i === safePage ? "#22c55e" : "#ffffff",
+                    color: i === safePage ? "#ffffff" : "#1e293b",
+                    fontWeight: 900,
+                    fontSize: 14,
+                    cursor: "pointer",
+                    boxShadow: i === safePage ? "none" : "2px 2px 0 #1e293b",
+                    transition: "all 0.1s ease",
+                  }}
+                >
+                  {i + 1}
+                </button>
+              );
+            });
+          })()}
 
           <button
             className="btn-small white"
@@ -217,6 +244,16 @@ const BackupList: React.FC<BackupListProps> = ({
           >
             {t("list.nextPage")}
           </button>
+          {totalPages > 10 && (
+            <button
+              className="btn-small white"
+              style={{ padding: "6px 10px", fontSize: 12 }}
+              disabled={safePage >= totalPages - 10}
+              onClick={() => { setPage(Math.min(totalPages - 1, safePage + 10)); setExpandedIdx(null); }}
+            >
+              {t("list.jumpForward10")}
+            </button>
+          )}
         </div>
       )}
     </div>

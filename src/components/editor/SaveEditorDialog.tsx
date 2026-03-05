@@ -37,6 +37,7 @@ const SaveEditorDialog: React.FC<Props> = ({ savePath, onClose, onSaved }) => {
   const [catListState, setCatListState] = useState<CatListState>({
     search: "",
     adventureOnly: false,
+    classFilter: "",
     scrollTop: 0,
   });
 
@@ -181,7 +182,27 @@ const SaveEditorDialog: React.FC<Props> = ({ savePath, onClose, onSaved }) => {
         {/* Header */}
         <div style={{ padding: "20px 28px 0", flexShrink: 0 }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }}>
-            <h2 style={{ fontSize: 22, fontWeight: 900, margin: 0 }}>{t("editor.title")}</h2>
+            <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+              <h2 style={{ fontSize: 22, fontWeight: 900, margin: 0 }}>{t("editor.title")}</h2>
+              <span
+                style={{
+                  padding: "4px 12px",
+                  background: "#f0fdf4",
+                  border: "2px solid #22c55e",
+                  borderRadius: 8,
+                  fontWeight: 900,
+                  fontSize: 12,
+                  color: "#16a34a",
+                  cursor: "pointer",
+                  transition: "all 0.15s",
+                }}
+                onClick={() => invoke("open_url", { url: "https://mewgenics.wiki.gg/" })}
+                onMouseEnter={(e) => { e.currentTarget.style.background = "#dcfce7"; }}
+                onMouseLeave={(e) => { e.currentTarget.style.background = "#f0fdf4"; }}
+              >
+                📖 Wiki
+              </span>
+            </div>
             <div style={{ display: "flex", gap: 10 }}>
               <button
                 className="btn-primary"

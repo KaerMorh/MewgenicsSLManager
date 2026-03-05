@@ -36,6 +36,12 @@ export interface BackupEntry {
   summary?: SaveSummary;
 }
 
+export interface TrashEntry {
+  path: string;
+  filename: string;
+  deleted_time: string;
+}
+
 export interface Config {
   save_dir: string;
   backup_dir: string;

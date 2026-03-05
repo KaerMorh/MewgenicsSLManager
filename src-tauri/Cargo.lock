@@ -1909,8 +1909,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "meowloader-tauri"
-version = "1.2.0"
+name = "mewgenics-sl-manager"
+version = "1.3.0"
 dependencies = [
  "chrono",
  "dirs 5.0.1",

@@ -5,6 +5,7 @@ import type { CatDetail, CatChanges } from "../../types";
 export interface CatListState {
   search: string;
   adventureOnly: boolean;
+  classFilter: string;
   scrollTop: number;
 }
 
@@ -17,9 +18,13 @@ interface Props {
   onListStateChange: (state: CatListState) => void;
 }
 
+function isEffectivelyDead(cat: CatDetail): boolean {
+  return cat.dead || cat.level === 0;
+}
+
 function catSortPriority(cat: CatDetail): number {
   if (cat.room === "(ADVENTURE)") return 0;
-  if (cat.dead) return 2;
+  if (isEffectivelyDead(cat)) return 2;
   return 1;
 }
 
@@ -42,6 +47,15 @@ const CatListEditor: React.FC<Props> = ({
     }
   }, []);
 
+  const availableClasses = useMemo(() => {
+    const classes = new Set<string>();
+    for (const cat of cats) {
+      const c = getCatWithEdits(cat);
+      if (c.cat_class) classes.add(c.cat_class);
+    }
+    return Array.from(classes).sort();
+  }, [cats, getCatWithEdits]);
+
   const sortedAndFiltered = useMemo(() => {
     let result = cats.map((cat, originalIndex) => ({ cat, originalIndex }));
 
@@ -57,6 +71,14 @@ const CatListEditor: React.FC<Props> = ({
       result = result.filter(({ cat }) => cat.room === "(ADVENTURE)");
     }
 
+    // Filter: class
+    if (listState.classFilter) {
+      result = result.filter(({ cat }) => {
+        const c = getCatWithEdits(cat);
+        return c.cat_class === listState.classFilter;
+      });
+    }
+
     // Filter: search by name
     if (listState.search.trim()) {
       const q = listState.search.toLowerCase();
@@ -67,7 +89,7 @@ const CatListEditor: React.FC<Props> = ({
     }
 
     return result;
-  }, [cats, listState.search, listState.adventureOnly, getCatWithEdits]);
+  }, [cats, listState.search, listState.adventureOnly, listState.classFilter, getCatWithEdits]);
 
   const handleSelectCat = (originalIndex: number) => {
     if (scrollRef.current) {
@@ -125,6 +147,26 @@ const CatListEditor: React.FC<Props> = ({
           />
           ⚔️ {t("editor.onlyAdventure")}
         </label>
+        <select
+          value={listState.classFilter}
+          onChange={(e) => onListStateChange({ ...listState, classFilter: e.target.value })}
+          style={{
+            padding: "8px 12px",
+            background: listState.classFilter ? "#dbeafe" : "#f1f5f9",
+            border: `3px solid ${listState.classFilter ? "#3b82f6" : "#cbd5e1"}`,
+            borderRadius: 10,
+            fontWeight: 900,
+            fontSize: 12,
+            fontFamily: "inherit",
+            cursor: "pointer",
+            transition: "all 0.15s",
+          }}
+        >
+          <option value="">{t("editor.allClasses")}</option>
+          {availableClasses.map((cls) => (
+            <option key={cls} value={cls}>{cls}</option>
+          ))}
+        </select>
       </div>
 
       {/* Cat list */}
@@ -170,7 +212,7 @@ const CatListEditor: React.FC<Props> = ({
               onMouseLeave={(e) => (e.currentTarget.style.transform = "none")}
             >
               <span style={{ fontSize: 24 }}>
-                {c.dead ? "💀" : isAdventure ? "⚔️" : c.retired ? "🏖️" : "🐱"}
+                {isEffectivelyDead(c) ? "💀" : isAdventure ? "⚔️" : c.retired ? "🏖️" : "🐱"}
               </span>
               <div style={{ flex: 1, minWidth: 0 }}>
                 <div style={{ fontWeight: 900, fontSize: 15, display: "flex", alignItems: "center", gap: 6 }}>

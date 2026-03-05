@@ -164,7 +164,7 @@ function App() {
       onConfirm: async () => {
         setConfirmDialog(null);
         try {
-          await invoke("delete_backup", { path: backupPath });
+          await invoke("delete_backup", { path: backupPath, backupDir });
           toast.success(t("toast.deleteSuccess"));
           refresh();
         } catch (e) {

@@ -438,6 +438,7 @@ fn parse_cat_summary(blob: &[u8], current_day: i64) -> Option<CatSummary> {
     let (_, name_end, name, sex) = detect_name_and_sex(&dec);
     let (retired, dead, donated) = read_status_flags(&dec, name_end);
     let (cat_class, level, birth_day) = find_class_level(&dec, name_end);
+    let dead = dead || level == 0;
 
     Some(CatSummary {
         key: 0,
@@ -835,6 +836,7 @@ fn parse_cat_detail(
     let (retired, dead, donated) = read_status_flags(&dec, name_end);
     let (cat_class, level, birth_day, level_offset, birth_day_offset) =
         find_class_level_ext(&dec, name_end);
+    let dead = dead || level == 0;
     let age = (current_day - birth_day).max(0);
 
     let stats = match find_stats(&dec) {

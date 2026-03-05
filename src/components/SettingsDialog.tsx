@@ -3,7 +3,7 @@ import { invoke } from "@tauri-apps/api/core";
 import { open } from "@tauri-apps/plugin-dialog";
 import { toast } from "sonner";
 import { useI18n } from "../i18n";
-import type { Config, ScanResult, DedupResult } from "../types";
+import type { Config, ScanResult, DedupResult, TrashEntry } from "../types";
 
 interface SettingsDialogProps {
   config: Config;
@@ -27,6 +27,8 @@ const SettingsDialog: React.FC<SettingsDialogProps> = ({
   const [detecting, setDetecting] = useState(false);
   const [dedupLoading, setDedupLoading] = useState(false);
   const [dedupConfirm, setDedupConfirm] = useState<{ groups: number; files: number } | null>(null);
+  const [showTrash, setShowTrash] = useState(false);
+  const [trashItems, setTrashItems] = useState<TrashEntry[]>([]);
 
   useEffect(() => {
     if (!gameExePath) {
@@ -145,6 +147,40 @@ const SettingsDialog: React.FC<SettingsDialogProps> = ({
       toast.error(t("toast.dedupFail"), { description: String(e) });
     }
     setDedupLoading(false);
+  };
+
+  const effectiveBackupDirValue = config.backup_dir || `${config.save_dir}\\LoaderBackups`;
+
+  const handleOpenTrash = async () => {
+    try {
+      const items = await invoke<TrashEntry[]>("list_trash", { backupDir: effectiveBackupDirValue });
+      setTrashItems(items);
+      setShowTrash(true);
+    } catch (e) {
+      toast.error(String(e));
+    }
+  };
+
+  const handleRestoreTrash = async (trashPath: string) => {
+    try {
+      await invoke("restore_from_trash", { trashPath, backupDir: effectiveBackupDirValue });
+      toast.success(t("toast.trashRestoreSuccess"));
+      const items = await invoke<TrashEntry[]>("list_trash", { backupDir: effectiveBackupDirValue });
+      setTrashItems(items);
+      onRefresh();
+    } catch (e) {
+      toast.error(t("toast.trashRestoreFail"), { description: String(e) });
+    }
+  };
+
+  const handleClearTrash = async () => {
+    try {
+      await invoke("clear_trash", { backupDir: effectiveBackupDirValue });
+      toast.success(t("toast.trashClearSuccess"));
+      setTrashItems([]);
+    } catch (e) {
+      toast.error(t("toast.trashClearFail"), { description: String(e) });
+    }
   };
 
   return (
@@ -310,6 +346,28 @@ const SettingsDialog: React.FC<SettingsDialogProps> = ({
           </div>
         </div>
 
+        <div
+          style={{
+            borderTop: "3px solid #e2e8f0",
+            paddingTop: 16,
+            marginBottom: 24,
+          }}
+        >
+          <label style={{ display: "block", marginBottom: 8, fontWeight: "bold" }}>
+            {t("settings.trash")}
+          </label>
+          <button
+            className="btn-secondary"
+            style={{ padding: "8px 16px", fontSize: 14 }}
+            onClick={handleOpenTrash}
+          >
+            {t("settings.openTrash")}
+          </button>
+          <div style={{ color: "#64748b", fontSize: 12, fontWeight: "bold", marginTop: 4 }}>
+            {t("settings.trashHint")}
+          </div>
+        </div>
+
         <div style={{ display: "flex", gap: 12 }}>
           <button className="btn-secondary" style={{ padding: "8px 16px", fontSize: 14 }} onClick={restoreDefaults}>
             {t("settings.restoreDefaults")}
@@ -322,6 +380,91 @@ const SettingsDialog: React.FC<SettingsDialogProps> = ({
             {t("settings.save")}
           </button>
         </div>
+
+        {showTrash && (
+          <div
+            style={{
+              position: "fixed",
+              inset: 0,
+              background: "rgba(0,0,0,0.4)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              zIndex: 1000,
+            }}
+            onClick={() => setShowTrash(false)}
+          >
+            <div
+              className="dialog-content"
+              style={{ minWidth: 500, maxHeight: "70vh", display: "flex", flexDirection: "column" }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
+                <h3 style={{ fontSize: 20, fontWeight: 900, margin: 0 }}>{t("settings.trashTitle")}</h3>
+                <div style={{ display: "flex", gap: 8 }}>
+                  {trashItems.length > 0 && (
+                    <button
+                      className="btn-small red"
+                      style={{ padding: "6px 12px", fontSize: 12 }}
+                      onClick={handleClearTrash}
+                    >
+                      {t("settings.trashClear")}
+                    </button>
+                  )}
+                  <button
+                    className="btn-secondary"
+                    style={{ padding: "6px 16px", fontSize: 13 }}
+                    onClick={() => setShowTrash(false)}
+                  >
+                    {t("settings.trashClose")}
+                  </button>
+                </div>
+              </div>
+              <div style={{ flex: 1, overflowY: "auto" }}>
+                {trashItems.length === 0 ? (
+                  <div style={{ textAlign: "center", padding: 32, color: "#94a3b8", fontWeight: 800, fontSize: 14 }}>
+                    {t("settings.trashEmpty")}
+                  </div>
+                ) : (
+                  <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                    {trashItems.map((item) => (
+                      <div
+                        key={item.path}
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          gap: 12,
+                          padding: "10px 14px",
+                          background: "#fff",
+                          border: "3px solid #1e293b",
+                          borderRadius: 12,
+                          boxShadow: "2px 2px 0 #1e293b",
+                        }}
+                      >
+                        <span style={{ fontSize: 18 }}>🗑️</span>
+                        <div style={{ flex: 1, minWidth: 0 }}>
+                          <div style={{ fontWeight: 900, fontSize: 13, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+                            {item.filename}
+                          </div>
+                          <div style={{ fontSize: 11, color: "#64748b", fontWeight: "bold" }}>
+                            {item.deleted_time.replace("T", " ")}
+                          </div>
+                        </div>
+                        <button
+                          className="btn-small blue"
+                          style={{ padding: "6px 12px", fontSize: 12, flexShrink: 0 }}
+                          onClick={() => handleRestoreTrash(item.path)}
+                        >
+                          {t("settings.trashRestore")}
+                        </button>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        )}
 
         {dedupConfirm && (
           <div
