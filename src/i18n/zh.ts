@@ -203,7 +203,7 @@ const zh: Record<string, string> = {
   "editor.noMutation": "无突变",
   "editor.prevCat": "上一只",
   "editor.nextCat": "下一只",
-  "editor.searchCat": "搜索猫咪名字...",
+  "editor.searchCat": "搜索名字... (支持 --lv 0-5 --age 3)",
   "editor.onlyAdventure": "只显示冒险中",
   "editor.classFilter": "职业筛选",
   "editor.allClasses": "全部职业",

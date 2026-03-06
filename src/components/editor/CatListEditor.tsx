@@ -79,12 +79,38 @@ const CatListEditor: React.FC<Props> = ({
       });
     }
 
-    // Filter: search by name
+    // Filter: search by name and --lv / --age flags
     if (listState.search.trim()) {
-      const q = listState.search.toLowerCase();
+      let searchText = listState.search;
+
+      // Parse --lv filter (supports exact like --lv 5 or range like --lv 0-5)
+      let lvFilter: { min: number; max: number } | null = null;
+      const lvMatch = searchText.match(/--lv\s+(\d+)(?:\s*-\s*(\d+))?/i);
+      if (lvMatch) {
+        const a = parseInt(lvMatch[1], 10);
+        const b = lvMatch[2] !== undefined ? parseInt(lvMatch[2], 10) : a;
+        lvFilter = { min: Math.min(a, b), max: Math.max(a, b) };
+        searchText = searchText.replace(lvMatch[0], "");
+      }
+
+      // Parse --age filter (supports exact like --age 3 or range like --age 1-5)
+      let ageFilter: { min: number; max: number } | null = null;
+      const ageMatch = searchText.match(/--age\s+(\d+)(?:\s*-\s*(\d+))?/i);
+      if (ageMatch) {
+        const a = parseInt(ageMatch[1], 10);
+        const b = ageMatch[2] !== undefined ? parseInt(ageMatch[2], 10) : a;
+        ageFilter = { min: Math.min(a, b), max: Math.max(a, b) };
+        searchText = searchText.replace(ageMatch[0], "");
+      }
+
+      const nameQuery = searchText.trim().toLowerCase();
+
       result = result.filter(({ cat }) => {
         const c = getCatWithEdits(cat);
-        return c.name.toLowerCase().includes(q);
+        if (nameQuery && !c.name.toLowerCase().includes(nameQuery)) return false;
+        if (lvFilter && (c.level < lvFilter.min || c.level > lvFilter.max)) return false;
+        if (ageFilter && (c.age < ageFilter.min || c.age > ageFilter.max)) return false;
+        return true;
       });
     }
 

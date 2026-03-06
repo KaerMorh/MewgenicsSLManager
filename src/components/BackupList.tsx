@@ -141,6 +141,7 @@ const BackupList: React.FC<BackupListProps> = ({
               key={entry.path}
               entry={entry}
               isExpanded={expandedIdx === globalIdx}
+              compact={expandedIdx !== null && expandedIdx !== globalIdx}
               onToggle={() =>
                 setExpandedIdx(expandedIdx === globalIdx ? null : globalIdx)
               }

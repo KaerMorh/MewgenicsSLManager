@@ -73,7 +73,7 @@ const SearchableSelect: React.FC<Props> = ({
 
   const showCustomOption = useMemo(() => {
     if (!allowCustom || !query.trim()) return false;
-    return !options.some((o) => o.value.toLowerCase() === query.trim().toLowerCase());
+    return !options.some((o) => o.value === query.trim());
   }, [allowCustom, query, options]);
 
   const submitCustom = () => {

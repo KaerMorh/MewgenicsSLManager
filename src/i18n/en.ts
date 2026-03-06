@@ -203,7 +203,7 @@ const en: Record<string, string> = {
   "editor.noMutation": "No mutation",
   "editor.prevCat": "Prev",
   "editor.nextCat": "Next",
-  "editor.searchCat": "Search cat name...",
+  "editor.searchCat": "Search name... (--lv 0-5 --age 3)",
   "editor.onlyAdventure": "Adventure only",
   "editor.classFilter": "Class Filter",
   "editor.allClasses": "All Classes",

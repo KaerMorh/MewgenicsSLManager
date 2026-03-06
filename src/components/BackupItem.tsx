@@ -6,6 +6,7 @@ import type { BackupEntry, SaveSummary } from "../types";
 interface BackupItemProps {
   entry: BackupEntry;
   isExpanded: boolean;
+  compact: boolean;
   onToggle: () => void;
   onLoad: (path: string) => void;
   onCopy: (path: string) => void;
@@ -17,6 +18,7 @@ interface BackupItemProps {
 const BackupItem: React.FC<BackupItemProps> = ({
   entry,
   isExpanded,
+  compact,
   onToggle,
   onLoad,
   onCopy,
@@ -63,6 +65,58 @@ const BackupItem: React.FC<BackupItemProps> = ({
     return t("item.allHome");
   };
 
+  if (compact) {
+    return (
+      <div
+        style={{
+          background: "#ffffff",
+          border: "4px solid #1e293b",
+          borderRadius: 24,
+          boxShadow: "8px 8px 0 #1e293b",
+          cursor: "pointer",
+          transition: "border-color 0.15s, background 0.15s",
+          overflow: "hidden",
+        }}
+      >
+        <div
+          onClick={onToggle}
+          style={{
+            padding: "12px 24px",
+            display: "flex",
+            alignItems: "center",
+            flexWrap: "wrap",
+            gap: "8px 16px",
+          }}
+        >
+          <span style={{ fontSize: 18 }}>💾</span>
+          <span style={{ fontSize: 16, fontWeight: 900 }}>{timeStr}</span>
+          {statusTag()}
+          <span style={{ fontSize: 13, fontWeight: "bold", color: "#64748b" }}>
+            🏠 {dayText}
+          </span>
+          <span style={{ fontSize: 13, fontWeight: "bold", color: "#64748b" }}>
+            {catText}
+          </span>
+          {entry.note && (
+            <span className="tag-note" title={entry.note} style={{ fontSize: 12 }}>
+              📌 {entry.note.length > 12 ? entry.note.slice(0, 10) + "…" : entry.note}
+            </span>
+          )}
+          <div style={{ flex: 1, minWidth: 20 }} />
+          <div
+            style={{ display: "flex", gap: 10 }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button className="btn-small white" title={t("item.noteBtn")} onClick={() => onEditNote(entry.path)}>📝</button>
+            <button className="btn-small blue" title={t("item.loadBtn")} onClick={() => onLoad(entry.path)}>⬇️</button>
+            <button className="btn-small white" title={t("item.copyBtn")} onClick={() => onCopy(entry.path)}>📋</button>
+            <button className="btn-small red" title={t("item.deleteBtn")} onClick={() => onDelete(entry.path)}>🗑️</button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div
       style={{
@@ -71,8 +125,9 @@ const BackupItem: React.FC<BackupItemProps> = ({
         borderRadius: 24,
         boxShadow: "8px 8px 0 #1e293b",
         cursor: "pointer",
-        transition: "all 0.15s",
+        transition: "border-color 0.15s, background 0.15s",
         overflow: "hidden",
+        ...(isExpanded ? { flex: 1, minHeight: 0, display: "flex", flexDirection: "column" as const } : {}),
       }}
     >
       <div
@@ -199,9 +254,9 @@ const BackupItem: React.FC<BackupItemProps> = ({
       </div>
 
       {isExpanded && (
-        <div>
-          <div style={{ height: 3, background: "#e2e8f0", margin: "0 8px" }} />
-          <div style={{ padding: "12px 24px 8px 24px" }}>
+        <div style={{ flex: 1, display: "flex", flexDirection: "column", minHeight: 0 }}>
+          <div style={{ height: 3, background: "#e2e8f0", margin: "0 8px", flexShrink: 0 }} />
+          <div style={{ padding: "12px 24px 8px 24px", flex: 1, overflow: "auto" }}>
             <div
               style={{
                 display: "flex",

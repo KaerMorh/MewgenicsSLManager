@@ -25,7 +25,10 @@ tests/
 
 *.exe
 *.msi
-*gitignore
-
+.gitignore
+gemini*
+.geminiignore
 #progress
 progress.txt
+temp_vision_test.png
+.gitignore
