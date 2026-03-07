@@ -27,6 +27,7 @@
   },
   "bundle": {
     "active": true,
+    "createUpdaterArtifacts": true,
     "targets": "all",
     "icon": [
       "icons/32x32.png",
@@ -49,10 +50,11 @@
   },
   "plugins": {
     "updater": {
-      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEU1NzExNjc4MzU2RUZFNDIKUldSQy9tNDFlQlp4NVNwdlZkN0EycmdIV1ZMVFZJb3crclRtbmp6ZXc1ZHMwV1VUV21DSWFMd3QK",
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDZGOTRCQjgxOTdCNzczMTgKUldRWWM3ZVhnYnVVYjJIQ25rSWNNREwyYm04aFg2WEdqTDFtejVLM1cySnZIYlR5cDk0R1BXYnUK",
       "endpoints": [
         "https://github.com/KaerMorh/MewgenicsSLManager/releases/latest/download/latest.json"
       ]
     }
   }
 }
+
