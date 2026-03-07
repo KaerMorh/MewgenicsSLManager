@@ -7,6 +7,8 @@ interface TopNavProps {
   onSlotChange: (slot: number) => void;
   onSettingsClick: () => void;
   onGameBackupClick: () => void;
+  onUpdateClick: () => void;
+  hasUpdate: boolean;
 }
 
 const TopNav: React.FC<TopNavProps> = ({
@@ -14,6 +16,8 @@ const TopNav: React.FC<TopNavProps> = ({
   onSlotChange,
   onSettingsClick,
   onGameBackupClick,
+  onUpdateClick,
+  hasUpdate,
 }) => {
   const { lang, setLang, t } = useI18n();
 
@@ -91,6 +95,31 @@ const TopNav: React.FC<TopNavProps> = ({
 
         {/* Actions */}
         <div style={{ display: "flex", gap: 16, alignItems: "center" }}>
+          <button
+            className="btn-nav"
+            onClick={onUpdateClick}
+            style={{
+              fontSize: 15,
+              fontWeight: 900,
+              position: "relative",
+            }}
+          >
+            {t("nav.update")}
+            {hasUpdate && (
+              <span
+                style={{
+                  position: "absolute",
+                  top: -2,
+                  right: -2,
+                  width: 8,
+                  height: 8,
+                  borderRadius: "50%",
+                  background: "#ef4444",
+                  border: "2px solid #fff",
+                }}
+              />
+            )}
+          </button>
           <button
             className="btn-nav"
             onClick={() => setLang(lang === "zh" ? "en" : "zh")}

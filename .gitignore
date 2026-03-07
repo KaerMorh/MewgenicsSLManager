@@ -32,3 +32,4 @@ gemini*
 progress.txt
 temp_vision_test.png
 .gitignore
+src-tauri/.tauri-key

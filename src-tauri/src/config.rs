@@ -23,6 +23,8 @@ pub struct Config {
     pub game_exe_path: String,
     #[serde(default = "default_true")]
     pub relaunch_after_kill: bool,
+    #[serde(default = "default_true")]
+    pub auto_update: bool,
 }
 
 fn default_refresh_interval() -> u32 {
@@ -45,6 +47,7 @@ impl Default for Config {
             auto_refresh_interval: default_refresh_interval(),
             game_exe_path: String::new(),
             relaunch_after_kill: true,
+            auto_update: true,
         }
     }
 }

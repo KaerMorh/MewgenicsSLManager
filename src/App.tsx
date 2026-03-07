@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import { invoke } from "@tauri-apps/api/core";
 import { listen } from "@tauri-apps/api/event";
+import { check } from "@tauri-apps/plugin-updater";
 import { toast } from "sonner";
 import { useI18n } from "./i18n";
 import TitleBar from "./components/TitleBar";
@@ -10,6 +11,7 @@ import BackupList from "./components/BackupList";
 import SettingsDialog from "./components/SettingsDialog";
 import GameBackupDialog from "./components/GameBackupDialog";
 import SaveEditorDialog from "./components/editor/SaveEditorDialog";
+import UpdateDialog from "./components/UpdateDialog";
 import type { Config, SaveSummary, BackupEntry } from "./types";
 
 
@@ -21,6 +23,8 @@ function App() {
   const [showSettings, setShowSettings] = useState(false);
   const [showGameBackups, setShowGameBackups] = useState(false);
   const [showEditor, setShowEditor] = useState(false);
+  const [showUpdate, setShowUpdate] = useState(false);
+  const [hasUpdate, setHasUpdate] = useState(false);
   const [confirmDialog, setConfirmDialog] = useState<{
     title: string;
     message: string;
@@ -36,6 +40,14 @@ function App() {
   useEffect(() => {
     invoke<Config>("get_config").then(setConfig);
   }, []);
+
+  // Silent update check on startup
+  useEffect(() => {
+    if (!config || !config.auto_update) return;
+    check().then((update) => {
+      if (update) setHasUpdate(true);
+    }).catch(() => {});
+  }, [config?.auto_update]);
 
   const refresh = useCallback(async () => {
     if (!config) return;
@@ -281,6 +293,8 @@ function App() {
         onSlotChange={handleSlotChange}
         onSettingsClick={() => setShowSettings(true)}
         onGameBackupClick={() => setShowGameBackups(true)}
+        onUpdateClick={() => setShowUpdate(true)}
+        hasUpdate={hasUpdate}
       />
 
       <HeroSection
@@ -327,6 +341,12 @@ function App() {
           savePath={savePath}
           onClose={() => setShowEditor(false)}
           onSaved={refresh}
+        />
+      )}
+
+      {showUpdate && (
+        <UpdateDialog
+          onClose={() => setShowUpdate(false)}
         />
       )}
 

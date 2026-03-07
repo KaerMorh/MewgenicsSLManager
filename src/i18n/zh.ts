@@ -230,6 +230,20 @@ const zh: Record<string, string> = {
   "toast.editorSaveSuccess": "存档修改已保存！",
   "toast.editorSaveFail": "保存修改失败",
   "toast.editorLoadFail": "加载存档详情失败",
+
+  "update.title": "软件更新",
+  "update.checking": "正在检查更新...",
+  "update.upToDate": "已是最新版本",
+  "update.newVersion": "发现新版本",
+  "update.download": "下载并安装",
+  "update.manualDownload": "手动下载",
+  "update.downloading": "正在下载更新...",
+  "update.ready": "更新已就绪，重启即可生效",
+  "update.relaunch": "立即重启",
+  "update.close": "关闭",
+  "update.error": "检查更新失败",
+  "settings.autoUpdate": "自动检查更新",
+  "nav.update": "更新",
 };
 
 export default zh;

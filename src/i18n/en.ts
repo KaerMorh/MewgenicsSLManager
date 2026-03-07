@@ -230,6 +230,20 @@ const en: Record<string, string> = {
   "toast.editorSaveSuccess": "Save changes applied!",
   "toast.editorSaveFail": "Failed to save changes",
   "toast.editorLoadFail": "Failed to load save details",
+
+  "update.title": "Software Update",
+  "update.checking": "Checking for updates...",
+  "update.upToDate": "You're on the latest version",
+  "update.newVersion": "New version available",
+  "update.download": "Download & Install",
+  "update.manualDownload": "Manual Download",
+  "update.downloading": "Downloading update...",
+  "update.ready": "Update ready! Restart to apply.",
+  "update.relaunch": "Restart Now",
+  "update.close": "Close",
+  "update.error": "Failed to check for updates",
+  "settings.autoUpdate": "Auto check for updates",
+  "nav.update": "Update",
 };
 
 export default en;

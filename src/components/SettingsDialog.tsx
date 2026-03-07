@@ -24,6 +24,7 @@ const SettingsDialog: React.FC<SettingsDialogProps> = ({
   const [refreshInterval, setRefreshInterval] = useState(config.auto_refresh_interval);
   const [gameExePath, setGameExePath] = useState(config.game_exe_path);
   const [relaunchAfterKill, setRelaunchAfterKill] = useState(config.relaunch_after_kill);
+  const [autoUpdate, setAutoUpdate] = useState(config.auto_update);
   const [detecting, setDetecting] = useState(false);
   const [dedupLoading, setDedupLoading] = useState(false);
   const [dedupConfirm, setDedupConfirm] = useState<{ groups: number; files: number } | null>(null);
@@ -78,6 +79,7 @@ const SettingsDialog: React.FC<SettingsDialogProps> = ({
       auto_refresh_interval: refreshInterval,
       game_exe_path: gameExePath.trim(),
       relaunch_after_kill: relaunchAfterKill,
+      auto_update: autoUpdate,
     });
   };
 
@@ -317,6 +319,14 @@ const SettingsDialog: React.FC<SettingsDialogProps> = ({
               onChange={(e) => setRelaunchAfterKill(e.target.checked)}
             />
             <span style={{ fontWeight: "bold" }}>{t("settings.relaunchAfterKill")}</span>
+          </label>
+          <label style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8, cursor: "pointer" }}>
+            <input
+              type="checkbox"
+              checked={autoUpdate}
+              onChange={(e) => setAutoUpdate(e.target.checked)}
+            />
+            <span style={{ fontWeight: "bold" }}>{t("settings.autoUpdate")}</span>
           </label>
           <div style={{ color: "#64748b", fontSize: 12, fontWeight: "bold", marginTop: 4 }}>
             {t("settings.gamePathHint")}

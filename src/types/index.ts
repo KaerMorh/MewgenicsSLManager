@@ -51,6 +51,7 @@ export interface Config {
   auto_refresh_interval: number;
   game_exe_path: string;
   relaunch_after_kill: boolean;
+  auto_update: boolean;
 }
 
 export interface ScanResult {
