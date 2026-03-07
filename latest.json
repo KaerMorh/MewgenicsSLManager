@@ -4,8 +4,8 @@
   "pub_date": "2026-03-07T04:25:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRWWM3ZVhnYnVVYnpnYi9pMll2OC8rMWl5ejZGTjU4ZlM2Y0R3SnVaUkVrbUwwVjBZeXVrVC81SzArcFg1cWNtZzlVaTZjYWFtR3pQWW9aTTM5S1plL28xWVdacFI5bGd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzcyODU3NTUwCWZpbGU6TWV3Z2VuaWNzU0xNYW5hZ2VyXzEuNS4xX3g2NC1zZXR1cC5leGUKRlJNdjZBZWprdVFoTTQ5TjFhMC9pVXYzN1YvV1J6MXV0d2xxY2RBb29WVUVpemdxbFVEUkNVOEVYKzFpYUFhZVI1bWRlNm1GLytnVUJTNm5VNzBmQ2c9PQo=",
-      "url": "https://github.com/KaerMorh/MewgenicsSLManager/releases/download/v1.5.1/MewgenicsSLManager_1.5.1_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRWWM3ZVhnYnVVYi9RMjUyZkVBbkxSdFRYUjVhQm9DKzg2citJQjZSRWtpVGtsVHNmdkY3NVViUThrNFlxbHh6aFcwOEpSSXQrRWVWN3QrVlF4WDhwVWVGeG1kWHlickFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzcyODU5OTA0CWZpbGU6TWV3Z2VuaWNzU0xNYW5hZ2VyXzEuNS4xX3g2NC1zZXR1cC5leGUKcWZKeFRxYWc0TlZSMGdmUmJha0t6RTlrR3VwRmdCeGcvRjV1ajlxSTBvRlRIUmF3VFY2VDhkT1M5ZjdDVGN3SjFmcTlOb2hQUXlUWkpMY2IvRlJrRGc9PQo=",
+      "url": "https://mirror.ghproxy.com/https://github.com/KaerMorh/MewgenicsSLManager/releases/download/v1.5.1/MewgenicsSLManager_1.5.1_x64-setup.exe"
     }
   }
 }

@@ -52,6 +52,8 @@
     "updater": {
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDZGOTRCQjgxOTdCNzczMTgKUldRWWM3ZVhnYnVVYjJIQ25rSWNNREwyYm04aFg2WEdqTDFtejVLM1cySnZIYlR5cDk0R1BXYnUK",
       "endpoints": [
+        "https://mirror.ghproxy.com/https://github.com/KaerMorh/MewgenicsSLManager/releases/latest/download/latest.json",
+        "https://ghfast.top/https://github.com/KaerMorh/MewgenicsSLManager/releases/latest/download/latest.json",
         "https://github.com/KaerMorh/MewgenicsSLManager/releases/latest/download/latest.json"
       ]
     }
