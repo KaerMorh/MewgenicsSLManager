@@ -190,6 +190,8 @@ const en: Record<string, string> = {
   "editor.catClass": "Class",
   "editor.catRetired": "Retired",
   "editor.catDead": "Dead",
+  "editor.catDonated": "Donated",
+  "editor.catAbandoned": "Abandoned",
   "editor.catStats": "Stats",
   "editor.catAbilities": "Abilities",
   "editor.catMutations": "Mutations",

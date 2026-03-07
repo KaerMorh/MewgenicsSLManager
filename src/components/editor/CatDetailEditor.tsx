@@ -214,9 +214,19 @@ const CatDetailEditor: React.FC<Props> = ({
             />
             <span style={{ fontWeight: 900, fontSize: 13 }}>{t("editor.catRetired")}</span>
           </label>
-          {(cat.dead || cat.level === 0) && (
+          {cat.dead && (
             <span style={{ fontWeight: 900, fontSize: 13, color: "#ef4444" }}>
               💀 {t("editor.catDead")}
+            </span>
+          )}
+          {cat.donated && (
+            <span style={{ fontWeight: 900, fontSize: 13, color: "#a855f7" }}>
+              🎁 {t("editor.catDonated")}
+            </span>
+          )}
+          {!cat.dead && !cat.donated && !cat.retired && cat.room === "" && (
+            <span style={{ fontWeight: 900, fontSize: 13, color: "#f59e0b" }}>
+              🚪 {t("editor.catAbandoned")}
             </span>
           )}
         </div>

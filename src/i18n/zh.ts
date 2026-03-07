@@ -190,6 +190,8 @@ const zh: Record<string, string> = {
   "editor.catClass": "职业",
   "editor.catRetired": "退休",
   "editor.catDead": "死亡",
+  "editor.catDonated": "已送人",
+  "editor.catAbandoned": "已丢弃",
   "editor.catStats": "属性",
   "editor.catAbilities": "技能",
   "editor.catMutations": "突变",

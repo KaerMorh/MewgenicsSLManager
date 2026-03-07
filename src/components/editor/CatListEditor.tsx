@@ -19,12 +19,18 @@ interface Props {
 }
 
 function isEffectivelyDead(cat: CatDetail): boolean {
-  return cat.dead || cat.level === 0;
+  return cat.dead;
+}
+
+function isAbandoned(cat: CatDetail): boolean {
+  return !cat.dead && !cat.donated && !cat.retired && cat.room === "";
 }
 
 function catSortPriority(cat: CatDetail): number {
   if (cat.room === "(ADVENTURE)") return 0;
-  if (isEffectivelyDead(cat)) return 2;
+  if (isEffectivelyDead(cat)) return 3;
+  if (cat.donated) return 2;
+  if (isAbandoned(cat)) return 2;
   return 1;
 }
 
@@ -238,7 +244,7 @@ const CatListEditor: React.FC<Props> = ({
               onMouseLeave={(e) => (e.currentTarget.style.transform = "none")}
             >
               <span style={{ fontSize: 24 }}>
-                {isEffectivelyDead(c) ? "💀" : isAdventure ? "⚔️" : c.retired ? "🏖️" : "🐱"}
+                {isEffectivelyDead(c) ? "💀" : c.donated ? "🎁" : isAbandoned(c) ? "🚪" : isAdventure ? "⚔️" : c.retired ? "🏖️" : "🐱"}
               </span>
               <div style={{ flex: 1, minWidth: 0 }}>
                 <div style={{ fontWeight: 900, fontSize: 15, display: "flex", alignItems: "center", gap: 6 }}>

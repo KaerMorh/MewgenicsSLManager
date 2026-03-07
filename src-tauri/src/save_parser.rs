@@ -434,11 +434,12 @@ fn find_ascii(haystack: &[u8], needle: &[u8], start: usize) -> Option<usize> {
 
 fn read_status_flags(dec: &[u8], name_end: usize) -> (bool, bool, bool) {
     let off = name_end + 0x10;
-    if off + 2 > dec.len() {
+    if off + 4 > dec.len() {
         return (false, false, false);
     }
     let f = u16_le(dec, off);
-    (f & 0x0002 != 0, f & 0x0020 != 0, f & 0x4000 != 0)
+    let donated_field = u16_le(dec, off + 2);
+    (f & 0x0002 != 0, f & 0x0020 != 0, donated_field == 1)
 }
 
 fn parse_cat_summary(blob: &[u8], current_day: i64) -> Option<CatSummary> {
@@ -450,7 +451,6 @@ fn parse_cat_summary(blob: &[u8], current_day: i64) -> Option<CatSummary> {
     let (_, name_end, name, sex) = detect_name_and_sex(&dec);
     let (retired, dead, donated) = read_status_flags(&dec, name_end);
     let (cat_class, level, birth_day) = find_class_level(&dec, name_end);
-    let dead = dead || level == 0;
 
     Some(CatSummary {
         key: 0,
@@ -826,7 +826,6 @@ fn parse_cat_detail(
     let (retired, dead, donated) = read_status_flags(&dec, name_end);
     let (cat_class, level, birth_day, level_offset, birth_day_offset) =
         find_class_level_ext(&dec, name_end);
-    let dead = dead || level == 0;
     let age = (current_day - birth_day).max(0);
 
     let stats = match find_stats(&dec) {
@@ -1044,27 +1043,22 @@ pub fn parse_save_summary(path: &Path) -> SaveSummary {
         s.cat_count = count;
     }
 
-    // Parse all cats for alive/dead count
-    if let Ok(mut stmt) = conn.prepare("SELECT key, data FROM cats") {
+    // Parse house_state to get keys of cats at home
+    let mut home_keys: std::collections::HashSet<i64> = std::collections::HashSet::new();
+    if let Ok(mut stmt) = conn.prepare("SELECT data FROM files WHERE key='house_state'") {
         if let Ok(rows) = stmt.query_map([], |row| {
-            let key: i64 = row.get(0)?;
-            let data: Vec<u8> = row.get(1)?;
-            Ok((key, data))
+            let data: Vec<u8> = row.get(0)?;
+            Ok(data)
         }) {
             for row in rows.flatten() {
-                let (_key, blob) = row;
-                if let Some(cs) = parse_cat_summary(&blob, s.current_day) {
-                    if cs.dead {
-                        s.cat_dead += 1;
-                    } else {
-                        s.cat_alive += 1;
-                    }
+                for (k, _room) in parse_house_state(&row) {
+                    home_keys.insert(k);
                 }
             }
         }
     }
 
-    // Adventure state
+    // Adventure state (parse before cat counting so we know who's on adventure)
     let mut adventure_keys: Vec<i64> = Vec::new();
     if let Ok(mut stmt) = conn.prepare("SELECT data FROM files WHERE key='adventure_state'") {
         if let Ok(rows) = stmt.query_map([], |row| {
@@ -1076,8 +1070,29 @@ pub fn parse_save_summary(path: &Path) -> SaveSummary {
             }
         }
     }
-
     s.in_adventure = !adventure_keys.is_empty();
+
+    // Parse all cats for alive/dead count
+    if let Ok(mut stmt) = conn.prepare("SELECT key, data FROM cats") {
+        if let Ok(rows) = stmt.query_map([], |row| {
+            let key: i64 = row.get(0)?;
+            let data: Vec<u8> = row.get(1)?;
+            Ok((key, data))
+        }) {
+            for row in rows.flatten() {
+                let (key, blob) = row;
+                if let Some(cs) = parse_cat_summary(&blob, s.current_day) {
+                    let on_adventure = adventure_keys.contains(&key);
+                    let in_house = home_keys.contains(&key);
+                    if cs.dead || cs.donated || (!on_adventure && !in_house) {
+                        s.cat_dead += 1;
+                    } else {
+                        s.cat_alive += 1;
+                    }
+                }
+            }
+        }
+    }
 
     // Parse adventure cats
     for k in &adventure_keys {
