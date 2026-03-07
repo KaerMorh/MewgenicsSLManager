@@ -1,0 +1,11 @@
+{
+  "version": "1.5.0",
+  "notes": "Add in-app auto-update system with background download",
+  "pub_date": "2026-03-07T04:10:41Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRWWM3ZVhnYnVVYjJWaWw3emM3WmorbStUVVU3RE5qQ2tPdGxMWEpid1BFcFJtMUZ5YWxyYnVtQkRjUWVPOUVZUmpNOTAvck8yS1E5VGw3UWYvUWNvZjdPOEIxRTRybndVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzcyODU3MTM4CWZpbGU6TWV3Z2VuaWNzU0xNYW5hZ2VyXzEuNS4wX3g2NC1zZXR1cC5leGUKTGJyUmJmdCs4alZrc0cyN28vcWR5eXozQ0ZvWHRqREN5bDludlJ1SFQxRlZqM1RtVDdLdEdKeGV5MG1RVHAxK3NSVTJOYXFmd1Y3Wnl3NHpiQm5SREE9PQo=",
+      "url": "https://github.com/KaerMorh/MewgenicsSLManager/releases/download/v1.5.0/MewgenicsSLManager_1.5.0_x64-setup.exe"
+    }
+  }
+}
