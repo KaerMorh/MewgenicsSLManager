@@ -1,202 +1,252 @@
 [
   {
-    "name": "Frenzy",
-    "desc": "When you down a unit, gain +2 [img:str]."
+    "name": "BloodLust",
+    "desc": "When you down a unit, gain +2 [img:str].",
+    "key": "PASSIVE_FRENZY"
   },
   {
-    "name": "Frenzy2",
-    "desc": "When you down a unit, gain +2 [img:str] and +2 [img:spd]."
+    "name": "BloodLust2",
+    "desc": "When you down a unit, gain +2 [img:str] and +2 [img:spd].",
+    "key": "PASSIVE_FRENZY2"
   },
   {
     "name": "Avenger",
-    "desc": "When an allied cat is downed, gain All Stats Up 2 and heal 8."
+    "desc": "When an allied cat is downed, gain All Stats Up 2 and heal 8.",
+    "key": "PASSIVE_AVENGER"
   },
   {
     "name": "Avenger2",
-    "desc": "When an allied cat is downed, gain All Stats Up 2, heal 50% of your max HP, and take an extra turn."
+    "desc": "When an allied cat is downed, gain All Stats Up 2, heal 50% of your max HP, and take an extra turn.",
+    "key": "PASSIVE_AVENGER2"
   },
   {
     "name": "Scars",
-    "desc": "+1 Brace."
+    "desc": "+1 Brace.",
+    "key": "PASSIVE_SCARS"
   },
   {
     "name": "Scars2",
-    "desc": "+3 Brace."
+    "desc": "+3 Brace.",
+    "key": "PASSIVE_SCARS2"
   },
   {
-    "name": "HulkUp",
-    "desc": "When you take damage, gain +2 [img:spd]."
+    "name": "FasterWhenHit",
+    "desc": "When you take damage, gain +2 [img:spd].",
+    "key": "PASSIVE_HULKUP"
   },
   {
-    "name": "HulkUp2",
-    "desc": "When you take damage, gain +2 [img:spd] and +10% dodge. This caps at 50%."
+    "name": "FasterWhenHit2",
+    "desc": "When you take damage, gain +2 [img:spd] and +10% dodge. This caps at 50%.",
+    "key": "PASSIVE_HULKUP2"
   },
   {
-    "name": "Fervor",
-    "desc": "When you down a unit, you heal 5 HP."
+    "name": "KillsHeal",
+    "desc": "When you down a unit, you heal 5 HP.",
+    "key": "PASSIVE_FERVOR"
   },
   {
-    "name": "Fervor2",
-    "desc": "When you down a unit, you heal 50% of your HP."
+    "name": "KillsHeal2",
+    "desc": "When you down a unit, you heal 50% of your HP.",
+    "key": "PASSIVE_FERVOR2"
   },
   {
     "name": "Vengeful",
-    "desc": "Your basic attack is always critical on enemies that have damaged you."
+    "desc": "Your basic attack is always critical on enemies that have damaged you.",
+    "key": "PASSIVE_VENGEFUL"
   },
   {
     "name": "Vengeful2",
-    "desc": "Your basic attack is always critical on enemies units that have damaged you.\nInflict Marked on units that contact or attack you."
+    "desc": "Your basic attack is always critical on enemies units that have damaged you.\nInflict Marked on units that contact or attack you.",
+    "key": "PASSIVE_VENGEFUL2"
   },
   {
     "name": "HamsterStyle",
-    "desc": "+1 Health Regeneration.\nStart with 2 Bonus Moves."
+    "desc": "+1 Health Regeneration.\nStart with 2 Bonus Moves.",
+    "key": "PASSIVE_HAMSTERSTYLE"
   },
   {
     "name": "HamsterStyle2",
-    "desc": "+2 Health Regeneration.\nStart with 2 Bonus Moves.\nYour basic attack has a chance to attack multiple times."
+    "desc": "+2 Health Regeneration.\nStart with 2 Bonus Moves.\nYour basic attack has a chance to attack multiple times.",
+    "key": "PASSIVE_HAMSTERSTYLE2"
   },
   {
     "name": "WeaponMaster",
-    "desc": "Your weapon and item abilities deal +2 Damage and get +25% critical chance. A pipe is added to your inventory."
+    "desc": "Your weapon and item abilities deal +2 Damage and get +25% critical chance. A pipe is added to your inventory.",
+    "key": "PASSIVE_WEAPONMASTER"
   },
   {
     "name": "WeaponMaster2",
-    "desc": "Your weapon and item abilities deal +3 Damage and get +50% critical chance.\nIf you don't have a weapon, gain a random temporary weapon at the beginning of the battle."
+    "desc": "Your weapon and item abilities deal +3 Damage and get +50% critical chance.\nIf you don't have a weapon, gain a random temporary weapon at the beginning of the battle.",
+    "key": "PASSIVE_WEAPONMASTER2"
   },
   {
     "name": "ShoulderCheck",
-    "desc": "If you're facing a unit after you move, automatically attack it at 33% damage."
+    "desc": "If you're facing a unit after you move, automatically attack it at 33% damage.",
+    "key": "PASSIVE_SHOULDERCHECK"
   },
   {
     "name": "ShoulderCheck2",
-    "desc": "If you're facing a unit after you move, automatically attack the unit."
+    "desc": "If you're facing a unit after you move, automatically attack the unit.",
+    "key": "PASSIVE_SHOULDERCHECK2"
   },
   {
-    "name": "Skullcrack",
-    "desc": "Your basic attack inflicts Bruise."
+    "name": "SkullSmash",
+    "desc": "Your basic attack inflicts Bruise.",
+    "key": "PASSIVE_SKULLSMASH"
   },
   {
-    "name": "Skullcrack2",
-    "desc": "Your basic attack inflicts Bruise 2."
+    "name": "SkullSmash2",
+    "desc": "Your basic attack inflicts Bruise 2.",
+    "key": "PASSIVE_SKULLSMASH2"
   },
   {
     "name": "TurtleStyle",
-    "desc": ""
+    "desc": "",
+    "key": "PASSIVE_TURTLESTYLE"
   },
   {
     "name": "TurtleStyle2",
-    "desc": "+2 Brace"
+    "desc": "+2 Brace",
+    "key": "PASSIVE_TURTLESTYLE2"
   },
   {
-    "name": "OVERPOWERED!!!",
-    "desc": "Excess damage you deal to units makes them explode, dealing the excess damage to units around it, except for you."
+    "name": "Overpowered",
+    "desc": "Excess damage you deal to units makes them explode, dealing the excess damage to units around it, except for you.",
+    "key": "PASSIVE_OVERPOWERED"
   },
   {
-    "name": "OVERPOWERED!!!2",
-    "desc": "Excess damage you deal to units makes them explode, dealing the excess damage to units within 2 tiles of it, except for you."
+    "name": "Overpowered2",
+    "desc": "Excess damage you deal to units makes them explode, dealing the excess damage to units within 2 tiles of it, except for you.",
+    "key": "PASSIVE_OVERPOWERED2"
   },
   {
-    "name": "Underdog",
-    "desc": "You have +2 [img:str] and +1 Brace for each enemy adjacent to you."
+    "name": "FightMe",
+    "desc": "You have +2 [img:str] and +1 Brace for each enemy adjacent to you.",
+    "key": "PASSIVE_FIGHTME"
   },
   {
-    "name": "Underdog2",
-    "desc": "You have +3 [img:str] and +2 Brace for each enemy adjacent to you."
+    "name": "FightMe2",
+    "desc": "You have +3 [img:str] and +2 Brace for each enemy adjacent to you.",
+    "key": "PASSIVE_FIGHTME2"
   },
   {
-    "name": "Math?",
-    "desc": "Your spells cost 3 mana to cast, but each can be cast only once per turn."
+    "name": "HighAsYouCanCount",
+    "desc": "Your spells cost 3 mana to cast, but each can be cast only once per turn.",
+    "key": "PASSIVE_MATHQ"
   },
   {
-    "name": "Math?2",
-    "desc": "Your spells cost 0 mana to cast, but each can be cast only once per turn."
+    "name": "HighAsYouCanCount2",
+    "desc": "Your spells cost 0 mana to cast, but each can be cast only once per turn.",
+    "key": "PASSIVE_MATHQ2"
   },
   {
     "name": "DumbMuscle",
-    "desc": "Lose 1 [img:int] each time you take damage.\nIf you have 4 or less [img:int], gain +2 [img:str] and your basic attack inflicts Bruise. at 0 [img:int], gain +100% critical hit chance."
+    "desc": "Lose 1 [img:int] each time you take damage.\nIf you have 4 or less [img:int], gain +2 [img:str] and your basic attack inflicts Bruise. at 0 [img:int], gain +100% critical hit chance.",
+    "key": "PASSIVE_DUMBMUSCLE"
   },
   {
     "name": "DumbMuscle2",
-    "desc": "Lose 2 [img:int] each time you take damage.\nIf you have 4 or less [img:int], gain +2 [img:str] and your basic attack inflicts Bruise. At 0 [img:int], gain +100% critical hit chance. At -10 [img:int], you can use your basic move and attack an additional time each turn."
+    "desc": "Lose 2 [img:int] each time you take damage.\nIf you have 4 or less [img:int], gain +2 [img:str] and your basic attack inflicts Bruise. At 0 [img:int], gain +100% critical hit chance. At -10 [img:int], you can use your basic move and attack an additional time each turn.",
+    "key": "PASSIVE_DUMBMUSCLE2"
   },
   {
     "name": "ThickSkull",
-    "desc": "All injuries you get are Concussions.\nYou get +3 [img:shield] for each concussion you have. This caps at 30 [img:shield]."
+    "desc": "All injuries you get are Concussions.\nYou get +3 [img:shield] for each concussion you have. This caps at 30 [img:shield].",
+    "key": "PASSIVE_THICKSKULL"
   },
   {
     "name": "ThickSkull2",
-    "desc": "All injuries you get are Concussions.\nYou get +3 [img:shield] and +1 [img:str] for each concussion you have. This caps at 30 [img:shield] and 10 [img:str]."
+    "desc": "All injuries you get are Concussions.\nYou get +3 [img:shield] and +1 [img:str] for each concussion you have. This caps at 30 [img:shield] and 10 [img:str].",
+    "key": "PASSIVE_THICKSKULL2"
   },
   {
     "name": "MostValuableCat",
-    "desc": "When you or an ally downs another unit, they become the Alpha.\nIf you're the Alpha, take an extra turn at the end of each round."
+    "desc": "When you or an ally downs another unit, they become the Alpha.\nIf you're the Alpha, take an extra turn at the end of each round.",
+    "key": "PASSIVE_MOSTVALUABLECAT"
   },
   {
     "name": "MostValuableCat2",
-    "desc": "You start the battle as the Alpha.\nWhenever you or an ally downs another unit, they become the Alpha.\nIf you're the Alpha, take an extra turn at the end of each round."
+    "desc": "You start the battle as the Alpha.\nWhenever you or an ally downs another unit, they become the Alpha.\nIf you're the Alpha, take an extra turn at the end of each round.",
+    "key": "PASSIVE_MOSTVALUABLECAT2"
   },
   {
     "name": "RatStyle",
-    "desc": "+10% dodge chance."
+    "desc": "+10% dodge chance.",
+    "key": "PASSIVE_RATSTYLE"
   },
   {
     "name": "RatStyle2",
-    "desc": "+30% dodge chance."
+    "desc": "+30% dodge chance.",
+    "key": "PASSIVE_RATSTYLE2"
   },
   {
     "name": "Boned",
-    "desc": "When you kill a unit, if you don't have a weapon, gain a Bone Club."
+    "desc": "When you kill a unit, if you don't have a weapon, gain a Bone Club.",
+    "key": "PASSIVE_BONED"
   },
   {
     "name": "Boned2",
-    "desc": "When you kill a unit, if you don't have a weapon, gain a Bone Club.\nBonus Ability: Throw Weapon."
+    "desc": "When you kill a unit, if you don't have a weapon, gain a Bone Club.\nBonus Ability: Throw Weapon.",
+    "key": "PASSIVE_BONED2"
   },
   {
     "name": "DualWield",
-    "desc": "When you use your weapon, automatically use it again for free."
+    "desc": "When you use your weapon, automatically use it again for free.",
+    "key": "PASSIVE_DUALWIELD"
   },
   {
     "name": "DualWield2",
-    "desc": "When you use your weapon, automatically use it again for free, and then again! for free!"
+    "desc": "When you use your weapon, automatically use it again for free, and then again! for free!",
+    "key": "PASSIVE_DUALWIELD2"
   },
   {
-    "name": "PatellarReflex",
-    "desc": "When a unit damages you, counter-attack dealing 1 damage and inflicting Bruise."
+    "name": "ReflexPunch",
+    "desc": "When a unit damages you, counter-attack dealing 1 damage and inflicting Bruise.",
+    "key": "PASSIVE_PATELLARREFLEX"
   },
   {
-    "name": "PatellarReflex2",
-    "desc": "When a unit damages you, counter-attack with your basic attack and inflict Bruise."
+    "name": "ReflexPunch2",
+    "desc": "When a unit damages you, counter-attack with your basic attack and inflict Bruise.",
+    "key": "PASSIVE_PATELLARREFLEX2"
   },
   {
     "name": "HitMe",
-    "desc": "When you take damage from an ally, basic attack in the direction you're facing.\nDamage you take from allies is reduced to 1."
+    "desc": "When you take damage from an ally, basic attack in the direction you're facing.\nDamage you take from allies is reduced to 1.",
+    "key": "PASSIVE_HITME"
   },
   {
     "name": "HitMe2",
-    "desc": "When you take damage from an ally, basic attack in the direction you're facing.\nDamage you take from allies is reduced to 1.\nWhenever you take damage, gain +1 to a random stat."
+    "desc": "When you take damage from an ally, basic attack in the direction you're facing.\nDamage you take from allies is reduced to 1.\nWhenever you take damage, gain +1 to a random stat.",
+    "key": "PASSIVE_HITME2"
   },
   {
-    "name": "Smash!",
-    "desc": "Your weapons deals triple damage, but they always break when you use them.\nThree Sticks are added to your inventory."
+    "name": "Smash",
+    "desc": "Your weapons deals triple damage, but they always break when you use them.\nThree Sticks are added to your inventory.",
+    "key": "PASSIVE_SMASH"
   },
   {
-    "name": "Smash!2",
-    "desc": "Your weapons deals triple damage, but they have a 50% chance to break when you use them.\nThree more Sticks are added to your inventory."
+    "name": "Smash2",
+    "desc": "Your weapons deals triple damage, but they have a 50% chance to break when you use them.\nThree more Sticks are added to your inventory.",
+    "key": "PASSIVE_SMASH2"
   },
   {
     "name": "PunchFace",
-    "desc": "Your basic attacks are critical if they hit the front of a unit."
+    "desc": "Your basic attacks are critical if they hit the front of a unit.",
+    "key": "PASSIVE_PUNCHFACE"
   },
   {
     "name": "PunchFace2",
-    "desc": "Your physical attacks are critical if they hit the front of a unit."
+    "desc": "Your physical attacks are critical if they hit the front of a unit.",
+    "key": "PASSIVE_PUNCHFACE2"
   },
   {
-    "name": "Merciless",
-    "desc": "When you deal 10 or more damage in a single hit, gain +2 [img:shield] and refresh your movement action."
+    "name": "Recoil",
+    "desc": "When you deal 10 or more damage in a single hit, gain +2 [img:shield] and refresh your movement action.",
+    "key": "PASSIVE_MERCILESS"
   },
   {
-    "name": "Merciless2",
-    "desc": "When you deal 10 or more damage in a single hit, gain +2 [img:shield], All Stats Up, and refresh your movement action."
+    "name": "Recoil2",
+    "desc": "When you deal 10 or more damage in a single hit, gain +2 [img:shield], All Stats Up, and refresh your movement action.",
+    "key": "PASSIVE_MERCILESS2"
   }
 ]

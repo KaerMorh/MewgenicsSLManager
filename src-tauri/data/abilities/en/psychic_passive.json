@@ -1,202 +1,252 @@
 [
   {
-    "name": "Antigravity",
-    "desc": "You have Flying Movement. When you use a Gravity element ability gain +1 [img:spd].\nGravity element spells cost -1 mana."
+    "name": "Flying",
+    "desc": "You have Flying Movement. When you use a Gravity element ability gain +1 [img:spd].\nGravity element spells cost -1 mana.",
+    "key": "PASSIVE_FLYING"
   },
   {
-    "name": "Antigravity2",
-    "desc": "You have Flying Movement. When you use a Gravity element ability gain +2 [img:spd].\nGravity element spells cost -2 mana."
+    "name": "Flying2",
+    "desc": "You have Flying Movement. When you use a Gravity element ability gain +2 [img:spd].\nGravity element spells cost -2 mana.",
+    "key": "PASSIVE_FLYING2"
   },
   {
     "name": "SoulShatter",
-    "desc": "When you kill a unit, deal 1 damage to all enemies."
+    "desc": "When you kill a unit, deal 1 damage to all enemies.",
+    "key": "PASSIVE_SOULSHATTER"
   },
   {
     "name": "SoulShatter2",
-    "desc": "When you kill a unit, deal 2 damage to all enemies."
+    "desc": "When you kill a unit, deal 2 damage to all enemies.",
+    "key": "PASSIVE_SOULSHATTER2"
   },
   {
     "name": "Glow",
-    "desc": "Your basic attack inflicts Blind."
+    "desc": "Your basic attack inflicts Blind.",
+    "key": "PASSIVE_GLOW"
   },
   {
     "name": "Glow2",
-    "desc": "All damage you deal inflicts Blind."
+    "desc": "All damage you deal inflicts Blind.",
+    "key": "PASSIVE_GLOW2"
   },
   {
     "name": "Blink",
-    "desc": "33% chance to teleport to a random tile when targeted by an enemy."
+    "desc": "33% chance to teleport to a random tile when targeted by an enemy.",
+    "key": "PASSIVE_BLINK"
   },
   {
     "name": "Blink2",
-    "desc": "50% chance to teleport to a random tile when targeted by an enemy."
+    "desc": "50% chance to teleport to a random tile when targeted by an enemy.",
+    "key": "PASSIVE_BLINK2"
   },
   {
     "name": "FullPower",
-    "desc": "While at full mana, your basic attack deals triple damage and has +3 Knockback."
+    "desc": "While at full mana, your basic attack deals triple damage and has +3 Knockback.",
+    "key": "PASSIVE_FULLPOWER"
   },
   {
     "name": "FullPower2",
-    "desc": "While at full mana, your basic attack deals triple damage and has +3 Knockback.\nBonus Ability: Grow Head."
+    "desc": "While at full mana, your basic attack deals triple damage and has +3 Knockback.\nBonus Ability: Grow Head.",
+    "key": "PASSIVE_FULLPOWER2"
   },
   {
     "name": "RealityShatter",
-    "desc": "Gravity element abilities spawn Floating Glass."
+    "desc": "Gravity element abilities spawn Floating Glass.",
+    "key": "PASSIVE_REALITYSHATTER"
   },
   {
     "name": "RealityShatter2",
-    "desc": "Gravity element abilities spawn Floating Glass and inflict Bleed 1."
+    "desc": "Gravity element abilities spawn Floating Glass and inflict Bleed 1.",
+    "key": "PASSIVE_REALITYSHATTER2"
   },
   {
     "name": "MentalStorm",
-    "desc": "Gain +1 Charge when you cast a spell."
+    "desc": "Gain +1 Charge when you cast a spell.",
+    "key": "PASSIVE_MENTALSTORM"
   },
   {
     "name": "MentalStorm2",
-    "desc": "Gain +2 Charge when you cast a spell."
+    "desc": "Gain +2 Charge when you cast a spell.",
+    "key": "PASSIVE_MENTALSTORM2"
   },
   {
     "name": "Wither",
-    "desc": "Gravity element abilities inflict a random negative status effect when used on enemies."
+    "desc": "Gravity element abilities inflict a random negative status effect when used on enemies.",
+    "key": "PASSIVE_WITHER"
   },
   {
     "name": "Wither2",
-    "desc": "Gravity element abilities inflict a random negative status effect when used on enemies. When you inflict a negative status effect, inflict +1 of that status effect."
+    "desc": "Gravity element abilities inflict a random negative status effect when used on enemies. When you inflict a negative status effect, inflict +1 of that status effect.",
+    "key": "PASSIVE_WITHER2"
   },
   {
     "name": "Flourish",
-    "desc": "Gravity element abilities do not harm allies. Gravity element abilities give a random positive status effect when used on allies. When you inflict a positive status effect, inflict +1 of that status effect."
+    "desc": "Gravity element abilities do not harm allies. Gravity element abilities give a random positive status effect when used on allies. When you inflict a positive status effect, inflict +1 of that status effect.",
+    "key": "PASSIVE_FLOURISH"
   },
   {
     "name": "Flourish2",
-    "desc": "Gravity element abilities do not harm allies. Gravity element abilities give a random positive status effect when used on allies. When you inflict a positive status effect, inflict +2 of that status effect."
+    "desc": "Gravity element abilities do not harm allies. Gravity element abilities give a random positive status effect when used on allies. When you inflict a positive status effect, inflict +2 of that status effect.",
+    "key": "PASSIVE_FLOURISH2"
   },
   {
     "name": "PsySmack",
-    "desc": "Knockback damage you and your allies deal is doubled."
+    "desc": "Knockback damage you and your allies deal is doubled.",
+    "key": "PASSIVE_PSYSMACK"
   },
   {
     "name": "PsySmack2",
-    "desc": "Knockback damage and distance you and your allies deal is doubled and has Chain Knockback."
+    "desc": "Knockback damage and distance you and your allies deal is doubled and has Chain Knockback.",
+    "key": "PASSIVE_PSYSMACK2"
   },
   {
     "name": "Beckon",
-    "desc": "Your basic attack has +4 Knockback."
+    "desc": "Your basic attack has +4 Knockback.",
+    "key": "PASSIVE_BECKON"
   },
   {
     "name": "Beckon2",
-    "desc": "Your basic attack has +4 Knockback and Chain Knockback."
+    "desc": "Your basic attack has +4 Knockback and Chain Knockback.",
+    "key": "PASSIVE_BECKON2"
   },
   {
     "name": "MindTempest",
-    "desc": "After every sixth spell you cast, gain All Stats Up and +1 Magic Damage."
+    "desc": "After every sixth spell you cast, gain All Stats Up and +1 Magic Damage.",
+    "key": "PASSIVE_MINDTEMPEST"
   },
   {
     "name": "MindTempest2",
-    "desc": "After every sixth spell you cast, gain All Stats Up, +1 Magic Damage, and reduce the cost of your spells by 1 mana."
+    "desc": "After every sixth spell you cast, gain All Stats Up, +1 Magic Damage, and reduce the cost of your spells by 1 mana.",
+    "key": "PASSIVE_MINDTEMPEST2"
   },
   {
     "name": "Overflow",
-    "desc": "While at full mana, gain +2 Brace and Flying Movement. Your mana is uncapped."
+    "desc": "While at full mana, gain +2 Brace and Flying Movement. Your mana is uncapped.",
+    "key": "PASSIVE_OVERFLOW"
   },
   {
     "name": "Overflow2",
-    "desc": "While at full mana, gain +2 Brace and Teleportation. Your mana is uncapped."
+    "desc": "While at full mana, gain +2 Brace and Teleportation. Your mana is uncapped.",
+    "key": "PASSIVE_OVERFLOW2"
   },
   {
     "name": "Omniscience",
-    "desc": "You can see EVERYTHING. Line of sight restrictions are ignored."
+    "desc": "You can see EVERYTHING. Line of sight restrictions are ignored.",
+    "key": "PASSIVE_OMNISCIENCE"
   },
   {
     "name": "Omniscience2",
-    "desc": "You can see EVERYTHING. Line of sight restrictions are ignored."
+    "desc": "You can see EVERYTHING. Line of sight restrictions are ignored.",
+    "key": "PASSIVE_OMNISCIENCE2"
   },
   {
     "name": "PsionicRepel",
-    "desc": "Units that attack or contact you get knocked back 10 tiles."
+    "desc": "Units that attack or contact you get knocked back 10 tiles.",
+    "key": "PASSIVE_PSIONICREPEL"
   },
   {
     "name": "PsionicRepel2",
-    "desc": "Units that attack or contact you get knocked back 10 tiles and are Immobilized."
+    "desc": "Units that attack or contact you get knocked back 10 tiles and are Immobilized.",
+    "key": "PASSIVE_PSIONICREPEL2"
   },
   {
     "name": "Enlightened",
-    "desc": "While at full mana, the first spell you cast each turn is free."
+    "desc": "While at full mana, the first spell you cast each turn is free.",
+    "key": "PASSIVE_ENLIGHTENED"
   },
   {
     "name": "Enlightened2",
-    "desc": "While at full mana, all of your spells are free to cast once a turn."
+    "desc": "While at full mana, all of your spells are free to cast once a turn.",
+    "key": "PASSIVE_ENLIGHTENED2"
   },
   {
     "name": "MadVisage",
-    "desc": "All injuries you get are Disfigured.\nWhile at full mana, your basic action inflicts Madness.\nWhile you have 0 or less [img:cha] you can attack an additional time each turn."
+    "desc": "All injuries you get are Disfigured.\nWhile at full mana, your basic action inflicts Madness.\nWhile you have 0 or less [img:cha] you can attack an additional time each turn.",
+    "key": "PASSIVE_MADVISAGE"
   },
   {
     "name": "MadVisage2",
-    "desc": "All injuries you get are Disfigured.\nUnits that contact or attack you get Madness.\nWhile at full mana, your basic attack inflicts Madness.\nWhile at 0 [img:cha] you can attack 2 additional times each turn."
+    "desc": "All injuries you get are Disfigured.\nUnits that contact or attack you get Madness.\nWhile at full mana, your basic attack inflicts Madness.\nWhile at 0 [img:cha] you can attack 2 additional times each turn.",
+    "key": "PASSIVE_MADVISAGE2"
   },
   {
     "name": "PowerUp",
-    "desc": "When you gain excess mana, gain +1 Magic Damage and +1 [img:int]."
+    "desc": "When you gain excess mana, gain +1 Magic Damage and +1 [img:int].",
+    "key": "PASSIVE_POWERUP"
   },
   {
     "name": "PowerUp2",
-    "desc": "When you gain excess mana, gain +1 Magic Damage, +1 [img:int]. and +1 [img:divineshield]."
+    "desc": "When you gain excess mana, gain +1 Magic Damage, +1 [img:int]. and +1 [img:divineshield].",
+    "key": "PASSIVE_POWERUP2"
   },
   {
     "name": "TrueSight",
-    "desc": "You and your allies can't miss enemies within your line of sight."
+    "desc": "You and your allies can't miss enemies within your line of sight.",
+    "key": "PASSIVE_TRUESIGHT"
   },
   {
     "name": "TrueSight2",
-    "desc": "You and your allies can't miss enemies within your line of sight. Allied physical attacks gain +50% critical hit chance against those enemies."
+    "desc": "You and your allies can't miss enemies within your line of sight. Allied physical attacks gain +50% critical hit chance against those enemies.",
+    "key": "PASSIVE_TRUESIGHT2"
   },
   {
-    "name": "Braingeyser",
-    "desc": "When you gain excess mana, emit that many Sparkles."
+    "name": "Radiation",
+    "desc": "When you gain excess mana, emit that many Sparkles.",
+    "key": "PASSIVE_BRAINGEYSER"
   },
   {
-    "name": "Braingeyser2",
-    "desc": "When you gain excess mana, emit that many Sparkles and remove all your debuffs."
+    "name": "Radiation2",
+    "desc": "When you gain excess mana, emit that many Sparkles and remove all your debuffs.",
+    "key": "PASSIVE_BRAINGEYSER2"
   },
   {
     "name": "GravityWell",
-    "desc": "When a unit is knocked through a tile adjacent to you, stop it and inflict Stun."
+    "desc": "When a unit is knocked through a tile adjacent to you, stop it and inflict Stun.",
+    "key": "PASSIVE_GRAVITYWELL"
   },
   {
     "name": "GravityWell2",
-    "desc": "When a unit is knocked through a tile adjacent to you, stop it, inflict Stun and deal 5 damage to it."
+    "desc": "When a unit is knocked through a tile adjacent to you, stop it, inflict Stun and deal 5 damage to it.",
+    "key": "PASSIVE_GRAVITYWELL2"
   },
   {
     "name": "Drag",
-    "desc": "Units that you knockback take 1 damage for each tile they pass through."
+    "desc": "Units that you knockback take 1 damage for each tile they pass through.",
+    "key": "PASSIVE_DRAG"
   },
   {
     "name": "Drag2",
-    "desc": "Units that you knockback take 2 damage for each tile they pass through."
+    "desc": "Units that you knockback take 2 damage for each tile they pass through.",
+    "key": "PASSIVE_DRAG2"
   },
   {
     "name": "Twiddle",
-    "desc": "Your basic attack deals 0 damage, but you can use it 2 additional times each turn."
+    "desc": "Your basic attack deals 0 damage, but you can use it 2 additional times each turn.",
+    "key": "PASSIVE_TWIDDLE"
   },
   {
     "name": "Twiddle2",
-    "desc": "Start each battle with +5 Bonus Attacks. Your basic attack deals 0 damage, but you can use it 2 additional times each turn."
+    "desc": "Start each battle with +5 Bonus Attacks. Your basic attack deals 0 damage, but you can use it 2 additional times each turn.",
+    "key": "PASSIVE_TWIDDLE2"
   },
   {
     "name": "RepressedMemories",
-    "desc": "When you spend mana, cast a random Psychic spell that costs less than the mana spent."
+    "desc": "When you spend mana, cast a random Psychic spell that costs less than the mana spent.",
+    "key": "PASSIVE_REPRESSEDMEMORIES"
   },
   {
     "name": "RepressedMemories2",
-    "desc": "When you spend mana, cast a random spell from any class that costs less than the mana spent."
+    "desc": "When you spend mana, cast a random spell from any class that costs less than the mana spent.",
+    "key": "PASSIVE_REPRESSEDMEMORIES2"
   },
   {
     "name": "EldritchVisage",
-    "desc": "At the start of your turn, inflict Magic Weakness 1 on all enemies in your line of sight."
+    "desc": "At the start of your turn, inflict Magic Weakness 1 on all enemies in your line of sight.",
+    "key": "PASSIVE_ELDRITCHVISAGE"
   },
   {
     "name": "EldritchVisage2",
-    "desc": "At the start of your turn, inflict Magic Weakness 1 and Marked on all enemies in your line of sight."
+    "desc": "At the start of your turn, inflict Magic Weakness 1 and Marked on all enemies in your line of sight.",
+    "key": "PASSIVE_ELDRITCHVISAGE2"
   }
 ]

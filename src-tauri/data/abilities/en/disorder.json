@@ -1,399 +1,498 @@
 [
   {
     "name": "Rabies",
-    "desc": "Your basic attack is a melee attack. You can't equip face armor.\nAfter each battle, gain +2 [img:str] and -1 [img:int].\nIf your [img:int] is 0 or less, you have Madness."
+    "desc": "Your basic attack is a melee attack. You can't equip face armor.\nAfter each battle, gain +2 [img:str] and -1 [img:int].\nIf your [img:int] is 0 or less, you have Madness.",
+    "key": "DISORDER_RABIES"
   },
   {
     "name": "Boils",
-    "desc": "+1 Brace.\nYou spawn a puddle of creep whenever you get hit. You can't equip face armor."
+    "desc": "+1 Brace.\nYou spawn a puddle of creep whenever you get hit. You can't equip face armor.",
+    "key": "DISORDER_BOILS"
   },
   {
     "name": "Depression",
-    "desc": "Adjacent units get All Stats Down 2."
+    "desc": "Adjacent units get All Stats Down 2.",
+    "key": "DISORDER_DEPRESSION"
   },
   {
     "name": "BrokenLimb",
-    "desc": "You can't equip trinkets or consumables. +2 Thorns."
+    "desc": "You can't equip trinkets or consumables. +2 Thorns.",
+    "key": "DISORDER_BROKENLIMB"
   },
   {
     "name": "WrenchedNeck",
-    "desc": "You can't equip neck armor. Double the effects of your head armor."
+    "desc": "You can't equip neck armor. Double the effects of your head armor.",
+    "key": "DISORDER_WRENCHEDNECK"
   },
   {
     "name": "Declawed",
-    "desc": "You can't equip weapons."
+    "desc": "You can't equip weapons.",
+    "key": "DISORDER_DECLAWED"
   },
   {
     "name": "HeadTrauma",
-    "desc": "You can't equip head armor. Your Collarless spells cost -2 mana."
+    "desc": "You can't equip head armor. Your Collarless spells cost -2 mana.",
+    "key": "DISORDER_HEADTRAUMA"
   },
   {
     "name": "DeepCut",
-    "desc": "Bleed 1.\nYou can't equip trinkets or consumables. \nBonus ability: Bloodzerk."
+    "desc": "Bleed 1.\nYou can't equip trinkets or consumables. \nBonus ability: Bloodzerk.",
+    "key": "DISORDER_DEEPCUT"
   },
   {
     "name": "PuncturedEye",
-    "desc": "+10% miss chance.\nYou can't equip face armor. Gain an eyeball trinket."
+    "desc": "+10% miss chance.\nYou can't equip face armor. Gain an eyeball trinket.",
+    "key": "DISORDER_PUNCTUREDEYE"
   },
   {
-    "name": "ObsessiveCompulsiveDisorder",
-    "desc": "Bonus Ability: Groom\nAt the end of your turn, if you didn't use Groom, take 2 damage."
+    "name": "OCD",
+    "desc": "Bonus Ability: Groom\nAt the end of your turn, if you didn't use Groom, take 2 damage.",
+    "key": "DISORDER_OCD"
   },
   {
     "name": "Distemper",
-    "desc": "At the end of each battle gain +10% crit chance, +25% crit damage, and +5% miss chance. Permanently.\nYou can't equip face armor."
+    "desc": "At the end of each battle gain +10% crit chance, +25% crit damage, and +5% miss chance. Permanently.\nYou can't equip face armor.",
+    "key": "DISORDER_DISTEMPER"
   },
   {
     "name": "BrainDamage",
-    "desc": "You can't use item actions. +2 Brace."
+    "desc": "You can't use item actions. +2 Brace.",
+    "key": "DISORDER_BRAINDAMAGE"
   },
   {
     "name": "SeveredThumb",
-    "desc": "You can't equip weapons. Spawn a Food pickup at the start of each battle."
+    "desc": "You can't equip weapons. Spawn a Food pickup at the start of each battle.",
+    "key": "DISORDER_SEVEREDTHUMB"
   },
   {
-    "name": "Post-TraumaticStressDisorder",
-    "desc": "When you take damage, gain Fear and +2 Damage."
+    "name": "PTSD",
+    "desc": "When you take damage, gain Fear and +2 Damage.",
+    "key": "DISORDER_PTSD"
   },
   {
-    "name": "IrritableBowelSyndrome",
-    "desc": "When you take damage, poop."
+    "name": "IBS",
+    "desc": "When you take damage, poop.",
+    "key": "DISORDER_IBS"
   },
   {
     "name": "Dyskinesia",
-    "desc": "When you end your movement, knockback all adjacent units 1 tile."
+    "desc": "When you end your movement, knockback all adjacent units 1 tile.",
+    "key": "DISORDER_DYSKINESIA"
   },
   {
     "name": "Anemia",
-    "desc": "When you take damage, you have a 10% chance to gain Bleed 1.\nGain 2 Charge for each damage you take from Bleed."
+    "desc": "When you take damage, you have a 10% chance to gain Bleed 1.\nGain 2 Charge for each damage you take from Bleed.",
+    "key": "DISORDER_ANEMIA"
   },
   {
     "name": "Empath",
-    "desc": "Take 1 damage when you deal damage.\nYour heals heal for 1 extra."
+    "desc": "Take 1 damage when you deal damage.\nYour heals heal for 1 extra.",
+    "key": "DISORDER_EMPATH"
   },
   {
     "name": "Infestation",
-    "desc": "At the start of your turn, you have a 50% chance to spawn a Maggot Familiar and 15% chance to spawn an enemy Flea."
+    "desc": "At the start of your turn, you have a 50% chance to spawn a Maggot Familiar and 15% chance to spawn an enemy Flea.",
+    "key": "DISORDER_INFESTATION"
   },
   {
     "name": "Leprosy",
-    "desc": "Bruise 2. When you get hit, spawn a food pickup."
+    "desc": "Bruise 2. When you get hit, spawn a food pickup.",
+    "key": "DISORDER_LEPROSY"
   },
   {
-    "name": "AcuteStressReaction:Fight",
-    "desc": "Gain +6 [img:str] while you have 5 or fewer HP."
+    "name": "ASRFight",
+    "desc": "Gain +6 [img:str] while you have 5 or fewer HP.",
+    "key": "DISORDER_ASRFIGHT"
   },
   {
-    "name": "AcuteStressReaction:Flight",
-    "desc": "Gain +6 [img:spd] while you have 5 or fewer HP."
+    "name": "ASRFlight",
+    "desc": "Gain +6 [img:spd] while you have 5 or fewer HP.",
+    "key": "DISORDER_ASRFLIGHT"
   },
   {
     "name": "BloodFrenzy",
-    "desc": "When you kill a unit, take an extra turn with Madness."
+    "desc": "When you kill a unit, take an extra turn with Madness.",
+    "key": "DISORDER_BLOODFRENZY"
   },
   {
     "name": "Shunned",
-    "desc": "Take your turn last.\nYour heals heal for 2 less. +15% dodge chance."
+    "desc": "Take your turn last.\nYour heals heal for 2 less. +15% dodge chance.",
+    "key": "DISORDER_SHUNNED"
   },
   {
     "name": "Dysentery",
-    "desc": "50% chance to make a burning poop directly behind you when you end your turn."
+    "desc": "50% chance to make a burning poop directly behind you when you end your turn.",
+    "key": "DISORDER_DYSENTERY"
   },
   {
     "name": "Anxiety",
-    "desc": "+10% Dodge chance. When you take damage, run away from the source."
+    "desc": "+10% Dodge chance. When you take damage, run away from the source.",
+    "key": "DISORDER_ANXIETY"
   },
   {
-    "name": "Kamikaze",
-    "desc": "You explode when you are downed."
+    "name": "Kamikazee",
+    "desc": "You explode when you are downed.",
+    "key": "DISORDER_KAMIKAZE"
   },
   {
     "name": "Traumatophobia",
-    "desc": "Whenever you take damage, move 1 tile away from the source."
+    "desc": "Whenever you take damage, move 1 tile away from the source.",
+    "key": "DISORDER_TRAUMATOPHOBIA"
   },
   {
     "name": "StockholmSyndrome",
-    "desc": "Whenever you take damage, move toward the source."
+    "desc": "Whenever you take damage, move toward the source.",
+    "key": "DISORDER_STOCKHOLMSYNDROME"
   },
   {
     "name": "ViolentOutbursts",
-    "desc": "When you end your turn, dash forward 2 tiles, attack with Knockback, and take 1 damage."
+    "desc": "When you end your turn, dash forward 2 tiles, attack with Knockback, and take 1 damage.",
+    "key": "DISORDER_VIOLENTOUTBURSTS"
   },
   {
-    "name": "GamblingAddiction",
-    "desc": "+33% miss chance.\n100% critical hit chance."
+    "name": "GamblingAddict",
+    "desc": "+33% miss chance.\n100% critical hit chance.",
+    "key": "DISORDER_GAMBLINGADDICT"
   },
   {
     "name": "Scleroderma",
-    "desc": "At the start of each battle, you lose all but 1 HP, but gain that much [img:shield]."
+    "desc": "At the start of each battle, you lose all but 1 HP, but gain that much [img:shield].",
+    "key": "DISORDER_SCLERODERMA"
   },
   {
     "name": "Pacifist",
-    "desc": "You can't kill units. If you end your turn without using your basic attack gain 7 mana."
+    "desc": "You can't kill units. If you end your turn without using your basic attack gain 7 mana.",
+    "key": "DISORDER_PACIFIST"
   },
   {
-    "name": "GIGACHAD",
-    "desc": ""
+    "name": "Gigachad",
+    "desc": "",
+    "key": "DISORDER_GIGACHAD"
   },
   {
-    "name": "ImpostorSyndrome",
-    "desc": "You're quite suspicious…"
+    "name": "ImposterSyndrome",
+    "desc": "You're quite suspicious…",
+    "key": "DISORDER_IMPOSTERSYNDROME"
   },
   {
     "name": "Vegan",
-    "desc": "You don't eat meat."
+    "desc": "You don't eat meat.",
+    "key": "DISORDER_VEGAN"
   },
   {
-    "name": "TheZoomies",
-    "desc": "Your movement action is a dash attack."
+    "name": "FrozenKnee",
+    "desc": "Your movement action is a dash attack.",
+    "key": "DISORDER_ZOOMIES"
   },
   {
     "name": "ScalyScabs",
-    "desc": ""
+    "desc": "",
+    "key": "DISORDER_SCALYSCABS"
   },
   {
     "name": "FattyLiver",
-    "desc": "Whenever you lose HP, you permanently lose 1 [img:con]."
+    "desc": "Whenever you lose HP, you permanently lose 1 [img:con].",
+    "key": "DISORDER_FATTYLIVER"
   },
   {
-    "name": "TheCommonCold",
-    "desc": "Start each battle with All Stats Down. 30% chance of recovering at the end of each round. Contagious."
+    "name": "CommonCold",
+    "desc": "Start each battle with All Stats Down. 30% chance of recovering at the end of each round. Contagious.",
+    "key": "DISORDER_COMMONCOLD"
   },
   {
     "name": "Pox",
-    "desc": "10% chance to skip your turn to scratch yourself. Your basic attack has a 50% chance to inflict Poison 1. 5% chance of recovering at the end of each round. Contagious."
+    "desc": "10% chance to skip your turn to scratch yourself. Your basic attack has a 50% chance to inflict Poison 1. 5% chance of recovering at the end of each round. Contagious.",
+    "key": "DISORDER_POX"
   },
   {
     "name": "Psychosis",
-    "desc": "After your first turn, you have permanent madness."
+    "desc": "After your first turn, you have permanent madness.",
+    "key": "DISORDER_PSYCHOSIS"
   },
   {
     "name": "Necrosis",
-    "desc": "When you take damage, you get -1 [img:con], -1 [img:str], and spawn poisoned food."
+    "desc": "When you take damage, you get -1 [img:con], -1 [img:str], and spawn poisoned food.",
+    "key": "DISORDER_NECROSIS"
   },
   {
     "name": "Touched",
-    "desc": "You can no longer heal HP."
+    "desc": "You can no longer heal HP.",
+    "key": "DISORDER_TOUCHED"
   },
   {
     "name": "Charred",
-    "desc": "Bruise 1. You cannot be Burned."
+    "desc": "Bruise 1. You cannot be Burned.",
+    "key": "DISORDER_CHARRED"
   },
   {
-    "name": "Immortal",
-    "desc": "All damage you take is reduced to 1.\nWhen you take damage, suffer a random injury."
+    "name": "Invincible",
+    "desc": "All damage you take is reduced to 1.\nWhen you take damage, suffer a random injury.",
+    "key": "DISORDER_IMMORTAL"
   },
   {
-    "name": "BadGas",
-    "desc": "On the first round, take your turn last. At the start of that turn, do a Mega Fart attack that inflicts Poison 2."
+    "name": "ExplosiveGas",
+    "desc": "On the first round, take your turn last. At the start of that turn, do a Mega Fart attack that inflicts Poison 2.",
+    "key": "DISORDER_BADGAS"
   },
   {
     "name": "Toxoplasmosis",
-    "desc": "Start each battle with a Rat Familiar. Your basic attack charms Rat enemies."
+    "desc": "Start each battle with a Rat Familiar. Your basic attack charms Rat enemies.",
+    "key": "DISORDER_TOXOPLASMOSIS"
   },
   {
     "name": "Ebola",
-    "desc": "Start each battle with Bleed 3. Your basic attack inflicts Bleed 2.\n5% chance of recovering at the end of each round. Contagious."
+    "desc": "Start each battle with Bleed 3. Your basic attack inflicts Bleed 2.\n5% chance of recovering at the end of each round. Contagious.",
+    "key": "DISORDER_EBOLA"
   },
   {
     "name": "Fidgety",
-    "desc": "When you end your turn, automatically use your weapon on a random unit in range, for free."
+    "desc": "When you end your turn, automatically use your weapon on a random unit in range, for free.",
+    "key": "DISORDER_FIDGETY"
   },
   {
     "name": "Narcolepsy",
-    "desc": "At the end of your turn, fall asleep, heal 10 HP and gain 7 mana."
+    "desc": "At the end of your turn, fall asleep, heal 10 HP and gain 7 mana.",
+    "key": "DISORDER_NARCOLEPSY"
   },
   {
     "name": "Paranoia",
-    "desc": "When a unit ends its movement directly behind you, attack it and gain Fear."
+    "desc": "When a unit ends its movement directly behind you, attack it and gain Fear.",
+    "key": "DISORDER_PARANOIA"
   },
   {
     "name": "EatingDisorder",
-    "desc": "Double the effects of your consumables but you are confused on how to eat them."
+    "desc": "Double the effects of your consumables but you are confused on how to eat them.",
+    "key": "DISORDER_EATINGDISORDER"
   },
   {
     "name": "Gastritis",
-    "desc": "At the end of your turn, fart and Poison all adjacent units."
+    "desc": "At the end of your turn, fart and Poison all adjacent units.",
+    "key": "DISORDER_GASTRITIS"
   },
   {
     "name": "Hypomania",
-    "desc": "Start each battle with 3 bonus turns, then never take a turn."
+    "desc": "Start each battle with 3 bonus turns, then never take a turn.",
+    "key": "DISORDER_HYPOMANIA"
   },
   {
     "name": "Hypersomnia",
-    "desc": "Start each battle asleep and with full health."
+    "desc": "Start each battle asleep and with full health.",
+    "key": "DISORDER_HYPERSOMNIA"
   },
   {
-    "name": "KidneyStone",
-    "desc": "When you end your turn take 1 damage and pass a kidney stone."
+    "name": "KidneyStones",
+    "desc": "When you end your turn take 1 damage and pass a kidney stone.",
+    "key": "DISORDER_KIDNEYSTONE"
   },
   {
     "name": "Cancer",
-    "desc": "At the end of each battle, lose 3 random stats permanently and gain a random mutation."
+    "desc": "At the end of each battle, lose 3 random stats permanently and gain a random mutation.",
+    "key": "DISORDER_CANCER"
   },
   {
     "name": "Stinky",
-    "desc": "Adjacent units move away from you at the start of their turns."
+    "desc": "Adjacent units move away from you at the start of their turns.",
+    "key": "DISORDER_STINKY"
   },
   {
     "name": "Incontinence",
-    "desc": "When you take damage, pee yourself."
+    "desc": "When you take damage, pee yourself.",
+    "key": "DISORDER_INCONTINENCE"
   },
   {
     "name": "Fossilized",
-    "desc": "+2 Brace. Slide like a rock whenever you get hit."
+    "desc": "+2 Brace. Slide like a rock whenever you get hit.",
+    "key": "DISORDER_FOSSILIZED"
   },
   {
     "name": "Triskaidekaphobia",
-    "desc": "Your spells cost 0 mana. The 13th spell you cast on an adventure kills you and destroys your body."
+    "desc": "Your spells cost 0 mana. The 13th spell you cast on an adventure kills you and destroys your body.",
+    "key": "DISORDER_TRISKAIDEKAPHOBIA"
   },
   {
     "name": "Autism",
-    "desc": "Spells you were born with cost -2 mana. Other spells cost +1 mana."
+    "desc": "Spells you were born with cost -2 mana. Other spells cost +1 mana.",
+    "key": "DISORDER_AUTISM"
   },
   {
-    "name": "Tourette'sSyndrome",
-    "desc": "At the start of your turn, you have a 33% chance to cast one of your spells at a random target for free."
+    "name": "Tourettes",
+    "desc": "At the start of your turn, you have a 33% chance to cast one of your spells at a random target for free.",
+    "key": "DISORDER_TOURETTES"
   },
   {
     "name": "Albinism",
-    "desc": "Fire damage you take inflicts +3 Burn.\nYour basic attack has a 25% chance to inflict Fear."
+    "desc": "Fire damage you take inflicts +3 Burn.\nYour basic attack has a 25% chance to inflict Fear.",
+    "key": "DISORDER_ALBINISM"
   },
   {
     "name": "SleepParalysis",
-    "desc": "When you fall asleep, a Sleep Paralysis Demon with Madness spawns! You can't wake up until it's killed.\nLearn the spell Rest (if you have a free spell slot)."
+    "desc": "When you fall asleep, a Sleep Paralysis Demon with Madness spawns! You can't wake up until it's killed.\nLearn the spell Rest (if you have a free spell slot).",
+    "key": "DISORDER_SLEEPPARALYSIS"
   },
   {
     "name": "Diabetes",
-    "desc": "When you end your turn, if you haven't eaten food, gain All Stats Down and Confusion 1. Each time you eat food, cleanse all your debuffs and gain +1 [img:int]."
+    "desc": "When you end your turn, if you haven't eaten food, gain All Stats Down and Confusion 1. Each time you eat food, cleanse all your debuffs and gain +1 [img:int].",
+    "key": "DISORDER_DIABETES"
   },
   {
-    "name": "BipolarDisorder",
-    "desc": "Start each battle with either\n +5 [img:int], +5 [img:cha], and +5 [img:spd]\nor \nAll Stats Down 2."
+    "name": "Bipolar",
+    "desc": "Start each battle with either\n +5 [img:int], +5 [img:cha], and +5 [img:spd]\nor \nAll Stats Down 2.",
+    "key": "DISORDER_BIPOLARDISORDER"
   },
   {
     "name": "Soulless",
-    "desc": "You are immune to buffs and debuffs. When you die, you don't leave a corpse."
+    "desc": "You are immune to buffs and debuffs. When you die, you don't leave a corpse.",
+    "key": "DISORDER_SOULLESS"
   },
   {
-    "name": "TheShining",
-    "desc": "Your attacks can't miss.\n+15% dodge chance and +15% chance to gain Fear at the start of each turn."
+    "name": "Premonitions",
+    "desc": "Your attacks can't miss.\n+15% dodge chance and +15% chance to gain Fear at the start of each turn.",
+    "key": "DISORDER_THESHINING"
   },
   {
-    "name": "Addict",
-    "desc": "Start each battle with All Stats Down 2.\nGain All Stats Up 3 whenever you eat a pill.\nYou have a 50% chance to find a pill at the end of each battle."
+    "name": "PillPopper",
+    "desc": "Start each battle with All Stats Down 2.\nGain All Stats Up 3 whenever you eat a pill.\nYou have a 50% chance to find a pill at the end of each battle.",
+    "key": "DISORDER_PILLPOPPER"
   },
   {
     "name": "BorrowedTime",
-    "desc": "+50% dodge chance. Doomed 3."
+    "desc": "+50% dodge chance. Doomed 3.",
+    "key": "DISORDER_BORROWEDTIME"
   },
   {
     "name": "Brave",
-    "desc": "Take your turn earlier.\nImmune to Fear and Madness.\nAttacks against you never miss."
+    "desc": "Take your turn earlier.\nImmune to Fear and Madness.\nAttacks against you never miss.",
+    "key": "DISORDER_BRAVE"
   },
   {
     "name": "Scatological",
-    "desc": "Heal 5 HP when you damage poop.\nAt the start of your turn, if you're near poop, you automatically move toward it and eat it."
+    "desc": "Heal 5 HP when you damage poop.\nAt the start of your turn, if you're near poop, you automatically move toward it and eat it.",
+    "key": "DISORDER_SCATOLOGICAL"
   },
   {
-    "name": "Necrophage",
-    "desc": "At the start of your turn, if there's a dead body near you, move towards it and eat it to gain All Stats Up and heal 4 HP."
+    "name": "Cannibal",
+    "desc": "At the start of your turn, if there's a dead body near you, move towards it and eat it to gain All Stats Up and heal 4 HP.",
+    "key": "DISORDER_NECROPHAGE"
   },
   {
-    "name": "Crohn'sDisease",
-    "desc": "At the end of your turn, you have a 20% chance to poop all over the place!"
+    "name": "CrohnsDisease",
+    "desc": "At the end of your turn, you have a 20% chance to poop all over the place!",
+    "key": "DISORDER_CROHNSDISEASE"
   },
   {
     "name": "Pica",
-    "desc": "When you collect a coin or scrap pickup, heal instead of gaining the pickup's normal effect."
+    "desc": "When you collect a coin or scrap pickup, heal instead of gaining the pickup's normal effect.",
+    "key": "DISORDER_PICA"
   },
   {
     "name": "FelineAids",
-    "desc": "Your basic attack inflicts Poison 3 and Weakness 1.\nInflict Poison 3 and Weakness 1 on units that contact you.\nGain -1 [img:con] and -1 [img:spd] at the end of each battle permanently."
+    "desc": "Your basic attack inflicts Poison 3 and Weakness 1.\nInflict Poison 3 and Weakness 1 on units that contact you.\nGain -1 [img:con] and -1 [img:spd] at the end of each battle permanently.",
+    "key": "DISORDER_FELINEAIDS"
   },
   {
     "name": "Dyslexia",
-    "desc": "Swap 3's and 5's in the mana costs and damage values of your spells while in a battle. 6's and 9's are also swapped."
+    "desc": "Swap 3's and 5's in the mana costs and damage values of your spells while in a battle. 6's and 9's are also swapped.",
+    "key": "DISORDER_DYSLEXIA"
   },
   {
     "name": "Covid",
-    "desc": "Start each battle with All Stats Down, Poison 1, and Weakness 1.\nYour basic attack inflicts Poison 1 and Weakness 1.\n15% chance of recovering at the end of each round. Contagious."
+    "desc": "Start each battle with All Stats Down, Poison 1, and Weakness 1.\nYour basic attack inflicts Poison 1 and Weakness 1.\n15% chance of recovering at the end of each round. Contagious.",
+    "key": "DISORDER_COVID"
   },
   {
-    "name": "TheFlu",
-    "desc": "Start each battle with Slow 5 and Weakness 5.\nYour basic attack inflicts Slow 1 and Weakness 1.\n20% chance of recovering at the end of each round. Contagious."
+    "name": "Flu",
+    "desc": "Start each battle with Slow 5 and Weakness 5.\nYour basic attack inflicts Slow 1 and Weakness 1.\n20% chance of recovering at the end of each round. Contagious.",
+    "key": "DISORDER_THEFLU"
   },
   {
     "name": "BirdFlu",
-    "desc": "Start each battle in Mockingbird Form.\nYou have a 20% chance to recover at the end of each battle.\nContagious."
+    "desc": "Start each battle in Mockingbird Form.\nYou have a 20% chance to recover at the end of each battle.\nContagious.",
+    "key": "DISORDER_BIRDFLU"
   },
   {
     "name": "Nudist",
-    "desc": "+50% dodge chance.\nYou can't wear armor."
+    "desc": "+50% dodge chance.\nYou can't wear armor.",
+    "key": "DISORDER_NUDIST"
   },
   {
     "name": "Elephantiasis",
-    "desc": "At the end of each battle, gain -1 [img:spd] and +2 starting [img:shield] permanently. After 8 battles, gain Trample."
+    "desc": "At the end of each battle, gain -1 [img:spd] and +2 starting [img:shield] permanently. After 8 battles, gain Trample.",
+    "key": "DISORDER_ELEPHANTIASIS"
   },
   {
     "name": "Gigantism",
-    "desc": "Trample."
+    "desc": "Trample.",
+    "key": "DISORDER_GIGANTISM"
   },
   {
     "name": "Dwarfism",
-    "desc": "+10% dodge chance."
+    "desc": "+10% dodge chance.",
+    "key": "DISORDER_DWARFISM"
   },
   {
     "name": "PrimordialDwarf",
-    "desc": ""
+    "desc": "",
+    "key": "DISORDER_PRIMORDIALDWARF"
   },
   {
     "name": "Sociopathy",
-    "desc": "You have Madness on your first turn."
+    "desc": "You have Madness on your first turn.",
+    "key": "DISORDER_SOCIOPATHY"
   },
   {
     "name": "Schizophrenia",
-    "desc": "At the end of your turn, spawn a hallucination. It has Madness, attacks any unit except you, and fades after its turn."
+    "desc": "At the end of your turn, spawn a hallucination. It has Madness, attacks any unit except you, and fades after its turn.",
+    "key": "DISORDER_SCHIZOPHRENIA"
   },
   {
     "name": "Lycanthropy",
-    "desc": "33% chance to enter Wolf Form at the start of your turn."
+    "desc": "33% chance to enter Wolf Form at the start of your turn.",
+    "key": "DISORDER_LYCANTHROPY"
   },
   {
-    "name": "WobblyCatSyndrome",
-    "desc": "25% chance to block attacks and get knocked back 10 tiles instead."
+    "name": "WobblyCat",
+    "desc": "25% chance to block attacks and get knocked back 10 tiles instead.",
+    "key": "DISORDER_WOBBLYCATSYNDROME"
   },
   {
     "name": "Singleton",
-    "desc": "Your max HP and mana are reduced to 1.\nDamage you take is reduced to 1.\nYour spells cost 1 mana."
+    "desc": "Your max HP and mana are reduced to 1.\nDamage you take is reduced to 1.\nYour spells cost 1 mana.",
+    "key": "DISORDER_SINGLETON"
   },
   {
     "name": "Insomnia",
-    "desc": "You can't fall asleep.\nYou can move an extra time each turn. Exhaustion sets in on round 3."
+    "desc": "You can't fall asleep.\nYou can move an extra time each turn. Exhaustion sets in on round 3.",
+    "key": "DISORDER_INSOMNIA"
   },
   {
     "name": "Phony",
-    "desc": "Start each battle with full mana.\nYou can't regenerate mana."
+    "desc": "Start each battle with full mana.\nYou can't regenerate mana.",
+    "key": "DISORDER_PHONY"
   },
   {
     "name": "AcidReflux",
-    "desc": "Your basic attack becomes a lobbed shot with splash damage but deals 2 damage to you."
+    "desc": "Your basic attack becomes a lobbed shot with splash damage but deals 2 damage to you.",
+    "key": "DISORDER_ACIDREFLUX"
   },
   {
     "name": "SpontaneousCombustion",
-    "desc": "When you take damage from an ability, you have a 15% chance to inflict Burn 5 on yourself and adjacent units."
+    "desc": "When you take damage from an ability, you have a 15% chance to inflict Burn 5 on yourself and adjacent units.",
+    "key": "DISORDER_SPONTANEOUSCOMBUSTION"
   },
   {
     "name": "TheHunger",
-    "desc": "Your basic attack has lifesteal.\nIf you don't deal damage to a unit on your turn, gain Madness 1."
+    "desc": "Your basic attack has lifesteal.\nIf you don't deal damage to a unit on your turn, gain Madness 1.",
+    "key": "DISORDER_THEHUNGER"
   },
   {
-    "name": "Paraplegic",
-    "desc": "The range of all your movement, dash, and jump abilities are capped at 1 unless they teleport.\nEnemies won't prioritize attacking you."
+    "name": "Paralyzed",
+    "desc": "The range of all your movement, dash, and jump abilities are capped at 1 unless they teleport.\nEnemies won't prioritize attacking you.",
+    "key": "DISORDER_PARAPELEGIC"
   },
   {
-    "name": "OsteogenesisImperfecta",
-    "desc": "+2 Bruise, +2 Bleed Thorns, and +2 Thorns.\nWhen you're downed, you get injured an extra time."
+    "name": "GlassBones",
+    "desc": "+2 Bruise, +2 Bleed Thorns, and +2 Thorns.\nWhen you're downed, you get injured an extra time.",
+    "key": "DISORDER_OSTEOGENESISIMPERFECTA"
   },
   {
     "name": "SevereDejaVu",
@@ -401,46 +500,142 @@
   },
   {
     "name": "Tachysensia",
-    "desc": ""
+    "desc": "",
+    "key": "DISORDER_TACHYSENSIA"
   },
   {
     "name": "SavantSyndrome",
-    "desc": ""
+    "desc": "",
+    "key": "DISORDER_SAVANTSYNDROME"
   },
   {
     "name": "SpinaBifida",
-    "desc": ""
+    "desc": "",
+    "key": "DISORDER_SPINABIFIDA"
   },
   {
     "name": "ADHD",
-    "desc": "You have 5 seconds to make decisions, or else this cat acts on its own."
+    "desc": "You have 5 seconds to make decisions, or else this cat acts on its own.",
+    "key": "DISORDER_ADHD"
   },
   {
     "name": "FlamingFists",
-    "desc": "Your basic attacks inflict Burn 1. Start with Burn 1."
+    "desc": "Your basic attacks inflict Burn 1. Start with Burn 1.",
+    "key": "DISORDER_FLAMINGFISTS"
   },
   {
     "name": "IntestinalProlapse",
-    "desc": "You receive double damage from behind."
+    "desc": "You receive double damage from behind.",
+    "key": "DISORDER_INTESTINALRPOLAPSE"
   },
   {
-    "name": "BlessingofGlorg",
-    "desc": "You can unequip cursed items."
+    "name": "BlessingOfGlorg",
+    "desc": "You can unequip cursed items.",
+    "key": "DISORDER_BLESSINGOFGLORG"
   },
   {
     "name": "BlackFetin",
-    "desc": "You have a 10% to be AI controlled each turn.\nWhen an ally cat is downed, restore all your mana."
+    "desc": "You have a 10% to be AI controlled each turn.\nWhen an ally cat is downed, restore all your mana.",
+    "key": "DISORDER_BLACKFETIN"
   },
   {
     "name": "OrangeFetin",
-    "desc": "You have a 10% to be AI controlled each turn.\nWhen you kill an enemy, gain 3 mana and heal 2 hp."
+    "desc": "You have a 10% to be AI controlled each turn.\nWhen you kill an enemy, gain 3 mana and heal 2 hp.",
+    "key": "DISORDER_ORANGEFETIN"
   },
   {
     "name": "PurpleFetin",
-    "desc": "You have a 10% to be AI controlled each turn.\nYou can reroll your level up options 3 times."
+    "desc": "You have a 10% to be AI controlled each turn.\nYou can reroll your level up options 3 times.",
+    "key": "DISORDER_PURPLEFETIN"
   },
   {
     "name": "Chungus",
-    "desc": ""
+    "desc": "",
+    "key": "DISORDER_CHUNGUS"
+  },
+  {
+    "name": "Distemper2",
+    "key": "DISORDER_DISTEMPER2",
+    "desc": "DISORDER_DISTEMPER2_DESC"
+  },
+  {
+    "name": "SchrodingerDisorder",
+    "key": "DISORDER_SCHRODINGERDISORDER",
+    "desc": "50% chance to start each battle dead, or alive with max hp and all stats up."
+  },
+  {
+    "name": "SkillShare_Disorder",
+    "key": "DISORDER_SKILLSHAREDISORDER",
+    "desc": "If you have a 2nd disorder, all other cats in your party gain it at the start of each battle."
+  },
+  {
+    "name": "Gargantuan",
+    "key": "DISORDER_GARGANTUAN",
+    "desc": "You are permanently immobile."
+  },
+  {
+    "name": "BrainDead",
+    "key": "DISORDER_BRAINDEAD",
+    "desc": "Gain twice as many stats when you level up. +1 Reroll when leveling up."
+  },
+  {
+    "name": "TamperedGenes",
+    "key": "DISORDER_TAMPEREDGENES",
+    "desc": "At the end of each battle gain a random mutation. When you're downed, your corpse is destroyed."
+  },
+  {
+    "name": "SensoryOverloadFace",
+    "key": "DISORDER_SENSORYOVERLOAD",
+    "desc": "DISORDER_SENSORYOVERLOAD_DESC"
+  },
+  {
+    "name": "SensoryOverloadTrinket",
+    "key": "DISORDER_SENSORYOVERLOAD",
+    "desc": "DISORDER_SENSORYOVERLOAD_DESC"
+  },
+  {
+    "name": "SensoryOverloadHead",
+    "key": "DISORDER_SENSORYOVERLOAD",
+    "desc": "DISORDER_SENSORYOVERLOAD_DESC"
+  },
+  {
+    "name": "SensoryOverloadNeck",
+    "key": "DISORDER_SENSORYOVERLOAD",
+    "desc": "DISORDER_SENSORYOVERLOAD_DESC"
+  },
+  {
+    "name": "SensoryOverloadWeapon",
+    "key": "DISORDER_SENSORYOVERLOAD",
+    "desc": "DISORDER_SENSORYOVERLOAD_DESC"
+  },
+  {
+    "name": "EternalYouth",
+    "key": "DISORDER_ETERNALYOUTH",
+    "desc": "You are a kitten... forever!\n+1 [img:comfort], +1 [img:stimulation], +1 [img:appeal]"
+  },
+  {
+    "name": "DejaVu",
+    "key": "DISORDER_DEJAVU",
+    "desc": "10% chance to cancel actions.\n[s:.7]Deja Vu will go away when this cat returns to the house.[/s]"
+  },
+  {
+    "name": "DejaVu2",
+    "key": "DISORDER_DEJAVU2",
+    "desc": "DISORDER_DEJAVU2_DESC"
+  },
+  {
+    "name": "DownsSyndrome",
+    "key": "DISORDER_DOWNSSYNDROME",
+    "desc": "DISORDER_DOWNSSYNDROME_DESC"
+  },
+  {
+    "name": "WilliamsSyndrome",
+    "key": "DISORDER_WILLIAMSSYNDROME",
+    "desc": "Your attacks may Charm."
+  },
+  {
+    "name": "DarkOne",
+    "key": "DISORDER_DARKONE",
+    "desc": "At end of your turn, deal 1 damage to all units and heal for the damage dealt. Whenever you down an ally gain All Stats Up."
   }
 ]

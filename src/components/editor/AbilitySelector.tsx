@@ -40,14 +40,14 @@ const AbilitySelector: React.FC<Props> = ({
         const moves = abilityDB["basic_move"];
         if (moves) {
           for (const entry of moves) {
-            result.push({ value: entry.name, label: entry.name, group: "Basic Move" });
+            result.push({ value: entry.name, label: entry.name, desc: entry.desc, group: "Basic Move" });
           }
         }
       } else if (slotIndex === 1) {
         const attacks = abilityDB["basic_attack"];
         if (attacks) {
           for (const entry of attacks) {
-            result.push({ value: entry.name, label: entry.name, group: "Basic Attack" });
+            result.push({ value: entry.name, label: entry.name, desc: entry.desc, group: "Basic Attack" });
           }
         }
       } else {
@@ -55,7 +55,7 @@ const AbilitySelector: React.FC<Props> = ({
         const classActive = abilityDB[`${cls}_active`];
         if (classActive) {
           for (const entry of classActive) {
-            result.push({ value: entry.name, label: entry.name, group: `${catClass} Active` });
+            result.push({ value: entry.name, label: entry.name, desc: entry.desc, group: `${catClass} Active` });
           }
         }
         for (const c of ALL_CLASSES) {
@@ -64,7 +64,7 @@ const AbilitySelector: React.FC<Props> = ({
           if (ca) {
             const groupName = `${c.charAt(0).toUpperCase() + c.slice(1)} Active`;
             for (const entry of ca) {
-              result.push({ value: entry.name, label: entry.name, group: groupName });
+              result.push({ value: entry.name, label: entry.name, desc: entry.desc, group: groupName });
             }
           }
         }
@@ -74,7 +74,7 @@ const AbilitySelector: React.FC<Props> = ({
       const classPassive = abilityDB[`${cls}_passive`];
       if (classPassive) {
         for (const entry of classPassive) {
-          result.push({ value: entry.name, label: entry.name, group: `${catClass} Passive` });
+          result.push({ value: entry.name, label: entry.name, desc: entry.desc, group: `${catClass} Passive` });
         }
       }
       for (const c of ALL_CLASSES) {
@@ -83,7 +83,7 @@ const AbilitySelector: React.FC<Props> = ({
         if (cp) {
           const groupName = `${c.charAt(0).toUpperCase() + c.slice(1)} Passive`;
           for (const entry of cp) {
-            result.push({ value: entry.name, label: entry.name, group: groupName });
+            result.push({ value: entry.name, label: entry.name, desc: entry.desc, group: groupName });
           }
         }
       }
@@ -91,7 +91,7 @@ const AbilitySelector: React.FC<Props> = ({
       const disorders = abilityDB["disorder"];
       if (disorders) {
         for (const entry of disorders) {
-          result.push({ value: entry.name, label: entry.name, group: "Disorder" });
+          result.push({ value: entry.name, label: entry.name, desc: entry.desc, group: "Disorder" });
         }
       }
     }

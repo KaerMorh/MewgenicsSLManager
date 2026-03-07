@@ -1,210 +1,262 @@
 [
   {
     "name": "Thorns",
-    "desc": "Thorns 2."
+    "desc": "Thorns 2.",
+    "key": "PASSIVE_THORNS"
   },
   {
     "name": "Thorns2",
-    "desc": "Thorns 4.\nGain +1 Thorns when you take damage."
+    "desc": "Thorns 4.\nGain +1 Thorns when you take damage.",
+    "key": "PASSIVE_THORNS2"
   },
   {
     "name": "HeavyHanded",
-    "desc": "+2 Knockback Damage."
+    "desc": "+2 Knockback Damage.",
+    "key": "PASSIVE_HEAVYHANDED"
   },
   {
     "name": "HeavyHanded2",
-    "desc": "+3 Knockback Damage.\nYour basic attack gains +3 Knockback."
+    "desc": "+3 Knockback Damage.\nYour basic attack gains +3 Knockback.",
+    "key": "PASSIVE_HEAVYHANDED2"
   },
   {
     "name": "SlackOff",
-    "desc": "If you end your turn with unused movement actions, gain 8 HP."
+    "desc": "If you end your turn with unused movement actions, gain 8 HP.",
+    "key": "PASSIVE_SLACKOFF"
   },
   {
     "name": "SlackOff2",
-    "desc": "If you end your turn with unused movement actions, gain +2 [img:con], 8 HP and 5 mana."
+    "desc": "If you end your turn with unused movement actions, gain +2 [img:con], 8 HP and 5 mana.",
+    "key": "PASSIVE_SLACKOFF2"
   },
   {
     "name": "Scabs",
-    "desc": "Gain +2 Shield when you take damage from an ability."
+    "desc": "Gain +2 Shield when you take damage from an ability.",
+    "key": "PASSIVE_SCABS"
   },
   {
     "name": "Scabs2",
-    "desc": "Gain +2 Shield when you take damage from any source."
+    "desc": "Gain +2 Shield when you take damage from any source.",
+    "key": "PASSIVE_SCABS2"
   },
   {
     "name": "EyeCatchin",
-    "desc": ""
+    "desc": "",
+    "key": "Eye Catchin'"
   },
   {
     "name": "EyeCatchin2",
-    "desc": ""
+    "desc": "",
+    "key": "Eye Catchin'2"
   },
   {
     "name": "ThunderThighs",
-    "desc": "Trample."
+    "desc": "Trample.",
+    "key": "PASSIVE_THUNDERTHIGHS"
   },
   {
     "name": "ThunderThighs2",
-    "desc": "Trample 9."
+    "desc": "Trample 9.",
+    "key": "PASSIVE_THUNDERTHIGHS2"
   },
   {
     "name": "Plow",
-    "desc": "When you knock back a unit, leave a rock where that unit was."
+    "desc": "When you knock back a unit, leave a rock where that unit was.",
+    "key": "PASSIVE_PLOW"
   },
   {
     "name": "Plow2",
-    "desc": "When you knock back a unit, leave a rock where that unit was.\nAll damage you deal has +1 Knockback."
+    "desc": "When you knock back a unit, leave a rock where that unit was.\nAll damage you deal has +1 Knockback.",
+    "key": "PASSIVE_PLOW2"
   },
   {
     "name": "PetRocks",
-    "desc": "Rocks you spawn are alive!!\n...and have +3 HP. Spawn a rock at the start of the battle."
+    "desc": "Rocks you spawn are alive!!\n...and have +3 HP. Spawn a rock at the start of the battle.",
+    "key": "PASSIVE_PETROCKS"
   },
   {
     "name": "PetRocks2",
-    "desc": "Rocks you spawn are alive, and hot!!\n...and have +7 HP. Spawn a boulder at the start of the battle."
+    "desc": "Rocks you spawn are alive, and hot!!\n...and have +7 HP. Spawn a boulder at the start of the battle.",
+    "key": "PASSIVE_PETROCKS2"
   },
   {
     "name": "ToadStyle",
-    "desc": "Your movement action is a jump. Landing on a unit deals damage and displaces it."
+    "desc": "Your movement action is a jump. Landing on a unit deals damage and displaces it.",
+    "key": "PASSIVE_TOADSTYLE"
   },
   {
     "name": "ToadStyle2",
-    "desc": "Your movement action is a jump. Landing on a unit deals damage and displaces it."
+    "desc": "Your movement action is a jump. Landing on a unit deals damage and displaces it.",
+    "key": "PASSIVE_TOADSTYLE2"
   },
   {
     "name": "ChainKnockback",
-    "desc": "Your basic attack gains +1 Knockback.\nUnits you knockback will Knockback other units."
+    "desc": "Your basic attack gains +1 Knockback.\nUnits you knockback will Knockback other units.",
+    "key": "PASSIVE_CHAINKNOCKBACK"
   },
   {
     "name": "ChainKnockback2",
-    "desc": "Your basic attack gains +1 Knockback.\nAll knockback you deal is increased by 2 and deals +1 extra damage.\nUnits you knockback will Knockback other units further."
+    "desc": "Your basic attack gains +1 Knockback.\nAll knockback you deal is increased by 2 and deals +1 extra damage.\nUnits you knockback will Knockback other units further.",
+    "key": "PASSIVE_CHAINKNOCKBACK2"
   },
   {
-    "name": "Protective",
-    "desc": "Your allies have Brace 1."
+    "name": "ProtectiveAura",
+    "desc": "Your allies have Brace 1.",
+    "key": "PASSIVE_PROTECTIVE"
   },
   {
-    "name": "Protective2",
-    "desc": "Your allies have Brace 2."
+    "name": "ProtectiveAura2",
+    "desc": "Your allies have Brace 2.",
+    "key": "PASSIVE_PROTECTIVE2"
   },
   {
     "name": "Wrestlemaniac",
-    "desc": "Your basic attack becomes Suplex when adjacent to enemies.\nYou gain the ability Toss."
+    "desc": "Your basic attack becomes Suplex when adjacent to enemies.\nYou gain the ability Toss.",
+    "key": "PASSIVE_WRESTLEMANIAC"
   },
   {
     "name": "Wrestlemaniac2",
-    "desc": "Your basic attack is Suplex while you're next to a unit that can be suplexed and Your basic attack becomes Suplex when adjacent to enemies. +1 Bonus Move.\nYou gain the ability Toss+."
+    "desc": "Your basic attack is Suplex while you're next to a unit that can be suplexed and Your basic attack becomes Suplex when adjacent to enemies. +1 Bonus Move.\nYou gain the ability Toss+.",
+    "key": "PASSIVE_WRESTLEMANIAC2"
   },
   {
     "name": "MountainForm",
-    "desc": "Knockback immunity.\nTiles you walk over become dirt and may spawn rocks."
+    "desc": "Knockback immunity.\nTiles you walk over become dirt and may spawn rocks.",
+    "key": "PASSIVE_MOUNTAINFORM"
   },
   {
     "name": "MountainForm2",
-    "desc": "Trample. Knockback and Fire immunity.\nTiles you walk over become dirt and may spawn rocks."
+    "desc": "Trample. Knockback and Fire immunity.\nTiles you walk over become dirt and may spawn rocks.",
+    "key": "PASSIVE_MOUNTAINFORM2"
   },
   {
     "name": "HomeRun",
-    "desc": "Knockback you deal is increased by 10."
+    "desc": "Knockback you deal is increased by 10.",
+    "key": "PASSIVE_HOMERUN"
   },
   {
     "name": "HomeRun2",
-    "desc": "Knockback you deal is increased by 10 and inflicts Bruise 1."
+    "desc": "Knockback you deal is increased by 10 and inflicts Bruise 1.",
+    "key": "PASSIVE_HOMERUN2"
   },
   {
     "name": "RockAspect",
-    "desc": "Units that attack or contact you have a 10% chance to get Petrified."
+    "desc": "Units that attack or contact you have a 10% chance to get Petrified.",
+    "key": "PASSIVE_ROCKASPECT"
   },
   {
     "name": "RockAspect2",
-    "desc": "Units that attack or contact you have a 20% chance to get Petrified."
+    "desc": "Units that attack or contact you have a 20% chance to get Petrified.",
+    "key": "PASSIVE_ROCKASPECT2"
   },
   {
     "name": "WideLoad",
-    "desc": "When an adjacent ally is targeted by an enemy, swap places with the ally."
+    "desc": "When an adjacent ally is targeted by an enemy, swap places with the ally.",
+    "key": "PASSIVE_WIDELOAD"
   },
   {
     "name": "WideLoad2",
-    "desc": "When an adjacent ally is targeted by an enemy, gain +1 temp Thorns and temp Brace, then swap places with the ally."
+    "desc": "When an adjacent ally is targeted by an enemy, gain +1 temp Thorns and temp Brace, then swap places with the ally.",
+    "key": "PASSIVE_WIDELOAD2"
   },
   {
     "name": "HardHead",
-    "desc": "You block attacks from the front."
+    "desc": "You block attacks from the front.",
+    "key": "PASSIVE_HARDHEAD"
   },
   {
     "name": "HardHead2",
-    "desc": "You block attacks from the front. Your basic attack inflicts Bruise."
+    "desc": "You block attacks from the front. Your basic attack inflicts Bruise.",
+    "key": "PASSIVE_HARDHEAD2"
   },
   {
-    "name": "MyLeg!",
-    "desc": "All injuries you get are Broken Legs.\nIf you have four broken legs, gain +4 Thorns, Trample, and adjacent allies have Toss as a bonus ability."
+    "name": "MyLeg",
+    "desc": "All injuries you get are Broken Legs.\nIf you have four broken legs, gain +4 Thorns, Trample, and adjacent allies have Toss as a bonus ability.",
+    "key": "PASSIVE_MYLEG"
   },
   {
-    "name": "MyLeg!2",
-    "desc": "All injuries you get are Broken Legs.\nIf you have four broken legs, gain +4 Thorns, +4 Brace, Trample, and adjacent allies have Toss as a bonus ability."
+    "name": "MyLeg2",
+    "desc": "All injuries you get are Broken Legs.\nIf you have four broken legs, gain +4 Thorns, +4 Brace, Trample, and adjacent allies have Toss as a bonus ability.",
+    "key": "PASSIVE_MYLEG2"
   },
   {
     "name": "Hardy",
-    "desc": "Heal to full HP at the start of each battle."
+    "desc": "Heal to full HP at the start of each battle.",
+    "key": "PASSIVE_HARDY"
   },
   {
     "name": "Hardy2",
-    "desc": "Heal to full HP at the start of each battle. +3 Health Regeneration."
+    "desc": "Heal to full HP at the start of each battle. +3 Health Regeneration.",
+    "key": "PASSIVE_HARDY2"
   },
   {
-    "name": "SlowandSteady",
-    "desc": "Gain -2 [img:spd] and +1 Range at the end of each turn. If your [img:spd] is 0, you can attack an extra time each turn."
+    "name": "SlowAndSteady",
+    "desc": "Gain -2 [img:spd] and +1 Range at the end of each turn. If your [img:spd] is 0, you can attack an extra time each turn.",
+    "key": "PASSIVE_SLOWANDSTEADY"
   },
   {
-    "name": "SlowandSteady2",
-    "desc": "Gain -2 [img:spd], +1 Range, +1 [img:str], and +1 [img:int] at the end of each turn. If your [img:spd] is 0, you can attack an extra time each turn."
+    "name": "SlowAndSteady2",
+    "desc": "Gain -2 [img:spd], +1 Range, +1 [img:str], and +1 [img:int] at the end of each turn. If your [img:spd] is 0, you can attack an extra time each turn.",
+    "key": "PASSIVE_SLOWANDSTEADY2"
   },
   {
     "name": "FollowUp",
-    "desc": "After you use your basic attack, dash forward as far as you can."
+    "desc": "After you use your basic attack, dash forward as far as you can.",
+    "key": "PASSIVE_FOLLOWUP"
   },
   {
     "name": "FollowUp2",
-    "desc": "After you use your basic attack, dash forward as far as you can and do a melee attack."
+    "desc": "After you use your basic attack, dash forward as far as you can and do a melee attack.",
+    "key": "PASSIVE_FOLLOWUP2"
   },
   {
-    "name": "Cat-A-Pult",
-    "desc": "You can throw adjacent allies up to 4 tiles on their turns without using their movement action."
+    "name": "CatAPult",
+    "desc": "You can throw adjacent allies up to 4 tiles on their turns without using their movement action.",
+    "key": "PASSIVE_CATAPULT"
   },
   {
     "name": "CatAPult2",
-    "desc": "You can throw adjacent allies to any tile on their turns without using their movement action."
+    "desc": "You can throw adjacent allies to any tile on their turns without using their movement action.",
+    "key": "PASSIVE_CATAPULT2"
   },
   {
     "name": "ShovingMatch",
-    "desc": "When you knock a unit into an ally, or knock an ally into an enemy, that ally uses their basic attack on the other unit.\nYour basic attack has +1 Knockback."
+    "desc": "When you knock a unit into an ally, or knock an ally into an enemy, that ally uses their basic attack on the other unit.\nYour basic attack has +1 Knockback.",
+    "key": "PASSIVE_SHOVINGMATCH"
   },
   {
     "name": "ShovingMatch2",
-    "desc": "When you knock a unit into an ally, or knock an ally into an enemy, that ally uses their basic attack on the other unit.\nYour basic attack has +2 Knockback. You deal no damage to allies."
+    "desc": "When you knock a unit into an ally, or knock an ally into an enemy, that ally uses their basic attack on the other unit.\nYour basic attack has +2 Knockback. You deal no damage to allies.",
+    "key": "PASSIVE_SHOVINGMATCH2"
   },
   {
     "name": "Stoic",
-    "desc": "If you end your turn with unused movement actions, gain +2 Bonus Moves."
+    "desc": "If you end your turn with unused movement actions, gain +2 Bonus Moves.",
+    "key": "PASSIVE_STOIC"
   },
   {
     "name": "Stoic2",
-    "desc": "If you end your turn with unused movement actions, gain +2 Bonus Moves, +2 [img:shield] and +1 Brace."
+    "desc": "If you end your turn with unused movement actions, gain +2 Bonus Moves, +2 [img:shield] and +1 Brace.",
+    "key": "PASSIVE_STOIC2"
   },
   {
     "name": "PriorityTarget",
-    "desc": "Enemies will attack you instead of your allies if they can."
+    "desc": "Enemies will attack you instead of your allies if they can.",
+    "key": "PASSIVE_PRIORITYTARGET"
   },
   {
     "name": "PriorityTarget2",
-    "desc": "+2 Thorns, +2 Brace, and +2 Health Regeneration. Enemies will attack you instead of your allies if they can."
+    "desc": "+2 Thorns, +2 Brace, and +2 Health Regeneration. Enemies will attack you instead of your allies if they can.",
+    "key": "PASSIVE_PRIORITYTARGET2"
   },
   {
     "name": "Bouncer",
-    "desc": "When an ally takes damage, move 3 tiles toward the source of the damage and attack it if you can."
+    "desc": "When an ally takes damage, move 3 tiles toward the source of the damage and attack it if you can.",
+    "key": "PASSIVE_BOUNCER"
   },
   {
     "name": "Bouncer2",
-    "desc": "When an ally takes damage, full move toward the source of the damage and attack it if you can."
+    "desc": "When an ally takes damage, full move toward the source of the damage and attack it if you can.",
+    "key": "PASSIVE_BOUNCER2"
   }
 ]

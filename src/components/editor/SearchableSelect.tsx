@@ -4,6 +4,7 @@ export interface SelectOption {
   value: string;
   label: string;
   group?: string;
+  desc?: string;
 }
 
 interface Props {
@@ -246,7 +247,12 @@ const SearchableSelect: React.FC<Props> = ({
                       e.currentTarget.style.background = opt.value === value ? "#dbeafe" : "transparent";
                     }}
                   >
-                    {opt.label}
+                    <div>{opt.label}</div>
+                    {opt.desc && (
+                      <div style={{ fontSize: 10, fontWeight: 600, color: "#64748b", marginTop: 1 }}>
+                        {opt.desc}
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>

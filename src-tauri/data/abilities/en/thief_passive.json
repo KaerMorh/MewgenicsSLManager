@@ -1,210 +1,262 @@
 [
   {
     "name": "Backstabber",
-    "desc": "Your backstabs are always critical."
+    "desc": "Your backstabs are always critical.",
+    "key": "PASSIVE_BACKSTABBER"
   },
   {
     "name": "Backstabber2",
-    "desc": "Your backstabs are always critical.\nWhen you land a critical hit, gain a random stat up."
+    "desc": "Your backstabs are always critical.\nWhen you land a critical hit, gain a random stat up.",
+    "key": "PASSIVE_BACKSTABBER2"
   },
   {
     "name": "GoldenClaws",
-    "desc": "Gain +1 Damage for each coin you collect."
+    "desc": "Gain +1 Damage for each coin you collect.",
+    "key": "PASSIVE_GOLDENCLAWS"
   },
   {
     "name": "GoldenClaws2",
-    "desc": "Gain +2 Damage for each coin you collect."
+    "desc": "Gain +2 Damage for each coin you collect.",
+    "key": "PASSIVE_GOLDENCLAWS2"
   },
   {
-    "name": "Stealthed",
-    "desc": "Start each battle with Stealth."
+    "name": "Shadow",
+    "desc": "Start each battle with Stealth.",
+    "key": "PASSIVE_STEALTHED"
   },
   {
-    "name": "Stealthed2",
-    "desc": "Start each battle with Stealth. Gain Stealth when you get a kill."
+    "name": "Shadow2",
+    "desc": "Start each battle with Stealth. Gain Stealth when you get a kill.",
+    "key": "PASSIVE_STEALTHED2"
   },
   {
     "name": "PoisonTips",
-    "desc": "Your basic attack inflicts Poison 1."
+    "desc": "Your basic attack inflicts Poison 1.",
+    "key": "PASSIVE_POISONTIPS"
   },
   {
     "name": "PoisonTips2",
-    "desc": "Your basic attack inflicts Poison 1.\nPoison you inflict is doubled."
+    "desc": "Your basic attack inflicts Poison 1.\nPoison you inflict is doubled.",
+    "key": "PASSIVE_POISONTIPS2"
   },
   {
     "name": "Burgle",
-    "desc": "Your basic attack gains you 1 coin when it deals damage."
+    "desc": "Your basic attack gains you 1 coin when it deals damage.",
+    "key": "PASSIVE_BURGLE"
   },
   {
     "name": "Burgle2",
-    "desc": "Your basic attack gains you 1 coin and spawns a coin pickup when it deals damage."
+    "desc": "Your basic attack gains you 1 coin and spawns a coin pickup when it deals damage.",
+    "key": "PASSIVE_BURGLE2"
   },
   {
-    "name": "More!",
-    "desc": "When you kill a unit, refresh your movement action."
+    "name": "SwiftKiller",
+    "desc": "When you kill a unit, refresh your movement action.",
+    "key": "PASSIVE_SWIFTKILLER"
   },
   {
-    "name": "More!2",
-    "desc": "When you kill a unit, refresh your movement and basic attack."
+    "name": "SwiftKiller2",
+    "desc": "When you kill a unit, refresh your movement and basic attack.",
+    "key": "PASSIVE_SWIFTKILLER2"
   },
   {
-    "name": "LongStride",
-    "desc": "+1 movement range."
+    "name": "LongStrider",
+    "desc": "+1 movement range.",
+    "key": "PASSIVE_LONGSTRIDER"
   },
   {
-    "name": "LongStride2",
-    "desc": "+2 movement range.\n+10% dodge chance."
+    "name": "LongStrider2",
+    "desc": "+2 movement range.\n+10% dodge chance.",
+    "key": "PASSIVE_LONGSTRIDER2"
   },
   {
     "name": "DoubleThrow",
-    "desc": "Your basic attack hits twice for half damage."
+    "desc": "Your basic attack hits twice for half damage.",
+    "key": "PASSIVE_DOUBLETHROW"
   },
   {
     "name": "DoubleThrow2",
-    "desc": "Your basic attack hits thrice for 1/3rd damage."
+    "desc": "Your basic attack hits thrice for 1/3rd damage.",
+    "key": "PASSIVE_DOUBLETHROW2"
   },
   {
     "name": "BountyHunter",
-    "desc": "During your turn, one random enemy has a Bounty."
+    "desc": "During your turn, one random enemy has a Bounty.",
+    "key": "PASSIVE_BOUNTYHUNTER"
   },
   {
     "name": "BountyHunter2",
-    "desc": "During your turn, 2 random enemies have a large Bounty."
+    "desc": "During your turn, 2 random enemies have a large Bounty.",
+    "key": "PASSIVE_BOUNTYHUNTER2"
   },
   {
     "name": "RazorClaws",
-    "desc": "Your basic attack inflicts Bleed 1."
+    "desc": "Your basic attack inflicts Bleed 1.",
+    "key": "PASSIVE_RAZORCLAWS"
   },
   {
     "name": "RazorClaws2",
-    "desc": "All of your damaging abilities inflict Bleed 1."
+    "desc": "All of your damaging abilities inflict Bleed 1.",
+    "key": "PASSIVE_RAZORCLAWS2"
   },
   {
-    "name": "SwiftLooter",
-    "desc": "When you collect a coin pickup, refresh your movement action.\n1-2 extra coins spawn in each battle."
+    "name": "Looter",
+    "desc": "When you collect a coin pickup, refresh your movement action.\n1-2 extra coins spawn in each battle.",
+    "key": "PASSIVE_SWIFTLOOTER"
   },
   {
-    "name": "SwiftLooter2",
-    "desc": "When you collect a coin pickup, refresh your movement action and gain +1 [img:dex] and +1 [img:spd].\n2-3 extra coins spawn in each battle."
+    "name": "Looter2",
+    "desc": "When you collect a coin pickup, refresh your movement action and gain +1 [img:dex] and +1 [img:spd].\n2-3 extra coins spawn in each battle.",
+    "key": "PASSIVE_SWIFTLOOTER2"
   },
   {
-    "name": "FirstStrike",
-    "desc": "Gain an extra turn at the start of the battle."
+    "name": "AlphaStrike",
+    "desc": "Gain an extra turn at the start of the battle.",
+    "key": "PASSIVE_ALPHASTRIKE"
   },
   {
-    "name": "FirstStrike2",
-    "desc": "Gain an extra turn at the start of the battle. Damage you deal on this turn is always critical."
+    "name": "AlphaStrike2",
+    "desc": "Gain an extra turn at the start of the battle. Damage you deal on this turn is always critical.",
+    "key": "PASSIVE_ALPHASTRIKE2"
   },
   {
-    "name": "ZIP!",
-    "desc": "Your movement action is Shadowstep."
+    "name": "Zip",
+    "desc": "Your movement action is Shadowstep.",
+    "key": "PASSIVE_ZIP"
   },
   {
-    "name": "ZIP!2",
-    "desc": "Your movement action is Shadowstep.\nYou can use your movement action an extra time each turn."
+    "name": "Zip2",
+    "desc": "Your movement action is Shadowstep.\nYou can use your movement action an extra time each turn.",
+    "key": "PASSIVE_ZIP2"
   },
   {
     "name": "WeakSpot",
-    "desc": "Your basic attack ignores shield and inflicts Weakness 1."
+    "desc": "Your basic attack ignores shield and inflicts Weakness 1.",
+    "key": "PASSIVE_WEAKSPOT"
   },
   {
     "name": "WeakSpot2",
-    "desc": "All of your damaging abilities ignore shield and inflict Weakness 2. +25% crit chance."
+    "desc": "All of your damaging abilities ignore shield and inflict Weakness 2. +25% crit chance.",
+    "key": "PASSIVE_WEAKSPOT2"
   },
   {
     "name": "Penetrate",
-    "desc": "Your basic attack passes through units and ignores shield. +1 Range."
+    "desc": "Your basic attack passes through units and ignores shield. +1 Range.",
+    "key": "PASSIVE_PENETRATE"
   },
   {
     "name": "Penetrate2",
-    "desc": "Your basic attack passes through units and ignores shield. +10 Range."
+    "desc": "Your basic attack passes through units and ignores shield. +10 Range.",
+    "key": "PASSIVE_PENETRATE2"
   },
   {
     "name": "AfterImage",
-    "desc": "When you move, spawn a shadow where you moved from. The shadow mimics your basic action but fades away at the end of your turn."
+    "desc": "When you move, spawn a shadow where you moved from. The shadow mimics your basic action but fades away at the end of your turn.",
+    "key": "PASSIVE_AFTERIMAGE"
   },
   {
     "name": "AfterImage2",
-    "desc": "When you move, spawn a shadow where you moved from. The shadow mimics your basic action."
+    "desc": "When you move, spawn a shadow where you moved from. The shadow mimics your basic action.",
+    "key": "PASSIVE_AFTERIMAGE2"
   },
   {
     "name": "Shiv",
-    "desc": "Your basic attack has +2 damage, +25% critical chance, and inflicts Bleed 1 when attacking a unit in melee range."
+    "desc": "Your basic attack has +2 damage, +25% critical chance, and inflicts Bleed 1 when attacking a unit in melee range.",
+    "key": "PASSIVE_SHIV"
   },
   {
     "name": "Shiv2",
-    "desc": "Your basic attack has +2 damage, +50% critical chance, and inflicts Bleed 2 when attacking a unit in melee range."
+    "desc": "Your basic attack has +2 damage, +50% critical chance, and inflicts Bleed 2 when attacking a unit in melee range.",
+    "key": "PASSIVE_SHIV2"
   },
   {
     "name": "Critical",
-    "desc": "Your critical hits deal +100% more damage. Gain +1 [img:lck] whenever you make a critical hit."
+    "desc": "Your critical hits deal +100% more damage. Gain +1 [img:lck] whenever you make a critical hit.",
+    "key": "PASSIVE_CRITICAL"
   },
   {
     "name": "Critical2",
-    "desc": "Your critical hits deal +100% more damage and inflict Bleed and Weakness 1.  Gain +1 [img:lck] whenever you make a critical hit."
+    "desc": "Your critical hits deal +100% more damage and inflict Bleed and Weakness 1.  Gain +1 [img:lck] whenever you make a critical hit.",
+    "key": "PASSIVE_CRITICAL2"
   },
   {
     "name": "LootHoarder",
-    "desc": "Automatically collect all pickups at the end of the battle if you're not downed."
+    "desc": "Automatically collect all pickups at the end of the battle if you're not downed.",
+    "key": "PASSIVE_LOOTHOARDER"
   },
   {
     "name": "LootHoarder2",
-    "desc": "Automatically destroy all enemy bodies and collect all pickups at the end of the battle if you're not downed."
+    "desc": "Automatically destroy all enemy bodies and collect all pickups at the end of the battle if you're not downed.",
+    "key": "PASSIVE_LOOTHOARDER2"
   },
   {
     "name": "Cripple",
-    "desc": "Your critical hits inflict Immobilize and Weakness 2."
+    "desc": "Your critical hits inflict Immobilize and Weakness 2.",
+    "key": "PASSIVE_CRIPPLE"
   },
   {
     "name": "Cripple2",
-    "desc": "Your critical hits inflict Stun and Weakness 2."
+    "desc": "Your critical hits inflict Stun and Weakness 2.",
+    "key": "PASSIVE_CRIPPLE2"
   },
   {
     "name": "Agile",
-    "desc": "+2 Movement Range. If you move fewer tiles than your full movement range, you can move a 2nd time for the rest of your movement range."
+    "desc": "+2 Movement Range. If you move fewer tiles than your full movement range, you can move a 2nd time for the rest of your movement range.",
+    "key": "PASSIVE_AGILE"
   },
   {
     "name": "Agile2",
-    "desc": "+4 Movement Range. If you move fewer tiles than your full movement range, you can move a 2nd, 3rd and 4th time for the rest of your movement range."
+    "desc": "+4 Movement Range. If you move fewer tiles than your full movement range, you can move a 2nd, 3rd and 4th time for the rest of your movement range.",
+    "key": "PASSIVE_AGILE2"
   },
   {
     "name": "Shank",
-    "desc": "When behind and adjacent to an enemy, your basic attack is a melee attack that hits twice."
+    "desc": "When behind and adjacent to an enemy, your basic attack is a melee attack that hits twice.",
+    "key": "PASSIVE_SHANK"
   },
   {
     "name": "Shank2",
-    "desc": "When behind and adjacent to an enemy, your basic attack is a melee attack that hits thrice!"
+    "desc": "When behind and adjacent to an enemy, your basic attack is a melee attack that hits thrice!",
+    "key": "PASSIVE_SHANK2"
   },
   {
-    "name": "FlipaCoin",
-    "desc": "When you gain a coin, you have a 50% chance to spawn a coin on a random tile and a 50% chance to gain +2 [img:spd] and +2 [img:lck]."
+    "name": "FlipACoin",
+    "desc": "When you gain a coin, you have a 50% chance to spawn a coin on a random tile and a 50% chance to gain +2 [img:spd] and +2 [img:lck].",
+    "key": "PASSIVE_FLIPACOIN"
   },
   {
-    "name": "FlipaCoin2",
-    "desc": "When you gain a coin, you have a 50% chance to spawn 2 coins on random tiles and a 50% chance to gain +2 [img:spd], +2 [img:lck] and +2 [img:dex]."
+    "name": "FlipACoin2",
+    "desc": "When you gain a coin, you have a 50% chance to spawn 2 coins on random tiles and a 50% chance to gain +2 [img:spd], +2 [img:lck] and +2 [img:dex].",
+    "key": "PASSIVE_FLIPACOIN2"
   },
   {
     "name": "ShakeDown",
-    "desc": "Your critical hits spawn a coin and a random pickup."
+    "desc": "Your critical hits spawn a coin and a random pickup.",
+    "key": "PASSIVE_SHAKEDOWN"
   },
   {
     "name": "ShakeDown2",
-    "desc": "+25% critical hit chance. Your critical hits spawn a coin and two random pickups."
+    "desc": "+25% critical hit chance. Your critical hits spawn a coin and two random pickups.",
+    "key": "PASSIVE_SHAKEDOWN2"
   },
   {
-    "name": "Sweetspot",
-    "desc": "+1 Range. Your basic attack deals more damage the farther away you are from the target."
+    "name": "SweetSpot",
+    "desc": "+1 Range. Your basic attack deals more damage the farther away you are from the target.",
+    "key": "PASSIVE_SWEETSPOT"
   },
   {
-    "name": "Sweetspot2",
-    "desc": "+6 Range. Your basic attack deals more damage the farther away you are from the target."
+    "name": "SweetSpot2",
+    "desc": "+6 Range. Your basic attack deals more damage the farther away you are from the target.",
+    "key": "PASSIVE_SWEETSPOT2"
   },
   {
     "name": "Pinpoint",
-    "desc": "Your critical hits inflict Marked."
+    "desc": "Your critical hits inflict Marked.",
+    "key": "PASSIVE_PINPOINT"
   },
   {
     "name": "Pinpoint2",
-    "desc": "Your critical hits inflict Marked.\nYour critical hits deal 100% more damage."
+    "desc": "Your critical hits inflict Marked.\nYour critical hits deal 100% more damage.",
+    "key": "PASSIVE_PINPOINT2"
   }
 ]

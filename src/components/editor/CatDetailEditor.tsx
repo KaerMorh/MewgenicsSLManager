@@ -2,7 +2,7 @@ import React from "react";
 import { useI18n } from "../../i18n";
 import AbilitySelector from "./AbilitySelector";
 import MutationSelector from "./MutationSelector";
-import type { CatDetail, CatChanges, CatStats, CatAbilities, AbilityDB, MutationDB } from "../../types";
+import type { CatDetail, CatChanges, CatStats, SkillSlot, AbilityDB, MutationDB } from "../../types";
 
 interface Props {
   cat: CatDetail;
@@ -50,13 +50,21 @@ const CatDetailEditor: React.FC<Props> = ({
     index: number,
     value: string | null
   ) => {
-    const newAbilities: CatAbilities = {
-      active: [...cat.abilities.active],
-      passive: [...cat.abilities.passive],
-      disorder: [...cat.abilities.disorder],
-    };
-    newAbilities[type][index] = value;
-    onUpdate({ abilities: newAbilities });
+    if (type === "active") {
+      const newActive = [...cat.abilities.active];
+      newActive[index] = value;
+      onUpdate({ abilities: { ...cat.abilities, active: newActive } });
+    } else {
+      const arr: SkillSlot[] = [...cat.abilities[type]];
+      if (value === null) {
+        arr[index] = { name: null, tier: 1 };
+      } else if (value.endsWith("2")) {
+        arr[index] = { name: value.slice(0, -1), tier: 2 };
+      } else {
+        arr[index] = { name: value, tier: 1 };
+      }
+      onUpdate({ abilities: { ...cat.abilities, [type]: arr } });
+    }
   };
 
   const updateMutation = (field: string, value: number) => {
@@ -296,11 +304,11 @@ const CatDetailEditor: React.FC<Props> = ({
             {t("editor.passiveSkills")}
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 6 }}>
-            {cat.abilities.passive.map((val, idx) => (
+            {cat.abilities.passive.map((slot, idx) => (
               <AbilitySelector
                 key={idx}
                 label={`Passive ${idx + 1}`}
-                value={val}
+                value={slot.name ? (slot.tier >= 2 ? slot.name + "2" : slot.name) : null}
                 type="passive"
                 slotIndex={idx}
                 catClass={cat.cat_class}
@@ -317,11 +325,11 @@ const CatDetailEditor: React.FC<Props> = ({
             {t("editor.disorderSkills")}
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 6 }}>
-            {cat.abilities.disorder.map((val, idx) => (
+            {cat.abilities.disorder.map((slot, idx) => (
               <AbilitySelector
                 key={idx}
                 label={`Disorder ${idx + 1}`}
-                value={val}
+                value={slot.name ? (slot.tier >= 2 ? slot.name + "2" : slot.name) : null}
                 type="disorder"
                 slotIndex={idx}
                 catClass={cat.cat_class}

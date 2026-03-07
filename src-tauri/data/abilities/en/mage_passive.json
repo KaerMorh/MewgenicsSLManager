@@ -1,210 +1,262 @@
 [
   {
-    "name": "Synthesize",
-    "desc": "Gain +1 [img:int] at the start of each turn."
+    "name": "Micronaps",
+    "desc": "Gain +1 [img:int] at the start of each turn.",
+    "key": "PASSIVE_SYNTHESIZE"
   },
   {
-    "name": "Synthesize2",
-    "desc": "Gain +1 [img:int] at the start of each turn.\nYour spells cost 25% less mana."
+    "name": "Micronaps2",
+    "desc": "Gain +1 [img:int] at the start of each turn.\nYour spells cost 25% less mana.",
+    "key": "PASSIVE_SYNTHESIZE2"
   },
   {
-    "name": "ForceField",
-    "desc": "At the start of every third turn, gain +1 [img:divineshield]."
+    "name": "HolyMantel",
+    "desc": "At the start of every third turn, gain +1 [img:divineshield].",
+    "key": "PASSIVE_FORCEFIELD"
   },
   {
-    "name": "ForceField2",
-    "desc": "At the start of every other turn, gain +1 [img:divineshield]."
+    "name": "HolyMantel2",
+    "desc": "At the start of every other turn, gain +1 [img:divineshield].",
+    "key": "PASSIVE_FORCEFIELD2"
   },
   {
-    "name": "SplashDamage",
-    "desc": "Your basic attack deals 2 Magic splash damage."
+    "name": "Shrapnel",
+    "desc": "Your basic attack deals 2 Magic splash damage.",
+    "key": "PASSIVE_SHRAPNEL"
   },
   {
-    "name": "SplashDamage2",
-    "desc": "+2 Range. Your basic attack deals 2 Magic splash damage in a wide area."
+    "name": "Shrapnel2",
+    "desc": "+2 Range. Your basic attack deals 2 Magic splash damage in a wide area.",
+    "key": "PASSIVE_SHRAPNEL2"
   },
   {
     "name": "BurningPaws",
-    "desc": "Your basic action inflicts Burn 1."
+    "desc": "Your basic action inflicts Burn 1.",
+    "key": "PASSIVE_BURNINGPAWS"
   },
   {
     "name": "BurningPaws2",
-    "desc": "Your basic action inflicts Burn 3."
+    "desc": "Your basic action inflicts Burn 3.",
+    "key": "PASSIVE_BURNINGPAWS2"
   },
   {
     "name": "LightningPaws",
-    "desc": "Your basic attack deals +1 Electric Damage and has a 10% chance to Stun."
+    "desc": "Your basic attack deals +1 Electric Damage and has a 10% chance to Stun.",
+    "key": "PASSIVE_LIGHTNINGPAWS"
   },
   {
     "name": "LightningPaws2",
-    "desc": "Your basic attack deals +2 Electric Damage and has a 33% chance to Stun."
+    "desc": "Your basic attack deals +2 Electric Damage and has a 33% chance to Stun.",
+    "key": "PASSIVE_LIGHTNINGPAWS2"
   },
   {
     "name": "IcePaws",
-    "desc": "Your basic attack deals Ice Damage, inflicts Slow 1, and has a 15% chance to Freeze."
+    "desc": "Your basic attack deals Ice Damage, inflicts Slow 1, and has a 15% chance to Freeze.",
+    "key": "PASSIVE_ICEPAWS"
   },
   {
     "name": "IcePaws2",
-    "desc": "Your basic attack deals Ice Damage, inflicts Slow 2, and has a 50% chance to Freeze."
+    "desc": "Your basic attack deals Ice Damage, inflicts Slow 2, and has a 50% chance to Freeze.",
+    "key": "PASSIVE_ICEPAWS2"
   },
   {
     "name": "PawMissile",
-    "desc": "Your basic attack is Magic Missile.\n(its damage scales with [img:int])."
+    "desc": "Your basic attack is Magic Missile.\n(its damage scales with [img:int]).",
+    "key": "PASSIVE_PAWMISSILE"
   },
   {
     "name": "PawMissile2",
-    "desc": "Your basic attack is Magic Missile.\n(its damage scales with [img:int]).\nEmit 4 Sparkles when you use your basic attack."
+    "desc": "Your basic attack is Magic Missile.\n(its damage scales with [img:int]).\nEmit 4 Sparkles when you use your basic attack.",
+    "key": "PASSIVE_PAWMISSILE2"
   },
   {
     "name": "Overload",
-    "desc": "When you cast a spell, deal 1 random elemental damage to adjacent tiles."
+    "desc": "When you cast a spell, deal 1 random elemental damage to adjacent tiles.",
+    "key": "PASSIVE_OVERLOAD"
   },
   {
     "name": "Overload2",
-    "desc": "When you cast a spell, deal 2 tri-elemental damage to adjacent tiles."
+    "desc": "When you cast a spell, deal 2 tri-elemental damage to adjacent tiles.",
+    "key": "PASSIVE_OVERLOAD2"
   },
   {
     "name": "ChargeUp",
-    "desc": "If you end your turn with 0 mana, the next spell you cast is free"
+    "desc": "If you end your turn with 0 mana, the next spell you cast is free",
+    "key": "PASSIVE_CHARGEUP"
   },
   {
     "name": "ChargeUp2",
-    "desc": "If you end your turn with 0 mana, gain +1 Magic Damage and the next spell you cast is free."
+    "desc": "If you end your turn with 0 mana, gain +1 Magic Damage and the next spell you cast is free.",
+    "key": "PASSIVE_CHARGEUP2"
   },
   {
     "name": "DeathChill",
-    "desc": "When downed, Freeze all enemies and the rest of the map."
+    "desc": "When downed, Freeze all enemies and the rest of the map.",
+    "key": "PASSIVE_DEATHCHILL"
   },
   {
     "name": "DeathChill2",
-    "desc": "When downed, Freeze all enemies and the rest of the map, and full heal all allies."
+    "desc": "When downed, Freeze all enemies and the rest of the map, and full heal all allies.",
+    "key": "PASSIVE_DEATHCHILL2"
   },
   {
-    "name": "Epiphany",
-    "desc": "+5 starting mana. +5 Mana Regeneration  Lose all unspent mana at the end of each of your turns"
+    "name": "Recharged",
+    "desc": "+5 starting mana. +5 Mana Regeneration  Lose all unspent mana at the end of each of your turns",
+    "key": "PASSIVE_RECHARGED"
   },
   {
-    "name": "Epiphany2",
-    "desc": "+20 starting mana. +5 Mana Regeneration  Lose all unspent mana at the end of each of your turns"
+    "name": "Recharged2",
+    "desc": "+20 starting mana. +5 Mana Regeneration  Lose all unspent mana at the end of each of your turns",
+    "key": "PASSIVE_RECHARGED2"
   },
   {
-    "name": "Three",
-    "desc": "Every 3rd spell you cast in a turn is cast twice."
+    "name": "EnergyStorm",
+    "desc": "Every 3rd spell you cast in a turn is cast twice.",
+    "key": "PASSIVE_ENERGYSTORM"
   },
   {
-    "name": "Three2",
-    "desc": "The first spell and every 3rd spell you cast is cast twice."
+    "name": "EnergyStorm2",
+    "desc": "The first spell and every 3rd spell you cast is cast twice.",
+    "key": "PASSIVE_ENERGYSTORM2"
   },
   {
-    "name": "FireAspect",
-    "desc": "Fire immunity.\nInflict Burn 1 on units that contact you.\nYour Fire element damage is increased by 1 and inflicts +1 Burn."
+    "name": "FireArmor",
+    "desc": "Fire immunity.\nInflict Burn 1 on units that contact you.\nYour Fire element damage is increased by 1 and inflicts +1 Burn.",
+    "key": "PASSIVE_FIREASPECT"
   },
   {
-    "name": "FireAspect2",
-    "desc": "Fire immunity.\nInflict Burn 3 on units that contact you.\nYour Fire element damage is increased by 2 and inflicts +3 Burn."
+    "name": "FireArmor2",
+    "desc": "Fire immunity.\nInflict Burn 3 on units that contact you.\nYour Fire element damage is increased by 2 and inflicts +3 Burn.",
+    "key": "PASSIVE_FIREASPECT2"
   },
   {
-    "name": "IceAspect",
-    "desc": "Ice immunity. You can damage frozen units.\nUnits that contact you take 1 Ice Damage, Slow 2, and have a 5% chance to Freeze."
+    "name": "IceArmor",
+    "desc": "Ice immunity. You can damage frozen units.\nUnits that contact you take 1 Ice Damage, Slow 2, and have a 5% chance to Freeze.",
+    "key": "PASSIVE_ICEASPECT"
   },
   {
-    "name": "IceAspect2",
-    "desc": "+2 Brace. Ice immunity. You can damage frozen units.\nUnits that contact you take 3 Ice Damage, Slow 2, and have a 15% chance to Freeze."
+    "name": "IceArmor2",
+    "desc": "+2 Brace. Ice immunity. You can damage frozen units.\nUnits that contact you take 3 Ice Damage, Slow 2, and have a 15% chance to Freeze.",
+    "key": "PASSIVE_ICEASPECT2"
   },
   {
     "name": "Resonance",
-    "desc": "When you cast a spell gain +1 Magic Damage for the rest of the turn."
+    "desc": "When you cast a spell gain +1 Magic Damage for the rest of the turn.",
+    "key": "PASSIVE_RESONANCE"
   },
   {
     "name": "Resonance2",
-    "desc": "When you cast a spell gain +1 Magic Damage and +1 Damage for the rest of the turn."
+    "desc": "When you cast a spell gain +1 Magic Damage and +1 Damage for the rest of the turn.",
+    "key": "PASSIVE_RESONANCE2"
   },
   {
     "name": "LearnFromMe",
-    "desc": "When you cast a spell, all allied cats gain that spell in their bonus slot."
+    "desc": "When you cast a spell, all allied cats gain that spell in their bonus slot.",
+    "key": "PASSIVE_LEARNFROMME"
   },
   {
     "name": "LearnFromMe2",
-    "desc": "When you cast a spell, all allied cats gain the upgraded version of that spell in their bonus slot."
+    "desc": "When you cast a spell, all allied cats gain the upgraded version of that spell in their bonus slot.",
+    "key": "PASSIVE_LEARNFROMME2"
   },
   {
-    "name": "LightningAspect",
-    "desc": "Electric immunity.\nWhen you deal Electric Damage, gain +1 Charge."
+    "name": "LightningArmor",
+    "desc": "Electric immunity.\nWhen you deal Electric Damage, gain +1 Charge.",
+    "key": "PASSIVE_LIGHTNINGASPECT"
   },
   {
-    "name": "LightningAspect2",
-    "desc": "Electric immunity.\nWhen you deal Electric Damage, gain +1 Charge for each point of damage dealt."
+    "name": "LightningArmor2",
+    "desc": "Electric immunity.\nWhen you deal Electric Damage, gain +1 Charge for each point of damage dealt.",
+    "key": "PASSIVE_LIGHTNINGASPECT2"
   },
   {
     "name": "LongCast",
-    "desc": "Tile-targeted spells gain +3 Range."
+    "desc": "Tile-targeted spells gain +3 Range.",
+    "key": "PASSIVE_LONGCAST"
   },
   {
     "name": "LongCast2",
-    "desc": "+1 Magic Damage. Tile-targeted spells gain +5 Range."
+    "desc": "+1 Magic Damage. Tile-targeted spells gain +5 Range.",
+    "key": "PASSIVE_LONGCAST2"
   },
   {
-    "name": "LightUptheStage",
-    "desc": "At the end of your turn, Emit a Sparkle for each turn you've taken."
+    "name": "LightUpTheStage",
+    "desc": "At the end of your turn, Emit a Sparkle for each turn you've taken.",
+    "key": "PASSIVE_LIGHTUPTHESTAGE"
   },
   {
-    "name": "LightUptheStage2",
-    "desc": "At the end of your turn, emit a Sparkle for each turn you've taken and gain +1 Kinetic Spikes ."
+    "name": "LightUpTheStage2",
+    "desc": "At the end of your turn, emit a Sparkle for each turn you've taken and gain +1 Kinetic Spikes .",
+    "key": "PASSIVE_LIGHTUPTHESTAGE2"
   },
   {
     "name": "ElementalAttunement",
-    "desc": "Casting elemental spells imbues your basic attack with those elements and relevant effects for the rest of the battle."
+    "desc": "Casting elemental spells imbues your basic attack with those elements and relevant effects for the rest of the battle.",
+    "key": "PASSIVE_ELEMENTALATTUNEMENT"
   },
   {
     "name": "ElementalAttunement2",
-    "desc": "Casting elemental spells imbues your basic attack with those elements and relevant effects for the rest of the battle.\nElemental spells cost -2 mana."
+    "desc": "Casting elemental spells imbues your basic attack with those elements and relevant effects for the rest of the battle.\nElemental spells cost -2 mana.",
+    "key": "PASSIVE_ELEMENTALATTUNEMENT2"
   },
   {
     "name": "LatentEnergy",
-    "desc": "When an ally spends mana, Gain +2 Magic Damage until the next time you use magic."
+    "desc": "When an ally spends mana, Gain +2 Magic Damage until the next time you use magic.",
+    "key": "PASSIVE_LATENTENERGY"
   },
   {
     "name": "LatentEnergy2",
-    "desc": "When an ally spends mana, Gain +2 Magic Damage until the next time you use magic, and gain +2 mana."
+    "desc": "When an ally spends mana, Gain +2 Magic Damage until the next time you use magic, and gain +2 mana.",
+    "key": "PASSIVE_LATENTENERGY2"
   },
   {
     "name": "Five",
-    "desc": "When you end your turn with exactly 5 mana, gain +5 [img:shield] and temporarily gain +5 Kinetic Spikes until the end of your next turn ."
+    "desc": "When you end your turn with exactly 5 mana, gain +5 [img:shield] and temporarily gain +5 Kinetic Spikes until the end of your next turn .",
+    "key": "PASSIVE_FIVE"
   },
   {
     "name": "Five2",
-    "desc": "When you end your turn with exactly 5 mana, gain +5 [img:shield], heal 5 HP and temporarily gain +5 Kinetic Spikes and +5 Damage until the end of your next turn."
+    "desc": "When you end your turn with exactly 5 mana, gain +5 [img:shield], heal 5 HP and temporarily gain +5 Kinetic Spikes and +5 Damage until the end of your next turn.",
+    "key": "PASSIVE_FIVE2"
   },
   {
     "name": "MagicGuru",
-    "desc": "Your allies have +1 Mana Regeneration. When an ally spends 7+ mana to cast a spell, they gain All Stats Up."
+    "desc": "Your allies have +1 Mana Regeneration. When an ally spends 7+ mana to cast a spell, they gain All Stats Up.",
+    "key": "PASSIVE_MAGICGURU"
   },
   {
     "name": "MagicGuru2",
-    "desc": "Your allies have +1 Mana Regeneration. When an ally spends 7+ mana to cast a spell, they gain All Stats Up. When you spend mana, each ally gains +1 mana."
+    "desc": "Your allies have +1 Mana Regeneration. When an ally spends 7+ mana to cast a spell, they gain All Stats Up. When you spend mana, each ally gains +1 mana.",
+    "key": "PASSIVE_MAGICGURU2"
   },
   {
     "name": "One",
-    "desc": "When you end your turn, if you cast exactly 1 spell, double cast your next spell."
+    "desc": "When you end your turn, if you cast exactly 1 spell, double cast your next spell.",
+    "key": "PASSIVE_ONE"
   },
   {
     "name": "One2",
-    "desc": "When you end your turn, if you cast exactly 1 spell, double cast your next 2 spells."
+    "desc": "When you end your turn, if you cast exactly 1 spell, double cast your next 2 spells.",
+    "key": "PASSIVE_ONE2"
   },
   {
     "name": "Two",
-    "desc": "When you end your turn, if you cast exactly 2 spells, gain +1 Bonus Attack.\nWhen you end your turn, if you have exactly 2 mana, gain +1 Bonus Attack."
+    "desc": "When you end your turn, if you cast exactly 2 spells, gain +1 Bonus Attack.\nWhen you end your turn, if you have exactly 2 mana, gain +1 Bonus Attack.",
+    "key": "PASSIVE_TWO"
   },
   {
     "name": "Two2",
-    "desc": "When you end your turn, if you cast exactly 2 spells, gain +1 Bonus Attack and Movement.\nWhen you end your turn, if you have exactly 2 mana, gain +1 Bonus Attack and Movement."
+    "desc": "When you end your turn, if you cast exactly 2 spells, gain +1 Bonus Attack and Movement.\nWhen you end your turn, if you have exactly 2 mana, gain +1 Bonus Attack and Movement.",
+    "key": "PASSIVE_TWO2"
   },
   {
     "name": "Four",
-    "desc": "When you end your turn, if you have exactly 4 mana, gain +1 [img:int] and +1 Magic Damage."
+    "desc": "When you end your turn, if you have exactly 4 mana, gain +1 [img:int] and +1 Magic Damage.",
+    "key": "PASSIVE_FOUR"
   },
   {
     "name": "Four2",
-    "desc": "When you end your turn, if you have exactly 4 mana, gain +1 [img:int], +1 Magic Damage, +1 Kinetic Spikes, and +1 Holy Shield."
+    "desc": "When you end your turn, if you have exactly 4 mana, gain +1 [img:int], +1 Magic Damage, +1 Kinetic Spikes, and +1 Holy Shield.",
+    "key": "PASSIVE_FOUR2"
   }
 ]

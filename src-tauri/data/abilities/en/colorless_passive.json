@@ -1,534 +1,672 @@
 [
   {
-    "name": "Self-Assured",
-    "desc": "Gain a random stat up whenever you down a unit."
+    "name": "SelfAssured",
+    "desc": "Gain a random stat up whenever you down a unit.",
+    "key": "PASSIVE_SELFASSURED"
   },
   {
     "name": "SelfAssured2",
-    "desc": "Gain All Stats Up whenever you down a unit."
+    "desc": "Gain All Stats Up whenever you down a unit.",
+    "key": "PASSIVE_SELFASSURED2"
   },
   {
     "name": "LuckDrain",
-    "desc": "Gain +1 [img:lck] whenever a unit is downed."
+    "desc": "Gain +1 [img:lck] whenever a unit is downed.",
+    "key": "PASSIVE_LUCKDRAIN"
   },
   {
     "name": "LuckDrain2",
-    "desc": "Gain +1 [img:lck] whenever a unit is downed.\nGain an extra +2 [img:lck] whenever YOU down a unit."
+    "desc": "Gain +1 [img:lck] whenever a unit is downed.\nGain an extra +2 [img:lck] whenever YOU down a unit.",
+    "key": "PASSIVE_LUCKDRAIN2"
   },
   {
     "name": "Infested",
-    "desc": "50% chance to spawn a flea familiar when you end your turn."
+    "desc": "50% chance to spawn a flea familiar when you end your turn.",
+    "key": "PASSIVE_INFESTED"
   },
   {
     "name": "Infested2",
-    "desc": "Spawn 2-3 fleas at the start of each battle.\n50% chance to spawn a flea familiar when you end your turn."
+    "desc": "Spawn 2-3 fleas at the start of each battle.\n50% chance to spawn a flea familiar when you end your turn.",
+    "key": "PASSIVE_INFESTED2"
   },
   {
     "name": "Worms",
-    "desc": "50% chance to spawn a maggot familiar when you end your turn."
+    "desc": "50% chance to spawn a maggot familiar when you end your turn.",
+    "key": "PASSIVE_WORMS"
   },
   {
     "name": "Worms2",
-    "desc": "50% chance to spawn a mutated maggot familiar when you end your turn."
+    "desc": "50% chance to spawn a mutated maggot familiar when you end your turn.",
+    "key": "PASSIVE_WORMS2"
   },
   {
     "name": "Amped",
-    "desc": "Gain +1 [img:spd] at the end of your turn."
+    "desc": "Gain +1 [img:spd] at the end of your turn.",
+    "key": "PASSIVE_AMPED"
   },
   {
     "name": "Amped2",
-    "desc": "Gain +1 [img:spd] at the end of your turn.\nYou can move an extra time each turn."
+    "desc": "Gain +1 [img:spd] at the end of your turn.\nYou can move an extra time each turn.",
+    "key": "PASSIVE_AMPED2"
   },
   {
     "name": "Furious",
-    "desc": "Gain +1 Damage each time you land a critical hit.\n+5% critical hit chance."
+    "desc": "Gain +1 Damage each time you land a critical hit.\n+5% critical hit chance.",
+    "key": "PASSIVE_FURIOUS"
   },
   {
     "name": "Furious2",
-    "desc": "Gain +1 Damage and +5% critical hit chance each time you land a critical hit.\n+5% critical hit chance."
+    "desc": "Gain +1 Damage and +5% critical hit chance each time you land a critical hit.\n+5% critical hit chance.",
+    "key": "PASSIVE_FURIOUS2"
   },
   {
     "name": "Deathless",
-    "desc": "+3 Corpse HP"
+    "desc": "+3 Corpse HP",
+    "key": "PASSIVE_DEATHLESS"
   },
   {
     "name": "MetalDetector",
-    "desc": "5% chance to spawn a coin when you move over a tile."
+    "desc": "5% chance to spawn a coin when you move over a tile.",
+    "key": "PASSIVE_METALDETECTOR"
   },
   {
     "name": "MetalDetector2",
-    "desc": "10% chance to spawn a coin when you move over a tile."
+    "desc": "10% chance to spawn a coin when you move over a tile.",
+    "key": "PASSIVE_METALDETECTOR2"
   },
   {
-    "name": "Deathproof",
-    "desc": "While downed, you have a 25% chance to revive with 1 HP at the end of each round."
+    "name": "DeathProof",
+    "desc": "While downed, you have a 25% chance to revive with 1 HP at the end of each round.",
+    "key": "PASSIVE_DEATHPROOF"
   },
   {
-    "name": "Deathproof2",
-    "desc": "While downed, you have a 33% chance to revive with 10 HP and All Stats Up at the end of each round."
+    "name": "DeathProof2",
+    "desc": "While downed, you have a 33% chance to revive with 10 HP and All Stats Up at the end of each round.",
+    "key": "PASSIVE_DEATHPROOF2"
   },
   {
     "name": "Leader",
-    "desc": "Adjacent allies have +1 Damage and +1 Range."
+    "desc": "Adjacent allies have +1 Damage and +1 Range.",
+    "key": "PASSIVE_LEADER"
   },
   {
     "name": "Leader2",
-    "desc": "All allies have +1 Damage and +1 Range."
+    "desc": "All allies have +1 Damage and +1 Range.",
+    "key": "PASSIVE_LEADER2"
   },
   {
     "name": "Mange",
-    "desc": "Inflict Poison 1 on units that contact you."
+    "desc": "Inflict Poison 1 on units that contact you.",
+    "key": "PASSIVE_MANGE"
   },
   {
     "name": "Mange2",
-    "desc": "Inflict 1 Poison, Bleed, Bruise, Weakness, and Leech on units that contact you."
+    "desc": "Inflict 1 Poison, Bleed, Bruise, Weakness, and Leech on units that contact you.",
+    "key": "PASSIVE_MANGE2"
   },
   {
-    "name": "E-Tank",
-    "desc": "Start each battle with +20 unfilled max health."
+    "name": "ETank",
+    "desc": "Start each battle with +20 unfilled max health.",
+    "key": "PASSIVE_ETANK"
   },
   {
     "name": "ETank2",
-    "desc": "Start each battle with +50 unfilled max health."
+    "desc": "Start each battle with +50 unfilled max health.",
+    "key": "PASSIVE_ETANK2"
   },
   {
     "name": "Careful",
-    "desc": "Damage you deal to other allies is reduced to 0."
+    "desc": "Damage you deal to other allies is reduced to 0.",
+    "key": "PASSIVE_CAREFUL"
   },
   {
     "name": "Careful2",
-    "desc": "Damage you deal to other allies is reduced to 0. You cannot inflict debuffs on other allies.\nYou are careful in many other ways too."
+    "desc": "Damage you deal to other allies is reduced to 0. You cannot inflict debuffs on other allies.\nYou are careful in many other ways too.",
+    "key": "PASSIVE_CAREFUL2"
   },
   {
     "name": "DirtyClaws",
-    "desc": "Your physical attacks on Poisoned or Bleeding enemies inflict +1 Poison and/or Bleed."
+    "desc": "Your physical attacks on Poisoned or Bleeding enemies inflict +1 Poison and/or Bleed.",
+    "key": "PASSIVE_DIRTYCLAWS"
   },
   {
     "name": "DirtyClaws2",
-    "desc": "Your basic attack inflicts Poison 1 and Bleed 1. \nYour physical attacks on Poisoned or Bleeding enemies inflict +1 Poison and/or Bleed."
+    "desc": "Your basic attack inflicts Poison 1 and Bleed 1. \nYour physical attacks on Poisoned or Bleeding enemies inflict +1 Poison and/or Bleed.",
+    "key": "PASSIVE_DIRTYCLAWS2"
   },
   {
     "name": "LateBloomer",
-    "desc": "On your 5th turn, you gain All Stats Up 3."
+    "desc": "On your 5th turn, you gain All Stats Up 3.",
+    "key": "PASSIVE_LATEBLOOMER"
   },
   {
     "name": "LateBloomer2",
-    "desc": "On your 3rd turn, you gain All Stats Up 3."
+    "desc": "On your 3rd turn, you gain All Stats Up 3.",
+    "key": "PASSIVE_LATEBLOOMER2"
   },
   {
     "name": "Study",
-    "desc": "Gain +1 [img:int] whenever you hit a new type of unit with an attack or ability."
+    "desc": "Gain +1 [img:int] whenever you hit a new type of unit with an attack or ability.",
+    "key": "PASSIVE_STUDY"
   },
   {
     "name": "Study2",
-    "desc": "Gain +1 [img:int] whenever you hit a new type of unit with an attack or ability. All enemies of that type become Marked."
+    "desc": "Gain +1 [img:int] whenever you hit a new type of unit with an attack or ability. All enemies of that type become Marked.",
+    "key": "PASSIVE_STUDY2"
   },
   {
     "name": "SkillShare",
-    "desc": "Your other passive ability is shared with the other cats in your party at the start of each battle."
+    "desc": "Your other passive ability is shared with the other cats in your party at the start of each battle.",
+    "key": "PASSIVE_SKILLSHARE"
   },
   {
     "name": "SkillShare2",
-    "desc": "Your other passive ability is shared with the other cats in your party at the start of each battle. When breeding, your children will always inherit your other passive."
+    "desc": "Your other passive ability is shared with the other cats in your party at the start of each battle. When breeding, your children will always inherit your other passive.",
+    "key": "PASSIVE_SKILLSHARE2"
   },
   {
     "name": "NaturalHealing",
-    "desc": "You have +1 Health Regeneration"
+    "desc": "You have +1 Health Regeneration",
+    "key": "PASSIVE_NATURALHEALING"
   },
   {
     "name": "NaturalHealing2",
-    "desc": "You have +2 Health Regeneration\nAdjacent allies gain +1 Health Regeneration"
+    "desc": "You have +2 Health Regeneration\nAdjacent allies gain +1 Health Regeneration",
+    "key": "PASSIVE_NATURALHEALING2"
   },
   {
-    "name": "Longshot",
-    "desc": "+1 Range."
+    "name": "LongShot",
+    "desc": "+1 Range.",
+    "key": "PASSIVE_LONGSHOT"
   },
   {
-    "name": "Longshot2",
-    "desc": "+2 Range.\nYour ranged attacks have +25% critical hit chance."
+    "name": "LongShot2",
+    "desc": "+2 Range.\nYour ranged attacks have +25% critical hit chance.",
+    "key": "PASSIVE_LONGSHOT2"
   },
   {
-    "name": "FastFootsies",
-    "desc": "You are immune to negative tile effects."
+    "name": "FastFooted",
+    "desc": "You are immune to negative tile effects.",
+    "key": "PASSIVE_FASTFOOTED"
   },
   {
-    "name": "FastFootsies2",
-    "desc": "You are immune to negative tile effects.\nYou can move through units and objects."
+    "name": "FastFooted2",
+    "desc": "You are immune to negative tile effects.\nYou can move through units and objects.",
+    "key": "PASSIVE_FASTFOOTED2"
   },
   {
     "name": "Slugger",
-    "desc": "+1 Damage."
+    "desc": "+1 Damage.",
+    "key": "PASSIVE_SLUGGER"
   },
   {
     "name": "Slugger2",
-    "desc": "+3 Damage."
+    "desc": "+3 Damage.",
+    "key": "PASSIVE_SLUGGER2"
   },
   {
     "name": "Pulp",
-    "desc": "When you kill a unit or destroy a corpse, it becomes meat."
+    "desc": "When you kill a unit or destroy a corpse, it becomes meat.",
+    "key": "PASSIVE_PULP"
   },
   {
     "name": "Pulp2",
-    "desc": "+4 Damage.\nWhen you kill a unit or destroy a corpse, it becomes meat."
+    "desc": "+4 Damage.\nWhen you kill a unit or destroy a corpse, it becomes meat.",
+    "key": "PASSIVE_PULP2"
   },
   {
     "name": "Amplify",
-    "desc": "+1 Magic Damage."
+    "desc": "+1 Magic Damage.",
+    "key": "PASSIVE_AMPLIFY"
   },
   {
     "name": "Amplify2",
-    "desc": "+1 Magic Damage for every 3 [img:cha] you have."
+    "desc": "+1 Magic Damage for every 3 [img:cha] you have.",
+    "key": "PASSIVE_AMPLIFY2"
   },
   {
     "name": "DeathBoon",
-    "desc": "When you're downed, all allies gain All Stats Up."
+    "desc": "When you're downed, all allies gain All Stats Up.",
+    "key": "PASSIVE_DEATHBOON"
   },
   {
     "name": "DeathBoon2",
-    "desc": "When you're downed, all allies gain All Stats Up 2."
+    "desc": "When you're downed, all allies gain All Stats Up 2.",
+    "key": "PASSIVE_DEATHBOON2"
   },
   {
     "name": "SantaSangre",
-    "desc": "When you're downed, allies heal 12 HP. Excess healing is converted to Shield."
+    "desc": "When you're downed, allies heal 12 HP. Excess healing is converted to Shield.",
+    "key": "PASSIVE_SANTASANGRE"
   },
   {
     "name": "SantaSangre2",
-    "desc": "When you're downed, allies heal 20 HP. Excess healing is converted to Shield."
+    "desc": "When you're downed, allies heal 20 HP. Excess healing is converted to Shield.",
+    "key": "PASSIVE_SANTASANGRE2"
   },
   {
-    "name": "Unscarred",
-    "desc": "While at full hp you have 100% critical hit chance."
+    "name": "Untouched",
+    "desc": "While at full hp you have 100% critical hit chance.",
+    "key": "PASSIVE_UNSCARRED"
   },
   {
-    "name": "Unscarred2",
-    "desc": "While at full hp you have 100% critical hit chance, +5 Mana Regeneration  and +1 All Stats Up."
+    "name": "Untouched2",
+    "desc": "While at full hp you have 100% critical hit chance, +5 Mana Regeneration  and +1 All Stats Up.",
+    "key": "PASSIVE_UNSCARRED2"
   },
   {
     "name": "Daunt",
-    "desc": "Small enemies won't attack you."
+    "desc": "Small enemies won't attack you.",
+    "key": "PASSIVE_DAUNT"
   },
   {
     "name": "Daunt2",
-    "desc": "Small enemies won't attack you.\nInflict Fear 1 on units that contact or attack you."
+    "desc": "Small enemies won't attack you.\nInflict Fear 1 on units that contact or attack you.",
+    "key": "PASSIVE_DAUNT2"
   },
   {
     "name": "AnimalHandler",
-    "desc": "You start each battle with a random vermin familiar with boosted damage and health."
+    "desc": "You start each battle with a random vermin familiar with boosted damage and health.",
+    "key": "PASSIVE_ANIMALHANDLER"
   },
   {
     "name": "AnimalHandler2",
-    "desc": "You start each battle with 3 random vermin familiars with boosted damage and health."
+    "desc": "You start each battle with 3 random vermin familiars with boosted damage and health.",
+    "key": "PASSIVE_ANIMALHANDLER2"
   },
   {
-    "name": "Whipcracker",
-    "desc": "When you damage an ally they gain +1 Damage."
+    "name": "WhipCracker",
+    "desc": "When you damage an ally they gain +1 Damage.",
+    "key": "PASSIVE_WHIPCRACKER"
   },
   {
-    "name": "Whipcracker2",
-    "desc": "When you damage an ally they gain +1 Damage and +1 [img:spd]."
+    "name": "WhipCracker2",
+    "desc": "When you damage an ally they gain +1 Damage and +1 [img:spd].",
+    "key": "PASSIVE_WHIPCRACKER2"
   },
   {
-    "name": "MightoftheMeek",
-    "desc": "Damage you deal that's 2 or less is always critical."
+    "name": "PressurePoints",
+    "desc": "Damage you deal that's 2 or less is always critical.",
+    "key": "PASSIVE_PRESSUREPOINTS"
   },
   {
-    "name": "MightoftheMeek2",
-    "desc": "Damage you deal that's 3 or less is always critical. +50% Crit Damage."
+    "name": "PressurePoints2",
+    "desc": "Damage you deal that's 3 or less is always critical. +50% Crit Damage.",
+    "key": "PASSIVE_PRESSUREPOINTS2"
   },
   {
     "name": "Gassy",
-    "desc": "Whenever you take damage, knock back all adjacent units."
+    "desc": "Whenever you take damage, knock back all adjacent units.",
+    "key": "PASSIVE_GASSY"
   },
   {
     "name": "Gassy2",
-    "desc": "Whenever you take damage, poison all adjacent units and knock them back 10 tiles."
+    "desc": "Whenever you take damage, poison all adjacent units and knock them back 10 tiles.",
+    "key": "PASSIVE_GASSY2"
   },
   {
     "name": "Dealer",
-    "desc": "You can use consumables on other units."
+    "desc": "You can use consumables on other units.",
+    "key": "PASSIVE_DEALER"
   },
   {
     "name": "Dealer2",
-    "desc": "You can use consumables on other units.\nConsumables you use have double the effect."
+    "desc": "You can use consumables on other units.\nConsumables you use have double the effect.",
+    "key": "PASSIVE_DEALER2"
   },
   {
     "name": "Patience",
-    "desc": "If you end your turn without taking any actions, gain an extra turn at the end of the round. You don't regenerate mana on your main turn if you pass it."
+    "desc": "If you end your turn without taking any actions, gain an extra turn at the end of the round. You don't regenerate mana on your main turn if you pass it.",
+    "key": "PASSIVE_PATIENCE"
   },
   {
     "name": "Patience2",
-    "desc": "If you end your turn without taking any actions, gain an extra turn at the end of the round."
+    "desc": "If you end your turn without taking any actions, gain an extra turn at the end of the round.",
+    "key": "PASSIVE_PATIENCE2"
   },
   {
     "name": "Wiggly",
-    "desc": "+25% dodge chance."
+    "desc": "+25% dodge chance.",
+    "key": "PASSIVE_WIGGLY"
   },
   {
     "name": "Wiggly2",
-    "desc": "+25% dodge chance and +25% critical hit chance."
+    "desc": "+25% dodge chance and +25% critical hit chance.",
+    "key": "PASSIVE_WIGGLY2"
   },
   {
-    "name": "Mini-Me",
-    "desc": "Gain a half-sized copy of yourself that has 50% of your stats. The copy is AI controlled."
+    "name": "MiniMe",
+    "desc": "Gain a half-sized copy of yourself that has 50% of your stats. The copy is AI controlled.",
+    "key": "PASSIVE_MINIME"
   },
   {
     "name": "MiniMe2",
-    "desc": "Gain a half-sized copy of yourself that has 50% of your stats and quarter-sized copy that has 25% of your stats. The copies are AI controlled."
+    "desc": "Gain a half-sized copy of yourself that has 50% of your stats and quarter-sized copy that has 25% of your stats. The copies are AI controlled.",
+    "key": "PASSIVE_MINIME2"
   },
   {
     "name": "BareMinimum",
-    "desc": "Your stats can't go below 5."
+    "desc": "Your stats can't go below 5.",
+    "key": "PASSIVE_BAREMINIMUM"
   },
   {
     "name": "BareMinimum2",
-    "desc": "Your stats can't go below 7."
+    "desc": "Your stats can't go below 7.",
+    "key": "PASSIVE_BAREMINIMUM2"
   },
   {
     "name": "Unrestricted",
-    "desc": "Actions with a once per battle restriction can be cast once per turn instead."
+    "desc": "Actions with a once per battle restriction can be cast once per turn instead.",
+    "key": "PASSIVE_UNRESTRICTED"
   },
   {
     "name": "Unrestricted2",
-    "desc": "Actions with a once per battle restriction can be cast once per turn instead.\nActions with a once per turn restriction have a 50% chance to be castable again."
+    "desc": "Actions with a once per battle restriction can be cast once per turn instead.\nActions with a once per turn restriction have a 50% chance to be castable again.",
+    "key": "PASSIVE_UNRESTRICTED2"
   },
   {
-    "name": "Death'sDoor",
-    "desc": "While you're at 1 HP, your spells cost 1 mana, but can only be cast once per turn."
+    "name": "DeathsDoor",
+    "desc": "While you're at 1 HP, your spells cost 1 mana, but can only be cast once per turn.",
+    "key": "PASSIVE_DEATHSDOOR"
   },
   {
     "name": "DeathsDoor2",
-    "desc": "While you're at 5 or fewer HP, your spells cost 1 mana, but can only be cast once per turn."
+    "desc": "While you're at 5 or fewer HP, your spells cost 1 mana, but can only be cast once per turn.",
+    "key": "PASSIVE_DEATHSDOOR2"
   },
   {
-    "name": "Overconfident",
-    "desc": "While at full HP, reduce the cost of your spells by 2, but take double damage. This can't reduce mana costs to less than 1."
+    "name": "OverConfident",
+    "desc": "While at full HP, reduce the cost of your spells by 2, but take double damage. This can't reduce mana costs to less than 1.",
+    "key": "PASSIVE_OVERCONFIDENT"
   },
   {
-    "name": "Overconfident2",
-    "desc": "While at full HP, reduce the cost of your spells by 2, but take double damage.  This can't reduce mana costs to less than 1. When you cast a spell, heal 1 HP."
+    "name": "OverConfident2",
+    "desc": "While at full HP, reduce the cost of your spells by 2, but take double damage.  This can't reduce mana costs to less than 1. When you cast a spell, heal 1 HP.",
+    "key": "PASSIVE_OVERCONFIDENT2"
   },
   {
     "name": "SerialKiller",
-    "desc": "After you kill 3 units, gain +6 [img:spd] and backstabs have 100% crit chance."
+    "desc": "After you kill 3 units, gain +6 [img:spd] and backstabs have 100% crit chance.",
+    "key": "PASSIVE_SERIALKILLER"
   },
   {
     "name": "SerialKiller2",
-    "desc": "After you kill 3 units, gain +6 [img:spd], backstabs have 100% crit chance, and gain an extra basic attack each turn."
+    "desc": "After you kill 3 units, gain +6 [img:spd], backstabs have 100% crit chance, and gain an extra basic attack each turn.",
+    "key": "PASSIVE_SERIALKILLER2"
   },
   {
-    "name": "StrengthinNumbers",
-    "desc": "Your familiars have +1 Damage for each other familiar you have."
+    "name": "StrengthInNumbers",
+    "desc": "Your familiars have +1 Damage for each other familiar you have.",
+    "key": "PASSIVE_STRENGTHINNUMBERS"
   },
   {
-    "name": "StrengthinNumbers2",
-    "desc": "You and your familiars have +1 Damage for each other familiar you have."
+    "name": "StrengthInNumbers2",
+    "desc": "You and your familiars have +1 Damage for each other familiar you have.",
+    "key": "PASSIVE_STRENGTHINNUMBERS2"
   },
   {
-    "name": "Fighter'sSoul",
-    "desc": "Fighter abilities are offered when you level up."
+    "name": "FightersSoul",
+    "desc": "Fighter abilities are offered when you level up.",
+    "key": "PASSIVE_FIGHTERSOUL"
   },
   {
     "name": "FightersSoul2",
-    "desc": "Fighter abilities are offered when you level up."
+    "desc": "Fighter abilities are offered when you level up.",
+    "key": "PASSIVE_FIGHTERSOUL2"
   },
   {
-    "name": "Hunter'sSoul",
-    "desc": "Hunter abilities are offered when you level up."
+    "name": "HuntersSoul",
+    "desc": "Hunter abilities are offered when you level up.",
+    "key": "PASSIVE_HUNTERSOUL"
   },
   {
     "name": "HuntersSoul2",
-    "desc": "Hunter abilities are offered when you level up."
+    "desc": "Hunter abilities are offered when you level up.",
+    "key": "PASSIVE_HUNTERSOUL2"
   },
   {
-    "name": "Mage'sSoul",
-    "desc": "Mage abilities are offered when you level up."
+    "name": "MagesSoul",
+    "desc": "Mage abilities are offered when you level up.",
+    "key": "PASSIVE_MAGESOUL"
   },
   {
     "name": "MagesSoul2",
-    "desc": "Mage abilities are offered when you level up."
+    "desc": "Mage abilities are offered when you level up.",
+    "key": "PASSIVE_MAGESOUL2"
   },
   {
-    "name": "Cleric'sSoul",
-    "desc": "Cleric abilities are offered when you level up."
+    "name": "ClericsSoul",
+    "desc": "Cleric abilities are offered when you level up.",
+    "key": "PASSIVE_CLERICSOUL"
   },
   {
     "name": "ClericsSoul2",
-    "desc": "Cleric abilities are offered when you level up."
+    "desc": "Cleric abilities are offered when you level up.",
+    "key": "PASSIVE_CLERICSOUL2"
   },
   {
-    "name": "Tank'sSoul",
-    "desc": "Tank abilities are offered when you level up."
+    "name": "TanksSoul",
+    "desc": "Tank abilities are offered when you level up.",
+    "key": "PASSIVE_TANKSOUL"
   },
   {
     "name": "TanksSoul2",
-    "desc": "Tank abilities are offered when you level up."
+    "desc": "Tank abilities are offered when you level up.",
+    "key": "PASSIVE_TANKSOUL2"
   },
   {
-    "name": "Thief'sSoul",
-    "desc": "Thief abilities are offered when you level up."
+    "name": "ThiefsSoul",
+    "desc": "Thief abilities are offered when you level up.",
+    "key": "PASSIVE_THIEFSOUL"
   },
   {
     "name": "ThiefsSoul2",
-    "desc": "Thief abilities are offered when you level up."
+    "desc": "Thief abilities are offered when you level up.",
+    "key": "PASSIVE_THIEFSOUL2"
   },
   {
-    "name": "Monk'sSoul",
-    "desc": "Monk abilities are offered when you level up."
+    "name": "MonksSoul",
+    "desc": "Monk abilities are offered when you level up.",
+    "key": "PASSIVE_MONKSOUL"
   },
   {
     "name": "MonksSoul2",
-    "desc": "Monk abilities are offered when you level up."
+    "desc": "Monk abilities are offered when you level up.",
+    "key": "PASSIVE_MONKSOUL2"
   },
   {
-    "name": "Butcher'sSoul",
-    "desc": "Butcher abilities are offered when you level up."
+    "name": "ButchersSoul",
+    "desc": "Butcher abilities are offered when you level up.",
+    "key": "PASSIVE_BUTCHERSOUL"
   },
   {
     "name": "ButchersSoul2",
-    "desc": "Butcher abilities are offered when you level up."
+    "desc": "Butcher abilities are offered when you level up.",
+    "key": "PASSIVE_BUTCHERSOUL2"
   },
   {
-    "name": "Druid'sSoul",
-    "desc": "Druid abilities are offered when you level up."
+    "name": "DruidsSoul",
+    "desc": "Druid abilities are offered when you level up.",
+    "key": "PASSIVE_DRUIDSOUL"
   },
   {
     "name": "DruidsSoul2",
-    "desc": "Druid abilities are offered when you level up."
+    "desc": "Druid abilities are offered when you level up.",
+    "key": "PASSIVE_DRUIDSOUL2"
   },
   {
-    "name": "Tinkerer'sSoul",
-    "desc": "Tinkerer abilities are offered when you level up."
+    "name": "TinkerersSoul",
+    "desc": "Tinkerer abilities are offered when you level up.",
+    "key": "PASSIVE_TINKERERSOUL"
   },
   {
     "name": "TinkerersSoul2",
-    "desc": "Tinkerer abilities are offered when you level up."
+    "desc": "Tinkerer abilities are offered when you level up.",
+    "key": "PASSIVE_TINKERERSOUL2"
   },
   {
-    "name": "Necromancer'sSoul",
-    "desc": "Necromancer abilities are offered when you level up."
+    "name": "NecromancersSoul",
+    "desc": "Necromancer abilities are offered when you level up.",
+    "key": "PASSIVE_NECROMANCERSOUL"
   },
   {
     "name": "NecromancersSoul2",
-    "desc": "Necromancer abilities are offered when you level up."
+    "desc": "Necromancer abilities are offered when you level up.",
+    "key": "PASSIVE_NECROMANCERSOUL2"
   },
   {
-    "name": "Psychic'sSoul",
-    "desc": "Psychic abilities are offered when you level up."
+    "name": "PsychicsSoul",
+    "desc": "Psychic abilities are offered when you level up.",
+    "key": "PASSIVE_PSYCHICSOUL"
   },
   {
     "name": "PsychicsSoul2",
-    "desc": "Psychic abilities are offered when you level up."
+    "desc": "Psychic abilities are offered when you level up.",
+    "key": "PASSIVE_PSYCHICSOUL2"
   },
   {
     "name": "Charming",
-    "desc": "You have a 25% chance to inflict Charm on units that damage you."
+    "desc": "You have a 25% chance to inflict Charm on units that damage you.",
+    "key": "PASSIVE_CHARMING"
   },
   {
     "name": "Charming2",
-    "desc": "You have a 40% chance to inflict Charm on units that damage you."
+    "desc": "You have a 40% chance to inflict Charm on units that damage you.",
+    "key": "PASSIVE_CHARMING2"
   },
   {
     "name": "FirstImpression",
-    "desc": "Start each battle with +1 Bonus Attack."
+    "desc": "Start each battle with +1 Bonus Attack.",
+    "key": "PASSIVE_FIRSTIMPRESSION"
   },
   {
     "name": "FirstImpression2",
-    "desc": "Start each battle with +2 Bonus Attacks and +2 Bonus Moves."
+    "desc": "Start each battle with +2 Bonus Attacks and +2 Bonus Moves.",
+    "key": "PASSIVE_FIRSTIMPRESSION2"
   },
   {
     "name": "Scavenger",
-    "desc": "If your trinket slot is empty, equip a small consumable food item at the start of each battle."
+    "desc": "If your trinket slot is empty, equip a small consumable food item at the start of each battle.",
+    "key": "PASSIVE_SCAVENGER"
   },
   {
     "name": "Scavenger2",
-    "desc": "If your trinket slot is empty, equip a big consumable food item at the start of each battle."
+    "desc": "If your trinket slot is empty, equip a big consumable food item at the start of each battle.",
+    "key": "PASSIVE_SCAVENGER2"
   },
   {
     "name": "ZenkaiBoost",
-    "desc": "If you end battle with 1 HP, gain +1 to a random stat permanently and start the next battle at full HP with All Stats Up 3."
+    "desc": "If you end battle with 1 HP, gain +1 to a random stat permanently and start the next battle at full HP with All Stats Up 3.",
+    "key": "PASSIVE_ZENKAIBOOST"
   },
   {
     "name": "ZenkaiBoost2",
-    "desc": "If you end battle with 1 HP, gain +1 to 3 random stats permanently and start the next battle at full HP with All Stats Up 3."
+    "desc": "If you end battle with 1 HP, gain +1 to 3 random stats permanently and start the next battle at full HP with All Stats Up 3.",
+    "key": "PASSIVE_ZENKAIBOOST2"
   },
   {
     "name": "Protection",
-    "desc": ""
+    "desc": "",
+    "key": "PASSIVE_PROTECTION"
   },
   {
     "name": "Protection2",
-    "desc": ""
+    "desc": "",
+    "key": "PASSIVE_PROTECTION2"
   },
   {
-    "name": "Rockin'",
-    "desc": "Spawn 4 small rocks at the start of each battle."
+    "name": "Rockin",
+    "desc": "Spawn 4 small rocks at the start of each battle.",
+    "key": "PASSIVE_ROCKIN"
   },
   {
     "name": "Rockin2",
-    "desc": "Spawn 4 small rocks and 4 boulders at the start of each battle."
+    "desc": "Spawn 4 small rocks and 4 boulders at the start of each battle.",
+    "key": "PASSIVE_ROCKIN2"
   },
   {
     "name": "Mania",
-    "desc": "10% chance to restore all your mana at the start of your turn."
+    "desc": "10% chance to restore all your mana at the start of your turn.",
+    "key": "PASSIVE_MANIA"
   },
   {
     "name": "Mania2",
-    "desc": "25% chance to restore all your mana at the start of your turn."
+    "desc": "25% chance to restore all your mana at the start of your turn.",
+    "key": "PASSIVE_MANIA2"
   },
   {
     "name": "Lucky",
-    "desc": ""
+    "desc": "",
+    "key": "PASSIVE_LUCKY"
   },
   {
     "name": "Lucky2",
-    "desc": ""
+    "desc": "",
+    "key": "PASSIVE_LUCKY2"
   },
   {
-    "name": "180",
-    "desc": "When you use your basic attack, turn around and use it again."
+    "name": "OneEighty",
+    "desc": "When you use your basic attack, turn around and use it again.",
+    "key": "PASSIVE_180"
   },
   {
-    "name": "1802",
-    "desc": "When you use your basic attack, turn around and use it again.\nYour basic attack inflicts Confusion 1."
+    "name": "OneEighty2",
+    "desc": "When you use your basic attack, turn around and use it again.\nYour basic attack inflicts Confusion 1.",
+    "key": "PASSIVE_1802"
   },
   {
-    "name": "Jester'sSoul",
-    "desc": "Abilities from any class are offered when you level up.\nYou can reroll your level up options twice."
+    "name": "JestersSoul",
+    "desc": "Abilities from any class are offered when you level up.\nYou can reroll your level up options twice.",
+    "key": "PASSIVE_JESTERSSOUL"
   },
   {
     "name": "JestersSoul2",
-    "desc": "Abilities from any class are offered when you level up.\nYou can reroll your level up options twice."
+    "desc": "Abilities from any class are offered when you level up.\nYou can reroll your level up options twice.",
+    "key": "PASSIVE_JESTERSSOUL2"
   },
   {
-    "name": "Hot-Blooded",
-    "desc": "Burn you inflict is increased by 1."
+    "name": "HotBlooded",
+    "desc": "Burn you inflict is increased by 1.",
+    "key": "PASSIVE_HOTBLOODED"
   },
   {
     "name": "HotBlooded2",
-    "desc": "Burn you inflict is increased by 2."
+    "desc": "Burn you inflict is increased by 2.",
+    "key": "PASSIVE_HOTBLOODED2"
   },
   {
-    "name": "Toxic-Blooded",
-    "desc": "Poison you inflict is increased by 1."
+    "name": "ToxicBlooded",
+    "desc": "Poison you inflict is increased by 1.",
+    "key": "PASSIVE_TOXICBLOODED"
   },
   {
     "name": "ToxicBlooded2",
-    "desc": "Poison you inflict is increased by 2."
+    "desc": "Poison you inflict is increased by 2.",
+    "key": "PASSIVE_TOXICBLOODED2"
   },
   {
-    "name": "Blood-Blooded",
-    "desc": "Bleed you inflict is increased by 1."
+    "name": "BloodBlooded",
+    "desc": "Bleed you inflict is increased by 1.",
+    "key": "PASSIVE_BLOODBLOODED"
   },
   {
     "name": "BloodBlooded2",
-    "desc": "Bleed you inflict is increased by 2."
+    "desc": "Bleed you inflict is increased by 2.",
+    "key": "PASSIVE_BLOODBLOODED2"
   },
   {
     "name": "VoidSoul",
-    "desc": "Only upgraded Collarless abilities are offered when you level up"
+    "desc": "Only upgraded Collarless abilities are offered when you level up",
+    "key": "PASSIVE_VOIDSOUL"
   },
   {
     "name": "VoidSoul2",
-    "desc": "Only upgraded Collarless abilities are offered when you level up. Collarless spells cost 1 less mana."
+    "desc": "Only upgraded Collarless abilities are offered when you level up. Collarless spells cost 1 less mana.",
+    "key": "PASSIVE_VOIDSOUL2"
+  },
+  {
+    "name": "Deathless2",
+    "key": "PASSIVE_DEATHLESS2",
+    "desc": "+96 Corpse HP"
   }
 ]

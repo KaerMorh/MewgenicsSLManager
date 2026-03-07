@@ -1,202 +1,252 @@
 [
   {
     "name": "Putrefy",
-    "desc": "Your basic attack inflicts Rot 1."
+    "desc": "Your basic attack inflicts Rot 1.",
+    "key": "PASSIVE_PUTREFY"
   },
   {
     "name": "Putrefy2",
-    "desc": "Your basic attack inflicts permanent Rot."
+    "desc": "Your basic attack inflicts permanent Rot.",
+    "key": "PASSIVE_PUTREFY2"
   },
   {
     "name": "NeverFull",
-    "desc": "You can heal over your max HP.\nExcess HP is lost between battles."
+    "desc": "You can heal over your max HP.\nExcess HP is lost between battles.",
+    "key": "PASSIVE_NEVERFULL"
   },
   {
     "name": "NeverFull2",
-    "desc": "You can heal over your max HP.\nExcess HP is lost between battles.\nGain +1 [img:str] for every 5 HP you have over max HP."
+    "desc": "You can heal over your max HP.\nExcess HP is lost between battles.\nGain +1 [img:str] for every 5 HP you have over max HP.",
+    "key": "PASSIVE_NEVERFULL2"
   },
   {
-    "name": "SupersizeMe!",
-    "desc": "Food and scrap pickups you spawn are bigger."
+    "name": "MainCourse",
+    "desc": "Food and scrap pickups you spawn are bigger.",
+    "key": "PASSIVE_MAINCOURSE"
   },
   {
-    "name": "SupersizeMe!2",
-    "desc": "Food and scrap pickups you spawn are max size."
+    "name": "MainCourse2",
+    "desc": "Food and scrap pickups you spawn are max size.",
+    "key": "PASSIVE_MAINCOURSE2"
   },
   {
     "name": "FreshMeat",
-    "desc": "When you eat food, gain +1 [img:str]."
+    "desc": "When you eat food, gain +1 [img:str].",
+    "key": "PASSIVE_FRESHMEAT"
   },
   {
     "name": "FreshMeat2",
-    "desc": "When you eat food, gain +1 [img:str] and +1 to a random stat."
+    "desc": "When you eat food, gain +1 [img:str] and +1 to a random stat.",
+    "key": "PASSIVE_FRESHMEAT2"
   },
   {
     "name": "Masochist",
-    "desc": "When you take damage, gain +1 [img:str], [img:con], or [img:spd] at random."
+    "desc": "When you take damage, gain +1 [img:str], [img:con], or [img:spd] at random.",
+    "key": "PASSIVE_MASOCHIST"
   },
   {
     "name": "Masochist2",
-    "desc": "When you take damage, you get +1 [img:str], [img:con], and [img:spd]."
+    "desc": "When you take damage, you get +1 [img:str], [img:con], and [img:spd].",
+    "key": "PASSIVE_MASOCHIST2"
   },
   {
     "name": "Glutton",
-    "desc": "When a food pickup spawns within 2 tiles of you, move to it."
+    "desc": "When a food pickup spawns within 2 tiles of you, move to it.",
+    "key": "PASSIVE_GLUTTON"
   },
   {
     "name": "Glutton2",
-    "desc": "When a food pickup spawns within 2 tiles of you, move to it with trample."
+    "desc": "When a food pickup spawns within 2 tiles of you, move to it with trample.",
+    "key": "PASSIVE_GLUTTON2"
   },
   {
     "name": "Hooked",
-    "desc": "You can use your hook 2 additional times on your turn."
+    "desc": "You can use your hook 2 additional times on your turn.",
+    "key": "PASSIVE_HOOKED"
   },
   {
     "name": "Hooked2",
-    "desc": "You can use your hook 2 additional times on your turn.\nYour hook deals +1 damage and has Cleave."
+    "desc": "You can use your hook 2 additional times on your turn.\nYour hook deals +1 damage and has Cleave.",
+    "key": "PASSIVE_HOOKED2"
   },
   {
-    "name": "Stompy!",
-    "desc": "You have Trample.\nTrample damage you deal has Cleave."
+    "name": "Stompy",
+    "desc": "You have Trample.\nTrample damage you deal has Cleave.",
+    "key": "PASSIVE_STOMPY"
   },
   {
-    "name": "Stompy!2",
-    "desc": "You have Trample and +2 Bonus Moves.\nTrample damage you deal has Cleave."
+    "name": "Stompy2",
+    "desc": "You have Trample and +2 Bonus Moves.\nTrample damage you deal has Cleave.",
+    "key": "PASSIVE_STOMPY2"
   },
   {
     "name": "Barbed",
-    "desc": "Your hook deals +1 damage and inflicts Bleed."
+    "desc": "Your hook deals +1 damage and inflicts Bleed.",
+    "key": "PASSIVE_BARBED"
   },
   {
     "name": "Barbed2",
-    "desc": "Your hook deals +5 damage and inflicts Bleed."
+    "desc": "Your hook deals +5 damage and inflicts Bleed.",
+    "key": "PASSIVE_BARBED2"
   },
   {
     "name": "GrapplingHook",
-    "desc": "Your hook pulls you toward knockback-immune objects."
+    "desc": "Your hook pulls you toward knockback-immune objects.",
+    "key": "PASSIVE_GRAPPLINGHOOK"
   },
   {
     "name": "GrapplingHook2",
-    "desc": "Your hook pulls you toward knockback-immune objects. Refresh your movement action when you use your hook."
+    "desc": "Your hook pulls you toward knockback-immune objects. Refresh your movement action when you use your hook.",
+    "key": "PASSIVE_GRAPPLINGHOOK2"
   },
   {
-    "name": "Rankle",
-    "desc": "When you take damage, gain +2 Temp Damage."
+    "name": "PainGain",
+    "desc": "When you take damage, gain +2 Temp Damage.",
+    "key": "PASSIVE_PAINGAIN"
   },
   {
-    "name": "Rankle2",
-    "desc": "When you take damage, gain +1 Damage and +1 Temp Damage."
+    "name": "PainGain2",
+    "desc": "When you take damage, gain +1 Damage and +1 Temp Damage.",
+    "key": "PASSIVE_PAINGAIN2"
   },
   {
-    "name": "SpintoWin",
-    "desc": "Your basic attack is a 3x3 tile spin attack with Cleave."
+    "name": "WideSwing",
+    "desc": "Your basic attack is a 3x3 tile spin attack with Cleave.",
+    "key": "PASSIVE_WIDESWING"
   },
   {
-    "name": "SpintoWin2",
-    "desc": "Your basic attack is a 3x3 tile double spin attack with Cleave."
+    "name": "WideSwing2",
+    "desc": "Your basic attack is a 3x3 tile double spin attack with Cleave.",
+    "key": "PASSIVE_WIDESWING2"
   },
   {
     "name": "Confrontational",
-    "desc": "When you take damage, trample one tile towards the source of damage."
+    "desc": "When you take damage, trample one tile towards the source of damage.",
+    "key": "PASSIVE_CONFRONTATIONAL"
   },
   {
     "name": "Confrontational2",
-    "desc": "When you take damage, trample all the way to the source of damage."
+    "desc": "When you take damage, trample all the way to the source of damage.",
+    "key": "PASSIVE_CONFRONTATIONAL2"
   },
   {
     "name": "HeaveHook",
-    "desc": "Your hook can target tiles.\nUnits pulled by your hook gain trample while being hooked."
+    "desc": "Your hook can target tiles.\nUnits pulled by your hook gain trample while being hooked.",
+    "key": "PASSIVE_HEAVEHOOK"
   },
   {
     "name": "HeaveHook2",
-    "desc": "Your hook can target tiles.\nUnits pulled by your hook gain trample while being hooked, this trample damage is doubled."
+    "desc": "Your hook can target tiles.\nUnits pulled by your hook gain trample while being hooked, this trample damage is doubled.",
+    "key": "PASSIVE_HEAVEHOOK2"
   },
   {
     "name": "Harpooner",
-    "desc": "When an enemy moves in range, hook it."
+    "desc": "When an enemy moves in range, hook it.",
+    "key": "PASSIVE_HARPOONER"
   },
   {
     "name": "Harpooner2",
-    "desc": "When an enemy moves in range, hook it. Your hook deals +2 Damage."
+    "desc": "When an enemy moves in range, hook it. Your hook deals +2 Damage.",
+    "key": "PASSIVE_HARPOONER2"
   },
   {
-    "name": "LordoftheFlies",
-    "desc": "All flies are Charmed and get +1 Damage.\nWhenever you inflict Rot, you inflict +1 Rot."
+    "name": "LordOfTheFlies",
+    "desc": "All flies are Charmed and get +1 Damage.\nWhenever you inflict Rot, you inflict +1 Rot.",
+    "key": "PASSIVE_LORDOFTHEFLIES"
   },
   {
-    "name": "LordoftheFlies2",
-    "desc": "All flies are Charmed and get +4 Damage.\nWhenever you inflict Rot, you inflict +1 Rot."
+    "name": "LordOfTheFlies2",
+    "desc": "All flies are Charmed and get +4 Damage.\nWhenever you inflict Rot, you inflict +1 Rot.",
+    "key": "PASSIVE_LORDOFTHEFLIES2"
   },
   {
     "name": "Schadenfreude",
-    "desc": "Your [img:str] and [img:con] are increased by 2 for each disorder your party has."
+    "desc": "Your [img:str] and [img:con] are increased by 2 for each disorder your party has.",
+    "key": "PASSIVE_SCHADENFREUDE"
   },
   {
     "name": "Schadenfreude2",
-    "desc": "All of your stats are increased by 2 for each disorder your party has."
+    "desc": "All of your stats are increased by 2 for each disorder your party has.",
+    "key": "PASSIVE_SCHADENFREUDE2"
   },
   {
     "name": "Gurgitator",
-    "desc": "Whenever you heal over your max HP, gain +1 [img:str]."
+    "desc": "Whenever you heal over your max HP, gain +1 [img:str].",
+    "key": "PASSIVE_GURGITATOR"
   },
   {
     "name": "Gurgitator2",
-    "desc": "Whenever you heal over your max HP, gain +1 [img:str] and +1 Weapon Damage."
+    "desc": "Whenever you heal over your max HP, gain +1 [img:str] and +1 Weapon Damage.",
+    "key": "PASSIVE_GURGITATOR2"
   },
   {
     "name": "LooseMeat",
-    "desc": "When you take damage, spawn a food pickup."
+    "desc": "When you take damage, spawn a food pickup.",
+    "key": "PASSIVE_LOOSEMEAT"
   },
   {
     "name": "LooseMeat2",
-    "desc": "When you take damage or move, spawn a food pickup."
+    "desc": "When you take damage or move, spawn a food pickup.",
+    "key": "PASSIVE_LOOSEMEAT2"
   },
   {
     "name": "Hack",
-    "desc": "Your basic attack is always critical against enemies with [img:shield].\nYour basic attack's critical hits remove buffs from units."
+    "desc": "Your basic attack is always critical against enemies with [img:shield].\nYour basic attack's critical hits remove buffs from units.",
+    "key": "PASSIVE_HACK"
   },
   {
     "name": "Hack2",
-    "desc": "Your basic attack is always critical against enemies with [img:shield].\nYour basic attack's critical hits remove buffs from units.\nYour critical hits deal +100% damage."
+    "desc": "Your basic attack is always critical against enemies with [img:shield].\nYour basic attack's critical hits remove buffs from units.\nYour critical hits deal +100% damage.",
+    "key": "PASSIVE_HACK2"
   },
   {
     "name": "BowlingBall",
-    "desc": "Adjacent and diagonal allied cats get the bonus ability Bowl."
+    "desc": "Adjacent and diagonal allied cats get the bonus ability Bowl.",
+    "key": "PASSIVE_BOWLINGBALL"
   },
   {
     "name": "BowlingBall2",
-    "desc": "Adjacent and diagonal allied cats get the bonus ability Bowl+."
+    "desc": "Adjacent and diagonal allied cats get the bonus ability Bowl+.",
+    "key": "PASSIVE_BOWLINGBALL2"
   },
   {
     "name": "Testy",
-    "desc": "When you take damage, gain +1 movement range until the end of your turn."
+    "desc": "When you take damage, gain +1 movement range until the end of your turn.",
+    "key": "PASSIVE_TESTY"
   },
   {
     "name": "Testy2",
-    "desc": "When you take damage, gain +1 movement range."
+    "desc": "When you take damage, gain +1 movement range.",
+    "key": "PASSIVE_TESTY2"
   },
   {
     "name": "Indigestion",
-    "desc": "Whenever you heal over your max HP, fart and inflict Poison 3 on adjacent units."
+    "desc": "Whenever you heal over your max HP, fart and inflict Poison 3 on adjacent units.",
+    "key": "PASSIVE_INDIGESTION"
   },
   {
     "name": "Indigestion2",
-    "desc": "Whenever you heal over your max HP, fart and inflict Poison 3 and Burn 3 on adjacent units."
+    "desc": "Whenever you heal over your max HP, fart and inflict Poison 3 and Burn 3 on adjacent units.",
+    "key": "PASSIVE_INDIGESTION2"
   },
   {
     "name": "Incubator",
-    "desc": "Whenever you heal over your max HP, spawn a rot fly."
+    "desc": "Whenever you heal over your max HP, spawn a rot fly.",
+    "key": "PASSIVE_INCUBATOR"
   },
   {
     "name": "Incubator2",
-    "desc": "Whenever you heal over your max HP, spawn a rot fly with HP and damage equal to the excess healing."
+    "desc": "Whenever you heal over your max HP, spawn a rot fly with HP and damage equal to the excess healing.",
+    "key": "PASSIVE_INCUBATOR2"
   },
   {
-    "name": "DukeofFlies",
-    "desc": "At the end of the battle, all food pickups become allied flies.\nAllied flies stay with you between battles."
+    "name": "DukeOfFlies",
+    "desc": "At the end of the battle, all food pickups become allied flies.\nAllied flies stay with you between battles.",
+    "key": "PASSIVE_DUKEOFFLIES"
   },
   {
-    "name": "DukeofFlies2",
-    "desc": "At the end of the battle, all food pickups become allied flies.\nAllied flies stay with you between battles.\nYour basic attack spawns flies."
+    "name": "DukeOfFlies2",
+    "desc": "At the end of the battle, all food pickups become allied flies.\nAllied flies stay with you between battles.\nYour basic attack spawns flies.",
+    "key": "PASSIVE_DUKEOFFLIES2"
   }
 ]

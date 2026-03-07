@@ -1,202 +1,252 @@
 [
   {
     "name": "Vampirism",
-    "desc": "Your basic attack has lifesteal."
+    "desc": "Your basic attack has lifesteal.",
+    "key": "PASSIVE_VAMPIRISM"
   },
   {
     "name": "Vampirism2",
-    "desc": "Your basic attack has lifesteal.\nYour spells have 50% lifesteal."
+    "desc": "Your basic attack has lifesteal.\nYour spells have 50% lifesteal.",
+    "key": "PASSIVE_VAMPIRISM2"
   },
   {
     "name": "OneWithNothing",
-    "desc": "If you end your turn with 0 mana, your Mana Regeneration is doubled."
+    "desc": "If you end your turn with 0 mana, your Mana Regeneration is doubled.",
+    "key": "PASSIVE_ONEWITHNOTHING"
   },
   {
     "name": "OneWithNothing2",
-    "desc": "If you end your turn with 0 mana, your Mana Regeneration is doubled.\nBonus ability: Slit Wrists"
+    "desc": "If you end your turn with 0 mana, your Mana Regeneration is doubled.\nBonus ability: Slit Wrists",
+    "key": "PASSIVE_ONEWITHNOTHING2"
   },
   {
     "name": "BedBugs",
-    "desc": "You start battles with 2 beefy leech familiars."
+    "desc": "You start battles with 2 beefy leech familiars.",
+    "key": "PASSIVE_BEDBUGS"
   },
   {
     "name": "BedBugs2",
-    "desc": "You start battles with 4 beefy leech familiars."
+    "desc": "You start battles with 4 beefy leech familiars.",
+    "key": "PASSIVE_BEDBUGS2"
   },
   {
     "name": "WormLord",
-    "desc": "When you take damage, spawn a leech familiar."
+    "desc": "When you take damage, spawn a leech familiar.",
+    "key": "PASSIVE_WORMLORD"
   },
   {
     "name": "WormLord2",
-    "desc": "When you take damage, spawn a leech familiar.\nYour basic attack spawns leech familiars."
+    "desc": "When you take damage, spawn a leech familiar.\nYour basic attack spawns leech familiars.",
+    "key": "PASSIVE_WORMLORD2"
   },
   {
     "name": "InfiniteRebirth",
-    "desc": "At the end of each round, if there is a body on the map and you're downed, you respawn on that tile with 1 HP and +10 temporary Speed. If that body was a party member, you spawn with full HP instead."
+    "desc": "At the end of each round, if there is a body on the map and you're downed, you respawn on that tile with 1 HP and +10 temporary Speed. If that body was a party member, you spawn with full HP instead.",
+    "key": "PASSIVE_INFINITEREBIRTH"
   },
   {
     "name": "InfiniteRebirth2",
-    "desc": "At the end of each round, if there is a body on the map and you're downed, you respawn on that tile with 25% HP and +10 temporary Speed. If that body was a party member, you spawn with full HP instead."
+    "desc": "At the end of each round, if there is a body on the map and you're downed, you respawn on that tile with 25% HP and +10 temporary Speed. If that body was a party member, you spawn with full HP instead.",
+    "key": "PASSIVE_INFINITEREBIRTH2"
   },
   {
     "name": "SacrificialLamb",
-    "desc": "When you're downed, allies gain All Stats Up and take an extra turn."
+    "desc": "When you're downed, allies gain All Stats Up and take an extra turn.",
+    "key": "PASSIVE_SACRIFICIALLAMB"
   },
   {
     "name": "SacrificialLamb2",
-    "desc": "When you're downed, allies gain All Stats Up and take an extra turn.\nYou can't get injuries."
+    "desc": "When you're downed, allies gain All Stats Up and take an extra turn.\nYou can't get injuries.",
+    "key": "PASSIVE_SACRIFICIALLAMB2"
   },
   {
-    "name": "ServusMortem",
-    "desc": "Destroy a random non-boss enemy at the start of each battle."
+    "name": "DeathIncarnate",
+    "desc": "Destroy a random non-boss enemy at the start of each battle.",
+    "key": "PASSIVE_SERVUSMORTEM"
   },
   {
-    "name": "ServusMortem2",
-    "desc": "Destroy a random enemy at the start of each battle. If this hits a boss, deal 50 damage instead."
+    "name": "DeathIncarnate2",
+    "desc": "Destroy a random enemy at the start of each battle. If this hits a boss, deal 50 damage instead.",
+    "key": "PASSIVE_SERVUSMORTEM2"
   },
   {
     "name": "OffloadPain",
-    "desc": "When you heal, deal 1 damage to each enemy."
+    "desc": "When you heal, deal 1 damage to each enemy.",
+    "key": "PASSIVE_OFFLOADPAIN"
   },
   {
     "name": "OffloadPain2",
-    "desc": "When you heal, deal 2 damage to each enemy and you gain +1 Thorns."
+    "desc": "When you heal, deal 2 damage to each enemy and you gain +1 Thorns.",
+    "key": "PASSIVE_OFFLOADPAIN2"
   },
   {
     "name": "CambionConception",
-    "desc": "When you're downed, spawn a demon kitten familiar."
+    "desc": "When you're downed, spawn a demon kitten familiar.",
+    "key": "PASSIVE_CAMBIONCONCEPTION"
   },
   {
     "name": "CambionConception2",
-    "desc": "When you're downed, spawn 2 demon kitten familiars."
+    "desc": "When you're downed, spawn 2 demon kitten familiars.",
+    "key": "PASSIVE_CAMBIONCONCEPTION2"
   },
   {
-    "name": "LeechMother",
-    "desc": "Your basic attack spawns a leech familiar."
+    "name": "Leechmother",
+    "desc": "Your basic attack spawns a leech familiar.",
+    "key": "PASSIVE_LEECHMOTHER"
   },
   {
-    "name": "LeechMother2",
-    "desc": "Your basic attack spawns a beefy leech familiar."
+    "name": "Leechmother2",
+    "desc": "Your basic attack spawns a beefy leech familiar.",
+    "key": "PASSIVE_LEECHMOTHER2"
   },
   {
     "name": "Infected",
-    "desc": "When you down a unit, reanimate it with 50% HP."
+    "desc": "When you down a unit, reanimate it with 50% HP.",
+    "key": "PASSIVE_INFECTED"
   },
   {
     "name": "Infected2",
-    "desc": "When you down a unit, reanimate it with full HP."
+    "desc": "When you down a unit, reanimate it with full HP.",
+    "key": "PASSIVE_INFECTED2"
   },
   {
-    "name": "LastGrasp",
-    "desc": "When you're downed, deal 6 damage to each enemy and heal 6 HP to all allies.\nBonus ability: Seppuku"
+    "name": "LastGasp",
+    "desc": "When you're downed, deal 6 damage to each enemy and heal 6 HP to all allies.\nBonus ability: Seppuku",
+    "key": "PASSIVE_LASTGRASP"
   },
   {
-    "name": "LastGrasp2",
-    "desc": "When you're downed, deal 10 damage to each enemy and heal 10 HP to all allies.\nBonus ability: Seppuku"
+    "name": "LastGasp2",
+    "desc": "When you're downed, deal 10 damage to each enemy and heal 10 HP to all allies.\nBonus ability: Seppuku",
+    "key": "PASSIVE_LASTGRASP2"
   },
   {
     "name": "RelentlessDead",
-    "desc": "At the end of each round, spawn a zombie kitten familiar onto a random tile."
+    "desc": "At the end of each round, spawn a zombie kitten familiar onto a random tile.",
+    "key": "PASSIVE_RELENTLESSDEAD"
   },
   {
     "name": "RelentlessDead2",
-    "desc": "At the end of each round, spawn 2 zombie kitten familiars onto random tiles."
+    "desc": "At the end of each round, spawn 2 zombie kitten familiars onto random tiles.",
+    "key": "PASSIVE_RELENTLESSDEAD2"
   },
   {
-    "name": "ChainsofGuilt",
-    "desc": "When an enemy downs you and it wasn't a boss, it joins your party permanently."
+    "name": "ChainsOfGuilt",
+    "desc": "When an enemy downs you and it wasn't a boss, it joins your party permanently.",
+    "key": "PASSIVE_CHAINSOFGUILT"
   },
   {
-    "name": "ChainsofGuilt2",
-    "desc": "When an enemy downs you and it wasn't a boss, it joins your party permanently. If it was a boss, inflict Stun 3 on it."
+    "name": "ChainsOfGuilt2",
+    "desc": "When an enemy downs you and it wasn't a boss, it joins your party permanently. If it was a boss, inflict Stun 3 on it.",
+    "key": "PASSIVE_CHAINSOFGUILT2"
   },
   {
     "name": "DarkPriest",
-    "desc": "At the start of each battle, if you don't have a weapon, gain a temporary Soul Dagger weapon."
+    "desc": "At the start of each battle, if you don't have a weapon, gain a temporary Soul Dagger weapon.",
+    "key": "PASSIVE_DARKPRIEST"
   },
   {
     "name": "DarkPriest2",
-    "desc": "At the start of each battle, if you don't have a weapon, gain a temporary Soul Dagger weapon. You can use your weapon action an extra time each turn."
+    "desc": "At the start of each battle, if you don't have a weapon, gain a temporary Soul Dagger weapon. You can use your weapon action an extra time each turn.",
+    "key": "PASSIVE_DARKPRIEST2"
   },
   {
     "name": "Undeath",
-    "desc": "When you're downed, reanimate each ally to 33% HP. (Once per battle.)"
+    "desc": "When you're downed, reanimate each ally to 33% HP. (Once per battle.)",
+    "key": "PASSIVE_UNDEATH"
   },
   {
     "name": "Undeath2",
-    "desc": "When you're downed, reanimate each ally to max HP. (Once per battle.)"
+    "desc": "When you're downed, reanimate each ally to max HP. (Once per battle.)",
+    "key": "PASSIVE_UNDEATH2"
   },
   {
     "name": "NumbingLeeches",
-    "desc": "Your basic attack deals 0 damage but its status and hit effects are tripled."
+    "desc": "Your basic attack deals 0 damage but its status and hit effects are tripled.",
+    "key": "PASSIVE_NUMBINGLEECHES"
   },
   {
     "name": "NumbingLeeches2",
-    "desc": "Your basic attack deals 0 damage, but its status and hit effects are tripled.\nYour basic attack inflicts Mana Leech."
+    "desc": "Your basic attack deals 0 damage, but its status and hit effects are tripled.\nYour basic attack inflicts Mana Leech.",
+    "key": "PASSIVE_NUMBINGLEECHES2"
   },
   {
     "name": "EternalHealth",
-    "desc": "Suffer only Jinxed when downed. When your party wins a battle, if you were downed, heal to full."
+    "desc": "Suffer only Jinxed when downed. When your party wins a battle, if you were downed, heal to full.",
+    "key": "PASSIVE_ETERNALHEALTH"
   },
   {
     "name": "EternalHealth2",
-    "desc": "Suffer only Jinxed when downed. When your party wins a battle, if you were downed, heal to full. Your body is indestructible. When you're downed, allies get +1 [img:lck] for each Jinxed injury you have."
+    "desc": "Suffer only Jinxed when downed. When your party wins a battle, if you were downed, heal to full. Your body is indestructible. When you're downed, allies get +1 [img:lck] for each Jinxed injury you have.",
+    "key": "PASSIVE_ETERNALHEALTH2"
   },
   {
     "name": "Torpor",
-    "desc": "While you're downed, your basic attack is Haunt. Your body gains +6 corpse HP."
+    "desc": "While you're downed, your basic attack is Haunt. Your body gains +6 corpse HP.",
+    "key": "PASSIVE_TORPOR"
   },
   {
     "name": "Torpor2",
-    "desc": "While you're downed, your basic attack is Haunt and your spells are Spook. Your body gains +6 corpse HP."
+    "desc": "While you're downed, your basic attack is Haunt and your spells are Spook. Your body gains +6 corpse HP.",
+    "key": "PASSIVE_TORPOR2"
   },
   {
-    "name": "SoulBond",
-    "desc": "Your basic attack inflicts Soul Link."
+    "name": "SoulBound",
+    "desc": "Your basic attack inflicts Soul Link.",
+    "key": "PASSIVE_SOULBOND"
   },
   {
-    "name": "SoulBond2",
-    "desc": "Your basic attack inflicts Soul Link. Inflict Soul Link on a random enemy at the start of the battle."
+    "name": "SoulBound2",
+    "desc": "Your basic attack inflicts Soul Link. Inflict Soul Link on a random enemy at the start of the battle.",
+    "key": "PASSIVE_SOULBOND2"
   },
   {
     "name": "Superstition",
-    "desc": "Your basic attack inflicts -1[img:lck]. \nWhen a unit damages you, inflict -1[img:lck] on it."
+    "desc": "Your basic attack inflicts -1[img:lck]. \nWhen a unit damages you, inflict -1[img:lck] on it.",
+    "key": "PASSIVE_SUPERSTITION"
   },
   {
     "name": "Superstition2",
-    "desc": "Your basic attack inflicts -1[img:lck] and has a 15% chance to inflict Fear.\nWhen a unit damages you, inflict -1[img:lck] and a 15% to Fear on it."
+    "desc": "Your basic attack inflicts -1[img:lck] and has a 15% chance to inflict Fear.\nWhen a unit damages you, inflict -1[img:lck] and a 15% to Fear on it.",
+    "key": "PASSIVE_SUPERSTITION2"
   },
   {
     "name": "ImmortalLeeches",
-    "desc": "When a unit you inflicted Leeches on dies or loses its leeches, your next basic attack inflicts that many additional leeches."
+    "desc": "When a unit you inflicted Leeches on dies or loses its leeches, your next basic attack inflicts that many additional leeches.",
+    "key": "PASSIVE_IMMORTALLEECHES"
   },
   {
     "name": "ImmortalLeeches2",
-    "desc": "When a unit you inflicted Leeches on dies or loses its leeches, your next basic attack inflicts that many additional leeches.\nYour basic attack inflicts +1 leech."
+    "desc": "When a unit you inflicted Leeches on dies or loses its leeches, your next basic attack inflicts that many additional leeches.\nYour basic attack inflicts +1 leech.",
+    "key": "PASSIVE_IMMORTALLEECHES2"
   },
   {
     "name": "CorpseConnoisseur",
-    "desc": "Start each battle with 2-3 corpses near you.\nWhen you destroy a corpse, heal 2 HP and spawn a food pickup."
+    "desc": "Start each battle with 2-3 corpses near you.\nWhen you destroy a corpse, heal 2 HP and spawn a food pickup.",
+    "key": "PASSIVE_CORPSECONNOISSEUR"
   },
   {
     "name": "CorpseConnoisseur2",
-    "desc": "Start each battle with 3-4 corpses near you.\nWhen you destroy a corpse, heal 8 HP and spawn a food pickup."
+    "desc": "Start each battle with 3-4 corpses near you.\nWhen you destroy a corpse, heal 8 HP and spawn a food pickup.",
+    "key": "PASSIVE_CORPSECONNOISSEUR2"
   },
   {
     "name": "Parasitic",
-    "desc": "When you gain health, spawn a leech familiar."
+    "desc": "When you gain health, spawn a leech familiar.",
+    "key": "PASSIVE_PARASITIC"
   },
   {
     "name": "Parasitic2",
-    "desc": "When you gain health, spawn a leech familiar. 50% of the time, spawn a beefy leech instead."
+    "desc": "When you gain health, spawn a leech familiar. 50% of the time, spawn a beefy leech instead.",
+    "key": "PASSIVE_PARASITIC2"
   },
   {
     "name": "SpreadSorrow",
-    "desc": "When you inflict a debuff to an enemy, inflict that same debuff on another random enemy."
+    "desc": "When you inflict a debuff to an enemy, inflict that same debuff on another random enemy.",
+    "key": "PASSIVE_SPREADSORROW"
   },
   {
     "name": "SpreadSorrow2",
-    "desc": "When you inflict a debuff to an enemy, inflict that same debuff on 2 other random enemies."
+    "desc": "When you inflict a debuff to an enemy, inflict that same debuff on 2 other random enemies.",
+    "key": "PASSIVE_SPREADSORROW2"
   }
 ]

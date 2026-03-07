@@ -76,10 +76,15 @@ export interface CatStats {
   LUCK: number;
 }
 
+export interface SkillSlot {
+  name: string | null;
+  tier: number; // 1 = base, 2 = upgraded
+}
+
 export interface CatAbilities {
   active: (string | null)[];
-  passive: (string | null)[];
-  disorder: (string | null)[];
+  passive: SkillSlot[];
+  disorder: SkillSlot[];
 }
 
 export interface CatDetail {

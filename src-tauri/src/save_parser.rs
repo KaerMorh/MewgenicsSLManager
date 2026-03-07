@@ -108,11 +108,23 @@ pub struct CatStats {
     pub luck: i32,
 }
 
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct SkillSlot {
+    pub name: Option<String>,
+    pub tier: u32,
+}
+
+impl Default for SkillSlot {
+    fn default() -> Self {
+        SkillSlot { name: None, tier: 1 }
+    }
+}
+
 #[derive(Debug, Clone, Serialize, Deserialize, Default)]
 pub struct CatAbilities {
     pub active: Vec<Option<String>>,
-    pub passive: Vec<Option<String>>,
-    pub disorder: Vec<Option<String>>,
+    pub passive: Vec<SkillSlot>,
+    pub disorder: Vec<SkillSlot>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize, Default)]
@@ -519,8 +531,8 @@ fn read_t_array(dec: &[u8], name_end: usize) -> HashMap<String, u32> {
 fn parse_abilities_and_mutations(dec: &[u8], name_end: usize) -> (CatAbilities, HashMap<String, u32>) {
     let mut abilities = CatAbilities {
         active: vec![None; 6],
-        passive: vec![None; 2],
-        disorder: vec![None; 2],
+        passive: vec![SkillSlot::default(); 2],
+        disorder: vec![SkillSlot::default(); 2],
     };
     let n = dec.len();
 
@@ -537,7 +549,7 @@ fn parse_abilities_and_mutations(dec: &[u8], name_end: usize) -> (CatAbilities, 
             continue;
         }
 
-        // Parse u64-run items — break on \x01/\x02 markers (they delimit the StringRec section)
+        // Parse u64-run items
         let mut items: Vec<String> = Vec::new();
         let mut i = start;
         for _ in 0..64 {
@@ -546,7 +558,6 @@ fn parse_abilities_and_mutations(dec: &[u8], name_end: usize) -> (CatAbilities, 
             }
             let slen = u64_le(dec, i) as usize;
             if slen > 96 || i + 8 + slen > n {
-                // Hit a marker or invalid data — stop the u64-run
                 break;
             }
             if slen == 0 {
@@ -579,79 +590,58 @@ fn parse_abilities_and_mutations(dec: &[u8], name_end: usize) -> (CatAbilities, 
             }
         }
 
-        // Passive: items[10] and items[11]
+        // Passive1 name from items[10] in u64-run
         if items.len() > 10 {
             let val = &items[10];
-            abilities.passive[0] = if val.is_empty() || val == "None" {
-                None
-            } else {
-                Some(val.clone())
-            };
-        }
-        if items.len() > 11 {
-            let val = &items[11];
-            abilities.passive[1] = if val.is_empty() || val == "None" {
+            abilities.passive[0].name = if val.is_empty() || val == "None" {
                 None
             } else {
                 Some(val.clone())
             };
         }
 
-        // Check for separator and secondary u64-run (Passive2)
+        // After u64-run: read passive1_tier (u32), then
+        // [u64 len][passive2_name][u32 tier],
+        // [u64 len][disorder1_name][u32 tier],
+        // [u64 len][disorder2_name][u32 tier]
         let mut o = i;
-        let has_separator = o + 4 <= n && dec[o..o + 4] == [2, 0, 0, 0];
-        if has_separator {
+
+        // passive1 tier
+        if o + 4 <= n {
+            abilities.passive[0].tier = u32_le(dec, o);
             o += 4;
-            if o + 8 <= n {
-                let slen = u64_le(dec, o) as usize;
-                if slen > 0 && slen <= 96 && o + 8 + slen <= n {
-                    if let Ok(s) = std::str::from_utf8(&dec[o + 8..o + 8 + slen]) {
-                        if !s.is_empty() && s != "None" {
-                            abilities.passive[1] = Some(s.to_string());
-                        }
-                        o += 8 + slen;
-                    }
-                }
-            }
         }
 
-        // Parse StringRec blocks: [\x01\x00\x00\x00][u64 len][ASCII string]
-        let mut stringrec_idx = 0usize;
-        let mut disorder_idx = 0usize;
-        for _ in 0..4 {
-            if o + 12 > n {
-                break;
-            }
-            if dec[o..o + 4] != [1, 0, 0, 0] {
-                break;
-            }
-            let slen = u64_le(dec, o + 4) as usize;
-            if slen > 96 || o + 12 + slen > n {
-                break;
-            }
-            match std::str::from_utf8(&dec[o + 12..o + 12 + slen]) {
-                Ok(s) => {
-                    let val = if s.is_empty() || s == "None" {
-                        None
-                    } else {
-                        Some(s.to_string())
-                    };
-                    if has_separator {
-                        if disorder_idx < 2 {
-                            abilities.disorder[disorder_idx] = val;
-                        }
-                        disorder_idx += 1;
-                    } else {
-                        if stringrec_idx == 0 {
-                            abilities.passive[1] = val;
-                        } else if stringrec_idx <= 2 {
-                            abilities.disorder[stringrec_idx - 1] = val;
-                        }
-                        stringrec_idx += 1;
-                    }
-                    o += 12 + slen;
-                }
+        // passive2, disorder1, disorder2
+        let slot_refs: [(usize, bool); 3] = [
+            (1, true),   // passive[1]
+            (0, false),  // disorder[0]
+            (1, false),  // disorder[1]
+        ];
+        for &(idx, is_passive) in &slot_refs {
+            if o + 8 > n { break; }
+            let slen = u64_le(dec, o) as usize;
+            o += 8;
+            if slen > 96 || o + slen > n { break; }
+            let name_str = match std::str::from_utf8(&dec[o..o + slen]) {
+                Ok(s) => s.to_string(),
                 Err(_) => break,
+            };
+            o += slen;
+            let tier = if o + 4 <= n { u32_le(dec, o) } else { 1 };
+            o += 4;
+            let slot = SkillSlot {
+                name: if name_str.is_empty() || name_str == "None" {
+                    None
+                } else {
+                    Some(name_str)
+                },
+                tier,
+            };
+            if is_passive {
+                abilities.passive[idx] = slot;
+            } else {
+                abilities.disorder[idx] = slot;
             }
         }
 

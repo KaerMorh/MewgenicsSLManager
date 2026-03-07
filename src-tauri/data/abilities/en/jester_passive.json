@@ -1,18 +1,22 @@
 [
   {
     "name": "SuperLuck",
-    "desc": ""
+    "desc": "",
+    "key": "PASSIVE_SUPERLUCK"
   },
   {
     "name": "SuperLuck2",
-    "desc": ""
+    "desc": "",
+    "key": "PASSIVE_SUPERLUCK2"
   },
   {
     "name": "Goofball",
-    "desc": "Take an extra turn at the start of each round."
+    "desc": "Take an extra turn at the start of each round.",
+    "key": "PASSIVE_GOOFBALL"
   },
   {
     "name": "Goofball2",
-    "desc": "Take 2 extra turns at the start of each round."
+    "desc": "Take 2 extra turns at the start of each round.",
+    "key": "PASSIVE_GOOFBALL2"
   }
 ]

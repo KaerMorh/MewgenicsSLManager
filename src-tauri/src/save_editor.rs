@@ -1,5 +1,5 @@
 use crate::lz4::{decompress_cat_with_variant, recompress_cat};
-use crate::save_parser::{CatAbilities, CatStats, FurnitureItem, MUTATION_SLOTS};
+use crate::save_parser::{CatAbilities, CatStats, FurnitureItem, SkillSlot, MUTATION_SLOTS};
 use rusqlite::Connection;
 use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
@@ -142,7 +142,7 @@ fn write_abilities_to_blob(dec: &mut Vec<u8>, abilities: &CatAbilities) -> bool 
     };
 
     // Parse existing u64-run items to find boundaries
-    let mut items: Vec<(usize, usize, String)> = Vec::new(); // (offset, len, value)
+    let mut items: Vec<(usize, usize, String)> = Vec::new();
     let mut i = start;
     for _ in 0..64 {
         if i + 8 > n {
@@ -150,11 +150,6 @@ fn write_abilities_to_blob(dec: &mut Vec<u8>, abilities: &CatAbilities) -> bool 
         }
         let slen = u64_le(dec, i) as usize;
         if slen > 96 || i + 8 + slen > n {
-            if i + 4 <= n
-                && (dec[i..i + 4] == [1, 0, 0, 0] || dec[i..i + 4] == [2, 0, 0, 0])
-            {
-                break;
-            }
             break;
         }
         if slen == 0 {
@@ -175,108 +170,59 @@ fn write_abilities_to_blob(dec: &mut Vec<u8>, abilities: &CatAbilities) -> bool 
         }
     }
 
-    // Check for separator and secondary u64-run
+    // After u64-run: skip passive1_tier(u32) + 3x [u64 len][name][u32 tier]
     let mut o = i;
-    let has_separator = o + 4 <= n && dec[o..o + 4] == [2, 0, 0, 0];
-    if has_separator {
-        o += 4;
-        if o + 8 <= n {
-            let slen = u64_le(dec, o) as usize;
-            if slen > 0 && slen <= 96 && o + 8 + slen <= n {
-                o += 8 + slen;
-            }
-        }
-    }
-
-    // Parse StringRec blocks
-    let mut stringrec_count = 0usize;
-    for _ in 0..4 {
-        if o + 12 > n {
-            break;
-        }
-        if dec[o..o + 4] != [1, 0, 0, 0] {
-            break;
-        }
-        let slen = u64_le(dec, o + 4) as usize;
-        if slen > 96 || o + 12 + slen > n {
-            break;
-        }
-        stringrec_count += 1;
-        o += 12 + slen;
+    // passive1 tier
+    if o + 4 <= n { o += 4; }
+    // passive2, disorder1, disorder2
+    for _ in 0..3 {
+        if o + 8 > n { break; }
+        let slen = u64_le(dec, o) as usize;
+        o += 8;
+        if slen > 96 || o + slen > n { break; }
+        o += slen;
+        if o + 4 <= n { o += 4; } // tier
     }
     let section_end = o;
 
-    // Build new u64-run section
+    // Build new data
     let mut new_data: Vec<u8> = Vec::new();
+
+    // Re-write u64-run items, replacing active[0..6] and passive[0] name at items[10]
     for idx in 0..items.len() {
         let new_val = if idx < 6 {
-            abilities
-                .active
-                .get(idx)
+            abilities.active.get(idx)
                 .and_then(|v| v.clone())
                 .unwrap_or_else(|| items[idx].2.clone())
         } else if idx == 10 {
-            abilities
-                .passive
-                .first()
-                .and_then(|v| v.clone())
-                .unwrap_or_else(|| items[idx].2.clone())
-        } else if idx == 11 {
-            abilities
-                .passive
-                .get(1)
-                .and_then(|v| v.clone())
+            abilities.passive.first()
+                .and_then(|s| s.name.clone())
                 .unwrap_or_else(|| items[idx].2.clone())
         } else {
             items[idx].2.clone()
         };
-
         let val_bytes = new_val.as_bytes();
         new_data.extend_from_slice(&(val_bytes.len() as u64).to_le_bytes());
         new_data.extend_from_slice(val_bytes);
     }
 
-    // Re-add separator if it existed
-    if has_separator {
-        new_data.extend_from_slice(&[2, 0, 0, 0]);
-        let passive2 = abilities
-            .passive
-            .get(1)
-            .and_then(|v| v.clone())
-            .unwrap_or_default();
-        if !passive2.is_empty() {
-            let val_bytes = passive2.as_bytes();
-            new_data.extend_from_slice(&(val_bytes.len() as u64).to_le_bytes());
-            new_data.extend_from_slice(val_bytes);
-        }
-    }
+    // Write passive1 tier
+    let p1_tier = abilities.passive.first()
+        .map(|s| s.tier).unwrap_or(1);
+    new_data.extend_from_slice(&p1_tier.to_le_bytes());
 
-    // Re-add StringRec blocks for disorders
-    for idx in 0..stringrec_count {
-        new_data.extend_from_slice(&[1, 0, 0, 0]);
-        let val = if has_separator {
-            abilities
-                .disorder
-                .get(idx)
-                .and_then(|v| v.clone())
-                .unwrap_or_else(|| "None".to_string())
-        } else if idx == 0 {
-            abilities
-                .passive
-                .get(1)
-                .and_then(|v| v.clone())
-                .unwrap_or_else(|| "None".to_string())
-        } else {
-            abilities
-                .disorder
-                .get(idx - 1)
-                .and_then(|v| v.clone())
-                .unwrap_or_else(|| "None".to_string())
-        };
-        let val_str = if val.is_empty() { "None" } else { &val };
-        let val_bytes = val_str.as_bytes();
-        new_data.extend_from_slice(&(val_bytes.len() as u64).to_le_bytes());
-        new_data.extend_from_slice(val_bytes);
+    // Write passive2, disorder1, disorder2: [u64 len][name][u32 tier]
+    let tail_slots: [&SkillSlot; 3] = [
+        abilities.passive.get(1).unwrap_or(&SkillSlot { name: None, tier: 1 }),
+        abilities.disorder.first().unwrap_or(&SkillSlot { name: None, tier: 1 }),
+        abilities.disorder.get(1).unwrap_or(&SkillSlot { name: None, tier: 1 }),
+    ];
+    for slot in &tail_slots {
+        let name_str = slot.name.as_deref().unwrap_or("None");
+        let name_bytes = name_str.as_bytes();
+        new_data.extend_from_slice(&(name_bytes.len() as u64).to_le_bytes());
+        new_data.extend_from_slice(name_bytes);
+        new_data.extend_from_slice(&slot.tier.to_le_bytes());
     }
 
     // Replace the section in the blob

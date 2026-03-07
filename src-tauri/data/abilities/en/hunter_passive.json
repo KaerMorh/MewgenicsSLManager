@@ -1,202 +1,252 @@
 [
   {
     "name": "TakeAim",
-    "desc": "Gain +1 range and damage at the start of each turn. You lose this when you move."
+    "desc": "Gain +1 range and damage at the start of each turn. You lose this when you move.",
+    "key": "PASSIVE_TAKEAIM"
   },
   {
     "name": "TakeAim2",
-    "desc": "Gain +2 range and damage at the start of each turn. You lose this when you move."
+    "desc": "Gain +2 range and damage at the start of each turn. You lose this when you move.",
+    "key": "PASSIVE_TAKEAIM2"
   },
   {
     "name": "TowerDefense",
-    "desc": "When an enemy comes within range, shoot them for 1 damage."
+    "desc": "When an enemy comes within range, shoot them for 1 damage.",
+    "key": "PASSIVE_TOWERDEFENSE"
   },
   {
     "name": "TowerDefense2",
-    "desc": "When an enemy comes within range, use your basic attack on them."
+    "desc": "When an enemy comes within range, use your basic attack on them.",
+    "key": "PASSIVE_TOWERDEFENSE2"
   },
   {
-    "name": "Hunter'sBoon",
-    "desc": "When you kill an enemy, gain 5 mana."
+    "name": "HuntersBoon",
+    "desc": "When you kill an enemy, gain 5 mana.",
+    "key": "PASSIVE_HUNTERSBOON"
   },
   {
     "name": "HuntersBoon2",
-    "desc": "When you kill an enemy, restore all your mana."
+    "desc": "When you kill an enemy, restore all your mana.",
+    "key": "PASSIVE_HUNTERSBOON2"
   },
   {
     "name": "BroodMother",
-    "desc": "Your familiars and units you charm gain +2 Damage and +5 HP."
+    "desc": "Your familiars and units you charm gain +2 Damage and +5 HP.",
+    "key": "PASSIVE_BROODMOTHER"
   },
   {
     "name": "BroodMother2",
-    "desc": "Your familiars and units you charm gain +3 Damage, +10 HP, and inflict Poison."
+    "desc": "Your familiars and units you charm gain +3 Damage, +10 HP, and inflict Poison.",
+    "key": "PASSIVE_BROODMOTHER2"
   },
   {
     "name": "TaintedMother",
-    "desc": "Your familiars and units you charm gain +4 [img:spd] and inflict Poison and Bleed."
+    "desc": "Your familiars and units you charm gain +4 [img:spd] and inflict Poison and Bleed.",
+    "key": "PASSIVE_TAINTEDMOTHER"
   },
   {
     "name": "TaintedMother2",
-    "desc": "Your familiars and units you charm gain +4 [img:spd] and inflict Poison and Bleed.\nStart each battle with 4 fly familiars."
+    "desc": "Your familiars and units you charm gain +4 [img:spd] and inflict Poison and Bleed.\nStart each battle with 4 fly familiars.",
+    "key": "PASSIVE_TAINTEDMOTHER2"
   },
   {
     "name": "Quiver",
-    "desc": "Save unused basic attacks for future turns."
+    "desc": "Save unused basic attacks for future turns.",
+    "key": "PASSIVE_QUIVER"
   },
   {
     "name": "Quiver2",
-    "desc": "Save unused basic attacks for future turns.\nIf you haven't attacked this battle, the number you save is doubled."
+    "desc": "Save unused basic attacks for future turns.\nIf you haven't attacked this battle, the number you save is doubled.",
+    "key": "PASSIVE_QUIVER2"
   },
   {
     "name": "SplitShot",
-    "desc": "Your basic attack has +1 area but deals 50% less damage."
+    "desc": "Your basic attack has +1 area but deals 50% less damage.",
+    "key": "PASSIVE_SPLITSHOT"
   },
   {
     "name": "SplitShot2",
-    "desc": "Your basic attack has +2 area but deals 50% less damage."
+    "desc": "Your basic attack has +2 area but deals 50% less damage.",
+    "key": "PASSIVE_SPLITSHOT2"
   },
   {
     "name": "Hazardous",
-    "desc": "Tile damage and effects are doubled."
+    "desc": "Tile damage and effects are doubled.",
+    "key": "PASSIVE_HAZARDOUS"
   },
   {
     "name": "Hazardous2",
-    "desc": "Tile damage and effects are doubled.\nAllies are immune to tile damage and effects."
+    "desc": "Tile damage and effects are doubled.\nAllies are immune to tile damage and effects.",
+    "key": "PASSIVE_HAZARDOUS2"
   },
   {
     "name": "ThornArrows",
-    "desc": "Your basic attack spawns brambles."
+    "desc": "Your basic attack spawns brambles.",
+    "key": "PASSIVE_THORNARROWS"
   },
   {
     "name": "ThornArrows2",
-    "desc": "Your basic attack spawns brambles in an area."
+    "desc": "Your basic attack spawns brambles in an area.",
+    "key": "PASSIVE_THORNARROWS2"
   },
   {
     "name": "Traps",
-    "desc": "Your basic attack spawns a bear trap if you shoot an empty tile.\nWhenever one of your traps triggers, gain +2 [img:dex]."
+    "desc": "Your basic attack spawns a bear trap if you shoot an empty tile.\nWhenever one of your traps triggers, gain +2 [img:dex].",
+    "key": "PASSIVE_TRAPS"
   },
   {
     "name": "Traps2",
-    "desc": "Your basic attack spawns a bear trap if you shoot an empty tile.\nWhenever one of your traps triggers, gain +2 [img:dex] and +1 Bonus Attack."
+    "desc": "Your basic attack spawns a bear trap if you shoot an empty tile.\nWhenever one of your traps triggers, gain +2 [img:dex] and +1 Bonus Attack.",
+    "key": "PASSIVE_TRAPS2"
   },
   {
     "name": "CatchProjectiles",
-    "desc": "33% chance to block enemy projectiles and a 100% chance to block allied projectiles. If you block a projectile, gain +1 Bonus Attack."
+    "desc": "33% chance to block enemy projectiles and a 100% chance to block allied projectiles. If you block a projectile, gain +1 Bonus Attack.",
+    "key": "PASSIVE_CATCHPROJECTILES"
   },
   {
     "name": "CatchProjectiles2",
-    "desc": "50% chance to block enemy projectiles and a 100% chance to block allied projectiles. If you block a projectile, gain +1 Bonus Attack and +1 All Stats Up."
+    "desc": "50% chance to block enemy projectiles and a 100% chance to block allied projectiles. If you block a projectile, gain +1 Bonus Attack and +1 All Stats Up.",
+    "key": "PASSIVE_CATCHPROJECTILES2"
   },
   {
     "name": "TrickyTraps",
-    "desc": "Damage and effects from your traps are doubled."
+    "desc": "Damage and effects from your traps are doubled.",
+    "key": "PASSIVE_TRICKYTRAPS"
   },
   {
     "name": "TrickyTraps2",
-    "desc": "Damage and effects from your traps are doubled.\nAllies don't trigger your traps."
+    "desc": "Damage and effects from your traps are doubled.\nAllies don't trigger your traps.",
+    "key": "PASSIVE_TRICKYTRAPS2"
   },
   {
     "name": "GravityFalls",
-    "desc": "Your basic attack deals +1 damage for each tile you shoot beyond range 3."
+    "desc": "Your basic attack deals +1 damage for each tile you shoot beyond range 3.",
+    "key": "PASSIVE_GRAVITYFALLS"
   },
   {
     "name": "GravityFalls2",
-    "desc": "+2 range.\nYour basic attack deals +1 damage for each tile you shoot beyond range 3."
+    "desc": "+2 range.\nYour basic attack deals +1 damage for each tile you shoot beyond range 3.",
+    "key": "PASSIVE_GRAVITYFALLS2"
   },
   {
-    "name": "Bullseye",
-    "desc": "Your ranged attacks never miss.\n+25% critical hit chance."
+    "name": "HawkEye",
+    "desc": "Your ranged attacks never miss.\n+25% critical hit chance.",
+    "key": "PASSIVE_BULLSEYE"
   },
   {
-    "name": "Bullseye2",
-    "desc": "Your ranged attacks never miss.\n+25% critical hit chance.\nGain +1 [img:lck] each time you make a critical hit."
+    "name": "HawkEye2",
+    "desc": "Your ranged attacks never miss.\n+25% critical hit chance.\nGain +1 [img:lck] each time you make a critical hit.",
+    "key": "PASSIVE_BULLSEYE2"
   },
   {
     "name": "Spotters",
-    "desc": "Your basic attack can target tiles adjacent to allies."
+    "desc": "Your basic attack can target tiles adjacent to allies.",
+    "key": "PASSIVE_SPOTTERS"
   },
   {
     "name": "Spotters2",
-    "desc": "Your basic attack and spells can target tiles adjacent to allies."
+    "desc": "Your basic attack and spells can target tiles adjacent to allies.",
+    "key": "PASSIVE_SPOTTERS2"
   },
   {
     "name": "LuckSwing",
-    "desc": "+50% critical hit chance but +25% chance to miss."
+    "desc": "+50% critical hit chance but +25% chance to miss.",
+    "key": "PASSIVE_LUCKSWING"
   },
   {
     "name": "LuckSwing2",
-    "desc": "+50% critical hit chance but +25% chance to miss."
+    "desc": "+50% critical hit chance but +25% chance to miss.",
+    "key": "PASSIVE_LUCKSWING2"
   },
   {
     "name": "Host",
-    "desc": "Start each battle with 2 tiny spider familiars. A spider egg parasite is added to your inventory. You can unequip parasites freely."
+    "desc": "Start each battle with 2 tiny spider familiars. A spider egg parasite is added to your inventory. You can unequip parasites freely.",
+    "key": "PASSIVE_HOST"
   },
   {
     "name": "Host2",
-    "desc": "Start each battle with 2 tiny spider familiars. A spider webber parasite is added to your inventory. You can unequip parasites freely."
+    "desc": "Start each battle with 2 tiny spider familiars. A spider webber parasite is added to your inventory. You can unequip parasites freely.",
+    "key": "PASSIVE_HOST2"
   },
   {
     "name": "Sniper",
-    "desc": "Critical hits deal +100% more damage and have a 25% chance to inflict Stun."
+    "desc": "Critical hits deal +100% more damage and have a 25% chance to inflict Stun.",
+    "key": "PASSIVE_SNIPER"
   },
   {
     "name": "Sniper2",
-    "desc": "Critical hits deal +200% more damage and have a 33% chance to inflict Stun."
+    "desc": "Critical hits deal +200% more damage and have a 33% chance to inflict Stun.",
+    "key": "PASSIVE_SNIPER2"
   },
   {
     "name": "RubberArrows",
-    "desc": "Your projectiles bounce to another enemy within 3 tiles."
+    "desc": "Your projectiles bounce to another enemy within 3 tiles.",
+    "key": "PASSIVE_RUBBERARROWS"
   },
   {
     "name": "RubberArrows2",
-    "desc": "Your projectiles bounce to another enemy within 4 tiles, twice!"
+    "desc": "Your projectiles bounce to another enemy within 4 tiles, twice!",
+    "key": "PASSIVE_RUBBERARROWS2"
   },
   {
-    "name": "TalktoAnimals",
-    "desc": "Your basic attack inflicts Charm 5 the first time you use it each battle."
+    "name": "TalkToAnimals",
+    "desc": "Your basic attack inflicts Charm 5 the first time you use it each battle.",
+    "key": "PASSIVE_TALKTOANIMALS"
   },
   {
-    "name": "TalktoAnimals2",
-    "desc": "Your basic attack inflicts Charm 5 the first time you use it each battle.\nYour basic attack has a 25% chance to inflict Charm 1."
+    "name": "TalkToAnimals2",
+    "desc": "Your basic attack inflicts Charm 5 the first time you use it each battle.\nYour basic attack has a 25% chance to inflict Charm 1.",
+    "key": "PASSIVE_TALKTOANIMALS2"
   },
   {
     "name": "AnimalControl",
-    "desc": "Your basic attack causes units to immediately attack an enemy in range."
+    "desc": "Your basic attack causes units to immediately attack an enemy in range.",
+    "key": "PASSIVE_ANIMALCONTROL"
   },
   {
     "name": "AnimalControl2",
-    "desc": "Your basic attack causes units to immediately attack an enemy in range. Your basic attack can heal allies."
+    "desc": "Your basic attack causes units to immediately attack an enemy in range. Your basic attack can heal allies.",
+    "key": "PASSIVE_ANIMALCONTROL2"
   },
   {
     "name": "SleepDarts",
-    "desc": "At the start of each battle, you and all allies that don't have weapons gains a temporary Sleep Dart."
+    "desc": "At the start of each battle, you and all allies that don't have weapons gains a temporary Sleep Dart.",
+    "key": "PASSIVE_SLEEPDARTS"
   },
   {
     "name": "SleepDarts2",
-    "desc": "At the start of each battle, you and all allies that don't have weapons gains a temporary Sleep Dart with 2 uses."
+    "desc": "At the start of each battle, you and all allies that don't have weapons gains a temporary Sleep Dart with 2 uses.",
+    "key": "PASSIVE_SLEEPDARTS2"
   },
   {
     "name": "Survivalist",
-    "desc": "4 healing consumables and a full water bottle are added to your inventory.\nYou can use consumables on allies.\nStore +2 food at the end of each battle."
+    "desc": "4 healing consumables and a full water bottle are added to your inventory.\nYou can use consumables on allies.\nStore +2 food at the end of each battle.",
+    "key": "PASSIVE_SURVIVALIST"
   },
   {
     "name": "Survivalist2",
-    "desc": "4 large healing consumables are added to your inventory.\nYou can use consumables on allies.\nStore +20 food at the end of each battle."
+    "desc": "4 large healing consumables are added to your inventory.\nYou can use consumables on allies.\nStore +20 food at the end of each battle.",
+    "key": "PASSIVE_SURVIVALIST2"
   },
   {
     "name": "Fleabag",
-    "desc": "At the end of your turn, spawn Flea familiars equal to the number of enemies you've killed this battle."
+    "desc": "At the end of your turn, spawn Flea familiars equal to the number of enemies you've killed this battle.",
+    "key": "PASSIVE_FLEABAG"
   },
   {
     "name": "Fleabag2",
-    "desc": "At the end of your turn, spawn Flea familiars equal to the number of enemies you've killed this battle plus two."
+    "desc": "At the end of your turn, spawn Flea familiars equal to the number of enemies you've killed this battle plus two.",
+    "key": "PASSIVE_FLEABAG2"
   },
   {
-    "name": "ThrilloftheHunt",
-    "desc": "At the end of each battle, if you killed at least 3 enemies, gain +1 [img:dex] permanently and find a random consumable item."
+    "name": "ThrillOfTheHunt",
+    "desc": "At the end of each battle, if you killed at least 3 enemies, gain +1 [img:dex] permanently and find a random consumable item.",
+    "key": "PASSIVE_THRILLOFTHEHUNT"
   },
   {
-    "name": "ThrilloftheHunt2",
-    "desc": "At the end of each battle, if you killed at least 3 enemies, gain +1 [img:dex] permanently and find a random consumable item. +1 Range and +1 Health Regeneration for every 5 [img:dex] you have."
+    "name": "ThrillOfTheHunt2",
+    "desc": "At the end of each battle, if you killed at least 3 enemies, gain +1 [img:dex] permanently and find a random consumable item. +1 Range and +1 Health Regeneration for every 5 [img:dex] you have.",
+    "key": "PASSIVE_THRILLOFTHEHUNT2"
   }
 ]
