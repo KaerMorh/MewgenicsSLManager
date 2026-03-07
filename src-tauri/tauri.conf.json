@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/nicira/nicira/main/schema.json",
   "productName": "MewgenicsSLManager",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "identifier": "com.mewgenicsslmanager.app",
   "build": {
     "frontendDist": "../dist",

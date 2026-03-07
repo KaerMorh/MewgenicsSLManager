@@ -28,6 +28,17 @@ jobs:
         with:
           workspaces: src-tauri
 
+      - name: Get tag message
+        id: tag_message
+        run: |
+          TAG_MSG=$(git tag -l --format='%(contents)' ${{ github.ref_name }})
+          if [ -z "$TAG_MSG" ]; then
+            TAG_MSG="See the assets to download and install this version."
+          fi
+          echo "body<<MSGEOF" >> "$GITHUB_OUTPUT"
+          echo "$TAG_MSG" >> "$GITHUB_OUTPUT"
+          echo "MSGEOF" >> "$GITHUB_OUTPUT"
+
       - name: Install frontend dependencies
         run: npm ci
 
@@ -40,7 +51,7 @@ jobs:
         with:
           tagName: ${{ github.ref_name }}
           releaseName: 'MewgenicsSLManager ${{ github.ref_name }}'
-          releaseBody: 'See the assets to download and install this version.'
+          releaseBody: ${{ steps.tag_message.outputs.body }}
           releaseDraft: false
           prerelease: false
           args: --bundles nsis
@@ -55,44 +66,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Get version from tag
-        id: version
-        run: echo "version=${{ github.ref_name }}" >> "$GITHUB_OUTPUT"
-
-      - name: Download release assets info
+      - name: Download latest.json and deploy
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          TAG="${{ steps.version.outputs.version }}"
-          gh release download "$TAG" --pattern "*.nsis.zip.sig" --dir /tmp/sig
-          SIGNATURE=$(cat /tmp/sig/*.nsis.zip.sig)
-          echo "signature<<SIGEOF" >> "$GITHUB_ENV"
-          echo "$SIGNATURE" >> "$GITHUB_ENV"
-          echo "SIGEOF" >> "$GITHUB_ENV"
-          NSIS_ZIP_URL=$(gh release view "$TAG" --json assets --jq '.assets[] | select(.name | endswith(".nsis.zip")) | .browser_download_url')
-          echo "nsis_zip_url=$NSIS_ZIP_URL" >> "$GITHUB_ENV"
-
-      - name: Generate updater.json
-        run: |
-          TAG="${{ steps.version.outputs.version }}"
-          PUB_DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+          TAG="${{ github.ref_name }}"
           mkdir -p deploy
-          jq -n \
-            --arg version "$TAG" \
-            --arg pub_date "$PUB_DATE" \
-            --arg signature "${{ env.signature }}" \
-            --arg url "${{ env.nsis_zip_url }}" \
-            '{
-              version: $version,
-              notes: "See the release page for details.",
-              pub_date: $pub_date,
-              platforms: {
-                "windows-x86_64": {
-                  signature: $signature,
-                  url: $url
-                }
-              }
-            }' > deploy/updater.json
+          gh release download "$TAG" --pattern "latest.json" --dir deploy
+          mv deploy/latest.json deploy/updater.json
           cat deploy/updater.json
 
       - name: Deploy to gh-pages
