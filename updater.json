@@ -1,0 +1,15 @@
+{
+  "version": "1.5.4",
+  "notes": "feat: move language switcher to settings, improve UI hover effects, bump v1.5.4\n\n- Move language toggle from TopNav to SettingsDialog\n- Hide dead cats from backup preview (keep in detail view)\n- Add hover animations for slot tabs and page buttons\n- Refactor UpdateDialog to use shared update state",
+  "pub_date": "2026-03-07T18:11:02.309Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRWWM3ZVhnYnVVYjdOd1haUnhEbkwrOWVmb3UwOWZncmhYMkV2MjRuMVdYakFIOGxWNm4rdStvZTFScnB0Wnl5Q2dXa0wrN2ZNVGF4OGI4UnZ2Z25jR3pzeEkzQ1VrandrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzcyOTA3MDYwCWZpbGU6TWV3Z2VuaWNzU0xNYW5hZ2VyXzEuNS40X3g2NC1zZXR1cC5leGUKRjcweXFLZGRRVHZyWkU5ak5RNnR0d1Zzd3dERDhJYjZESmJlaE5QWEZZOHZPcXIxdlJiaEFoYkFIZ21hMjdjVXRRMHpPd09ia1N3YjRRblM1WWh0Q0E9PQo=",
+      "url": "https://github.com/KaerMorh/MewgenicsSLManager/releases/download/v1.5.4/MewgenicsSLManager_1.5.4_x64-setup.exe"
+    },
+    "windows-x86_64-nsis": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRWWM3ZVhnYnVVYjdOd1haUnhEbkwrOWVmb3UwOWZncmhYMkV2MjRuMVdYakFIOGxWNm4rdStvZTFScnB0Wnl5Q2dXa0wrN2ZNVGF4OGI4UnZ2Z25jR3pzeEkzQ1VrandrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzcyOTA3MDYwCWZpbGU6TWV3Z2VuaWNzU0xNYW5hZ2VyXzEuNS40X3g2NC1zZXR1cC5leGUKRjcweXFLZGRRVHZyWkU5ak5RNnR0d1Zzd3dERDhJYjZESmJlaE5QWEZZOHZPcXIxdlJiaEFoYkFIZ21hMjdjVXRRMHpPd09ia1N3YjRRblM1WWh0Q0E9PQo=",
+      "url": "https://github.com/KaerMorh/MewgenicsSLManager/releases/download/v1.5.4/MewgenicsSLManager_1.5.4_x64-setup.exe"
+    }
+  }
+}
