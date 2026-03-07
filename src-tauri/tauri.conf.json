@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/nicira/nicira/main/schema.json",
   "productName": "MewgenicsSLManager",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "identifier": "com.mewgenicsslmanager.app",
   "build": {
     "frontendDist": "../dist",
@@ -52,9 +52,9 @@
     "updater": {
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDZGOTRCQjgxOTdCNzczMTgKUldRWWM3ZVhnYnVVYjJIQ25rSWNNREwyYm04aFg2WEdqTDFtejVLM1cySnZIYlR5cDk0R1BXYnUK",
       "endpoints": [
-        "https://mirror.ghproxy.com/https://github.com/KaerMorh/MewgenicsSLManager/releases/latest/download/latest.json",
-        "https://ghfast.top/https://github.com/KaerMorh/MewgenicsSLManager/releases/latest/download/latest.json",
-        "https://github.com/KaerMorh/MewgenicsSLManager/releases/latest/download/latest.json"
+        "https://mirror.ghproxy.com/https://raw.githubusercontent.com/KaerMorh/MewgenicsSLManager/gh-pages/updater.json",
+        "https://ghfast.top/https://raw.githubusercontent.com/KaerMorh/MewgenicsSLManager/gh-pages/updater.json",
+        "https://kaermorh.github.io/MewgenicsSLManager/updater.json"
       ]
     }
   }
