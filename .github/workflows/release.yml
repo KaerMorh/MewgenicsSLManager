@@ -30,6 +30,7 @@ jobs:
 
       - name: Get tag message
         id: tag_message
+        shell: bash
         run: |
           TAG_MSG=$(git tag -l --format='%(contents)' ${{ github.ref_name }})
           if [ -z "$TAG_MSG" ]; then
