@@ -19,7 +19,7 @@ const TopNav: React.FC<TopNavProps> = ({
   onUpdateClick,
   hasUpdate,
 }) => {
-  const { lang, setLang, t } = useI18n();
+  const { t } = useI18n();
 
   return (
     <div style={{ padding: "0 0 0 0" }}>
@@ -69,6 +69,7 @@ const TopNav: React.FC<TopNavProps> = ({
           {[1, 2, 3].map((slot) => (
             <button
               key={slot}
+              className="slot-tab"
               onClick={() => onSlotChange(slot)}
               style={{
                 background: "transparent",
@@ -119,13 +120,6 @@ const TopNav: React.FC<TopNavProps> = ({
                 }}
               />
             )}
-          </button>
-          <button
-            className="btn-nav"
-            onClick={() => setLang(lang === "zh" ? "en" : "zh")}
-            style={{ fontSize: 15, fontWeight: 900 }}
-          >
-            {t("nav.language")}
           </button>
           <button className="btn-nav" onClick={onSettingsClick}>
             {t("nav.settings")}

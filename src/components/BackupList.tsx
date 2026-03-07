@@ -216,6 +216,7 @@ const BackupList: React.FC<BackupListProps> = ({
               return (
                 <button
                   key={i}
+                  className={`page-btn${i === safePage ? " page-btn-active" : ""}`}
                   onClick={() => { setPage(i); setExpandedIdx(null); }}
                   style={{
                     width: 32,

@@ -176,6 +176,16 @@ body {
   color: var(--dark-slate);
 }
 
+.slot-tab:hover {
+  color: var(--dark-slate) !important;
+  border-bottom-color: var(--accent-green) !important;
+}
+
+.page-btn:not(.page-btn-active):hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 var(--dark-slate) !important;
+}
+
 .btn-nav-primary {
   background-color: var(--accent-green);
   color: white;

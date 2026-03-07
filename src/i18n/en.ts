@@ -66,6 +66,7 @@ const en: Record<string, string> = {
   "save.gameProgress": "Game Progress",
 
   "settings.title": "Settings",
+  "settings.language": "Language",
   "settings.savePath": "Save File Path:",
   "settings.browse": "Browse...",
   "settings.openInExplorer": "Open in Explorer",
@@ -242,6 +243,8 @@ const en: Record<string, string> = {
   "update.relaunch": "Restart Now",
   "update.close": "Close",
   "update.error": "Failed to check for updates",
+  "update.currentVersion": "Current version",
+  "update.recheck": "Check for updates",
   "settings.autoUpdate": "Auto check for updates",
   "nav.update": "Update",
 };

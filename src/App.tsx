@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import { invoke } from "@tauri-apps/api/core";
 import { listen } from "@tauri-apps/api/event";
-import { check } from "@tauri-apps/plugin-updater";
+import { check, Update } from "@tauri-apps/plugin-updater";
 import { toast } from "sonner";
 import { useI18n } from "./i18n";
 import TitleBar from "./components/TitleBar";
@@ -25,6 +25,8 @@ function App() {
   const [showEditor, setShowEditor] = useState(false);
   const [showUpdate, setShowUpdate] = useState(false);
   const [hasUpdate, setHasUpdate] = useState(false);
+  const [updateResult, setUpdateResult] = useState<Update | null>(null);
+  const [updateChecking, setUpdateChecking] = useState(false);
   const [confirmDialog, setConfirmDialog] = useState<{
     title: string;
     message: string;
@@ -41,13 +43,31 @@ function App() {
     invoke<Config>("get_config").then(setConfig);
   }, []);
 
+  const recheckUpdate = useCallback(async () => {
+    setUpdateChecking(true);
+    try {
+      const update = await check();
+      setUpdateResult(update ?? null);
+      setHasUpdate(!!update);
+    } catch {
+      // silent fail
+    } finally {
+      setUpdateChecking(false);
+    }
+  }, []);
+
   // Silent update check on startup
   useEffect(() => {
     if (!config || !config.auto_update) return;
-    check().then((update) => {
-      if (update) setHasUpdate(true);
-    }).catch(() => {});
-  }, [config?.auto_update]);
+    recheckUpdate();
+  }, [config?.auto_update, recheckUpdate]);
+
+  // Poll every 30 minutes
+  useEffect(() => {
+    if (!config || !config.auto_update) return;
+    const id = setInterval(recheckUpdate, 30 * 60 * 1000);
+    return () => clearInterval(id);
+  }, [config?.auto_update, recheckUpdate]);
 
   const refresh = useCallback(async () => {
     if (!config) return;
@@ -347,6 +367,9 @@ function App() {
       {showUpdate && (
         <UpdateDialog
           onClose={() => setShowUpdate(false)}
+          updateResult={updateResult}
+          checking={updateChecking}
+          onRecheck={recheckUpdate}
         />
       )}
 

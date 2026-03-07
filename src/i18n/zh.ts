@@ -66,6 +66,7 @@ const zh: Record<string, string> = {
   "save.gameProgress": "游戏完成度",
 
   "settings.title": "系统设置",
+  "settings.language": "语言",
   "settings.savePath": "游戏存档路径:",
   "settings.browse": "浏览...",
   "settings.openInExplorer": "在资源管理器中打开",
@@ -242,6 +243,8 @@ const zh: Record<string, string> = {
   "update.relaunch": "立即重启",
   "update.close": "关闭",
   "update.error": "检查更新失败",
+  "update.currentVersion": "当前版本",
+  "update.recheck": "检查更新",
   "settings.autoUpdate": "自动检查更新",
   "nav.update": "更新",
 };

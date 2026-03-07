@@ -51,7 +51,7 @@ const BackupItem: React.FC<BackupItemProps> = ({
   };
 
   const dayText = s?.exists ? `Day ${s.current_day}` : `Day ${entry.day_in_name || "?"}`;
-  const catText = s?.exists ? `🐱${s.cat_alive} 💀${s.cat_dead}` : "🐱? 💀?";
+  const catText = s?.exists ? `🐱${s.cat_alive}` : "🐱?";
 
   const squadText = () => {
     if (!s || !s.exists) return "";

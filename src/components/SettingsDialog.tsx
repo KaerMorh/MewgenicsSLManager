@@ -18,7 +18,7 @@ const SettingsDialog: React.FC<SettingsDialogProps> = ({
   onClose,
   onRefresh,
 }) => {
-  const { t } = useI18n();
+  const { t, lang, setLang } = useI18n();
   const [saveDir, setSaveDir] = useState(config.save_dir);
   const [backupDir, setBackupDir] = useState(config.backup_dir);
   const [refreshInterval, setRefreshInterval] = useState(config.auto_refresh_interval);
@@ -191,6 +191,26 @@ const SettingsDialog: React.FC<SettingsDialogProps> = ({
         <h2 style={{ fontSize: 24, fontWeight: 900, marginBottom: 24 }}>
           {t("settings.title")}
         </h2>
+
+        <div style={{ marginBottom: 24, display: "flex", alignItems: "center", gap: 12 }}>
+          <label style={{ fontWeight: "bold" }}>{t("settings.language")}</label>
+          <div style={{ display: "flex", gap: 8 }}>
+            <button
+              className={lang === "zh" ? "btn-primary" : "btn-secondary"}
+              style={{ padding: "6px 16px", fontSize: 14 }}
+              onClick={() => setLang("zh")}
+            >
+              中文
+            </button>
+            <button
+              className={lang === "en" ? "btn-primary" : "btn-secondary"}
+              style={{ padding: "6px 16px", fontSize: 14 }}
+              onClick={() => setLang("en")}
+            >
+              English
+            </button>
+          </div>
+        </div>
 
         <div style={{ marginBottom: 16 }}>
           <label style={{ display: "block", marginBottom: 8, fontWeight: "bold" }}>
