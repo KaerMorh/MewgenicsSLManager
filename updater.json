@@ -1,0 +1,15 @@
+{
+  "version": "1.5.6",
+  "notes": "feat: add elderly status toggle in cat editor, bump v1.5.6\n\n- Parse elderly flag from cat blob (offset dec.len()-79)\n- Support 3 states: Young(0), Pre-Elderly(1), Elderly(2)\n- Add toggle button with tooltip explaining each state",
+  "pub_date": "2026-03-08T21:35:49.923Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRWWM3ZVhnYnVVYjdEamMycXdrR1U1UHozejVyVmlMQU5vVUJxWE1EQURydUlQWUNwYURaUTdUalRyb2xNLzQ0KzBoS2I2YTJEWEJPWVNSc0JnTzhvZytYOVVBeXFiQncwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzczMDA1NzQ3CWZpbGU6TWV3Z2VuaWNzU0xNYW5hZ2VyXzEuNS42X3g2NC1zZXR1cC5leGUKT3MwYW9OK3FHU3lUNnhCdkJsSnNOVnk2WVFvbTlTNnFVT2dwUVAwUWxxUlVSSDlIVkhjVk9Rb0JYWFYyVkRnTFRIWTh3ZTBqa1IzeHloclVMS2NTQkE9PQo=",
+      "url": "https://github.com/KaerMorh/MewgenicsSLManager/releases/download/v1.5.6/MewgenicsSLManager_1.5.6_x64-setup.exe"
+    },
+    "windows-x86_64-nsis": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRWWM3ZVhnYnVVYjdEamMycXdrR1U1UHozejVyVmlMQU5vVUJxWE1EQURydUlQWUNwYURaUTdUalRyb2xNLzQ0KzBoS2I2YTJEWEJPWVNSc0JnTzhvZytYOVVBeXFiQncwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzczMDA1NzQ3CWZpbGU6TWV3Z2VuaWNzU0xNYW5hZ2VyXzEuNS42X3g2NC1zZXR1cC5leGUKT3MwYW9OK3FHU3lUNnhCdkJsSnNOVnk2WVFvbTlTNnFVT2dwUVAwUWxxUlVSSDlIVkhjVk9Rb0JYWFYyVkRnTFRIWTh3ZTBqa1IzeHloclVMS2NTQkE9PQo=",
+      "url": "https://github.com/KaerMorh/MewgenicsSLManager/releases/download/v1.5.6/MewgenicsSLManager_1.5.6_x64-setup.exe"
+    }
+  }
+}
