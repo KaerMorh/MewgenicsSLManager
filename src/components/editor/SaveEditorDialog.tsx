@@ -115,6 +115,7 @@ const SaveEditorDialog: React.FC<Props> = ({ savePath, onClose, onSaved }) => {
       age: edits.age ?? cat.age,
       level: edits.level ?? cat.level,
       retired: edits.retired ?? cat.retired,
+      elderly: edits.elderly ?? cat.elderly,
       stats: edits.stats ?? cat.stats,
       abilities: edits.abilities ?? cat.abilities,
       mutations: edits.mutations ?? cat.mutations,

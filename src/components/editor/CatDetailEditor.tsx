@@ -214,6 +214,27 @@ const CatDetailEditor: React.FC<Props> = ({
             />
             <span style={{ fontWeight: 900, fontSize: 13 }}>{t("editor.catRetired")}</span>
           </label>
+          <button
+            type="button"
+            title={t("editor.elderlyTip")}
+            onClick={() => onUpdate({ elderly: (cat.elderly + 1) % 3 })}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: 6,
+              cursor: "pointer",
+              background: cat.elderly === 2 ? "#fef3c7" : cat.elderly === 1 ? "#fef9c3" : "transparent",
+              border: `2px solid ${cat.elderly === 2 ? "#f59e0b" : cat.elderly === 1 ? "#eab308" : "#cbd5e1"}`,
+              borderRadius: 8,
+              padding: "4px 10px",
+              fontWeight: 900,
+              fontSize: 13,
+              color: cat.elderly === 2 ? "#b45309" : cat.elderly === 1 ? "#a16207" : "#64748b",
+              fontFamily: "inherit",
+            }}
+          >
+            {cat.elderly === 2 ? t("editor.elderlyOld") : cat.elderly === 1 ? t("editor.elderlyPre") : t("editor.elderlyYoung")}
+          </button>
           {cat.dead && (
             <span style={{ fontWeight: 900, fontSize: 13, color: "#ef4444" }}>
               💀 {t("editor.catDead")}

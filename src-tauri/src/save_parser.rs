@@ -139,6 +139,7 @@ pub struct CatDetail {
     pub retired: bool,
     pub dead: bool,
     pub donated: bool,
+    pub elderly: u32,
     pub stats: CatStats,
     pub abilities: CatAbilities,
     pub mutations: HashMap<String, u32>,
@@ -844,6 +845,14 @@ fn parse_cat_detail(
         find_class_level_ext(&dec, name_end);
     let age = (current_day - birth_day).max(0);
 
+    // Elderly flag: u32 at dec.len() - 79 (0=young, 1=pre-elderly, 2=elderly)
+    let elderly = if dec.len() >= 79 + 4 {
+        let off = dec.len() - 79;
+        u32::from_le_bytes([dec[off], dec[off + 1], dec[off + 2], dec[off + 3]])
+    } else {
+        0
+    };
+
     let stats = match find_stats(&dec) {
         Some((off, vals)) => (
             off as i64,
@@ -883,6 +892,7 @@ fn parse_cat_detail(
         retired,
         dead,
         donated,
+        elderly,
         stats: stats.1,
         abilities,
         mutations,

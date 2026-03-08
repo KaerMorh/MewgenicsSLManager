@@ -99,6 +99,7 @@ export interface CatDetail {
   retired: boolean;
   dead: boolean;
   donated: boolean;
+  elderly: number;
   stats: CatStats;
   abilities: CatAbilities;
   mutations: Record<string, number>;
@@ -146,6 +147,7 @@ export interface CatChanges {
   age?: number;
   level?: number;
   retired?: boolean;
+  elderly?: number;
   stats?: CatStats;
   abilities?: CatAbilities;
   mutations?: Record<string, number>;

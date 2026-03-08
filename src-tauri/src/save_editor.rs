@@ -32,6 +32,7 @@ pub struct CatChanges {
     pub age: Option<i64>,
     pub level: Option<i64>,
     pub retired: Option<bool>,
+    pub elderly: Option<u32>,
     pub stats: Option<CatStats>,
     pub abilities: Option<CatAbilities>,
     pub mutations: Option<HashMap<String, u32>>,
@@ -360,6 +361,14 @@ pub fn modify_save_file(path: &Path, changes: &SaveChanges) -> Result<(), String
                     flags &= !0x0002;
                 }
                 write_u16_le(&mut dec, flags_off, flags);
+            }
+        }
+
+        // Modify elderly flag (u32 at dec.len() - 79)
+        if let Some(elderly_val) = cat_changes.elderly {
+            if dec.len() >= 79 + 4 {
+                let off = dec.len() - 79;
+                write_u32_le(&mut dec, off, elderly_val);
             }
         }
 
