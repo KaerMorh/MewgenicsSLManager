@@ -1,5 +1,6 @@
 import React from "react";
 import { useI18n } from "../i18n";
+import { getMapDisplayName } from "../utils/mapNames";
 import type { SaveSummary } from "../types";
 
 interface SaveInfoCardProps {
@@ -8,18 +9,26 @@ interface SaveInfoCardProps {
 }
 
 const SaveInfoCard: React.FC<SaveInfoCardProps> = ({ summary, slot }) => {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
   const exists = summary?.exists ?? false;
 
   const adventureText = () => {
     if (!summary || !exists) return null;
+    const mapName = getMapDisplayName(summary.adventure_map, lang);
     if (summary.in_adventure && summary.adventure_cats.length > 0) {
       const parts = summary.adventure_cats.map(
         (c) => `${c.name}(Lv${c.level}${c.cat_class ? " " + c.cat_class : ""})`
       );
-      return t("save.squadPrefix") + parts.join(", ");
+      const prefix = mapName
+        ? `🗡️ ${mapName} | `
+        : t("save.squadPrefix");
+      return prefix + parts.join(", ");
     }
-    if (summary.in_adventure) return t("save.statusAdventure");
+    if (summary.in_adventure) {
+      return mapName
+        ? `🗡️ ${t("save.statusAdventure")} - ${mapName}`
+        : t("save.statusAdventure");
+    }
     return t("save.statusHome");
   };
 

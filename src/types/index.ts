@@ -20,6 +20,7 @@ export interface SaveSummary {
   cat_dead: number;
   in_adventure: boolean;
   adventure_cats: CatSummary[];
+  adventure_map: string | null;
   exists: boolean;
   error: string;
 }

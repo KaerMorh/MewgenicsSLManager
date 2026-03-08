@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useI18n } from "../i18n";
+import { getMapDisplayName } from "../utils/mapNames";
 import type { SaveSummary } from "../types";
 
 interface HeroSectionProps {
@@ -21,7 +22,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   onEditSave,
   onQuickRestart,
 }) => {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
   const [refreshing, setRefreshing] = useState(false);
 
   const handleRefresh = async () => {
@@ -77,7 +78,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           </span>
           {exists && (
             <span className={`tag ${summary!.in_adventure ? "tag-adventure" : "tag-home"}`}>
-              {summary!.in_adventure ? t("hero.inAdventure") : t("hero.atHome")}
+              {summary!.in_adventure
+                ? `${t("hero.inAdventure")}${getMapDisplayName(summary!.adventure_map, lang) ? ` - ${getMapDisplayName(summary!.adventure_map, lang)}` : ""}`
+                : t("hero.atHome")}
             </span>
           )}
         </div>

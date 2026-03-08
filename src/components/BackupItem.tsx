@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { invoke } from "@tauri-apps/api/core";
 import { useI18n } from "../i18n";
+import { getMapDisplayName } from "../utils/mapNames";
 import type { BackupEntry, SaveSummary } from "../types";
 
 interface BackupItemProps {
@@ -26,7 +27,7 @@ const BackupItem: React.FC<BackupItemProps> = ({
   onEditNote,
   summary,
 }) => {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
   const [detailSummary, setDetailSummary] = useState<SaveSummary | null>(null);
 
   useEffect(() => {
@@ -43,11 +44,15 @@ const BackupItem: React.FC<BackupItemProps> = ({
 
   const statusTag = () => {
     if (!s || !s.exists) return <span className="tag tag-home">{t("item.parsing")}</span>;
-    return s.in_adventure ? (
-      <span className="tag tag-adventure">{t("item.inAdventure")}</span>
-    ) : (
-      <span className="tag tag-home">{t("item.atHome")}</span>
-    );
+    if (s.in_adventure) {
+      const mapName = getMapDisplayName(s.adventure_map, lang);
+      return (
+        <span className="tag tag-adventure">
+          {t("item.inAdventure")}{mapName ? ` - ${mapName}` : ""}
+        </span>
+      );
+    }
+    return <span className="tag tag-home">{t("item.atHome")}</span>;
   };
 
   const dayText = s?.exists ? `Day ${s.current_day}` : `Day ${entry.day_in_name || "?"}`;

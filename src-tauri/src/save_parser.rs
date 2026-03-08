@@ -84,6 +84,7 @@ pub struct SaveSummary {
     pub cat_dead: i64,
     pub in_adventure: bool,
     pub adventure_cats: Vec<CatSummary>,
+    pub adventure_map: Option<String>,
     pub exists: bool,
     pub error: String,
 }
@@ -258,6 +259,21 @@ fn read_prop_int(raw: &[u8]) -> i64 {
 }
 
 // ---- Adventure state ----
+
+/// Extract the map name (e.g. "alley") from the chapter_map blob.
+/// Layout: [16B GUID][16B GUID][u64 name_len][name_bytes "xxx.gon"]...
+fn parse_chapter_map_name(blob: &[u8]) -> Option<String> {
+    if blob.len() < 40 {
+        return None;
+    }
+    let name_len = u64_le(blob, 32) as usize;
+    if name_len == 0 || name_len > 100 || 40 + name_len > blob.len() {
+        return None;
+    }
+    let raw = &blob[40..40 + name_len];
+    let name = std::str::from_utf8(raw).ok()?;
+    Some(name.strip_suffix(".gon").unwrap_or(name).to_string())
+}
 
 fn parse_adventure_state(blob: &[u8]) -> Vec<i64> {
     if blob.len() < 8 {
@@ -1071,6 +1087,17 @@ pub fn parse_save_summary(path: &Path) -> SaveSummary {
         }
     }
     s.in_adventure = !adventure_keys.is_empty();
+
+    // Parse chapter_map for current adventure map name
+    if s.in_adventure {
+        if let Ok(blob) = conn.query_row(
+            "SELECT data FROM files WHERE key='chapter_map'",
+            [],
+            |row| row.get::<_, Vec<u8>>(0),
+        ) {
+            s.adventure_map = parse_chapter_map_name(&blob);
+        }
+    }
 
     // Parse all cats for alive/dead count
     if let Ok(mut stmt) = conn.prepare("SELECT key, data FROM cats") {

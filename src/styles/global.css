@@ -217,6 +217,7 @@ body {
   font-weight: bold;
   font-size: 12px;
   user-select: none;
+  white-space: nowrap;
 }
 .tag-adventure { background: var(--light-pink); }
 .tag-home { background: var(--light-green); }
